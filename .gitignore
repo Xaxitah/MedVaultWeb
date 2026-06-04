@@ -1,0 +1,12 @@
+# Export Obsidian (muito grande para GitHub)
+med/
+raw/
+03-disciplinas/
+05-glossario/
+06-revisao-espacada/
+07-biblioteca-geral/
+site-lib/
+
+# Scripts de manutenção local
+deploy.bat
+limpar-site.ps1
