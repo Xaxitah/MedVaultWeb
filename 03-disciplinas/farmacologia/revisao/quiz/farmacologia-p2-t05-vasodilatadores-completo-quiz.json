@@ -1,0 +1,265 @@
+{
+  "title": "Vasodilatadores Quiz",
+  "questions": [
+    {
+      "question": "Os nitratos orgânicos, como a nitroglicerina, exercem seu efeito vasodilatador primário através de qual sequência bioquímica?",
+      "answerOptions": [
+        {
+          "text": "Liberação de $NO \\rightarrow$ ativação da guanilato ciclase $\\rightarrow \\uparrow GMPc \\rightarrow \\downarrow Ca^{2+}$ intracelular.",
+          "isCorrect": true,
+          "rationale": "O óxido nítrico ativa a enzima guanilato ciclase, que aumenta os níveis de $GMPc$, levando à redução do cálcio citosólico e relaxamento muscular."
+        },
+        {
+          "text": "Bloqueio dos canais de $Ca^{2+}$ tipo L $\\rightarrow$ inibição da contração actina-miosina.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo principal dos bloqueadores de canais de cálcio, não dos nitratos, embora o resultado final de redução de cálcio seja semelhante."
+        },
+        {
+          "text": "Abertura de canais de $K^{+}$ dependentes de $ATP \\rightarrow$ hiperpolarização da membrana.",
+          "isCorrect": false,
+          "rationale": "A abertura de canais de potássio é o mecanismo de fármacos como o minoxidil e o diazóxido, e não a via principal dos nitratos."
+        },
+        {
+          "text": "Inibição da enzima conversora de angiotensina $\\rightarrow \\downarrow$ Angiotensina II.",
+          "isCorrect": false,
+          "rationale": "Este mecanismo pertence aos IECA, que reduzem a vasoconstrição mediada pelo sistema renina-angiotensina-aldosterona."
+        }
+      ],
+      "hint": "Considere o papel do mensageiro secundário derivado do nucleotídeo guanina."
+    },
+    {
+      "question": "Por que o uso de nitratos é expressamente contraindicado em pacientes que sofreram Infarto Agudo do Miocárdio (IAM) com acometimento do ventrículo direito (VD)?",
+      "answerOptions": [
+        {
+          "text": "O VD isquemiado depende criticamente da pré-carga para manter o débito cardíaco.",
+          "isCorrect": true,
+          "rationale": "A venodilatação causada pelos nitratos reduz o retorno venoso (pré-carga), o que pode levar ao colapso hemodinâmico em um ventrículo direito infartado."
+        },
+        {
+          "text": "Os nitratos causam vasoconstrição coronariana paradoxal no ventrículo direito.",
+          "isCorrect": false,
+          "rationale": "Os nitratos são vasodilatadores coronarianos; o problema no IAM de VD é hemodinâmico (volume) e não o agravamento da vasoconstrição."
+        },
+        {
+          "text": "Há um risco aumentado de metemoglobinemia severa especificamente no IAM de VD.",
+          "isCorrect": false,
+          "rationale": "A metemoglobinemia é um efeito adverso raro de doses altas de nitratos e não está relacionada à topografia do infarto."
+        },
+        {
+          "text": "O metabolismo hepático do nitrato é inibido pela falência aguda do ventrículo direito.",
+          "isCorrect": false,
+          "rationale": "A contraindicação baseia-se na fisiologia do retorno venoso e não em interações farmacocinéticas ou metabólicas."
+        }
+      ],
+      "hint": "Pense no conceito de pré-carga e na necessidade de volume para o enchimento ventricular."
+    },
+    {
+      "question": "Um paciente hipertenso em uso crônico de hidralazina apresenta-se com artralgia, febre e uma erupção cutânea em face (malar). Qual é a suspeita clínica e a conduta recomendada?",
+      "answerOptions": [
+        {
+          "text": "Lúpus eritematoso medicamentoso; deve-se suspender imediatamente a hidralazina.",
+          "isCorrect": true,
+          "rationale": "A hidralazina pode induzir uma síndrome lúpus-like, especialmente em acetiladores lentos, sendo a suspensão do fármaco o tratamento primário."
+        },
+        {
+          "text": "Reação de hipersensibilidade tardia; deve-se associar um corticoide e manter a medicação.",
+          "isCorrect": false,
+          "rationale": "Embora pareça uma alergia, a apresentação de artralgia e rash malar com hidralazina é classicamente uma síndrome autoimune induzida pelo fármaco."
+        },
+        {
+          "text": "Crise de gota induzida por diuréticos; deve-se iniciar alopurinol.",
+          "isCorrect": false,
+          "rationale": "A gota causa dor articular localizada (geralmente hálux) e não rash malar, além de ser causada por diuréticos, não pela hidralazina diretamente."
+        },
+        {
+          "text": "Púrpura trombocitopênica; deve-se solicitar hemograma urgente.",
+          "isCorrect": false,
+          "rationale": "A púrpura apresenta-se com petéquias e equimoses, diferente do padrão de rash malar e sintomas sistêmicos do lúpus medicamentoso."
+        }
+      ],
+      "hint": "Esta condição é uma síndrome autoimune reversível caracterizada por anticorpos anti-histona."
+    },
+    {
+      "question": "Sobre o nitroprussiato de sódio, utilizado em emergências hipertensivas, qual cuidado é essencial devido à sua estrutura química e metabolismo?",
+      "answerOptions": [
+        {
+          "text": "Proteção do frasco contra a luz (fotossensibilidade) e monitoramento de metabólitos tóxicos como o cianeto.",
+          "isCorrect": true,
+          "rationale": "O nitroprussiato é fotolábil e sua metabolização libera cianeto, que pode acumular-se em pacientes com insuficiência hepática."
+        },
+        {
+          "text": "Administração exclusiva via oral para evitar picos hipertensivos de rebote.",
+          "isCorrect": false,
+          "rationale": "O nitroprussiato é administrado apenas por via intravenosa contínua devido à sua meia-vida extremamente curta de segundos."
+        },
+        {
+          "text": "Associação obrigatória com insulina para prevenir a hiperglicemia severa que ele causa.",
+          "isCorrect": false,
+          "rationale": "Quem causa hiperglicemia por inibição da insulina é o diazóxido, não o nitroprussiato."
+        },
+        {
+          "text": "Monitoramento rigoroso da frequência cardíaca devido à ausência total de resposta reflexa.",
+          "isCorrect": false,
+          "rationale": "O nitroprussiato, ao causar vasodilatação potente, pode sim disparar respostas barorreflexas compensatórias."
+        }
+      ],
+      "hint": "Lembre-se da cor do frasco na UTI e dos subprodutos de sua degradação metabólica."
+    },
+    {
+      "question": "A associação de sildenafil (inibidor da PDE-5) com nitratos é considerada uma contraindicação absoluta. Qual o fundamento farmacológico dessa interação?",
+      "answerOptions": [
+        {
+          "text": "Sinergismo na via $NO-GMPc$, impedindo a degradação do $GMPc$ e causando hipotensão grave.",
+          "isCorrect": true,
+          "rationale": "O nitrato aumenta a produção de $GMPc$ e o sildenafil impede sua quebra; o acúmulo excessivo resulta em vasodilatação sistêmica descontrolada."
+        },
+        {
+          "text": "Competição pelo mesmo sítio de ligação no receptor adrenérgico $\\beta_{1}$.",
+          "isCorrect": false,
+          "rationale": "Nenhum desses fármacos atua primariamente via receptores adrenérgicos $\\beta_{1}$ para promover vasodilatação."
+        },
+        {
+          "text": "O sildenafil acelera o metabolismo hepático dos nitratos, anulando seu efeito antianginoso.",
+          "isCorrect": false,
+          "rationale": "A interação não é de anulação, mas de potencialização perigosa dos efeitos hipotensores."
+        },
+        {
+          "text": "Risco de induzir hipertensão pulmonar súbita por bloqueio de receptores de prostaglandina.",
+          "isCorrect": false,
+          "rationale": "O sildenafil é usado para tratar a hipertensão pulmonar; a associação com nitratos causa o oposto (queda súbita da pressão arterial)."
+        }
+      ],
+      "hint": "Considere o que acontece quando você aumenta a produção e, simultaneamente, bloqueia a eliminação de um sinalizador químico."
+    },
+    {
+      "question": "Qual dos seguintes vasodilatadores é frequentemente utilizado em casos de insulinoma para elevar os níveis glicêmicos?",
+      "answerOptions": [
+        {
+          "text": "Diazóxido",
+          "isCorrect": true,
+          "rationale": "O diazóxido abre canais de $K^{+}$ nas células beta pancreáticas, o que hiperpolariza a membrana e inibe a secreção de insulina."
+        },
+        {
+          "text": "Minoxidil",
+          "isCorrect": false,
+          "rationale": "Embora também abra canais de $K^{+}$, o minoxidil não possui o efeito clínico significativo de inibição da insulina como o diazóxido."
+        },
+        {
+          "text": "Hidralazina",
+          "isCorrect": false,
+          "rationale": "A hidralazina atua via $GMPc$ e sequestro de cálcio, sem interferência direta na liberação de insulina pancreática."
+        },
+        {
+          "text": "Isossorbida",
+          "isCorrect": false,
+          "rationale": "A isossorbida é um nitrato venoso e não tem propriedades de modulação de canais de potássio ou glicemia."
+        }
+      ],
+      "hint": "Pense no fármaco que é um derivado tiazídico sem propriedades diuréticas."
+    },
+    {
+      "question": "A 'hipertricose' é um efeito adverso sistêmico característico de qual fármaco, sendo inclusive explorado terapeuticamente para o tratamento da alopecia?",
+      "answerOptions": [
+        {
+          "text": "Minoxidil",
+          "isCorrect": true,
+          "rationale": "O crescimento excessivo de pelos é um efeito colateral da vasodilatação potente e abertura de canais de potássio causada pelo minoxidil oral."
+        },
+        {
+          "text": "Nitroprussiato",
+          "isCorrect": false,
+          "rationale": "O nitroprussiato é usado em curtos períodos intravenosos e seus efeitos adversos principais são relacionados à toxicidade por cianeto."
+        },
+        {
+          "text": "Tadalafil",
+          "isCorrect": false,
+          "rationale": "O tadalafil é um inibidor da PDE-5 focado em tecido erétil e vascular pulmonar, sem efeito sobre o crescimento capilar."
+        },
+        {
+          "text": "Fenoldopam",
+          "isCorrect": false,
+          "rationale": "O fenoldopam é um agonista dopaminérgico $D_{1}$ usado em emergências, sem relação com efeitos dermatológicos como a hipertricose."
+        }
+      ],
+      "hint": "Este medicamento é um potente vasodilatador arteriolar para hipertensão refratária."
+    },
+    {
+      "question": "Para prevenir o desenvolvimento de 'tolerância' aos nitratos em pacientes com angina estável, qual estratégia clínica deve ser adotada?",
+      "answerOptions": [
+        {
+          "text": "Garantir um intervalo livre de nitrato de 8 a 12 horas por dia.",
+          "isCorrect": true,
+          "rationale": "O período sem o fármaco permite a restauração dos grupos sulfidrila e da sensibilidade da eNOS, prevenindo a perda de eficácia."
+        },
+        {
+          "text": "Aumentar progressivamente a dose a cada 4 horas para vencer a resistência enzimática.",
+          "isCorrect": false,
+          "rationale": "Aumentar a dose continuamente apenas agrava a depleção de cofatores e acelera a tolerância, além de aumentar o risco de efeitos colaterais."
+        },
+        {
+          "text": "Administrar vitamina C em altas doses para substituir o óxido nítrico endógeno.",
+          "isCorrect": false,
+          "rationale": "Embora o estresse oxidativo esteja envolvido, a suplementação de vitamina C não substitui a necessidade do intervalo livre de fármaco."
+        },
+        {
+          "text": "Substituir o nitrato por nitroprussiato de sódio a cada 48 horas.",
+          "isCorrect": false,
+          "rationale": "O nitroprussiato é apenas para uso hospitalar agudo e não é uma alternativa viável para o manejo ambulatorial da angina."
+        }
+      ],
+      "hint": "O corpo precisa de um tempo de 'descanso' para regenerar os estoques necessários para o fármaco funcionar."
+    },
+    {
+      "question": "A hidralazina é frequentemente administrada em conjunto com betabloqueadores e diuréticos. Qual o objetivo principal desta tripla terapia na hipertensão crônica?",
+      "answerOptions": [
+        {
+          "text": "Neutralizar a taquicardia reflexa e a retenção hídrica causadas pela resposta barorreceptora.",
+          "isCorrect": true,
+          "rationale": "A vasodilatação isolada dispara o sistema simpático e a renina; o betabloqueador controla a frequência cardíaca e o diurético elimina o excesso de sódio/água."
+        },
+        {
+          "text": "Aumentar a absorção intestinal da hidralazina, que é reduzida pelo pH gástrico.",
+          "isCorrect": false,
+          "rationale": "A interação não é farmacocinética na absorção, mas sim farmacodinâmica compensatória para evitar efeitos reflexos indesejados."
+        },
+        {
+          "text": "Prevenir a ocorrência de lúpus eritematoso sistêmico em acetiladores rápidos.",
+          "isCorrect": false,
+          "rationale": "Betabloqueadores e diuréticos não impedem o desenvolvimento de lúpus medicamentoso, que é uma reação imunológica à hidralazina."
+        },
+        {
+          "text": "Reduzir o metabolismo de primeira passagem hepática da hidralazina.",
+          "isCorrect": false,
+          "rationale": "O objetivo é mitigar as respostas fisiológicas compensatórias do organismo à queda súbita da resistência vascular."
+        }
+      ],
+      "hint": "Pense no que o corpo faz 'em legítima defesa' quando a pressão cai bruscamente apenas por dilatação das artérias."
+    },
+    {
+      "question": "Qual é a principal diferença farmacocinética entre o sildenafil e o tadalafil que impacta a segurança no uso de nitratos?",
+      "answerOptions": [
+        {
+          "text": "O tadalafil possui meia-vida muito mais longa, exigindo uma janela de segurança de 48 horas.",
+          "isCorrect": true,
+          "rationale": "Devido à sua permanência prolongada no organismo, o risco de interação fatal com nitratos persiste por até dois dias após a dose de tadalafil."
+        },
+        {
+          "text": "O sildenafil é o único que atravessa a barreira hematoencefálica, causando cefaleia.",
+          "isCorrect": false,
+          "rationale": "Ambos podem causar cefaleia por vasodilatação das artérias meníngeas, não sendo essa a diferença crucial de segurança para nitratos."
+        },
+        {
+          "text": "O tadalafil é metabolizado exclusivamente pelos rins, sendo seguro em hepatopatas.",
+          "isCorrect": false,
+          "rationale": "Ambos sofrem metabolismo hepático importante via citocromo P450, exigindo cautela em pacientes com insuficiência hepática."
+        },
+        {
+          "text": "O sildenafil atua exclusivamente no leito pulmonar, enquanto o tadalafil é sistêmico.",
+          "isCorrect": false,
+          "rationale": "Ambos têm efeitos sistêmicos e podem ser usados tanto para disfunção erétil quanto para hipertensão arterial pulmonar."
+        }
+      ],
+      "hint": "Um deles é carinhosamente chamado de 'pílula do fim de semana' devido à sua duração de ação."
+    }
+  ]
+}

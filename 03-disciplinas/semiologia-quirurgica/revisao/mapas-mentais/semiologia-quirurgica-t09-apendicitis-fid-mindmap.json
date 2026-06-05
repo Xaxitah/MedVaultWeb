@@ -1,0 +1,227 @@
+{
+  "mind_map": {
+    "name": "Apendicitis Aguda (FID)",
+    "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha]]",
+    "children": [
+      {
+        "name": "Visão Geral & Anatomia",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#1. Visão Geral]]",
+        "children": [
+          {
+            "name": "Definição: Síndrome da Fosa Ilíaca Direita"
+          },
+          {
+            "name": "Epidemiologia: 2ª e 3ª décadas, sexo masculino"
+          },
+          {
+            "name": "Anatomia: Cego, apêndice, íleon, uréter, anexos"
+          }
+        ]
+      },
+      {
+        "name": "Quadro Clínico & Aura",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#2. Núcleo Obrigatório]]",
+        "children": [
+          {
+            "name": "Cronologia de Murphy",
+            "children": [
+              {
+                "name": "1. Dor epigástrica visceral (Rove)"
+              },
+              {
+                "name": "2. Anorexia e náuseas"
+              },
+              {
+                "name": "3. Vômitos"
+              },
+              {
+                "name": "4. Febre moderada"
+              }
+            ]
+          },
+          {
+            "name": "Períodos Clínicos",
+            "children": [
+              {
+                "name": "Inicial (0-8h): Epigastralgia/Rove"
+              },
+              {
+                "name": "Estado (8-24h): Palpação dolorosa e McBurney"
+              },
+              {
+                "name": "Final (>24h): Complicações e Calma Traidora"
+              }
+            ]
+          },
+          {
+            "name": "Signo de Lennander: Dissociação axilo-retal"
+          },
+          {
+            "name": "Calma Traidora: Alívio temporário de 10 min na perfuração"
+          }
+        ]
+      },
+      {
+        "name": "Estádios AP & Vasos",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#3.1 Fisiopatologia e Evolução Vascular da Apendicite]]",
+        "children": [
+          {
+            "name": "1. Catarral ou Congestiva (Edema, obstrução venoso)"
+          },
+          {
+            "name": "2. Flemonosa ou Supurada (Fibrina e exsudado purulento)"
+          },
+          {
+            "name": "3. Gangrenosa ou Necrótica (Isquemia por estrangulamento da artéria terminal)"
+          },
+          {
+            "name": "4. Perfurada (Pus livre em peritonite ou bloqueio defensivo)"
+          }
+        ]
+      },
+      {
+        "name": "Exame Físico & Sinais",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#3.2 O Arsenal de Sinais Clínicos na Palpação da FID (17 Manobras)]]",
+        "children": [
+          {
+            "name": "Inspeção e Palpação",
+            "children": [
+              {
+                "name": "Marcha de Christmas (Papai Noel): Inclinação antálgica à direita"
+              },
+              {
+                "name": "Tríade de Dieulafoy: Hiperestesia cutânea, defesa e dor na FID"
+              },
+              {
+                "name": "Triângulo de Sherren: Hiperalgesia cutânea na FID"
+              }
+            ]
+          },
+          {
+            "name": "Manobras e Sinais",
+            "children": [
+              {
+                "name": "Blumberg: Dor à descompressão brusca na FID (irritação localizada)"
+              },
+              {
+                "name": "Rovsing: Pressão firme em FII gera dor na FID por deslocamento de gases"
+              },
+              {
+                "name": "Psoas (Meltzer): Elevação da perna contra resistência (retrocecal)"
+              },
+              {
+                "name": "Obturador: Rotação interna do quadril direito flexionado (pélvico)"
+              },
+              {
+                "name": "Gueneau de Mussy: Descompressão dolorosa generalizada (peritonite difusa)"
+              },
+              {
+                "name": "Britain: Ascensão reflexa do testículo direito (indicativo de gangrena)"
+              }
+            ]
+          },
+          {
+            "name": "Pontos Dolorosos",
+            "children": [
+              {
+                "name": "McBurney: União do 1/3 externo com 1/3 médio da linha espino-umbilical"
+              },
+              {
+                "name": "Lanz: União de 1/3 externo com 1/3 médio da linha biespinosa (pélvico)"
+              },
+              {
+                "name": "Lecene: 2 dedos acima e atrás da EIAS em decúbito lateral (retrocecal)"
+              },
+              {
+                "name": "Morris: União de 1/3 interno com 1/3 médio (ascendente interno)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diagnóstico & Alvarado",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#4. Alvarado Score para Diagnóstico de Apendicite (Slide 28)]]",
+        "children": [
+          {
+            "name": "Score de Alvarado (MANTRELS)",
+            "children": [
+              {
+                "name": "Dor FID (2 pts)"
+              },
+              {
+                "name": "Febre (2 pts no slide 28)"
+              },
+              {
+                "name": "Leucocitose (1 pt no slide 28)"
+              },
+              {
+                "name": "Migração, Anorexia, Vômito, Rebote, Desvio (1 pt cada)"
+              }
+            ]
+          },
+          {
+            "name": "Exames por Imagem",
+            "children": [
+              {
+                "name": "Ecografia (Slide 22): tubular aperistáltico, > 6mm de diâmetro, parede > 2mm"
+              },
+              {
+                "name": "Raio-X (Vanuno): Coprólito na FID, escoliose antálgica, íleo reflexo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diagnóstico Diferencial",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#3.3 Diagnósticos Diferenciais Clínicos e Cirúrgicos (Mapeamento)]]",
+        "children": [
+          {
+            "name": "Adenitis Mesentérica: Crianças, causa viral, febre surge antes da dor"
+          },
+          {
+            "name": "Crise de Dietl (Nefroptose): Rim móvel cai e dobra ureter, alívio imediato ao deitar"
+          },
+          {
+            "name": "Ginecológicos: Gravidez ectópica rota (choque + HCG), torsão anexial, cisto folicular"
+          },
+          {
+            "name": "Outros: Divertículo de Meckel (idêntico), Crohn, Invaginação"
+          }
+        ]
+      },
+      {
+        "name": "Complicações & Massas",
+        "wikilink": "[[Tema-09-Afecciones-de-la-Fosa-Iliaca-Derecha#5.1 Plastrón Apendicular vs. Apéndice Encapuchonado]]",
+        "children": [
+          {
+            "name": "Plastrón Apendicular",
+            "children": [
+              {
+                "name": "Aglutinação defensiva de alças e epiplon. Delbet (+). Conduta: MÉDICA"
+              }
+            ]
+          },
+          {
+            "name": "Apéndice Encapuchonado",
+            "children": [
+              {
+                "name": "Falha de bloqueio por epiplon curto. Bolsa de pus móvel. Delbet (-). Conduta: CIRÚRGICA"
+              }
+            ]
+          },
+          {
+            "name": "Piletromboflebite (Pileflebitis)",
+            "children": [
+              {
+                "name": "Trombose séptica da veia porta. Tríade: Dor + Febre com calafrios + Icterícia"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "d6c0e3b5-1c80-4360-8a6f-02b3b6f8a817"
+}

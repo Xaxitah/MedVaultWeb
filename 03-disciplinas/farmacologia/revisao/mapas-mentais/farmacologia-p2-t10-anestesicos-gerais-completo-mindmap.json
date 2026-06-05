@@ -1,0 +1,178 @@
+{
+  "mind_map": {
+    "name": "Anestésicos Gerais",
+    "children": [
+      {
+        "name": "Componentes da Anestesia",
+        "children": [
+          {
+            "name": "Amnésia"
+          },
+          {
+            "name": "Inconsciência"
+          },
+          {
+            "name": "Analgesia"
+          },
+          {
+            "name": "Imobilidade"
+          },
+          {
+            "name": "Atenuação autonômica"
+          }
+        ]
+      },
+      {
+        "name": "Fases da Anestesia (Guedel)",
+        "children": [
+          {
+            "name": "I: Analgesia"
+          },
+          {
+            "name": "II: Excitação/Delírio"
+          },
+          {
+            "name": "III: Anestesia cirúrgica"
+          },
+          {
+            "name": "IV: Paralisia bulbar (Morte)"
+          }
+        ]
+      },
+      {
+        "name": "Anestésicos Intravenosos",
+        "children": [
+          {
+            "name": "Propofol",
+            "children": [
+              {
+                "name": "Hipotensão"
+              },
+              {
+                "name": "Procedimentos ambulatoriais"
+              },
+              {
+                "name": "Redução de PIC e PIO"
+              }
+            ]
+          },
+          {
+            "name": "Etomidato",
+            "children": [
+              {
+                "name": "Estabilidade cardiovascular"
+              },
+              {
+                "name": "Eleição no choque"
+              },
+              {
+                "name": "Causa mioclonias"
+              }
+            ]
+          },
+          {
+            "name": "Cetamina",
+            "children": [
+              {
+                "name": "Anestesia dissociativa"
+              },
+              {
+                "name": "Antagonista NMDA"
+              },
+              {
+                "name": "Broncodilatador (Asma)"
+              },
+              {
+                "name": "Aumenta FC e PA"
+              }
+            ]
+          },
+          {
+            "name": "Tiopental",
+            "children": [
+              {
+                "name": "Indução ultra-rápida"
+              },
+              {
+                "name": "Redistribuição tecidual"
+              },
+              {
+                "name": "Má analgesia"
+              }
+            ]
+          },
+          {
+            "name": "Midazolam",
+            "children": [
+              {
+                "name": "Amnésia anterógrada"
+              },
+              {
+                "name": "Sem analgesia"
+              },
+              {
+                "name": "Antagonista: Flumazenil"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anestésicos Inalatórios",
+        "children": [
+          {
+            "name": "Conceitos de Potência e Velocidade",
+            "children": [
+              {
+                "name": "CAM/MAC: Concentração Alveolar Mínima"
+              },
+              {
+                "name": "Potência proporcional à lipossolubilidade"
+              },
+              {
+                "name": "Velocidade inversamente proporcional ao coef. sangue/ar"
+              }
+            ]
+          },
+          {
+            "name": "Agentes Halogenados",
+            "children": [
+              {
+                "name": "Halotano: Hepatotóxico e arritmogênico"
+              },
+              {
+                "name": "Sevoflurano: Indução muito rápida"
+              },
+              {
+                "name": "Isoflurano: Bom relaxamento muscular"
+              }
+            ]
+          },
+          {
+            "name": "Óxido Nitroso (N2O): Indução rápida, baixa potência"
+          }
+        ]
+      },
+      {
+        "name": "Complicações e Emergências",
+        "children": [
+          {
+            "name": "Hipertermia Maligna",
+            "children": [
+              {
+                "name": "Trigger: Halogenados + Succinilcolina"
+              },
+              {
+                "name": "Sinais: Hipertermia e rigidez"
+              },
+              {
+                "name": "Tratamento: Dantroleno"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "e06abf84-1753-4abe-86fa-17b96d297388"
+}

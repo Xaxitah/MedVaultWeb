@@ -1,0 +1,317 @@
+{
+  "title": "Quiz Opioides",
+  "questions": [
+    {
+      "question": "Um paciente chega ao pronto-socorro apresentando coma, pupilas puntiformes (miose) e uma frequência respiratória de 6 incursões por minuto. Qual é a conduta imediata indicada para reverter esse quadro de intoxicação?",
+      "answerOptions": [
+        {
+          "text": "Administração de Naltrexona por via oral.",
+          "isCorrect": false,
+          "rationale": "Embora seja um antagonista, sua absorção é lenta e o uso é voltado para a manutenção crônica da abstinência, não para emergências."
+        },
+        {
+          "text": "Administração de Naloxona por via intravenosa.",
+          "isCorrect": true,
+          "rationale": "A naloxona é um antagonista competitivo de ação rápida (1-3 minutos) essencial para reverter a depressão respiratória aguda."
+        },
+        {
+          "text": "Administração de Flumazenil para reverter a sedação.",
+          "isCorrect": false,
+          "rationale": "O flumazenil é o antídoto específico para benzodiazepínicos, não possuindo efeito sobre os receptores opioides."
+        },
+        {
+          "text": "Administração de Metadona para estabilizar os receptores.",
+          "isCorrect": false,
+          "rationale": "A metadona é um agonista puro de longa duração e agravaria o quadro de intoxicação e depressão respiratória."
+        }
+      ],
+      "hint": "Considere o fármaco de escolha para reversão imediata e a via de administração mais rápida."
+    },
+    {
+      "question": "Sobre o metabolismo hepático da morfina, dois metabólitos principais são formados: o M3G e o M6G. Qual a relevância clínica dessa distinção em pacientes com insuficiência renal?",
+      "answerOptions": [
+        {
+          "text": "O M3G acumula-se e causa analgesia profunda, aumentando o risco de coma.",
+          "isCorrect": false,
+          "rationale": "O M3G não possui propriedades analgésicas; na verdade, ele tem um perfil neuroexcitador."
+        },
+        {
+          "text": "O M6G é o metabólito responsável pela neurotoxicidade e convulsões.",
+          "isCorrect": false,
+          "rationale": "O M6G é o metabólito analgésico ativo, sendo até mais potente que a própria morfina em certas condições."
+        },
+        {
+          "text": "O acúmulo de M3G pode causar neuroexcitação e convulsões, enquanto o M6G potencializa a analgesia e a toxicidade.",
+          "isCorrect": true,
+          "rationale": "Na insuficiência renal, a falha na excreção desses metabólitos leva a quadros de convulsão (pelo M3G) e sedação excessiva (pelo M6G)."
+        },
+        {
+          "text": "A morfina não é metabolizada pelo fígado, sendo excretada integralmente de forma inalterada pelos rins.",
+          "isCorrect": false,
+          "rationale": "A morfina sofre extenso metabolismo de primeira passagem e glicuronidação hepática antes da excreção renal."
+        }
+      ],
+      "hint": "Lembre-se da regra 'o 3 te mata (convulsão), o 6 te salva (analgesia)'."
+    },
+    {
+      "question": "Qual é a diferença fundamental entre as definições de 'opiáceo' e 'opioide'?",
+      "answerOptions": [
+        {
+          "text": "Opiáceo refere-se a qualquer substância que ligue ao receptor, enquanto opioide é apenas o produto natural.",
+          "isCorrect": false,
+          "rationale": "Esta definição está invertida; o termo mais amplo para qualquer ligante é opioide."
+        },
+        {
+          "text": "Opiáceos são produtos obtidos diretamente do ópio ou derivados da morfina; opioides incluem todas as substâncias com afinidade pelos receptores.",
+          "isCorrect": true,
+          "rationale": "Opiáceo é uma classificação química/estrutural de origem natural, enquanto opioide é uma classificação funcional baseada na afinidade pelo receptor."
+        },
+        {
+          "text": "Não existe diferença técnica, ambos os termos são sinônimos perfeitos em farmacologia clínica.",
+          "isCorrect": false,
+          "rationale": "Embora usados como sinônimos na linguagem coloquial, a farmacologia distingue a origem química da ação receptor-específica."
+        },
+        {
+          "text": "Opiáceos são antagonistas, enquanto opioides são sempre agonistas puros.",
+          "isCorrect": false,
+          "rationale": "Ambas as classes podem conter agonistas, antagonistas ou agonistas parciais, dependendo da molécula específica."
+        }
+      ],
+      "hint": "Pense na origem da substância (natural vs. qualquer ligante do receptor)."
+    },
+    {
+      "question": "No mecanismo molecular de ação, os receptores opioides são acoplados à proteína $G_i/G_o$. Qual é o efeito imediato da ativação dessa cascata sobre a sinalização intracelular?",
+      "answerOptions": [
+        {
+          "text": "Estimulação da adenilato ciclase e aumento dos níveis de AMPc.",
+          "isCorrect": false,
+          "rationale": "Os receptores opioides são inibitórios ($G_i$), o que resulta no efeito oposto à estimulação."
+        },
+        {
+          "text": "Inibição da adenilato ciclase, resultando na redução dos níveis de AMPc.",
+          "isCorrect": true,
+          "rationale": "A redução do AMPc é o evento central que leva à diminuição da excitabilidade neuronal e da liberação de neurotransmissores."
+        },
+        {
+          "text": "Aumento do influxo de cálcio ($Ca^{2+}$) através de canais dependentes de voltagem.",
+          "isCorrect": false,
+          "rationale": "A ativação opioide resulta na inibição dos canais de cálcio pré-sinápticos para reduzir a liberação de glutamato e substância P."
+        },
+        {
+          "text": "Fechamento de canais de potássio ($K^+$), causando despolarização da membrana.",
+          "isCorrect": false,
+          "rationale": "Os opioides promovem a abertura de canais de potássio, causando hiperpolarização pós-sináptica."
+        }
+      ],
+      "hint": "Considere o papel da proteína $G_i$ (inibitória) no sistema da adenilato ciclase."
+    },
+    {
+      "question": "O uso crônico de opioides leva ao desenvolvimento de tolerância para a maioria dos efeitos. Quais desses efeitos persistem quase inalterados, servindo como sinais clínicos de uso mesmo em usuários crônicos?",
+      "answerOptions": [
+        {
+          "text": "Analgesia e sedação.",
+          "isCorrect": false,
+          "rationale": "Esses efeitos desenvolvem alta tolerância, exigindo doses cada vez maiores para serem mantidos."
+        },
+        {
+          "text": "Depressão respiratória e euforia.",
+          "isCorrect": false,
+          "rationale": "A tolerância para a depressão respiratória e para o efeito de 'barato' (euforia) desenvolve-se rapidamente."
+        },
+        {
+          "text": "Miose e constipação (estreñimiento).",
+          "isCorrect": true,
+          "rationale": "As pupilas puntiformes e a redução da motilidade intestinal são os efeitos que menos sofrem o fenômeno de tolerância."
+        },
+        {
+          "text": "Náuseas e supressão da tosse.",
+          "isCorrect": false,
+          "rationale": "O organismo geralmente se adapta às náuseas após as doses iniciais, desenvolvendo tolerância moderada."
+        }
+      ],
+      "hint": "Foque nos sintomas que acompanham o paciente 'para sempre' durante o tratamento."
+    },
+    {
+      "question": "Por que o uso de opioides como a morfina é classicamente contraindicado em pacientes com Traumatismo Cranioencefálico (TCE)?",
+      "answerOptions": [
+        {
+          "text": "Porque eles causam midríase, impedindo a avaliação do reflexo pupilar.",
+          "isCorrect": false,
+          "rationale": "Os opioides causam miose (contração), não midríase (dilatação)."
+        },
+        {
+          "text": "Devido à depressão respiratória, que aumenta os níveis de $CO_2$, causando vasodilatação cerebral e aumento da pressão intracraniana.",
+          "isCorrect": true,
+          "rationale": "A retenção de $CO_2$ é um potente vasodilatador cerebral, o que agrava o edema e a pressão dentro do crânio em pacientes lesionados."
+        },
+        {
+          "text": "Porque a morfina reduz a pressão arterial de forma tão brusca que causa isquemia cerebral imediata.",
+          "isCorrect": false,
+          "rationale": "Embora possa causar hipotensão ortostática, o risco principal no TCE está ligado à dinâmica da pressão intracraniana via ventilação."
+        },
+        {
+          "text": "Os opioides aumentam a atividade elétrica cerebral, podendo mascarar um coma.",
+          "isCorrect": false,
+          "rationale": "Os opioides são depressores do SNC e, na verdade, poderiam somar-se à depressão de consciência do próprio trauma."
+        }
+      ],
+      "hint": "Relacione a ventilação deficiente com o diâmetro dos vasos sanguíneos no cérebro."
+    },
+    {
+      "question": "A buprenorfina é classificada como um agonista parcial do receptor $\\mu$. O que acontece se administrarmos buprenorfina em um paciente que já faz uso crônico de altas doses de morfina (agonista puro)?",
+      "answerOptions": [
+        {
+          "text": "Haverá uma potencialização sinérgica da analgesia, aliviando a dor mais rápido.",
+          "isCorrect": false,
+          "rationale": "Como agonista parcial, a buprenorfina tem menos eficácia intrínseca e competirá pelos mesmos receptores."
+        },
+        {
+          "text": "Não haverá nenhuma mudança, pois a buprenorfina não consegue deslocar a morfina do receptor.",
+          "isCorrect": false,
+          "rationale": "A buprenorfina possui altíssima afinidade pelo receptor $\\mu$, sendo capaz de deslocar agonistas puros."
+        },
+        {
+          "text": "Pode precipitar uma síndrome de abstinência aguda.",
+          "isCorrect": true,
+          "rationale": "Ao deslocar a morfina e ativar o receptor de forma apenas 'submáxima', o nível de ativação cai bruscamente, gerando sintomas de abstinência."
+        },
+        {
+          "text": "O paciente entrará em overdose imediata devido ao bloqueio total da respiração.",
+          "isCorrect": false,
+          "rationale": "A buprenorfina tem um 'efeito teto' para depressão respiratória, sendo geralmente mais segura que os agonistas puros nesse aspecto."
+        }
+      ],
+      "hint": "Pense no que ocorre quando você substitui um estímulo máximo por um estímulo apenas parcial em um organismo adaptado."
+    },
+    {
+      "question": "Qual é a principal indicação clínica da loperamida e por que ela não produz analgesia central ou euforia?",
+      "answerOptions": [
+        {
+          "text": "Antitussígeno; porque é inativada rapidamente pela saliva.",
+          "isCorrect": false,
+          "rationale": "A loperamida não tem ação antitussígena; esse papel cabe à codeína ou dextrometorfano."
+        },
+        {
+          "text": "Antidiarreico; porque é um agonista que não atravessa a barreira hematoencefálica (BHE).",
+          "isCorrect": true,
+          "rationale": "Sua ação é restrita aos receptores $\\mu$ do plexo mioentérico no intestino, reduzindo o peristaltismo sem efeitos no SNC."
+        },
+        {
+          "text": "Anestésico local; porque sua estrutura química impede a circulação sistêmica.",
+          "isCorrect": false,
+          "rationale": "Ela é absorvida, mas o sistema de efluxo (p-glicoproteína) a remove do SNC de forma eficiente."
+        },
+        {
+          "text": "Tratamento de dependência; porque bloqueia os receptores de dopamina.",
+          "isCorrect": false,
+          "rationale": "A loperamida não é usada para dependência; o tratamento de substituição utiliza metadona ou buprenorfina."
+        }
+      ],
+      "hint": "Considere o local de ação desejado para tratar a motilidade intestinal aumentada."
+    },
+    {
+      "question": "A síndrome de abstinência por opioides é caracterizada por um estado de hiperatividade autonômica. Qual sinal pupilar é esperado nesse quadro, diferenciando-o da intoxicação aguda?",
+      "answerOptions": [
+        {
+          "text": "Miose puntiforme.",
+          "isCorrect": false,
+          "rationale": "A miose é a marca registrada da intoxicação, não da abstinência."
+        },
+        {
+          "text": "Midríase.",
+          "isCorrect": true,
+          "rationale": "A dilatação pupilar (midríase) reflete a descarga simpática que ocorre quando a inibição opioide é retirada bruscamente."
+        },
+        {
+          "text": "Anisocoria.",
+          "isCorrect": false,
+          "rationale": "A desigualdade entre as pupilas sugere lesões neurológicas focais, não um efeito farmacológico sistêmico de opioides."
+        },
+        {
+          "text": "Pupilas normorreativas.",
+          "isCorrect": false,
+          "rationale": "Dificilmente as pupilas permanecem normais em quadros agudos de intoxicação ou abstinência grave."
+        }
+      ],
+      "hint": "Lembre-se de que a abstinência é frequentemente o 'oposto' sintomático da intoxicação."
+    },
+    {
+      "question": "O tramadol é um opioide atípico com mecanismo de ação duplo. Além da ação no receptor $\\mu$, qual outro mecanismo contribui para sua eficácia e qual o risco associado ao uso com antidepressivos?",
+      "answerOptions": [
+        {
+          "text": "Bloqueio de canais de sódio; risco de arritmias ventriculares.",
+          "isCorrect": false,
+          "rationale": "Este mecanismo é mais característico de anestésicos locais ou de alguns antidepressivos tricíclicos, não do tramadol."
+        },
+        {
+          "text": "Inibição da recaptação de serotonina e noradrenalina; risco de síndrome serotoninérgica.",
+          "isCorrect": true,
+          "rationale": "O tramadol aumenta os níveis sinápticos dessas monoaminas; se usado com inibidores da recaptação de serotonina (ISRS), pode causar toxicidade grave."
+        },
+        {
+          "text": "Antagonismo de receptores NMDA; risco de dissociação psicótica.",
+          "isCorrect": false,
+          "rationale": "O antagonismo NMDA é característico da cetamina ou, em menor grau, da metadona."
+        },
+        {
+          "text": "Liberação massiva de histamina; risco de choque anafilático.",
+          "isCorrect": false,
+          "rationale": "Embora a morfina libere histamina, o tramadol tem menor propensão a esse efeito do que os opioides naturais."
+        }
+      ],
+      "hint": "Considere o efeito 'monoaminérgico' adicional deste fármaco sintético."
+    },
+    {
+      "question": "A metadona é frequentemente utilizada no tratamento de manutenção de dependentes de heroína. Qual característica farmacocinética justifica esse uso e qual parâmetro cardíaco deve ser monitorado?",
+      "answerOptions": [
+        {
+          "text": "Meia-vida curta; monitorar frequência cardíaca para bradicardia.",
+          "isCorrect": false,
+          "rationale": "A metadona tem meia-vida muito longa, o que permite uma estabilização sem os picos e vales da heroína."
+        },
+        {
+          "text": "Meia-vida longa; monitorar o intervalo QT no eletrocardiograma.",
+          "isCorrect": true,
+          "rationale": "Sua longa duração de ação evita crises de abstinência frequentes, mas o risco de prolongamento do intervalo QT pode levar a arritmias graves."
+        },
+        {
+          "text": "Absorção apenas por via retal; monitorar níveis de potássio.",
+          "isCorrect": false,
+          "rationale": "A metadona tem excelente biodisponibilidade oral, sendo esta a via preferencial no tratamento de manutenção."
+        },
+        {
+          "text": "Alta lipossolubilidade com efeito imediato; monitorar pressão arterial intracraniana.",
+          "isCorrect": false,
+          "rationale": "Ao contrário da heroína, a metadona oral tem um início de ação mais gradual, o que diminui o potencial de abuso imediato."
+        }
+      ],
+      "hint": "Relacione a duração do efeito com a conveniência terapêutica e um risco elétrico no coração."
+    },
+    {
+      "question": "Por que os opioides são contraindicados em quadros de cólica biliar, apesar de serem analgésicos potentes?",
+      "answerOptions": [
+        {
+          "text": "Porque eles aumentam a produção de bile, sobrecarregando a vesícula.",
+          "isCorrect": false,
+          "rationale": "Os opioides não afetam a síntese biliar, mas sim a dinâmica de transporte da bile."
+        },
+        {
+          "text": "Porque causam espasmo do Esfíncter de Oddi, aumentando a pressão biliar e piorando a dor.",
+          "isCorrect": true,
+          "rationale": "O aumento da pressão nas vias biliares pode agravar o quadro obstrutivo e a dor visceral, contrariando o efeito analgésico central."
+        },
+        {
+          "text": "Devido ao risco de ruptura hepática por acúmulo de metabólitos tóxicos.",
+          "isCorrect": false,
+          "rationale": "Não há evidência de que doses terapêuticas causem dano estrutural agudo ao fígado dessa maneira."
+        },
+        {
+          "text": "Pois eles inibem a secreção de colecistoquinina (CCK), paralisando a vesícula.",
+          "isCorrect": false,
+          "rationale": "A contraindicação é baseada no efeito mecânico sobre o esfíncter muscular na saída do ducto colédoco."
+        }
+      ],
+      "hint": "Pense no efeito contrátil muscular em válvulas e esfíncteres do trato gastrointestinal."
+    }
+  ]
+}

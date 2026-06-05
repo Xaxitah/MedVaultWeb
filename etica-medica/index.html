@@ -20,6 +20,12 @@
 
 <main>
 
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('media', event)">🎧 Mídia</button>
+    <button class="tab-btn" onclick="showTab('resumos', event)">📄 Resumos</button>
+  </div>
+
+  <div id="media" class="prova-section visible">
   <h2 class="section-title">P1 — Materiais por Grupo Temático</h2>
 
   <!-- T01–T03 -->
@@ -66,9 +72,38 @@
     </p>
   </div>
 
+  </div><!-- /media -->
+
+  <div id="resumos" class="prova-section">
+    <h2 class="section-title">📄 Resumos P1 — T01 a T10</h2>
+    <div class="resumo-section">
+      <div class="resumo-grid">
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-01-comunicacion-medica/tema-01-parte-1.html" target="_blank">T01 — Comunicação Médica</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-02-etica-medica/tema-02-parte-1.html" target="_blank">T02 — Ética Médica</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-03-bioetica/tema-03-parte-1.html" target="_blank">T03 — Bioética</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-04-principios-bioeticos/tema-04-parte-1.html" target="_blank">T04 — Princípios Bioéticos</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-05-iatrogenia/tema-05-parte-1.html" target="_blank">T05 — Iatrogenia</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-06-relacion-medico-paciente/tema-06-parte-1.html" target="_blank">T06 — Relação Médico-Paciente</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-07-deontologia-medica/tema-07-parte-1.html" target="_blank">T07 — Deontologia Médica</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-08-historia-etica-medica/tema-08-parte-1.html" target="_blank">T08 — História da Ética Médica</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-09-consentimiento-informado/tema-09-parte-1.html" target="_blank">T09 — Consentimento Informado</a>
+        <a class="resumo-link" href="../03-disciplinas/etica-medica/revisao/resumos/p1/p1-tema-10-secreto-medico/tema-10-parte-1.html" target="_blank">T10 — Sigilo Médico</a>
+      </div>
+    </div>
+  </div><!-- /resumos -->
+
 </main>
 
 <footer>MED-Vault 2.0 · Ética Médica · <a href="../">← Voltar ao início</a></footer>
+
+<script>
+function showTab(id, event) {
+  document.querySelectorAll('.prova-section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>

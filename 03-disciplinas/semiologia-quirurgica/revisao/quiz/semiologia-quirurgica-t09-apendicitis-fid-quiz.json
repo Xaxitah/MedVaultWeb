@@ -1,0 +1,317 @@
+{
+  "title": "Apendicite Quiz",
+  "questions": [
+    {
+      "question": "Qual é a sequência cronológica de Murphy clássica na apendicite aguda?",
+      "answerOptions": [
+        {
+          "text": "Dor epigástrica $\\rightarrow$ náuseas/vômitos $\\rightarrow$ febre",
+          "isCorrect": true,
+          "rationale": "A sequência clássica inicia com dor visceral inespecífica, seguida de sintomas gastrointestinais e, por último, a febre."
+        },
+        {
+          "text": "Febre $\\rightarrow$ dor em FID $\\rightarrow$ vômitos",
+          "isCorrect": false,
+          "rationale": "O início com febre é mais sugestivo de processos infecciosos como a adenite mesentérica, não da apendicite típica."
+        },
+        {
+          "text": "Vômitos $\\rightarrow$ febre $\\rightarrow$ dor em FID",
+          "isCorrect": false,
+          "rationale": "Na apendicite, a dor quase invariavelmente precede os vômitos e a febre."
+        },
+        {
+          "text": "Dor em FID $\\rightarrow$ febre $\\rightarrow$ anorexia",
+          "isCorrect": false,
+          "rationale": "A anorexia costuma ser um dos sintomas iniciais concomitantes à dor epigástrica, antes da localização em FID e da febre."
+        }
+      ],
+      "hint": "Lembre-se de que a febre nunca é o sintoma inicial nesta patologia."
+    },
+    {
+      "question": "Em relação à localização anatômica, qual é a posição mais frequente do apêndice cecal encontrada na população?",
+      "answerOptions": [
+        {
+          "text": "Pelviana",
+          "isCorrect": false,
+          "rationale": "Embora frequente ($24\\%$), a posição pelviana é a segunda mais comum."
+        },
+        {
+          "text": "Retrocecal ascendente",
+          "isCorrect": true,
+          "rationale": "A posição retrocecal ocorre em cerca de $44\\%$ dos casos, sendo a variação anatômica mais prevalente."
+        },
+        {
+          "text": "Descendente interna",
+          "isCorrect": false,
+          "rationale": "Esta posição ocorre em cerca de $16\\%$ dos casos, não sendo a majoritária."
+        },
+        {
+          "text": "Subhepática",
+          "isCorrect": false,
+          "rationale": "A posição ascendente interna ou subhepática é rara, ocorrendo em cerca de $3\\%$ dos casos."
+        }
+      ],
+      "hint": "Esta posição costuma estar associada a uma dor mais alta e lateral, podendo mimetizar cólica renal."
+    },
+    {
+      "question": "O que caracteriza o fenômeno clínico conhecido como 'calma traidora' na evolução da apendicite?",
+      "answerOptions": [
+        {
+          "text": "A migração da dor do epigástrio para a fossa ilíaca direita",
+          "isCorrect": false,
+          "rationale": "A migração da dor é um processo fisiopatológico esperado de transição entre dor visceral e parietal, não uma pausa de alívio."
+        },
+        {
+          "text": "A redução da febre após a administração de analgésicos",
+          "isCorrect": false,
+          "rationale": "O termo refere-se a uma mudança espontânea no quadro clínico, não induzida por medicação."
+        },
+        {
+          "text": "O cessar temporário da dor logo após a perfuração do apêndice",
+          "isCorrect": true,
+          "rationale": "Quando ocorre a perfuração, a pressão intraluminal cai bruscamente, aliviando a dor por cerca de 10 minutos antes do início da peritonite generalizada."
+        },
+        {
+          "text": "A ausência de sinais de irritação peritoneal no idoso",
+          "isCorrect": false,
+          "rationale": "Embora a clínica no idoso possa ser frustra, a 'calma traidora' é um evento específico ligado à ruptura do órgão."
+        }
+      ],
+      "hint": "Ocorre em um momento crítico de complicação onde o paciente sente uma melhora passageira."
+    },
+    {
+      "question": "No Score de Alvarado, quais critérios possuem pontuação de $2$ pontos (Peso maior)?",
+      "answerOptions": [
+        {
+          "text": "Febre e Desvio à esquerda",
+          "isCorrect": false,
+          "rationale": "Tanto a febre quanto o desvio à esquerda no hemograma valem apenas $1$ ponto cada."
+        },
+        {
+          "text": "Náuseas/Vômitos e Anorexia",
+          "isCorrect": false,
+          "rationale": "Sintomas constitucionais e gastrointestinais menores valem $1$ ponto no score."
+        },
+        {
+          "text": "Dor na Fossa Ilíaca Direita (CID) e Leucocitose",
+          "isCorrect": true,
+          "rationale": "A localização específica da dor e o aumento significativo de glóbulos brancos são os indicadores mais fortes, valendo $2$ pontos cada."
+        },
+        {
+          "text": "Migração da dor e Dor ao rebote",
+          "isCorrect": false,
+          "rationale": "Estes sinais clínicos são importantes mas pontuam apenas $1$ no sistema de Alvarado."
+        }
+      ],
+      "hint": "Pense nos dois critérios que melhor localizam e confirmam a gravidade da inflamação."
+    },
+    {
+      "question": "A manobra de Metzer (Sinal do Psoas) é especialmente útil para identificar qual localização do apêndice?",
+      "answerOptions": [
+        {
+          "text": "Apendicite Pelviana",
+          "isCorrect": false,
+          "rationale": "Para a localização pelviana, a manobra mais específica é a do músculo Obturador."
+        },
+        {
+          "text": "Apendicite Retrocecal",
+          "isCorrect": true,
+          "rationale": "O apêndice inflamado em posição posterior entra em contato com o músculo psoas, causando dor quando este se contrai ou é estirado."
+        },
+        {
+          "text": "Apendicite Ascendente Interna",
+          "isCorrect": false,
+          "rationale": "Esta localização costuma responder melhor à palpação no ponto de Morris."
+        },
+        {
+          "text": "Apendicite Subhepática",
+          "isCorrect": false,
+          "rationale": "Apendicites muito altas mimetizam colecistite e não costumam irritar o músculo psoas na pelve."
+        }
+      ],
+      "hint": "Esta manobra envolve a elevação do membro inferior direito estendido ou a hiperextensão da coxa."
+    },
+    {
+      "question": "Qual é a principal diferença clínica inicial entre a Apendicite Aguda e a Adenite Mesentérica?",
+      "answerOptions": [
+        {
+          "text": "A Adenite Mesentérica começa com febre antes da dor abdominal",
+          "isCorrect": true,
+          "rationale": "Diferente da apendicite, onde a dor precede a febre, na adenite mesentérica a febre alta costuma ser o sintoma inaugural, muitas vezes associada a quadros virais prévios."
+        },
+        {
+          "text": "A Apendicite Aguda apresenta linfocitose no hemograma",
+          "isCorrect": false,
+          "rationale": "A apendicite gera neutrofilia (infecção bacteriana), enquanto a adenite frequentemente apresenta linfocitose (infecção viral)."
+        },
+        {
+          "text": "Somente a Adenite Mesentérica apresenta dor na Fossa Ilíaca Direita",
+          "isCorrect": false,
+          "rationale": "Ambas podem apresentar dor na mesma região, o que torna o diagnóstico diferencial desafiador."
+        },
+        {
+          "text": "A Adenite Mesentérica é sempre de tratamento cirúrgico",
+          "isCorrect": false,
+          "rationale": "Diferente da apendicite, a adenite mesentérica é uma condição médica de tratamento conservador."
+        }
+      ],
+      "hint": "Considere a ordem cronológica dos sintomas de Murphy para distinguir as duas."
+    },
+    {
+      "question": "Durante o exame físico, o Sinal de Rovsing é pesquisado através da:",
+      "answerOptions": [
+        {
+          "text": "Compressão da Fossa Ilíaca Esquerda, gerando dor na Fossa Ilíaca Direita",
+          "isCorrect": true,
+          "rationale": "O mecanismo baseia-se no deslocamento de gases pelo cólon até o ceco, distendendo a região inflamada no lado oposto."
+        },
+        {
+          "text": "Descompressão brusca no ponto de McBurney",
+          "isCorrect": false,
+          "rationale": "Este procedimento descreve a pesquisa do Sinal de Blumberg, que indica irritação peritoneal."
+        },
+        {
+          "text": "Percussão dolorosa da região lombar direita",
+          "isCorrect": false,
+          "rationale": "A percussão lombar dolorosa refere-se ao sinal de Giordano, associado a patologias renais."
+        },
+        {
+          "text": "Rotação interna da coxa direita flexionada",
+          "isCorrect": false,
+          "rationale": "Este procedimento descreve a manobra do Obturador para apendicite pelviana."
+        }
+      ],
+      "hint": "Baseia-se no deslocamento retrógrado de gases no intestino grosso."
+    },
+    {
+      "question": "Sobre o Plastrón Apendicular, qual o manejo recomendado para o tipo 'Efetivo'?",
+      "answerOptions": [
+        {
+          "text": "Cirurgia de emergência imediata",
+          "isCorrect": false,
+          "rationale": "A cirurgia imediata em um plastrón efetivo pode causar lesões iatrogênicas devido à grande inflamação e aderências."
+        },
+        {
+          "text": "Tratamento conservador com antibióticos e cirurgia após $3$ a $6$ meses",
+          "isCorrect": true,
+          "rationale": "O plastrón efetivo consegue conter a infecção, permitindo o tratamento médico inicial e a 'apendicectomia de intervalo' posterior."
+        },
+        {
+          "text": "Drenagem percutânea obrigatória em todos os casos",
+          "isCorrect": false,
+          "rationale": "A drenagem é reservada para abscessos formados, não sendo a regra para todo plastrón efetivo."
+        },
+        {
+          "text": "Uso exclusivo de analgésicos e alta hospitalar imediata",
+          "isCorrect": false,
+          "rationale": "O paciente requer internação para antibioticoterapia endovenosa e vigilância rigorosa."
+        }
+      ],
+      "hint": "Este tipo de plastrón é uma defesa do organismo que 'bloqueia' o processo inflamatório."
+    },
+    {
+      "question": "Qual achado na radiografia simples de abdome possui alto valor preditivo positivo para apendicite aguda?",
+      "answerOptions": [
+        {
+          "text": "Presença de níveis hidroaéreos no quadrante superior esquerdo",
+          "isCorrect": false,
+          "rationale": "Níveis hidroaéreos são inespecíficos e podem ocorrer em diversos quadros de obstrução ou íleo."
+        },
+        {
+          "text": "Presença de coprólito (fecalito) calcificado no quadrante inferior direito",
+          "isCorrect": true,
+          "rationale": "A identificação de um apendicolito calcificado em um paciente com dor abdominal é fortíssimo indício de apendicite."
+        },
+        {
+          "text": "Pneumoperitônio subdiafragmático",
+          "isCorrect": false,
+          "rationale": "O pneumoperitônio (Sinal de Popper) indica perfuração de víscera oca, mas não é específico para o início da apendicite."
+        },
+        {
+          "text": "Presença de ar no interior do reto",
+          "isCorrect": false,
+          "rationale": "A presença de ar no reto é um achado normal, enquanto sua ausência total pode sugerir obstrução intestinal."
+        }
+      ],
+      "hint": "Trata-se de uma estrutura endurecida que frequentemente obstrui a luz do apêndice."
+    },
+    {
+      "question": "Ao realizar o exame físico, qual manobra deve ser executada PRIMEIRO para descartar peritonite generalizada?",
+      "answerOptions": [
+        {
+          "text": "Sinal de Blumberg",
+          "isCorrect": false,
+          "rationale": "Blumberg é realizado no local da dor e costuma ser uma das últimas manobras para evitar desconforto excessivo precoce."
+        },
+        {
+          "text": "Sinal de Gueneau de Mussi (Chinazo de Mussi)",
+          "isCorrect": true,
+          "rationale": "Consiste na descompressão súbita em múltiplos quadrantes; se positivo, indica irritação peritoneal difusa (generalizada)."
+        },
+        {
+          "text": "Manobra do Obturador",
+          "isCorrect": false,
+          "rationale": "Esta é uma manobra de localização para apêndice pelviano, não serve para avaliar peritonite generalizada."
+        },
+        {
+          "text": "Toque Retal",
+          "isCorrect": false,
+          "rationale": "O toque retal é um exame complementar importante para casos duvidosos, mas não é a primeira manobra da palpação abdominal."
+        }
+      ],
+      "hint": "Esta manobra envolve a descompressão em locais distantes do ponto de dor máxima."
+    },
+    {
+      "question": "Qual fase anatomopatológica da apendicite é caracterizada pela presença de necrose e microperfurações na parede apendicular?",
+      "answerOptions": [
+        {
+          "text": "Catarral ou Congestiva",
+          "isCorrect": false,
+          "rationale": "Esta é a primeira fase, onde há apenas edema e infiltrado leucocitário microscópico."
+        },
+        {
+          "text": "Flemonosa ou Fibrinosa",
+          "isCorrect": false,
+          "rationale": "Nesta fase há exsudato purulento, mas a parede ainda mantém integridade contra a necrose franca."
+        },
+        {
+          "text": "Gangrenosa ou Supurada",
+          "isCorrect": true,
+          "rationale": "A fase gangrenosa envolve isquemia tecidual, áreas arroheadas de necrose e início de perda de integridade da parede."
+        },
+        {
+          "text": "Perfurada",
+          "isCorrect": false,
+          "rationale": "Na fase perfurada, já houve a ruptura completa com extravasamento de conteúdo purulento para a cavidade."
+        }
+      ],
+      "hint": "Esta fase precede a ruptura total e indica um comprometimento vascular severo."
+    },
+    {
+      "question": "O sinal de Lennander é de grande valor diagnóstico e consiste na:",
+      "answerOptions": [
+        {
+          "text": "Diferença entre a temperatura axilar e retal maior que $0,5$ a $1,0^{\\circ}C$",
+          "isCorrect": true,
+          "rationale": "A dissociação axilo-retal reflete o processo inflamatório pélvico/abdominal localizado."
+        },
+        {
+          "text": "Contratura muscular que desvia o umbigo para a direita",
+          "isCorrect": false,
+          "rationale": "O desvio do umbigo por contratura muscular é conhecido como sinal de Chutro."
+        },
+        {
+          "text": "Dor na fossa ilíaca direita ao tossir",
+          "isCorrect": false,
+          "rationale": "A dor ao tossir é o sinal de Dunphy."
+        },
+        {
+          "text": "Hiperestesia cutânea no triângulo de Sherren",
+          "isCorrect": false,
+          "rationale": "A hiperestesia cutânea é um achado de irritação peritoneal mas não define o sinal de Lennander."
+        }
+      ],
+      "hint": "Envolve a comparação de medidas térmicas em dois locais diferentes do corpo."
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "title": "Hemostasia Quiz",
+  "questions": [
+    {
+      "question": "A hemostasia é dividida em três etapas sequenciais após uma lesão vascular. Qual é a sequência correta desses eventos?",
+      "answerOptions": [
+        {
+          "text": "Espasmo vascular $\\rightarrow$ Tampão plaquetário $\\rightarrow$ Coagulação",
+          "isCorrect": true,
+          "rationale": "A resposta fisiológica imediata é a vasoconstrição, seguida pela formação do plug de plaquetas e finalizada com a estabilização pela fibrina."
+        },
+        {
+          "text": "Coagulação $\\rightarrow$ Adesão plaquetária $\\rightarrow$ Fibrinólise",
+          "isCorrect": false,
+          "rationale": "A coagulação é a etapa final da formação do trombo, e a fibrinólise é o processo de dissolução, não de formação inicial."
+        },
+        {
+          "text": "Ativação de plaquetas $\\rightarrow$ Espasmo vascular $\\rightarrow$ Cascata de coagulação",
+          "isCorrect": false,
+          "rationale": "Embora a ativação plaquetária seja precoce, o espasmo vascular (vasoconstrição reflexa) ocorre de forma imediata à lesão."
+        },
+        {
+          "text": "Agregação plaquetária $\\rightarrow$ Vasodilatação $\\rightarrow$ Formação de fibrina",
+          "isCorrect": false,
+          "rationale": "Ocorre vasoconstrição para reduzir o fluxo sanguíneo no local da lesão, e não vasodilatação."
+        }
+      ],
+      "hint": "Pense no processo que começa com a contração do vaso e termina com a estabilização do coágulo por fibras."
+    },
+    {
+      "question": "Por que o efeito antiagregante do Ácido Acetilsalicílico (AAS) perdura por 7 a 10 dias, mesmo com uma meia-vida plasmática curta?",
+      "answerOptions": [
+        {
+          "text": "Porque ele inibe a $COX-1$ de forma irreversível e as plaquetas não sintetizam novas enzimas.",
+          "isCorrect": true,
+          "rationale": "As plaquetas são anucleadas, logo não conseguem regenerar a $COX-1$ acetilada pelo AAS durante seu tempo de vida (7-10 dias)."
+        },
+        {
+          "text": "Porque o fármaco fica armazenado nos tecidos adiposos por longos períodos.",
+          "isCorrect": false,
+          "rationale": "O AAS é rapidamente metabolizado; a duração do efeito deve-se à natureza da ligação enzimática, não ao armazenamento tecidual."
+        },
+        {
+          "text": "Porque ele bloqueia os receptores $P2Y_{12}$ de forma competitiva e duradoura.",
+          "isCorrect": false,
+          "rationale": "O bloqueio de $P2Y_{12}$ é o mecanismo das tienopiridinas (como o clopidogrel), não do AAS."
+        },
+        {
+          "text": "Porque ele estimula a produção contínua de prostaciclina ($PGI_2$) pelo endotélio.",
+          "isCorrect": false,
+          "rationale": "Em doses baixas, o AAS foca na inibição do $TxA_2$ plaquetário; a estimulação de $PGI_2$ não explicaria a duração do efeito antiagregante."
+        }
+      ],
+      "hint": "Considere o fato de que as plaquetas não possuem núcleo para produzir novas proteínas."
+    },
+    {
+      "question": "Sobre o Clopidogrel, qual fator genético pode comprometer significativamente sua eficácia clínica?",
+      "answerOptions": [
+        {
+          "text": "Polimorfismo de perda de função no citocromo $CYP2C19$.",
+          "isCorrect": true,
+          "rationale": "O clopidogrel é uma pró-droga que depende da ativação pelo $CYP2C19$; metabolizadores lentos não geram o metabólito ativo adequadamente."
+        },
+        {
+          "text": "Mutação no receptor $GPIIb/IIIa$.",
+          "isCorrect": false,
+          "rationale": "Embora o receptor seja o alvo final da agregação, a falha do clopidogrel está ligada à sua ativação metabólica inicial."
+        },
+        {
+          "text": "Deficiência congênita de Antitrombina III.",
+          "isCorrect": false,
+          "rationale": "A Antitrombina III é o cofator necessário para a ação da Heparina, não influenciando a via do ADP das plaquetas."
+        },
+        {
+          "text": "Super-expressão da enzima $VKORC1$.",
+          "isCorrect": false,
+          "rationale": "A $VKORC1$ é o alvo da varfarina, relacionada ao ciclo da vitamina K, e não à ativação do clopidogrel."
+        }
+      ],
+      "hint": "O clopidogrel precisa ser transformado em sua forma ativa pelo fígado antes de funcionar."
+    },
+    {
+      "question": "Qual é a principal diferença no mecanismo de ação entre a Heparina Não Fracionada (HNF) e a Heparina de Baixo Peso Molecular (HBPM)?",
+      "answerOptions": [
+        {
+          "text": "A HNF inibe igualmente os fatores $IIa$ e $Xa$, enquanto a HBPM é mais seletiva para o fator $Xa$.",
+          "isCorrect": true,
+          "rationale": "Devido ao tamanho molecular, a HNF consegue formar o complexo ternário com a trombina, enquanto a HBPM foca predominantemente no fator $Xa$."
+        },
+        {
+          "text": "A HNF age diretamente na trombina, enquanto a HBPM necessita de Antitrombina III.",
+          "isCorrect": false,
+          "rationale": "Ambas as heparinas são anticoagulantes indiretos que dependem da ativação da Antitrombina III."
+        },
+        {
+          "text": "A HBPM possui reversão completa com protamina, enquanto a HNF não é reversível.",
+          "isCorrect": false,
+          "rationale": "Na verdade, é o oposto: a protamina reverte completamente a HNF, mas apenas parcialmente a HBPM."
+        },
+        {
+          "text": "A HNF é administrada apenas por via oral, ao passo que a HBPM é injetável.",
+          "isCorrect": false,
+          "rationale": "Ambas as heparinas são fármacos de uso parenteral (injetável) e não são absorvidas por via oral."
+        }
+      ],
+      "hint": "Pense no tamanho da molécula e em qual fator da coagulação ela consegue 'abraçar' junto com a antitrombina."
+    },
+    {
+      "question": "A Trombocitopenia Induzida por Heparina (TIH) Tipo II é uma complicação grave caracterizada por:",
+      "answerOptions": [
+        {
+          "text": "Um estado pró-trombótico mediado por anticorpos $IgG$ contra o complexo fator plaquetário 4/heparina.",
+          "isCorrect": true,
+          "rationale": "Diferente de outras plaquetopenias, a TIH tipo II causa ativação plaquetária intensa, levando a um alto risco de trombose, apesar do baixo número de plaquetas."
+        },
+        {
+          "text": "Um sangramento generalizado devido à destruição mecânica das plaquetas.",
+          "isCorrect": false,
+          "rationale": "O risco paradoxal da TIH tipo II não é o sangramento, mas sim a formação de novos trombos (trombose)."
+        },
+        {
+          "text": "Uma queda leve e transitória das plaquetas nos primeiros dois dias de uso.",
+          "isCorrect": false,
+          "rationale": "Essa descrição refere-se à TIH tipo I, que é não imune e geralmente não apresenta riscos clínicos significativos."
+        },
+        {
+          "text": "Uma reação alérgica imediata que impede a ligação da heparina ao fator $Xa$.",
+          "isCorrect": false,
+          "rationale": "A TIH é uma reação imunomediada tardia (5-10 dias) que afeta a ativação plaquetária, não apenas a atividade anticoagulante."
+        }
+      ],
+      "hint": "É um evento paradoxal: poucas plaquetas no sangue, mas alto risco de coágulos."
+    },
+    {
+      "question": "Durante o início do tratamento com Varfarina, por que é necessário sobrepor o uso de Heparina por pelo menos 5 dias?",
+      "answerOptions": [
+        {
+          "text": "Porque as proteínas anticoagulantes C e S caem mais rápido que os fatores pró-coagulantes, gerando um estado pró-trombótico inicial.",
+          "isCorrect": true,
+          "rationale": "A proteína C tem meia-vida curta ($\\approx 8h$); sua queda rápida antes dos fatores $II$ e $X$ pode causar hipercoagulabilidade paradoxal."
+        },
+        {
+          "text": "Porque a varfarina só começa a ser absorvida pelo trato gastrointestinal após a quinta dose.",
+          "isCorrect": false,
+          "rationale": "A varfarina é bem absorvida, mas seu efeito depende da depleção dos fatores de coagulação já sintetizados, o que leva tempo."
+        },
+        {
+          "text": "Porque a heparina atua como um cofator enzimático essencial para a varfarina inibir a $VKORC1$.",
+          "isCorrect": false,
+          "rationale": "Os mecanismos são independentes: a heparina ativa a antitrombina e a varfarina inibe a regeneração da vitamina K."
+        },
+        {
+          "text": "Para evitar que a varfarina cause sangramentos intracranianos imediatos.",
+          "isCorrect": false,
+          "rationale": "A sobreposição visa prevenir trombose, e não evitar sangramentos (que são riscos de ambos os fármacos)."
+        }
+      ],
+      "hint": "Considere o tempo de vida das proteínas anticoagulantes naturais do corpo que também dependem da Vitamina K."
+    },
+    {
+      "question": "A Dabigatrana diferencia-se da Rivaroxabana e da Apixabana principalmente pelo seu alvo molecular. Qual é esse alvo?",
+      "answerOptions": [
+        {
+          "text": "Inibição direta da Trombina (Fator $IIa$).",
+          "isCorrect": true,
+          "rationale": "A dabigatrana é o principal representante dos inibidores diretos da trombina, enquanto a rivaroxabana e apixabana inibem o fator $Xa$."
+        },
+        {
+          "text": "Inibição direta do Fator $Xa$.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo dos 'xabanas' (Rivaroxabana, Apixabana, Edoxabana)."
+        },
+        {
+          "text": "Bloqueio irreversível da síntese de Vitamina K reduzida.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo de ação dos anticoagulantes cumarínicos, como a varfarina."
+        },
+        {
+          "text": "Ativação do Plasminogênio em Plasmina.",
+          "isCorrect": false,
+          "rationale": "Essa é a função dos fármacos fibrinolíticos (trombolíticos), não dos anticoagulantes orais diretos."
+        }
+      ],
+      "hint": "Pense no fator que converte o fibrinogênio em fibrina, o último passo da cascata."
+    },
+    {
+      "question": "Qual das seguintes situações representa uma contraindicação ABSOLUTA ao uso de fibrinolíticos (ex: Alteplase)?",
+      "answerOptions": [
+        {
+          "text": "Histórico de AVC hemorrágico prévio em qualquer momento da vida.",
+          "isCorrect": true,
+          "rationale": "Devido ao risco altíssimo de novo sangramento fatal, qualquer AVC hemorrágico anterior proíbe o uso de trombolíticos."
+        },
+        {
+          "text": "Idade superior a 65 anos.",
+          "isCorrect": false,
+          "rationale": "A idade avançada pode ser um fator de risco, mas não é uma contraindicação absoluta para a trombólise."
+        },
+        {
+          "text": "Uso prévio de AAS nas últimas 24 horas.",
+          "isCorrect": false,
+          "rationale": "O uso de AAS é comum em pacientes vasculares e não impede o uso de fibrinolíticos, embora exija cautela."
+        },
+        {
+          "text": "Hipertensão arterial leve controlada com medicamentos.",
+          "isCorrect": false,
+          "rationale": "Apenas a hipertensão grave e não controlada ($>180/110$ $mmHg$) no momento do atendimento é considerada contraindicação."
+        }
+      ],
+      "hint": "Busque por uma condição que envolva sangramento prévio em um local onde o corpo não suportaria uma nova hemorragia."
+    },
+    {
+      "question": "O Fondaparinux é um pentassacarídeo sintético que apresenta uma característica importante em relação à sua reversão:",
+      "answerOptions": [
+        {
+          "text": "Não possui antídoto específico, e a protamina não é eficaz para revertê-lo.",
+          "isCorrect": true,
+          "rationale": "Por ser uma molécula muito pequena e sintética, a protamina não consegue se ligar a ele para neutralizar seu efeito."
+        },
+        {
+          "text": "É totalmente revertido por altas doses de Vitamina K.",
+          "isCorrect": false,
+          "rationale": "A vitamina K reverte apenas fármacos que interferem no seu ciclo, como a varfarina."
+        },
+        {
+          "text": "Pode ser neutralizado pelo uso de Idarucizumab.",
+          "isCorrect": false,
+          "rationale": "O Idarucizumab é um anticorpo específico para a reversão da Dabigatrana, não do Fondaparinux."
+        },
+        {
+          "text": "A protamina reverte 100% da sua atividade anticoagulante.",
+          "isCorrect": false,
+          "rationale": "A protamina só é eficaz na reversão completa da Heparina Não Fracionada devido ao seu tamanho e carga."
+        }
+      ],
+      "hint": "Esta molécula é tão pequena que a 'rede' da protamina não consegue pegá-la."
+    },
+    {
+      "question": "Sobre os inibidores do receptor $P2Y_{12}$, o Ticagrelor diferencia-se do Clopidogrel por ser:",
+      "answerOptions": [
+        {
+          "text": "Uma droga ativa (não pró-droga) com ligação reversível ao receptor.",
+          "isCorrect": true,
+          "rationale": "Diferente das tienopiridinas, o ticagrelor não precisa de ativação hepática e sua inibição plaquetária cessa mais rapidamente após a suspensão."
+        },
+        {
+          "text": "Um fármaco que inibe a $COX-1$ de forma mais potente que o AAS.",
+          "isCorrect": false,
+          "rationale": "O ticagrelor atua no receptor de ADP ($P2Y_{12}$), e não na via da ciclooxigenase."
+        },
+        {
+          "text": "Uma pró-droga que depende exclusivamente do $CYP2C19$.",
+          "isCorrect": false,
+          "rationale": "O clopidogrel é a pró-droga dependente de $CYP2C19$; o ticagrelor já é administrado em sua forma ativa."
+        },
+        {
+          "text": "Administrado exclusivamente por via intravenosa em ambiente hospitalar.",
+          "isCorrect": false,
+          "rationale": "O ticagrelor é um medicamento de uso oral, utilizado tanto no hospital quanto na manutenção ambulatorial."
+        }
+      ],
+      "hint": "Pense na rapidez do início de ação e na possibilidade de o efeito passar mais rápido se o remédio for parado."
+    }
+  ]
+}

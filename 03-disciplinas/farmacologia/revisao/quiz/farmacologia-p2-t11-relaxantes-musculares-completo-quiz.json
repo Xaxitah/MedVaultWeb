@@ -1,0 +1,265 @@
+{
+  "title": "Farmacologia Quiz",
+  "questions": [
+    {
+      "question": "Qual o mecanismo de ação inicial da succinilcolina na junção neuromuscular?",
+      "answerOptions": [
+        {
+          "text": "Antagonismo competitivo dos receptores nicotínicos pós-sinápticos.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo dos bloqueadores não despolarizantes, como o rocurônio, e não da succinilcolina."
+        },
+        {
+          "text": "Agonismo persistente que causa despolarização prolongada e dessensibilização.",
+          "isCorrect": true,
+          "rationale": "A succinilcolina liga-se ao receptor nicotínico e o mantém aberto, impedindo a repolarização necessária para um novo potencial de ação."
+        },
+        {
+          "text": "Bloqueio da liberação de vesículas de acetilcolina no terminal pré-sináptico.",
+          "isCorrect": false,
+          "rationale": "Esse mecanismo é característico da toxina botulínica, que impede a exocitose do neurotransmissor."
+        },
+        {
+          "text": "Inibição direta dos canais de cálcio no retículo sarcoplasmático.",
+          "isCorrect": false,
+          "rationale": "Esta ação é específica do dantroleno, atuando diretamente no interior da fibra muscular."
+        }
+      ],
+      "hint": "Pense no motivo pelo qual este fármaco causa fasciculações antes de gerar a paralisia flácida."
+    },
+    {
+      "question": "Por que o atracúrio é frequentemente a escolha ideal para pacientes com insuficiência renal e hepática concomitante?",
+      "answerOptions": [
+        {
+          "text": "Devido ao seu metabolismo exclusivo pela butirilcolinesterase plasmática.",
+          "isCorrect": false,
+          "rationale": "O mivacúrio é o fármaco que depende majoritariamente da colinesterase plasmática para sua degradação."
+        },
+        {
+          "text": "Porque ele sofre eliminação de Hofmann, um processo de degradação espontânea.",
+          "isCorrect": true,
+          "rationale": "A eliminação de Hofmann ocorre independentemente da função orgânica, baseando-se apenas no pH e na temperatura plasmática."
+        },
+        {
+          "text": "Pela sua rápida reversão através do encapsulamento molecular pelo sugamadex.",
+          "isCorrect": false,
+          "rationale": "O sugamadex é específico para o rocurônio e o vecurônio, não tendo efeito sobre o atracúrio."
+        },
+        {
+          "text": "Por possuir uma excreção puramente biliar, poupando os rins.",
+          "isCorrect": false,
+          "rationale": "Embora o rocurônio tenha eliminação biliar significativa, o atracúrio se destaca pela degradação química espontânea no plasma."
+        }
+      ],
+      "hint": "Lembre-se do processo químico que ocorre no plasma sem a necessidade de enzimas ou filtros orgânicos."
+    },
+    {
+      "question": "Um paciente desenvolve rigidez muscular intensa e hipertermia súbita após administração de succinilcolina e halotano. Qual o tratamento imediato indicado?",
+      "answerOptions": [
+        {
+          "text": "Administração de Neostigmina associada à Atropina.",
+          "isCorrect": false,
+          "rationale": "A neostigmina agravaria o bloqueio despolarizante e não trata a causa fisiopatológica da hipertermia maligna."
+        },
+        {
+          "text": "Infusão intravenosa de Dantroleno.",
+          "isCorrect": true,
+          "rationale": "O dantroleno bloqueia os canais de rianodina no retículo sarcoplasmático, interrompendo a liberação excessiva de $Ca^{2+}$ que causa o quadro."
+        },
+        {
+          "text": "Reversão rápida com Sugamadex.",
+          "isCorrect": false,
+          "rationale": "O sugamadex não possui ação sobre a succinilcolina nem sobre os processos intracelulares do cálcio no muscle."
+        },
+        {
+          "text": "Administração de Gluconato de Cálcio para estabilizar a membrana.",
+          "isCorrect": false,
+          "rationale": "Embora usado em hipercalemia, o cálcio adicional poderia piorar o processo de contração sustentada na hipertermia maligna."
+        }
+      ],
+      "hint": "Procure o fármaco que atua diretamente no bloqueio da liberação de cálcio intracelular."
+    },
+    {
+      "question": "A utilização de neostigmina para reverter bloqueadores não despolarizantes exige a coadministração de atropina. Qual a finalidade da atropina nesse contexto?",
+      "answerOptions": [
+        {
+          "text": "Potencializar o efeito da neostigmina na placa motora.",
+          "isCorrect": false,
+          "rationale": "A atropina é um antagonista muscarínico e não atua nos receptores nicotínicos da placa motora."
+        },
+        {
+          "text": "Prevenir efeitos colaterais muscarínicos, como bradicardia e sialorreia.",
+          "isCorrect": true,
+          "rationale": "A neostigmina aumenta a acetilcolina em todo o corpo; a atropina bloqueia os efeitos indesejados nos receptores muscarínicos autonômicos."
+        },
+        {
+          "text": "Aumentar a velocidade de excreção renal do bloqueador neuromuscular.",
+          "isCorrect": false,
+          "rationale": "A atropina não interfere na farmacocinética de eliminação dos relaxantes musculares."
+        },
+        {
+          "text": "Evitar a ocorrência de fasciculações musculares residuais.",
+          "isCorrect": false,
+          "rationale": "As fasciculações estão ligadas a agentes despolarizantes; a função da atropina é puramente de proteção autonômica contra excesso de acetilcolina."
+        }
+      ],
+      "hint": "Pense nos efeitos que o aumento sistêmico de acetilcolina teria no coração e nas glândulas."
+    },
+    {
+      "question": "Qual é a principal contraindicação para o uso de succinilcolina em pacientes com queimaduras extensas ou grandes traumas?",
+      "answerOptions": [
+        {
+          "text": "Risco de induzir hipotensão severa por liberação de histamina.",
+          "isCorrect": false,
+          "rationale": "Embora libere histamina levemente, o risco fatal nesses pacientes está relacionado ao desequilíbrio eletrolítico."
+        },
+        {
+          "text": "Risco de hipercalemia grave e arritmias cardíacas.",
+          "isCorrect": true,
+          "rationale": "A despolarização maciça em receptores supranumerários (upregulation) causa saída excessiva de $K^{+}$ para o espaço extracelular."
+        },
+        {
+          "text": "Possibilidade de causar falência renal aguda por eliminação de Hofmann.",
+          "isCorrect": false,
+          "rationale": "A succinilcolina é metabolizada pela pseudocolinesterase, e a eliminação de Hofmann é característica do atracúrio."
+        },
+        {
+          "text": "Desenvolvimento de taquicardia vagolítica persistente.",
+          "isCorrect": false,
+          "rationale": "O efeito vagolítico e a taquicardia são efeitos adversos marcantes do pancurônio, não da succinilcolina."
+        }
+      ],
+      "hint": "Considere o movimento do íon potássio durante a despolarização muscular prolongada."
+    },
+    {
+      "question": "Sobre o sugamadex, qual afirmação descreve corretamente sua especificidade clínica?",
+      "answerOptions": [
+        {
+          "text": "Reverte todos os tipos de bloqueadores neuromusculares, inclusive a succinilcolina.",
+          "isCorrect": false,
+          "rationale": "O sugamadex não tem ação sobre bloqueadores despolarizantes ou sobre a classe das benzilisoquinolinas."
+        },
+        {
+          "text": "Atua inibindo a enzima acetilcolinesterase na fenda sináptica.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo de ação da neostigmina; o sugamadex atua por encapsulamento direto do fármaco."
+        },
+        {
+          "text": "Reverte especificamente o bloqueio causado por rocurônio e vecurônio.",
+          "isCorrect": true,
+          "rationale": "Ele forma um complexo de inclusão estável com esses esteroides específicos, impedindo sua ligação ao receptor nicotínico."
+        },
+        {
+          "text": "Sua eficácia depende da integridade da função hepática para metabolizar o complexo.",
+          "isCorrect": false,
+          "rationale": "O complexo formado entre o sugamadex e o relaxante é excretado de forma inalterada pelos rins."
+        }
+      ],
+      "hint": "Este agente é um quelante molecular seletivo para bloqueadores do tipo aminoesteroide."
+    },
+    {
+      "question": "A retirada abrupta do baclofeno em pacientes em uso crônico deve ser evitada devido ao risco de:",
+      "answerOptions": [
+        {
+          "text": "Bradicardia sinusal e hipotensão ortostática.",
+          "isCorrect": false,
+          "rationale": "Esses efeitos são mais comuns com agonistas $\\alpha_{2}$, como a tizanidina, não com o baclofeno."
+        },
+        {
+          "text": "Convulsões, alucinações e rebote de espasticidade grave.",
+          "isCorrect": true,
+          "rationale": "A suspensão repentina do estímulo $GABA_{B}$ gera uma hiperexcitabilidade do SNC que pode ser fatal."
+        },
+        {
+          "text": "Insuficiência renal aguda por rabdomiólise química.",
+          "isCorrect": false,
+          "rationale": "Embora a rigidez extrema possa causar dano muscular, a principal preocupação clínica imediata é a síndrome de abstinência neurológica."
+        },
+        {
+          "text": "Hepatotoxicidade aguda fulminante.",
+          "isCorrect": false,
+          "rationale": "A hepatotoxicidade é uma preocupação no uso prolongado de dantroleno via oral, não na suspensão do baclofeno."
+        }
+      ],
+      "hint": "Pense no efeito que a falta repentina de um freio inibitório ($GABA_{B}$) causa no sistema nervoso central."
+    },
+    {
+      "question": "Qual bloqueador neuromuscular é classificado como de longa duração e possui efeito vagolítico, podendo causar taquicardia?",
+      "answerOptions": [
+        {
+          "text": "Cisatracúrio",
+          "isCorrect": false,
+          "rationale": "O cisatracúrio é de duração intermediária e é conhecido por sua estabilidade cardiovascular."
+        },
+        {
+          "text": "Succinilcolina",
+          "isCorrect": false,
+          "rationale": "A succinilcolina é de duração ultracurta e pode causar bradicardia em doses repetidas, não taquicardia vagolítica."
+        },
+        {
+          "text": "Pancurônio",
+          "isCorrect": true,
+          "rationale": "O pancurônio bloqueia receptores muscarínicos cardíacos e aumenta a liberação de noradrenalina, resultando em aumento da frequência cardíaca."
+        },
+        {
+          "text": "Mivacúrio",
+          "isCorrect": false,
+          "rationale": "O mivacúrio é um bloqueador de curta duração metabolizado pela colinesterase plasmática."
+        }
+      ],
+      "hint": "Identifique o fármaco esteroide clássico usado para procedimentos longos que afeta o ritmo cardíaco."
+    },
+    {
+      "question": "A tizanidina, um relaxante muscular de ação central, apresenta uma contraindicação absoluta quando usada simultaneamente com:",
+      "answerOptions": [
+        {
+          "text": "Diazepam, pelo risco de sedação excessiva.",
+          "isCorrect": false,
+          "rationale": "Embora exija cautela pela potencialização da sedação, não é uma contraindicação absoluta como a interação farmacocinética com inibidores de CYP."
+        },
+        {
+          "text": "Ciprofloxacino ou fluvoxamina.",
+          "isCorrect": true,
+          "rationale": "Esses fármacos inibem a enzima $CYP1A2$, elevando os níveis de tizanidina a patamares tóxicos e causando hipotensão grave."
+        },
+        {
+          "text": "Anticolinesterásicos como a neostigmina.",
+          "isCorrect": false,
+          "rationale": "A neostigmina atua na periferia e não interfere no mecanismo $\\alpha_{2}$ central da tizanidina."
+        },
+        {
+          "text": "Anti-inflamatórios não esteroidais (AINES).",
+          "isCorrect": false,
+          "rationale": "Não há interação medicamentosa de contraindicação absoluta entre esses grupos farmacológicos."
+        }
+      ],
+      "hint": "Considere interações que envolvem a inibição do metabolismo hepático via citocromo $P450$ ($1A2$)."
+    },
+    {
+      "question": "Qual o mecanismo de ação da toxina botulínica na junção neuromuscular?",
+      "answerOptions": [
+        {
+          "text": "Bloqueio competitivo reversível do receptor nicotínico.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo dos fármacos não despolarizantes como o atracúrio."
+        },
+        {
+          "text": "Degradação enzimática da acetilcolina na fenda sináptica.",
+          "isCorrect": false,
+          "rationale": "A acetilcolina é degradada pela acetilcolinesterase natural; a toxina impede que ela chegue à fenda."
+        },
+        {
+          "text": "Clivagem de proteínas SNARE, impedindo a exocitose de acetilcolina.",
+          "isCorrect": true,
+          "rationale": "A toxina atua no terminal pré-sináptico, impedindo que as vesículas de neurotransmissor se fundam à membrana plasmática."
+        },
+        {
+          "text": "Inibição da bomba de recaptura de colina.",
+          "isCorrect": false,
+          "rationale": "A inibição da síntese/recaptura é característica do hemicolínio, não da toxina botulínica."
+        }
+      ],
+      "hint": "Lembre-se que ela impede a 'saída' do neurotransmissor do neurônio para a fenda."
+    }
+  ]
+}

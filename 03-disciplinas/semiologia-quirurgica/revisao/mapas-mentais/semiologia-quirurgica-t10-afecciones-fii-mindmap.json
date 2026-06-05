@@ -1,0 +1,149 @@
+{
+  "mind_map": {
+    "name": "Afecciones de la Fosa Iliaca Izquierda (FII)",
+    "children": [
+      {
+        "name": "Diverticulitis Aguda",
+        "children": [
+          {
+            "name": "Tríade de Suspeita",
+            "children": [
+              {
+                "name": "Dolor en FII"
+              },
+              {
+                "name": "Fiebre"
+              },
+              {
+                "name": "Leucocitosis con desviación izquierda"
+              }
+            ]
+          },
+          {
+            "name": "Fisiopatologia",
+            "children": [
+              {
+                "name": "Dieta pobre em fibras"
+              },
+              {
+                "name": "Aumento da pressão intraluminal"
+              },
+              {
+                "name": "Divertículo falso (mucosa/submucosa)"
+              }
+            ]
+          },
+          {
+            "name": "Complicações",
+            "children": [
+              {
+                "name": "Abscesso (coleção localizada)"
+              },
+              {
+                "name": "Plastrão (massa inflamatória)"
+              },
+              {
+                "name": "Perforación libre (peritonitis)"
+              },
+              {
+                "name": "Fístula colovesical (fecaluria/neumaturia)"
+              },
+              {
+                "name": "Obstrução ou Hemorragia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diagnósticos Diferenciais (Cólon)",
+        "children": [
+          {
+            "name": "Síndrome del Intestino Irritable (funcional/cuerda cólica)"
+          },
+          {
+            "name": "Colitis Isquémica (contexto vascular/recto respetado)"
+          },
+          {
+            "name": "Enfermedad Inflamatoria Intestinal (Crohn/Colite Ulcerosa)"
+          },
+          {
+            "name": "Tumor de Sigmoide (obstrutivo/hemorrágico/inflamatório)"
+          }
+        ]
+      },
+      {
+        "name": "Outros Sistemas",
+        "children": [
+          {
+            "name": "Urológico",
+            "children": [
+              {
+                "name": "Cólico renoureteral (irradiação genital/inquietude)"
+              }
+            ]
+          },
+          {
+            "name": "Ginecológico",
+            "children": [
+              {
+                "name": "Embarazo tubárico"
+              },
+              {
+                "name": "Torsión de quiste de ovario"
+              },
+              {
+                "name": "Salpingitis/Piosalpinx"
+              }
+            ]
+          },
+          {
+            "name": "Muscular/Vascular",
+            "children": [
+              {
+                "name": "Absceso del psoas (flexo-contratura de cadera)"
+              },
+              {
+                "name": "Aneurisma de vasos ilíacos (massa pulsátil)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Semiologia e Exames",
+        "children": [
+          {
+            "name": "Exame Físico",
+            "children": [
+              {
+                "name": "Auscultación (RHA diminuídos)"
+              },
+              {
+                "name": "Percusión (dor/perda matidez hepática)"
+              },
+              {
+                "name": "Tacto Rectal (dor no fundo de saco)"
+              }
+            ]
+          },
+          {
+            "name": "Estudos Complementares",
+            "children": [
+              {
+                "name": "TC abdome/pelve (padrão-ouro complicações)"
+              },
+              {
+                "name": "Ecografia (operador-dependente)"
+              },
+              {
+                "name": "Colonoscopia (evitar na fase aguda complicada)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "3dcd4c44-5e2d-4fa9-be63-75aa0d66d156"
+}

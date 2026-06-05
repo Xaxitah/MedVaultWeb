@@ -1,0 +1,265 @@
+{
+  "title": "AINEs Quiz",
+  "questions": [
+    {
+      "question": "Qual é o mecanismo de ação bioquímico fundamental compartilhado por todos os Anti-inflamatórios Não Esteroidais (AINEs)?",
+      "answerOptions": [
+        {
+          "text": "Antagonismo direto dos receptores de prostaglandinas nos tecidos periféricos.",
+          "isCorrect": false,
+          "rationale": "Os AINEs não bloqueiam os receptores onde as prostaglandinas agem, mas sim a enzima responsável pela sua síntese."
+        },
+        {
+          "text": "Inibição da enzima ciclooxigenase ($COX$), reduzindo a síntese de prostaglandinas.",
+          "isCorrect": true,
+          "rationale": "A inibição da $COX$ impede a conversão do ácido araquidônico em prostaglandinas, que são os mediadores da dor, febre e inflamação."
+        },
+        {
+          "text": "Bloqueio da enzima lipooxigenase, impedindo a formação de leucotrienos.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo de outras classes de fármacos; os AINEs agem na via da ciclooxigenase, podendo inclusive desviar o substrato para a via da lipooxigenase."
+        },
+        {
+          "text": "Inibição da fosfolipase $A_2$, impedindo a liberação de ácido araquidônico.",
+          "isCorrect": false,
+          "rationale": "A inibição da fosfolipase $A_2$ é o mecanismo de ação principal dos glicocorticoides, que atuam um passo antes dos AINEs na cascata inflamatória."
+        }
+      ],
+      "hint": "Considere qual enzima transforma o ácido araquidônico nos mediadores da cascata inflamatória."
+    },
+    {
+      "question": "Sobre a distinção entre $COX-1$ e $COX-2$, qual das seguintes afirmações descreve corretamente a natureza da $COX-1$?",
+      "answerOptions": [
+        {
+          "text": "É uma enzima puramente induzível, expressa apenas em tecidos sob estresse inflamatório.",
+          "isCorrect": false,
+          "rationale": "A natureza induzível é a característica principal da $COX-2$, não da $COX-1$."
+        },
+        {
+          "text": "É uma enzima constitutiva envolvida em funções homeostáticas, como a citoproteção gástrica.",
+          "isCorrect": true,
+          "rationale": "A $COX-1$ está presente de forma constante em tecidos como o estômago, rins e plaquetas, mantendo funções fisiológicas normais."
+        },
+        {
+          "text": "Sua inibição é a principal responsável pelos efeitos terapêuticos anti-inflamatórios.",
+          "isCorrect": false,
+          "rationale": "Os efeitos terapêuticos anti-inflamatórios derivam majoritariamente da inibição da $COX-2$, enquanto a inibição da $COX-1$ gera efeitos adversos."
+        },
+        {
+          "text": "Não possui papel funcional nos rins ou no sistema nervoso central.",
+          "isCorrect": false,
+          "rationale": "Ambas as isoformas possuem papéis importantes no rim; a $COX-1$ contribui para a regulação do fluxo sanguíneo renal basal."
+        }
+      ],
+      "hint": "Pense em qual isoforma 'está sempre ligada' para manter o equilíbrio do organismo."
+    },
+    {
+      "question": "O Ácido Acetilsalicílico (AAS) possui uma propriedade farmacodinâmica única que o diferencia dos outros AINEs. Qual é essa propriedade?",
+      "answerOptions": [
+        {
+          "text": "Inibição reversível da $COX-1$, permitindo a recuperação rápida da função plaquetária.",
+          "isCorrect": false,
+          "rationale": "Pelo contrário, a característica distintiva do AAS é justamente a natureza irreversível de sua ligação com a enzima."
+        },
+        {
+          "text": "Inibição seletiva da $COX-2$ em doses baixas para tratamento de dor aguda.",
+          "isCorrect": false,
+          "rationale": "O AAS é um inibidor não seletivo e, em doses baixas, apresenta preferência pela $COX-1$ plaquetária."
+        },
+        {
+          "text": "Inibição irreversível da $COX$ através da acetilação covalente da enzima.",
+          "isCorrect": true,
+          "rationale": "O AAS doa um grupo acetil para a serina no sítio ativo da $COX$, inativando-a permanentemente até que a célula sintetize nova enzima."
+        },
+        {
+          "text": "Capacidade de bloquear receptores de tromboxano diretamente na superfície das plaquetas.",
+          "isCorrect": false,
+          "rationale": "O AAS reduz o tromboxano ao inibir a sua síntese pela $COX-1$, não bloqueando seus receptores."
+        }
+      ],
+      "hint": "Lembre-se de por que o efeito antiagregante do AAS dura tanto tempo nas plaquetas."
+    },
+    {
+      "question": "Por que o Paracetamol não é classificado como um AINE clássico, apesar de ser um excelente analgésico e antipirético?",
+      "answerOptions": [
+        {
+          "text": "Porque ele não inibe a síntese de prostaglandinas em nenhum nível do organismo.",
+          "isCorrect": false,
+          "rationale": "Ele inibe a síntese de prostaglandinas, mas sua ação é seletiva para o sistema nervoso central e fraca na periferia."
+        },
+        {
+          "text": "Devido à sua potente ação antiagregante plaquetária que impede o uso em inflamações.",
+          "isCorrect": false,
+          "rationale": "O paracetamol praticamente não possui efeito sobre a agregação plaquetária."
+        },
+        {
+          "text": "Porque possui atividade anti-inflamatória periférica muito fraca.",
+          "isCorrect": true,
+          "rationale": "Como ele é inativado por peróxidos em tecidos inflamados, sua capacidade de reduzir sinais cardinais da inflamação é mínima comparada aos AINEs."
+        },
+        {
+          "text": "Pelo fato de agir exclusivamente bloqueando a via da lipooxigenase.",
+          "isCorrect": false,
+          "rationale": "O paracetamol não atua na via da lipooxigenase; ele interfere na via da ciclooxigenase de forma atípica."
+        }
+      ],
+      "hint": "Considere qual propriedade terapêutica fundamental dos AINEs está 'faltando' de forma significativa no paracetamol."
+    },
+    {
+      "question": "No cenário de uma overdose de paracetamol, a toxicidade hepática é mediada por qual metabólito e qual é o antídoto indicado?",
+      "answerOptions": [
+        {
+          "text": "Metabólito: Glutationa; Antídoto: $N$-acetilcisteína.",
+          "isCorrect": false,
+          "rationale": "A glutationa é a substância protetora do fígado, não o metabólito tóxico."
+        },
+        {
+          "text": "Metabólito: $NAPQI$; Antídoto: $N$-acetilcisteína.",
+          "isCorrect": true,
+          "rationale": "O $NAPQI$ é um metabólito reativo altamente tóxico; a $N$-acetilcisteína atua repondo os estoques de glutationa para neutralizá-lo."
+        },
+        {
+          "text": "Metabólito: Ácido salicílico; Antídoto: Bicarbonato de sódio.",
+          "isCorrect": false,
+          "rationale": "O ácido salicílico é o metabólito do AAS, e o bicarbonato é usado na intoxicação por salicilatos, não paracetamol."
+        },
+        {
+          "text": "Metabólito: $NAPQI$; Antídoto: Flumazenil.",
+          "isCorrect": false,
+          "rationale": "Embora o metabólito esteja correto, o flumazenil é o antídoto para benzodiazepínicos, não para paracetamol."
+        }
+      ],
+      "hint": "Pense no nome do metabólito que esgota as reservas de glutationa do fígado."
+    },
+    {
+      "question": "A combinação de medicamentos conhecida como 'Triple Whammy' (tríade do risco renal) pode precipitar insuficiência renal aguda. Quais são os três componentes dessa interação?",
+      "answerOptions": [
+        {
+          "text": "AINE + Betabloqueador + Antagonista de Cálcio.",
+          "isCorrect": false,
+          "rationale": "Embora sejam anti-hipertensivos, essa combinação não é a classicamente descrita como 'triple whammy' para risco renal agudo."
+        },
+        {
+          "text": "AAS + Corticoide + Anticoagulante.",
+          "isCorrect": false,
+          "rationale": "Esta combinação aumenta drasticamente o risco de sangramento gastrointestinal, mas não é a tríade renal específica."
+        },
+        {
+          "text": "AINE + Diurético + Inibidor da ECA (ou ARA-II).",
+          "isCorrect": true,
+          "rationale": "Os diuréticos reduzem a volemia, o IECA/ARA-II dilata a arteríola eferente e o AINE contrai a aferente, colapsando a filtração glomerular."
+        },
+        {
+          "text": "Paracetamol + Antibiótico + Estatina.",
+          "isCorrect": false,
+          "rationale": "Esses fármacos podem ter interações hepáticas, mas não formam o mecanismo hemodinâmico de falência renal da tríade citada."
+        }
+      ],
+      "hint": "Relacione fármacos que alteram a hemodinâmica renal: pressão de entrada, pressão de saída e volume circulante."
+    },
+    {
+      "question": "Por que os inibidores seletivos da $COX-2$ (Coxibs) apresentam um risco cardiovascular aumentado em comparação com alguns AINEs não seletivos?",
+      "answerOptions": [
+        {
+          "text": "Porque estimulam diretamente a produção de tromboxano $A_2$ ($TXA_2$) nas plaquetas.",
+          "isCorrect": false,
+          "rationale": "Eles não estimulam a produção, mas deixam o caminho livre para o $TXA_2$ agir sem oposição."
+        },
+        {
+          "text": "Devido ao bloqueio irreversível dos receptores de prostaciclina no endotélio vascular.",
+          "isCorrect": false,
+          "rationale": "A ação é sobre a enzima $COX-2$, não diretamente nos receptores de prostaciclina."
+        },
+        {
+          "text": "Pela redução da prostaciclina ($PGI_2$) endotelial, mantendo intacta a produção de tromboxano ($TXA_2$) plaquetário.",
+          "isCorrect": true,
+          "rationale": "A $PGI_2$ (vasodilatadora e antitrombótica) é reduzida pela inibição da $COX-2$, enquanto o $TXA_2$ (pró-trombótico) continua sendo produzido pela $COX-1$ plaquetária."
+        },
+        {
+          "text": "Porque causam uma hipotensão severa que leva à isquemia miocárdica.",
+          "isCorrect": false,
+          "rationale": "Na verdade, os AINEs tendem a elevar a pressão arterial devido à retenção de sódio e água."
+        }
+      ],
+      "hint": "Pense no desequilíbrio entre uma substância que protege os vasos e outra que favorece coágulos."
+    },
+    {
+      "question": "A Síndrome de Reye é uma complicação grave associada ao uso de qual fármaco em crianças com infecções virais?",
+      "answerOptions": [
+        {
+          "text": "Paracetamol.",
+          "isCorrect": false,
+          "rationale": "O paracetamol é considerado seguro e é o fármaco de escolha para febre em crianças."
+        },
+        {
+          "text": "Ibuprofeno.",
+          "isCorrect": false,
+          "rationale": "O ibuprofeno pode ser usado em crianças e não tem associação estabelecida com a Síndrome de Reye."
+        },
+        {
+          "text": "Ácido Acetilsalicílico (AAS).",
+          "isCorrect": true,
+          "rationale": "O uso de salicilatos durante episódios virais (como gripe ou varicela) em crianças está ligado a esta síndrome potencialmente fatal que afeta fígado e cérebro."
+        },
+        {
+          "text": "Dipirona (Metamizol).",
+          "isCorrect": false,
+          "rationale": "A dipirona está associada ao risco de agranulocitose, mas não à Síndrome de Reye."
+        }
+      ],
+      "hint": "Identifique o salicilato protótipo que é formalmente contraindicado para febre infantil viral."
+    },
+    {
+      "question": "Um paciente com histórico de asma apresenta broncoespasmo após a ingestão de um AINE. Qual é a explicação fisiopatológica para esse evento (Tríade de Samter)?",
+      "answerOptions": [
+        {
+          "text": "Ativação direta de receptores de histamina pelos metabólitos do AINE.",
+          "isCorrect": false,
+          "rationale": "Não é uma reação alérgica clássica mediada por histamina, mas sim um desvio metabólico."
+        },
+        {
+          "text": "Desvio do metabolismo do ácido araquidônico para a via da lipooxigenase, aumentando a produção de leucotrienos.",
+          "isCorrect": true,
+          "rationale": "Ao bloquear a $COX$, sobra mais ácido araquidônico para ser convertido pela lipooxigenase em leucotrienos, que são potentes broncoconstritores."
+        },
+        {
+          "text": "Inibição excessiva de prostaglandinas que possuem efeito broncodilatador direto.",
+          "isCorrect": false,
+          "rationale": "Embora algumas PGs ajudem na patência aérea, o principal fator na asma por AINE é o excesso de leucotrienos."
+        },
+        {
+          "text": "Reação de hipersensibilidade tipo I mediada por IgE contra a molécula do fármaco.",
+          "isCorrect": false,
+          "rationale": "Geralmente é uma pseudoalergia farmacológica baseada no desvio de via metabólica, e não uma alergia mediada por IgE."
+        }
+      ],
+      "hint": "Pense no que acontece com o 'estoque' de ácido araquidônico quando a porta da ciclooxigenase é fechada."
+    },
+    {
+      "question": "Na escada analgésica da Organização Mundial da Saúde (OMS), qual é o papel dos AINEs no manejo da dor moderada a grave?",
+      "answerOptions": [
+        {
+          "text": "Eles devem ser suspensos para evitar interações com os opioides fortes.",
+          "isCorrect": false,
+          "rationale": "A suspensão não é recomendada; os AINEs são mantidos para aproveitar o sinergismo de mecanismos."
+        },
+        {
+          "text": "São usados como terapia única, pois possuem teto analgésico superior aos opioides.",
+          "isCorrect": false,
+          "rationale": "Os AINEs possuem teto analgésico (limite de efeito), enquanto os opioides fortes geralmente não apresentam esse teto."
+        },
+        {
+          "text": "São mantidos como adjuvantes para permitir a redução da dose de opioides e potencializar a analgesia.",
+          "isCorrect": true,
+          "rationale": "A combinação de AINE (ação periférica/enzimática) com opioide (ação central/receptores) é sinérgica e ajuda a mitigar efeitos colaterais dos opioides."
+        },
+        {
+          "text": "Só podem ser utilizados se o paciente não responder a doses máximas de morfina.",
+          "isCorrect": false,
+          "rationale": "Os AINEs estão na base da pirâmide e devem estar presentes desde o início do manejo da dor."
+        }
+      ],
+      "hint": "Considere se a ação em diferentes níveis (periférico vs. central) pode ser benéfica quando usada em conjunto."
+    }
+  ]
+}

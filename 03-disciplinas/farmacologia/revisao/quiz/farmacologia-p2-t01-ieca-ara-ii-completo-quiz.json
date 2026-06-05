@@ -1,0 +1,265 @@
+{
+  "title": "Farmacologia Quiz",
+  "questions": [
+    {
+      "question": "Além da conversão de $Ang \\ I$ em $Ang \\ II$, qual é outra função fundamental da Enzima Conversora de Angiotensina ($ECA$) que impacta os efeitos colaterais dos $IECA$?",
+      "answerOptions": [
+        {
+          "text": "Inibição da liberação de renina pelas células justaglomerulares.",
+          "isCorrect": false,
+          "rationale": "A liberação de renina é controlada por receptores $\\beta_1$, pressão de perfusão e sódio na mácula densa, não pela $ECA$ diretamente."
+        },
+        {
+          "text": "Degradação da bradicinina e da substância P.",
+          "isCorrect": true,
+          "rationale": "A $ECA$ é uma enzima inespecífica que também metaboliza cininas; sua inibição leva ao acúmulo dessas substâncias, resultando em tosse e angioedema."
+        },
+        {
+          "text": "Ativação direta dos receptores $AT_2$ para promover vasodilatação.",
+          "isCorrect": false,
+          "rationale": "A $ECA$ produz o ligante ($Ang \\ II$), mas não interage diretamente com o receptor $AT_2$ como agonista."
+        },
+        {
+          "text": "Conversão de angiotensinogênio em Angiotensina I.",
+          "isCorrect": false,
+          "rationale": "Esta conversão é o passo limitante do sistema e é realizada exclusivamente pela renina."
+        }
+      ],
+      "hint": "Pense no motivo pelo qual o acúmulo de certas substâncias causa irritação nas vias aéreas."
+    },
+    {
+      "question": "Um paciente hipertenso inicia tratamento com um fármaco e desenvolve tosse seca persistente. Qual alteração na prescrição é a mais adequada para manter o bloqueio do $SRAA$ sem esse efeito adverso?",
+      "answerOptions": [
+        {
+          "text": "Substituir o $IECA$ por um $ARA \\ II$.",
+          "isCorrect": true,
+          "rationale": "Os $ARA \\ II$ bloqueiam o receptor $AT_1$ sem inibir a $ECA$, evitando o acúmulo de bradicinina que causa a tosse."
+        },
+        {
+          "text": "Aumentar a dose do $IECA$ para dessensibilizar os receptores de tosse.",
+          "isCorrect": false,
+          "rationale": "O aumento da dose agravaria o acúmulo de bradicinina e, consequentemente, a intensidade da tosse."
+        },
+        {
+          "text": "Associar um anti-inflamatório não esteroidal ($AINE$) para reduzir a inflamação brônquica.",
+          "isCorrect": false,
+          "rationale": "Os $AINEs$ podem reduzir a eficácia anti-hipertensiva dos $IECA$ e não são o tratamento indicado para tosse farmacológica."
+        },
+        {
+          "text": "Trocar por outro $IECA$ de classe química diferente, como o Captopril.",
+          "isCorrect": false,
+          "rationale": "A tosse é um efeito de classe dos $IECA$ devido ao mecanismo de inibição da $ECA$, independentemente do grupo químico."
+        }
+      ],
+      "hint": "Considere qual classe de fármacos atua no receptor final sem interferir na degradação de cininas."
+    },
+    {
+      "question": "Quais dos seguintes fármacos inibidores da $ECA$ são administrados em sua forma ativa, não necessitando de bioativação hepática?",
+      "answerOptions": [
+        {
+          "text": "Enalapril e Ramipril.",
+          "isCorrect": false,
+          "rationale": "Estes são pró-fármacos que precisam ser hidrolisados em enalaprilato e ramiprilato para exercerem efeito."
+        },
+        {
+          "text": "Lisinopril e Captopril.",
+          "isCorrect": true,
+          "rationale": "Diferente da maioria da classe, estes dois fármacos já possuem atividade biológica sem necessidade de conversão metabólica."
+        },
+        {
+          "text": "Fosinopril e Perindopril.",
+          "isCorrect": false,
+          "rationale": "O fosinopril e o perindopril são pró-fármacos clássicos que dependem da função hepática para ativação."
+        },
+        {
+          "text": "Losartana e Valsartana.",
+          "isCorrect": false,
+          "rationale": "Estes fármacos pertencem à classe dos $ARA \\ II$, não dos $IECA$."
+        }
+      ],
+      "hint": "Lembre-se da regra prática sobre quais nomes não terminam na forma de 'pró-fármaco' funcional."
+    },
+    {
+      "question": "A ativação do receptor $AT_1$ pela $Ang \\ II$ desencadeia diversos efeitos sistêmicos. Qual das alternativas descreve corretamente uma dessas ações?",
+      "answerOptions": [
+        {
+          "text": "Vasodilatação da arteríola eferente renal.",
+          "isCorrect": false,
+          "rationale": "A $Ang \\ II$ via $AT_1$ causa vasoconstrição preferencial da arteríola eferente para manter a taxa de filtração glomerular."
+        },
+        {
+          "text": "Estímulo à síntese e secreção de aldosterona no córtex adrenal.",
+          "isCorrect": true,
+          "rationale": "Esta é uma ação clássica do receptor $AT_1$, levando à retenção de sódio e água e excreção de potássio."
+        },
+        {
+          "text": "Inibição da liberação de noradrenalina nas terminações simpáticas.",
+          "isCorrect": false,
+          "rationale": "Na verdade, a $Ang \\ II$ facilita a transmissão adrenérgica e aumenta a liberação de noradrenalina."
+        },
+        {
+          "text": "Promoção de efeitos antiproliferativos e apoptóticos no miocárdio.",
+          "isCorrect": false,
+          "rationale": "Esses seriam efeitos associados ao receptor $AT_2$; o receptor $AT_1$ está ligado à hipertrofia e fibrose (remodelamento)."
+        }
+      ],
+      "hint": "Foque nas ações que contribuem para o aumento da volemia e da pressão arterial."
+    },
+    {
+      "question": "Por que os $IECA$ e $ARA \\ II$ são terminantemente contraindicados em pacientes com estenose bilateral da artéria renal?",
+      "answerOptions": [
+        {
+          "text": "Pelo risco de hipotensão severa de primeira dose.",
+          "isCorrect": false,
+          "rationale": "Embora a hipotensão possa ocorrer, o perigo crítico nesta patologia específica é a falência funcional renal aguda."
+        },
+        {
+          "text": "Porque causam vasoconstrição reflexa da arteríola aferente.",
+          "isCorrect": false,
+          "rationale": "O problema não é a vasoconstrição da aferente, mas a perda da vasoconstrição necessária na eferente."
+        },
+        {
+          "text": "Pois eliminam a constrição da arteríola eferente mediada por $Ang \\ II$, colapsando a filtração glomerular.",
+          "isCorrect": true,
+          "rationale": "Em rins com baixa perfusão, a filtração depende da pressão gerada pela $Ang \\ II$ na saída do glomérulo; remover esse tônus causa Insuficiência Renal Aguda ($IRA$)."
+        },
+        {
+          "text": "Devido ao acúmulo excessivo de renina que causa toxicidade renal direta.",
+          "isCorrect": false,
+          "rationale": "A renina aumenta por feedback, mas não possui toxicidade direta que cause insuficiência renal aguda nessas condições."
+        }
+      ],
+      "hint": "Considere como o glomérulo mantém a pressão de filtração quando a pressão de chegada (aferente) está muito baixa."
+    },
+    {
+      "question": "Qual característica farmacocinética torna o Fosinopril uma opção frequentemente considerada em pacientes com insuficiência renal crônica moderada?",
+      "answerOptions": [
+        {
+          "text": "Possui a meia-vida mais curta da classe, evitando acúmulo.",
+          "isCorrect": false,
+          "rationale": "O captopril tem meia-vida mais curta; o fosinopril tem meia-vida intermediária de aproximadamente $11,5$ horas."
+        },
+        {
+          "text": "Apresenta eliminação dupla (renal e biliar/hepática).",
+          "isCorrect": true,
+          "rationale": "Sua excreção equilibrada permite que a via biliar compense a redução da função renal, diminuindo o risco de toxicidade."
+        },
+        {
+          "text": "Não cruza a barreira hematoencefálica.",
+          "isCorrect": false,
+          "rationale": "A passagem pela barreira hematoencefálica não é o fator determinante para a segurança renal na insuficiência renal crônica."
+        },
+        {
+          "text": "Sua biodisponibilidade aumenta proporcionalmente à queda da filtração glomerular.",
+          "isCorrect": false,
+          "rationale": "O aumento da biodisponibilidade por falta de excreção é justamente o que se quer evitar em pacientes renais para prevenir efeitos adversos."
+        }
+      ],
+      "hint": "Pense em uma via alternativa de saída para o fármaco quando os rins não estão funcionando bem."
+    },
+    {
+      "question": "O uso concomitante de Anti-inflamatórios Não Esteroidais ($AINEs$) e $IECA$ pode reduzir a eficácia do tratamento anti-hipertensivo. Qual o mecanismo envolvido?",
+      "answerOptions": [
+        {
+          "text": "Os $AINEs$ aumentam a expressão da enzima $ECA$ no pulmão.",
+          "isCorrect": false,
+          "rationale": "Não há evidências de que os $AINEs$ induzam a síntese da enzima conversora de angiotensina."
+        },
+        {
+          "text": "Inibição da síntese de prostaglandinas vasodilatadoras, que contribuem para o efeito dos $IECA$.",
+          "isCorrect": true,
+          "rationale": "Os $IECA$ aumentam bradicininas, que estimulam prostaglandinas saudáveis; $AINEs$ bloqueiam essa via, antagonizando o efeito hipotensor."
+        },
+        {
+          "text": "Competição direta pelo mesmo sítio de ligação no receptor $AT_1$.",
+          "isCorrect": false,
+          "rationale": "Os $AINEs$ inibem a ciclo-oxigenase e não possuem afinidade pelos receptores de angiotensina."
+        },
+        {
+          "text": "Aumento da excreção renal do $IECA$ promovido pelos $AINEs$.",
+          "isCorrect": false,
+          "rationale": "Na verdade, os $AINEs$ podem reduzir a perfusão renal e diminuir a excreção de vários fármacos, incluindo os $IECA$."
+        }
+      ],
+      "hint": "Relacione o efeito das bradicinas com mediadores lipídicos que promovem vasodilatação."
+    },
+    {
+      "question": "Sobre o uso de bloqueadores do $SRAA$ durante a gestação, assinale a afirmação correta:",
+      "answerOptions": [
+        {
+          "text": "São seguros apenas no primeiro trimestre, devendo ser suspensos após a 12ª semana.",
+          "isCorrect": false,
+          "rationale": "Embora o risco maior seja no 2º e 3º trimestres, a recomendação geral é evitar durante toda a gestação devido a riscos potenciais."
+        },
+        {
+          "text": "São contraindicados no 2º e 3º trimestres devido ao risco de malformações renais e hipotensão fetal.",
+          "isCorrect": true,
+          "rationale": "O bloqueio do $SRAA$ fetal interfere no desenvolvimento renal e na homeostase pressórica do feto, sendo teratogênico."
+        },
+        {
+          "text": "O $ARA \\ II$ é uma alternativa segura para gestantes que não toleram a Metildopa.",
+          "isCorrect": false,
+          "rationale": "Ambas as classes ($IECA$ e $ARA \\ II$) compartilham o mesmo risco teratogênico por atuarem no eixo da angiotensina."
+        },
+        {
+          "text": "Apenas o Captopril é seguro, por não atravessar a barreira placentária.",
+          "isCorrect": false,
+          "rationale": "O captopril e todos os outros $IECA$ atravessam a placenta e podem causar danos graves ao feto."
+        }
+      ],
+      "hint": "Considere o papel do $SRAA$ no desenvolvimento dos órgãos fetais, especialmente os rins."
+    },
+    {
+      "question": "Em relação aos Antagonistas do Receptor de Angiotensina II ($ARA \\ II$), qual característica os diferencia farmacodinamicamente dos $IECA$?",
+      "answerOptions": [
+        {
+          "text": "Bloqueiam a formação de $Ang \\ II$ por vias alternativas como a quimase.",
+          "isCorrect": false,
+          "rationale": "Eles não impedem a formação da angiotensina, mas impedem que ela atue no receptor, independente da via de origem."
+        },
+        {
+          "text": "Promovem um estímulo relativo maior dos receptores $AT_2$.",
+          "isCorrect": true,
+          "rationale": "Ao bloquear $AT_1$, a $Ang \\ II$ circulante (que aumenta por feedback) fica livre para ligar-se ao $AT_2$, potencializando efeitos benéficos."
+        },
+        {
+          "text": "Reduzem os níveis plasmáticos de renina por feedback negativo.",
+          "isCorrect": false,
+          "rationale": "Tanto $IECA$ quanto $ARA \\ II$ causam aumento reflexo da renina devido à perda do feedback negativo da $Ang \\ II$ no receptor $AT_1$ renal."
+        },
+        {
+          "text": "Inibem a enzima responsável pela degradação da substância P.",
+          "isCorrect": false,
+          "rationale": "Esta é uma ação dos $IECA$ (via inibição da $ECA$); os $ARA \\ II$ não interferem no metabolismo dessas substâncias."
+        }
+      ],
+      "hint": "Pense no que acontece com a Angiotensina II que sobra no sistema quando o receptor $AT_1$ está ocupado."
+    },
+    {
+      "question": "O Alisquireno é um fármaco que atua no $SRAA$ em um ponto distinto dos $IECA$ e $ARA \\ II$. Qual é o seu mecanismo de ação?",
+      "answerOptions": [
+        {
+          "text": "Antagonismo competitivo dos receptores de aldosterona.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo da espironolactona, que atua no final da cascata."
+        },
+        {
+          "text": "Inibição direta da renina, impedindo a conversão de angiotensinogênio em $Ang \\ I$.",
+          "isCorrect": true,
+          "rationale": "O alisquireno atua no primeiro degrau da cascata, bloqueando a atividade enzimática da renina no plasma."
+        },
+        {
+          "text": "Aceleração da degradação de $Ang \\ II$ pelas angiotensinasas.",
+          "isCorrect": false,
+          "rationale": "O fármaco não acelera a degradação, mas sim impede a formação inicial dos precursores."
+        },
+        {
+          "text": "Bloqueio dos canais de cálcio dependentes de voltagem nas células musculares lisas.",
+          "isCorrect": false,
+          "rationale": "Este mecanismo pertence aos bloqueadores dos canais de cálcio (como anlodipino) e não ao alisquireno."
+        }
+      ],
+      "hint": "Ele atua no 'passo limitante' e inicial de toda a cascata do sistema."
+    }
+  ]
+}

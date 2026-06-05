@@ -1,0 +1,265 @@
+{
+  "title": "Diuréticos Quiz",
+  "questions": [
+    {
+      "question": "Qual é a principal razão pela qual os diuréticos de alça, como a furosemida, são classificados como diuréticos de 'teto alto' ou de eficácia máxima?",
+      "answerOptions": [
+        {
+          "text": "Eles atuam no túbulo proximal, onde ocorre a maior parte da reabsorção de $Na^+$.",
+          "isCorrect": false,
+          "rationale": "Embora o túbulo proximal reabsorva $65\\%$ do $Na^+$, os diuréticos que atuam ali são de eficácia fraca devido à compensação nos segmentos posteriores."
+        },
+        {
+          "text": "Eles bloqueiam o cotransportador $NKCC2$ em um segmento com alta capacidade de reabsorção sem compensação distal eficiente.",
+          "isCorrect": true,
+          "rationale": "Ao inibir a reabsorção de $15-25\\%$ do $Na^+$ no ramo ascendente espesso, os segmentos seguintes (TCD e Coletor) não conseguem reabsorver a carga excedente."
+        },
+        {
+          "text": "Eles possuem uma meia-vida plasmática extremamente longa, garantindo efeito por 24 horas.",
+          "isCorrect": false,
+          "rationale": "A furosemida possui meia-vida curta (aprox. $1,5$ h); a eficácia deve-se ao local de ação e não à duração do fármaco no sangue."
+        },
+        {
+          "text": "Eles são os únicos diuréticos que aumentam a filtração glomerular diretamente.",
+          "isCorrect": false,
+          "rationale": "O mecanismo principal é a inibição da reabsorção tubular de eletrólitos, não o aumento direto da taxa de filtração glomerular."
+        }
+      ],
+      "hint": "Considere a porcentagem de sódio filtrado que é processada na Alça de Henle e a capacidade dos segmentos posteriores."
+    },
+    {
+      "question": "Por que o uso de acetazolamida é considerado uma contraindicação absoluta em pacientes com cirrose hepática?",
+      "answerOptions": [
+        {
+          "text": "Pode causar hiperpotassemia grave por inibição da troca $Na^+/K^+$.",
+          "isCorrect": false,
+          "rationale": "A acetazolamida geralmente causa hipopotassemia, não hiperpotassemia."
+        },
+        {
+          "text": "A alcalinização da urina reduz a excreção de $NH_4^+$, favorecendo a encefalopatia hepática.",
+          "isCorrect": true,
+          "rationale": "A urina alcalina impede a conversão de amônia em íon amônio, levando ao acúmulo sistêmico de amônia, que é neurotóxica."
+        },
+        {
+          "text": "O fármaco é altamente metabolizado pelo fígado, causando hepatotoxicidade direta.",
+          "isCorrect": false,
+          "rationale": "A acetazolamida não sofre metabolismo significativo e é excretada inalterada pelos rins."
+        },
+        {
+          "text": "Aumenta o risco de varizes esofágicas por induzir vasoconstrição sistêmica.",
+          "isCorrect": false,
+          "rationale": "O risco principal está relacionado ao equilíbrio ácido-básico e ao manejo da amônia, não a efeitos vasculares diretos."
+        }
+      ],
+      "hint": "Pense no destino do íon amônio ($NH_4^+$) quando o pH urinário aumenta."
+    },
+    {
+      "question": "No contexto do Edema Agudo de Pulmão (EAP), a furosemida administrada via endovenosa promove melhora clínica rápida antes mesmo do início da diurese. Qual é o mecanismo responsável por esse efeito precoce?",
+      "answerOptions": [
+        {
+          "text": "Inibição direta dos canais de $Na^+$ no epitélio alveolar.",
+          "isCorrect": false,
+          "rationale": "A furosemida atua nos transportadores renais e vasculares, não diretamente no transporte de sódio alveolar."
+        },
+        {
+          "text": "Indução da $COX-2$ levando à síntese de $PGE_2$, que promove venodilatação pulmonar.",
+          "isCorrect": true,
+          "rationale": "A liberação de prostaglandinas vasodilatadoras reduz a pressão de enchimento do ventrículo esquerdo rapidamente."
+        },
+        {
+          "text": "Bloqueio dos receptores de aldosterona no miocárdio, reduzindo a pré-carga.",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo da espironolactona, que possui uma latência de dias, não minutos."
+        },
+        {
+          "text": "Ação osmótica imediata que retira líquido do interstício pulmonar para o vaso.",
+          "isCorrect": false,
+          "rationale": "Este seria o mecanismo de um diurético osmótico como o manitol, que inclusive é contraindicado no EAP estabelecido."
+        }
+      ],
+      "hint": "Relacione o efeito vascular imediato com a produção de mediadores lipídicos derivados do ácido araquidônico."
+    },
+    {
+      "question": "Um paciente com histórico de nefrolitíase (cálculos renais) por hipercalciúria apresenta hipertensão arterial. Qual classe de diurético seria a mais benéfica para tratar a hipertensão e simultaneamente reduzir o risco de novos cálculos?",
+      "answerOptions": [
+        {
+          "text": "Diuréticos de Alça (ex: Furosemida).",
+          "isCorrect": false,
+          "rationale": "Os diuréticos de alça aumentam a excreção urinária de cálcio, o que poderia piorar a formação de cálculos."
+        },
+        {
+          "text": "Diuréticos Tiazídicos (ex: Hidroclorotiazida).",
+          "isCorrect": true,
+          "rationale": "As tiazidas aumentam a reabsorção tubular de $Ca^{2+}$, reduzindo sua concentração na urina (calciúria) e prevenindo cálculos."
+        },
+        {
+          "text": "Poupadores de Potássio (ex: Amilorida).",
+          "isCorrect": false,
+          "rationale": "Embora poupem potássio, eles não possuem efeito clinicamente significativo na redução da calciúria para tratamento de litíase."
+        },
+        {
+          "text": "Inibidores da Anidrase Carbônica (ex: Acetazolamida).",
+          "isCorrect": false,
+          "rationale": "A acetazolamida pode, na verdade, predispor à formação de cálculos renais de fosfato de cálcio devido à alcalinização urinária."
+        }
+      ],
+      "hint": "Lembre-se do mnemônico sobre qual diurético 'traz o cálcio de volta' para o sangue."
+    },
+    {
+      "question": "Sobre os poupadores de potássio, por que a espironolactona apresenta uma latência de efeito de $2$ a $3$ dias, enquanto a amilorida atua de forma mais rápida?",
+      "answerOptions": [
+        {
+          "text": "A espironolactona precisa ser convertida em canrenona no fígado antes de atuar.",
+          "isCorrect": false,
+          "rationale": "Embora tenha metabólitos ativos, a latência principal deve-se ao seu mecanismo de ação celular, não apenas ao metabolismo."
+        },
+        {
+          "text": "A espironolactona depende de síntese proteica via receptor intracelular (efeito genômico).",
+          "isCorrect": true,
+          "rationale": "Como antagonista do receptor de aldosterona, ela altera a transcrição gênica, o que leva tempo para resultar em mudanças funcionais."
+        },
+        {
+          "text": "A amilorida bloqueia o receptor de aldosterona de forma irreversível.",
+          "isCorrect": false,
+          "rationale": "A amilorida bloqueia diretamente o canal de sódio epitelial ($ENaC$), sem envolver o receptor de aldosterona."
+        },
+        {
+          "text": "A espironolactona é um pró-fármaco que requer ativação pela luz solar na pele.",
+          "isCorrect": false,
+          "rationale": "Esta afirmação não possui fundamento farmacológico; o atraso é intrínseco ao mecanismo genômico."
+        }
+      ],
+      "hint": "Diferencie o bloqueio direto de um canal iônico da modulação da expressão de genes no núcleo celular."
+    },
+    {
+      "question": "Em pacientes com Insuficiência Renal Crônica (IRC) grave, onde o clearance de creatinina é inferior a $30$ ml/min, qual comportamento é esperado dos diuréticos tiazídicos?",
+      "answerOptions": [
+        {
+          "text": "Eles aumentam sua potência para compensar a perda de néfrons.",
+          "isCorrect": false,
+          "rationale": "Pelo contrário, a eficácia dos tiazídicos cai drasticamente com a redução da função renal."
+        },
+        {
+          "text": "Eles perdem a eficácia diurética, sendo preferível o uso de diuréticos de alça.",
+          "isCorrect": true,
+          "rationale": "Os tiazídicos tornam-se ineficazes em baixas taxas de filtração glomerular, enquanto a furosemida mantém sua ação se a dose for ajustada."
+        },
+        {
+          "text": "Eles tornam-se a primeira escolha devido ao menor risco de ototoxicidade.",
+          "isCorrect": false,
+          "rationale": "A escolha clínica é baseada na eficácia diurética, e nesse cenário eles não conseguem promover diurese adequada."
+        },
+        {
+          "text": "Eles passam a atuar no túbulo proximal como inibidores da anidrase carbônica.",
+          "isCorrect": false,
+          "rationale": "O local de ação dos fármacos é determinado por sua estrutura e transportadores, não mudando conforme a gravidade da IRC."
+        }
+      ],
+      "hint": "Considere qual classe 'perde o teto' e qual mantém a funcionalidade em rins gravemente comprometidos."
+    },
+    {
+      "question": "O uso combinado de furosemida endovenosa em altas doses e antibióticos aminoglicosídeos (como a gentamicina) deve ser evitado devido ao risco de:",
+      "answerOptions": [
+        {
+          "text": "Hiperpotassemia refratária.",
+          "isCorrect": false,
+          "rationale": "A furosemida causa hipopotassemia; a combinação perigosa aqui envolve outro sistema sensorial."
+        },
+        {
+          "text": "Ototoxicidade sinérgica e grave.",
+          "isCorrect": true,
+          "rationale": "Ambas as classes podem lesar as células ciliadas da orelha interna; a furosemida afeta o transportador $NKCC1$ na stria vascularis."
+        },
+        {
+          "text": "Acidose metabólica hiperclorêmica.",
+          "isCorrect": false,
+          "rationale": "Este efeito adverso é típico dos inibidores da anidrase carbônica, não da furosemida (que causa alcalose)."
+        },
+        {
+          "text": "Ginecomastia e disfunção erétil.",
+          "isCorrect": false,
+          "rationale": "Esses são efeitos antiandrogênicos específicos da espironolactona."
+        }
+      ],
+      "hint": "Pense em um efeito adverso que afeta a audição e o equilíbrio."
+    },
+    {
+      "question": "Qual característica farmacocinética da clortalidona a torna, para muitos especialistas, superior à hidroclorotiazida no tratamento da hipertensão arterial crônica?",
+      "answerOptions": [
+        {
+          "text": "Menor incidência de hipopotassemia.",
+          "isCorrect": false,
+          "rationale": "A clortalidona pode causar até mais hipopotassemia que a HCTZ devido à sua potência e duração."
+        },
+        {
+          "text": "Meia-vida longa (aprox. $47$ h), permitindo controle pressórico estável por $24$ h.",
+          "isCorrect": true,
+          "rationale": "A longa duração de ação garante que não haja escape pressórico durante o período de sono ou esquecimento de doses curtas."
+        },
+        {
+          "text": "Ausência total de efeitos metabólicos sobre glicose e lipídios.",
+          "isCorrect": false,
+          "rationale": "Como todo tiazídico, a clortalidona pode causar hiperglicemia e alterações lipídicas."
+        },
+        {
+          "text": "Ação direta nos canais de cálcio do tipo L.",
+          "isCorrect": false,
+          "rationale": "Esse é o mecanismo dos bloqueadores de canais de cálcio (como anlodipino), não dos diuréticos tiazídicos."
+        }
+      ],
+      "hint": "Considere o tempo que o fármaco permanece ativo no organismo após uma única dose."
+    },
+    {
+      "question": "Por que pacientes diabéticos em uso de diuréticos tiazídicos ou de alça devem ter sua glicemia monitorada com mais rigor?",
+      "answerOptions": [
+        {
+          "text": "Esses diuréticos estimulam diretamente a gliconeogênese hepática.",
+          "isCorrect": false,
+          "rationale": "O mecanismo principal não é o aumento da produção de glicose pelo fígado."
+        },
+        {
+          "text": "A hipopotassemia induzida pode reduzir a secreção de insulina pelas células beta pancreáticas.",
+          "isCorrect": true,
+          "rationale": "A saída de insulina depende de canais de potássio; baixos níveis de $K^+$ interferem nesse processo, elevando a glicemia."
+        },
+        {
+          "text": "Eles competem com os transportadores de glicose $SGLT2$ no rim.",
+          "isCorrect": false,
+          "rationale": "Não há competição direta com os $SGLT2$; a interação é indireta via eletrólitos e insulina."
+        },
+        {
+          "text": "Eles aumentam a absorção intestinal de carboidratos complexos.",
+          "isCorrect": false,
+          "rationale": "Não há evidências de que diuréticos alterem a absorção de nutrientes no trato gastrointestinal."
+        }
+      ],
+      "hint": "Relacione os níveis de potássio sérico com a liberação de hormônios pelo pâncreas."
+    },
+    {
+      "question": "O manitol é frequentemente utilizado para reduzir a pressão intracraniana, mas sua administração inicial pode ser perigosa em pacientes com insuficiência cardíaca (IC) descompensada. Por quê?",
+      "answerOptions": [
+        {
+          "text": "Ele causa vasoconstrição coronariana imediata.",
+          "isCorrect": false,
+          "rationale": "O efeito primário é osmótico no volume de fluido, não vasoconstritor coronariano."
+        },
+        {
+          "text": "Promove uma expansão transitória do volume extracelular antes da diurese.",
+          "isCorrect": true,
+          "rationale": "Ao atrair água do intracelular para o vaso, ele aumenta a pré-carga, podendo sobrecarregar um coração já falante e causar edema pulmonar."
+        },
+        {
+          "text": "Leva à acidose metabólica grave que deprime a contratilidade miocárdica.",
+          "isCorrect": false,
+          "rationale": "O manitol é farmacologicamente inerte e não causa acidose metabólica direta."
+        },
+        {
+          "text": "Inibe os receptores beta-adrenérgicos no coração.",
+          "isCorrect": false,
+          "rationale": "O manitol não possui afinidade por receptores adrenérgicos."
+        }
+      ],
+      "hint": "Pense no que acontece com o volume de sangue dentro dos vasos logo após a infusão de uma substância altamente osmótica."
+    }
+  ]
+}

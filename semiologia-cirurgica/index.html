@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semiologia Cirúrgica — MED-Vault</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="breadcrumb">
+    <a href="../">🏥 MED-Vault</a>
+    <span>›</span>
+    <span>Semiologia Cirúrgica</span>
+  </div>
+  <h1>🔪 Semiologia Cirúrgica</h1>
+  <p>P2 — T09 Apendicitis / FID · T10 Afecciones FII / Diverticulite</p>
+</header>
+
+<main>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('resumos', event)">📄 Resumos</button>
+    <button class="tab-btn" onclick="showTab('extras', event)">🎯 Quiz e Questões</button>
+  </div>
+
+  <div id="resumos" class="prova-section visible">
+    <h2 class="section-title">📄 Resumos P2</h2>
+    <div class="resumo-section">
+      <div class="resumo-group">
+        <div class="resumo-group-title">T09 — Apendicitis e Afecciones da Fossa Ilíaca Direita</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/semiologia-quirurgica/revisao/resumos/p2/p2-tema-09-afecciones-fid-apendicitis/tema-09-afecciones-fid-apendicitis.html" target="_blank">📄 Resumo T09 — Apendicitis FID</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">T10 — Diverticulite e Afecciones da Fossa Ilíaca Esquerda</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/semiologia-quirurgica/revisao/resumos/p2/p2-tema-10-afecciones-fii/p2-tema-10-afecciones-fii-parte-1.html" target="_blank">📄 Resumo T10 — Afecciones FII Parte 1</a>
+          <a class="resumo-link" href="../03-disciplinas/semiologia-quirurgica/revisao/resumos/p2/p2-tema-10-afecciones-fii/relatorio-lacunas-p2-tema-10-afecciones-fii.html" target="_blank">📋 Relatório de Lacunas T10</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">Mapas Mentais</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/semiologia-quirurgica/revisao/mapas-mentais/semiologia-quirurgica-t10-diverticulitis-fii-mindmap.html" target="_blank">🗺️ Mapa Mental — T10 Diverticulite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="extras" class="prova-section">
+    <h2 class="section-title">🎯 Quiz, Questões e Flashcards</h2>
+    <div class="resumo-section">
+      <div class="resumo-group">
+        <div class="resumo-group-title">Quiz Interativo</div>
+        <div class="resumo-grid">
+          <a class="resumo-link quiz" href="../03-disciplinas/semiologia-quirurgica/revisao/quiz/semiologia-quirurgica-t09-apendicitis-fid-quiz.html" target="_blank">🎯 Quiz T09 — Apendicitis FID</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/semiologia-quirurgica/revisao/quiz/semiologia-quirurgica-t10-afecciones-fii-quiz.html" target="_blank">🎯 Quiz T10 — Afecciones FII</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">Flashcards e Questões</div>
+        <div class="resumo-grid">
+          <a class="resumo-link flashcard" href="../03-disciplinas/semiologia-quirurgica/revisao/flashcards/p2-tema-10-afecciones-fii-flashcards.html" target="_blank">🃏 Flashcards T10</a>
+          <a class="resumo-link questao" href="../03-disciplinas/semiologia-quirurgica/revisao/questoes/p2-tema-10-afecciones-fii-questoes.html" target="_blank">❓ Questões T10</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>MED-Vault 2.0 · Semiologia Cirúrgica · <a href="../">← Voltar ao início</a></footer>
+
+<script>
+function showTab(id, event) {
+  document.querySelectorAll('.prova-section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

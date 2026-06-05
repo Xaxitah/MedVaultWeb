@@ -1,11 +1,19 @@
-# Export Obsidian (muito grande para GitHub)
+# Binários grandes — servidos via Google Drive
+**/*.mp3
+**/*.m4a
+**/*.png
+**/*.pdf
+**/*.pptx
+**/*.pptm
+
+# Imagens de slides (servidas via Drive)
+03-disciplinas/**/*.jpg
+03-disciplinas/**/*.jpeg
+03-disciplinas/**/*.webp
+
+# Export duplicado
 med/
 raw/
-03-disciplinas/
-05-glossario/
-06-revisao-espacada/
-07-biblioteca-geral/
-site-lib/
 
 # Scripts de manutenção local
 deploy.bat

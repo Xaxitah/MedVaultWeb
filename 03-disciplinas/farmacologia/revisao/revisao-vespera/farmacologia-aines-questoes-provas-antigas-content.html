@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AINEs — Questões de Provas Antigas | Farmacologia</title>
+<style>
+  :root {
+    --verde:   #16a34a;
+    --verde-bg:#dcfce7;
+    --vermelho:#dc2626;
+    --azul:    #1d4ed8;
+    --azul-bg: #eff6ff;
+    --amarelo: #d97706;
+    --amar-bg: #fffbeb;
+    --roxo:    #7c3aed;
+    --roxo-bg: #f5f3ff;
+    --cinza:   #6b7280;
+    --card-bg: #ffffff;
+    --page-bg: #f8fafc;
+    --border:  #e2e8f0;
+    --text:    #1e293b;
+    --text2:   #475569;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--page-bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px 16px 60px;
+  }
+
+  /* ── CABEÇALHO ───────────────────────────────────────── */
+  header {
+    max-width: 860px;
+    margin: 0 auto 32px;
+    background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 32px;
+  }
+  header h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 6px; }
+  header p  { font-size: 0.95rem; opacity: 0.88; }
+  .badges   { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .badge {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  /* ── CONTAINER ──────────────────────────────────────── */
+  main { max-width: 860px; margin: 0 auto; }
+
+  /* ── CARD DE QUESTÃO ────────────────────────────────── */
+  .questao {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .questao-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    background: #f8fafc;
+  }
+  .num {
+    background: #1e40af;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .fonte {
+    font-size: 0.78rem;
+    color: var(--cinza);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .tipo-badge {
+    margin-left: auto;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .tipo-mc   { background: var(--azul-bg);  color: var(--azul); }
+  .tipo-vf   { background: var(--amar-bg);  color: var(--amarelo); }
+  .tipo-caso { background: var(--roxo-bg);  color: var(--roxo); }
+
+  .questao-body { padding: 20px; }
+
+  .tema-tag {
+    display: inline-block;
+    background: var(--azul-bg);
+    color: var(--azul);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  .enunciado {
+    font-size: 0.97rem;
+    color: var(--text);
+    margin-bottom: 18px;
+    line-height: 1.65;
+  }
+  .enunciado strong { color: #1e40af; }
+
+  /* ── ALTERNATIVAS ───────────────────────────────────── */
+  .alternativas { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .alternativas li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    font-size: 0.92rem;
+    background: #fafafa;
+    transition: background 0.15s;
+  }
+  .letra {
+    font-weight: 800;
+    color: var(--cinza);
+    min-width: 22px;
+    font-size: 0.88rem;
+  }
+  /* Resposta correta */
+  li.correta {
+    border-color: var(--verde);
+    background: var(--verde-bg);
+  }
+  li.correta .letra { color: var(--verde); }
+  li.correta .texto { font-weight: 600; color: #14532d; }
+  .check { color: var(--verde); font-weight: 900; margin-left: auto; font-size: 1rem; }
+
+  /* ── VF ─────────────────────────────────────────────── */
+  .vf-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .vf-opt {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background: #fafafa;
+  }
+  .vf-opt.correta {
+    border-color: var(--verde);
+    background: var(--verde-bg);
+    color: #14532d;
+  }
+
+  /* ── COMENTÁRIO ─────────────────────────────────────── */
+  .comentario {
+    border-top: 1px solid var(--border);
+    padding: 16px 20px 20px;
+    background: #fafafa;
+  }
+  .comentario-titulo {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #7c3aed;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .comentario-titulo::before { content: "💡"; }
+  .comentario p {
+    font-size: 0.9rem;
+    color: var(--text2);
+    margin-bottom: 8px;
+    line-height: 1.65;
+  }
+  .comentario p:last-child { margin-bottom: 0; }
+  .comentario strong { color: var(--text); }
+  .comentario em { color: #1e40af; font-style: normal; font-weight: 600; }
+
+  .alerta {
+    background: #fef9c3;
+    border-left: 4px solid #d97706;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 0.88rem;
+    color: #78350f;
+    line-height: 1.6;
+  }
+  .alerta strong { color: #92400e; }
+
+  .perigo {
+    background: #fee2e2;
+    border-left: 4px solid var(--vermelho);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 0.88rem;
+    color: #7f1d1d;
+    line-height: 1.6;
+  }
+  .perigo strong { color: #991b1b; }
+
+  /* ── SEPARADOR DE SEÇÃO ─────────────────────────────── */
+  .secao {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--cinza);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 32px 0 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  /* ── RODAPÉ ─────────────────────────────────────────── */
+  footer {
+    max-width: 860px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--cinza);
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    header { break-inside: avoid; }
+    .questao { break-inside: avoid; box-shadow: none; }
+    .comentario { background: #f9f9f9; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔍 AINEs — Questões de Provas Antigas</h1>
+  <p>Farmacologia · Todas as questões que caíram sobre Anti-inflamatórios Não Esteroidais nas provas. Respostas gabaritadas e comentadas.</p>
+  <div class="badges">
+    <span class="badge">12 questões únicas</span>
+    <span class="badge">P1 · P2 · Final</span>
+    <span class="badge">COX · Paracetamol · AAS · Ibuprofeno · Indometacina</span>
+    <span class="badge">01-06-2026</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOCO 1 — MECANISMO DE AÇÃO E FARMACOLOGIA BÁSICA
+════════════════════════════════════════════════════════════ -->
+<div class="secao">🔬 Mecanismo de Ação e Farmacologia Básica</div>
+
+<!-- Q1 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 01</span>
+    <span class="fonte">1ª Parcial · Prova sem ano</span>
+    <span class="tipo-badge tipo-vf">V/F</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Três ações dos AINEs</span>
+    <p class="enunciado">
+      Con respecto a la siguiente frase: <em>"La mayoría de los componentes del grupo de los AINES comparten tres acciones que lo definen (analgesia, antitérmica, y antiinflamatoria), su eficacia relativa para cada una de ellas puede ser diferente, es decir, un fármaco concreto puede mostrar mayor actividad antiinflamatoria o analgésica que otro, o viceversa"</em>, es:
+    </p>
+    <div class="vf-box">
+      <div class="vf-opt correta">✔ VERDADEIRO</div>
+      <div class="vf-opt">Falso</div>
+    </div>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>Os AINEs são definidos por <strong>três ações farmacológicas</strong>: analgésica, antipirética e anti-inflamatória — todas mediadas pela inibição da enzima <em>ciclooxigenase (COX)</em>, que converte ácido araquidônico em prostaglandinas.</p>
+    <p>A afirmação é <strong>verdadeira</strong>: a potência relativa de cada ação varia entre os fármacos do grupo. Por exemplo:</p>
+    <p>
+      • <strong>Indometacina</strong> → destaque anti-inflamatório<br>
+      • <strong>Ketorolac</strong> → destaque analgésico (comparável a opioides fracos)<br>
+      • <strong>AAS</strong> → destaque antiagregante plaquetário (inibição irreversível da COX-1)<br>
+      • <strong>Metamizol (dipirona)</strong> → destaque antipirético
+    </p>
+    <div class="alerta">
+      <strong>⚠️ Exceção clássica de prova:</strong> O paracetamol (acetaminofeno) <em>não é um AINE verdadeiro</em> — tem ação analgésica e antipirética, mas anti-inflamatória desprezível perifericamente. É o único "AINE-like" sem ação anti-inflamatória significativa.
+    </div>
+  </div>
+</div>
+
+<!-- Q2 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 02</span>
+    <span class="fonte">2ª Parcial 2024 · questoes-imagens-2024</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Perfil farmacológico comparado</span>
+    <p class="enunciado">
+      Con relación a los AINES, el/la ________ es un importante <strong>antiagregante plaquetario</strong>, mientras el/la ________ posee una potente acción <strong>antitérmica</strong> y el/la ________ se incluye dentro del grupo de <strong>mayor potencia analgésica</strong>.
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Ácido acetil salicílico — dipirona — naproxeno</span>
+      </li>
+      <li class="correta">
+        <span class="letra">B</span>
+        <span class="texto">Ácido acetil salicílico — metamizol — ketorolac</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Indometacina — paracetamol — ibuprofeno</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Paracetamol — metamizol — ácido acetil salicílico</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p><strong>AAS (ácido acetilsalicílico):</strong> inibe a COX-1 plaquetária de forma <em>irreversível e permanente</em>. Como a plaqueta não tem núcleo, não consegue produzir nova COX — o efeito antiagregante dura toda a vida da plaqueta (~14 dias). Dose antiagregante: 75–325 mg/dia.</p>
+    <p><strong>Metamizol (dipirona):</strong> mecanismo central (inibição de COX-3/efeito central) + periférico. É o AINE com maior potência antipirética do grupo. Muito usado no Brasil e Paraguai, mas banido em alguns países (EUA) por risco de agranulocitose.</p>
+    <p><strong>Ketorolac:</strong> o AINE com maior potência analgésica — pode substituir opioides fracos no pós-operatório. Limitação importante: uso <em>máximo 5 dias</em> (toxicidade GI e renal).</p>
+    <div class="alerta">
+      <strong>⚠️ Por que não a opção A?</strong> Naproxeno é um bom anti-inflamatório/analgésico, mas <em>não é o mais potente analgésico</em> do grupo — esse título é do ketorolac.
+    </div>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 03</span>
+    <span class="fonte">2ª Parcial 2024 · questoes-imagens-2024</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Afirmação INCORRETA sobre AINEs</span>
+    <p class="enunciado">
+      Señale lo <strong>incorrecto</strong> con respecto a AINES:
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Son efectivos contra el dolor inflamatorio de intensidad baja a moderada.</span>
+      </li>
+      <li class="correta">
+        <span class="letra">B</span>
+        <span class="texto">El único AINE desprovisto de acción antiinflamatoria es el ketorolac.</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">El uso crónico de los AINEs está limitado por potencial nefrotoxicidad y toxicidad gastrointestinal.</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">El consumo de alimentos puede retrasar la absorción y disponibilidad.</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>A alternativa <strong>B é incorreta</strong> — e portanto a resposta da questão. O fármaco desprovido de ação anti-inflamatória é o <em>paracetamol</em>, não o ketorolac.</p>
+    <p>O <strong>ketorolac</strong> tem sim ação anti-inflamatória (inibe COX-1 e COX-2), mas seu uso clínico se concentra na analgesia por ter o maior potencial analgésico do grupo. Não é desprovido de anti-inflamatório — apenas o uso é limitado a curto prazo (≤5 dias) pela toxicidade.</p>
+    <p>As outras afirmações são corretas:</p>
+    <p>• <strong>A —</strong> AINEs são de 1ª linha para dor inflamatória leve a moderada (escada analgésica da OMS, degrau 1).<br>
+    • <strong>C —</strong> Nefrotoxicidade (redução do fluxo renal por inibição das prostaglandinas renais) e úlcera/sangramento GI são os efeitos adversos crônicos limitantes.<br>
+    • <strong>D —</strong> Alimentos retardam a absorção (↓ velocidade), mas geralmente não alteram a biodisponibilidade total — a absorção permanece semelhante, só é mais lenta.</p>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOCO 2 — PARACETAMOL: METABOLISMO E INTOXICAÇÃO
+════════════════════════════════════════════════════════════ -->
+<div class="secao">💊 Paracetamol — Metabolismo e Intoxicação</div>
+
+<!-- Q4 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 04</span>
+    <span class="fonte">Prova Final · provas-sem-ano</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Metabolismo do paracetamol</span>
+    <p class="enunciado">
+      ¿Cuál es el mecanismo del metabolismo del paracetamol?
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Tiene un metabolismo hepático por hidrólisis</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Tiene un metabolismo hepático por reducción</span>
+      </li>
+      <li class="correta">
+        <span class="letra">C</span>
+        <span class="texto">Tiene un metabolismo hepático por conjugación</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">No se metaboliza</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Tiene un metabolismo hepático por oxidación</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>O paracetamol é metabolizado no fígado por dois processos principais:</p>
+    <p>
+      • <strong>90% → conjugação</strong> com glicuronídeo e sulfato → metabólitos não tóxicos, excretados na urina. ← <em>Via principal e resposta correta</em><br>
+      • <strong>10% → oxidação</strong> pelo CYP2E1/3A4 → produz <em>NAPQI</em> (N-acetil-para-benzoquinona-imina), metabólito altamente tóxico
+    </p>
+    <p>Em doses normais, o NAPQI é neutralizado pela <strong>glutationa</strong> hepática → conjugado mercaptúrico inofensivo.</p>
+    <div class="perigo">
+      <strong>🚨 Em superdosagem:</strong> a conjugação fica saturada → mais paracetamol é oxidado → NAPQI em excesso → glutationa esgotada → NAPQI se liga a proteínas hepáticas → <strong>necrose hepática centrolobular</strong>.
+    </div>
+    <p style="margin-top:10px">Por que não a E? Tecnicamente a oxidação pelo CYP2E1 existe — mas é a via <em>minoritária</em> (10%) e produz o metabólito tóxico. A via principal e que define o metabolismo é a <em>conjugação</em>.</p>
+  </div>
+</div>
+
+<!-- Q5 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 05</span>
+    <span class="fonte">1ª Parcial · provas-sem-ano</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Dose máxima do paracetamol</span>
+    <p class="enunciado">
+      Cuando menciono que un paciente puede consumir hasta <strong>4 gramos/día de paracetamol</strong> sin causar lesiones dañinas, me refiero a que esa dosis es la dosis:
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Tóxica</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Letal</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Mínima</span>
+      </li>
+      <li class="correta">
+        <span class="letra">D</span>
+        <span class="texto">Máxima</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Subóptima</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>A <strong>dose máxima</strong> é a maior dose que pode ser administrada sem causar efeitos tóxicos. Para o paracetamol em adultos saudáveis: <em>4 g/dia</em> (ex: 1 g a cada 6h).</p>
+    <p>Acima disso, a glutationa hepática é esgotada e ocorre acúmulo de NAPQI tóxico.</p>
+    <div class="alerta">
+      <strong>⚠️ Populações especiais:</strong> Em hepatopatas, alcoólatras crônicos ou desnutridos (reservas de glutationa reduzidas), a dose máxima segura cai para <em>2 g/dia</em>. Crianças: 15 mg/kg a cada 4–6h (máx. 75 mg/kg/dia).
+    </div>
+    <p style="margin-top:10px">
+      • <strong>Dose tóxica adulto:</strong> >7,5–10 g em dose única<br>
+      • <strong>Dose letal:</strong> >15 g (pode causar insuficiência hepática fulminante)
+    </p>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 06</span>
+    <span class="fonte">1ª Parcial · provas-sem-ano</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Consequência mais grave na intoxicação</span>
+    <p class="enunciado">
+      En una intoxicación por paracetamol, la consecuencia más grave resultado de la toxicidad es:
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Fiebre</span>
+      </li>
+      <li class="correta">
+        <span class="letra">B</span>
+        <span class="texto">Necrosis hepática</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Exantema</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Anemia</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Ninguna es correcta</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>A <strong>necrose hepática centrolobular</strong> é a consequência mais grave e a principal causa de mortalidade na intoxicação por paracetamol. É causada pelo NAPQI que se liga covalentemente a proteínas dos hepatócitos na zona 3 (centrolobular), onde o CYP2E1 é mais abundante.</p>
+    <p><strong>Evolução clínica em 4 fases:</strong></p>
+    <p>
+      • <strong>Fase I (0–24h):</strong> náusea, vômito, mal-estar — pode ser assintomático<br>
+      • <strong>Fase II (24–72h):</strong> dor em hipocôndrio direito, ↑ transaminases<br>
+      • <strong>Fase III (72–96h):</strong> pico da hepatotoxicidade — icterícia, coagulopatia, encefalopatia<br>
+      • <strong>Fase IV (>4 dias):</strong> recuperação (se tratado) ou insuficiência hepática fulminante
+    </p>
+    <div class="perigo">
+      <strong>🚨 Também pode ocorrer:</strong> necrose tubular renal (em ~25% dos casos graves) e pancreatite.
+    </div>
+  </div>
+</div>
+
+<!-- Q7 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 07</span>
+    <span class="fonte">1ª Parcial · provas-sem-ano</span>
+    <span class="tipo-badge tipo-caso">Caso Clínico</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Intoxicação por paracetamol — manejo</span>
+    <p class="enunciado">
+      Paciente de 20 años, sexo femenino, ingresa a urgencias con dolor en hipocondrio derecho, fiebre, fatiga y anorexia. El familiar refiere que tuvo una discusión familiar e ingirió una tableta entera de <strong>"un comprimido para dolor de cabeza de color blanquito"</strong> hace aproximadamente 6 horas. ¿Cuál sería el fármaco sospechoso? ¿Cuál sería el mejor manejo?
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Paracetamol / administrar carbón activado + N-acetil-cisteína por vía oral</span>
+      </li>
+      <li class="correta">
+        <span class="letra">B</span>
+        <span class="texto">Paracetamol / administrar N-acetil-cisteína en perfusión continua endovenosa</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">AAS / administrar N-acetil-cisteína en bolo endovenoso</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">AAS / administrar carbón activado + N-acetil-cisteína en bolo endovenoso</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Paracetamol / administrar carbón activado por vía oral</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p><strong>Identificação do fármaco:</strong> "Comprimido branco para dor de cabeça" + contexto de tentativa de autolesão → paracetamol (Tylenol/Actafen). O quadro de dor em hipocôndrio direito após 6h confirma início de hepatotoxicidade.</p>
+    <p><strong>Antídoto:</strong> <em>N-acetilcisteína (NAC)</em> — repõe glutationa hepática, neutraliza o NAPQI antes que cause dano irreversível.</p>
+    <p><strong>Por que perfusão contínua EV (e não oral ou bolo)?</strong></p>
+    <p>
+      • <strong>Carbono ativado:</strong> útil apenas se &lt;1–2h da ingestão (para capturar o fármaco no TGI antes da absorção). Com 6h, o paracetamol já foi absorvido — carbono não ajuda.<br>
+      • <strong>NAC oral:</strong> pode ser usada, mas tem eficácia reduzida se já há hepatotoxicidade instalada e tem efeitos adversos GI (vômito, que é comum na intoxicação).<br>
+      • <strong>NAC EV em perfusão contínua:</strong> protocolo padrão Rumack-Matthew após &gt;1–2h da ingestão. Garante nível sérico estável, melhor tolerância e eficácia superior.
+    </p>
+    <div class="alerta">
+      <strong>⚠️ Bolo EV (alternativas C e D):</strong> não é o protocolo padrão — a perfusão contínua é mais segura (menor risco de reações anafilactoides) e mais eficaz.
+    </div>
+  </div>
+</div>
+
+<!-- Q8 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 08</span>
+    <span class="fonte">1ª Parcial · provas-sem-ano</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Equivalência terapêutica</span>
+    <p class="enunciado">
+      <em>"La eficacia y la seguridad del paracetamol es similar a la del ibuprofeno."</em> La afirmación se refiere a:
+    </p>
+    <ul class="alternativas">
+      <li class="correta">
+        <span class="letra">A</span>
+        <span class="texto">Equivalencia terapéutica</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Sinergismo</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Biodisponibilidad</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Agonismo</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Bioequivalencia</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p><strong>Equivalência terapêutica:</strong> dois fármacos <em>diferentes</em> (substâncias distintas) que apresentam eficácia e segurança comparáveis para uma determinada indicação clínica.</p>
+    <p>
+      • <strong>Sinergismo:</strong> dois fármacos atuam juntos com efeito maior que a soma individual<br>
+      • <strong>Bioequivalência:</strong> <em>mesma substância</em>, formas farmacêuticas diferentes (ex: genérico vs. referência), com biodisponibilidade estatisticamente equivalente<br>
+      • <strong>Biodisponibilidade:</strong> fração do fármaco que atinge a circulação sistêmica na forma ativa<br>
+      • <strong>Agonismo:</strong> ligação a receptor com ativação de resposta
+    </p>
+    <div class="alerta">
+      <strong>⚠️ Decorar a diferença:</strong> Bioequivalência = mesma molécula, formas diferentes. Equivalência terapêutica = moléculas distintas, efeito similar.
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOCO 3 — EFEITOS ADVERSOS E CONTRAINDICAÇÕES
+════════════════════════════════════════════════════════════ -->
+<div class="secao">⚠️ Efeitos Adversos e Contraindicações</div>
+
+<!-- Q9 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 09</span>
+    <span class="fonte">Prova Final · provas-sem-ano</span>
+    <span class="tipo-badge tipo-caso">Caso Clínico</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">AINEs → Úlcera gástrica — mecanismo</span>
+    <p class="enunciado">
+      Un paciente toma <strong>ibuprofeno</strong> por una artritis. Se queja de dolor abdominal; se sospecha una úlcera gástrica, que se confirma por endoscopia. ¿Cuál de los siguientes compuestos es <strong>aumentado</strong> por el ibuprofeno y es responsable de este efecto adverso?
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Mucus gástrico</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Colecistoquinina</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Secreción de bicarbonato</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Gastrina</span>
+      </li>
+      <li class="correta">
+        <span class="letra">E</span>
+        <span class="texto">Ácido clorhídrico</span>
+        <span class="check">✔</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>Os AINEs causam úlcera gástrica por <strong>dois mecanismos simultâneos</strong>:</p>
+    <p>
+      <strong>1. Inibição da COX-1 sistêmica</strong> → ↓ prostaglandinas gástricas (PGE₂ e PGI₂):<br>
+      &nbsp;&nbsp;• PGE₂ normalmente <em>inibe</em> a secreção de HCl pelas células parietais<br>
+      &nbsp;&nbsp;• PGE₂ normalmente <em>estimula</em> produção de muco e bicarbonato (proteção da mucosa)<br>
+      &nbsp;&nbsp;→ Sem PGE₂: <em>↑ HCl + ↓ muco + ↓ bicarbonato</em> = mucosa desprotegida
+    </p>
+    <p>
+      <strong>2. Efeito local</strong> (para AINEs ácidos como ibuprofeno, diclofenaco, AAS):<br>
+      &nbsp;&nbsp;• Forma neutra lipofílica penetra o epitélio → se ioniza no interior da célula → acúmulo tóxico
+    </p>
+    <p>O mecanismo pedido é o aumento do <em>HCl</em> — resultado direto da remoção do "freio" que as prostaglandinas exerciam sobre a secreção ácida.</p>
+    <div class="alerta">
+      <strong>⚠️ Prevenção da úlcera por AINEs:</strong> IBP (omeprazol, lanzoprazol) — 1ª escolha. Misoprostol — eficaz, mas contraindicado na gravidez (ver Q12). Tomar com alimento atenua o efeito local.
+    </div>
+  </div>
+</div>
+
+<!-- Q10 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 10</span>
+    <span class="fonte">1ª Parcial · provas-sem-ano</span>
+    <span class="tipo-badge tipo-mc">Múltipla escolha</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">AINEs contraindicados na gravidez — ducto arterioso</span>
+    <p class="enunciado">
+      Son fármacos contraindicados en el embarazo por el <strong>cierre prematuro del conducto arterioso</strong>:
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Indometacina – paracetamol</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">AAS – paracetamol</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">AAS – naproxeno</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Ibuprofeno – AAS</span>
+      </li>
+      <li class="correta">
+        <span class="letra">E</span>
+        <span class="texto">Indometacina – ibuprofeno</span>
+        <span class="check">✔</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>O <strong>ducto arterioso</strong> (ligação entre artéria pulmonar e aorta, que permite bypass pulmonar no feto) se mantém aberto graças às prostaglandinas locais (PGE₂). AINEs inibem a COX → ↓ PGE₂ → fechamento prematuro do ducto → hipertensão pulmonar fetal.</p>
+    <p>Os mais potentes neste efeito são os AINEs com maior ação anti-inflamatória:</p>
+    <p>
+      • <strong>Indometacina</strong> — o mais potente inibidor de COX do grupo → maior risco<br>
+      • <strong>Ibuprofeno</strong> — também significativo; combinação ibuprofeno + indometacina = alto risco<br>
+      • <strong>Naproxeno</strong> — também contraindicado no 3º trimestre pelo mesmo mecanismo
+    </p>
+    <div class="alerta">
+      <strong>⚠️ Por que não o paracetamol?</strong> O paracetamol não tem ação anti-inflamatória periférica significativa e não fecha o ducto arterioso. É o analgésico/antipirético de <em>escolha</em> na gravidez.
+    </div>
+    <div class="perigo">
+      <strong>🚨 AAS na gravidez:</strong> em baixas doses (75–150 mg/dia) é usado até 36 semanas para prevenção de pré-eclâmpsia. Em doses analgésicas plenas (500–1000 mg), é contraindicado especialmente no 3º trimestre.
+    </div>
+  </div>
+</div>
+
+<!-- Q11 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 11</span>
+    <span class="fonte">Prova Final · provas-sem-ano</span>
+    <span class="tipo-badge tipo-caso">Caso Clínico</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Misoprostol contraindicado na gravidez</span>
+    <p class="enunciado">
+      Una mujer con <strong>embarazo de 32 semanas</strong> acude al consultorio con dolor epigástrico. Refiere consumo excesivo de analgésicos. Se sospecha <strong>gastritis asociada a AINEs</strong>. ¿Cuál es un fármaco contraindicado en este caso?
+    </p>
+    <ul class="alternativas">
+      <li>
+        <span class="letra">A</span>
+        <span class="texto">Lansoprazol</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Todos pueden ser utilizados</span>
+      </li>
+      <li class="correta">
+        <span class="letra">C</span>
+        <span class="texto">Misoprostol</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Ranitidina</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Hidróxido de aluminio</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>O <strong>misoprostol</strong> é um análogo sintético da PGE₁ — repõe as prostaglandinas gástricas perdidas pela inibição dos AINEs, aumentando muco e bicarbonato e reduzindo HCl. É eficaz para prevenir/tratar gastrite/úlcera por AINEs.</p>
+    <p>Porém, as prostaglandinas também estimulam <em>contração uterina</em> (uterotônicas). Por isso, o misoprostol é usado clinicamente para:</p>
+    <p>
+      • Indução do parto (via vaginal)<br>
+      • Tratamento de hemorragia pós-parto<br>
+      • Abortamento terapêutico (combinado com mifepristona)
+    </p>
+    <div class="perigo">
+      <strong>🚨 CONTRAINDICADO na gravidez</strong> para fins de gastrite — risco de aborto ou parto prematuro.
+    </div>
+    <p style="margin-top:10px"><strong>Alternativas seguras na gestante com gastrite por AINEs:</strong></p>
+    <p>
+      • <em>IBP (omeprazol, lanzoprazol)</em> → 1ª escolha; categoria B/C, preferidos<br>
+      • <em>Antiácidos (hidróxido de alumínio/magnésio)</em> → seguros, uso sintomático<br>
+      • <em>Ranitidina</em> → antagonista H₂; foi descontinuada em 2020 por contaminação com NDMA, mas ainda aparece em provas como opção segura na gravidez
+    </p>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOCO 4 — INDICAÇÕES CLÍNICAS ESPECÍFICAS
+════════════════════════════════════════════════════════════ -->
+<div class="secao">🩺 Indicações Clínicas Específicas</div>
+
+<!-- Q12 -->
+<div class="questao">
+  <div class="questao-header">
+    <span class="num">Q 12</span>
+    <span class="fonte">Prova Final · provas-sem-ano</span>
+    <span class="tipo-badge tipo-caso">Caso Clínico</span>
+  </div>
+  <div class="questao-body">
+    <span class="tema-tag">Indometacina — Espondilite Anquilosante</span>
+    <p class="enunciado">
+      Un paciente tiene <strong>espondilitis anquilosante</strong> con dolor crónico. ¿Cuál de los siguientes fármacos se debe seleccionar para tratar a este paciente?
+    </p>
+    <ul class="alternativas">
+      <li class="correta">
+        <span class="letra">A</span>
+        <span class="texto">Indometacina</span>
+        <span class="check">✔</span>
+      </li>
+      <li>
+        <span class="letra">B</span>
+        <span class="texto">Ketorolaco</span>
+      </li>
+      <li>
+        <span class="letra">C</span>
+        <span class="texto">Clonixinato de lisina</span>
+      </li>
+      <li>
+        <span class="letra">D</span>
+        <span class="texto">Dipirona</span>
+      </li>
+      <li>
+        <span class="letra">E</span>
+        <span class="texto">Paracetamol</span>
+      </li>
+    </ul>
+  </div>
+  <div class="comentario">
+    <div class="comentario-titulo">Comentário</div>
+    <p>A <strong>espondilite anquilosante</strong> é uma espondiloartropatia inflamatória crônica das articulações sacroilíacas e da coluna vertebral. Exige fármaco com <em>potente ação anti-inflamatória</em>.</p>
+    <p>A <strong>indometacina</strong> é historicamente o AINE de 1ª linha para espondilite anquilosante — é o mais potente inibidor de COX do grupo, com excelente penetração nos tecidos inflamados.</p>
+    <p>Por que não os outros?</p>
+    <p>
+      • <strong>Ketorolac:</strong> excelente analgésico, mas uso máximo 5 dias — incompatível com dor crônica<br>
+      • <strong>Clonixinato de lisina:</strong> AINE usado para dor leve/moderada, sem evidência robusta em espondilite<br>
+      • <strong>Dipirona:</strong> antipirético/analgésico, ação anti-inflamatória insuficiente para artropatia inflamatória<br>
+      • <strong>Paracetamol:</strong> sem ação anti-inflamatória significativa — inadequado
+    </p>
+    <div class="alerta">
+      <strong>⚠️ Atualização clínica:</strong> Em casos refratários aos AINEs, usam-se biológicos (anti-TNFα: etanercept, adalimumabe, infliximabe). Mas para a prova, a resposta é indometacina.
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ── RESUMO RÁPIDO ──────────────────────────────────────────────── -->
+<div style="max-width:860px; margin: 32px auto 0; background:#1e293b; color:#e2e8f0; border-radius:16px; padding:28px 32px;">
+  <h2 style="font-size:1.1rem; font-weight:800; color:#f8fafc; margin-bottom:18px;">📋 Cola Rápida — O que mais cai sobre AINEs</h2>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:16px; font-size:0.88rem; line-height:1.7;">
+    <div>
+      <p style="color:#94a3b8; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:6px;">Perfis específicos</p>
+      <p>🩺 <strong>Maior anti-inflamatório:</strong> Indometacina</p>
+      <p>💊 <strong>Maior analgésico:</strong> Ketorolac</p>
+      <p>🌡️ <strong>Maior antipirético:</strong> Metamizol / Dipirona</p>
+      <p>🩸 <strong>Antiagregante irreversível:</strong> AAS</p>
+      <p>✅ <strong>Sem anti-inflamatório:</strong> Paracetamol</p>
+    </div>
+    <div>
+      <p style="color:#94a3b8; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:6px;">Contraindicações na gravidez</p>
+      <p>🚫 Indometacina → fecha ducto arterioso</p>
+      <p>🚫 Ibuprofeno → fecha ducto arterioso</p>
+      <p>🚫 Misoprostol → uterotônico</p>
+      <p>✅ Paracetamol → seguro (escolha na gravidez)</p>
+      <p>✅ AAS 75mg → usado para pré-eclâmpsia</p>
+    </div>
+    <div>
+      <p style="color:#94a3b8; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:6px;">Paracetamol — pontos críticos</p>
+      <p>📌 Dose máx adulto: <strong>4 g/dia</strong></p>
+      <p>📌 Metabolismo: <strong>conjugação</strong> (via principal)</p>
+      <p>📌 Metabólito tóxico: <strong>NAPQI</strong> (via CYP2E1)</p>
+      <p>📌 Consequência: <strong>necrose hepática</strong></p>
+      <p>📌 Antídoto: <strong>NAC EV perfusão contínua</strong></p>
+    </div>
+    <div>
+      <p style="color:#94a3b8; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin-bottom:6px;">Indicações específicas</p>
+      <p>🦴 Espondilite anquilosante → <strong>Indometacina</strong></p>
+      <p>🩹 Pós-op analgesia &lt;5 dias → <strong>Ketorolac</strong></p>
+      <p>❤️ Antiagregação cardíaca → <strong>AAS 100 mg</strong></p>
+      <p>🌡️ Febre refratária → <strong>Metamizol / Dipirona</strong></p>
+      <p>🤰 Gravidez com dor → <strong>Paracetamol</strong></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Farmacologia · AINEs — Questões de Provas Antigas · MED-Vault-2.0</p>
+  <p style="margin-top:4px">Fontes: provas-farmacologia-sem-ano.md · questoes-farmacologia-imagens-2024.md</p>
+  <p style="margin-top:4px; color:#9ca3af">Gerado em 01-06-2026 | Para uso exclusivo de estudo</p>
+</footer>
+
+</body>
+</html>

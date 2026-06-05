@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T10 — Litiasis Urinaria — Perguntas Comentadas</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8f6f1;
+       color: #1a1a1a; line-height: 1.7; font-size: 16px; }
+.layout { display: flex; min-height: 100vh; }
+.toc-sidebar { width: 260px; min-width: 220px; background: #2c3e50; color: #ecf0f1;
+               position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 20px 16px; flex-shrink: 0; }
+.toc-sidebar h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+                  color: #95a5a6; margin-bottom: 12px; }
+.toc-sidebar a { display: block; color: #bdc3c7; text-decoration: none; font-size: 13px;
+                 padding: 4px 8px; border-radius: 4px; margin-bottom: 2px; }
+.toc-sidebar a:hover { background: #34495e; color: #fff; }
+.toc-sidebar a.h3 { padding-left: 20px; font-size: 12px; color: #95a5a6; }
+.content { flex: 1; padding: 40px 48px; max-width: 900px; }
+h1 { font-size: 2em; color: #2c3e50; margin-bottom: 8px; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+h2 { font-size: 1.4em; color: #2c3e50; margin: 36px 0 12px; border-left: 4px solid #3498db;
+     padding-left: 12px; }
+h3 { font-size: 1.15em; color: #34495e; margin: 24px 0 8px; }
+h4 { font-size: 1em; color: #555; margin: 16px 0 6px; }
+p { margin-bottom: 12px; }
+ul, ol { padding-left: 24px; margin-bottom: 12px; }
+li { margin-bottom: 4px; }
+strong { color: #1a1a1a; }
+em { color: #555; }
+code { background: #e8e8e8; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; font-family: monospace; }
+pre { background: #2c3e50; color: #ecf0f1; padding: 16px; border-radius: 8px;
+      overflow-x: auto; margin: 16px 0; font-size: 0.9em; line-height: 1.5; }
+pre code { background: none; color: inherit; padding: 0; }
+blockquote { border-left: 4px solid #bbb; padding-left: 16px; color: #555; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.95em; }
+th { background: #2c3e50; color: #fff; padding: 10px 14px; text-align: left; }
+td { padding: 8px 14px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) td { background: #f0f0f0; }
+tr:hover td { background: #e8f4fd; }
+hr { border: none; border-top: 2px solid #e0e0e0; margin: 32px 0; }
+a { color: #2980b9; }
+
+/* ── Callouts ── */
+.callout { border-left: 5px solid; border-radius: 6px; padding: 14px 18px; margin: 16px 0;
+           font-size: 0.95em; }
+.callout-title { font-weight: bold; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+.callout-note    { background: #f0f4f8; border-color: #7f8c8d; }
+.callout-note    .callout-title { color: #7f8c8d; }
+.callout-info    { background: #eaf4fd; border-color: #2980b9; }
+.callout-info    .callout-title { color: #2980b9; }
+.callout-tip     { background: #eafaf1; border-color: #27ae60; }
+.callout-tip     .callout-title { color: #27ae60; }
+.callout-warning { background: #fef9e7; border-color: #e67e22; }
+.callout-warning .callout-title { color: #e67e22; }
+.callout-danger  { background: #fdf0f0; border-color: #e74c3c; }
+.callout-danger  .callout-title { color: #e74c3c; }
+.callout-example { background: #f5eef8; border-color: #8e44ad; }
+.callout-example .callout-title { color: #8e44ad; }
+.callout-question { background: #fffbea; border-color: #f39c12; }
+.callout-question .callout-title { color: #d68910; }
+
+/* ── fonte block ── */
+.fontes-block { background: #eaf4fd; border-radius: 8px; padding: 14px 18px; margin: 12px 0 24px; font-size: 0.9em; }
+
+/* ── Perguntas ── */
+.question-block { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+                  padding: 20px 24px; margin: 20px 0; }
+.question-block h3 { font-size: 1.05em; color: #2c3e50; margin-bottom: 10px; }
+.question-meta { font-size: 0.82em; color: #999; margin-bottom: 10px; }
+.opcoes ol { padding-left: 20px; }
+.opcoes li { margin-bottom: 4px; }
+details { margin-top: 12px; }
+summary { cursor: pointer; background: #2c3e50; color: #fff; padding: 8px 14px;
+          border-radius: 6px; font-size: 0.9em; user-select: none; }
+summary:hover { background: #34495e; }
+.answer-box { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px;
+              border-radius: 0 6px 6px 6px; font-size: 0.95em; margin-top: 2px; }
+.answer-box .resposta-letra { font-size: 1.3em; font-weight: bold; color: #27ae60; }
+.answer-box .comentario { margin-top: 6px; color: #333; }
+.vf-verdadeiro { color: #27ae60; font-weight: bold; }
+.vf-falso { color: #e74c3c; font-weight: bold; }
+.bloco-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.07);
+                 padding: 24px 28px; margin-bottom: 32px; }
+.bloco-section h2 { border-left-color: #8e44ad; }
+
+/* ── Print ── */
+@media print {
+  .toc-sidebar { display: none; }
+  .content { max-width: 100%; padding: 20px; }
+  details, summary { display: none; }
+  .answer-box { display: block; }
+}
+@media (max-width: 800px) {
+  .toc-sidebar { display: none; }
+  .content { padding: 24px 20px; }
+}
+</style>
+  <style>.opcoes-list{padding-left:24px;} .opcoes-list li{margin-bottom:6px;}</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="toc-sidebar">
+    <h2>Índice</h2>
+    
+<a href="#bloco1">Bloco 1 — Objetivas</a>
+<a href="#bloco2">Bloco 2 — Discursivas</a>
+<a href="#bloco3">Bloco 3 — V/F</a>
+<a href="#mapa">Mapa por Slide</a>
+<a href="#duvidas">Dúvidas</a>
+
+  </nav>
+  <main class="content">
+    
+<h1>Litiasis Urinaria — Perguntas</h1>
+
+<blockquote>
+  <p>[!info] Fonte e escopo
+  Arquivo criado a partir do PDF <code>Litiasis.pdf</code>, com 20 slides/páginas sobre <strong>Litiasis Urinaria</strong>.
+  O PDF não tinha texto pesquisável extraível automaticamente; a leitura foi feita visualmente slide por slide.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!warning] Observação importante
+  Eu <strong>não encontrei perguntas explicitamente formuladas</strong> dentro deste PDF.
+  Então este arquivo reúne <strong>perguntas elaboradas a partir do conteúdo dos slides</strong>, com mapeamento por slide para ficar navegável no Obsidian.
+  Ou seja: não inventei tema fora do material, mas transformei o conteúdo do PDF em questões de estudo.</p>
+</blockquote>
+
+
+<div class="bloco-section">
+  <h2 id="bloco1">Bloco 1 — Questões Objetivas (Q01–Q30)</h2>
+  <p style="color:#666;margin-bottom:16px">Tente responder antes de abrir o gabarito.</p>
+  
+</div>
+
+<div class="bloco-section">
+  <h2 id="bloco2">Bloco 2 — Questões Discursivas (Q31–Q40)</h2>
+  <p style="color:#666;margin-bottom:16px">Responda em 30–60 segundos. Use os termos em espanhol do slide.</p>
+  
+<div class="question-block" id="q31">
+  <h3>Q31 — Definição</h3>
+  <div class="question-meta">Fonte: Slides 02 e 03 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Defina <strong>litiasis urinaria</strong> usando os elementos principais apresentados no PDF.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p><strong>Litiasis urinaria</strong> é a formação de cálculos, chamados também de <em>litos</em>, no sistema coletor urinário. O slide define como presença de concreções minerais e matriz orgânica na via urinária.</p>
+
+<p>A consequência clínica mais importante é a possibilidade de obstrução da via urinária, que gera dor, cólico renal, hematuria, infecção associada e, em casos graves, urgência médica.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q32">
+  <h3>Q32 — Epidemiologia</h3>
+  <div class="question-meta">Fonte: Slide 03 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Cite os principais dados epidemiológicos apresentados: frequência, prevalência, recorrência, sexo, raça e faixa etária.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>Segundo o slide, a litiasis urinaria é a <strong>terceira afecção mais comum do trato urinário</strong>. A prevalência apresentada é de aproximadamente <strong>10%</strong> e a recorrência ao longo da vida é de <strong>50%</strong>.</p>
+
+<p>É mais frequente em homens do que em mulheres, mais comum em raça branca e aparece principalmente na <strong>quarta e sexta décadas de vida</strong>.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q33">
+  <h3>Q33 — Fatores de risco</h3>
+  <div class="question-meta">Fonte: Slides 04 e 15 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Liste os fatores de risco para litiasis urinaria citados nos slides.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>Os fatores de risco citados incluem antecedentes familiares, doenças ósseas, gota, infecções urinárias recidivantes, obesidade, diabetes, consumo aumentado de proteínas animais e sal, baixo consumo de potássio, baixo volume urinário, pH urinário, medicamentos, maior excreção de cálcio, ácido úrico e oxalatos, além de chá e café.</p>
+
+<p>Na avaliação, o material também cita cristalúria, fatores socioeconômicos, dieta, ocupação, clima cálido com desidratação, antecedentes familiares e medicamentos.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q34">
+  <h3>Q34 — Componentes</h3>
+  <div class="question-meta">Fonte: Slide 05 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Quais são os principais componentes dos cálculos urinários e suas porcentagens aproximadas no slide?</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>O slide distingue seis grupos de componentes: oxalato cálcico, 65%; fosfato cálcico, 5%; fosfato não cálcico, 15%; compostos purínicos como ácido úrico, urato amônico e sódico, xantina e estruvita, 15%; aminoácidos como cistina, 1-3%; e outros, como carbonato cálcico e sulfamidas.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q35">
+  <h3>Q35 — Variedades de cálculos</h3>
+  <div class="question-meta">Fonte: Slides 06 a 08 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Compare <strong>cálculos de calcio</strong> e <strong>cálculos sin calcio</strong>, citando exemplos de cada grupo.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>Os cálculos são divididos em <strong>cálculos de calcio</strong> e <strong>cálculos sin calcio</strong>. Os cálculos de cálcio são os mais frequentes, representando cerca de 80-85% no slide, com exemplos relacionados a oxalato/fosfato cálcico e alterações como hipercalciúria, hiperoxalúria, hiperuricosúria e hipocitratúria.</p>
+
+<p>Entre os cálculos sem cálcio, o slide lista estruvita, ácido úrico, cistina, xantina, indinavir e raros.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q36">
+  <h3>Q36 — Estruvita</h3>
+  <div class="question-meta">Fonte: Slide 09 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Explique o cálculo de <strong>estruvita</strong>: composição, população em que aparece mais, forma de apresentação, relação com infecção, pH e tratamento citado.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>A <strong>estruvita</strong> é composta por magnésio, NH3 e fosfato. O slide aponta que aparece sobretudo em mulheres e frequentemente se apresenta como cálculo renal coraliforme; em raras ocasiões, pode aparecer como cálculo ureteral obstrutivo.</p>
+
+<p>Está relacionada a infecções, com microrganismos como Proteus, Pseudomonas, Providencia, Klebsiella, Staphylococci e Mycoplasma. O pH é alcalino e o tratamento citado inclui antibióticos.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q37">
+  <h3>Q37 — Ácido úrico</h3>
+  <div class="question-meta">Fonte: Slide 10 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Explique os cálculos de <strong>ácido úrico</strong>: frequência, perfil de paciente, relação com hiperuricemia, pH urinário e tratamento.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>O cálculo de <strong>ácido úrico</strong> representa cerca de 5% de todos os cálculos no slide e é mais frequente em homens. Está associado a pacientes com gota, doença mieloproliferativa, perda de peso e uso de fármacos citotóxicos.</p>
+
+<p>O material destaca que a maioria dos pacientes não apresenta hiperuricemia. O pH urinário é menor que 5,5 e o tratamento citado inclui redução de purinas na dieta, alopurinol e alcalinização urinária, considerada fundamental.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q38">
+  <h3>Q38 — Cistina</h3>
+  <div class="question-meta">Fonte: Slide 11 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Explique os cálculos de <strong>cistina</strong>: causa metabólica, herança, diagnóstico e tratamento citado no slide.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>Os cálculos de <strong>cistina</strong> decorrem de erro inato do metabolismo, com alteração na absorção pela mucosa intestinal e absorção tubular renal de aminoácidos dibásicos. O slide cita cromossomos 2p16 e 19q13.1 e herança recessiva.</p>
+
+<p>Podem ser únicos, múltiplos ou coraliformes. O diagnóstico considera antecedentes familiares, aspecto radiográfico pouco opaco como vidro esmerilado, bordas suaves e cor âmbar. O tratamento citado inclui alta ingestão de líquidos, alcalinização urinária, fármacos listados no slide e cirurgia quando necessário.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q39">
+  <h3>Q39 — Dor por localização</h3>
+  <div class="question-meta">Fonte: Slides 12 e 13 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Descreva como a característica da dor varia conforme a localização do cálculo: cálice renal, pélvis renal, uréter superior/médio e uréter inferior.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>No cálice renal, a dor é descrita como profunda e surda, na fossa renal ou nas costas. Na pélvis renal, é súbita e importante, localizada no ângulo costovertebral e irradiada ao flanco e fossa renal, podendo ser constante.</p>
+
+<p>Nos ureteres superior e médio, a dor é intensa e aguda no ângulo costovertebral ou flanco. No uréter inferior, pode irradiar para o testículo ipsilateral no homem ou para o lábio maior na mulher.</p>
+</div>
+</details>
+</div>
+<div class="question-block" id="q40">
+  <h3>Q40 — Avaliação diagnóstica</h3>
+  <div class="question-meta">Fonte: Slides 15 a 19 &nbsp;|&nbsp; Tipo: discursiva / prova oral</div>
+  <p>Explique como o material organiza a avaliação do paciente com litiasis urinaria: história clínica, exame físico, diagnóstico diferencial, radiografia e ecografia dirigida.</p>
+
+  
+<details>
+  <summary>💬 Ver resposta-modelo</summary>
+  <div class="answer-box"><p>A avaliação começa pela história clínica, especialmente tipo de dor, características do dolor e sintomas acompanhantes. No exame físico, o slide cita cólico renal com posição antálgica, taquicardia, sudoração, hipersensibilidade do ângulo costovertebral, massa abdominal palpável em cálculos obstrutivos antigos e sinais de urosepsis, como febre, hipotensão e vasodilatação cutânea.</p>
+
+<p>O diagnóstico diferencial inclui abdome agudo, embarazo ectópico, transtornos ováricos, doença diverticular, obstrução intestinal, litiasis biliar, úlcera péptica, embolia de artéria renal e aneurisma aórtico abdominal. Nos métodos de imagem, o slide cita radiografia, com 90% de cálculos radiopacos, e ecografia dirigida, útil para rim, uréter inferior, proximidades da bexiga e hidronefrose, mas limitada por gás intestinal no trajeto ureteral.</p>
+</div>
+</details>
+</div>
+</div>
+
+<div class="bloco-section">
+  <h2 id="bloco3">Bloco 3 — Verdadeiro ou Falso (Q41–Q48)</h2>
+  
+<div class="question-block" id="q41">
+  <h3>Q41 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 03 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>A litiasis urinaria é apresentada como a terceira afecção mais comum do trato urinário, com prevalência de 10% e recorrência de 50% ao longo da vida.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-verdadeiro">Resposta: Verdadeiro</div>
+    <div class="comentario">O slide traz exatamente terceira afecção, prevalência de 10% e recorrência de 50%.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q42">
+  <h3>Q42 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 07 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>Os sintomas dos cálculos de cálcio são descritos no slide como secundários à obstrução.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-verdadeiro">Resposta: Verdadeiro</div>
+    <div class="comentario">No slide de cálculos de cálcio, consta sintomas secundários à obstrução.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q43">
+  <h3>Q43 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 09 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>A estruvita é associada a pH urinário ácido, menor que 5,5.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-falso">Resposta: Falso</div>
+    <div class="comentario">Estruvita é associada a pH alcalino no slide. pH <5,5 aparece no ácido úrico.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q44">
+  <h3>Q44 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 10 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>Segundo o slide, a maioria dos pacientes com cálculo de ácido úrico apresenta hiperuricemia.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-falso">Resposta: Falso</div>
+    <div class="comentario">O slide diz que a maioria dos pacientes com ácido úrico não apresenta hiperuricemia.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q45">
+  <h3>Q45 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 11 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>A cistinúria/cálculo de cistina é apresentada como condição de herança recessiva.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-verdadeiro">Resposta: Verdadeiro</div>
+    <div class="comentario">O slide afirma herança recessiva.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q46">
+  <h3>Q46 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 13 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>Cálculos no uréter inferior podem causar dor irradiada para o testículo ipsilateral no homem ou para o lábio maior na mulher.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-verdadeiro">Resposta: Verdadeiro</div>
+    <div class="comentario">É a descrição de dor por cálculo em uréter inferior.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q47">
+  <h3>Q47 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 18 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>O slide de radiografia afirma que aproximadamente 90% dos cálculos são radiopacos.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-verdadeiro">Resposta: Verdadeiro</div>
+    <div class="comentario">O slide de radiografia cita cálculos radiopacos em 90% dos casos.</div>
+  </div>
+</details>
+</div>
+<div class="question-block" id="q48">
+  <h3>Q48 — Verdadeiro ou Falso</h3>
+  <div class="question-meta">Fonte: Slide 19 &nbsp;|&nbsp; Tipo: V/F</div>
+  <p>A ecografía dirigida não apresenta nenhuma limitação no trajeto ureteral, mesmo quando há interferência por gás intestinal.</p>
+
+<ul>
+<li>( ) Verdadeiro</li>
+<li>( ) Falso</li>
+</ul>
+
+  
+  
+<details>
+  <summary>💬 Ver resposta</summary>
+  <div class="answer-box">
+    <div class="resposta-letra vf-falso">Resposta: Falso</div>
+    <div class="comentario">O slide afirma limitação por trajeto ureteral não valorável devido a gás intestinal.</div>
+  </div>
+</details>
+</div>
+</div>
+
+<div class="bloco-section">
+  <h2 id="mapa">Mapa de Cobertura por Slide</h2>
+  <h2>Mapa de cobertura por slide</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Slide</th>
+  <th>Conteúdo principal</th>
+  <th>Questões relacionadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>01</td>
+  <td>Capa: Litiasis Urinaria, Departamento de Urología</td>
+  <td>Contexto geral</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>Definição de litiasis urinaria e obstrução</td>
+  <td>Q01, Q31</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>Generalidades, epidemiologia e fatores predisponentes</td>
+  <td>Q02, Q32, Q41</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>Factores de riesgo</td>
+  <td>Q03, Q19, Q33</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>Componentes dos cálculos</td>
+  <td>Q04, Q34</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>Variedades: cálculos de calcio e cálculos sin calcio</td>
+  <td>Q05, Q35</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>Cálculos de calcio: frequência, causas e classificação</td>
+  <td>Q05, Q06, Q07, Q42</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>Cálculos sin calcio: estruvita, ácido úrico, cistina, xantina, indinavir, raros</td>
+  <td>Q08, Q35</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>Estruvita: composição, infecção, pH alcalino e tratamento</td>
+  <td>Q09, Q10, Q26, Q36, Q43</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>Ácido úrico: frequência, fatores associados, pH urinário e tratamento</td>
+  <td>Q11, Q12, Q27, Q37, Q44</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>Cistina: erro inato, herança, diagnóstico e tratamento</td>
+  <td>Q13, Q14, Q28, Q38, Q45</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>Signos y síntomas: dolor renal e cólico renal</td>
+  <td>Q15, Q29</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>Dor conforme localização do cálculo</td>
+  <td>Q16, Q39, Q46</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>Hematuria, infección, fiebre asociada, náuseas e vômitos</td>
+  <td>Q17, Q18</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>Evaluación: fatores de risco adicionais</td>
+  <td>Q19</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>Historia clínica e examen físico</td>
+  <td>Q20, Q40</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>Diagnóstico diferencial</td>
+  <td>Q21</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>Diagnóstico por radiografía</td>
+  <td>Q22, Q23, Q47</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>Diagnóstico por ecografía dirigida</td>
+  <td>Q24, Q30, Q48</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>Tratamiento: conservador e quirúrgico</td>
+  <td>Q25</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="bloco-section">
+  <h2 id="duvidas">Dúvidas para Confirmar no Livro ou com o Professor</h2>
+  <ol>
+    <li><strong>Cistina — tratamento medicamentoso:</strong> o slide lista glutamina, ácido ascórbico, captopril, penicilamina e mercaptopropionilglicina. Confirmar quais são centrais para a prova.</li>
+    <li><strong>Ecografía dirigida:</strong> o slide afirma que detecta todos os cálculos, mas também limita para gás intestinal. Memorizar a frase com limitação.</li>
+    <li><strong>Estruvita e microrganismos:</strong> o slide lista Proteus, Pseudomonas, Providencia, Klebsiella, Staphylococci e Mycoplasma. Confirmar se o professor quer a lista literal.</li>
+    <li><strong>Fosfato não cálcico e compostos purínicos:</strong> a organização percentual do slide agrupa conteúdos de forma confusa. Comparar com livro de Urologia.</li>
+  </ol>
+</div>
+
+  </main>
+</div>
+</body>
+</html>

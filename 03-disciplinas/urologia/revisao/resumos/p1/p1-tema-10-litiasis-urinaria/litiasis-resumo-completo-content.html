@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T10 — Litiasis Urinaria — Resumo Completo</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8f6f1;
+       color: #1a1a1a; line-height: 1.7; font-size: 16px; }
+.layout { display: flex; min-height: 100vh; }
+.toc-sidebar { width: 260px; min-width: 220px; background: #2c3e50; color: #ecf0f1;
+               position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 20px 16px; flex-shrink: 0; }
+.toc-sidebar h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+                  color: #95a5a6; margin-bottom: 12px; }
+.toc-sidebar a { display: block; color: #bdc3c7; text-decoration: none; font-size: 13px;
+                 padding: 4px 8px; border-radius: 4px; margin-bottom: 2px; }
+.toc-sidebar a:hover { background: #34495e; color: #fff; }
+.toc-sidebar a.h3 { padding-left: 20px; font-size: 12px; color: #95a5a6; }
+.content { flex: 1; padding: 40px 48px; max-width: 900px; }
+h1 { font-size: 2em; color: #2c3e50; margin-bottom: 8px; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+h2 { font-size: 1.4em; color: #2c3e50; margin: 36px 0 12px; border-left: 4px solid #3498db;
+     padding-left: 12px; }
+h3 { font-size: 1.15em; color: #34495e; margin: 24px 0 8px; }
+h4 { font-size: 1em; color: #555; margin: 16px 0 6px; }
+p { margin-bottom: 12px; }
+ul, ol { padding-left: 24px; margin-bottom: 12px; }
+li { margin-bottom: 4px; }
+strong { color: #1a1a1a; }
+em { color: #555; }
+code { background: #e8e8e8; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; font-family: monospace; }
+pre { background: #2c3e50; color: #ecf0f1; padding: 16px; border-radius: 8px;
+      overflow-x: auto; margin: 16px 0; font-size: 0.9em; line-height: 1.5; }
+pre code { background: none; color: inherit; padding: 0; }
+blockquote { border-left: 4px solid #bbb; padding-left: 16px; color: #555; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.95em; }
+th { background: #2c3e50; color: #fff; padding: 10px 14px; text-align: left; }
+td { padding: 8px 14px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) td { background: #f0f0f0; }
+tr:hover td { background: #e8f4fd; }
+hr { border: none; border-top: 2px solid #e0e0e0; margin: 32px 0; }
+a { color: #2980b9; }
+
+/* ── Callouts ── */
+.callout { border-left: 5px solid; border-radius: 6px; padding: 14px 18px; margin: 16px 0;
+           font-size: 0.95em; }
+.callout-title { font-weight: bold; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+.callout-note    { background: #f0f4f8; border-color: #7f8c8d; }
+.callout-note    .callout-title { color: #7f8c8d; }
+.callout-info    { background: #eaf4fd; border-color: #2980b9; }
+.callout-info    .callout-title { color: #2980b9; }
+.callout-tip     { background: #eafaf1; border-color: #27ae60; }
+.callout-tip     .callout-title { color: #27ae60; }
+.callout-warning { background: #fef9e7; border-color: #e67e22; }
+.callout-warning .callout-title { color: #e67e22; }
+.callout-danger  { background: #fdf0f0; border-color: #e74c3c; }
+.callout-danger  .callout-title { color: #e74c3c; }
+.callout-example { background: #f5eef8; border-color: #8e44ad; }
+.callout-example .callout-title { color: #8e44ad; }
+.callout-question { background: #fffbea; border-color: #f39c12; }
+.callout-question .callout-title { color: #d68910; }
+
+/* ── fonte block ── */
+.fontes-block { background: #eaf4fd; border-radius: 8px; padding: 14px 18px; margin: 12px 0 24px; font-size: 0.9em; }
+
+/* ── Perguntas ── */
+.question-block { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+                  padding: 20px 24px; margin: 20px 0; }
+.question-block h3 { font-size: 1.05em; color: #2c3e50; margin-bottom: 10px; }
+.question-meta { font-size: 0.82em; color: #999; margin-bottom: 10px; }
+.opcoes ol { padding-left: 20px; }
+.opcoes li { margin-bottom: 4px; }
+details { margin-top: 12px; }
+summary { cursor: pointer; background: #2c3e50; color: #fff; padding: 8px 14px;
+          border-radius: 6px; font-size: 0.9em; user-select: none; }
+summary:hover { background: #34495e; }
+.answer-box { background: #eafaf1; border-left: 4px solid #27ae60; padding: 12px 16px;
+              border-radius: 0 6px 6px 6px; font-size: 0.95em; margin-top: 2px; }
+.answer-box .resposta-letra { font-size: 1.3em; font-weight: bold; color: #27ae60; }
+.answer-box .comentario { margin-top: 6px; color: #333; }
+.vf-verdadeiro { color: #27ae60; font-weight: bold; }
+.vf-falso { color: #e74c3c; font-weight: bold; }
+.bloco-section { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.07);
+                 padding: 24px 28px; margin-bottom: 32px; }
+.bloco-section h2 { border-left-color: #8e44ad; }
+
+/* ── Print ── */
+@media print {
+  .toc-sidebar { display: none; }
+  .content { max-width: 100%; padding: 20px; }
+  details, summary { display: none; }
+  .answer-box { display: block; }
+}
+@media (max-width: 800px) {
+  .toc-sidebar { display: none; }
+  .content { padding: 24px 20px; }
+}
+</style>
+  
+</head>
+<body>
+<div class="layout">
+  <nav class="toc-sidebar">
+    <h2>Índice</h2>
+    <a class="" href="#0-fontes-usadas">0. Fontes Usadas</a>
+<a class="" href="#1-visao-geral">1. Visão Geral</a>
+<a class="" href="#2-nucleo-obrigatorio">2. Núcleo Obrigatório</a>
+<a class="" href="#3-explicacao-detalhada">3. Explicação Detalhada</a>
+<a class="h3" href="#31-definicao-e-mecanismo">3.1 Definição e Mecanismo</a>
+<a class="h3" href="#32-epidemiologia-e-fatores-de-risco">3.2 Epidemiologia e Fatores de Risco</a>
+<a class="h3" href="#33-componentes-dos-calculos">3.3 Componentes dos Cálculos</a>
+<a class="" href="#4-classificacao-dos-tipos-de-calculos">4. Classificação dos Tipos de Cálculos</a>
+<a class="" href="#34-clinica">3.4 Clínica</a>
+<a class="h3" href="#dor-o-ponto-mais-cobrado">Dor — o ponto mais cobrado</a>
+<a class="h3" href="#342-hematuria-hematuria">3.4.2 Hematúria (hematuria)</a>
+<a class="h3" href="#343-infeccao-associada">3.4.3 Infecção associada</a>
+<a class="h3" href="#344-febre-calculo-urgencia-medica">3.4.4 Febre + Cálculo = Urgência Médica</a>
+<a class="h3" href="#345-outros-sintomas">3.4.5 Outros sintomas</a>
+<a class="" href="#35-diagnostico">3.5 Diagnóstico</a>
+<a class="h3" href="#exame-fisico">Exame físico</a>
+<a class="h3" href="#diagnostico-diferencial">Diagnóstico diferencial</a>
+<a class="h3" href="#exames-de-imagem">🧪 Exames de Imagem</a>
+<a class="" href="#36-tratamento">3.6 Tratamento</a>
+<a class="h3" href="#tratamento-do-colico-ureteral-ordem-obrigatoria">Tratamento do cólico ureteral — Ordem obrigatória 🎧</a>
+<a class="h3" href="#tamsulosina-tamsulosina-expulsao-espontanea">Tamsulosina (tamsulosina) — Expulsão espontânea 🎧</a>
+<a class="h3" href="#tratamento-conservador-vs-cirurgico">Tratamento conservador vs. cirúrgico</a>
+<a class="h3" href="#litotricia-extracorporea-litotricia-extracorporea-con-ondas-de-choque">Litotricia extracorpórea (litotricia extracorpórea con ondas de choque)</a>
+<a class="" href="#37-prevencao">3.7 Prevenção</a>
+<a class="" href="#5-comparacoes-que-confundem">5. Comparações que Confundem</a>
+<a class="" href="#6-o-que-mais-cai-na-prova">6. O Que Mais Cai na Prova</a>
+<a class="h3" href="#muito-provavel">Muito provável</a>
+<a class="h3" href="#provavel">Provável</a>
+<a class="h3" href="#a-confirmar">A confirmar</a>
+<a class="" href="#7-mapa-mental-em-texto">7. Mapa Mental em Texto</a>
+<a class="" href="#8-perguntas-de-revisao-ativa">8. Perguntas de Revisão Ativa</a>
+<a class="h3" href="#perguntas-rapidas">Perguntas rápidas</a>
+<a class="h3" href="#perguntas-de-raciocinio">Perguntas de raciocínio</a>
+<a class="h3" href="#perguntas-estilo-prova-oral">Perguntas estilo prova oral</a>
+<a class="h3" href="#perguntas-baseadas-no-banco-de-questoes">Perguntas baseadas no banco de questões</a>
+<a class="" href="#9-estrategia-de-memorizacao">9. Estratégia de Memorização</a>
+<a class="" href="#10-duvidas-para-confirmar">10. Dúvidas para Confirmar</a>
+<a class="" href="#lacunas-identificadas">📌 Lacunas Identificadas</a>
+<a class="" href="#navegacao">Navegação</a>
+  </nav>
+  <main class="content">
+    <h1 id="t10-litiasis-urinaria-litiasis-urinaria">T10 — Litiasis Urinaria (<em>Litiasis Urinaria</em>)</h1>
+
+<blockquote>
+  <p><strong>Fontes deste resumo:</strong></p>
+  
+  <ul>
+  <li>🎧 Transcrição: <span class="wikilink">P2-T10-Litiasis-Transcricao</span></li>
+  <li>🖥️ Slides: <span class="wikilink">Urologia-Litiasis-Urinaria-Slides</span></li>
+  <li>❓ Perguntas: <span class="wikilink">Urologia-Litiasis-Urinaria-Perguntas</span></li>
+  <li>📚 Livro: Smith/Tanagho — Urologia Geral (18ª ed.)</li>
+  <li>🗺️ Mapa de fontes: <span class="wikilink">Tema-T10-Litiasis-Mapa-de-Fontes</span></li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h2 id="0-fontes-usadas">0. Fontes Usadas</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Origem</th>
+  <th>Conteúdo confirmado</th>
+  <th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>🎧 Transcrição</td>
+  <td>Cólico ureteral, ordem de tratamento, fármacos, tamsulosina, ECO, contraindicação de puño percusión, litotricia</td>
+  <td>Pontos exclusivos do professor — não estão nos slides</td>
+</tr>
+<tr>
+  <td>🖥️ Slide</td>
+  <td>Definição, epidemiologia, tipos de cálculos, clínica, diagnóstico, imagens</td>
+  <td>Extração visual/OCR revisada</td>
+</tr>
+<tr>
+  <td>❓ Perguntas</td>
+  <td>48 questões elaboradas a partir dos slides</td>
+  <td>Validam os pontos de prova</td>
+</tr>
+<tr>
+  <td>📚 Smith/Tanagho</td>
+  <td>Confirmação bibliográfica de todos os temas</td>
+  <td>Usar como complemento, não como fonte principal de aula</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-info"><div class="callout-title">📘 Grau de confiabilidade: **média-alta**</div><div class="callout-body"><p>Cruzamento de transcrição + slides + perguntas confirma os pontos principais. Pontos exclusivos da fala oral (professor) marcados com 🎧. Conteúdo exclusivo do livro marcado com 📌.</p>
+</div></div>
+
+<hr />
+
+<h2 id="1-visao-geral">1. Visão Geral</h2>
+
+<p><strong>Litiasis urinaria</strong> (<em>litiasis urinaria</em>) é a <strong>presença de cálculos no sistema coletor urinário</strong>, formados por concreções minerais e matriz orgânica.</p>
+
+<p>É a <strong>terceira afecção mais comum do trato urinário</strong> — depois de infecções e hiperplasia prostática.<br />
+Prevalência: ~<strong>10%</strong> da população. Recorrência: <strong>50%</strong> ao longo da vida.</p>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q02 e Q41</div><div class="callout-body"><p>Q02 (múltipla escolha) e Q41 (V/F) cobrem exatamente esses dados: 3ª afecção, 10% de prevalência, 50% de recorrência. Resposta de Q41: <strong>Verdadeiro</strong>.</p>
+</div></div>
+
+<p>A consequência clínica central é a <strong>obstrução da via urinária</strong>, que produz dor, hematúria, infecção e — quando associada a febre — <strong>urgência médica</strong>.</p>
+
+<div class="callout callout-tip"><div class="callout-title">💡 Ideia central para guardar</div><div class="callout-body"><p>Cálculo que obstrui = dor. Cálculo + febre = urgência. Cálculo + febre + septicemia = emergência.</p>
+</div></div>
+
+<hr />
+
+<h2 id="2-nucleo-obrigatorio">2. Núcleo Obrigatório</h2>
+
+<blockquote>
+  <p>O que PRECISA estar na ponta da língua para a prova.</p>
+</blockquote>
+
+<ul>
+<li><strong>3ª afecção mais comum</strong> do trato urinário; 10% de prevalência; 50% de recorrência</li>
+<li><strong>Cálculos de cálcio = 80–85%</strong> dos cálculos; componente principal: <strong>oxalato cálcico (65%)</strong></li>
+<li><strong>Cólico ureteral</strong> (<em>cólico ureteral</em>) — <strong>NÃO "cólico renal"</strong> 🎧 professor insiste neste ponto</li>
+<li>Dor do cálculo varia com a <strong>localização</strong> — ureter inferior → testículo ipsilateral (homem) ou lábio maior (mulher)</li>
+<li><strong>Cálculo + febre = urgência médica</strong> (<em>urgencia médica</em>)</li>
+<li><strong>Ordem do tratamento</strong>: analgésico → antiespasmódico → AINE</li>
+<li><strong>Morfina</strong> = ideal; <strong>tramadol</strong> = se sem morfina; <strong>buscapina</strong> = antiespasmódico; <strong>diclofenaco 75 mg</strong> = AINE</li>
+<li><strong>Antibiótico APENAS se febre; antiemético APENAS se vômito</strong> 🎧</li>
+<li><strong>Puño percusión CONTRAINDICADO</strong> no cólico ureteral 🎧</li>
+<li><strong>Ecografia = melhor exame</strong> — acessível, operador-dependente 🎧</li>
+<li>Radiografia: <strong>90% dos cálculos são radiopacos</strong></li>
+</ul>
+
+<div class="callout callout-warning"><div class="callout-title">⚠️ Pegadinha central</div><div class="callout-body"><p>O professor <strong>não recomenda litotricia extracorpórea</strong> (risco de ruptura renal) 🎧 — mas o slide a indica para cálculos renais &lt; 3 cc ou 1/3 superior do ureter. Divergência marcada: para prova, usar o que o professor falou em aula.</p>
+</div></div>
+
+<hr />
+
+<h2 id="3-explicacao-detalhada">3. Explicação Detalhada</h2>
+
+<h3 id="31-definicao-e-mecanismo">3.1 Definição e Mecanismo</h3>
+
+<p><strong>Litiasis urinaria</strong> = formação de concreções (<em>cálculos</em>, <em>litos</em>) no sistema coletor urinário — cálices, pelve renal, ureter ou bexiga.</p>
+
+<p>O cálculo causa sintomas quando <strong>obstrui a via urinária</strong> e a musculatura lisa tenta expulsá-lo com contrações:</p>
+
+<ul>
+<li>Obstrução → distensão do sistema coletor → dor</li>
+<li>Espasmo ureteral → dor tipo cólica intensa</li>
+</ul>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q01 e Q15</div><div class="callout-body"><p>Q01 pede a definição de litiasis urinaria (concreções minerais + matriz orgânica + obstrução).
+Q15 diferencia <em>dolor renal</em> (distensão da cápsula renal) de <em>cólico ureteral</em> (distensão do sistema coletor/ureter por obstrução).</p>
+</div></div>
+
+<hr />
+
+<h3 id="32-epidemiologia-e-fatores-de-risco">3.2 Epidemiologia e Fatores de Risco</h3>
+
+<p><strong>Dados epidemiológicos do slide:</strong></p>
+
+<ul>
+<li>3ª afecção mais comum do trato urinário</li>
+<li>Prevalência: ~10%</li>
+<li>Recorrência: 50% ao longo da vida</li>
+<li>Mais comum em homens (exceto estruvita → mulheres)</li>
+<li>Mais comum em raça branca; 4ª–6ª décadas</li>
+</ul>
+
+<p><strong>Fatores de risco:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Fator</th>
+  <th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Antecedentes familiares</td>
+  <td>Predisposição genética</td>
+</tr>
+<tr>
+  <td>Gota (<em>gota</em>)</td>
+  <td>Hiperuricemia → cálculos de ácido úrico</td>
+</tr>
+<tr>
+  <td>Obesidade, diabetes</td>
+  <td>Alterações metabólicas</td>
+</tr>
+<tr>
+  <td>Consumo alto de proteína animal e sal</td>
+  <td>Hipercalciúria, hiperuricosúria</td>
+</tr>
+<tr>
+  <td>Baixo volume urinário</td>
+  <td>Concentra sais urinários</td>
+</tr>
+<tr>
+  <td>Clima quente (<em>clima cálido</em>)</td>
+  <td>Desidratação → concentração urinária</td>
+</tr>
+<tr>
+  <td>Infecção urinária recidivante</td>
+  <td>Alcaliniza urina → estruvita</td>
+</tr>
+<tr>
+  <td>pH urinário baixo</td>
+  <td>Precipitação de ácido úrico</td>
+</tr>
+<tr>
+  <td>Hipercalciúria, hiperoxalúria, hipocitratúria</td>
+  <td>Formação de cálculos de cálcio</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q03 e Q19</div><div class="callout-body"><p>Q03 lista os fatores de risco (a resposta correta inclui: antecedentes familiares, gota, obesidade, diabetes, proteína animal e sal).
+Q19 cobre fator de risco adicional: <strong>clima quente aumenta risco por desidratação</strong>.</p>
+</div></div>
+
+<hr />
+
+<h3 id="33-componentes-dos-calculos">3.3 Componentes dos Cálculos</h3>
+
+<p><strong>Componentes por frequência (slide):</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Componente</th>
+  <th>Frequência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Oxalato cálcico</td>
+  <td>65%</td>
+</tr>
+<tr>
+  <td>Fosfato não cálcico (inclui estruvita)</td>
+  <td>15%</td>
+</tr>
+<tr>
+  <td>Compostos purínicos (ácido úrico, urato, xantina)</td>
+  <td>15%</td>
+</tr>
+<tr>
+  <td>Fosfato cálcico</td>
+  <td>5%</td>
+</tr>
+<tr>
+  <td>Cistina</td>
+  <td>1–3%</td>
+</tr>
+<tr>
+  <td>Outros</td>
+  <td>restante</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q04 e Q34</div><div class="callout-body"><p>Q04: "componente mais frequente dos cálculos?" → <strong>Oxalato cálcico, 65%</strong>.
+Q34 pede a lista completa com porcentagens.</p>
+</div></div>
+
+<hr />
+
+<h2 id="4-classificacao-dos-tipos-de-calculos">4. Classificação dos Tipos de Cálculos</h2>
+
+<blockquote>
+  <p>Tabela central do tema — memorizar por tipo.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+  <th>Tipo</th>
+  <th>Frequência</th>
+  <th>Sexo</th>
+  <th>pH</th>
+  <th>Composição / Causa</th>
+  <th>Diagnóstico diferencial</th>
+  <th>Tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Cálcio</strong></td>
+  <td>80–85%</td>
+  <td>H &gt; M</td>
+  <td>Variável</td>
+  <td>Hipercalciúria, hiperoxalúria, hiperuricosúria, hipocitratúria</td>
+  <td>Radiopacos</td>
+  <td>Hidratação; tratar causa base</td>
+</tr>
+<tr>
+  <td><strong>Estruvita</strong></td>
+  <td>~15% (do grupo sem cálcio)</td>
+  <td><strong>Mulheres</strong></td>
+  <td><strong>Alcalino</strong></td>
+  <td>Mg + NH3 + fosfato; infecção por bactérias produtoras de urease</td>
+  <td>Coraliforme; radiopacos</td>
+  <td>Antibiótico + tratamento urológico</td>
+</tr>
+<tr>
+  <td><strong>Ácido úrico</strong></td>
+  <td>~5%</td>
+  <td><strong>Homens</strong></td>
+  <td><strong>&lt; 5,5</strong></td>
+  <td>Gota, doença mieloproliferativa, fármacos citotóxicos; <strong>maioria SEM hiperuricemia</strong></td>
+  <td>Radiotransparentes</td>
+  <td>Redução purinas + <strong>alopurinol</strong> + <strong>alcalinização</strong> (fundamental)</td>
+</tr>
+<tr>
+  <td><strong>Cistina</strong></td>
+  <td>1–3%</td>
+  <td>H = M</td>
+  <td>Variável</td>
+  <td>Erro inato do metabolismo; herança <strong>recessiva</strong>; cromossomos 2p16 e 19q13.1</td>
+  <td>Pouco opaco, <strong>vidro esmerilado</strong>, bordas suaves, cor âmbar</td>
+  <td>Hidratação + alcalinização + glutamina, captopril, penicilamina, mercaptopropionilglicina; cirúrgico</td>
+</tr>
+<tr>
+  <td><strong>Xantina</strong></td>
+  <td>Raro</td>
+  <td>—</td>
+  <td>—</td>
+  <td>Xantinúria (deficiência enzimática)</td>
+  <td>Radiotransparente</td>
+  <td>Hidratação; redução de purinas</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q05 — Cálculos de cálcio 80–85%</div><div class="callout-body"><p>Q05 pergunta a frequência: "80 a 85% dos cálculos". Resposta B.</p>
+</div></div>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 Pegadinha — Ácido úrico e hiperuricemia</div><div class="callout-body"><p>A maioria dos pacientes com cálculo de ácido úrico <strong>NÃO apresenta hiperuricemia</strong>.
+Q44 (V/F): "a maioria dos pacientes com ácido úrico apresenta hiperuricemia" → <strong>FALSO</strong>.</p>
+</div></div>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 Pegadinha — Estruvita e pH</div><div class="callout-body"><p>Estruvita = pH <strong>alcalino</strong>. NÃO confundir com ácido úrico (pH &lt; 5,5).
+Q43 (V/F): "estruvita é associada a pH &lt; 5,5" → <strong>FALSO</strong>.</p>
+</div></div>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q09, Q10 — Estruvita</div><div class="callout-body"><p>Q09: composição da estruvita → <strong>Mg + NH3 + fosfato</strong>.
+Q10: bactérias associadas → Proteus, Pseudomonas, Providencia, Klebsiella, Staphylococci, Mycoplasma.</p>
+</div></div>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q13, Q14, Q45 — Cistina</div><div class="callout-body"><p>Q13: mecanismo → erro inato do metabolismo, herança recessiva. Q45 (V/F): <strong>Verdadeiro</strong>.
+Q14: aspecto radiográfico → <strong>pouco opaco, vidro esmerilado, bordas suaves</strong>.</p>
+</div></div>
+
+<hr />
+
+<h2 id="34-clinica">3.4 Clínica</h2>
+
+<h3 id="dor-o-ponto-mais-cobrado">Dor — o ponto mais cobrado</h3>
+
+<p><strong>Dois tipos de dor:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Tipo</th>
+  <th>Mecanismo</th>
+  <th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Dolor renal (<em>dolor renal</em>)</td>
+  <td>Distensão da cápsula renal</td>
+  <td>Profunda, surda, constante</td>
+</tr>
+<tr>
+  <td><strong>Cólico ureteral</strong> (<em>cólico ureteral</em>)</td>
+  <td>Distensão do sistema coletor + espasmo ureteral por obstrução</td>
+  <td>Intensa, aguda, cólica, pode acordar do sono</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 🎧 Ponto do professor — PARA A PROVA</div><div class="callout-body"><p><strong>"No existe cólico renal, es ureteral."</strong>
+O diagnóstico correto é <strong>cólico ureteral</strong>, não "cólico renal". O ureter é que tem musculatura que espasma. Use este termo na prova.</p>
+</div></div>
+
+<p><strong>Dor por localização do cálculo:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Localização do cálculo</th>
+  <th>Dor / Irradiação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Cálice renal</td>
+  <td>Profunda e surda na fossa renal ou costas</td>
+</tr>
+<tr>
+  <td>Pelve renal</td>
+  <td>Súbita e importante no ângulo costovertebral; irradia ao flanco e fossa renal</td>
+</tr>
+<tr>
+  <td>Ureter superior e médio</td>
+  <td>Intensa e aguda no ângulo costovertebral ou flanco</td>
+</tr>
+<tr>
+  <td><strong>Ureter inferior</strong></td>
+  <td>Irradia ao <strong>testículo ipsilateral</strong> (homem) ou <strong>lábio maior</strong> (mulher)</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q16 e Q46</div><div class="callout-body"><p>Q16: "dor por cálculo no ureter inferior?" → irradia ao testículo ipsilateral (H) ou lábio maior (M).
+Q46 (V/F): <strong>Verdadeiro</strong>.</p>
+</div></div>
+
+<hr />
+
+<h3 id="342-hematuria-hematuria">3.4.2 Hematúria (<em>hematuria</em>)</h3>
+
+<ul>
+<li>Pode ser <strong>macroscópica</strong> e intermitente — urina cor de chá</li>
+<li>Ou <strong>microhematúria</strong> no exame de urina (EGO)</li>
+<li>Nem sempre presente; não é obrigatória para o diagnóstico</li>
+</ul>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q17</div><div class="callout-body"><p>Q17: "hematúria na litiasis?" → macroscópica intermitente / cor de chá / microhematúria no EGO.</p>
+</div></div>
+
+<hr />
+
+<h3 id="343-infeccao-associada">3.4.3 Infecção associada</h3>
+
+<p>Cálculos de <strong>fosfato de magnésio e amônio</strong> (estruvita) estão associados a infecções por:</p>
+
+<ul>
+<li><em>Proteus</em>, <em>Pseudomonas</em>, <em>Providencia</em>, <em>Klebsiella</em>, <em>Staphylococci</em></li>
+</ul>
+
+<p>Complicações infecciosas:</p>
+
+<ol>
+<li><strong>Pionefrosis</strong> (<em>pionefrosis</em>) — rim cheio de pus</li>
+<li><strong>Pielonefritis xantogranulomatosa</strong> (<em>pielonefritis xantogranulomatosa</em>)</li>
+</ol>
+
+<hr />
+
+<h3 id="344-febre-calculo-urgencia-medica">3.4.4 Febre + Cálculo = Urgência Médica</h3>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 Para a prova — cálculo + febre</div><div class="callout-body"><p><strong>Cálculo + febre = urgência médica.</strong>
+Sinais de septicemia: febre + taquicardia + hipotensão + vasodilatação cutânea.</p>
+</div></div>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q18</div><div class="callout-body"><p>Q18: "febre associada a cálculo?" → <strong>urgência médica</strong>; sinais de septicemia. Resposta B.</p>
+</div></div>
+
+<hr />
+
+<h3 id="345-outros-sintomas">3.4.5 Outros sintomas</h3>
+
+<ul>
+<li><strong>Náuseas e vômitos</strong> (<em>náuseas y vómitos</em>)</li>
+<li>Posição antálgica ao exame físico</li>
+<li>Taquicardia e sudorese durante a crise</li>
+</ul>
+
+<hr />
+
+<h2 id="35-diagnostico">3.5 Diagnóstico</h2>
+
+<h3 id="exame-fisico">Exame físico</h3>
+
+<ul>
+<li>Posição antálgica, taquicardia, sudoração</li>
+<li><strong>Hipersensibilidade nos ângulos costovertebral e costomuscular</strong> (<em>puntos pielorrenales posteriores</em>)</li>
+<li>Sinais de sepsis quando grave (febre + hipotensão + vasodilatação)</li>
+</ul>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 🎧 Puño percusión CONTRAINDICADO no cólico ureteral</div><div class="callout-body"><p>O sinal de Giordano (puño percusión) serve para pielonefritis — <strong>NÃO deve ser feito no cólico ureteral</strong>. O rim já está sob pressão pela obstrução; a percussão pode agravar.</p>
+</div></div>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q20</div><div class="callout-body"><p>Q20: achados do exame físico → posição antálgica, taquicardia, sudoração, hipersensibilidade costovertebral e sinais de urosepsis.</p>
+</div></div>
+
+<hr />
+
+<h3 id="diagnostico-diferencial">Diagnóstico diferencial</h3>
+
+<p>Abdome agudo, gravidez ectópica, transtornos ovarianos, doença diverticular, obstrução intestinal, colelitíase, úlcera péptica, embolia de artéria renal, aneurisma aórtico abdominal.</p>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q21</div><div class="callout-body"><p>Q21 lista esses diagnósticos diferenciais — cobrados em múltipla escolha.</p>
+</div></div>
+
+<hr />
+
+<h3 id="exames-de-imagem">🧪 Exames de Imagem</h3>
+
+<h4 id="ecografia-ecografia-dirigida-melhor-exame">Ecografia (<em>ecografía dirigida</em>) 🎧 <strong>Melhor exame</strong></h4>
+
+<ul>
+<li>Acessível, sem radiação, disponível</li>
+<li><strong>Operador-dependente</strong> (<em>operador-dependiente</em>)</li>
+<li>Detecta: hidronefrose (<em>hidronefrosis</em>), cálculos no rim e ureter distal, cálculos próximos à bexiga</li>
+<li><strong>Limitação</strong>: trajeto ureteral médio pode ser ineficaz por gás intestinal (<em>gas intestinal</em>)</li>
+</ul>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q24, Q30, Q48</div><div class="callout-body"><p>Q24: ecografia detecta hidronefrose, mas é limitada pelo gás intestinal no trajeto ureteral.
+Q30: limitação da ecografia → gás intestinal.
+Q48 (V/F): "ecografia não tem nenhuma limitação no trajeto ureteral" → <strong>FALSO</strong>.</p>
+</div></div>
+
+<h4 id="radiografia-simples">Radiografia simples</h4>
+
+<ul>
+<li>~<strong>90% dos cálculos são radiopacos</strong> (<em>radiopacos</em>)</li>
+<li><strong>Radiotransparentes</strong> (<em>radiotransparentes</em>): ácido úrico, sulfamidas, xantina</li>
+</ul>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q22, Q23, Q47</div><div class="callout-body"><p>Q22: "90% dos cálculos são radiopacos" → correta.
+Q23: "quais são radiotransparentes?" → ácido úrico, sulfamidas e xantina.
+Q47 (V/F): <strong>Verdadeiro</strong>.</p>
+</div></div>
+
+<hr />
+
+<h2 id="36-tratamento">3.6 Tratamento</h2>
+
+<h3 id="tratamento-do-colico-ureteral-ordem-obrigatoria">Tratamento do cólico ureteral — Ordem obrigatória 🎧</h3>
+
+<div class="callout callout-warning"><div class="callout-title">⚠️ 🎧 Sequência do professor — para a prova</div><div class="callout-body"><p></p>
+</div></div>
+
+<table>
+<thead>
+<tr>
+  <th>Ordem</th>
+  <th>Fármaco</th>
+  <th>Classe</th>
+  <th>Dose/Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1º</td>
+  <td><strong>Morfina</strong> (<em>morfina</em>)</td>
+  <td>Analgésico opioide</td>
+  <td>Ideal; se indisponível → tramadol</td>
+</tr>
+<tr>
+  <td>1º alt</td>
+  <td><strong>Tramadol</strong> (<em>tramadol</em>)</td>
+  <td>Analgésico opioide menor</td>
+  <td>Se morfina não disponível</td>
+</tr>
+<tr>
+  <td>2º</td>
+  <td><strong>Buscapina</strong> (<em>buscapina / hioscina</em>)</td>
+  <td>Antiespasmódico</td>
+  <td>Relaxa musculatura lisa ureteral</td>
+</tr>
+<tr>
+  <td>3º</td>
+  <td><strong>Diclofenaco 75 mg</strong> (<em>diclofenac 75 mg</em>)</td>
+  <td>AINE</td>
+  <td>Anti-inflamatório + analgesia adicional</td>
+</tr>
+<tr>
+  <td>Condicional</td>
+  <td>Antibiótico</td>
+  <td>Antimicrobiano</td>
+  <td><strong>APENAS se febre</strong></td>
+</tr>
+<tr>
+  <td>Condicional</td>
+  <td>Antiemético</td>
+  <td>Antiemético</td>
+  <td><strong>APENAS se vômito</strong></td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-tip"><div class="callout-title">💡 Mnemônico do tratamento</div><div class="callout-body"><p><strong>A-A-A</strong> = Analgésico → Antiespasmódico → Anti-inflamatório
+Morfina (ou tramadol) → Buscapina → Diclofenaco</p>
+</div></div>
+
+<hr />
+
+<h3 id="tamsulosina-tamsulosina-expulsao-espontanea">Tamsulosina (<em>tamsulosina</em>) — Expulsão espontânea 🎧</h3>
+
+<ul>
+<li><strong>Tamsulosina 0,4 mg</strong> — alfa-bloqueante (<em>alfa-bloqueante</em>)</li>
+<li>Relaxa musculatura lisa do ureter → facilita a saída espontânea do cálculo</li>
+<li>Pode ser usada em <strong>mulheres</strong> (não é exclusiva para próstata)</li>
+</ul>
+
+<hr />
+
+<h3 id="tratamento-conservador-vs-cirurgico">Tratamento conservador vs. cirúrgico</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Tipo</th>
+  <th>Quando indicar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Conservador</td>
+  <td>Cálculo pequeno, sem infecção, sem obstrução grave — hidratação + analgesia + tamsulosina</td>
+</tr>
+<tr>
+  <td>Cirúrgico</td>
+  <td>Cálculo grande, obstrução persistente, infecção não controlada, falha do conservador</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-note"><div class="callout-title">ℹ️ ❓ Q25</div><div class="callout-body"><p>Q25: "tratamento da litiasis?" → slide divide em <strong>conservador e cirúrgico</strong> (resposta C).</p>
+</div></div>
+
+<hr />
+
+<h3 id="litotricia-extracorporea-litotricia-extracorporea-con-ondas-de-choque">Litotricia extracorpórea (<em>litotricia extracorpórea con ondas de choque</em>)</h3>
+
+<p><strong>O que o slide diz:</strong> indicada para:</p>
+
+<ul>
+<li>Cálculos renais &lt; 3 cc</li>
+<li>Cálculos no terço superior do ureter</li>
+</ul>
+
+<p><strong>O que o professor disse na aula:</strong> 🎧 <strong>NÃO recomenda</strong> — risco de ruptura renal como complicação.</p>
+
+<div class="callout callout-warning"><div class="callout-title">⚠️ Divergência slide × professor</div><div class="callout-body"><p>Slide: litotricia indicada para &lt; 3 cc e 1/3 superior do ureter.
+Professor (aula): não recomenda litotricia por risco de ruptura renal.
+Para a prova: anotar ambos; priorizar a fala do professor.</p>
+</div></div>
+
+<hr />
+
+<h2 id="37-prevencao">3.7 Prevenção</h2>
+
+<div class="callout callout-info"><div class="callout-title">📘 🎧 Prevenção — ordem de prioridade do professor</div><div class="callout-body"><p></p>
+</div></div>
+
+<ol>
+<li><strong>Água</strong> (<em>agua</em>) — medida número um. Diluição urinária é o principal fator protetor para <strong>todos os tipos de cálculos</strong>.</li>
+<li><strong>Citrato de magnésio + citrato de potássio</strong> — para cálculos de <strong>cálcio</strong> (alcaliniza a urina)</li>
+<li><strong>Redução de purinas + alopurinol</strong> — para cálculos de <strong>ácido úrico</strong></li>
+<li><strong>Alta hidratação + alcalinização</strong> — para cálculos de <strong>cistina</strong></li>
+</ol>
+
+<p><strong>Substâncias que aumentam risco:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Substância</th>
+  <th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Vitamina C (<em>ácido ascórbico</em>) em excesso</td>
+  <td>Acidifica a urina (tomar com muita água)</td>
+</tr>
+<tr>
+  <td>Ibuprofeno (<em>ibuprofeno</em>)</td>
+  <td>Dano tubular renal</td>
+</tr>
+<tr>
+  <td>Dipirona (<em>dipirona / metamizol</em>)</td>
+  <td>Dano renal (menor)</td>
+</tr>
+<tr>
+  <td>Café &gt; 30 g/dia (~4 xícaras)</td>
+  <td>Fator de risco leve</td>
+</tr>
+<tr>
+  <td>Açúcar em excesso</td>
+  <td>Forma matriz orgânica para precipitação de sais</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="5-comparacoes-que-confundem">5. Comparações que Confundem</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Critério</th>
+  <th>Estruvita</th>
+  <th>Ácido úrico</th>
+  <th>Cistina</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Frequência</td>
+  <td>~15% dos não-cálcicos</td>
+  <td>~5% do total</td>
+  <td>1–3%</td>
+</tr>
+<tr>
+  <td>Sexo</td>
+  <td>Mulheres</td>
+  <td>Homens</td>
+  <td>Ambos</td>
+</tr>
+<tr>
+  <td>pH</td>
+  <td><strong>Alcalino</strong></td>
+  <td><strong>&lt; 5,5</strong></td>
+  <td>Variável</td>
+</tr>
+<tr>
+  <td>Causa</td>
+  <td>Infecção por urease</td>
+  <td>Gota, doença mieloproliferativa</td>
+  <td>Erro inato do metabolismo</td>
+</tr>
+<tr>
+  <td>Herança</td>
+  <td>Não</td>
+  <td>Não</td>
+  <td><strong>Recessiva</strong></td>
+</tr>
+<tr>
+  <td>Hiperuricemia?</td>
+  <td>Não</td>
+  <td><strong>Maioria NÃO</strong></td>
+  <td>Não</td>
+</tr>
+<tr>
+  <td>Aspecto Rx</td>
+  <td>Radiopacos</td>
+  <td><strong>Radiotransparentes</strong></td>
+  <td>Pouco opaco / <strong>vidro esmerilado</strong></td>
+</tr>
+<tr>
+  <td>Tratamento</td>
+  <td>Antibiótico + urol.</td>
+  <td>Alopurinol + alcalinização</td>
+  <td>Hidratação + alcalinização + fármacos</td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout callout-danger"><div class="callout-title">🚨 Pegadinha tripla</div><div class="callout-body"><ul>
+<li>Estruvita → mulher + infecção + pH alcalino (NÃO ácido)</li>
+<li>Ácido úrico → maioria SEM hiperuricemia; pH &lt; 5,5 (NÃO alcalino)</li>
+<li>Cistina → vidro esmerilado + herança recessiva (NÃO infecção)</li>
+</ul>
+</div></div>
+
+<hr />
+
+<h2 id="6-o-que-mais-cai-na-prova">6. O Que Mais Cai na Prova</h2>
+
+<blockquote>
+  <p>Baseado nos pontos repetidos na transcrição, slides e perguntas.</p>
+</blockquote>
+
+<h3 id="muito-provavel">Muito provável</h3>
+
+<ol>
+<li><strong>Frequência</strong>: 3ª afecção; 10% prevalência; 50% recorrência ❓ Q02, Q41</li>
+<li><strong>Cálcio = 80–85%</strong> dos cálculos ❓ Q05</li>
+<li><strong>Estruvita</strong>: mulher + infecção + pH alcalino + Mg+NH3+fosfato ❓ Q09, Q10, Q43</li>
+<li><strong>Ácido úrico</strong>: pH &lt; 5,5 + maioria SEM hiperuricemia ❓ Q11, Q44</li>
+<li><strong>Cistina</strong>: herança recessiva + vidro esmerilado ❓ Q13, Q14, Q45</li>
+<li><strong>Cólico ureteral</strong> (NÃO renal) 🎧 professor insiste</li>
+<li><strong>Dor ureter inferior</strong> → testículo ou lábio maior ❓ Q16, Q46</li>
+<li><strong>Cálculo + febre = urgência médica</strong> ❓ Q18</li>
+<li><strong>Radiografia: 90% radiopacos</strong> ❓ Q22, Q47</li>
+<li><strong>Radiotransparentes: ácido úrico + sulfamidas + xantina</strong> ❓ Q23</li>
+</ol>
+
+<h3 id="provavel">Provável</h3>
+
+<ol>
+<li>Diagnóstico diferencial (lista de 9 condições) ❓ Q21</li>
+<li>Exame físico: posição antálgica + hipersensibilidade costovertebral ❓ Q20</li>
+<li>Ecografia: hidronefrose + limitação por gás intestinal ❓ Q24, Q30, Q48</li>
+<li>Tratamento: conservador vs. cirúrgico ❓ Q25</li>
+<li>Fatores de risco ❓ Q03, Q19</li>
+<li>Oxalato cálcico = componente mais frequente (65%) ❓ Q04</li>
+</ol>
+
+<h3 id="a-confirmar">A confirmar</h3>
+
+<ol>
+<li>Litotricia: o professor não recomenda — mas o slide indica &lt; 3 cc</li>
+<li>Tamsulosina: se cai na prova oral ou apenas no livro</li>
+<li>Cristina em coraliforme: único, múltiplo ou coraliforme</li>
+</ol>
+
+<div class="callout callout-warning"><div class="callout-title">⚠️ Não confundir</div><div class="callout-body"><p>Estruvita é pH <strong>alcalino</strong> — não &lt; 5,5. Ácido úrico é pH &lt; 5,5.
+Maioria dos pacientes com ácido úrico NÃO tem hiperuricemia.</p>
+</div></div>
+
+<hr />
+
+<h2 id="7-mapa-mental-em-texto">7. Mapa Mental em Texto</h2>
+
+<pre><code>LITIASIS URINARIA
+│
+├── EPIDEMIOLOGIA
+│   ├── 3ª afecção mais comum
+│   ├── prevalência 10%
+│   └── recorrência 50%
+│
+├── TIPOS DE CÁLCULOS
+│   ├── Cálcio (80-85%) → oxalato 65%
+│   ├── Estruvita → mulher + infecção + pH alcalino + Mg+NH3+PO4
+│   ├── Ácido úrico → 5% + homens + pH&lt;5,5 + SEM hiperuricemia
+│   └── Cistina → recessiva + vidro esmerilado + cromossomos 2p16/19q13
+│
+├── CLÍNICA
+│   ├── Cólico URETERAL (não renal) 🎧
+│   ├── Dor varia com localização
+│   │   └── Ureter inferior → testículo ou lábio maior
+│   ├── Hematúria (macro ou micro)
+│   └── Febre + cálculo = URGÊNCIA
+│
+├── DIAGNÓSTICO
+│   ├── Ecografia → melhor exame (operador-dependente) 🎧
+│   │   └── Limitação: gás intestinal no ureter médio
+│   ├── Radiografia → 90% radiopacos
+│   │   └── Radiotransparentes: ácido úrico + sulfamidas + xantina
+│   └── Puño percusión = CONTRAINDICADO no cólico ureteral 🎧
+│
+├── TRATAMENTO 🎧
+│   ├── 1º Analgésico (morfina → tramadol)
+│   ├── 2º Antiespasmódico (buscapina)
+│   ├── 3º AINE (diclofenaco 75 mg)
+│   ├── Tamsulosina 0,4 mg → expulsão espontânea
+│   ├── Antibiótico APENAS se febre
+│   └── Antiemético APENAS se vômito
+│
+└── PREVENÇÃO
+    ├── Água → universal e prioritária
+    ├── Citrato Mg + K → cálculos de cálcio
+    ├── Alopurinol + alcalinização → ácido úrico
+    └── Evitar: ibuprofeno, dipirona, café excessivo, açúcar excessivo
+</code></pre>
+
+<hr />
+
+<h2 id="8-perguntas-de-revisao-ativa">8. Perguntas de Revisão Ativa</h2>
+
+<blockquote>
+  <p>Responder sem olhar o resumo. Conferir depois.</p>
+</blockquote>
+
+<h3 id="perguntas-rapidas">Perguntas rápidas</h3>
+
+<ol>
+<li>Qual a frequência dos cálculos de cálcio?</li>
+<li>Qual a composição da estruvita?</li>
+<li>Qual o pH associado ao cálculo de ácido úrico?</li>
+<li>O que acontece com a dor quando o cálculo está no ureter inferior?</li>
+<li>O que significa "cálculo + febre" clinicamente?</li>
+<li>Qual o primeiro medicamento no tratamento do cólico ureteral?</li>
+<li>Qual o AINE citado no tratamento e a sua dose?</li>
+<li>Qual o aspecto radiográfico do cálculo de cistina?</li>
+<li>Qual exame de imagem é o melhor para litiasis, segundo o professor?</li>
+<li>Qual porcentagem dos cálculos é radiopaca?</li>
+</ol>
+
+<h3 id="perguntas-de-raciocinio">Perguntas de raciocínio</h3>
+
+<ol>
+<li>Por que o professor usa "cólico ureteral" e não "cólico renal"?</li>
+<li>Paciente com cálculo + febre + taquicardia + hipotensão — qual o quadro e a conduta?</li>
+<li>Por que o professor não recomenda litotricia extracorpórea?</li>
+<li>Por que a tamsulosina pode ser útil mesmo em mulheres?</li>
+<li>Por que o puño percusión é contraindicado no cólico ureteral mas útil na pielonefritis?</li>
+</ol>
+
+<h3 id="perguntas-estilo-prova-oral">Perguntas estilo prova oral</h3>
+
+<ol>
+<li>Defina litiasis urinaria e cite sua frequência relativa entre as afecções urológicas.</li>
+<li>Compare os quatro tipos principais de cálculos quanto a sexo, pH e composição.</li>
+<li>Descreva o tratamento farmacológico do cólico ureteral na ordem correta, com os fármacos específicos.</li>
+<li>Quais cálculos são radiotransparentes na radiografia?</li>
+<li>Quais bactérias estão associadas aos cálculos de estruvita?</li>
+</ol>
+
+<h3 id="perguntas-baseadas-no-banco-de-questoes">Perguntas baseadas no banco de questões</h3>
+
+<ol>
+<li>(Q44) A maioria dos pacientes com cálculo de ácido úrico apresenta hiperuricemia? V ou F?</li>
+<li>(Q43) Estruvita é associada a pH &lt; 5,5? V ou F?</li>
+<li>(Q45) A cistinúria tem herança recessiva? V ou F?</li>
+<li>(Q46) Cálculo no ureter inferior pode causar dor no testículo ipsilateral? V ou F?</li>
+<li>(Q47) Aproximadamente 90% dos cálculos são radiopacos? V ou F?</li>
+</ol>
+
+<p><em>(Respostas: F, F, V, V, V)</em></p>
+
+<hr />
+
+<h2 id="9-estrategia-de-memorizacao">9. Estratégia de Memorização</h2>
+
+<div class="callout callout-tip"><div class="callout-title">💡 Revisão em 10 minutos</div><div class="callout-body"><ol>
+<li>Ler o <strong>Núcleo Obrigatório</strong> (seção 2)</li>
+<li>Revisar a <strong>tabela de tipos de cálculos</strong> (seção 4)</li>
+<li>Revisar a <strong>tabela de tratamento</strong> (seção 3.6)</li>
+<li>Responder as <strong>5 perguntas rápidas</strong> da seção 8</li>
+<li>Conferir as pegadinhas</li>
+</ol>
+</div></div>
+
+<p><strong>Mnemônico para tipos de cálculos:</strong></p>
+
+<blockquote>
+  <p><strong>C-E-Ú-C</strong> = Cálcio (80%), Estruvita (mulher+infecção), Úrico (pH&lt;5,5, sem hiperuricemia), Cistina (hereditária, vidro)</p>
+</blockquote>
+
+<p><strong>Mnemônico para tratamento:</strong></p>
+
+<blockquote>
+  <p><strong>A-A-A</strong> = Analgésico → Antiespasmódico → Anti-inflamatório<br />
+  <strong>M-T-B-D</strong> = Morfina → Tramadol (se sem morfina) → Buscapina → Diclofenaco</p>
+</blockquote>
+
+<p><strong>Frase-âncora para cólico:</strong></p>
+
+<blockquote>
+  <p>"O ureter espasma, não o rim. É cólico <strong>ureteral</strong>."</p>
+</blockquote>
+
+<p><strong>Frase-âncora para urgência:</strong></p>
+
+<blockquote>
+  <p>"Cálculo + febre = urgência. Septicemia mata."</p>
+</blockquote>
+
+<div class="callout callout-tip"><div class="callout-title">💡 Para TDAH — estratégia em blocos pequenos</div><div class="callout-body"><ol>
+<li>Primeiro dia: só os tipos de cálculos + tabela comparativa</li>
+<li>Segundo dia: clínica (dor por localização + febre = urgência)</li>
+<li>Terceiro dia: tratamento (ordem A-A-A + fármacos)</li>
+<li>Véspera: mapa mental + perguntas rápidas + pegadinhas</li>
+</ol>
+</div></div>
+
+<hr />
+
+<h2 id="10-duvidas-para-confirmar">10. Dúvidas para Confirmar</h2>
+
+<ul>
+<li>[ ] Na prova oral, o professor quer "cólico ureteral" — confirmar se vai aceitar "cólico renal" como errado</li>
+<li>[ ] Litotricia: o professor claramente disse que não recomenda — mas o slide indica para &lt; 3 cc. Perguntar qual usar na prova escrita</li>
+<li>[ ] Tamsulosina: aparece só na transcrição — confirmar se cai na prova</li>
+<li>[ ] Cistina — lista de fármacos (glutamina, captopril, penicilamina, mercaptopropionilglicina): confirmar quais são obrigatórios para prova</li>
+<li>[ ] A "Nefrolitotomia anatrófica" aparece nas pendências do slide — não foi cobrada explicitamente</li>
+</ul>
+
+<hr />
+
+<h2 id="lacunas-identificadas">📌 Lacunas Identificadas</h2>
+
+<div class="callout callout-info"><div class="callout-title">📘 📌 Conteúdo do livro não claramente coberto em aula</div><div class="callout-body"><ul>
+<li>📌 Nefrolitotomia anatrófica (<em>nefrolitotomía anatrófica</em>) — procedimento cirúrgico para cálculos coraliformes; não aparece explicitamente nos slides extraídos</li>
+<li>📌 Ureteroscopia (<em>ureteroscopia</em>) e nefrolitotomia percutânea (<em>nefrolitotomía percutánea</em>) como opções cirúrgicas — Smith/Tanagho as descreve; não aparecem nos slides</li>
+<li>📌 Critérios de internação hospitalar vs. manejo ambulatorial — não cobertos em aula</li>
+<li>📌 Xantinúria — mecanismo genético detalhado; citada nos slides mas não desenvolvida</li>
+</ul>
+</div></div>
+
+<div class="callout callout-warning"><div class="callout-title">⚠️ Divergências entre fontes</div><div class="callout-body"><ul>
+<li><strong>Cólico renal vs. ureteral:</strong> slide usa termos variados; professor (aula) insiste em "cólico ureteral" ← usar professor</li>
+<li><strong>Litotricia extracorpórea:</strong> slide indica para &lt; 3 cc; professor não recomenda ← anotar divergência e perguntar antes da prova</li>
+<li><strong>Ecografia:</strong> slide diz "detecta todos os cálculos"; corpo do slide e limitação diz que trajeto ureteral pode ser ineficaz ← usar a versão com limitação (mais precisa)</li>
+</ul>
+</div></div>
+
+<hr />
+
+<h2 id="navegacao">Navegação</h2>
+
+<ul>
+<li>Voltar para prioridades: <span class="wikilink">_Prioridades-P2</span></li>
+<li>Mapa de fontes T10: <span class="wikilink">Tema-T10-Litiasis-Mapa-de-Fontes</span></li>
+<li>Perguntas para praticar: <span class="wikilink">Urologia-Litiasis-Urinaria-Perguntas</span></li>
+<li>Transcrição completa: <span class="wikilink">P2-T10-Litiasis-Transcricao</span></li>
+<li>Slides originais: <span class="wikilink">Urologia-Litiasis-Urinaria-Slides</span></li>
+</ul>
+
+<hr />
+
+<p><em>Status: revisando — não marcar como finalizado sem revisão humana.</em></p>
+
+  </main>
+</div>
+</body>
+</html>

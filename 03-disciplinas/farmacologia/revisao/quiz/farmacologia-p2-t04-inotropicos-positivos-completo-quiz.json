@@ -1,0 +1,265 @@
+{
+  "title": "Inotrópicos Quiz",
+  "questions": [
+    {
+      "question": "No contexto da hemodinâmica cardíaca, qual conceito define a resistência que o ventrículo deve superar para ejetar o sangue na circulação sistêmica?",
+      "answerOptions": [
+        {
+          "text": "Pós-carga",
+          "isCorrect": true,
+          "rationale": "A pós-carga está diretamente relacionada à pressão arterial e à resistência vascular periférica que se opõe à ejeção ventricular."
+        },
+        {
+          "text": "Pré-carga",
+          "isCorrect": false,
+          "rationale": "Este conceito refere-se ao volume de enchimento ventricular ao final da diástole, dependente do retorno venoso."
+        },
+        {
+          "text": "Fração de ejeção",
+          "isCorrect": false,
+          "rationale": "Trata-se da proporção entre o volume ejetado e o volume diastólico final, servindo como índice de eficiência."
+        },
+        {
+          "text": "Volume minuto",
+          "isCorrect": false,
+          "rationale": "É o produto da frequência cardíaca pelo volume sistólico, representando o débito total por minuto."
+        }
+      ],
+      "hint": "Considere o fator que se relaciona diretamente com a pressão arterial sistêmica."
+    },
+    {
+      "question": "Qual é o mecanismo de ação primário da Digoxina para promover o inotropismo positivo?",
+      "answerOptions": [
+        {
+          "text": "Inibição da bomba $Na^{+}/K^{+}$-ATPase",
+          "isCorrect": true,
+          "rationale": "A inibição desta bomba eleva o $Na^{+}$ intracelular, o que reduz a saída de $Ca^{2+}$ pelo trocador $Na^{+}/Ca^{2+}$, aumentando a força contrátil."
+        },
+        {
+          "text": "Ativação direta de receptores $\\beta1$ adrenérgicos",
+          "isCorrect": false,
+          "rationale": "Esta é a via de ação das catecolaminas como a dobutamina, não dos digitálicos."
+        },
+        {
+          "text": "Inibição da enzima fosfodiesterase III (PDE III)",
+          "isCorrect": false,
+          "rationale": "Este mecanismo é característico da milrinona e amrinona, que aumentam o AMPc."
+        },
+        {
+          "text": "Aumento da sensibilidade da troponina C ao cálcio",
+          "isCorrect": false,
+          "rationale": "Este mecanismo é exclusivo de fármacos como o levosimendan."
+        }
+      ],
+      "hint": "Lembre-se da cascata iônica que começa com a paralisação de uma bomba de membrana dependente de energia."
+    },
+    {
+      "question": "A Digoxina apresenta efeitos eletrofisiológicos distintos. Qual das alternativas descreve corretamente seu efeito sobre a frequência cardíaca e a condução no nó atrioventricular (AV)?",
+      "answerOptions": [
+        {
+          "text": "Cronotropismo negativo e dromotropismo negativo",
+          "isCorrect": true,
+          "rationale": "Devido ao aumento do tônus vagal, a digoxina reduz a frequência cardíaca (FC) e retarda a condução pelo nó AV."
+        },
+        {
+          "text": "Cronotropismo positivo e dromotropismo positivo",
+          "isCorrect": false,
+          "rationale": "Estes efeitos aumentariam a frequência e a velocidade de condução, o que é o oposto do efeito vagotônico da digoxina."
+        },
+        {
+          "text": "Cronotropismo negativo e dromotropismo positivo",
+          "isCorrect": false,
+          "rationale": "Embora reduza a FC, ela não acelera a condução AV; pelo contrário, aumenta o período refratário do nó AV."
+        },
+        {
+          "text": "Batmotropismo positivo crônico",
+          "isCorrect": false,
+          "rationale": "Em uso crônico terapêutico, a digoxina tende a diminuir a excitabilidade (batmotropismo negativo)."
+        }
+      ],
+      "hint": "Pense na utilidade da digoxina para controlar a frequência cardíaca em pacientes com fibrilação atrial."
+    },
+    {
+      "question": "Sobre a farmacocinética da Digoxina, por que é necessário o ajuste de dose em pacientes com Insuficiência Renal Crônica (IRC)?",
+      "answerOptions": [
+        {
+          "text": "Sua principal via de eliminação é renal e sua meia-vida pode dobrar ou quadruplicar na IRC",
+          "isCorrect": true,
+          "rationale": "Como a excreção é majoritariamente renal, a falha na filtração leva ao acúmulo do fármaco e risco de toxicidade grave."
+        },
+        {
+          "text": "A IRC aumenta a biotransformação hepática do fármaco",
+          "isCorrect": false,
+          "rationale": "Apenas 10-20% da digoxina sofre metabolismo hepático, tornando a via renal o fator limitante."
+        },
+        {
+          "text": "A união a proteínas plasmáticas aumenta drasticamente na IRC",
+          "isCorrect": false,
+          "rationale": "A união proteica da digoxina é baixa (25%) e não justifica o ajuste por esse motivo."
+        },
+        {
+          "text": "A IRC reduz a biodisponibilidade oral do fármaco",
+          "isCorrect": false,
+          "rationale": "O problema na IRC não é a absorção, mas sim a incapacidade de eliminar o fármaco após a absorção."
+        }
+      ],
+      "hint": "Reflita sobre como o corpo se livra da maior parte da dose de digoxina circulante."
+    },
+    {
+      "question": "Um paciente em uso de digoxina e diuréticos de alça apresenta náuseas, vômitos e alterações visuais. Qual distúrbio eletrolítico é o principal fator de risco para essa toxicidade?",
+      "answerOptions": [
+        {
+          "text": "Hipopotassemia",
+          "isCorrect": true,
+          "rationale": "O potássio compete com a digoxina pelo sítio de ligação na ATPase; níveis baixos de $K^{+}$ facilitam a ligação excessiva do fármaco."
+        },
+        {
+          "text": "Hiperpotassemia",
+          "isCorrect": false,
+          "rationale": "Níveis elevados de potássio tendem a reduzir a afinidade da digoxina pela bomba, protegendo contra a intoxicação."
+        },
+        {
+          "text": "Hipocalcemia",
+          "isCorrect": false,
+          "rationale": "A hipocalcemia reduziria o efeito inotrópico, enquanto a hipercalcemia é que favoreceria arritmias digitálicas."
+        },
+        {
+          "text": "Hiponatremia",
+          "isCorrect": false,
+          "rationale": "Embora comum em pacientes com IC, não é o fator desencadeante clássico da toxicidade digitálica como o potássio."
+        }
+      ],
+      "hint": "Considere o íon que normalmente 'estabiliza' a bomba $Na^{+}/K^{+}$ contra a ligação do fármaco."
+    },
+    {
+      "question": "A Dopamina possui efeitos hemodinâmicos que variam conforme a dose administrada. Qual é o efeito predominante em doses altas ($> 10 \\mu g/kg/min$)?",
+      "answerOptions": [
+        {
+          "text": "Vasoconstrição sistêmica por ativação de receptores $\\alpha1$",
+          "isCorrect": true,
+          "rationale": "Em doses elevadas, o efeito adrenérgico alfa supera os efeitos dopaminérgicos e beta, resultando em aumento da resistência periférica."
+        },
+        {
+          "text": "Vasodilatação renal e mesentérica por receptores $D1$",
+          "isCorrect": false,
+          "rationale": "Este efeito é característico de doses baixas (1-3 $\\mu g/kg/min$)."
+        },
+        {
+          "text": "Inotropismo positivo puro sem alteração da resistência vascular",
+          "isCorrect": false,
+          "rationale": "Doses intermediárias focam no inotropismo, mas doses altas invariavelmente aumentam a resistência via $\\alpha1$."
+        },
+        {
+          "text": "Redução da pressão arterial por ativação de receptores $\\beta2$",
+          "isCorrect": false,
+          "rationale": "Doses altas de dopamina aumentam a pressão arterial devido à vasoconstrição intensa."
+        }
+      ],
+      "hint": "Lembre-se da transição do receptor dopaminérgico para o receptor de 'estresse' vascular."
+    },
+    {
+      "question": "Por que a Dobutamina é frequentemente preferida à Dopamina em pacientes com insuficiência cardíaca associada a cardiopatia isquêmica?",
+      "answerOptions": [
+        {
+          "text": "Causa menos taquiarritmias e menor aumento da pós-carga",
+          "isCorrect": true,
+          "rationale": "A dobutamina tem maior seletividade $\\beta1$ e menos efeito $\\alpha$ vasoconstritor, demandando menos oxigênio miocárdico que a dopamina em doses altas."
+        },
+        {
+          "text": "Aumenta significativamente o fluxo sanguíneo renal em comparação à dopamina",
+          "isCorrect": false,
+          "rationale": "A dopamina em dose baixa é que possui o efeito específico de vasodilatação renal via receptores $D1$."
+        },
+        {
+          "text": "Não possui efeitos sobre os receptores $\\beta1$ cardíacos",
+          "isCorrect": false,
+          "rationale": "A dobutamina é um potente agonista $\\beta1$, sendo este o seu principal mecanismo inotrópico."
+        },
+        {
+          "text": "Atua exclusivamente inibindo a fosfodiesterase III",
+          "isCorrect": false,
+          "rationale": "A dobutamina é um simpatomimético (agonista de receptor), não um inibidor da PDE III."
+        }
+      ],
+      "hint": "Pense na demanda de oxigênio do coração isquêmico e na resistência que ele precisa vencer."
+    },
+    {
+      "question": "Qual é a principal diferença clínica em termos de segurança entre a Milrinona e a Amrinona (inibidores da PDE III)?",
+      "answerOptions": [
+        {
+          "text": "A Amrinona está associada à ocorrência de trombocitopenia, enquanto a Milrinona não",
+          "isCorrect": true,
+          "rationale": "A trombocitopenia é um efeito adverso marcante e limitante da amrinona, tornando a milrinona preferível na prática clínica."
+        },
+        {
+          "text": "A Milrinona é inativada pela luz, exigindo cuidados especiais que a amrinona não exige",
+          "isCorrect": false,
+          "rationale": "Na verdade, é a amrinona que possui instabilidade frente à luz e soluções com glicose."
+        },
+        {
+          "text": "Somente a Milrinona possui efeito vasodilatador periférico (inodilatador)",
+          "isCorrect": false,
+          "rationale": "Ambas as drogas são classificadas como inodilatadoras, pois aumentam o AMPc tanto no coração quanto nos vasos."
+        },
+        {
+          "text": "A Amrinona tem eliminação exclusivamente renal, sendo mais segura na insuficiência hepática",
+          "isCorrect": false,
+          "rationale": "Ambas sofrem metabolismo hepático significativo, e a amrinona tem maior perfil de toxicidade geral."
+        }
+      ],
+      "hint": "Foque no componente sanguíneo que é afetado por um desses fármacos."
+    },
+    {
+      "question": "Qual é a vantagem mecanística do Levosimendan em relação aos outros inotrópicos positivos tradicionais?",
+      "answerOptions": [
+        {
+          "text": "Aumenta a contratilidade sem elevar os níveis de $Ca^{2+}$ intracelular, reduzindo o risco de arritmias",
+          "isCorrect": true,
+          "rationale": "Ao sensibilizar a troponina C ao cálcio já existente, ele evita a sobrecarga de cálcio, que é uma causa comum de arritmias e morte celular."
+        },
+        {
+          "text": "Atua bloqueando os canais de $K^{+}$ ATP-dependentes",
+          "isCorrect": false,
+          "rationale": "O levosimendan na verdade abre esses canais, o que contribui para seu efeito vasodilatador."
+        },
+        {
+          "text": "Possui a maior meia-vida do grupo, permitindo administração mensal",
+          "isCorrect": false,
+          "rationale": "Sua meia-vida é curta, embora seus metabólitos ativos prolonguem o efeito por alguns dias, não meses."
+        },
+        {
+          "text": "É o único inotrópico que reduz comprovadamente a mortalidade a longo prazo na IC crônica",
+          "isCorrect": false,
+          "rationale": "Inotrópicos em geral são usados na fase aguda e não demonstraram redução de mortalidade crônica em comparação a IECAs ou betabloqueadores."
+        }
+      ],
+      "hint": "Considere o risco de 'toxicidade cálcica' e como este fármaco lida com as proteínas contráteis."
+    },
+    {
+      "question": "O 'sinal de ação digitálica' no eletrocardiograma (ECG) é caracterizado por um ligeiro desnível negativo do segmento ST. Como esse achado deve ser interpretado clinicamente?",
+      "answerOptions": [
+        {
+          "text": "Como um sinal farmacológico esperado, não indicando necessariamente toxicidade",
+          "isCorrect": true,
+          "rationale": "Este achado indica que o fármaco está agindo no organismo, mas não é diagnóstico de intoxicação se isolado."
+        },
+        {
+          "text": "Como um sinal patognomônico de intoxicação grave",
+          "isCorrect": false,
+          "rationale": "A intoxicação é sugerida por arritmias complexas e sintomas clínicos, não apenas pelo desnível de ST."
+        },
+        {
+          "text": "Como evidência de isquemia miocárdica aguda induzida pelo fármaco",
+          "isCorrect": false,
+          "rationale": "Embora o ST alterado possa mimetizar isquemia, no caso da digoxina, é um efeito eletrofisiológico direto nas células."
+        },
+        {
+          "text": "Como indicação imediata para suspensão do tratamento",
+          "isCorrect": false,
+          "rationale": "Se o paciente estiver estável e em faixa terapêutica, o tratamento deve ser mantido."
+        }
+      ],
+      "hint": "Diferencie um efeito do fármaco de uma manifestação de excesso (toxicidade)."
+    }
+  ]
+}

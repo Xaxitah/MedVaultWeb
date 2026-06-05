@@ -233,6 +233,50 @@ main {
 .prova-section { display: none; }
 .prova-section.visible { display: block; }
 
+/* ── Resumo link grid ── */
+.resumo-section { margin-top: 2rem; }
+
+.resumo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .75rem;
+}
+
+.resumo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .45rem .9rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--primary);
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 500;
+  transition: background .12s, border-color .12s;
+}
+.resumo-link:hover { background: #e8f0fd; border-color: var(--primary-light); }
+.resumo-link.vespera { border-color: #fbbf24; color: #92400e; background: #fffbeb; }
+.resumo-link.vespera:hover { background: #fef3c7; }
+.resumo-link.questao { border-color: #a78bfa; color: #5b21b6; background: #f5f3ff; }
+.resumo-link.questao:hover { background: #ede9fe; }
+.resumo-link.quiz { border-color: #6ee7b7; color: #065f46; background: #ecfdf5; }
+.resumo-link.quiz:hover { background: #d1fae5; }
+.resumo-link.flashcard { border-color: #fca5a5; color: #7f1d1d; background: #fef2f2; }
+.resumo-link.flashcard:hover { background: #fee2e2; }
+
+.resumo-group { margin-bottom: 1.25rem; }
+.resumo-group-title {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+  margin-bottom: .5rem;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;

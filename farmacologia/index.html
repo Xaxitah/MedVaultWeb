@@ -21,8 +21,10 @@
 <main>
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="showProva('p2-cv')">P2 T01–T07 Cardiovascular</button>
-    <button class="tab-btn" onclick="showProva('p2-analg')">P2 T08–T11 Analgésicos</button>
+    <button class="tab-btn active" onclick="showProva('p2-cv', event)">P2 T01–T07 Cardiovascular</button>
+    <button class="tab-btn" onclick="showProva('p2-analg', event)">P2 T08–T11 Analgésicos</button>
+    <button class="tab-btn" onclick="showProva('resumos-p2', event)">📄 Resumos P2</button>
+    <button class="tab-btn" onclick="showProva('resumos-p1', event)">📄 Resumos P1</button>
   </div>
 
   <!-- ═══════════════════════════════ P2 T01–T07 Cardiovascular ═══════════════════════════════ -->
@@ -324,16 +326,98 @@
 
   </div><!-- /p2-analg -->
 
+  <!-- ═══ RESUMOS P2 ═══ -->
+  <div id="resumos-p2" class="prova-section">
+    <h2 class="section-title">📄 Resumos P2 — Cardiovascular + Analgesia</h2>
+    <div class="resumo-section">
+      <div class="resumo-group">
+        <div class="resumo-group-title">Resumos Completos por Tema</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-00-insuficiencia-cardiaca/p2-t00-insuficiencia-cardiaca.html" target="_blank">T00 — Insuficiência Cardíaca</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-01-ieca-ara-ii/p2-t01-ieca-ara-ii.html" target="_blank">T01 — IECA / ARA-II</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-02-betabloqueantes/p2-t02-betabloqueantes.html" target="_blank">T02 — Betabloqueantes</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-03-diureticos/p2-t03-diureticos.html" target="_blank">T03 — Diuréticos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-04-inotropicos-positivos/p2-t04-inotropicos-positivos.html" target="_blank">T04 — Inotrópicos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-05-vasodilatadores/p2-t05-vasodilatadores.html" target="_blank">T05 — Vasodilatadores</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-06-hemostasia/p2-t06-hemostasia.html" target="_blank">T06 — Hemostasia</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-07-normolipemiantes/p2-t07-normolipemiantes.html" target="_blank">T07 — Normolipemiantes</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-08-aines/p2-t08-aines-parte-1.html" target="_blank">T08 — AINEs Parte 1</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-08-aines/p2-t08-aines-parte-2.html" target="_blank">T08 — AINEs Parte 2</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-09-analgesicos-opioides/p2-t09-analgesicos-opioides-parte-1.html" target="_blank">T09 — Opioides Parte 1</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-09-analgesicos-opioides/p2-t09-analgesicos-opioides-parte-2.html" target="_blank">T09 — Opioides Parte 2</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-10-anestesicos-gerais/p2-t10-anestesicos-gerais.html" target="_blank">T10 — Anestésicos Gerais</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-11-relaxantes-musculares/p2-t11-relaxantes-musculares.html" target="_blank">T11 — Relaxantes Musculares</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-12-anticonvulsivantes/p2-t12-anticonvulsivantes.html" target="_blank">T12 — Anticonvulsivantes</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p2/p2-tema-13-anestesicos-locais/p2-t13-anestesicos-locais.html" target="_blank">T13 — Anestésicos Locais</a>
+        </div>
+      </div>
+      <div class="resumo-group">
+        <div class="resumo-group-title">Quiz por Tema (P2)</div>
+        <div class="resumo-grid">
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t01-ieca-ara-ii-completo-quiz.html" target="_blank">🎯 Quiz T01</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t02-betabloqueantes-completo-quiz.html" target="_blank">🎯 Quiz T02</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t03-diureticos-completo-quiz.html" target="_blank">🎯 Quiz T03</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t04-inotropicos-positivos-completo-quiz.html" target="_blank">🎯 Quiz T04</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t05-vasodilatadores-completo-quiz.html" target="_blank">🎯 Quiz T05</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t06-hemostasia-completo-quiz.html" target="_blank">🎯 Quiz T06</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t07-normolipemiantes-completo-quiz.html" target="_blank">🎯 Quiz T07</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t08-aines-completo-quiz.html" target="_blank">🎯 Quiz T08 AINEs</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t09-analgesicos-opioides-completo-quiz.html" target="_blank">🎯 Quiz T09 Opioides</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t10-anestesicos-gerais-completo-quiz.html" target="_blank">🎯 Quiz T10</a>
+          <a class="resumo-link quiz" href="../03-disciplinas/farmacologia/revisao/quiz/farmacologia-p2-t11-relaxantes-musculares-completo-quiz.html" target="_blank">🎯 Quiz T11</a>
+        </div>
+      </div>
+      <div class="resumo-group">
+        <div class="resumo-group-title">Revisão Véspera e Questões</div>
+        <div class="resumo-grid">
+          <a class="resumo-link vespera" href="../03-disciplinas/farmacologia/revisao/revisao-vespera/farmacologia-p2-bloco-analgesia-opioides-aines.html" target="_blank">⚡ Bloco Analgesia — AINEs + Opioides</a>
+          <a class="resumo-link vespera" href="../03-disciplinas/farmacologia/revisao/revisao-vespera/farmacologia-aines-questoes-provas-antigas.html" target="_blank">⚡ AINEs — Questões Provas Antigas</a>
+          <a class="resumo-link questao" href="../03-disciplinas/farmacologia/revisao/questoes/farmacologia-banco-questoes-parciais-final-158.html" target="_blank">❓ Banco 158 Questões</a>
+          <a class="resumo-link questao" href="../03-disciplinas/farmacologia/revisao/questoes/questoes-farmaco-final-2023-imagens-com-tags.html" target="_blank">❓ Final 2023</a>
+          <a class="resumo-link questao" href="../03-disciplinas/farmacologia/revisao/questoes/questoes-farmacologia-imagens-2024-e-pdf-final-com-tags.html" target="_blank">❓ Final 2024</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /resumos-p2 -->
+
+  <!-- ═══ RESUMOS P1 ═══ -->
+  <div id="resumos-p1" class="prova-section">
+    <h2 class="section-title">📄 Resumos P1 — Farmacologia Básica</h2>
+    <div class="resumo-section">
+      <div class="resumo-group">
+        <div class="resumo-group-title">Resumos P1 (T01–T16)</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t01-bases-farmacologicas-da-terapeutica.html" target="_blank">T01 — Bases Farmacológicas</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t02-farmacocinetica-e-farmacodinamica.html" target="_blank">T02 — Farmacocinética e Farmacodinâmica</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t03-transportadores-de-membrana-e-metabolismo.html" target="_blank">T03 — Transportadores e Metabolismo</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t04-formas-farmaceuticas-e-vias-de-administracao.html" target="_blank">T04 — Formas Farmacêuticas</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t05-toxicidade-e-intoxicacao.html" target="_blank">T05 — Toxicidade e Intoxicação</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t06-aines.html" target="_blank">T06 — AINEs</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t07-antianemicos.html" target="_blank">T07 — Antianêmicos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t08-anticonvulsivantes.html" target="_blank">T08 — Anticonvulsivantes</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t09-ansioliticos-e-hipnoticos.html" target="_blank">T09 — Ansiolíticos e Hipnóticos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t10-neurofarmacologia.html" target="_blank">T10 — Neurofarmacologia</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t11-antipsicoticos.html" target="_blank">T11 — Antipsicóticos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t12-opioides.html" target="_blank">T12 — Opioides</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t13-antidepressivos.html" target="_blank">T13 — Antidepressivos</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t14-anestesicos-locais.html" target="_blank">T14 — Anestésicos Locais</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t15-anestesicos-gerais.html" target="_blank">T15 — Anestésicos Gerais</a>
+          <a class="resumo-link" href="../03-disciplinas/farmacologia/revisao/resumos/p1/p1-t16-relaxantes-musculares.html" target="_blank">T16 — Relaxantes Musculares</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /resumos-p1 -->
+
 </main>
 
 <footer>MED-Vault 2.0 · Farmacologia · <a href="../">← Voltar ao início</a></footer>
 
 <script>
-function showProva(id) {
+function showProva(id, event) {
   document.querySelectorAll('.prova-section').forEach(s => s.classList.remove('visible'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('visible');
-  event.target.classList.add('active');
+  if (event) event.target.classList.add('active');
 }
 </script>
 

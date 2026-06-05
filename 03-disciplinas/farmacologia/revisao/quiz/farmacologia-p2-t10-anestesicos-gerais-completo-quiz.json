@@ -1,0 +1,265 @@
+{
+  "title": "Anestesia Quiz",
+  "questions": [
+    {
+      "question": "A anestesia geral é composta por cinco pilares fundamentais. Qual dos seguintes componentes garante que o paciente não tenha memórias do procedimento cirúrgico?",
+      "answerOptions": [
+        {
+          "text": "Amnésia",
+          "isCorrect": true,
+          "rationale": "A amnésia é o componente que impede a formação de memórias intraoperatórias, essencial para o bem-estar psicológico do paciente."
+        },
+        {
+          "text": "Analgesia",
+          "isCorrect": false,
+          "rationale": "Embora essencial, a analgesia foca na supressão da dor e não garante a ausência de memórias."
+        },
+        {
+          "text": "Imobilidade",
+          "isCorrect": false,
+          "rationale": "A imobilidade refere-se à falta de resposta motora a estímulos, mas um paciente imóvel ainda pode estar consciente e formar memórias."
+        },
+        {
+          "text": "Atenuação autonômica",
+          "isCorrect": false,
+          "rationale": "Este componente foca no controle de reflexos vegetativos como frequência cardíaca e pressão arterial, não na memória."
+        }
+      ],
+      "hint": "Pense no termo que descreve a perda da função de memória."
+    },
+    {
+      "question": "Diferente da maioria dos anestésicos intravenosos que atuam nos receptores $GABA_A$, a Cetamina possui um mecanismo de ação distinto. Qual é o seu alvo principal?",
+      "answerOptions": [
+        {
+          "text": "Antagonismo de receptores NMDA",
+          "isCorrect": true,
+          "rationale": "A cetamina bloqueia os canais de $Ca^{2+}$ associados ao receptor NMDA, resultando em uma anestesia dissociativa."
+        },
+        {
+          "text": "Ativação de canais de $Cl^-$ via GABA",
+          "isCorrect": false,
+          "rationale": "Este é o mecanismo do propofol e dos barbitúricos, que promovem hiperpolarização neuronal."
+        },
+        {
+          "text": "Bloqueio de canais de Sódio ($Na^+$)",
+          "isCorrect": false,
+          "rationale": "O bloqueio de canais de sódio é o mecanismo de ação característico dos anestésicos locais, não da cetamina."
+        },
+        {
+          "text": "Agonismo de receptores opioides mu",
+          "isCorrect": false,
+          "rationale": "A cetamina pode ter efeitos analgésicos, mas seu principal mecanismo anestésico não é o agonismo opioide direto."
+        }
+      ],
+      "hint": "Este receptor está envolvido na excitação glutamatérgica e na entrada de cálcio na célula."
+    },
+    {
+      "question": "Em um cenário de trauma com choque hipovolêmico e instabilidade hemodinâmica, qual fármaco é o mais indicado para a indução anestésica?",
+      "answerOptions": [
+        {
+          "text": "Etomidato",
+          "isCorrect": true,
+          "rationale": "O etomidato é a droga de escolha no choque devido à sua mínima interferência na função cardiovascular e respiratória."
+        },
+        {
+          "text": "Propofol",
+          "isCorrect": false,
+          "rationale": "O propofol causa vasodilatação periférica e hipotensão acentuada, o que seria perigoso em um paciente já instável."
+        },
+        {
+          "text": "Tiopental",
+          "isCorrect": false,
+          "rationale": "O tiopental causa depressão cardiovascular e hipotensão grave, devendo ser evitado em estados de choque."
+        },
+        {
+          "text": "Midazolam",
+          "isCorrect": false,
+          "rationale": "Embora estável, o midazolam não provê anestesia cirúrgica completa sozinho e tem indução mais lenta que o etomidato."
+        }
+      ],
+      "hint": "Procure o anestésico conhecido por sua 'estabilidade cardiovascular'."
+    },
+    {
+      "question": "Sobre os anestésicos inalatórios, a Concentração Alveolar Mínima (MAC ou CAM) é um parâmetro clínico vital. O que a MAC representa?",
+      "answerOptions": [
+        {
+          "text": "A medida de potência do anestésico",
+          "isCorrect": true,
+          "rationale": "A MAC é a concentração necessária para imobilizar 50% dos pacientes; quanto menor a MAC, maior a potência lipofílica do fármaco."
+        },
+        {
+          "text": "A velocidade de indução do fármaco",
+          "isCorrect": false,
+          "rationale": "A velocidade de indução depende do coeficiente de partição sangue/ar, não da MAC diretamente."
+        },
+        {
+          "text": "A toxicidade hepática do gás",
+          "isCorrect": false,
+          "rationale": "A MAC mede eficácia anestésica, enquanto a toxicidade é um efeito adverso relacionado ao metabolismo do fármaco."
+        },
+        {
+          "text": "A taxa de excreção pulmonar",
+          "isCorrect": false,
+          "rationale": "A excreção depende do fluxo sanguíneo e da solubilidade, enquanto a MAC é uma medida de concentração alveolar em equilíbrio."
+        }
+      ],
+      "hint": "Pense na relação entre a dose mínima necessária e a força do efeito gerado."
+    },
+    {
+      "question": "Qual anestésico inalatório é preferido para indução em pediatria devido ao seu baixo coeficiente de partição sangue/ar e indução/recuperação muito rápidas?",
+      "answerOptions": [
+        {
+          "text": "Sevoflurano",
+          "isCorrect": true,
+          "rationale": "O sevoflurano possui um coeficiente sangue/ar de 0,68, permitindo uma indução suave e rápida, ideal para crianças."
+        },
+        {
+          "text": "Halotano",
+          "isCorrect": false,
+          "rationale": "O halotano tem indução mais lenta e é associado a maior toxicidade, sendo menos preferido atualmente."
+        },
+        {
+          "text": "Óxido Nitroso ($N_2O$)",
+          "isCorrect": false,
+          "rationale": "O $N_2O$ é rápido, mas possui uma MAC superior a 100%, impossibilitando seu uso como anestésico único."
+        },
+        {
+          "text": "Isoflurano",
+          "isCorrect": false,
+          "rationale": "O isoflurano é um excelente fármaco de manutenção, mas sua indução é mais lenta comparada ao sevoflurano."
+        }
+      ],
+      "hint": "Este gás é conhecido por ser o 'mais rápido' da família dos halogenados."
+    },
+    {
+      "question": "A Hipertermia Maligna é uma emergência anestésica grave. Qual é o tratamento farmacológico imediato para essa condição?",
+      "answerOptions": [
+        {
+          "text": "Dantroleno",
+          "isCorrect": true,
+          "rationale": "O dantroleno bloqueia a liberação excessiva de cálcio do retículo sarcoplasmático, revertendo o estado hipermetabólico."
+        },
+        {
+          "text": "Flumazenil",
+          "isCorrect": false,
+          "rationale": "O flumazenil é o antagonista dos benzodiazepínicos e não tem efeito na hipertermia maligna."
+        },
+        {
+          "text": "Naloxona",
+          "isCorrect": false,
+          "rationale": "A naloxona reverte os efeitos dos opioides, mas não atua na fisiopatologia da rigidez muscular maligna."
+        },
+        {
+          "text": "Atropina",
+          "isCorrect": false,
+          "rationale": "A atropina é usada para tratar bradicardia ou secreções, não sendo o tratamento para a hipertermia muscular."
+        }
+      ],
+      "hint": "Este fármaco age diretamente no retículo sarcoplasmático do músculo esquelético."
+    },
+    {
+      "question": "Durante a indução com cetamina, é comum a ocorrência de fenômenos emergentes (alucinações e pesadelos). Qual classe de fármacos é usada para prevenir esses efeitos?",
+      "answerOptions": [
+        {
+          "text": "Benzodiazepínicos (ex: Midazolam)",
+          "isCorrect": true,
+          "rationale": "Os BZDs são administrados previamente para minimizar as reações psicomiméticas desagradáveis da cetamina."
+        },
+        {
+          "text": "Opioides (ex: Fentanila)",
+          "isCorrect": false,
+          "rationale": "Opioides auxiliam na analgesia, mas não previnem as alucinações causadas pela anestesia dissociativa."
+        },
+        {
+          "text": "Anticolinérgicos (ex: Atropina)",
+          "isCorrect": false,
+          "rationale": "A atropina reduz as secreções brônquicas aumentadas pela cetamina, mas não atua nos fenômenos emergentes psíquicos."
+        },
+        {
+          "text": "Barbitúricos (ex: Tiopental)",
+          "isCorrect": false,
+          "rationale": "Os barbitúricos não são a escolha padrão para mitigar efeitos alucinógenos da cetamina em protocolos modernos."
+        }
+      ],
+      "hint": "Pense na classe de drogas que induz amnésia e controle da ansiedade."
+    },
+    {
+      "question": "O Halotano possui uma característica farmacodinâmica importante que exige cautela ao usar adrenalina no campo cirúrgico. Qual é esse efeito?",
+      "answerOptions": [
+        {
+          "text": "Sensibilização do miocárdio a catecolaminas",
+          "isCorrect": true,
+          "rationale": "O halotano torna o coração mais sensível à adrenalina, o que pode desencadear arritmias graves durante a cirurgia."
+        },
+        {
+          "text": "Bloqueio completo dos receptores beta",
+          "isCorrect": false,
+          "rationale": "O halotano não bloqueia receptores, pelo contrário, ele predispõe a efeitos excitatórios cardíacos via catecolaminas."
+        },
+        {
+          "text": "Indução de hipertensão severa",
+          "isCorrect": false,
+          "rationale": "O halotano geralmente causa hipotensão frequente e grave por depressão direta do miocárdio."
+        },
+        {
+          "text": "Potencialização do relaxamento muscular",
+          "isCorrect": false,
+          "rationale": "Embora tenha algum efeito relaxante, o risco principal na associação com adrenalina é a instabilidade elétrica cardíaca."
+        }
+      ],
+      "hint": "Considere o risco de arritmias cardíacas."
+    },
+    {
+      "question": "O propofol é amplamente utilizado em cirurgias ambulatoriais. Além da rápida recuperação, qual efeito sobre a pressão intracraniana (PIC) ele apresenta?",
+      "answerOptions": [
+        {
+          "text": "Redução da PIC",
+          "isCorrect": true,
+          "rationale": "O propofol reduz o metabolismo cerebral e a pressão intracraniana, sendo útil em neurocirurgia."
+        },
+        {
+          "text": "Aumento significativo da PIC",
+          "isCorrect": false,
+          "rationale": "O aumento da PIC é um efeito da cetamina, o que a torna contraindicada em traumas cranianos graves."
+        },
+        {
+          "text": "Manutenção da PIC inalterada",
+          "isCorrect": false,
+          "rationale": "O propofol altera ativamente a hemodinâmica cerebral, reduzindo tanto o fluxo quanto a pressão."
+        },
+        {
+          "text": "Estímulo à produção de líquor",
+          "isCorrect": false,
+          "rationale": "O efeito do propofol na PIC deve-se à vasoconstrição cerebral e redução do consumo de oxigênio, não à produção de líquor."
+        }
+      ],
+      "hint": "Este fármaco compartilha benefícios protetores cerebrais com os barbitúricos."
+    },
+    {
+      "question": "Na classificação de Guedel das fases da anestesia, qual fase é considerada extremamente perigosa por apresentar agitação, reflexos exaltados e risco de laringoespasmo?",
+      "answerOptions": [
+        {
+          "text": "Fase II — Excitação ou Delírio",
+          "isCorrect": true,
+          "rationale": "A fase II é o período de instabilidade onde estímulos externos podem causar complicações graves; a indução rápida IV visa 'pular' essa fase."
+        },
+        {
+          "text": "Fase I — Analgesia",
+          "isCorrect": false,
+          "rationale": "Na fase I, o paciente ainda está consciente e cooperativo, sem os riscos de reflexos exacerbados do delírio."
+        },
+        {
+          "text": "Fase III — Anestesia Cirúrgica",
+          "isCorrect": false,
+          "rationale": "A fase III é o objetivo da anestesia, caracterizada por respiração regular e perda de reflexos dolorosos."
+        },
+        {
+          "text": "Fase IV — Paralisia Bulbar",
+          "isCorrect": false,
+          "rationale": "A fase IV é o estágio terminal de overdose anestésica, levando à parada respiratória e morte."
+        }
+      ],
+      "hint": "É a fase que os anestesistas tentam atravessar o mais rápido possível durante a indução."
+    }
+  ]
+}

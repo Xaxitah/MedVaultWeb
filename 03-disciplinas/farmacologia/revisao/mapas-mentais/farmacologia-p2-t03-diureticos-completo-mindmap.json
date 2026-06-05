@@ -1,0 +1,126 @@
+{
+  "mind_map": {
+    "name": "Diuréticos",
+    "children": [
+      {
+        "name": "Visão Geral",
+        "children": [
+          {
+            "name": "Inibição da reabsorção de Na+"
+          },
+          {
+            "name": "Redução do volume LEC"
+          },
+          {
+            "name": "Principais usos: HAS, IC e Edema"
+          }
+        ]
+      },
+      {
+        "name": "Inibidores da Anidrase Carbônica",
+        "children": [
+          {
+            "name": "Fármaco: Acetazolamida"
+          },
+          {
+            "name": "Local: Túbulo Proximal (65% Na)"
+          },
+          {
+            "name": "Usos: Glaucoma e Mal de altitude"
+          },
+          {
+            "name": "Contraindicação: Cirrose hepática"
+          }
+        ]
+      },
+      {
+        "name": "Diuréticos de Alça",
+        "children": [
+          {
+            "name": "Fármacos: Furosemida, Bumetanida"
+          },
+          {
+            "name": "Local: Alça de Henle (15-25% Na)"
+          },
+          {
+            "name": "Eficácia: Máxima (Teto Alto)"
+          },
+          {
+            "name": "Efeitos: Hipocalcemia e Ototoxicidade"
+          },
+          {
+            "name": "Uso: Edema agudo de pulmão e IRC"
+          }
+        ]
+      },
+      {
+        "name": "Diuréticos Tiazídicos",
+        "children": [
+          {
+            "name": "Fármacos: Hidroclorotiazida, Clortalidona"
+          },
+          {
+            "name": "Local: Túbulo Distal (4-8% Na)"
+          },
+          {
+            "name": "Eficácia: Moderada"
+          },
+          {
+            "name": "Efeitos: Hipercalcemia e Hiperuricemia"
+          },
+          {
+            "name": "Usos: HAS e Nefrolitíase"
+          }
+        ]
+      },
+      {
+        "name": "Poupadores de Potássio",
+        "children": [
+          {
+            "name": "Bloqueadores ENaC",
+            "children": [
+              {
+                "name": "Amilorida"
+              },
+              {
+                "name": "Triantereno"
+              }
+            ]
+          },
+          {
+            "name": "Antagonistas da Aldosterona",
+            "children": [
+              {
+                "name": "Espironolactona (Efeito hormonal)"
+              },
+              {
+                "name": "Eplerenona (Seletiva)"
+              }
+            ]
+          },
+          {
+            "name": "Risco: Hiperpotassemia grave com IECA/ARA II"
+          }
+        ]
+      },
+      {
+        "name": "Diuréticos Osmóticos",
+        "children": [
+          {
+            "name": "Fármaco: Manitol"
+          },
+          {
+            "name": "Via: Exclusivamente EV"
+          },
+          {
+            "name": "Usos: Pressão intracraniana e intraocular"
+          },
+          {
+            "name": "Risco: Expansão transitória do LEC"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "6d4f22eb-de42-493b-afdf-8444af5b1f8d"
+}

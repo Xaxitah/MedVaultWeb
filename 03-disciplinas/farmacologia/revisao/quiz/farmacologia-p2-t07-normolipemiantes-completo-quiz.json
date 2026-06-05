@@ -1,0 +1,265 @@
+{
+  "title": "Dislipidemias Quiz",
+  "questions": [
+    {
+      "question": "Qual é o mecanismo de ação primário das estatinas no controle das dislipidemias?",
+      "answerOptions": [
+        {
+          "text": "Inibição competitiva e reversível da enzima $HMG-CoA$ redutase.",
+          "isCorrect": true,
+          "rationale": "As estatinas são análogos da $HMG-CoA$, bloqueando a conversão desta em mevalonato, que é a etapa limitante da síntese de colesterol."
+        },
+        {
+          "text": "Bloqueio do transportador $NPC1L1$ nos enterócitos.",
+          "isCorrect": false,
+          "rationale": "Este mecanismo é específico do ezetimibe, que foca na absorção intestinal e não na síntese hepática."
+        },
+        {
+          "text": "Ativação dos receptores nucleares $PPAR-\\alpha$.",
+          "isCorrect": false,
+          "rationale": "A ativação de $PPAR-\\alpha$ é o mecanismo de ação dos fibratos, focando principalmente na redução de triglicerídeos."
+        },
+        {
+          "text": "Sequestro de ácidos biliares no lúmen intestinal.",
+          "isCorrect": false,
+          "rationale": "Esta ação é característica das resinas de troca iônica, que impedem a circulação entero-hepática dos sais biliares."
+        }
+      ],
+      "hint": "Pense na enzima que controla a velocidade da produção de colesterol no fígado."
+    },
+    {
+      "question": "Por que estatinas como a sinvastatina e a lovastatina devem ser preferencialmente administradas à noite?",
+      "answerOptions": [
+        {
+          "text": "A síntese endógena de colesterol atinge seu pico durante a madrugada.",
+          "isCorrect": true,
+          "rationale": "Fármacos com $t_{1/2}$ curta precisam estar presentes quando a atividade da $HMG-CoA$ redutase é máxima (entre meia-noite e 4h)."
+        },
+        {
+          "text": "Para evitar a interação com alimentos gordurosos ingeridos durante o dia.",
+          "isCorrect": false,
+          "rationale": "Embora a dieta influencie, o motivo farmacocinético principal é o ritmo circadiano da produção de colesterol."
+        },
+        {
+          "text": "Essas drogas são pró-fármacos que levam 12 horas para serem ativados.",
+          "isCorrect": false,
+          "rationale": "Embora sejam pró-fármacos, sua ativação hepática é rápida, não justificando um atraso de 12 horas."
+        },
+        {
+          "text": "Para reduzir o risco de miopatia induzida pelo exercício físico diurno.",
+          "isCorrect": false,
+          "rationale": "O risco de miopatia não está relacionado ao horário de administração, mas sim à concentração plasmática e interações."
+        }
+      ],
+      "hint": "Considere o ritmo circadiano da produção biológica de gorduras pelo fígado."
+    },
+    {
+      "question": "Um paciente em uso de estatina apresenta dores musculares intensas. Qual achado laboratorial indicaria a necessidade de suspensão imediata do fármaco?",
+      "answerOptions": [
+        {
+          "text": "Níveis de Creatina Fosfoquinase ($CPK$) superiores a 5 vezes o valor normal.",
+          "isCorrect": true,
+          "rationale": "Elevações significativas de $CPK$ sugerem miotoxicidade grave, podendo evoluir para rabdomiólise."
+        },
+        {
+          "text": "Aumento das transaminases ($AST/ALT$) em 1,5 vezes o limite superior.",
+          "isCorrect": false,
+          "rationale": "Pequenos aumentos de transaminases são comuns e geralmente requerem apenas monitoramento, não suspensão imediata."
+        },
+        {
+          "text": "Redução acentuada dos níveis de $HDL-C$ plasmático.",
+          "isCorrect": false,
+          "rationale": "As estatinas geralmente aumentam ou mantêm o $HDL-C$; uma queda não é um critério para toxicidade muscular."
+        },
+        {
+          "text": "Presença de cristais de ácido úrico na urina.",
+          "isCorrect": false,
+          "rationale": "A hiperuricemia é um efeito adverso associado à niacina, não à toxicidade muscular das estatinas."
+        }
+      ],
+      "hint": "Busque o marcador de lesão das fibras musculares esqueléticas."
+    },
+    {
+      "question": "Qual é o principal mecanismo pelo qual as resinas de intercâmbio iônico (como a colestiramina) reduzem o $LDL-C$?",
+      "answerOptions": [
+        {
+          "text": "Interrupção da circulação entero-hepática de ácidos biliares.",
+          "isCorrect": true,
+          "rationale": "Ao ligar-se aos ácidos biliares, as resinas forçam o fígado a consumir mais colesterol para produzir novos ácidos, aumentando os receptores de $LDL$."
+        },
+        {
+          "text": "Inibição da lipase hormônio-sensível nos adipócitos.",
+          "isCorrect": false,
+          "rationale": "Este mecanismo é próprio da niacina, reduzindo a oferta de ácidos graxos livres ao fígado."
+        },
+        {
+          "text": "Aumento da excreção renal direta de colesterol livre.",
+          "isCorrect": false,
+          "rationale": "O colesterol não é excretado diretamente pelos rins; ele é eliminado via bile ou convertido em ácidos biliares."
+        },
+        {
+          "text": "Bloqueio da síntese de apolipoproteína B-100.",
+          "isCorrect": false,
+          "rationale": "As resinas atuam no lúmen intestinal e não interferem diretamente na síntese proteica hepática das lipoproteínas."
+        }
+      ],
+      "hint": "Imagine o que acontece quando o ciclo de reciclagem da bile no intestino é quebrado."
+    },
+    {
+      "question": "O ezetimibe é frequentemente utilizado em associação com estatinas. Qual é a vantagem farmacológica dessa combinação?",
+      "answerOptions": [
+        {
+          "text": "Promove um bloqueio duplo: da síntese hepática e da absorção intestinal de colesterol.",
+          "isCorrect": true,
+          "rationale": "Como possuem mecanismos distintos (inibição enzimática vs. bloqueio do transportador $NPC1L1$), seus efeitos na redução de $LDL-C$ são somatórios."
+        },
+        {
+          "text": "O ezetimibe inibe o $CYP3A4$, aumentando a meia-vida das estatinas.",
+          "isCorrect": false,
+          "rationale": "O ezetimibe não é um inibidor potente de $CYP3A4$ e essa interação aumentaria o risco de toxicidade, não sendo uma vantagem."
+        },
+        {
+          "text": "As estatinas aumentam a absorção do ezetimibe no jejuno.",
+          "isCorrect": false,
+          "rationale": "Não há evidências de que as estatinas facilitem a absorção do ezetimibe; a vantagem é o sinergismo de mecanismos."
+        },
+        {
+          "text": "O ezetimibe previne a rabdomiólise causada pelas estatinas.",
+          "isCorrect": false,
+          "rationale": "O ezetimibe não possui efeito protetor muscular; inclusive, mialgias podem ocorrer em combinações."
+        }
+      ],
+      "hint": "Pense em como atacar o problema do colesterol por duas frentes diferentes simultaneamente."
+    },
+    {
+      "question": "A niacina (ácido nicotínico) pode causar um 'rubor facial' desconfortável. Qual substância mediadora é responsável por esse efeito e como preveni-lo?",
+      "answerOptions": [
+        {
+          "text": "Prostaglandinas; pode ser prevenido com o uso de ácido acetilsalicílico ($AAS$).",
+          "isCorrect": true,
+          "rationale": "A niacina induz a liberação de prostaglandinas cutâneas, e o $AAS$, como inibidor da $COX$, reduz essa vasodilatação."
+        },
+        {
+          "text": "Histamina; pode ser prevenido com anti-histamínicos de $H_{1}$.",
+          "isCorrect": false,
+          "rationale": "Embora pareça uma reação alérgica, o mecanismo da niacina é mediado por prostanoides, não por histamina."
+        },
+        {
+          "text": "Bradicinina; pode ser prevenido evitando inibidores da $ECA$.",
+          "isCorrect": false,
+          "rationale": "O rubor da niacina não está relacionado ao sistema calicreína-cinina que envolve a bradicinina."
+        },
+        {
+          "text": "Óxido Nítrico; pode ser prevenido com o uso de vasoconstritores.",
+          "isCorrect": false,
+          "rationale": "Embora haja vasodilatação, a cascata inicial é desencadeada pela via das prostaglandinas no tecido subcutâneo."
+        }
+      ],
+      "hint": "Lembre-se de um mediador inflamatório comum que o $AAS$ consegue bloquear."
+    },
+    {
+      "question": "Qual é o mecanismo de ação dos fibratos que justifica sua indicação principal em hipertrigliceridemias severas?",
+      "answerOptions": [
+        {
+          "text": "Ativação de receptores $PPAR-\\alpha$, aumentando a expressão da lipase lipoproteica ($LPL$).",
+          "isCorrect": true,
+          "rationale": "A ativação de $PPAR-\\alpha$ estimula a hidrólise de triglicerídeos em quilomícrons e $VLDL$ através do aumento da $LPL$."
+        },
+        {
+          "text": "Inibição da enzima $DGAT2$, bloqueando a formação de triglicerídeos hepáticos.",
+          "isCorrect": false,
+          "rationale": "A inibição da $DGAT2$ é um mecanismo secundário da niacina, não o mecanismo principal dos fibratos."
+        },
+        {
+          "text": "Aumento da secreção biliar de triglicerídeos intactos.",
+          "isCorrect": false,
+          "rationale": "Os fibratos aumentam a oxidação de ácidos graxos e a hidrólise plasmática, e não a excreção biliar de TG."
+        },
+        {
+          "text": "Redução da captação de ácidos graxos livres pelos tecidos periféricos.",
+          "isCorrect": false,
+          "rationale": "Os fibratos, ao contrário, aumentam a captação e a $\\beta$-oxidação de ácidos graxos no fígado."
+        }
+      ],
+      "hint": "Busque a conexão entre um receptor nuclear e a enzima que 'limpa' a gordura do sangue."
+    },
+    {
+      "question": "Por que o gemfibrozilo deve ser evitado em associação com estatinas, preferindo-se o fenofibrato?",
+      "answerOptions": [
+        {
+          "text": "O gemfibrozilo inibe a glucuroniltransferase, aumentando os níveis plasmáticos das estatinas.",
+          "isCorrect": true,
+          "rationale": "Essa inibição metabólica reduz o clearance das estatinas, elevando drasticamente o risco de rabdomiólise."
+        },
+        {
+          "text": "O fenofibrato possui uma meia-vida mais curta, evitando acúmulo tóxico.",
+          "isCorrect": false,
+          "rationale": "Na verdade, o fenofibrato tem uma meia-vida longa (cerca de 20h), mas não interfere significativamente no metabolismo das estatinas."
+        },
+        {
+          "text": "O gemfibrozilo inibe a absorção intestinal das estatinas, anulando seu efeito.",
+          "isCorrect": false,
+          "rationale": "A interação entre eles é de natureza metabólica (hepática) e não de absorção intestinal."
+        },
+        {
+          "text": "O fenofibrato estimula as enzimas do complexo $CYP450$, acelerando o metabolismo das estatinas.",
+          "isCorrect": false,
+          "rationale": "O benefício do fenofibrato é a neutralidade metabólica em relação às estatinas, e não a indução enzimática."
+        }
+      ],
+      "hint": "Considere o impacto de um fibrato específico sobre o metabolismo (eliminação) da estatina no fígado."
+    },
+    {
+      "question": "Como os inibidores da $PCSK9$ conseguem reduzir drasticamente os níveis de $LDL-C$?",
+      "answerOptions": [
+        {
+          "text": "Impedindo a degradação dos receptores de $LDL$ nos hepatócitos.",
+          "isCorrect": true,
+          "rationale": "A proteína $PCSK9$ normalmente marca o receptor de $LDL$ para destruição; inibi-la mantém mais receptores ativos na membrana para captar o colesterol circulante."
+        },
+        {
+          "text": "Inibindo a síntese de apolipoproteína E nos quilomícrons.",
+          "isCorrect": false,
+          "rationale": "A $PCSK9$ foca especificamente no ciclo de vida do receptor de $LDL$, não na síntese de Apo-E."
+        },
+        {
+          "text": "Atuando como anticorpos que sequestram o $LDL$ diretamente no plasma.",
+          "isCorrect": false,
+          "rationale": "Eles são anticorpos monoclonais, mas seu alvo é a proteína reguladora $PCSK9$, e não a partícula de $LDL$ em si."
+        },
+        {
+          "text": "Aumentando a conversão de $LDL$ em $HDL$ no endotélio vascular.",
+          "isCorrect": false,
+          "rationale": "Não existe conversão direta de $LDL$ em $HDL$; o mecanismo é de remoção hepática via receptor."
+        }
+      ],
+      "hint": "Foque no destino final dos receptores que 'pescam' o $LDL$ do sangue."
+    },
+    {
+      "question": "Sobre o uso de Ômega-3 como hipolipemiante, qual efeito adverso paradoxal deve ser monitorado em alguns pacientes?",
+      "answerOptions": [
+        {
+          "text": "Aumento dos níveis de $LDL-C$.",
+          "isCorrect": true,
+          "rationale": "Embora reduzam eficientemente os triglicerídeos, o uso de Ômega-3 pode elevar os níveis de $LDL-C$ em certos indivíduos."
+        },
+        {
+          "text": "Redução acentuada da Vitamina E plasmática.",
+          "isCorrect": false,
+          "rationale": "Embora possa haver uma leve interferência, o principal parâmetro lipídico de preocupação é o nível de $LDL-C$."
+        },
+        {
+          "text": "Desenvolvimento de cálculos biliares (litogênese).",
+          "isCorrect": false,
+          "rationale": "A capacidade litogênica é um efeito colateral clássico dos fibratos, não do Ômega-3."
+        },
+        {
+          "text": "Hipoglicemia severa em pacientes diabéticos.",
+          "isCorrect": false,
+          "rationale": "O Ômega-3 não possui efeito hipoglicemiante; o risco metabólico mais comum em diabéticos é o controle dos TGs."
+        }
+      ],
+      "hint": "Pense em uma das frações do colesterol que pode subir enquanto os triglicerídeos descem."
+    }
+  ]
+}

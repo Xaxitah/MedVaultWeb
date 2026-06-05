@@ -1,0 +1,361 @@
+
+<h2 class="sr-only">Revisão última hora — Semiologia Médica P1: 10 temas com mnemônicos e conteúdos mais prováveis de cair</h2>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.wrap { padding: 1rem 0; }
+.nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+.nav button {
+  font-size: 11px; padding: 4px 10px;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-primary);
+  color: var(--color-text-secondary);
+  cursor: pointer; transition: all 0.15s;
+}
+.nav button.active {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border-color: var(--color-border-primary);
+  font-weight: 500;
+}
+.nav button.gap-btn { border-color: #E24B4A44; color: #A32D2D; }
+.nav button.gap-btn.active { background: #FCEBEB; color: #A32D2D; border-color: #E24B4A; }
+.card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.25rem;
+  display: none;
+}
+.card.visible { display: block; }
+.tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px;
+  border-radius: var(--border-radius-md); margin-bottom: 10px; font-weight: 500;
+}
+.tag-ok { background: #EAF3DE; color: #3B6D11; }
+.tag-gap { background: #FCEBEB; color: #A32D2D; }
+.tag-mid { background: #FAEEDA; color: #854F0B; }
+h3 { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.sub { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 12px; }
+.section { margin-bottom: 14px; }
+.section-title {
+  font-size: 11px; font-weight: 500; color: var(--color-text-tertiary);
+  text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;
+}
+.mnemo {
+  background: var(--color-background-secondary);
+  border-left: 2px solid var(--color-border-secondary);
+  border-radius: 0;
+  padding: 8px 10px; font-size: 13px;
+  color: var(--color-text-primary); margin-bottom: 8px;
+  font-family: var(--font-mono);
+}
+.mnemo span { color: var(--color-text-secondary); font-family: var(--font-sans); font-size: 12px; }
+ul { padding-left: 1rem; }
+li { font-size: 13px; color: var(--color-text-primary); line-height: 1.6; margin-bottom: 2px; }
+li b { font-weight: 500; }
+.cai {
+  background: #FAEEDA;
+  border-radius: var(--border-radius-md);
+  padding: 8px 10px; margin-top: 10px;
+}
+.cai-title { font-size: 11px; font-weight: 500; color: #854F0B; margin-bottom: 4px; }
+.cai li { font-size: 12px; color: #633806; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 10px 0; }
+</style>
+
+<div class="wrap">
+  <div class="nav" id="nav"></div>
+  <div id="cards"></div>
+</div>
+
+<script>
+const temas = [
+  {
+    id: "T01", label: "T01 Propedêutica", status: "ok",
+    titulo: "Propedêutica, Semiologia e Sindromologia",
+    fonte: "Aula 01 + Llanio Cap. 21",
+    mnemo: "Pro-Se-Sin → Método → Exame → Diagnóstico",
+    mnemoDesc: "propedêutica ensina o caminho; semiologia lê os sinais; sindromologia agrupa",
+    conceitos: [
+      "<b>Propedêutica:</b> conjunto de métodos para examinar o paciente",
+      "<b>Semiologia:</b> ciência dos signos/sintomas — signo (objetivo) vs sintoma (subjetivo)",
+      "<b>Sindromologia:</b> agrupamento de sintomas com fisiopatologia comum → síndrome",
+      "Método clínico: anamnese → EF → exames complementares → diagnóstico",
+      "Hipócrates: primeiro a sistematizar o exame clínico"
+    ],
+    cai: [
+      "Diferenciar signo x sintoma (com exemplo)",
+      "Definir síndrome vs doença",
+      "Etapas do método clínico em ordem",
+      "Conceito de propedêutica e sua importância"
+    ]
+  },
+  {
+    id: "T02", label: "T02 Anamnese", status: "ok",
+    titulo: "Anamnese",
+    fonte: "Aula 13 + Llanio Cap. 23",
+    mnemo: "IDPMC-APP-AFF",
+    mnemoDesc: "Identidade · Doença atual · Passado médico · Condições de vida · Antec. pessoais · Antec. família · Fontes",
+    conceitos: [
+      "<b>Anamnese próxima:</b> identidade + HDA (história da doença atual) + interrogatório por sistemas",
+      "<b>Anamnese remota:</b> antecedentes patológicos pessoais + familiares + hábitos",
+      "<b>Motivo de consulta:</b> queixa principal em palavras do paciente — sem interpretação médica",
+      "<b>HDA:</b> início, evolução, cronologia, fatores modificantes, tratamentos anteriores",
+      "Interrogatório por sistemas: revisão de todos os aparelhos de forma sistemática",
+      "Árbol genealógico: representação gráfica dos antecedentes familiares"
+    ],
+    cai: [
+      "Distinguir anamnese próxima vs remota",
+      "Componentes da HDA",
+      "Como se registra o motivo de consulta",
+      "O que é interrogatório por sistemas"
+    ]
+  },
+  {
+    id: "T03", label: "T03 Hist. Clínica", status: "ok",
+    titulo: "História Clínica",
+    fonte: "Aula 13 + Llanio Cap. 23",
+    mnemo: "HC = Anamnese + EF + Complementares + Diagnóstico",
+    mnemoDesc: "documento legal, científico e ético — obrigatório e confidencial",
+    conceitos: [
+      "HC é o documento que integra toda a informação clínica do paciente",
+      "<b>Atenção primária:</b> HC simplificada — anamnese + EF básico",
+      "<b>Atenção secundária/hospitalar:</b> HC completa — todos os componentes",
+      "Datos de identidade: nome, idade, sexo, raça, ocupação, procedência, estado civil",
+      "Importância médico-legal: documento oficial, pode ser requisitado judicialmente",
+      "Confidencialidade: princípio ético fundamental"
+    ],
+    cai: [
+      "Diferença HC atenção primária vs secundária",
+      "Componentes estruturais da HC (em ordem)",
+      "Importância médico-legal da HC",
+      "Datos de identidade e por que cada um importa clinicamente"
+    ]
+  },
+  {
+    id: "T04", label: "T04 EF Geral", status: "ok",
+    titulo: "Exame Físico Geral",
+    fonte: "Aulas 06, 08, 05 + Llanio Cap. 3, 24",
+    mnemo: "MABF · TPTIC · PMUF · EDEMA",
+    mnemoDesc: "Marcha-Atitude-Biotipo-Facies · Talla-Peso-Temp-IMC-Cor · Pele-Mucosas-Unhas-Faneras · Edema",
+    conceitos: [
+      "<b>Marcha:</b> início, velocidade, base, balanço dos braços, postura geral",
+      "<b>Biotipo (hábito):</b> longilíneo / normolíneo / brevilíneo",
+      "<b>Atitude:</b> ativa voluntária / ativa involuntária / passiva (inconsciente)",
+      "<b>Facies:</b> fácies dolorosa, febril, renal, peritoneal, basedowiana, parkinsoniana, adenoide...",
+      "<b>Talla e peso → IMC:</b> <18,5 desnutrição / 18,5–24,9 normal / 25–29,9 sobrepeso / ≥30 obesidade",
+      "<b>Lesões de pele primárias:</b> mácula, pápula, vesícula, pústula, nódulo, urtica",
+      "<b>Lesões secundárias:</b> crosta, escama, úlcera, escara, queloide, estria, acantose",
+      "<b>Unhas:</b> hipocráticas (baqueteamento) → pulmonar/cardíaco; coiloníquia → anemia",
+      "<b>Edema:</b> godet (+ ou –), localização, simetria, consistência, temperatura"
+    ],
+    cai: [
+      "Classificar biotipo com exemplos",
+      "Tipos de facies + diagnóstico associado (mínimo 4)",
+      "Classificação IMC com valores",
+      "Lesões primárias vs secundárias de pele — diferenciar e dar exemplos",
+      "Baqueteamento digital — o que é e causas",
+      "Avaliar edema — técnica do godet e graus"
+    ]
+  },
+  {
+    id: "T05", label: "T05 Sinais Vitais", status: "gap",
+    titulo: "Sinais Vitais",
+    fonte: "GAP — Llanio Cap. 3, 12, 27 + Cap. 9 p.93",
+    mnemo: "TPAFC → Temperatura · Pulso · Arterial · Frequência resp. · Consciência",
+    mnemoDesc: "alguns currículos incluem SpO2 como 5º sinal vital",
+    conceitos: [
+      "<b>Temperatura normal:</b> axilar 36–37°C / oral +0,3°C / retal +0,5°C",
+      "<b>Febre:</b> ≥37,5°C (axilar); subfebril 37,1–37,4°C; hiperpirexia >40°C",
+      "<b>Hipotermia:</b> <36°C axilar",
+      "<b>Tipos de febre:</b> contínua / remitente / intermitente / héctica / ondulante / recorrente",
+      "<b>Pulso normal:</b> 60–100 bpm; <60 bradicardia; >100 taquicardia",
+      "<b>Caracteres do pulso:</b> frequência / ritmo / amplitude / dureza / simetria / sincronismo",
+      "<b>PA normal (adulto):</b> <120/80 mmHg ótima; HAS ≥140/90 mmHg",
+      "<b>PA: método auscultatório:</b> 1º ruido Korotkoff = PAS / 5º ruido = PAD",
+      "<b>Frequência respiratória normal:</b> 12–20 irpm (adulto); eupneia",
+      "<b>Alterações FR:</b> taquipneia >20 / bradipneia <12 / apneia / Cheyne-Stokes / Kussmaul / Biot"
+    ],
+    cai: [
+      "Valores normais de TODOS os sinais vitais (com unidades)",
+      "Técnica de aferição de temperatura — via axilar passo a passo",
+      "Caracteres do pulso — saber nomear e descrever cada um",
+      "Diferença PAS vs PAD e como identificar pelo método auscultatório",
+      "Tipos de febre — diferenciar contínua de remitente de intermitente",
+      "Padrões respiratórios patológicos — Cheyne-Stokes vs Kussmaul vs Biot"
+    ]
+  },
+  {
+    id: "T06", label: "T06 IPPA", status: "ok",
+    titulo: "Inspeção, Palpação, Percussão, Ausculta",
+    fonte: "Aulas 14, 10, 03 + Llanio Cap. 2",
+    mnemo: "I-P-P-A → ordem obrigatória (exceto abdômen: I-A-P-P)",
+    mnemoDesc: "no abdômen, ausculta ANTES da palpação para não alterar ruídos hidroaéreos",
+    conceitos: [
+      "<b>Inspeção:</b> direta (olho nu) / indireta (instrumentos). Boa iluminação, exposição completa",
+      "<b>Palpação:</b> superficial (pressão leve, palma) / profunda (dedos). Temperatura, textura, sensibilidade, consistência",
+      "<b>Percussão:</b> direta (dedo sobre superfície) / indireta (dígito-digital — dedo médio sobre dedo médio)",
+      "<b>Sons percutórios:</b> timpânico (ar) / submaciço / maciço (sólido/líquido) / hiperressonante (enfisema)",
+      "<b>Ausculta:</b> imediata (ouvido direto) / mediata (estetoscópio). Campânula: sons graves. Diafragma: sons agudos",
+      "Ectoscopia: impressão geral do paciente ao entrar — 'love at first sight' clínico"
+    ],
+    cai: [
+      "Ordem do IPPA e exceção do abdômen (com justificativa)",
+      "Sons percutórios — nomear e associar ao conteúdo (ar, líquido, sólido)",
+      "Diferença campânula vs diafragma do estetoscópio",
+      "Tipos de palpação — superficial vs profunda, técnica"
+    ]
+  },
+  {
+    id: "T07", label: "T07 EF Regional", status: "ok",
+    titulo: "Exame Físico Regional",
+    fonte: "Aulas 09, 11, 07, 12, 02, 03 + Llanio Cap. 4, 5",
+    mnemo: "Cabeça → Pescoço → Tórax → Abdômen → MMSS/MMII",
+    mnemoDesc: "sentido crânio-caudal — nunca pular região",
+    conceitos: [
+      "<b>Cabeça/olhos:</b> reação pupilar (PIRRLA), acuidade visual, fundoscopia básica, campos visuais",
+      "<b>Ouvidos:</b> membrana timpânica (translúcida/perolada = normal), otoscopia, mastóide",
+      "<b>Nariz/seios:</b> permeabilidade, mucosa, seios frontais e maxilares à palpação/percussão",
+      "<b>Pescoço:</b> tireoide (inspeção, palpação anterior/posterior, ausculta), cadeias ganglionares, vasos",
+      "<b>Tórax normal:</b> elíptico, simétrico, relação AP:transversal = 1:2",
+      "<b>Tórax patológico:</b> barril (DPOC), tísico (TBC), infundibuliforme (pectus excavatum), carinatum",
+      "<b>Mamas:</b> inspeção (4 posições), palpação (4 quadrantes + prolongamento axilar), linfonodos",
+      "<b>Abdômen — topografia escolar francesa:</b> 9 regiões (epigástrio, mesogástrio, hipogástrio + flancos + hipocôndrios + fossas ilíacas)",
+      "<b>Abdômen — topografia anglo-saxônica:</b> 4 quadrantes (LSD, LID, LSE, LIE)",
+      "<b>Palpação abdominal:</b> superficial (parede/tensão) → profunda monomanual → bimanual",
+      "<b>Sinal de Blumberg:</b> dor à descompressão brusca → peritonite",
+      "<b>Ruídos hidroaéreos:</b> normal 5–35 clicks/min na FID; ausência = íleo; aumento = obstrução"
+    ],
+    cai: [
+      "Desenhar/nomear as 9 regiões abdominais (escola francesa)",
+      "Diferença topografia francesa vs anglo-saxônica",
+      "Técnica do exame de mamas — posições de inspeção",
+      "Sinal de Blumberg — técnica e significado",
+      "Tipos de tórax patológico — pelo menos 3 com causa",
+      "Exame da tireoide — técnica (anterior vs posterior)",
+      "Ausculta abdominal ANTES da palpação — por quê"
+    ]
+  },
+  {
+    id: "T08", label: "T08 Descrição Achados", status: "mid",
+    titulo: "Descrição Correta dos Achados",
+    fonte: "Distribuído nas aulas + Llanio Cap. 24, 25",
+    mnemo: "LOC-CAR-TEMP-EVO → Localização · Características · Temporalidade · Evolução",
+    mnemoDesc: "para qualquer achado: onde, como é, quando apareceu, como evoluiu",
+    conceitos: [
+      "Registrar achados de forma objetiva, sem interpretação prematura",
+      "<b>Termos precisos:</b> 'maciço' não 'duro'; 'hiperressonante' não 'oco'; 'crepitante' não 'barulhento'",
+      "Tamanho em cm (não 'grande'); localização anatômica exata; consistência; bordas; mobilidade",
+      "<b>Para lesões de pele:</b> tipo + distribuição + tamanho + cor + bordas + superfície + base",
+      "<b>Para massas/órgãos:</b> tamanho / forma / superfície / consistência / mobilidade / sensibilidade / pulsatilidade",
+      "Achado normal também se registra: 'pulmões com murmúrio vesicular presente bilateral s/alterações'",
+      "Registro escrito = proteção legal + comunicação entre equipe"
+    ],
+    cai: [
+      "Descrever uma lesão de pele de forma tecnicamente correta (com os atributos todos)",
+      "Diferenciar termos: maciço vs hiperressonante vs submaciço",
+      "Como registrar um achado normal (não omitir — escrever normal explicitamente)",
+      "Atributos de uma massa palpável — quais dados coletar"
+    ]
+  },
+  {
+    id: "T09", label: "T09 Dor", status: "gap",
+    titulo: "Dor e suas Características",
+    fonte: "GAP — Llanio Cap. 23, 29, 33, 37",
+    mnemo: "ALICIA → Aparição · Localização · Irradiação · Carácter · Intensidade · Atenuantes/Agravantes",
+    mnemoDesc: "equivalente espanhol: LOCIFMAT — Localización · Onset · Carácter · Irradiación · Factores · Mitigantes · Asociados · Tiempo",
+    conceitos: [
+      "<b>Localização:</b> região anatômica precisa — apontar com um dedo vs mão espalmada",
+      "<b>Irradiação:</b> para onde se propaga — ex: angina irradia para braço E, mandíbula, dorso",
+      "<b>Caráter/qualidade:</b> em cólica / queimação / opressão / pontada / peso / latejante / surdo",
+      "<b>Intensidade:</b> escala numérica 0–10 (EVA) — limitação funcional",
+      "<b>Inicio:</b> agudo (segundos-minutos) / subagudo (horas) / crônico (dias-semanas)",
+      "<b>Duração:</b> constante / intermitente / paroxística",
+      "<b>Fatores que modificam:</b> alimentação, posição, esforço, respiração, medicamentos",
+      "<b>Dor visceral:</b> difusa, surda, mal localizada, acompanha náusea/sudorese",
+      "<b>Dor somática:</b> bem localizada, nítida, piora com movimento",
+      "<b>Dor referida:</b> percebida longe da origem — ex: dor diafragmática no ombro"
+    ],
+    cai: [
+      "Mnemônico completo de semiologia da dor — saber os 6-8 atributos",
+      "Diferenciar dor visceral vs somática vs referida",
+      "Irradiações clássicas: dor anginosa, dor renal (cólica), dor biliar",
+      "Escala de avaliação de intensidade da dor",
+      "Sinal de Blumberg como exemplo de dor à descompressão"
+    ]
+  },
+  {
+    id: "T10", label: "T10 Diagnósticos", status: "mid",
+    titulo: "Diagnósticos Clínico, Sindromico e Nosológico",
+    fonte: "Aula 13 + Llanio Cap. 21",
+    mnemo: "Clínico → Sindromico → Nosológico → Etiológico",
+    mnemoDesc: "do mais geral ao mais específico — caminho do raciocínio clínico",
+    conceitos: [
+      "<b>Diagnóstico clínico:</b> baseado apenas na anamnese + EF, sem exames. Ex: 'síndrome febril'",
+      "<b>Diagnóstico sindromico:</b> agrupa sinais/sintomas em síndrome. Ex: 'síndrome de condensação pulmonar'",
+      "<b>Diagnóstico nosológico:</b> identifica a doença específica. Ex: 'pneumonia lobar por Streptococcus'",
+      "<b>Diagnóstico etiológico:</b> identifica a causa. Ex: 'pneumonia por S. pneumoniae'",
+      "<b>Diagnóstico por intuição:</b> padrão reconhecido imediatamente (experiente)",
+      "<b>Diagnóstico por hipótese:</b> elabora hipóteses e as testa sistematicamente",
+      "<b>Diagnóstico diferencial:</b> lista de possibilidades ordenadas por probabilidade",
+      "<b>Prognóstico:</b> previsão da evolução — depende de diagnóstico correto + tratamento"
+    ],
+    cai: [
+      "Definir e diferenciar diagnóstico clínico / sindromico / nosológico / etiológico",
+      "Dar um exemplo de cada tipo de diagnóstico para uma mesma doença",
+      "O que é diagnóstico diferencial e como se constrói",
+      "Tipos de raciocínio diagnóstico (intuição, comparação, hipótese)"
+    ]
+  }
+];
+
+const nav = document.getElementById("nav");
+const cards = document.getElementById("cards");
+
+function render(id) {
+  document.querySelectorAll(".card").forEach(c => c.classList.remove("visible"));
+  document.querySelectorAll(".nav button").forEach(b => b.classList.remove("active"));
+  document.getElementById("card-" + id).classList.add("visible");
+  document.getElementById("btn-" + id).classList.add("active");
+}
+
+temas.forEach(t => {
+  const btn = document.createElement("button");
+  btn.id = "btn-" + t.id;
+  btn.textContent = t.label;
+  if (t.status === "gap") btn.classList.add("gap-btn");
+  btn.onclick = () => render(t.id);
+  nav.appendChild(btn);
+
+  const tagMap = { ok: ["tag-ok", "bem coberto"], gap: ["tag-gap", "GAP crítico — estudar pelo livro"], mid: ["tag-mid", "complementar"] };
+  const [tagClass, tagText] = tagMap[t.status];
+
+  const card = document.createElement("div");
+  card.className = "card";
+  card.id = "card-" + t.id;
+  card.innerHTML = `
+    <span class="tag ${tagClass}">${tagText}</span>
+    <h3>${t.id} — ${t.titulo}</h3>
+    <div class="sub">Fonte: ${t.fonte}</div>
+    <div class="section">
+      <div class="section-title">Mnemônico / gancho</div>
+      <div class="mnemo">${t.mnemo}<br><span>${t.mnemoDesc}</span></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Conceitos essenciais</div>
+      <ul>${t.conceitos.map(c => `<li>${c}</li>`).join("")}</ul>
+    </div>
+    <hr class="divider">
+    <div class="cai">
+      <div class="cai-title">O que certamente cai na P1</div>
+      <ul>${t.cai.map(c => `<li>${c}</li>`).join("")}</ul>
+    </div>
+  `;
+  cards.appendChild(card);
+});
+
+render("T01");
+</script>

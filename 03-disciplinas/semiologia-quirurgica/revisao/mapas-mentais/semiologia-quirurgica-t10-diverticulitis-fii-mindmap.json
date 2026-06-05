@@ -1,0 +1,138 @@
+{
+  "mind_map": {
+    "name": "Diverticulitis Aguda (FII)",
+    "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda]]",
+    "children": [
+      {
+        "name": "Visão Geral & Anatomia",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#1. Visão Geral]]",
+        "children": [
+          {
+            "name": "Definição: 'Apendicite' do lado esquerdo"
+          },
+          {
+            "name": "Estruturas: Cólon sigmoide, descendente, ureter, psoas, vasos ilíacos, anexos"
+          },
+          {
+            "name": "Anatomia Base: Cólon esquerdo menor diâmetro com fezes sólidas obstrutivas"
+          }
+        ]
+      },
+      {
+        "name": "Tríade Clássica & Hinchey",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#2. Núcleo Obrigatório]]",
+        "children": [
+          {
+            "name": "Tríade Diagnóstica: Dor na FII + Febre + Leucocitose"
+          },
+          {
+            "name": "Blumberg Esquerdo: Descompressão dolorosa na FII (irritação localizada)"
+          },
+          {
+            "name": "Contraindicação Absoluta: Colonoscopia e Enema de Bário na fase aguda"
+          },
+          {
+            "name": "Gueneau de Mussy: Descompressão dolorosa generalizada (peritonite difusa)"
+          }
+        ]
+      },
+      {
+        "name": "Fisiopatologia & Vasos",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#3.1 Fisiopatologia e Etiologia de Formação dos Divertículos]]",
+        "children": [
+          {
+            "name": "Pseudodivertículos: Mucosa/submucosa sem camada muscular"
+          },
+          {
+            "name": "Mecanismo: Constipação + Sincronia Peristáltica sigmoidea (câmaras fechadas)"
+          },
+          {
+            "name": "Vasos Curtos: Pontos fracos musculares por onde penetram os vasos curtos"
+          },
+          {
+            "name": "Bordos Mesentéricos: Absorvem a microperfuração (mesocólon/flegmão)"
+          },
+          {
+            "name": "Bordos Antimesentéricos: Perfuração livre em cavidade peritoneal livre"
+          }
+        ]
+      },
+      {
+        "name": "Semiologia & 4 Etapas",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#3.2 O Exame Físico Detalhado na Diverticulite Aguda (As 4 Etapas)]]",
+        "children": [
+          {
+            "name": "Inspeção: Abaulamento visível na FII in flegmões/abscessos grandes"
+          },
+          {
+            "name": "Ausculta: Diminuição dos RHA (agudo localizado) até silêncio completo (peritonite)"
+          },
+          {
+            "name": "Percussão: Sinal de Holman (+), timpanismo reflexo por íleo paralítico segmentar"
+          },
+          {
+            "name": "Sinal de Jobert: Perda da macicez hepática no pneumoperitônio (perfuração oca)"
+          },
+          {
+            "name": "Palpação e Toque Retal: Defesa sigmoidea dolorosa, fundo de saco de Douglas quente"
+          }
+        ]
+      },
+      {
+        "name": "Diagnósticos Diferenciais",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#3.3 Diagnósticos Diferenciais Detalhados na FII]]",
+        "children": [
+          {
+            "name": "Cólon Irritável (SII): Criterios de Roma IV, corda cólica sigmoidea palpável e móvel"
+          },
+          {
+            "name": "Colite Isquêmica: Dor em cólica, diarreia sanguinolenta, Reto Poupado, thumbprinting"
+          },
+          {
+            "name": "Tumor de Cólon Sigmoide: Adenocarcinoma. Formas: Tumoral, Inflamatória, Obstrutiva, Hemorrágica"
+          },
+          {
+            "name": "Aneurisma de Vasos Ilíacos: Ectasia pulsátil dolorosa na FII pós-trauma de bicicleta"
+          },
+          {
+            "name": "Abscesso do Psoas: Dor + febre + flexo-contração irredutível do quadril esquerdo (Mal de Pott)"
+          },
+          {
+            "name": "Causa Renal: Cólico renoureteral por urolitiasis (inquietude motora, Giordano +)"
+          },
+          {
+            "name": "Causa Ginecológica: Ectópica rota (atraso + choque), torção de cisto, salpingite (Fraenkel +)"
+          }
+        ]
+      },
+      {
+        "name": "Classificação Hinchey",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#Classificação de Hinchey para Diverticulite Aguda Complicada]]",
+        "children": [
+          {
+            "name": "Hinchey Ia (Flegmão) e Ib (Abscesso mesocólico <4cm): Conduta MÉDICA"
+          },
+          {
+            "name": "Hinchey II (Abscesso pélvico ou Douglas): Conduta DRENAGEM GUIADA POR TC"
+          },
+          {
+            "name": "Hinchey III (Peritonite purulenta livre) e IV (Peritonite fecal livre): Conduta CIRÚRGICA"
+          }
+        ]
+      },
+      {
+        "name": "Diverticulite vs. Peritonite",
+        "wikilink": "[[Tema-10-Afecciones-de-la-Fosa-Iliaca-Izquierda#5.1 Diverticulite Localizada vs. Peritonite Generalizada]]",
+        "children": [
+          {
+            "name": "Diverticulite Localizada: Dor e Blumberg na FII. Abdômen blando depressível. Conduta Clínica"
+          },
+          {
+            "name": "Peritonite Generalizada: Dor difusa, abdômen em tábua, Mussy (+), silêncio abdominal. Conduta Cirúrgica urgente"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "diverticulitis-fii-mindmap-sigmoide"
+}

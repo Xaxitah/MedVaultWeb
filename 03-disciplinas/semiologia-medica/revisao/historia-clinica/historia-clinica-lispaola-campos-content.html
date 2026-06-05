@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historia Clínica — Lispaola Campos — UNINTER</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+  :root {
+    --azul: #1a3a5c;
+    --azul-medio: #2c5f8a;
+    --azul-claro: #dce8f5;
+    --cinza: #4a4a4a;
+    --cinza-claro: #f5f5f5;
+    --borda: #c0d0e0;
+    --preto: #1a1a1a;
+    --branco: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11pt;
+    color: var(--preto);
+    background: #e8ecef;
+    line-height: 1.55;
+  }
+
+  .pagina {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: var(--branco);
+    padding: 22mm 20mm 20mm 22mm;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+
+  /* ===== HEADER INSTITUCIONAL ===== */
+  .header-inst {
+    border: 2px solid var(--azul);
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-inst-top {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-inst-top .inst-nome {
+    font-family: 'EB Garamond', serif;
+    font-size: 13pt;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  .header-inst-top .inst-sub {
+    font-size: 9pt;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+
+  .header-inst-top .univ-bloco {
+    text-align: right;
+    font-size: 9pt;
+    opacity: 0.9;
+  }
+
+  .header-inst-bottom {
+    background: var(--azul-claro);
+    padding: 5px 14px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--azul);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--borda);
+  }
+
+  /* ===== TÍTULO DO DOCUMENTO ===== */
+  .doc-titulo {
+    text-align: center;
+    margin: 12px 0 6px 0;
+  }
+
+  .doc-titulo h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 17pt;
+    font-weight: 700;
+    color: var(--azul);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .doc-titulo .subtitulo {
+    font-size: 9pt;
+    color: var(--cinza);
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+  hr.divisor {
+    border: none;
+    border-top: 1.5px solid var(--azul);
+    margin: 6px 0;
+  }
+
+  hr.divisor-fino {
+    border: none;
+    border-top: 0.5px solid var(--borda);
+    margin: 5px 0;
+  }
+
+  /* ===== SECCIONES ===== */
+  .seccion {
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+
+  .seccion-titulo {
+    background: var(--azul);
+    color: var(--branco);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9.5pt;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+  }
+
+  .seccion-titulo-sub {
+    background: var(--azul-claro);
+    color: var(--azul);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-bottom: 4px;
+    border-left: 3px solid var(--azul-medio);
+  }
+
+  /* ===== GRILLA DE DATOS ===== */
+  .grilla {
+    display: grid;
+    gap: 0;
+  }
+
+  .grilla-2 { grid-template-columns: 1fr 1fr; }
+  .grilla-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grilla-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .grilla-13 { grid-template-columns: 1fr 3fr; }
+  .grilla-12 { grid-template-columns: 1fr 2fr; }
+
+  .campo {
+    border: 0.5px solid var(--borda);
+    padding: 4px 8px;
+    min-height: 28px;
+    background: var(--branco);
+  }
+
+  .campo:nth-child(even) {
+    background: #fafcff;
+  }
+
+  .campo-label {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: var(--azul-medio);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  .campo-valor {
+    font-size: 10.5pt;
+    color: var(--preto);
+  }
+
+  .campo-vacio {
+    color: #999;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  /* ===== TEXTO LIBRE ===== */
+  .texto-libre {
+    font-size: 10.5pt;
+    line-height: 1.6;
+    color: var(--preto);
+    text-align: justify;
+    padding: 6px 10px;
+    border: 0.5px solid var(--borda);
+    background: var(--branco);
+  }
+
+  .texto-libre p + p {
+    margin-top: 6px;
+  }
+
+  /* ===== LISTA CLINICA ===== */
+  .lista-clinica {
+    padding: 6px 10px;
+    border: 0.5px solid var(--borda);
+    background: var(--branco);
+  }
+
+  .lista-clinica ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lista-clinica ul li {
+    font-size: 10.5pt;
+    padding: 2px 0 2px 18px;
+    position: relative;
+    border-bottom: 0.3px solid #eef3f8;
+  }
+
+  .lista-clinica ul li:last-child {
+    border-bottom: none;
+  }
+
+  .lista-clinica ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 4px;
+    color: var(--azul-medio);
+    font-size: 9pt;
+  }
+
+  .lista-clinica .item-label {
+    font-weight: 600;
+    color: var(--azul);
+  }
+
+  /* ===== TABLA SISTEMAS ===== */
+  .tabla-sistemas {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+
+  .tabla-sistemas th {
+    background: var(--azul-medio);
+    color: var(--branco);
+    padding: 4px 8px;
+    text-align: left;
+    font-size: 8.5pt;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .tabla-sistemas td {
+    padding: 4px 8px;
+    border: 0.5px solid var(--borda);
+    vertical-align: top;
+  }
+
+  .tabla-sistemas tr:nth-child(even) td {
+    background: #fafcff;
+  }
+
+  .tabla-sistemas .sistema {
+    font-weight: 600;
+    color: var(--azul);
+    white-space: nowrap;
+    width: 28%;
+  }
+
+  /* ===== DIAGNÓSTICOS ===== */
+  .dx-principal {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 8px 12px;
+    font-size: 11pt;
+    font-weight: 600;
+    border-left: 5px solid #f0a500;
+  }
+
+  .dx-diferencial {
+    border: 0.5px solid var(--borda);
+    padding: 5px 10px;
+    background: var(--branco);
+  }
+
+  .dx-diferencial-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 3px 0;
+    border-bottom: 0.3px solid #eef;
+    font-size: 10.5pt;
+  }
+
+  .dx-diferencial-item:last-child {
+    border-bottom: none;
+  }
+
+  .dx-num {
+    background: var(--azul-medio);
+    color: white;
+    font-size: 8.5pt;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .dx-probabilidad {
+    font-size: 8.5pt;
+    color: #888;
+    font-style: italic;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  /* ===== CONDUCTA / TRATAMIENTO ===== */
+  .trat-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 6px;
+    padding: 4px 8px;
+    border-bottom: 0.3px solid #eef;
+    font-size: 10.5pt;
+    align-items: baseline;
+  }
+
+  .trat-item:last-child {
+    border-bottom: none;
+  }
+
+  .trat-num {
+    font-weight: 700;
+    color: var(--azul-medio);
+    font-size: 9pt;
+  }
+
+  /* ===== PRONÓSTICO ===== */
+  .pronostico-box {
+    background: #fff8e6;
+    border: 1px solid #f0a500;
+    border-left: 4px solid #f0a500;
+    padding: 7px 12px;
+    font-size: 10.5pt;
+  }
+
+  /* ===== SIGNATURAS ===== */
+  .firmas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .firma-bloque {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--preto);
+    font-size: 9pt;
+  }
+
+  .firma-nombre {
+    font-weight: 600;
+    font-size: 9.5pt;
+  }
+
+  .firma-cargo {
+    font-size: 8.5pt;
+    color: var(--cinza);
+    margin-top: 2px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-doc {
+    margin-top: 14px;
+    border-top: 1px solid var(--borda);
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #888;
+  }
+
+  /* ===== SÍNTESIS SINDROMICA ===== */
+  .sindrome-box {
+    background: var(--azul-claro);
+    border: 1px solid var(--borda);
+    border-left: 4px solid var(--azul-medio);
+    padding: 7px 12px;
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--azul);
+  }
+
+  /* ===== POSITIVOS ANAMNESIS ===== */
+  .positivos-box {
+    border: 0.5px solid var(--borda);
+    background: var(--branco);
+    padding: 6px 10px;
+  }
+
+  .positivos-box h4 {
+    font-size: 8.5pt;
+    color: var(--azul-medio);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+  }
+
+  .positivos-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .positivos-box li {
+    font-size: 10pt;
+    padding: 2px 0 2px 16px;
+    position: relative;
+    border-bottom: 0.3px solid #f0f4f8;
+  }
+
+  .positivos-box li:last-child { border-bottom: none; }
+  .positivos-box li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2a8a2a;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: white; }
+    .pagina {
+      box-shadow: none;
+      margin: 0;
+      padding: 15mm 18mm 15mm 20mm;
+    }
+    .seccion { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="pagina">
+
+  <!-- ===== HEADER INSTITUCIONAL ===== -->
+  <div class="header-inst">
+    <div class="header-inst-top">
+      <div>
+        <div class="inst-nome">Hospital Regional de Pedro Juan Caballero</div>
+        <div class="inst-sub">Departamento de Amambay — Paraguay</div>
+      </div>
+      <div class="univ-bloco">
+        <div><strong>UNINTER</strong> — Universidad Internacional Tres Fronteras</div>
+        <div>Carrera de Medicina — Internado 1° Año</div>
+        <div>Docente: Dr. Ángel Pifferrer</div>
+      </div>
+    </div>
+    <div class="header-inst-bottom">Historia Clínica General</div>
+  </div>
+
+  <div class="doc-titulo">
+    <h1>Historia Clínica</h1>
+    <div class="subtitulo">Modelo oficial validado — Semiología Médica — UNINTER PJC</div>
+  </div>
+  <hr class="divisor">
+
+
+  <!-- ===== I. DATOS DE IDENTIFICACIÓN ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">I. Datos de Identificación del Paciente</div>
+
+    <div class="grilla grilla-4">
+      <div class="campo">
+        <span class="campo-label">Apellidos</span>
+        <span class="campo-valor">Campos</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Nombres</span>
+        <span class="campo-valor">Lispaola</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Edad</span>
+        <span class="campo-valor">32 años</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Sexo</span>
+        <span class="campo-valor">Femenino</span>
+      </div>
+    </div>
+
+    <div class="grilla grilla-4">
+      <div class="campo">
+        <span class="campo-label">Raza / Etnia</span>
+        <span class="campo-valor">Mestiza</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Nacionalidad</span>
+        <span class="campo-valor">Paraguaya</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Estado Civil</span>
+        <span class="campo-valor campo-vacio">No referido</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Fecha de Nacimiento</span>
+        <span class="campo-valor">Aprox. 1993–1994</span>
+      </div>
+    </div>
+
+    <div class="grilla grilla-3">
+      <div class="campo">
+        <span class="campo-label">Lugar de Residencia</span>
+        <span class="campo-valor">Pedro Juan Caballero, Amambay</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Cédula de Identidad</span>
+        <span class="campo-valor campo-vacio">No registrada</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Teléfono de Contacto</span>
+        <span class="campo-valor campo-vacio">No registrado</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== II. MOTIVO DE CONSULTA ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">II. Motivo de Consulta (MC)</div>
+    <div class="texto-libre">
+      <p><strong>Motivo principal referido por la paciente:</strong> Falta de aire (disnea progresiva).</p>
+    </div>
+  </div>
+
+
+  <!-- ===== III. HISTORIA DE LA ENFERMEDAD ACTUAL ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">III. Historia de la Enfermedad Actual (HEA)</div>
+    <div class="texto-libre">
+      <p>Paciente femenina de 32 años, con diagnóstico previo de asma bronquial, acude al Hospital Regional de Pedro Juan Caballero en regular estado general, cursando crisis asmática severa con síndrome de obstrucción bronquial asociada a cambios climáticos, presentando dificultad respiratoria, incapacidad para completar frases, utilización de musculatura accesoria y antecedente de silencio auscultatorio inicial, compatible con exacerbación asmática grave.</p>
+      <p>El cuadro se inició hace aproximadamente 24 horas, caracterizado por tos seca de aparición progresiva, que evolucionó a tos con expectoración amarillenta, asociada a cefalea y dolor en la región dorsal derecha del tórax. Niega fiebre, escalofríos, odinofagia y congestión nasal.</p>
+      <p>Durante la madrugada del día del ingreso presentó empeoramiento progresivo del cuadro respiratorio, agregándose disnea progresiva intensa durante la espiración, sensación de opresión torácica y sibilancias. Como medida inicial utilizó salbutamol inhalatorio en domicilio, administrándose dos puffs tres veces al día, sin obtener mejoría clínica significativa.</p>
+      <p>Ante la persistencia y progresión de los síntomas, acudió aproximadamente a las 08:00 horas a un puesto de atención de salud de la ciudad, donde recibió manejo inicial con broncodilatador y, por persistencia de la disnea, fue derivada para evaluación y tratamiento hospitalario en el Hospital Regional de Pedro Juan Caballero.</p>
+    </div>
+  </div>
+
+
+  <!-- ===== IV. ANTECEDENTES ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">IV. Antecedentes</div>
+
+    <!-- 4.1 Patológicos Personales -->
+    <div class="seccion-titulo-sub">4.1 Antecedentes Patológicos Personales</div>
+    <div class="lista-clinica">
+      <ul>
+        <li><span class="item-label">Enfermedades crónicas:</span> Asma bronquial — diagnóstico a los 15–16 años, tras episodio de neumonía. Actualmente en seguimiento ambulatorio.</li>
+        <li><span class="item-label">Hospitalizaciones previas:</span> Internación a los 15–16 años por neumonía (momento del diagnóstico del asma). Sin hospitalizaciones posteriores.</li>
+        <li><span class="item-label">Reacción a medicamentos:</span> Refiere reacción adversa a Teofilina (tipo de reacción no precisada). No utiliza actualmente.</li>
+        <li><span class="item-label">Transfusión sanguínea:</span> Niega</li>
+        <li><span class="item-label">Traumatismos:</span> Niega</li>
+        <li><span class="item-label">Intervenciones quirúrgicas:</span> Niega</li>
+        <li><span class="item-label">Alergias conocidas:</span> Fotodermatosis (alergia solar) — lesiones hiperpigmentadas y cicatrices visibles en miembro superior izquierdo. Niega alergia a medicamentos actualmente en uso.</li>
+        <li><span class="item-label">Método anticonceptivo:</span> Niega uso actual</li>
+      </ul>
+    </div>
+
+    <!-- 4.2 Hereditarios y Familiares -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">4.2 Antecedentes Hereditarios y Familiares</div>
+    <div class="grilla grilla-3">
+      <div class="campo">
+        <span class="campo-label">Padre</span>
+        <span class="campo-valor">Diabetes mellitus</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Madre</span>
+        <span class="campo-valor campo-vacio">No referido</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Hermanos</span>
+        <span class="campo-valor campo-vacio">No referido</span>
+      </div>
+    </div>
+    <div class="campo" style="margin-top:0;">
+      <span class="campo-label">Antecedentes familiares de asma u otras enfermedades respiratorias</span>
+      <span class="campo-valor">Niega. Convivientes (padre y otros) presentaban cuadro gripal con tos en la semana previa al ingreso.</span>
+    </div>
+
+    <!-- 4.3 Hábitos Tóxicos -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">4.3 Hábitos Tóxicos</div>
+    <div class="grilla grilla-3">
+      <div class="campo">
+        <span class="campo-label">Tabaco</span>
+        <span class="campo-valor">Niega (nunca fumó)</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Alcohol</span>
+        <span class="campo-valor">Consumo ocasional / social. Niega consumo habitual.</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Drogas ilícitas</span>
+        <span class="campo-valor">Niega</span>
+      </div>
+    </div>
+    <div class="grilla grilla-2">
+      <div class="campo">
+        <span class="campo-label">Café</span>
+        <span class="campo-valor campo-vacio">No referido</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Exposición a humo ambiental</span>
+        <span class="campo-valor">Niega cocción a leña, quema de neumáticos y humo ambiental domiciliario. Sin fumadores en el hogar.</span>
+      </div>
+    </div>
+
+    <!-- 4.4 Condiciones de Vida -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">4.4 Condiciones de Vida y Trabajo</div>
+    <div class="grilla grilla-2">
+      <div class="campo">
+        <span class="campo-label">Vivienda</span>
+        <span class="campo-valor">Pedro Juan Caballero. Características de construcción no evaluadas.</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Hacinamiento</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+    </div>
+    <div class="grilla grilla-2">
+      <div class="campo">
+        <span class="campo-label">Servicios básicos</span>
+        <span class="campo-valor campo-vacio">No evaluados</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Factores de riesgo laboral</span>
+        <span class="campo-valor">Exposición a cambios bruscos de temperatura en el ambiente de trabajo. Sin compañeros enfermos el último día laborado.</span>
+      </div>
+    </div>
+
+    <!-- 4.5 Vacunación -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">4.5 Vacunación</div>
+    <div class="campo">
+      <span class="campo-label">Estado vacunal</span>
+      <span class="campo-valor">Refiere vacuna contra influenza. Esquema de vacunación completo no verificado en el presente ingreso.</span>
+    </div>
+  </div>
+
+
+  <!-- ===== V. INTERROGATORIO POR SISTEMAS ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">V. Interrogatorio por Sistemas (IPS)</div>
+    <table class="tabla-sistemas">
+      <thead>
+        <tr>
+          <th>Sistema / Aparato</th>
+          <th>Hallazgos referidos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sistema">Respiratorio</td>
+          <td>Tos seca inicial que evolucionó a tos productiva con expectoración amarillenta, sin hemoptisis. Disnea progresiva de predominio espiratorio. Dolor torácico dorsal derecho. Sibilancias. Descripción completa en HEA.</td>
+        </tr>
+        <tr>
+          <td class="sistema">Cardiovascular</td>
+          <td>Taquicardia (FC > 120 lpm al ingreso). ECG realizado. Niega dolor precordial, palpitaciones previas y edemas.</td>
+        </tr>
+        <tr>
+          <td class="sistema">Digestivo</td>
+          <td>No refiere alteraciones</td>
+        </tr>
+        <tr>
+          <td class="sistema">Genitourinario</td>
+          <td>No refiere alteraciones</td>
+        </tr>
+        <tr>
+          <td class="sistema">Ginecobstétrico</td>
+          <td>Menstruación reciente (días previos al ingreso). No refiere embarazo actual. Niega uso de métodos anticonceptivos.</td>
+        </tr>
+        <tr>
+          <td class="sistema">Hemolinfopoyético</td>
+          <td>No refiere alteraciones</td>
+        </tr>
+        <tr>
+          <td class="sistema">Endocrinometabólico</td>
+          <td>No refiere alteraciones. Antecedente familiar de diabetes mellitus (padre).</td>
+        </tr>
+        <tr>
+          <td class="sistema">Neurológico</td>
+          <td>Cefalea moderada de instalación progresiva desde el inicio del cuadro. Trató con analgésico oral con mejoría parcial. Niega pérdida de conciencia, convulsiones y déficit focal.</td>
+        </tr>
+        <tr>
+          <td class="sistema">Osteomioarticular</td>
+          <td>No refiere alteraciones</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ===== VI. EXAMEN FÍSICO ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">VI. Examen Físico</div>
+
+    <!-- Ectoscopia -->
+    <div class="seccion-titulo-sub">6.1 Ectoscopia</div>
+    <div class="texto-libre">
+      <p>Paciente femenina de aproximadamente 32 años de edad, cuya edad cronológica coincide con la edad biológica. Se presenta consciente, orientada en tiempo, espacio y persona, y colaboradora al interrogatorio. En regular estado general, que adopta posición de decúbito dorsal indiferente. Se observa facie compuesta. Llama la atención la presencia de lesiones hiperpigmentadas y cicatrices de heridas en el miembro superior izquierdo, atribuidas por la paciente a fotodermatosis (alergia solar). Cuenta con acceso venoso periférico instalado para tratamiento medicamentoso.</p>
+    </div>
+
+    <!-- Signos Vitales -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.2 Signos Vitales</div>
+    <div class="grilla grilla-4">
+      <div class="campo">
+        <span class="campo-label">Presión Arterial (PA)</span>
+        <span class="campo-valor campo-vacio">No registrada</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Frecuencia Cardíaca (FC)</span>
+        <span class="campo-valor"><strong>&gt; 120 lpm</strong> — Taquicardia</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Frecuencia Respiratoria (FR)</span>
+        <span class="campo-valor"><strong>&gt; 30 rpm</strong> — Taquipnea</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Temperatura (T°)</span>
+        <span class="campo-valor campo-vacio">No registrada</span>
+      </div>
+    </div>
+    <div class="campo">
+      <span class="campo-label">Saturación de O₂ (SpO₂)</span>
+      <span class="campo-valor"><strong>95%</strong> con soporte de O₂ a 8 L/min por cánula nasal</span>
+    </div>
+
+    <!-- Piel y Mucosas -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.3 Piel, Mucosas y Tejido Celular Subcutáneo</div>
+    <div class="grilla grilla-2">
+      <div class="campo">
+        <span class="campo-label">Piel y Mucosas</span>
+        <span class="campo-valor">Lesiones hiperpigmentadas y cicatrices en brazo izquierdo (fotodermatosis referida). Mucosas no evaluadas en detalle.</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Tejido Celular Subcutáneo (TCS)</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+    </div>
+
+    <!-- Cabeza -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.4 Cabeza</div>
+    <div class="campo">
+      <span class="campo-label">Hallazgos</span>
+      <span class="campo-valor">Normocéfala. Cabello canoso, distribución conservada. Pupilas no evaluadas. Conjuntivas normocoloreadas. Córneas transparentes.</span>
+    </div>
+
+    <!-- Cuello -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.5 Cuello</div>
+    <div class="campo">
+      <span class="campo-label">Hallazgos</span>
+      <span class="campo-valor campo-vacio">No evaluado</span>
+    </div>
+
+    <!-- Tórax Respiratorio -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.6 Tórax — Aparato Respiratorio</div>
+    <div class="lista-clinica">
+      <ul>
+        <li><span class="item-label">Inspección:</span> Taquipnea evidente (FR > 30 rpm). Utilización activa de musculatura accesoria respiratoria. Fatiga muscular notable.</li>
+        <li><span class="item-label">Palpación:</span> No aplicada (limitada por estado clínico en admisión)</li>
+        <li><span class="item-label">Percusión:</span> No aplicada (limitada por estado clínico en admisión)</li>
+        <li><span class="item-label">Auscultación — ingreso:</span> Silencio auscultatorio — ausencia de murmullo vesicular bilateral. Signo de gravedad: indica obstrucción bronquial severa con mínimo flujo aéreo.</li>
+        <li><span class="item-label">Auscultación — post-rescate:</span> Sibilancias dispersas en ambos campos pulmonares, tras ciclos de broncodilatador inhalatorio.</li>
+      </ul>
+    </div>
+
+    <!-- Tórax Cardiovascular -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.7 Tórax — Aparato Cardiovascular</div>
+    <div class="grilla grilla-2">
+      <div class="campo">
+        <span class="campo-label">Cardiovascular Central</span>
+        <span class="campo-valor">ECG realizado en admisión: ritmo regular, sin arritmias identificadas. Auscultación cardíaca no registrada en detalle.</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Cardiovascular Periférico</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+    </div>
+
+    <!-- Abdomen y otros -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.8 Abdomen, Pelvis y Sistemas</div>
+    <div class="grilla grilla-3">
+      <div class="campo">
+        <span class="campo-label">Abdomen</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Genitourinario / Ginecológico</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+      <div class="campo">
+        <span class="campo-label">Hemolinfopoyético / Endocrinometabólico</span>
+        <span class="campo-valor campo-vacio">No evaluado</span>
+      </div>
+    </div>
+
+    <!-- Neurológico -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.9 Sistema Neurológico</div>
+    <div class="campo">
+      <span class="campo-label">Hallazgos</span>
+      <span class="campo-valor">Paciente consciente, orientada y colaboradora. Escala de Glasgow no registrada formalmente. Sin déficit motor ni sensitivo evidentes en la evaluación clínica inicial.</span>
+    </div>
+
+    <!-- Osteomioarticular -->
+    <div class="seccion-titulo-sub" style="margin-top:6px;">6.10 Sistema Osteomioarticular</div>
+    <div class="campo">
+      <span class="campo-label">Hallazgos</span>
+      <span class="campo-valor campo-vacio">No evaluado</span>
+    </div>
+  </div>
+
+
+  <!-- ===== VII. DISCUSIÓN DIAGNÓSTICA ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">VII. Discusión Diagnóstica</div>
+
+    <!-- Datos positivos anamnesis -->
+    <div class="grilla grilla-2" style="margin-bottom:6px;">
+      <div class="positivos-box">
+        <h4>Datos Positivos — Anamnesis</h4>
+        <ul>
+          <li>Paciente de 32 años con antecedente de asma bronquial desde los 15 años</li>
+          <li>Crisis de inicio hace ~24 h con progresión hasta la madrugada</li>
+          <li>Tos seca que evolucionó a tos productiva con esputo amarillento</li>
+          <li>Disnea intensa, incapacidad para completar frases al ingreso</li>
+          <li>Sensación de opresión torácica y sibilancias</li>
+          <li>Uso de salbutamol domiciliario sin mejoría (2 puffs, 3 veces/día)</li>
+          <li>Niega fiebre (sugiere desencadenante no infeccioso: cambio climático)</li>
+          <li>Gatillo ambiental: cambio climático; convivientes con cuadro gripal previo</li>
+          <li>Antecedente de reacción adversa a teofilina</li>
+        </ul>
+      </div>
+      <div class="positivos-box">
+        <h4>Datos Positivos — Examen Físico</h4>
+        <ul>
+          <li>Regular estado general</li>
+          <li>Taquicardia (FC > 120 lpm)</li>
+          <li>Taquipnea (FR > 30 rpm)</li>
+          <li>Utilización activa de musculatura accesoria respiratoria</li>
+          <li>Silencio auscultatorio al ingreso (signo de gravedad — obstrucción severa)</li>
+          <li>Sibilancias dispersas bilaterales post-rescate broncodilatador</li>
+          <li>SpO₂ 95% con soporte de O₂ a 8 L/min</li>
+          <li>Lesiones hiperpigmentadas en brazo izquierdo (fotodermatosis)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Síntesis sindrómica -->
+    <div class="sindrome-box" style="margin-bottom:6px;">
+      Síntesis sindrómica: <strong>Síndrome de obstrucción bronquial aguda severa</strong>
+    </div>
+
+    <!-- Diagnósticos diferenciales -->
+    <div class="seccion-titulo-sub">Diagnósticos Diferenciales</div>
+    <div class="dx-diferencial">
+      <div class="dx-diferencial-item">
+        <div class="dx-num">1</div>
+        <div><strong>Crisis asmática severa</strong> — Diagnóstico más probable. Antecedente de asma, ausencia de fiebre, silencio auscultatorio, respuesta parcial al broncodilatador.</div>
+        <div class="dx-probabilidad">Más probable</div>
+      </div>
+      <div class="dx-diferencial-item">
+        <div class="dx-num">2</div>
+        <div><strong>Exacerbación de EPOC</strong> — Menos probable. Paciente joven (32 años), sin tabaquismo, sin exposición crónica a irritantes.</div>
+        <div class="dx-probabilidad">Poco probable</div>
+      </div>
+      <div class="dx-diferencial-item">
+        <div class="dx-num">3</div>
+        <div><strong>Neumonía con broncoespasmo reactivo</strong> — A considerar. Esputo amarillento, convivientes con cuadro gripal previo. Descartar con radiografía de tórax.</div>
+        <div class="dx-probabilidad">A descartar</div>
+      </div>
+      <div class="dx-diferencial-item">
+        <div class="dx-num">4</div>
+        <div><strong>Anafilaxia / broncoespasmo alérgico</strong> — A considerar. Antecedente de fotodermatosis y reacción previa a teofilina sugieren perfil atópico.</div>
+        <div class="dx-probabilidad">A considerar</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== VIII. DIAGNÓSTICO NOSOLÓGICO ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">VIII. Diagnóstico Nosológico</div>
+    <div class="dx-principal">
+      Crisis asmática severa en paciente con asma bronquial crónica, desencadenada por gatillo ambiental (cambio climático), con síndrome de obstrucción bronquial aguda severa.
+    </div>
+    <div class="texto-libre" style="margin-top:4px; font-size:9.5pt; font-style:italic; border-top: 0.5px solid var(--borda); padding-top:5px;">
+      <p><strong>Criterios de clasificación como severa:</strong> incapacidad para completar frases, FR > 30 rpm, FC > 120 lpm, silencio auscultatorio al ingreso, SpO₂ dependiente de soporte de O₂ (uso de betaagonista domiciliario sin mejoría).</p>
+    </div>
+  </div>
+
+
+  <!-- ===== IX. EXÁMENES COMPLEMENTARIOS ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">IX. Exámenes Complementarios Solicitados</div>
+    <div class="lista-clinica">
+      <ul>
+        <li><span class="item-label">1.</span> Radiografía simple de tórax anteroposterior (AP) — paciente en decúbito. <em>Objetivo: descartar neumonía, neumotórax y otras causas estructurales de obstrucción.</em></li>
+        <li><span class="item-label">2.</span> Hemograma completo. <em>Objetivo: evaluar proceso infeccioso, eosinofilia (componente alérgico) y estado hematológico general.</em></li>
+        <li><span class="item-label">3.</span> Proteína C reactiva (PCR). <em>Objetivo: marcador de inflamación e infección activa.</em></li>
+        <li><span class="item-label">4.</span> Hisopado nasofaríngeo viral (influenza, VSR). <em>Objetivo: investigar foco infeccioso viral — convivientes con cuadro gripal.</em></li>
+        <li><span class="item-label">5.</span> Electrocardiograma (ECG). <em>Ya realizado en admisión — repetir post-tratamiento para seguimiento.</em></li>
+        <li><span class="item-label">6.</span> Gasometría arterial. <em>Indicado si persiste deterioro clínico o SpO₂ no mejora con tratamiento.</em></li>
+        <li><span class="item-label">7.</span> Espirometría / Medición de pico flujo espiratorio (PEF). <em>Diferido — tras estabilización clínica.</em></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ===== X. PRONÓSTICO ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">X. Pronóstico</div>
+    <div class="pronostico-box">
+      <strong>Reservado a corto plazo</strong> dada la gravedad de la crisis al ingreso (severa, con silencio auscultatorio). <strong>Favorable a mediano plazo</strong> con tratamiento adecuado, identificación y control del gatillo desencadenante, y seguimiento neumológico ambulatorio.
+    </div>
+  </div>
+
+
+  <!-- ===== XI. CONDUCTA ===== -->
+  <div class="seccion">
+    <div class="seccion-titulo">XI. Conducta Médica</div>
+
+    <div class="seccion-titulo-sub">11.1 Tratamiento Aplicado en Urgencias</div>
+    <div style="border: 0.5px solid var(--borda);">
+      <div class="trat-item">
+        <div class="trat-num">1.</div>
+        <div><strong>O₂ suplementario</strong> — Cánula nasal a 8 L/min. Meta: SpO₂ > 94%.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">2.</div>
+        <div><strong>Salbutamol 10 puffs + Bromuro de ipratropio (Atrovent)</strong> — Con aerocámara, cada 15 minutos durante 1 hora. Rescate broncodilatador.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">3.</div>
+        <div><strong>Hidrocortisona 250–300 mg IV</strong> — Dosis de ataque, infusión lenta para evitar náuseas y mareos.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">4.</div>
+        <div><strong>Sulfato de magnesio 2 g IV</strong> — Dosis única, administración lenta. Indicado por clasificación de crisis severa.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">5.</div>
+        <div><strong>Acceso venoso periférico</strong> — Instalado en admisión para terapia endovenosa.</div>
+      </div>
+    </div>
+
+    <div class="seccion-titulo-sub" style="margin-top:6px;">11.2 Plan Post-estabilización y Alta</div>
+    <div style="border: 0.5px solid var(--borda);">
+      <div class="trat-item">
+        <div class="trat-num">1.</div>
+        <div><strong>Broncodilatador de acción prolongada + corticoide inhalatorio de mantenimiento</strong> — Salmeterol/formoterol + budesonida al alta.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">2.</div>
+        <div><strong>Alta hospitalaria</strong> — Tras 24–48 h de observación sin nueva crisis y con criterios clínicos de estabilización.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">3.</div>
+        <div><strong>Educación al paciente</strong> — Técnica de uso correcto del inhalador con aerocámara. Reconocimiento de signos de alarma.</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">4.</div>
+        <div><strong>Control ambiental</strong> — Identificación y evitación del gatillo desencadenante (cambios bruscos de temperatura, exposición ambiental laboral).</div>
+      </div>
+      <div class="trat-item">
+        <div class="trat-num">5.</div>
+        <div><strong>Seguimiento ambulatorio con neumología</strong> — Control en consulta externa para ajuste de plan terapéutico de mantenimiento del asma.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== FIRMAS ===== -->
+  <div class="firmas">
+    <div class="firma-bloque">
+      <div class="firma-nombre">Estudiante interno</div>
+      <div class="firma-cargo">Internado 1° Año — Medicina<br>UNINTER PJC</div>
+    </div>
+    <div class="firma-bloque">
+      <div class="firma-nombre">_________________________</div>
+      <div class="firma-cargo">Médico Supervisor / Tutor<br>Hospital Regional de PJC</div>
+    </div>
+    <div class="firma-bloque">
+      <div class="firma-nombre">Dr. Ángel Pifferrer</div>
+      <div class="firma-cargo">Docente — Semiología Médica<br>UNINTER PJC</div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer-doc">
+    <span>Historia Clínica — Lispaola Campos — HRC-PJC</span>
+    <span>UNINTER — Internado 1° Año — Semiología Médica</span>
+    <span>01/06/2026</span>
+  </div>
+
+</div>
+
+</body>
+</html>

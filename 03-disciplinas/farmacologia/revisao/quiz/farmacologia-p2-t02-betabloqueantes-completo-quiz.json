@@ -1,0 +1,265 @@
+{
+  "title": "Betabloqueadores Quiz",
+  "questions": [
+    {
+      "question": "Qual é o principal mecanismo pelo qual os betabloqueadores reduzem a secreção de renina nos rins?",
+      "answerOptions": [
+        {
+          "text": "Bloqueio de receptores $\\beta_2$ no túbulo contorcido distal.",
+          "isCorrect": false,
+          "rationale": "Os receptores $\\beta_2$ estão mais relacionados à broncodilatação e vasodilatação do que ao controle da renina renal."
+        },
+        {
+          "text": "Bloqueio de receptores $\\beta_1$ nas células justaglomerulares.",
+          "isCorrect": true,
+          "rationale": "A ativação simpática dos receptores $\\beta_1$ no aparelho justaglomerular estimula a liberação de renina; logo, seu bloqueio inibe esse processo."
+        },
+        {
+          "text": "Estimulação direta de receptores $\\alpha_1$ nas artérias renais.",
+          "isCorrect": false,
+          "rationale": "Betabloqueadores não são agonistas $\\alpha_1$; alguns podem bloquear esse receptor, mas isso não explicaria a queda da renina."
+        },
+        {
+          "text": "Inibição da enzima conversora de angiotensina (ECA) plasmática.",
+          "isCorrect": false,
+          "rationale": "Essa é a função dos IECAs, não dos betabloqueadores, que agem em uma etapa anterior da cascata."
+        }
+      ],
+      "hint": "Considere qual subtipo de receptor adrenérgico predomina no tecido renal para controle hormonal."
+    },
+    {
+      "question": "Por que o uso de betabloqueadores não seletivos é geralmente evitado em pacientes com asma brônquica grave?",
+      "answerOptions": [
+        {
+          "text": "Eles causam vasoconstrição pulmonar mediada por $\\alpha_1$.",
+          "isCorrect": false,
+          "rationale": "O problema principal na asma não é a circulação pulmonar, mas sim a reatividade das vias aéreas."
+        },
+        {
+          "text": "O bloqueio $\\beta_2$ impede a broncodilatação mediada pela adrenalina.",
+          "isCorrect": true,
+          "rationale": "Os receptores $\\beta_2$ promovem relaxamento do músculo liso bronquial; ao bloqueá-los, o tônus parassimpático e outros estímulos broncoconstritores prevalecem."
+        },
+        {
+          "text": "Eles estimulam excessivamente a produção de muco brônquico.",
+          "isCorrect": false,
+          "rationale": "Embora a secreção possa ser afetada, o risco imediato e fatal na asma com esses fármacos é o broncoespasmo agudo."
+        },
+        {
+          "text": "O bloqueio $\\beta_1$ reduz a força dos músculos respiratórios.",
+          "isCorrect": false,
+          "rationale": "Os receptores $\\beta_1$ são predominantemente cardíacos e não têm papel significativo na musculatura esquelética respiratória."
+        }
+      ],
+      "hint": "Lembre-se da função fisiológica do receptor adrenérgico presente nos brônquios."
+    },
+    {
+      "question": "O Propranolol é conhecido por causar efeitos colaterais como pesadelos e depressão. Qual característica farmacocinética explica esse fenômeno?",
+      "answerOptions": [
+        {
+          "text": "Alta hidrossolubilidade e excreção renal.",
+          "isCorrect": false,
+          "rationale": "Fármacos hidrofílicos, como o atenolol, têm dificuldade em atravessar barreiras lipídicas como a hematoencefálica."
+        },
+        {
+          "text": "Sua natureza lipofílica, permitindo a travessia da barreira hematoencefálica.",
+          "isCorrect": true,
+          "rationale": "Substâncias lipofílicas penetram facilmente no Sistema Nervoso Central, podendo causar efeitos neuropsiquiátricos."
+        },
+        {
+          "text": "Metabolismo plasmático por esterases, gerando metabólitos tóxicos.",
+          "isCorrect": false,
+          "rationale": "O metabolismo plasmático por esterases é característico do esmolol, que tem ação curtíssima e não causa esses efeitos crônicos."
+        },
+        {
+          "text": "Sua longa meia-vida de eliminação, superior a 20 horas.",
+          "isCorrect": false,
+          "rationale": "O propranolol tem uma meia-vida relativamente curta ($4-6$ horas); o nadolol é que possui meia-vida longa."
+        }
+      ],
+      "hint": "Pense na capacidade do fármaco de atingir tecidos protegidos por barreiras gordurosas."
+    },
+    {
+      "question": "O que diferencia o Carvedilol dos betabloqueadores de segunda geração, como o Metoprolol?",
+      "answerOptions": [
+        {
+          "text": "O Carvedilol possui atividade simpatomimética intrínseca.",
+          "isCorrect": false,
+          "rationale": "A atividade simpatomimética intrínseca não é a característica marcante do carvedilol, que é um antagonista pleno."
+        },
+        {
+          "text": "O Carvedilol bloqueia receptores $\\alpha_1$, promovendo vasodilatação periférica.",
+          "isCorrect": true,
+          "rationale": "Diferente dos seletivos $\\beta_1$, o carvedilol bloqueia também $\\alpha_1$, o que reduz a resistência vascular periférica e a pós-carga."
+        },
+        {
+          "text": "O Carvedilol é o único betabloqueador que não causa bradicardia.",
+          "isCorrect": false,
+          "rationale": "Todos os betabloqueadores podem causar bradicardia devido ao bloqueio $\\beta_1$ no nodo sinoatrial."
+        },
+        {
+          "text": "O Carvedilol é administrado exclusivamente por via intravenosa em UTIs.",
+          "isCorrect": false,
+          "rationale": "O carvedilol é amplamente utilizado por via oral, especialmente no manejo da insuficiência cardíaca estável."
+        }
+      ],
+      "hint": "Considere as propriedades vasodilatadoras adicionais deste fármaco de 'terceira geração'."
+    },
+    {
+      "question": "Por que os betabloqueadores são contraindicados na fase aguda de uma Insuficiência Cardíaca descompensada?",
+      "answerOptions": [
+        {
+          "text": "Porque eles aumentam excessivamente o retorno venoso.",
+          "isCorrect": false,
+          "rationale": "Os betabloqueadores não têm efeito direto de aumento de volume circulante ou retorno venoso."
+        },
+        {
+          "text": "Porque o coração descompensado depende do tônus simpático para manter o débito cardíaco.",
+          "isCorrect": true,
+          "rationale": "Na falência aguda, a estimulação adrenérgica é um mecanismo compensatório vital; bloqueá-la pode levar ao choque cardiogênico."
+        },
+        {
+          "text": "Porque eles causam uma queda perigosa na glicemia do paciente.",
+          "isCorrect": false,
+          "rationale": "Embora afetem o metabolismo, esse não é o motivo da contraindicação na insuficiência cardíaca aguda."
+        },
+        {
+          "text": "Porque eles impedem a ação dos diuréticos de alça.",
+          "isCorrect": false,
+          "rationale": "Não há interação direta que anule o efeito farmacológico dos diuréticos no néfron."
+        }
+      ],
+      "hint": "Pense no papel da adrenalina como um 'suporte' para um coração que está falhando subitamente."
+    },
+    {
+      "question": "Em relação à angina de Prinzmetal (vasoespástica), qual é a recomendação correta sobre o uso de betabloqueadores?",
+      "answerOptions": [
+        {
+          "text": "São a primeira escolha, pois reduzem a demanda de oxigênio.",
+          "isCorrect": false,
+          "rationale": "Embora reduzam a demanda, eles podem piorar o espasmo coronariano, que é a causa base dessa angina."
+        },
+        {
+          "text": "Devem ser usados apenas em doses muito altas para garantir o efeito.",
+          "isCorrect": false,
+          "rationale": "Doses altas aumentam o bloqueio de receptores, agravando o desequilíbrio entre $\\alpha$ e $\\beta$ nos vasos."
+        },
+        {
+          "text": "São contraindicados, pois o bloqueio $\\beta_2$ deixa os receptores $\\alpha$ (vasoconstritores) sem oposição.",
+          "isCorrect": true,
+          "rationale": "Sem a vasodilatação mediada por $\\beta_2$, a estimulação $\\alpha$-adrenérgica causa vasoconstrição intensa nas coronárias, piorando o quadro."
+        },
+        {
+          "text": "São úteis apenas se combinados com altas doses de aspirina.",
+          "isCorrect": false,
+          "rationale": "A aspirina não reverte o mecanismo fisiopatológico do vasoespasmo induzido por betabloqueadores."
+        }
+      ],
+      "hint": "Considere o que acontece com o tônus vascular quando você remove o componente de relaxamento ($\\beta_2$)."
+    },
+    {
+      "question": "Um paciente hipertenso e diabético faz uso de um betabloqueador não seletivo. Qual o principal risco relacionado à hipoglicemia?",
+      "answerOptions": [
+        {
+          "text": "O fármaco causa hiperinsulinemia severa.",
+          "isCorrect": false,
+          "rationale": "Betabloqueadores não estimulam a secreção de insulina; eles interferem na resposta contrarreguladora."
+        },
+        {
+          "text": "O bloqueio adrenérgico mascara sinais de alerta como taquicardia e tremores.",
+          "isCorrect": true,
+          "rationale": "A taquicardia é um sinal autonômico importante de que a glicose está baixa; sem esse alerta, o paciente pode entrar em coma hipoglicêmico sem perceber."
+        },
+        {
+          "text": "O fármaco acelera a absorção intestinal de glicose.",
+          "isCorrect": false,
+          "rationale": "Pelo contrário, o sistema simpático geralmente retarda a motilidade digestiva, mas isso não é clinicamente relevante aqui."
+        },
+        {
+          "text": "Impede a ação do glucagon no pâncreas.",
+          "isCorrect": false,
+          "rationale": "O glucagon age em receptores específicos de glucagon, não em receptores adrenérgicos."
+        }
+      ],
+      "hint": "Pense nos sintomas físicos que uma pessoa sente quando está com 'açúcar baixo' e como o sistema simpático gera esses sinais."
+    },
+    {
+      "question": "Qual betabloqueador apresenta uma meia-vida de aproximadamente 9 minutos, sendo ideal para uso em emergências hipertensivas perioperatórias?",
+      "answerOptions": [
+        {
+          "text": "Atenolol",
+          "isCorrect": false,
+          "rationale": "O atenolol tem uma meia-vida de $6-9$ horas e é administrado por via oral."
+        },
+        {
+          "text": "Esmolol",
+          "isCorrect": true,
+          "rationale": "Devido à sua rápida hidrólise por esterases nas hemácias, o esmolol tem ação ultracurta, permitindo controle preciso minuto a minuto."
+        },
+        {
+          "text": "Nadolol",
+          "isCorrect": false,
+          "rationale": "O nadolol é um dos betabloqueadores com ação mais longa disponível no mercado."
+        },
+        {
+          "text": "Bisoprolol",
+          "isCorrect": false,
+          "rationale": "O bisoprolol é usado para tratamento crônico e possui alta seletividade $\\beta_1$, mas não ação ultracurta."
+        }
+      ],
+      "hint": "Procure o fármaco que é 'quebrado' rapidamente no próprio sangue."
+    },
+    {
+      "question": "A interrupção abrupta do tratamento com betabloqueadores pode causar a 'Síndrome de Retirada'. Qual é o mecanismo celular por trás desse fenômeno?",
+      "answerOptions": [
+        {
+          "text": "Downregulation (redução) do número de receptores $\\beta$.",
+          "isCorrect": false,
+          "rationale": "O bloqueio crônico causa o efeito oposto, pois a célula tenta compensar a falta de estímulo."
+        },
+        {
+          "text": "Upregulation (aumento) e hipersensibilidade dos receptores $\\beta$.",
+          "isCorrect": true,
+          "rationale": "O organismo aumenta o número de receptores em resposta ao bloqueio prolongado; ao retirar o fármaco, a noradrenalina endógena encontra um sistema super-reativo."
+        },
+        {
+          "text": "Aumento da degradação enzimática de noradrenalina.",
+          "isCorrect": false,
+          "rationale": "Não há evidências de que os betabloqueadores alterem a síntese ou degradação da noradrenalina dessa forma."
+        },
+        {
+          "text": "Bloqueio irreversível dos canais de cálcio miocárdicos.",
+          "isCorrect": false,
+          "rationale": "Betabloqueadores não se ligam permanentemente aos canais de cálcio; sua ação é competitiva e reversível."
+        }
+      ],
+      "hint": "Lembre-se de como as células reagem quando um receptor é impedido de funcionar por muito tempo."
+    },
+    {
+      "question": "O Labetalol é frequentemente utilizado no manejo da hipertensão em gestantes. Qual característica o torna útil nessa população?",
+      "answerOptions": [
+        {
+          "text": "Ele atravessa a placenta e estimula o desenvolvimento pulmonar fetal.",
+          "isCorrect": false,
+          "rationale": "Essa é uma função de corticoides, não de anti-hipertensivos."
+        },
+        {
+          "text": "Possui ação mista (bloqueio $\\alpha$ e $\\beta$), reduzindo a pressão sem causar taquicardia reflexa exagerada.",
+          "isCorrect": true,
+          "rationale": "O componente $\\beta$-bloqueador impede a taquicardia que normalmente ocorreria com a vasodilatação do componente $\\alpha$."
+        },
+        {
+          "text": "Aumenta drasticamente o volume plasmático materno.",
+          "isCorrect": false,
+          "rationale": "O aumento do volume plasmático geralmente piora a hipertensão, o que seria indesejado."
+        },
+        {
+          "text": "Age exclusivamente no Sistema Nervoso Central do feto.",
+          "isCorrect": false,
+          "rationale": "O objetivo do tratamento é a saúde materna e a perfusão placentária, não uma ação direta no feto."
+        }
+      ],
+      "hint": "Pense no benefício de combinar vasodilatação periférica com controle da frequência cardíaca."
+    }
+  ]
+}

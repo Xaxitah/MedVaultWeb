@@ -1,0 +1,126 @@
+{
+  "mind_map": {
+    "name": "Vasodilatadores",
+    "children": [
+      {
+        "name": "Conceitos Hemodinâmicos",
+        "children": [
+          {
+            "name": "Dilatação Venosa (↓ Pré-carga)"
+          },
+          {
+            "name": "Dilatação Arterial (↓ Pós-carga)"
+          },
+          {
+            "name": "Objetivo: Reduzir resistência e melhorar débito"
+          }
+        ]
+      },
+      {
+        "name": "Nitratos e Nitrodilatadores",
+        "children": [
+          {
+            "name": "Mecanismo: ↑ NO → ↑ GMPc → ↓ Ca²⁺"
+          },
+          {
+            "name": "Ação: Venosa > Arterial"
+          },
+          {
+            "name": "Indicações: Angina, IAM, IC, Edema Pulmonar"
+          },
+          {
+            "name": "Contraindicação: IAM de Ventrículo Direito"
+          },
+          {
+            "name": "Tolerância: Intervalo livre de 8-12h"
+          },
+          {
+            "name": "Efeitos: Cefaleia pulsátil e hipotensão"
+          }
+        ]
+      },
+      {
+        "name": "Nitroprussiato de Sódio",
+        "children": [
+          {
+            "name": "Ação: Mista (Arteriolar + Venosa)"
+          },
+          {
+            "name": "Uso: Emergências hipertensivas (Ação imediata IV)"
+          },
+          {
+            "name": "Toxicidade: Cianeto (Hepática) e Tiocianato (Renal)"
+          },
+          {
+            "name": "Característica: Fotossensível"
+          }
+        ]
+      },
+      {
+        "name": "Hidralazina",
+        "children": [
+          {
+            "name": "Ação: Arteriolar direta"
+          },
+          {
+            "name": "Indicação: HAS na gravidez (Segura)"
+          },
+          {
+            "name": "Efeito Adverso: Lúpus medicamentoso"
+          },
+          {
+            "name": "Associação: Requer Betabloqueante + Diurético"
+          }
+        ]
+      },
+      {
+        "name": "Agonistas dos Canais de K+",
+        "children": [
+          {
+            "name": "Minoxidil",
+            "children": [
+              {
+                "name": "Ação: Vasodilatação arterial potente"
+              },
+              {
+                "name": "Uso: HAS grave refratária"
+              },
+              {
+                "name": "Efeito: Hipertricose"
+              }
+            ]
+          },
+          {
+            "name": "Diazóxido",
+            "children": [
+              {
+                "name": "Uso: Emergências e Insulinoma"
+              },
+              {
+                "name": "Efeito: Hiperglicemia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Inibidores de PDE-5",
+        "children": [
+          {
+            "name": "Fármacos: Sildenafil, Tadalafil"
+          },
+          {
+            "name": "Mecanismo: Impede degradação de GMPc"
+          },
+          {
+            "name": "Indicação: Hipertensão pulmonar e Disfunção erétil"
+          },
+          {
+            "name": "Interação: Contraindicação absoluta com Nitratos"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "361010d0-9b84-474f-b82f-ac7e027013c7"
+}

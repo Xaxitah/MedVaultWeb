@@ -20,6 +20,12 @@
 
 <main>
 
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('media', event)">🎧 Mídia</button>
+    <button class="tab-btn" onclick="showTab('resumos', event)">📄 Resumos</button>
+  </div>
+
+  <div id="media" class="prova-section visible">
   <h2 class="section-title">P1 — Temas com Materiais Disponíveis</h2>
 
   <!-- T01 Infecções Inespecíficas -->
@@ -77,9 +83,61 @@
     </div>
   </div>
 
+  </div><!-- /media -->
+
+  <div id="resumos" class="prova-section">
+    <h2 class="section-title">📄 Resumos e Materiais de Estudo — P1</h2>
+
+    <div class="resumo-section">
+      <div class="resumo-group">
+        <div class="resumo-group-title">T01 — Infecções Inespecíficas</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-01-infeccoes-inespecificas/tema-01-resumo-completo.html" target="_blank">📄 Resumo Completo</a>
+          <a class="resumo-link vespera" href="../03-disciplinas/urologia/revisao/revisao-vespera/tema-01-infeccoes-inespecificas-vespera.html" target="_blank">⚡ Revisão Véspera</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">T02 — Infecções Específicas</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-02-infeccoes-especificas/tema-02-resumo-completo.html" target="_blank">📄 Resumo Completo</a>
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-02-infeccoes-especificas/infecciones-especificas.html" target="_blank">📄 Infecções Específicas</a>
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-02-infeccoes-especificas/tema-02-cruzamento-fontes.html" target="_blank">🔗 Cruzamento de Fontes</a>
+          <a class="resumo-link vespera" href="../03-disciplinas/urologia/revisao/revisao-vespera/tema-02-infeccoes-especificas-vespera.html" target="_blank">⚡ Revisão Véspera</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">T10 — Litiasis Urinária</div>
+        <div class="resumo-grid">
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-10-litiasis-urinaria/tema-t10-litiasis-resumo-completo.html" target="_blank">📄 Resumo Completo</a>
+          <a class="resumo-link" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-10-litiasis-urinaria/litiasis-resumo-completo.html" target="_blank">📄 Resumo (versão 2)</a>
+          <a class="resumo-link questao" href="../03-disciplinas/urologia/revisao/resumos/p1/p1-tema-10-litiasis-urinaria/litiasis-perguntas-comentadas.html" target="_blank">❓ Perguntas Comentadas</a>
+          <a class="resumo-link questao" href="../03-disciplinas/urologia/revisao/questoes/urologia-litiasis-urinaria-perguntas.html" target="_blank">❓ Questões</a>
+        </div>
+      </div>
+
+      <div class="resumo-group">
+        <div class="resumo-group-title">Banco Geral de Questões</div>
+        <div class="resumo-grid">
+          <a class="resumo-link questao" href="../03-disciplinas/urologia/revisao/questoes/gabarito-geral-urologia.html" target="_blank">❓ Gabarito Geral Urologia</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /resumos -->
+
 </main>
 
 <footer>MED-Vault 2.0 · Urologia · <a href="../">← Voltar ao início</a></footer>
+
+<script>
+function showTab(id, event) {
+  document.querySelectorAll('.prova-section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>

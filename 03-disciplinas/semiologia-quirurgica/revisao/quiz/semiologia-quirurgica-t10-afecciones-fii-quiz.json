@@ -1,0 +1,265 @@
+{
+  "title": "Diverticulite Quiz",
+  "questions": [
+    {
+      "question": "Qual é a tríade clínica clássica que levanta a suspeita de diverticulite aguda na Fossa Ilíaca Esquerda ($FII$)?",
+      "answerOptions": [
+        {
+          "text": "Dor na $FII$, febre e leucocitose com desvio à esquerda.",
+          "isCorrect": true,
+          "rationale": "Esses três achados combinam sinais de inflamação localizada, resposta sistêmica febril e evidência laboratorial de infecção aguda."
+        },
+        {
+          "text": "Dor na $FII$, diarreia sanguinolenta e perda de peso.",
+          "isCorrect": false,
+          "rationale": "Embora a dor na $FII$ ocorra, a tríade clássica foca em sinais agudos de infecção; sangramento e perda de peso sugerem mais neoplasias ou doenças inflamatórias crônicas."
+        },
+        {
+          "text": "Massa pulsátil, sopro abdominal e hipotensão.",
+          "isCorrect": false,
+          "rationale": "Estes sinais são típicos de complicações vasculares, como um aneurisma roto, e não da inflamação diverticular comum."
+        },
+        {
+          "text": "Disúria, hematúria e dor lombar irradiada para o escroto.",
+          "isCorrect": false,
+          "rationale": "Este conjunto de sintomas é característico do cólico renoureteral por urolitíase, que é um importante diagnóstico diferencial urinário."
+        }
+      ],
+      "hint": "Pense nos sinais típicos de um processo inflamatório/infeccioso agudo localizado no quadrante inferior esquerdo."
+    },
+    {
+      "question": "Por que o cólon sigmoide é o segmento do intestino grosso mais propenso à formação de divertículos adquiridos?",
+      "answerOptions": [
+        {
+          "text": "Devido ao menor diâmetro luminal e à maior pressão intraluminal necessária para mover fezes sólidas.",
+          "isCorrect": true,
+          "rationale": "O sigmoide lida com conteúdo fecal mais firme e possui um lúmen estreito, resultando em altas pressões que favorecem a herniação da mucosa."
+        },
+        {
+          "text": "Por possuir uma parede muscular mais fina em comparação com o cólon ascendente.",
+          "isCorrect": false,
+          "rationale": "Na verdade, a hipertrofia da camada muscular é comum no sigmoide sob alta pressão, não a sua finura."
+        },
+        {
+          "text": "Devido à ausência de vasos curtos que perfuram a camada muscular nesse segmento.",
+          "isCorrect": false,
+          "rationale": "Os divertículos formam-se justamente nos pontos de fraqueza onde os vasos curtos penetram na parede muscular."
+        },
+        {
+          "text": "Porque é o único segmento do cólon que possui divertículos verdadeiros.",
+          "isCorrect": false,
+          "rationale": "Os divertículos do sigmoide são considerados 'falsos' pois não envolvem todas as camadas da parede intestinal, apenas mucosa e submucosa."
+        }
+      ],
+      "hint": "Considere a relação entre o diâmetro do tubo, a consistência do conteúdo e a lei de Laplace."
+    },
+    {
+      "question": "Um paciente com histórico de doença diverticular apresenta fecalúria e pneumatúria. Qual complicação deve ser suspeitada?",
+      "answerOptions": [
+        {
+          "text": "Fístula colovesical.",
+          "isCorrect": true,
+          "rationale": "A presença de fezes ou gás na urina indica uma comunicação anormal entre o cólon inflamado e a bexiga urinária."
+        },
+        {
+          "text": "Peritonite generalizada por perfuração livre.",
+          "isCorrect": false,
+          "rationale": "A perfuração livre causaria pneumoperitônio e irritação peritoneal difusa, não passagem de conteúdo para o trato urinário."
+        },
+        {
+          "text": "Abscesso do músculo psoas.",
+          "isCorrect": false,
+          "rationale": "Um abscesso no psoas causaria dor à extensão do quadril e febre, sem necessariamente alterar os componentes da urina dessa forma."
+        },
+        {
+          "text": "Obstrução intestinal alta.",
+          "isCorrect": false,
+          "rationale": "A obstrução causaria vômitos e parada de eliminação de gases, sintomas distintos da eliminação de fezes pela via urinária."
+        }
+      ],
+      "hint": "Fecalúria significa fezes na urina e pneumatúria significa gás na urina."
+    },
+    {
+      "question": "Qual a principal razão para evitar a realização de uma colonoscopia durante a fase aguda de uma diverticulite complicada?",
+      "answerOptions": [
+        {
+          "text": "Risco de converter uma microperfuração bloqueada em uma perfuração livre pela insuflação de ar.",
+          "isCorrect": true,
+          "rationale": "A pressão do ar injetado para visualizar o cólon pode romper aderências inflamatórias que estavam contendo a infecção."
+        },
+        {
+          "text": "A colonoscopia não consegue visualizar divertículos quando há inflamação.",
+          "isCorrect": false,
+          "rationale": "Os divertículos são visíveis, mas o risco mecânico do procedimento supera o benefício diagnóstico na fase aguda."
+        },
+        {
+          "text": "O preparo intestinal necessário causaria obrigatoriamente um quadro de choque séptico.",
+          "isCorrect": false,
+          "rationale": "Embora o preparo seja difícil na fase aguda, o perigo imediato é a perfuração mecânica durante o exame."
+        },
+        {
+          "text": "Pois a Tomografia Computadorizada ($TC$) é o único exame capaz de diagnosticar a presença de divertículos.",
+          "isCorrect": false,
+          "rationale": "A colonoscopia é excelente para ver divertículos, mas na fase aguda, a $TC$ é preferida por ser não invasiva e avaliar complicações extra-luminais."
+        }
+      ],
+      "hint": "Considere o que acontece quando você injeta ar sob pressão em um órgão com a parede fragilizada e inflamada."
+    },
+    {
+      "question": "Durante a percussão abdominal, a perda da macicez hepática (Sinal de Jobert) em um paciente com dor na $FII$ sugere:",
+      "answerOptions": [
+        {
+          "text": "Pneumoperitônio decorrente de perfuração de víscera oca.",
+          "isCorrect": true,
+          "rationale": "O ar livre na cavidade peritoneal se interpõe entre o fígado e a parede abdominal, substituindo o som maciço pelo timpânico."
+        },
+        {
+          "text": "Presença de um plastrão inflamatório volumoso na $FII$.",
+          "isCorrect": false,
+          "rationale": "Um plastrão geralmente produz submacicez ou macicez localizada na região da massa, não no hipocôndrio direito."
+        },
+        {
+          "text": "Obstrução intestinal baixa com grande distensão gasosa do cólon.",
+          "isCorrect": false,
+          "rationale": "A distensão pode aumentar o timpanismo global, mas a perda específica da macicez hepática é o sinal clássico de ar livre na cavidade (perfuração)."
+        },
+        {
+          "text": "Ascite inflamatória de grande volume.",
+          "isCorrect": false,
+          "rationale": "A ascite (líquido) aumentaria a macicez nas áreas dependentes, mantendo a macicez hepática ou alterando-a de forma diferente."
+        }
+      ],
+      "hint": "Lembre-se de qual elemento físico, quando solto na cavidade, impediria o som maciço de um órgão sólido como o fígado."
+    },
+    {
+      "question": "Qual achado é mais característico da Síndrome do Intestino Irritável ($SII$) no exame físico da Fossa Ilíaca Esquerda?",
+      "answerOptions": [
+        {
+          "text": "Presença de 'cuerda cólica' palpável e dolorosa, com abdome depressível.",
+          "isCorrect": true,
+          "rationale": "A corda cólica representa o sigmoide contraído, comum em distúrbios funcionais onde não há sinais de peritonite (abdome depressível)."
+        },
+        {
+          "text": "Defesa muscular involuntária e sinal de Blumberg positivo.",
+          "isCorrect": false,
+          "rationale": "Esses achados indicam irritação peritoneal, o que sugere uma causa inflamatória orgânica (como diverticulite), não funcional como a $SII$."
+        },
+        {
+          "text": "Massa de limites imprecisos, pastosa e fixa.",
+          "isCorrect": false,
+          "rationale": "Essa descrição sugere um plastrão inflamatório, indicando uma complicação de doença diverticular ou tumor."
+        },
+        {
+          "text": "Desaparecimento dos ruídos hidroaéreos ($RHA$).",
+          "isCorrect": false,
+          "rationale": "A ausência de $RHA$ indica íleo paralítico, comum em peritonites graves, enquanto na $SII$ os ruídos costumam estar preservados ou aumentados."
+        }
+      ],
+      "hint": "Diferencie um quadro funcional (sem lesão anatômica) de um quadro inflamatório agudo (com peritonismo)."
+    },
+    {
+      "question": "Sobre a Colite Isquêmica, qual característica semiológica ajuda a diferenciá-la de outras doenças inflamatórias intestinais como a Retocolite Ulcerativa?",
+      "answerOptions": [
+        {
+          "text": "O reto é frequentemente poupado (respeitado) na colite isquêmica.",
+          "isCorrect": true,
+          "rationale": "O reto possui suprimento sanguíneo duplo (arterial sistêmico e mesentérico), o que o protege da isquemia que afeta o resto do cólon."
+        },
+        {
+          "text": "A dor é sempre crônica e melhora significativamente com a alimentação.",
+          "isCorrect": false,
+          "rationale": "A dor isquêmica costuma ser aguda e pode piorar após as refeições (angina mesentérica) devido à maior demanda de fluxo sanguíneo."
+        },
+        {
+          "text": "A presença de hemorragia é extremamente rara nesta condição.",
+          "isCorrect": false,
+          "rationale": "Pelo contrário, a hemorragia (hematoquezia) é uma manifestação constante nas formas leves e transitórias da colite isquêmica."
+        },
+        {
+          "text": "A imagem característica no enema opaco é de 'saculados' preenchidos por contraste.",
+          "isCorrect": false,
+          "rationale": "Isso descreve a diverticulose; a colite isquêmica mostra o sinal de 'impressão digital' devido ao edema/hematoma da submucosa."
+        }
+      ],
+      "hint": "Pense na anatomia vascular e em qual parte do intestino grosso tem 'proteção dupla' contra a falta de sangue."
+    },
+    {
+      "question": "Um paciente apresenta dor na $FII$ subaguda, febre, impotência funcional do membro inferior esquerdo e flexo-contratura antálgica do quadril. Qual a principal suspeita?",
+      "answerOptions": [
+        {
+          "text": "Abscesso do músculo psoas.",
+          "isCorrect": true,
+          "rationale": "A posição de flexão do quadril alivia a pressão sobre o psoas inflamado, e a dor impede a movimentação normal do membro."
+        },
+        {
+          "text": "Câncer de cólon sigmoide obstrutivo.",
+          "isCorrect": false,
+          "rationale": "O tumor causaria alteração do hábito intestinal e distensão, mas raramente causaria flexo-contratura do quadril a menos que invadisse o retroperitônio tardiamente."
+        },
+        {
+          "text": "Torção de cisto de ovário esquerdo.",
+          "isCorrect": false,
+          "rationale": "A torção causa dor súbita e intensa, mas não costuma estar associada a uma flexo-contratura persistente do quadril como sinal primário."
+        },
+        {
+          "text": "Aneurisma de artéria ilíaca.",
+          "isCorrect": false,
+          "rationale": "O aneurisma manifesta-se como massa pulsátil e sopro; a flexo-contratura não é um sinal típico a menos que haja ruptura retroperitoneal."
+        }
+      ],
+      "hint": "Este músculo é o principal flexor do quadril e sua inflamação faz o paciente 'encolher' a perna para reduzir a dor."
+    },
+    {
+      "question": "Qual é o exame de imagem padrão-ouro para diagnosticar e avaliar a gravidade (estadiamento) de uma diverticulite aguda complicada?",
+      "answerOptions": [
+        {
+          "text": "Tomografia Computadorizada ($TC$) de abdome e pelve com contraste.",
+          "isCorrect": true,
+          "rationale": "A $TC$ identifica abscessos, ar extra-luminal, espessamento da parede e fístulas, além de guiar procedimentos terapêuticos."
+        },
+        {
+          "text": "Radiografia simples de abdome em pé e deitado.",
+          "isCorrect": false,
+          "rationale": "O Raio-X é útil para ver pneumoperitônio ou obstrução, mas não detalha a inflamação da parede ou pequenos abscessos."
+        },
+        {
+          "text": "Ecografia (Ultrassonografia) abdominal.",
+          "isCorrect": false,
+          "rationale": "Embora útil em alguns casos, é muito dependente do examinador e limitada pelo excesso de gases intestinais durante a inflamação."
+        },
+        {
+          "text": "Enema baritado de alta pressão.",
+          "isCorrect": false,
+          "rationale": "O bário é contraindicado na suspeita de perfuração pois pode causar peritonite química gravíssima se extravasar."
+        }
+      ],
+      "hint": "Busque o exame que oferece a melhor visão tridimensional e detalhada das estruturas retroperitoneais e pélvicas."
+    },
+    {
+      "question": "No contexto de diagnóstico diferencial na $FII$, qual achado clínico diferencia o comportamento de um paciente com cólico renoureteral de um com peritonite?",
+      "answerOptions": [
+        {
+          "text": "O paciente com cólica renal é inquieto e muda de posição constantemente; o com peritonite prefere a imobilidade absoluta.",
+          "isCorrect": true,
+          "rationale": "O movimento piora a dor da peritonite por fricção do peritônio inflamado, enquanto na cólica o paciente busca desesperadamente uma posição de alívio."
+        },
+        {
+          "text": "A peritonite causa dor que irradia para a região glútea, enquanto a cólica renal irradia para o ombro.",
+          "isCorrect": false,
+          "rationale": "A irradiação da cólica renal é tipicamente para a região genital (testículo/grandes lábios), não para o ombro."
+        },
+        {
+          "text": "Somente a peritonite causa náuseas e vômitos.",
+          "isCorrect": false,
+          "rationale": "Ambas as condições podem apresentar náuseas e vômitos devido a reflexos autonômicos de dor intensa ou íleo reflexo."
+        },
+        {
+          "text": "A febre alta está sempre presente na cólica renal inicial.",
+          "isCorrect": false,
+          "rationale": "A febre na cólica renal geralmente indica uma infecção urinária sobreposta (complicação), enquanto na diverticulite/peritonite ela é parte do quadro inicial."
+        }
+      ],
+      "hint": "Pense na 'atitude' do paciente no leito diante da dor aguda."
+    }
+  ]
+}

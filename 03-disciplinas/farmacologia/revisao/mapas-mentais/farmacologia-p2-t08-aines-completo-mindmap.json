@@ -1,0 +1,142 @@
+{
+  "mind_map": {
+    "name": "AINEs (Anti-inflamatórios Não Esteroidais)",
+    "children": [
+      {
+        "name": "Propriedades Fundamentais",
+        "children": [
+          {
+            "name": "Ação Analgésica"
+          },
+          {
+            "name": "Ação Antipirética"
+          },
+          {
+            "name": "Ação Anti-inflamatória"
+          },
+          {
+            "name": "Ação Antiagregante (AAS)"
+          }
+        ]
+      },
+      {
+        "name": "Mecanismo de Ação",
+        "children": [
+          {
+            "name": "Inibição da Ciclooxigenase (COX)"
+          },
+          {
+            "name": "Redução de Prostaglandinas"
+          },
+          {
+            "name": "Subtipos de COX",
+            "children": [
+              {
+                "name": "COX-1: Constitutiva (Homeostase)"
+              },
+              {
+                "name": "COX-2: Induzível (Inflamação)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Principais Fármacos",
+        "children": [
+          {
+            "name": "AAS (Aspirina)",
+            "children": [
+              {
+                "name": "Inibição Irreversível"
+              },
+              {
+                "name": "Antiagregante Plaquetário"
+              }
+            ]
+          },
+          {
+            "name": "Paracetamol",
+            "children": [
+              {
+                "name": "Fraco Anti-inflamatório"
+              },
+              {
+                "name": "Risco de Hepatotoxicidade"
+              },
+              {
+                "name": "Antídoto: N-acetilcisteína"
+              }
+            ]
+          },
+          {
+            "name": "Dipirona (Metamizol)"
+          },
+          {
+            "name": "Ibuprofeno"
+          },
+          {
+            "name": "Ketorolaco (Potente analgésico)"
+          },
+          {
+            "name": "Coxibs (Seletivos COX-2)"
+          }
+        ]
+      },
+      {
+        "name": "Efeitos Adversos",
+        "children": [
+          {
+            "name": "Gastrointestinal: Úlceras e Sangramento"
+          },
+          {
+            "name": "Renal",
+            "children": [
+              {
+                "name": "Insuficiência Renal Aguda"
+              },
+              {
+                "name": "Triple Whammy (AINE + IECA + Diurético)"
+              }
+            ]
+          },
+          {
+            "name": "Cardiovascular: Trombose (Coxibs)"
+          },
+          {
+            "name": "Hipersensibilidade: Broncoespasmo (Samter)"
+          }
+        ]
+      },
+      {
+        "name": "Indicações e Contraindicações",
+        "children": [
+          {
+            "name": "Escada Analgésica da OMS"
+          },
+          {
+            "name": "Indometacina: Ducto Arterioso"
+          },
+          {
+            "name": "3º Trimestre Gravidez: Proibido"
+          },
+          {
+            "name": "Crianças: Risco de Síndrome de Reye (AAS)"
+          }
+        ]
+      },
+      {
+        "name": "Tratamento da Gota",
+        "children": [
+          {
+            "name": "Crise Aguda: Colchicina e AINEs"
+          },
+          {
+            "name": "Profilaxia: Alopurinol"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "0f04eda8-80e7-4c6f-bb71-f9b79602372f"
+}
