@@ -10,6 +10,7 @@
   --text-muted: #64748b;
   --success: #10b981;
   --audio-bg: #f0f9ff;
+  --sidebar-bg: #1a3a5c;
   --radius: 12px;
   --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
 }
@@ -44,6 +45,81 @@ header p  { opacity: .8; margin-top: .4rem; font-size: .95rem; }
 .breadcrumb a { color: rgba(255,255,255,.75); text-decoration: none; }
 .breadcrumb a:hover { color: white; }
 .breadcrumb span { opacity: .5; }
+
+/* ── Layout (sidebar + content) ── */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 140px);
+}
+
+.page-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.35);
+  padding: 0 1rem .75rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  margin-bottom: .4rem;
+}
+
+.sidebar-link {
+  display: block;
+  padding: .55rem 1rem;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  font-size: .875rem;
+  transition: background .12s, color .12s;
+  border-left: 3px solid transparent;
+}
+.sidebar-link:hover {
+  background: rgba(255,255,255,.08);
+  color: white;
+}
+.sidebar-link.active {
+  background: rgba(255,255,255,.12);
+  color: white;
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem .75rem;
+    gap: .25rem;
+  }
+  .sidebar-title { display: none; }
+  .sidebar-link {
+    padding: .35rem .65rem;
+    font-size: .8rem;
+    border-left: none;
+    border-radius: 6px;
+  }
+  .sidebar-link.active { border-left: none; }
+}
 
 /* ── Main ── */
 main {
@@ -145,7 +221,6 @@ main {
 }
 
 /* ── Infographic ── */
-.infographic-block { }
 .infographic-label {
   font-size: .78rem;
   font-weight: 600;
@@ -195,17 +270,6 @@ main {
   border: 1px solid #cbd5e1;
 }
 .btn-slides:hover { background: #e2e8f0; }
-
-/* ── Notice box ── */
-.notice {
-  background: #fffbeb;
-  border: 1px solid #fbbf24;
-  border-radius: var(--radius);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.5rem;
-  font-size: .88rem;
-  color: #92400e;
-}
 
 /* ── Tab nav ── */
 .tab-nav {

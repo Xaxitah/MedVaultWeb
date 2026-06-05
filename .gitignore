@@ -1,15 +1,14 @@
-# Binários grandes — servidos via Google Drive
+# Áudios — servidos via Google Drive
 **/*.mp3
 **/*.m4a
-**/*.png
+
+# PDFs e slides — servidos via Google Drive
 **/*.pdf
 **/*.pptx
 **/*.pptm
 
-# Imagens de slides (servidas via Drive)
-03-disciplinas/**/*.jpg
-03-disciplinas/**/*.jpeg
-03-disciplinas/**/*.webp
+# Infográficos grandes — servidos via Google Drive (thumbnail URLs)
+**/revisao/infograficos/
 
 # Export duplicado
 med/
