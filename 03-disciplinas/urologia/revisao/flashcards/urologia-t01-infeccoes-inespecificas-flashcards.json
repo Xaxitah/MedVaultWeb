@@ -1,0 +1,53 @@
+{
+  "title": "Urologia — T01: Infecções Inespecíficas do Trato Urinário",
+  "cards": [
+    {
+      "front": "Tríade clássica da pielonefrite aguda",
+      "back": "1. Fiebre (febre)\n2. Escalofríos (calafrios)\n3. Dolor en fosa lumbar (dor na fossa lombar)\nAtenção: a aula insistiu em FOSA LUMBAR — não simplesmente 'flanco'\nPuño-percusión (sinal de Giordano) positivo = dor ao percutir a loja renal\nÉ infecção ALTA (rim/pelve renal) — diferente da cistite (infecção baixa)"
+    },
+    {
+      "front": "Cistite vs. pielonefrite — diferenças clínicas",
+      "back": "CISTITE (infecção baixa — bexiga):\n• Disuria, polaquiuria, tenesmo vesical\n• Sem febre alta ou com febre baixa\n• Sem dor lombar marcada\nPIELONEFRITE (infecção alta — rim/pelve):\n• Fiebre + escalofríos + dor fosa lumbar\n• Puño-percusión positivo\n• Leucocitose com desvio à esquerda\nDiferença-chave: febre alta + dor lombar → pielonefrite"
+    },
+    {
+      "front": "Via principal das ITU inespecíficas e por que mulheres têm mais",
+      "back": "Via ascendente: uretra → bexiga → ureter → rim\nMulheres > homens porque:\n• Uretra feminina curta (3–4 cm vs. 20 cm no homem)\n• Abertura uretral próxima do ânus\n• Facilita colonização por bacilos entéricos gram-negativos\nOBS: tuberculose geniturinária usa via HEMATOGÊNICA (diferente)"
+    },
+    {
+      "front": "Sequência de exames para ITU — antes ou depois do antibiótico?",
+      "back": "Sequência: General de orina → Urocultivo → Antibiograma\nRegra crítica: COLETAR antes de iniciar o antibiótico\n• EGO: primeiro passo — mostra leucocitúria (piuria), hematúria, bacteriúria\n• Urocultivo: identifica o germe (≥ 100.000 UFC/mL = diagnóstico)\n• Antibiograma: determina sensibilidade/resistência\nSe coletar depois do ATB → resultado pode ser falso-negativo"
+    },
+    {
+      "front": "Germe mais comum das ITU comunitárias",
+      "back": "Escherichia coli: 70–80% das ITU comunitárias\nMecanismo: fímbrias P e tipo 1 → aderência ao uroepitélio\nOutros frequentes:\n• Staphylococcus saprophyticus (mulheres jovens sexualmente ativas)\n• Klebsiella pneumoniae\n• Proteus mirabilis (alcaliniza urina → cálculos de estruvita)\n• Pseudomonas aeruginosa (nosocomial/cateter)\nVia: ascendente da flora perineal/fecal"
+    },
+    {
+      "front": "Pielonefrite xantogranulomatosa — perfil e achados",
+      "back": "Perfil: mulher 40–50 anos + história de ITU recorrente\nAchados:\n• Palidez, emagrecimento, febre crônica\n• Litíase renal + cavidades no parênquima\n• Macrófagos xantomatosos (espumosos) na histologia\nImportante: pode SIMULAR tumor renal na imagem\nDiagnóstico: TC + histopatológico pós-nefrectomia\nTratamento: nefrectomia na maioria dos casos"
+    },
+    {
+      "front": "Piuria estéril — o que é e o que deve sugerir?",
+      "back": "Definição: leucócitos na urina (piuria) SEM crescimento bacteriano em cultura comum\nCausas:\n1. TB urinária — o mais importante (Mycobacterium não cresce em cultura comum)\n2. ITU parcialmente tratada\n3. Uretrite por Chlamydia/Neisseria\n4. Litíase urinária\nConduta: piuria estéril em paciente com história de TB → solicitar cultura específica para Mycobacterium tuberculosis"
+    },
+    {
+      "front": "Sinal de Giordano (puño-percusión) — técnica e significado",
+      "back": "Técnica: percutir levemente com o punho fechado sobre o ângulo costovertebral (loja renal)\nPositivo: dor à percussão → inflamação/infecção do parênquima renal\nInterpretação:\n• Pielonefrite aguda: dor intensa e difusa\n• Litíase complicada: dor ipsilateral ao cálculo\n• Negativo: não exclui infecção se outros sinais presentes\nComplementa a tríade clínica da pielonefrite"
+    },
+    {
+      "front": "Quando trocar o antibiótico da ITU baseado no antibiograma?",
+      "back": "Regra da aula: a CLÍNICA PESA\n• Antibiograma resistente + paciente MELHORANDO → manter ATB atual\n• Antibiograma resistente + paciente PIORANDO → trocar conforme antibiograma\nOBS: alguns germes testados in vitro mostram resistência mas o ATB funciona in vivo (breakpoints diferentes)\nPrática: monitorar resposta clínica após 48–72h. Se sem melhora → trocar"
+    },
+    {
+      "front": "Fatores de risco para ITU recorrente em mulheres",
+      "back": "Anatômicos:\n• Uretra curta\n• Distância uretra-ânus curta\nComportamentais:\n• Relação sexual (ITU pós-coital)\n• Uso de espermicidas\n• Retenção urinária pós-coital\nHormonais:\n• Pós-menopausa (↓ estrogênio → ↓ lactobacilos vaginais)\nFuncionais:\n• Resíduo pós-miccional (esvaziamento incompleto)\n• Litíase ou uropatia obstrutiva"
+    },
+    {
+      "front": "Pielonefrite crônica vs. aguda — diferenças",
+      "back": "PIELONEFRITE AGUDA:\n• Início súbito, febre alta, calafrios, dor lombar\n• Tratamento: antibiótico 7–14 dias\nPIELONEFRITE CRÔNICA:\n• Resultado de episódios recorrentes com cicatrizes\n• Rim pequeno, fibrótico, superfície irregular\n• Pode estar assintomática entre surtos\n• Diagnóstico: biópsia (fibrose intersticial + atrofia tubular)\n• Consequência: HAS renovascular e IRC"
+    },
+    {
+      "front": "Complicações da pielonefrite não tratada",
+      "back": "1. Abscesso renal (intra-renal) → febre persistente sem melhora com ATB\n2. Abscesso perirrenal (perinéfrico) → extensão para gordura perirenal\n3. Pionefrosis → pus em sistema coletor com hidronefrose\n4. Pielonefrite enfisematosa → bactérias produtoras de gás → gás intra-renal (diabéticos, imunossuprimidos)\n5. Sepse urinária → bacteremia a partir do foco renal\nTodas = urgências que requerem drenagem + ATB"
+    }
+  ]
+}

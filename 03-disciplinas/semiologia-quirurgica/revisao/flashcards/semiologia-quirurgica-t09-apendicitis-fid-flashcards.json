@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Cirúrgica P2 — T09: Apendicite e Afecções da FID",
+  "cards": [
+    {
+      "front": "Sinal de McBurney — localização e significado",
+      "back": "Localização: ponto de McBurney = 1/3 externo da linha entre o umbigo e a espinha ilíaca anterossuperior direita\nSignificado: dor à palpação nesse ponto indica irritação peritoneal na região do apêndice\nSensibilidade: ~70% na apendicite aguda"
+    },
+    {
+      "front": "Sinal de Blumberg (rebote) — técnica e significado",
+      "back": "Técnica: pressão profunda progressiva na FID → retirada RÁPIDA → dor intensa na retirada\nSignificado: irritação peritoneal (peritonite localizada)\nPositivo na apendicite, mas também em outras causas de peritonite\nAlternativa: Rovsing (pressão na FIE causa dor na FID)"
+    },
+    {
+      "front": "Sinal de Rovsing — o que é e mecanismo",
+      "back": "Técnica: pressão progressiva no quadrante inferior esquerdo → dor na fossa ilíaca DIREITA\nMecanismo: o gás colônico é deslocado para a direita, distendendo o cólon e ceco na área inflamada\nPositivo na apendicite aguda\nReforça o diagnóstico junto com McBurney e Blumberg"
+    },
+    {
+      "front": "Posição do apêndice — variantes e como cada uma se apresenta",
+      "back": "Retrocecal (64%): dor no flanco direito, sinal do psoas+\nPélvica (32%): dor suprapúbica, sintomas urinários/retais, Rovsing negativo\nPré-ileal: dor periumbilical, sintomas de trânsito\nSubcecal: dor FID mas mais inferior\nRetrocecal: mais difícil de diagnosticar clinicamente"
+    },
+    {
+      "front": "Sinal do Psoas — técnica e o que indica",
+      "back": "Técnica: paciente em decúbito lateral esquerdo → extensão passiva da coxa direita (ou flexão ativa contra resistência)\nPositivo (dor): apêndice retrocecal inflamado irritando o músculo psoas ilíaco\nTambém positivo em: abscesso do psoas, hematoma retroperitoneal"
+    },
+    {
+      "front": "Sinal do Obturador — técnica e o que indica",
+      "back": "Técnica: paciente em decúbito dorsal → flexão da coxa direita a 90° + rotação interna\nPositivo (dor hipogástrica): apêndice pélvico inflamado próximo ao músculo obturador interno\nTambém positivo em: abscesso pélvico, ovário comprometido"
+    },
+    {
+      "front": "Escore de Alvarado — componentes e interpretação",
+      "back": "M — Migração da dor (umbigo → FID): 1 pt\nA — Anorexia: 1 pt\nN — Náusea/vômito: 1 pt\nT — Dor à palpação (tenderness) FID: 2 pts\nR — Rebote (Blumberg): 1 pt\nE — Elevação da temperatura > 37,3°C: 1 pt\nL — Leucocitose > 10.000: 2 pts\nTotal 10: ≥ 7 = alta probabilidade (cirurgia); 4–6 = duvidoso (TC); ≤ 3 = baixa probabilidade"
+    },
+    {
+      "front": "Progressão da dor na apendicite aguda — padrão clássico",
+      "back": "1. Início: dor periumbilical difusa, cólica (horas 0–12)\n2. Migração: dor se localiza na FID/ponto de McBurney (horas 12–24)\n3. Peritonite: dor contínua, defesa muscular, abdome em tábua (se perfuração)\nMigração da dor periumbilical → FID = sinal clássico de apendicite (1 ponto no Alvarado)"
+    },
+    {
+      "front": "Diagnóstico diferencial da dor na FID em mulher jovem",
+      "back": "• Apendicite aguda\n• Dor mittelschmerz (dor ovulatória)\n• Salpingite/DIP (doença inflamatória pélvica)\n• Gravidez ectópica (DESCARTAR → beta-hCG urgente)\n• Cisto de ovário torcido\n• Torção de ovário\n• Doença de Crohn (ileíte terminal)\nEm mulher em idade fértil: sempre beta-hCG antes de qualquer procedimento"
+    },
+    {
+      "front": "Complicações da apendicite não tratada",
+      "back": "1. Perfuração (6–24h após início): peritonite localizada\n2. Abscesso periapendicular: plastron apendicular (massa palpável)\n3. Peritonite generalizada: abdome em tábua, sepse\n4. Pileflebite (trombose séptica da veia porta): icterícia, hepatite séptica\nPlastron: massa inflamatória formada pelo omento e alças — NÃO operar na fase aguda"
+    },
+    {
+      "front": "Diagnóstico por imagem na suspeita de apendicite",
+      "back": "TC abdome com contraste: padrão ouro — sensibilidade 94–98%\nUSSG (ultrassom): operador-dependente, sensibilidade 85%; preferido em grávidas e crianças (sem radiação)\nCritérios de TC: apêndice > 6 mm de diâmetro, não compressível, gordura periapendicular, apendicólito\nRMN: alternativa em grávidas quando USG inconclusivo"
+    },
+    {
+      "front": "Apendicite em populações especiais — grávidas e idosos",
+      "back": "Grávidas: apêndice deslocado superior e lateralmente → dor não na FID clássica; sinais peritoneais mascarados; TC limitada → usar USG ou RMN; mortalidade fetal alta na perfuração\nIdosos: apresentação atípica frequente; febre pode estar ausente; perfuração mais precoce; mortalidade maior; TC indicada mais cedo"
+    }
+  ]
+}

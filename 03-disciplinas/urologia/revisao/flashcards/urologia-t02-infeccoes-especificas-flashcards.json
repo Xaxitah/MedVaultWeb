@@ -1,0 +1,53 @@
+{
+  "title": "Urologia — T02: Infecções Específicas (Tuberculose Geniturinária)",
+  "cards": [
+    {
+      "front": "Infecção inespecífica vs. infecção específica — conceito fundamental",
+      "back": "INESPECÍFICA (Tema 01):\n• Vários germes possíveis (E. coli, Klebsiella, Proteus...)\n• Sintomas parecidos independente do germe\nESPECÍFICA (Tema 02):\n• UM germe específico (Mycobacterium tuberculosis)\n• Manifestações VARIÁVEIS conforme o órgão acometido\nMnemônico: 'Inespecífica = sintomas parecidos; Específica = germe único, sintomas variados'"
+    },
+    {
+      "front": "Via de disseminação da tuberculose geniturinária",
+      "back": "Via HEMATOGÊNICA: foco pulmonar → corrente sanguínea → rim\n(contrário da ITU inespecífica que é via ascendente)\nSequência:\n1. TB pulmonar primária (foco de Ghon)\n2. Bacteriemia → micobactéria semeia no rim\n3. Rim → ureter (por contiguidade/urina infectada)\n4. Ureter → bexiga\n5. Bexiga → genitais (masculino: epidídimo/próstata)\nOBS: início renal pode ser assintomático por anos"
+    },
+    {
+      "front": "Apresentação clínica inicial da tuberculose renal",
+      "back": "Característicamente: ASSINTOMÁTICA no início\nSó com progressão surgem sintomas:\n• Disuria, polaquiuria, urgência miccional (quando atinge bexiga)\n• Hematúria microscópica\n• Dor lombar vaga (tardia)\nAchado clássico de suspeita: piuria estéril\n(leucócitos na urina sem crescimento em cultura comum)\nA TB renal pode estar avançada sem nenhum sintoma urinário"
+    },
+    {
+      "front": "Tuberculose vesical — consequência mais grave",
+      "back": "BEXIGA RETRAÍDA (microbexiga)\nMecanismo: inflamação granulomatosa crônica → fibrose extensa da parede vesical → bexiga rígida com capacidade muito reduzida\nClínica:\n• Polaquiúria intensa (urina pequenos volumes muito frequentemente)\n• Urgência miccional\n• Tenesmo vesical\nTratamento: drenagem + tuberculostaticos + eventual cistoplastia de aumento"
+    },
+    {
+      "front": "Tuberculose ureteral — achado radiológico característico",
+      "back": "Ureter 'em rosário': alternância de estenoses e dilatações ao longo do ureter\nMecanismo: inflamação granulomatosa em pontos múltiplos → fibrose segmentar\nVisível em: urografia excretora, TC com contraste\nConsequências:\n• Hidronefrose por obstrução progressiva\n• Perda progressiva de função renal\n• Ureter pode calcificar (aspecto de cano de chumbo)"
+    },
+    {
+      "front": "Órgãos geniturinários afetados pela TB — em ordem",
+      "back": "1. RIM (primeiro — via hematogênica)\n2. URETER (contiguidade)\n3. BEXIGA (contiguidade)\n4. EPIDÍDIMO (masculino — mais destacado pela aula)\n5. TESTÍCULO (orquiepididimite)\n6. PRÓSTATA\n7. PÊNIS (mais raro)\nNa mulher: trompas e endométrio (infertilidade)\nMnemônico: 'Do rim desce até o pênis'"
+    },
+    {
+      "front": "Tuberculose do epidídimo — características diagnósticas",
+      "back": "Forma mais comum de TB genital masculina segundo a aula\nClínica:\n• Curso CRÔNICO (não agudo como epididimite bacteriana)\n• Pouca dor (ou indolor)\n• Nódulos palpáveis no epidídimo\n• FISTULIZAÇÃO escrotal → seio escrotal = sinal característico\nDiferencial com epididimite bacteriana:\n• Bacteriana: aguda, muito dolorosa, edema e eritema\n• TB: crônica, pouco dolorosa, nódulos, fistulização\nDiagnóstico: histopatológico (granuloma com necrose caseosa)"
+    },
+    {
+      "front": "Prova da tuberculina (PPD) — valor nas perguntas da aula de Urologia",
+      "back": "Valor utilizado nas perguntas da aula: ≥ 15 mm = positivo\nLeitura: 48–72h após injeção intradérmica de PPD\nCortes gerais (para referência):\n• ≥ 5 mm: imunossuprimidos, HIV, contato recente\n• ≥ 10 mm: grupos de risco moderado\n• ≥ 15 mm: população geral sem fatores de risco\nImportante: PPD positivo indica infecção — não necessariamente doença ativa"
+    },
+    {
+      "front": "Diagnóstico laboratorial da tuberculose urinária",
+      "back": "Cultura de urina específica para Mycobacterium tuberculosis\n• Urina de 3 primeiros jatos matinais em 3 dias consecutivos\n• Meio de Löwenstein-Jensen: crescimento em 3–8 semanas\n• PCR para TB: mais rápido (48h)\nAchados no EGO: piuria + pH ácido + hematúria (piuria estéril clássica)\nBiópsia: de lesão vesical ou ureteral mostra granuloma com necrose caseosa\nUrografia/TC: ureter em rosário, cavitações renais, calcificações"
+    },
+    {
+      "front": "Tratamento da tuberculose geniturinária",
+      "back": "Esquema tuberculostático padrão (mesmos da TB pulmonar):\nFase intensiva (2 meses): RIPE\n• R = Rifampicina\n• I = Isoniazida\n• P = Pirazinamida\n• E = Etambutol\nFase de manutenção (4 meses): RI\n• R = Rifampicina\n• I = Isoniazida\nTotal: 6 meses\nCirurgia: nefrectomia (rim destruído), derivação urinária (estenose), cistoplastia (microbexiga)"
+    },
+    {
+      "front": "Como distinguir TB geniturinária de outras causas de piuria na prova",
+      "back": "Pistas para TB geniturinária:\n✓ História de TB pulmonar (prévia ou atual)\n✓ Piuria estéril (leucócitos sem crescimento em cultura bacteriana comum)\n✓ Urina ácida com piuria\n✓ Hematúria microscópica\n✓ Fistulização escrotal (homem)\n✓ PPD ≥ 15 mm\n✓ Ureter em rosário na imagem\n✓ Bexiga retraída (TB grave)\nSinaliza TB: paciente com TB pulmonar + qualquer sintoma urinário = investigar TB geniturinária"
+    },
+    {
+      "front": "Candidúria e actinomicose urogenital — posição na aula",
+      "back": "São CONTEÚDO DO LIVRO — não o núcleo da aula de infecções específicas\nCandidúria:\n• Fungo Candida spp. na urina\n• Risco: cateter, antibiótico prolongado, imunossuprimidos, diabéticos\n• Diagnóstico: EGO + urocultura fungos\n• Tratamento: fluconazol\nActinomicose:\n• Actinomyces israelii — bactéria anaeróbia filamentosa\n• Rara no trato urinário\n• Pode causar abscesso com fistulização (sulfa de enxofre)\nPara prova: foco em TB geniturinária"
+    }
+  ]
+}

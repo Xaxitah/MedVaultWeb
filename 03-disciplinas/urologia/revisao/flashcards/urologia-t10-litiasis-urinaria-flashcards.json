@@ -1,0 +1,53 @@
+{
+  "title": "Urologia — T10: Litíase Urinária (Nefrolitíase / Urolitíase)",
+  "cards": [
+    {
+      "front": "Tipos de cálculos urinários — composição, frequência e radiopacidade",
+      "back": "| Tipo | Frequência | Radiopacidade |\n|---|---|---|\n| Oxalato de cálcio | 70–80% | Radiopaco |\n| Fosfato de cálcio | 10% | Radiopaco |\n| Estruvita | 5–10% | Radiopaco |\n| Ácido úrico | 5–10% | Radiolúcido |\n| Cistina | 1–2% | Radiolúcido/levemente |\nRegra: Ácido úrico e cistina = radiolúcidos (não aparecem na Rx simples → só na TC)"
+    },
+    {
+      "front": "Cólica renal — apresentação clínica clássica",
+      "back": "Dor: lombar/flancolomboflancoinguinal + genitália\n• Início SÚBITO e INTENSO\n• Em cólica (oscila mas não cessa totalmente)\n• Irradia acompanhando o trajeto do ureter\n• Sem posição de alívio → paciente AGITADO (diferente da peritonite: imóvel)\nSintomas associados:\n• Hematúria microscópica (85% dos casos)\n• Náusea e vômito\n• Sudorese\n• Disuria (se cálculo na JUV)\nGiordano positivo ipsilateral"
+    },
+    {
+      "front": "Três estreitamentos do ureter onde cálculos se impactam",
+      "back": "1. Junção Ureteropélvica (JUP): saída da pelve renal\n2. Cruzamento com vasos ilíacos: na pelve\n3. Junção Ureterovesical (JUV): entrada na bexiga — A MAIS ESTREITA e mais comum\nProbabilidade de eliminação espontânea:\n• Cálculo < 5 mm: 90% elimina espontaneamente\n• Cálculo 5–10 mm: ~50%\n• Cálculo > 10 mm: < 10% elimina espontaneamente"
+    },
+    {
+      "front": "Diagnóstico por imagem na litíase urinária",
+      "back": "TC sem contraste (uro-TC): PADRÃO OURO\n• Sensibilidade 95–98%, especificidade 96–100%\n• Detecta TODOS os tipos (inclusive radiolúcidos)\n• Rápido, sem preparo\nRx simples de abdome:\n• Só detecta radiopacos (oxalato, fosfato, estruvita)\n• Não detecta ácido úrico nem cistina\nUltrassom renal:\n• Cálculos renais > 5 mm — boa sensibilidade\n• Cálculos ureterais — baixa sensibilidade\n• Indicado: grávidas, crianças (sem radiação)"
+    },
+    {
+      "front": "Cálculo coraliforme — o que é e composição mais comum",
+      "back": "Definição: cálculo que ocupa toda ou maior parte da pelve renal e cálices\nAparência na Rx: molde da via excretora = aspecto de coral\nComposição mais comum: ESTRUVITA (fosfato amônio magnesiano)\nFormação: ITU por bactérias produtoras de urease (Proteus mirabilis!)\nUrease → NH3 → alcaliniza urina → precipita estruvita\nTratamento: nefrolitotomia percutânea (PCNL) + antibiótico\nNão usar LECO (baixa eficácia para cálculos grandes)"
+    },
+    {
+      "front": "Fatores metabólicos na litíase de cálcio",
+      "back": "Hipercalciúria (mais comum):\n• Absortiva: ↑ absorção intestinal de cálcio\n• Renal: ↓ reabsorção tubular de cálcio\nHiperoxalúria:\n• Primária (hereditária) ou secundária (dieta rica em espinafre/cacau)\nHiperuricosúria:\n• Promove nucleação heterogênea do oxalato de cálcio\nHipocitratúria:\n• Citrato é INIBIDOR da cristalização → sua falta = maior risco\nProfilaxia: hidratação (diurese > 2 L/dia), citrato de potássio, dieta"
+    },
+    {
+      "front": "Pontos renoureterais de Álvarez, Bazy e Pasteau",
+      "back": "Álvarez (superior/renal): ângulo costovertebral\n→ Corresponde à JUP e pelve renal\nBazy (médio/ureteral): cruzamento do ureter com vasos ilíacos\n→ ~5 cm abaixo e lateral ao umbigo\nPassteau (inferior/justaovesical): próximo ao meato ureteral\n→ Acima do púbis, lateral à linha média\nUso: dor à palpação desses pontos orienta localização do cálculo no ureter"
+    },
+    {
+      "front": "Indicações de intervenção na litíase — quando não esperar eliminação espontânea",
+      "back": "INTERVENÇÃO obrigatória:\n1. Dor refratária ao analgésico\n2. Pielonefrite obstrutiva (infecção + obstrução = EMERGÊNCIA)\n3. Cálculo > 10 mm (< 10% elimina espontaneamente)\n4. Rim único obstruído\n5. Ausência de progressão após 4–6 semanas\nTratamento EXPECTANTE (esperar): cálculo < 5 mm, sem infecção, dor controlável\nHidratação + analgésico + alfa-bloqueador (facilita eliminação)"
+    },
+    {
+      "front": "Litotripsia extracorpórea por ondas de choque (LECO) — indicações e limitações",
+      "back": "INDICADA para:\n• Cálculos renais < 2 cm\n• Cálculos ureterais proximais < 1 cm\n• Composição favorável (não cistina, não brushita)\nCONTRAINDICADA em:\n• Gravidez\n• Coagulopatia\n• Obstrução distal ao cálculo (fragmentos não passam)\n• Cálculos muito duros (cistina, brushita)\nMenos eficaz:\n• Coraliformes (grandes — preferir PCNL)\nVantagem: não invasiva"
+    },
+    {
+      "front": "Nefrolitotomia percutânea (PCNL) — indicações",
+      "back": "Indicada para:\n• Cálculos renais > 2 cm\n• Cálculos coraliformes\n• Cálculos de cálice inferior > 1 cm (difícil eliminação pela LECO)\n• Falha da LECO\n• Cistina ou brushita (resistentes às ondas de choque)\nTécnica: punção percutânea do rim → dilatação do trajeto → fragmentação e extração do cálculo\nComplicações: hemorragia, infecção, fístula"
+    },
+    {
+      "front": "Hematúria na litíase — tipos e interpretação",
+      "back": "Tipo mais comum: MICROSCÓPICA (microhematúria) em 85% dos casos\nMacroscópica: pode ocorrer, geralmente transitória\nAusência de hematúria: não exclui litíase (~15% dos casos)\nHematúria de 3 copos:\n• Total (todos os 3): sugestiva de rim ou bexiga\n• Inicial (1° copo): uretra, próstata\n• Terminal (3° copo): bexiga/trígono\nNa litíase: geralmente hematúria total por traumatismo da mucosa ureteral"
+    },
+    {
+      "front": "Profilaxia da litíase urinária recorrente",
+      "back": "Medidas gerais (TODOS os tipos):\n• Hidratação intensa: diurese ≥ 2 L/dia\n• Reduzir sal na dieta (hipercalciúria absortiva)\nEspecífico por tipo:\n• Oxalato de cálcio: citrato de potássio + tiazídico (hipercalciúria) + evitar oxalato\n• Ácido úrico: alopurinol + alcalinizar urina (citrato/bicarbonato) → cálculo pode DISSOLVER\n• Estruvita: tratar a ITU subjacente (erradicar urease-positivo)\n• Cistina: hidratação intensa + alcalinização + D-penicilamina\nNOTA: cálculo de ácido úrico é o ÚNICO que pode ser dissolvido clinicamente"
+    }
+  ]
+}

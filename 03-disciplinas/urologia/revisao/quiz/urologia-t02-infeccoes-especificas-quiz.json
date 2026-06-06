@@ -1,0 +1,105 @@
+{
+  "title": "Urologia — T02: Infecções Específicas (Tuberculose Geniturinária)",
+  "questions": [
+    {
+      "question": "Qual a principal diferença conceitual entre infecção inespecífica e infecção específica do trato urinário?",
+      "answerOptions": [
+        {"text": "Inespecífica: vários germes possíveis com sintomas parecidos. Específica: um germe específico que causa manifestações diferentes conforme o órgão acometido", "isCorrect": true, "rationale": "Na infecção inespecífica, vários germes (E. coli, Klebsiella, Proteus) causam quadros semelhantes. Na infecção específica (como tuberculose), UM germe específico (Mycobacterium tuberculosis) causa manifestações variáveis dependendo do órgão acometido (rim, bexiga, epidídimo)."},
+        {"text": "Inespecífica: infecção sistêmica grave; específica: infecção localizada", "isCorrect": false, "rationale": "A distinção é sobre o germe — não sobre a gravidade ou localização da infecção."},
+        {"text": "Inespecífica: tratamento cirúrgico; específica: tratamento clínico", "isCorrect": false, "rationale": "Não é essa a distinção. Ambas podem ser tratadas clinicamente, cirurgicamente ou ambos, dependendo do caso."},
+        {"text": "Inespecífica: causa bacteriana; específica: causa viral", "isCorrect": false, "rationale": "Tuberculose geniturinária é bacteriana (Mycobacterium tuberculosis). A distinção não é bactéria vs. vírus."}
+      ],
+      "hint": "Inespecífica = vários germes, quadro parecido. Específica = UM germe, manifestações variáveis."
+    },
+    {
+      "question": "Qual a via de disseminação da tuberculose do pulmão para o sistema geniturinário?",
+      "answerOptions": [
+        {"text": "Via hematogênica: foco pulmonar → corrente sanguínea → rim (primeiro órgão atingido do sistema geniturinário)", "isCorrect": true, "rationale": "A tuberculose geniturinária se inicia por disseminação hematogênica a partir de um foco pulmonar (ou menos frequentemente ósseo). O rim é o primeiro órgão afetado. Daí pode progredir para ureter, bexiga e genitais por contiguidade/via urinária descendente."},
+        {"text": "Via ascendente: uretra → bexiga → ureter → rim", "isCorrect": false, "rationale": "A via ascendente é das ITU inespecíficas comuns — não da tuberculose geniturinária."},
+        {"text": "Via linfática: gânglios mediastinais → cadeia para-aórtica → rim", "isCorrect": false, "rationale": "Embora a via linfática seja possível, a via hematogênica é a principal na tuberculose geniturinária."},
+        {"text": "Contato direto: o bacilo migra do intestino para os órgãos pélvicos por contiguidade", "isCorrect": false, "rationale": "A TB intestinal pode comprometer órgãos pélvicos por contiguidade em casos avançados, mas não é a via principal da TB geniturinária."}
+      ],
+      "hint": "TB geniturinária = via hematogênica. Pulmão → sangue → rim (primeiro afetado)."
+    },
+    {
+      "question": "Qual é a apresentação clínica típica da tuberculose renal no seu início?",
+      "answerOptions": [
+        {"text": "Habitualmente assintomática no início — o rim pode estar gravemente comprometido sem sintomas urinários evidentes", "isCorrect": true, "rationale": "A tuberculose renal é classicamente silenciosa no início. A lesão pode evoluir com cavitações renais antes de causar sintomas urinários. Isso retarda o diagnóstico. Só quando progride para ureter e bexiga aparecem sintomas irritativos."},
+        {"text": "Dor lombar intensa + febre alta + calafrios — quadro idêntico à pielonefrite bacteriana aguda", "isCorrect": false, "rationale": "A TB renal NÃO se apresenta como pielonefrite aguda. Seu início é insidioso e assintomático."},
+        {"text": "Hematúria total macroscópica com coágulos — diagnóstico imediato por urografia", "isCorrect": false, "rationale": "Hematúria pode ocorrer, mas o início é assintomático — não a apresentação clássica inicial."},
+        {"text": "Cólica renal aguda com expulsão de cálculos — TB renal causa nefrolitíase como primeira manifestação", "isCorrect": false, "rationale": "TB renal pode causar calcificações tardias, mas não cólica renal como primeira manifestação."}
+      ],
+      "hint": "TB renal início = assintomática. Silenciosa até progredir para ureter e bexiga."
+    },
+    {
+      "question": "O que acontece com a bexiga nos casos graves de tuberculose vesical?",
+      "answerOptions": [
+        {"text": "A bexiga se retrai (microbexiga) — fibrose progressiva pela inflamação granulomatosa reduz drasticamente a capacidade vesical", "isCorrect": true, "rationale": "A tuberculose vesical grave causa fibrose extensa da parede vesical. A bexiga fica rígida e com capacidade muito reduzida (microbexiga ou bexiga retraída). Clinicamente: urgência miccional intensa, polaquiúria grave, disúria."},
+        {"text": "A bexiga dilata progressivamente por retenção urinária causada pela estenose uretral", "isCorrect": false, "rationale": "A TB vesical causa retração (fibrose) — não dilatação."},
+        {"text": "A bexiga forma divertículos múltiplos como consequência da cistite tuberculosa", "isCorrect": false, "rationale": "Divertículos são sequela de obstrução crônica do fluxo (hiperplasia prostática, etc.) — não da TB vesical."},
+        {"text": "A bexiga neovasculariza e desenvolve padrão semelhante ao tumor de bexiga invasivo", "isCorrect": false, "rationale": "TB vesical forma granulomas e causa fibrose — não neovascularização tumoral."}
+      ],
+      "hint": "TB vesical grave = bexiga retraída (fibrose). Microbexiga = capacidade vesical muito reduzida."
+    },
+    {
+      "question": "Qual o valor de reação à tuberculina (PPD) considerado positivo nas perguntas da aula de urologia?",
+      "answerOptions": [
+        {"text": "15 mm — conforme as perguntas da aula, reação ≥ 15 mm foi o valor utilizado como critério", "isCorrect": true, "rationale": "As perguntas da aula de infecções específicas utilizaram 15 mm como critério de positividade da tuberculina. Na prática geral existem cortes diferentes (≥5, ≥10, ≥15 mm) dependendo do grupo de risco, mas para prova desta disciplina: 15 mm."},
+        {"text": "5 mm — qualquer enduração indica TB em paciente imunocomprometido", "isCorrect": false, "rationale": "5 mm é o corte para imunossuprimidos, mas não foi o valor utilizado nas perguntas da aula desta disciplina."},
+        {"text": "10 mm — valor padrão para população em geral", "isCorrect": false, "rationale": "10 mm é o corte padrão para grupos de risco moderado, mas as perguntas da aula usaram 15 mm."},
+        {"text": "20 mm — só diagnóstico se houver enduração muito expressiva", "isCorrect": false, "rationale": "Não existe corte de 20 mm nos critérios diagnósticos da tuberculina."}
+      ],
+      "hint": "Perguntas da aula: tuberculina ≥ 15 mm = positiva."
+    },
+    {
+      "question": "Qual órgão do sistema genital masculino é mais destacado na tuberculose genital segundo a aula?",
+      "answerOptions": [
+        {"text": "Epidídimo — é o órgão genital masculino mais frequentemente acometido; pode fistulizar formando seio escrotal", "isCorrect": true, "rationale": "A aula destacou o epidídimo como ponto de partida da tuberculose genital masculina. A epididimite tuberculosa pode evoluir para orquiepididimite, fistulização escrotal (seio escrotal) e fibrose. O epidídimo tem aspecto nodular ao exame."},
+        {"text": "Testículo — a orquite tuberculosa é a manifestação mais comum e sempre precede o acometimento do epidídimo", "isCorrect": false, "rationale": "Embora o testículo possa ser afetado (orquiepididimite), a aula destacou o epidídimo como o mais envolvido. A afirmação de que 'sempre precede' também é incorreta."},
+        {"text": "Próstata — a tuberculose prostática causa abscesso e é a porta de entrada genital masculina", "isCorrect": false, "rationale": "A próstata pode ser acometida, mas o epidídimo foi o destaque da aula como estrutura genital mais afetada."},
+        {"text": "Uretra — a uretrite tuberculosa causa estenose como primeira manifestação genital masculina", "isCorrect": false, "rationale": "Uretrite tuberculosa é rara. O epidídimo é o foco genital masculino destacado na aula."}
+      ],
+      "hint": "TB genital masculina = epidídimo. Fistulização escrotal (seio escrotal) é achado característico."
+    },
+    {
+      "question": "Qual achado radiológico/urógrafo é característico da tuberculose ureteral?",
+      "answerOptions": [
+        {"text": "Ureter 'em rosário' — alternância de estenoses e dilatações ao longo do ureter pela fibrose granulomatosa", "isCorrect": true, "rationale": "A tuberculose ureteral causa inflamação granulomatosa e fibrose em múltiplos pontos, criando um padrão de alternância estenose-dilatação. Na urografia excretora, esse padrão lembra um rosário. Pode evoluir para hidronefrose e perda da função renal."},
+        {"text": "Ureter duplo bilateral — malformação congênita associada à predisposição para TB ureteral", "isCorrect": false, "rationale": "Ureter duplo é malformação congênita — não achado de TB ureteral."},
+        {"text": "Ureter dilatado em toda sua extensão — megaureter por disfunção do meato ureteral", "isCorrect": false, "rationale": "Megaureter homogêneo não é o padrão da TB ureteral — que causa estenoses segmentares em rosário."},
+        {"text": "Ausência do ureter na urografia — TB destrói o ureter deixando apenas fragmentos", "isCorrect": false, "rationale": "A TB não destrói o ureter completamente — causa estenoses segmentares com o padrão em rosário."}
+      ],
+      "hint": "TB ureteral = ureter 'em rosário' = estenoses + dilatações alternadas."
+    },
+    {
+      "question": "Qual a diferença entre epididimite tuberculosa e epididimite bacteriana comum?",
+      "answerOptions": [
+        {"text": "TB: crônica, indolor ou pouco dolorosa, pode fistulizar (seio escrotal), nodular; Bacteriana: aguda, muito dolorosa, sem fistulização espontânea", "isCorrect": true, "rationale": "A epididimite tuberculosa tem curso crônico, geralmente sem dor intensa, com tendência à fistulização escrotal (seio escrotal) e nodularidade. A epididimite bacteriana comum (ex: por E. coli ou Chlamydia) é aguda, muito dolorosa, com edema e eritema escrotal marcados."},
+        {"text": "Ambas se apresentam da mesma forma — o diagnóstico diferencial é só microbiológico", "isCorrect": false, "rationale": "As formas diferem clinicamente: TB = crônica + fistulização; Bacteriana = aguda + dor intensa."},
+        {"text": "TB acomete só o testículo; bacteriana só o epidídimo", "isCorrect": false, "rationale": "TB pode afetar epidídimo e testículo (orquiepididimite); bacteriana também pode progredir do epidídimo para o testículo."},
+        {"text": "TB causa edema escrotal agudo com sinal de Prehn positivo, igual à epididimite bacteriana", "isCorrect": false, "rationale": "Sinal de Prehn (alívio da dor ao elevar o escroto) é de epididimite aguda bacteriana. TB escrotal é crônica."}
+      ],
+      "hint": "TB = crônica + fistulização escrotal. Bacteriana = aguda + muito dolorosa."
+    },
+    {
+      "question": "Quais são os órgãos do sistema geniturinário que podem ser acometidos pela tuberculose, em ordem do mais para o menos frequente?",
+      "answerOptions": [
+        {"text": "Rim (mais frequente) → ureter → bexiga → próstata → epidídimo → testículo → pênis (menos frequente)", "isCorrect": true, "rationale": "A disseminação hematogênica atinge primeiro o rim. Daí a infecção desce pela urina infectada (rim → ureter → bexiga). Os genitais masculinos são afetados separadamente ou em continuidade. O pênis é o órgão menos acometido."},
+        {"text": "Bexiga → ureter → rim — a via é sempre ascendente na TB", "isCorrect": false, "rationale": "A TB geniturinária tem via descendente (hematogênica para o rim, depois urinária para baixo) — não ascendente."},
+        {"text": "Epidídimo → próstata → bexiga → rim — começa no genital e sobe", "isCorrect": false, "rationale": "A sequência é invertida. O rim é o primeiro afetado pela disseminação hematogênica."},
+        {"text": "Próstata → ureter → rim → bexiga — começa na próstata por contiguidade com o reto", "isCorrect": false, "rationale": "A próstata não é o ponto de entrada — o rim é o primeiro afetado pela via hematogênica."}
+      ],
+      "hint": "TB geniturinária começa no rim (hematogênico). Depois desce: ureter → bexiga → genitais."
+    },
+    {
+      "question": "A tuberculose geniturinária pode ser assintomática por longo período. Quando devemos investigá-la ativamente?",
+      "answerOptions": [
+        {"text": "Em paciente com tuberculose pulmonar (ou história de TB prévia), mesmo sem sintomas urinários — e em caso de piuria sem germe em cultura comum (piuria estéril)", "isCorrect": true, "rationale": "Todo paciente com TB pulmonar deve ser investigado para TB geniturinária dado o risco de disseminação hematogênica. A piuria estéril (leucócitos na urina sem crescimento em cultura comum para bactérias) é sinal clássico que deve levantar suspeita de TB urinária — requer cultura específica para Mycobacterium."},
+        {"text": "Apenas se houver cálculos renais bilaterais — esses indicam TB renal avançada", "isCorrect": false, "rationale": "Cálculos renais podem ser sequela de TB, mas não são o único critério de investigação."},
+        {"text": "Somente em homens com epididimite resistente a antibiótico — único grupo de risco", "isCorrect": false, "rationale": "A TB geniturinária afeta homens e mulheres, e a piuria estéril em paciente com TB pulmonar é indicação mais ampla."},
+        {"text": "Apenas em pacientes HIV positivos — a TB geniturinária é exclusiva de imunossuprimidos", "isCorrect": false, "rationale": "A TB geniturinária pode ocorrer em imunocompetentes — não é exclusiva de HIV."}
+      ],
+      "hint": "Investigar TB geniturinária: paciente com TB pulmonar + piuria estéril (sem crescimento em cultura comum)."
+    }
+  ]
+}

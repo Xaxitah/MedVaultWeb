@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Cirúrgica P2 — T10: Afecções da FII e Diverticulite",
+  "cards": [
+    {
+      "front": "Diverticulite aguda — definição e fisiopatologia",
+      "back": "Divertículo: herniação da mucosa e submucosa através de pontos de fraqueza da parede colônica (onde vasos penetrantes entram)\nDiverticulite: inflamação/infecção de um divertículo (obstrução por fecálito → necrose → micro/macroperfuração)\nLocalização mais comum: cólon sigmoide (95%)\nPredispõe: dieta pobre em fibras, constipação, envelhecimento"
+    },
+    {
+      "front": "Apresentação clínica da diverticulite aguda",
+      "back": "Dor: FII (sigmoide), contínua, progressiva — 'apendicite do lado esquerdo'\nFebre: 38–39°C\nAlteração do hábito intestinal: constipação ou diarreia\nNáusea/vômito\nAo exame: dor à palpação na FII, defesa muscular, massa palpável (abscesso)\nLaboratório: leucocitose com desvio à esquerda"
+    },
+    {
+      "front": "Classificação de Hinchey para diverticulite aguda complicada",
+      "back": "Ia: inflamação pericolônica / abscesso mesentérico pequeno\nIb: abscesso pericolônico ou pericólico\nII: abscesso pélvico, intra-abdominal ou retroperitoneal distante\nIII: peritonite purulenta generalizada (perfuração livre de abscesso)\nIV: peritonite fecal (perfuração livre de cólon não obstruído)\nTratamento: Ia-Ib: ATB + drenagem; III-IV: cirurgia de Hartmann"
+    },
+    {
+      "front": "Diagnóstico por imagem na diverticulite aguda",
+      "back": "TC abdome e pelve com contraste: exame de escolha\nAchados: espessamento da parede do sigmoide (> 4 mm), densificação da gordura pericolônica, divertículos visíveis, possível coleção/abscesso\nUSSG: pode mostrar espessamento de alça mas menos sensível\nColonoscopia: CONTRAINDICADA na fase aguda (risco de perfuração)"
+    },
+    {
+      "front": "Diagnóstico diferencial da dor na FII",
+      "back": "• Diverticulite aguda (adultos > 40 anos)\n• Tumor de cólon sigmóide (pode simular)\n• Doença inflamatória intestinal (Crohn, RCU)\n• Hérnia inguinal encarcerada/estrangulada\n• Em mulheres: torção de ovário, cisto, DIP\n• Salpingite esquerda\n• Isquemia do cólon\n• Obstrução do cólon\nTC resolve a maioria dos diagnósticos diferenciais"
+    },
+    {
+      "front": "Fístula diverticular — tipos e clínica",
+      "back": "Fístula colovesical: mais comum (em homens); pneumatúria + fecalúria + infecções urinárias recorrentes\nFístula colovaginal: em mulheres; saída de fezes pela vagina\nFístula colocutânea: rara; drenagem cutânea\nFístula coloentérica: diarreia crônica, má absorção\nDiagnóstico: TC (gás na bexiga sem cateter → colovesical), cistoscopia, enema opaco"
+    },
+    {
+      "front": "Câncer de cólon sigmoide — como se diferencia da diverticulite?",
+      "back": "Clínica: alteração progressiva do hábito intestinal, fezes com sangue, anemia ferropriva, perda de peso\nDiverticulite: início agudo, febre, sem sangramento\nDiagnóstico: colonoscopia + biópsia (após resolução da fase aguda na diverticulite)\nRegra: toda diverticulite aguda resolvida → colonoscopia 4–6 semanas depois para excluir tumor\nTC pode sugerir mas não confirma câncer"
+    },
+    {
+      "front": "Síndrome de Hartmann — o que é?",
+      "back": "Cirurgia de urgência para diverticulite perfurada (Hinchey III-IV) ou tumor obstrutivo\nProcedimento:\n1. Ressecção do segmento doente (sigmoide)\n2. Colostomia terminal (cólon proximal)\n3. Fechamento do coto retal (não anastomose)\nReconstrução posterior (colostomia → anastomose) é possível em 2ª operação\nEvita anastomose em campo infectado/fecal"
+    },
+    {
+      "front": "Isquemia do cólon — apresentação e causas",
+      "back": "Causas: aterosclerose (mais comum), cirurgia aórtica, êmbolismo, trombose venosa, vólvulo\nLocalização frequente: ângulo esplênico ('watershed area' — zona de menor perfusão)\nClínica: dor abdominal súbita + hematoquesia (fezes com sangue vivo ou escuro)\nTC: espessamento da parede do cólon, 'thumb printing'\nColonoscopia: mucosa hemorrágica, eritema, úlceras (não fase aguda perfurada)"
+    },
+    {
+      "front": "Hérnia inguinal — tipos e diagnóstico",
+      "back": "Direta (adquirida): medial aos vasos epigástricos, fraqueza do assoalho do canal inguinal\nIndireta (congênita): lateral aos vasos, pelo anel interno → mais comum\nFemoral: abaixo do ligamento inguinal, mais frequente em mulheres\nExame: redutível ou irredutível; tosse aumenta a protrusão\nComplicações: encarceramento (não reduz) → estrangulamento (compromete vascularização) → urgência cirúrgica"
+    },
+    {
+      "front": "Sinal de Cope (psoas) na diverticulite vs apendicite",
+      "back": "Sinal do Psoas: extensão passiva da coxa causa dor\nNa apendicite retrocecal: positivo à DIREITA\nNa diverticulite sigmoide retroperitoneal: positivo à ESQUERDA\nSinal do Obturador na diverticulite pélvica: rotação interna da coxa esquerda causa dor\nMesmos sinais → lados opostos — dependem da localização da inflamação"
+    },
+    {
+      "front": "Vólvulo de sigmoide — clínica e tratamento",
+      "back": "Definição: torção do cólon sigmoide sobre seu próprio mesentério → obstrução em alça fechada\nClínica: distensão abdominal assimétrica maciça, dor, vômitos, parada de flatos/fezes\nRadiografia: sinal de 'grão de café' (sigmoide dilatado em forma de U invertido)\nTratamento: retossigmoidoscopia + descompressão urgente; se isquemia → cirurgia"
+    }
+  ]
+}

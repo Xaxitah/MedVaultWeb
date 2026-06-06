@@ -1,0 +1,105 @@
+{
+  "title": "Urologia — T10: Litíase Urinária (Nefrolitíase / Urolitíase)",
+  "questions": [
+    {
+      "question": "Qual o tipo de cálculo urinário mais comum e quais suas características radiológicas?",
+      "answerOptions": [
+        {"text": "Oxalato de cálcio (70–80% dos casos) — radiopaco, visível na radiografia simples", "isCorrect": true, "rationale": "Cálculos de oxalato de cálcio são os mais frequentes (70–80%). São radiopacos — aparecem claramente na radiografia simples de abdome. Os de fosfato de cálcio também são radiopacos. Cálculos de ácido úrico são radiolúcidos (não aparecem na Rx simples — visíveis só na TC)."},
+        {"text": "Ácido úrico (70% dos casos) — radiolúcido, só visível na TC", "isCorrect": false, "rationale": "Ácido úrico é frequente mas não é o mais comum. Sua característica radiolúcida está correta, mas a prevalência não."},
+        {"text": "Estruvita (fosfato amônio magnesiano) — o mais comum em mulheres jovens saudáveis", "isCorrect": false, "rationale": "Estruvita está associada a ITU por bactérias produtoras de urease — não é o tipo mais comum em geral."},
+        {"text": "Cistina — mais prevalente por ser de fácil formação em qualquer pH urinário", "isCorrect": false, "rationale": "Cistina é rara (1–2%) e ocorre por cistinúria hereditária — não é o tipo mais frequente."}
+      ],
+      "hint": "Cálculo mais comum = oxalato de cálcio (70–80%) = radiopaco."
+    },
+    {
+      "question": "Qual a apresentação clínica clássica da cólica renal?",
+      "answerOptions": [
+        {"text": "Dor lombar súbita intensa, em cólica, irradiando para flanco, abdome ipsilateral e genitália — sem posição de alívio, com agitação e hematúria", "isCorrect": true, "rationale": "A cólica renal é caracterizada por dor muito intensa, de início súbito, que irradia do ângulo costovertebral para o flanco, fossa ilíaca e genitália (seguindo o trajeto do ureter). O paciente não encontra posição de alívio (diferente da dor peritoneal, onde o paciente fica quieto). Hematúria microscópica ocorre em 85% dos casos."},
+        {"text": "Dor lombar contínua, progressiva, que piora ao deitar — alivia sentado inclinado para frente", "isCorrect": false, "rationale": "Dor contínua que piora ao deitar e melhora inclinado é sugestiva de pancreatite — não de cólica renal."},
+        {"text": "Dor lombar bilateral, surda e constante, associada a edema nos membros inferiores e hipertensão", "isCorrect": false, "rationale": "Dor lombar bilateral constante + edema + HAS sugere glomerulopatia ou insuficiência renal — não litíase."},
+        {"text": "Dor suprapúbica com disuria e polaquiuria — indica cálculo alojado na bexiga", "isCorrect": false, "rationale": "Dor suprapúbica com disúria pode ser cistite ou cálculo vesical, mas não é a apresentação clássica da cólica renal ureteral."}
+      ],
+      "hint": "Cólica renal = dor lomboflancoinguinal + agitação + sem posição de alívio + hematúria."
+    },
+    {
+      "question": "Qual exame de imagem é o padrão ouro para diagnóstico de litíase urinária?",
+      "answerOptions": [
+        {"text": "TC de abdome e pelve sem contraste (uro-TC / urotomografia) — detecta todos os tipos de cálculos com sensibilidade > 95%", "isCorrect": true, "rationale": "A TC sem contraste é o padrão ouro para litíase urinária: detecta cálculos de todos os tipos (inclusive os radiolúcidos de ácido úrico que não aparecem na Rx simples), avalia o rim, ureter e bexiga completamente, e pode detectar outras causas de dor lombar. Sensibilidade 95–98%, especificidade 96–100%."},
+        {"text": "Urografia excretora (UIV) — padrão ouro por mostrar toda a via excretora com contraste", "isCorrect": false, "rationale": "A UIV foi o padrão ouro historicamente, mas foi substituída pela TC sem contraste por ser mais rápida, sem necessidade de preparo e com maior sensibilidade."},
+        {"text": "Ultrassom renal bilateral — detecta todos os tipos de cálculos sem radiação", "isCorrect": false, "rationale": "O ultrassom detecta bem cálculos renais > 5 mm mas tem baixa sensibilidade para cálculos ureterais (especialmente médio-ureter). É útil em grávidas e crianças, mas não é o padrão ouro."},
+        {"text": "Radiografia simples de abdome — detecta todos os cálculos e é o exame inicial obrigatório", "isCorrect": false, "rationale": "Rx simples detecta apenas cálculos radiopacos (oxalato/fosfato de cálcio) — não detecta os radiolúcidos (ácido úrico). Não é mais o padrão ouro."}
+      ],
+      "hint": "TC sem contraste = padrão ouro para litíase. Detecta todos os tipos. Sensibilidade > 95%."
+    },
+    {
+      "question": "Em qual localização do ureter os cálculos tendem a se impactar com mais frequência e por quê?",
+      "answerOptions": [
+        {"text": "Junção ureterovesical (JUV) — estreitamento fisiológico mais importante; também: junção ureteropélvica (JUP) e cruzamento com vasos ilíacos", "isCorrect": true, "rationale": "Existem três estreitamentos naturais do ureter onde cálculos se impactam: (1) Junção ureteropélvica (JUP); (2) Cruzamento com os vasos ilíacos; (3) Junção ureterovesical (JUV) — a mais estreita e mais comum. Cálculos < 5 mm na JUV têm alta chance de eliminação espontânea."},
+        {"text": "Ureter médio lombar — no terço médio há curvatura que retém cálculos por gravidade", "isCorrect": false, "rationale": "O ureter médio não é o local mais frequente de impactação — os estreitamentos anatômicos são os três pontos descritos."},
+        {"text": "Pelve renal — é o espaço mais amplo e por isso retém cálculos antes de entrar no ureter", "isCorrect": false, "rationale": "A pelve renal retém cálculos grandes (coraliformes), mas os cálculos que causam cólica são aqueles que tentam passar pelo ureter e se impactam nos estreitamentos."},
+        {"text": "Junção ureteropélvica exclusivamente — único estreitamento anatômico significativo", "isCorrect": false, "rationale": "A JUP é um dos três estreitamentos — não o único. A JUV é a mais comum."}
+      ],
+      "hint": "3 estreitamentos: JUP + cruzamento ilíaco + JUV (mais comum). Cálculo < 5 mm na JUV = alta chance de passar espontaneamente."
+    },
+    {
+      "question": "Quais fatores de risco metabólicos predispõem à formação de cálculos de oxalato de cálcio?",
+      "answerOptions": [
+        {"text": "Hipercalciúria, hiperuricosúria, hiperoxalúria e hipocitratúria (citrato é inibidor da cristalização)", "isCorrect": true, "rationale": "Os principais fatores metabólicos para cálculos de cálcio são: hipercalciúria (excesso de cálcio na urina — mais comum), hiperoxalúria (excesso de oxalato — dieta rica em espinafre, cacau, etc.), hiperuricosúria (ácido úrico promove nucleação heterogênea do oxalato) e hipocitratúria (citrato é inibidor natural da cristalização)."},
+        {"text": "Hiperuricemia isolada — o ácido úrico sérico elevado causa cálculos de oxalato de cálcio diretamente", "isCorrect": false, "rationale": "Hiperuricemia causa cálculos de ácido úrico (não oxalato). A hiperuricosúria (ácido úrico na urina) pode promover nucleação do oxalato."},
+        {"text": "Infecção urinária recorrente por E. coli — produz amônia que cristaliza com oxalato", "isCorrect": false, "rationale": "E. coli não produz urease. Infecção por bactérias produtoras de urease (Proteus, Klebsiella) causa cálculos de estruvita — não de oxalato."},
+        {"text": "Hipofosfatúria e hipercloridria — excesso de fosfato urinário e acidez gástrica", "isCorrect": false, "rationale": "Estes não são os principais fatores para cálculos de oxalato de cálcio."}
+      ],
+      "hint": "Oxalato de cálcio: hipercalciúria + hiperoxalúria + hiperuricosúria + hipocitratúria."
+    },
+    {
+      "question": "O cálculo coraliforme — o que é e qual sua composição mais frequente?",
+      "answerOptions": [
+        {"text": "Cálculo que ocupa toda ou a maior parte da pelve renal e cálices — mais frequentemente de estruvita (fosfato amônio magnesiano), associado à ITU por bactérias produtoras de urease", "isCorrect": true, "rationale": "O cálculo coraliforme (staghorn) ocupa a pelve renal central e os cálices. A composição mais comum é estruvita — formada na presença de urina alcalina e amônia produzida por bactérias urease-positivas (Proteus mirabilis principalmente). Pode também ser de ácido úrico ou cistina."},
+        {"text": "Cálculo coraliforme é o mesmo que cálculo de oxalato — só muda o nome pelo tamanho", "isCorrect": false, "rationale": "Coraliforme descreve a morfologia (ocupa pelve + cálices) — não a composição. A composição mais comum é estruvita, não oxalato."},
+        {"text": "Cálculo de cistina que cresce lentamente e sempre causa dor intensa em cólica", "isCorrect": false, "rationale": "Cistina pode formar coraliformes, mas não é a composição mais frequente. Cálculos grandes frequentemente causam dor surda — não sempre cólica intensa."},
+        {"text": "Cálculo de ácido úrico exclusivo em pacientes com gota — sempre radiolúcido", "isCorrect": false, "rationale": "Ácido úrico pode formar coraliformes, mas a composição mais comum do coraliforme é estruvita. E ácido úrico radiolúcido está correto, mas não exclusivo de gota."}
+      ],
+      "hint": "Coraliforme = pelve + cálices. Composição mais comum = estruvita (ITU por Proteus)."
+    },
+    {
+      "question": "Qual o critério clínico/laboratorial para indicar intervenção (não esperar eliminação espontânea) em litíase ureteral?",
+      "answerOptions": [
+        {"text": "Dor refratária ao analgésico, infecção (pielonefrite obstrutiva), cálculo > 10 mm, rim único, ou ausência de progressão do cálculo após 4–6 semanas", "isCorrect": true, "rationale": "A intervenção é indicada quando: (1) dor incontrolável com analgesia; (2) infecção urinária com obstrução — emergência; (3) cálculo grande (> 10 mm tem < 10% de eliminação espontânea); (4) rim único obstruído; (5) cálculo sem progresso após 4–6 semanas. Cálculos < 5 mm têm 90% de eliminação espontânea."},
+        {"text": "Qualquer cálculo ureteral deve ser removido imediatamente — nunca esperar eliminação espontânea", "isCorrect": false, "rationale": "Cálculos pequenos (< 5 mm) têm alta taxa de eliminação espontânea. Tratamento expectante com hidratação e analgesia é primeira escolha nesses casos."},
+        {"text": "Hematúria macroscópica — qualquer sangramento indica intervenção imediata", "isCorrect": false, "rationale": "Hematúria é esperada na litíase — não é indicação isolada de intervenção. O tipo e intensidade do sangramento devem ser avaliados no contexto clínico."},
+        {"text": "Apenas pielonefrite obstrutiva — a dor isolada nunca é indicação de cirurgia na litíase", "isCorrect": false, "rationale": "Dor refratária à analgesia É indicação de intervenção — não só a pielonefrite obstrutiva."}
+      ],
+      "hint": "Intervir: dor refratária / infecção + obstrução / cálculo > 10 mm / rim único / sem progressão 4–6 sem."
+    },
+    {
+      "question": "A litotripsia extracorpórea por ondas de choque (LECO / LEOC) — para quais cálculos é mais indicada?",
+      "answerOptions": [
+        {"text": "Cálculos renais < 2 cm e ureterais proximais < 1 cm, de composição favorável (exceto cistina e brushita que são muito duros)", "isCorrect": true, "rationale": "A LECO fragmenta cálculos por ondas de choque externas. É mais eficaz para cálculos < 2 cm (renais) e < 1 cm (ureterais proximais) de composição favorável. Cistina e brushita (fosfato de cálcio monoidratado) têm alta resistência às ondas — LECO menos eficaz. Contraindicações: gravidez, coagulopatia, obstrução distal ao cálculo."},
+        {"text": "Cálculos coraliformes completos — LECO é o tratamento de escolha por ser não invasivo", "isCorrect": false, "rationale": "Coraliformes completos são tratados por nefrolitotomia percutânea (PCNL) — não LECO, que tem baixa eficácia em cálculos grandes."},
+        {"text": "Cálculos de cistina — são os mais sensíveis às ondas de choque por sua estrutura cristalina", "isCorrect": false, "rationale": "Cistina é resistente às ondas de choque — LECO tem baixa eficácia para esse tipo."},
+        {"text": "Qualquer cálculo independente do tamanho — a LECO é sempre a primeira escolha por ser não invasiva", "isCorrect": false, "rationale": "O tamanho e a localização influenciam muito a indicação de LECO. Cálculos grandes têm indicação de PCNL."}
+      ],
+      "hint": "LECO: cálculos < 2 cm renais / < 1 cm ureteral proximal. Não funciona bem em cistina e coraliformes."
+    },
+    {
+      "question": "Qual a importância dos pontos renoureterais (Álvarez, Bazy, Pasteau) no exame físico da litíase urinária?",
+      "answerOptions": [
+        {"text": "São pontos de palpação/percussão dolorosos que correspondem à projeção do cálculo ao longo do trajeto ureteral — ajudam a estimar a localização da obstrução", "isCorrect": true, "rationale": "Os pontos renoureterais são referências anatômicas para a palpação ureteral. Ponto de Álvarez (superior/renal): ângulo costovertebral. Ponto de Bazy (ureteral médio): cruzamento com vasos ilíacos. Ponto de Pasteau (ureteral inferior/justaovesical): à direita ou esquerda da linha média, acima da pube. A dor à palpação desses pontos orienta a localização do cálculo."},
+        {"text": "São pontos de punção para acesso percutâneo ao rim — utilizados na nefrolitotomia percutânea", "isCorrect": false, "rationale": "Os pontos renoureterais são para exame físico (palpação diagnóstica) — não para punção cirúrgica."},
+        {"text": "São pontos de auscultação para detectar sopros renais em estenose de artéria renal", "isCorrect": false, "rationale": "Pontos renoureterais são para palpação dolorosa em litíase — não para auscultação vascular."},
+        {"text": "São pontos de acupuntura clássica utilizados no alívio da cólica renal", "isCorrect": false, "rationale": "São pontos de exame físico urológico — não acupuntura."}
+      ],
+      "hint": "Pontos renoureterais: Álvarez (renal) + Bazy (médio) + Pasteau (justaovesical) = localizar cálculo no ureter."
+    },
+    {
+      "question": "A hematúria na litíase urinária — qual o tipo mais comum e qual seu significado?",
+      "answerOptions": [
+        {"text": "Hematúria microscópica (microhematúria) — presente em 85% dos casos de cólica renal; é causada pelo trauma da mucosa ureteral pelo cálculo em movimento", "isCorrect": true, "rationale": "A maioria dos pacientes com litíase apresenta hematúria microscópica. A macroematúria pode ocorrer. A ausência de hematúria não exclui litíase (ocorre em ~15% dos casos de cólica confirmada). A hematúria é resultado do traumatismo mecânico do cálculo sobre a mucosa do trato urinário."},
+        {"text": "Hematúria macroscópica total com coágulos — presente em 90% dos casos e necessita urologia urgente", "isCorrect": false, "rationale": "Hematúria macroscópica é menos comum que a microscópica na litíase. Coágulos sugerem outras causas (tumor, trauma)."},
+        {"text": "Hematúria inicial — sangue só no primeiro jato — indica litíase uretral distal", "isCorrect": false, "rationale": "Hematúria inicial (primeiro jato) sugere lesão uretral ou prostática — não é o padrão típico da litíase ureteral."},
+        {"text": "Ausência de hematúria exclui litíase urinária — sempre presente quando há cálculo", "isCorrect": false, "rationale": "Hematúria pode estar ausente em ~15% dos casos de cólica renal confirmada — sua ausência não exclui litíase."}
+      ],
+      "hint": "Litíase: hematúria microscópica em 85% dos casos. Ausência não exclui. Macroscópica é possível."
+    }
+  ]
+}

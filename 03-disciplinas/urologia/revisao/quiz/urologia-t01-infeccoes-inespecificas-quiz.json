@@ -1,0 +1,105 @@
+{
+  "title": "Urologia — T01: Infecções Inespecíficas do Trato Urinário",
+  "questions": [
+    {
+      "question": "Qual é a tríade clássica da pielonefrite aguda?",
+      "answerOptions": [
+        {"text": "Fiebre, escalofríos, dolor en fosa lumbar", "isCorrect": true, "rationale": "A tríade da pielonefrite aguda é: febre (fiebre), calafrios (escalofríos) e dor na fossa lombar (dolor en fosa lumbar). A aula insistiu em 'fosa lumbar' — não simplesmente 'flanco'."},
+        {"text": "Disuria, polaquiuria, tenesmo vesical", "isCorrect": false, "rationale": "Estes são sintomas de cistite (infecção baixa) — não da pielonefrite (infecção alta)."},
+        {"text": "Hematuria, piuria, bacteriuria", "isCorrect": false, "rationale": "Estes são achados laboratoriais urinários, não a tríade clínica da pielonefrite aguda."},
+        {"text": "Náusea, vômito, dor em cólica", "isCorrect": false, "rationale": "Estes sintomas são mais associados a cólica renal/litíase — não à tríade da pielonefrite."}
+      ],
+      "hint": "Pielonefrite = infecção alta (rim). Tríade: febre + calafrios + dor lombar."
+    },
+    {
+      "question": "Qual é a principal via de disseminação das infecções inespecíficas do trato urinário?",
+      "answerOptions": [
+        {"text": "Vía ascendente: uretra → bexiga → ureter → rim", "isCorrect": true, "rationale": "A via ascendente é a principal via das ITU inespecíficas. O agente sobe da uretra para a bexiga, depois para o ureter e rim. Por isso mulheres têm maior incidência (uretra curta)."},
+        {"text": "Vía hematogênica: pulmão → sangue → rim", "isCorrect": false, "rationale": "A via hematogênica é característica das infecções específicas (ex: tuberculose geniturinária) — não das inespecíficas."},
+        {"text": "Vía linfática: gânglios pélvicos → ureter → rim", "isCorrect": false, "rationale": "A via linfática não é a principal via de disseminação das ITU comuns."},
+        {"text": "Vía descendente: rim → ureter → bexiga", "isCorrect": false, "rationale": "A via descendente é exceção em casos de sepse grave — a via ascendente é a regra nas ITU inespecíficas."}
+      ],
+      "hint": "ITU inespecífica = via ascendente. ITU específica (TB) = via hematogênica."
+    },
+    {
+      "question": "Qual a sequência correta de exames para investigar uma ITU antes de iniciar antibiótico?",
+      "answerOptions": [
+        {"text": "General de orina → urocultivo → antibiograma (nesta ordem, antes do antibiótico)", "isCorrect": true, "rationale": "O exame geral de urina (EGO) é o primeiro passo. O urocultivo identifica o germe causador. O antibiograma determina a sensibilidade/resistência. A coleta DEVE ser feita ANTES do antibiótico — caso contrário, o resultado pode ser negativo falsamente."},
+        {"text": "Hemograma → PCR → urocultivo", "isCorrect": false, "rationale": "Hemograma e PCR são exames sistêmicos inflamatórios — não fecham o diagnóstico de ITU nem identificam o germe."},
+        {"text": "Urocultivo → antibiograma → iniciar antibiótico empírico simultaneamente", "isCorrect": false, "rationale": "Pode-se iniciar antibiótico empírico APÓS a coleta do urocultivo, mas a sequência começa com EGO + coleta antes do ATB."},
+        {"text": "TC de abdome → urocultivo → general de orina", "isCorrect": false, "rationale": "TC não é o primeiro passo em ITU simples — é reservada para complicações."}
+      ],
+      "hint": "EGO primeiro, depois urocultivo. Colher ANTES do antibiótico."
+    },
+    {
+      "question": "Qual a diferença clínica entre cistite e pielonefrite?",
+      "answerOptions": [
+        {"text": "Cistite: infecção baixa (bexiga) — disuria, polaquiuria, tenesmo vesical, SEM febre alta; Pielonefrite: infecção alta (rim/pelve renal) — febre alta, calafrios, dor lombar", "isCorrect": true, "rationale": "Cistite acomete a bexiga (sintomas locais: ardor, urgência, tenesmo). Pielonefrite acomete o parênquima renal (tríade sistêmica: febre + calafrios + dor lombar). A ausência de febre alta fala contra pielonefrite."},
+        {"text": "Cistite e pielonefrite têm a mesma apresentação — só diferem no germe causador", "isCorrect": false, "rationale": "Diferem tanto no local acometido (bexiga vs. rim) quanto na apresentação clínica (local vs. sistêmica)."},
+        {"text": "Pielonefrite é infecção da bexiga que subiu; cistite é infecção renal crônica", "isCorrect": false, "rationale": "Conceitos invertidos: pielonefrite é do rim/pelve; cistite é da bexiga."},
+        {"text": "Na cistite há febre alta; na pielonefrite o paciente fica afebril", "isCorrect": false, "rationale": "Ao contrário: febre alta é característico da pielonefrite. Cistite raramente causa febre elevada."}
+      ],
+      "hint": "Cistite = bexiga = sintomas locais (ardor). Pielonefrite = rim = sistêmica (febre + calafrios + dor lombar)."
+    },
+    {
+      "question": "O sinal de Giordano (puño-percusión positivo) indica o quê?",
+      "answerOptions": [
+        {"text": "Dor à percussão da loja renal — sugere inflamação/infecção do rim (pielonefrite)", "isCorrect": true, "rationale": "O sinal de Giordano (puño-percusión) consiste em bater levemente com a mão fechada na região lombar sobre o ângulo costovertebral. Positivo quando causa dor — indica inflamação renal (pielonefrite aguda, litíase complicada)."},
+        {"text": "Dor ao toque suprapúbico — indica cistite aguda", "isCorrect": false, "rationale": "A dor suprapúbica à palpação indica cistite, mas o sinal de Giordano é a percussão da loja renal (lombar), não suprapúbica."},
+        {"text": "Dor que irradia para a genitália ao percutir o flanco — diagnóstico de cólica renal", "isCorrect": false, "rationale": "Giordano é específico para inflamação/infecção renal. A cólica renal tem apresentação própria (dor em cólica irradiada)."},
+        {"text": "Percussão do abdome com hipertimpanismo — indica perfuração visceral", "isCorrect": false, "rationale": "Hipertimpanismo à percussão abdominal indica gás livre — não tem relação com o sinal de Giordano."}
+      ],
+      "hint": "Giordano = puño-percusión = dor lombar ao percutir loja renal = pielonefrite."
+    },
+    {
+      "question": "Quando o antibiograma volta mostrando resistência ao antibiótico em uso, mas o paciente está melhorando clinicamente, o que fazer?",
+      "answerOptions": [
+        {"text": "Manter o antibiótico — a aula ensinou que a clínica pesa; não troca só pelo antibiograma se houver melhora", "isCorrect": true, "rationale": "A orientação da aula foi clara: o antibiograma é guia, mas a resposta clínica é determinante. Se o paciente está melhorando com o antibiótico em uso, não necessariamente troca-se o esquema."},
+        {"text": "Trocar imediatamente o antibiótico conforme o antibiograma, independente da clínica", "isCorrect": false, "rationale": "Trocar mecanicamente sem avaliar a clínica é errado — a melhora clínica tem peso na decisão."},
+        {"text": "Suspender o antibiótico e aguardar nova cultura", "isCorrect": false, "rationale": "Suspender em paciente em melhora sem substituição seria deixá-lo sem tratamento adequado — inadequado."},
+        {"text": "Aumentar a dose do antibiótico atual para superar a resistência", "isCorrect": false, "rationale": "Aumentar dose de antibiótico com resistência confirmada não é a solução correta."}
+      ],
+      "hint": "Clínica melhora = manter. Clínica piora = trocar conforme antibiograma."
+    },
+    {
+      "question": "Qual o perfil clínico da pielonefrite xantogranulomatosa?",
+      "answerOptions": [
+        {"text": "Mulher 40–50 anos com história de ITU recorrente, palidez, emagrecimento, litíase e cavidades renais na imagem — pode simular tumor renal", "isCorrect": true, "rationale": "A pielonefrite xantogranulomatosa é forma rara de infecção crônica grave. Ocorre principalmente em mulheres de meia-idade, com história de infecções recorrentes e cálculos renais. A imagem mostra cavidades com macrófagos xantomatosos. Pode ser confundida com carcinoma renal."},
+        {"text": "Homem jovem com pielonefrite aguda resistente a antibiótico — febre persistente e leucocitose", "isCorrect": false, "rationale": "O perfil xantogranulomatoso é de mulher 40–50 anos com infecção crônica e litíase — não homem jovem com infecção aguda."},
+        {"text": "Criança com infecção recorrente e rim em ferradura — causa anatômica predispondo à estase", "isCorrect": false, "rationale": "Rim em ferradura predispõe à ITU recorrente em crianças, mas não é o perfil da xantogranulomatosa."},
+        {"text": "Idoso com pielonefrite enfisematosa — rim destruído por bactérias produtoras de gás", "isCorrect": false, "rationale": "Pielonefrite enfisematosa (gás intra-renal) é outra forma grave — não a xantogranulomatosa."}
+      ],
+      "hint": "Xantogranulomatosa = mulher 40–50a + ITU crônica + litíase + cavidades = simula tumor."
+    },
+    {
+      "question": "O exame geral de urina (EGO / general de orina) mostrando piuria (leucócitos na urina) é suficiente para confirmar diagnóstico de ITU bacteriana?",
+      "answerOptions": [
+        {"text": "Não — piuria sugere ITU mas não confirma; o urocultivo com > 100.000 UFC/mL é o critério diagnóstico formal", "isCorrect": true, "rationale": "Piuria (leucocitúria) indica inflamação do trato urinário, mas pode ocorrer em outras condições (tuberculose urinária, contaminação). A confirmação de ITU bacteriana requer urocultivo com crescimento significativo (≥ 100.000 UFC/mL de um único germe)."},
+        {"text": "Sim — piuria com leucócitos > 5/campo confirma ITU bacteriana sem necessidade de cultura", "isCorrect": false, "rationale": "Piuria sugere, mas não confirma — a cultura é necessária para identificar o agente e confirmar ITU bacteriana."},
+        {"text": "Piuria é inespecífica e não tem valor diagnóstico em ITU", "isCorrect": false, "rationale": "Piuria tem sim valor diagnóstico — alta sensibilidade para ITU — mas não é específica o suficiente para confirmar sem cultura."},
+        {"text": "Sim — qualquer piuria no exame geral indica início imediato de antibiótico", "isCorrect": false, "rationale": "Piuria isolada não justifica antibioticoterapia sem confirmação e identificação do germe pelo urocultivo."}
+      ],
+      "hint": "EGO sugere, urocultivo confirma. ≥ 100.000 UFC/mL = diagnóstico de ITU."
+    },
+    {
+      "question": "Por que mulheres têm maior incidência de ITU inespecífica comparado a homens?",
+      "answerOptions": [
+        {"text": "Uretra feminina mais curta e próxima do ânus — facilita a colonização ascendente por bacilos gram-negativos entéricos", "isCorrect": true, "rationale": "A uretra feminina mede 3–4 cm (vs. 20 cm no homem) e sua abertura é próxima do ânus, facilitando a chegada de Escherichia coli e outros gram-negativos entéricos. A via ascendente é muito mais fácil na mulher."},
+        {"text": "Sistema imunológico feminino mais fraco — mulheres têm menor capacidade de combater bactérias", "isCorrect": false, "rationale": "A maior susceptibilidade feminina às ITU se deve à anatomia (uretra curta), não a déficit imunológico."},
+        {"text": "Hormônios estrogênicos favorecem o crescimento bacteriano na bexiga feminina", "isCorrect": false, "rationale": "Na verdade, o estrogênio tem papel protetor ao manter a flora vaginal de lactobacilos. Pós-menopausa (queda de estrogênio) aumenta o risco."},
+        {"text": "Mulheres retêm mais urina residual, criando meio propício para bactérias", "isCorrect": false, "rationale": "A anatomia uretral curta é o fator principal — não a retenção urinária (que é fator de risco em ambos os sexos quando presente)."}
+      ],
+      "hint": "Uretra feminina curta (3-4 cm) + próxima do ânus = via ascendente facilitada."
+    },
+    {
+      "question": "Qual o germe mais frequentemente causador de ITU inespecífica comunitária?",
+      "answerOptions": [
+        {"text": "Escherichia coli (responsável por 70–80% dos casos)", "isCorrect": true, "rationale": "E. coli é o agente mais comum das ITU comunitárias (70–80%), seguido por Staphylococcus saprophyticus (especialmente em mulheres jovens), Klebsiella pneumoniae e Proteus mirabilis. A E. coli tem fímbrias P e tipo 1 que facilitam a aderência ao uroepitélio."},
+        {"text": "Pseudomonas aeruginosa (responsável pela maioria das ITU ambulatoriais)", "isCorrect": false, "rationale": "Pseudomonas é mais frequente em ITU nosocomial e em pacientes com cateter/hospitalização prolongada — não na ITU comunitária."},
+        {"text": "Staphylococcus aureus (o mais comum por via hematogênica)", "isCorrect": false, "rationale": "S. aureus pode causar ITU por via hematogênica, mas E. coli é muito mais prevalente nas ITU comunitárias pela via ascendente."},
+        {"text": "Candida albicans (o fungo mais prevalente no trato urinário)", "isCorrect": false, "rationale": "Candidúria é comum em pacientes com cateter, uso prolongado de ATB ou imunossuprimidos — não é o mais frequente nas ITU comunitárias."}
+      ],
+      "hint": "E. coli = 70–80% das ITU comunitárias. Via ascendente + fímbrias de aderência."
+    }
+  ]
+}
