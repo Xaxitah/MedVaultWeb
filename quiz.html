@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — MED-Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$','$'], ['\\(','\\)']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <style>
+    .quiz-wrap { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+    .quiz-header { margin-bottom: 2rem; }
+    .quiz-title {
+      font-size: 1.3rem; font-weight: 700;
+      color: var(--primary); margin-bottom: .5rem;
+    }
+    .progress-bar-wrap {
+      height: 6px; background: var(--border); border-radius: 4px;
+      margin-bottom: .4rem; overflow: hidden;
+    }
+    .progress-bar { height: 100%; background: var(--primary); border-radius: 4px; transition: width .3s; }
+    .progress-label { font-size: .8rem; color: var(--text-muted); }
+
+    .question-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow); margin-bottom: 1.25rem;
+    }
+    .question-text {
+      font-size: 1rem; line-height: 1.65; color: var(--text);
+      margin-bottom: 1.25rem; font-weight: 500;
+    }
+
+    .options { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1rem; }
+    .option-btn {
+      display: flex; align-items: flex-start; gap: .75rem;
+      padding: .85rem 1.1rem; border-radius: 10px;
+      border: 2px solid var(--border); background: var(--surface2);
+      cursor: pointer; text-align: left; font-size: .9rem; line-height: 1.5;
+      color: var(--text); transition: border-color .12s, background .12s;
+    }
+    .option-btn:not(.answered):hover { border-color: var(--primary-light); background: #e8f0fd; }
+    .option-btn .opt-letter {
+      flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+      background: var(--border); color: var(--text-muted);
+      font-size: .75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: .05rem;
+    }
+    .option-btn.correct { border-color: #10b981; background: #ecfdf5; }
+    .option-btn.correct .opt-letter { background: #10b981; color: white; }
+    .option-btn.wrong { border-color: #ef4444; background: #fef2f2; }
+    .option-btn.wrong .opt-letter { background: #ef4444; color: white; }
+    .option-btn.answered { cursor: default; }
+    .option-btn.dimmed { opacity: .45; }
+
+    .rationale {
+      background: #f0f9ff; border-left: 3px solid var(--primary);
+      border-radius: 0 8px 8px 0; padding: .9rem 1.1rem;
+      font-size: .88rem; line-height: 1.6; color: var(--text);
+      margin-top: .25rem; display: none;
+    }
+    .rationale.visible { display: block; }
+    .rationale strong { color: var(--primary); }
+
+    .hint-wrap { margin-bottom: .75rem; }
+    .hint-btn {
+      background: none; border: 1px dashed var(--border);
+      border-radius: 8px; padding: .35rem .8rem;
+      font-size: .82rem; color: var(--text-muted); cursor: pointer;
+      transition: border-color .12s, color .12s;
+    }
+    .hint-btn:hover { border-color: var(--primary-light); color: var(--primary); }
+    .hint-text {
+      font-size: .85rem; color: #92400e; background: #fffbeb;
+      border: 1px solid #fbbf24; border-radius: 8px;
+      padding: .6rem .9rem; margin-top: .4rem; display: none;
+    }
+    .hint-text.visible { display: block; }
+
+    .nav-row {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; margin-top: 1rem; flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--primary); color: white; border: none;
+      border-radius: 10px; padding: .65rem 1.5rem;
+      font-size: .92rem; font-weight: 600; cursor: pointer;
+      transition: background .12s; display: inline-flex; align-items: center; gap: .4rem;
+    }
+    .btn-primary:hover { background: var(--primary-light); }
+    .btn-primary:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
+    .answer-status { font-size: .88rem; font-weight: 600; }
+    .answer-status.ok  { color: #10b981; }
+    .answer-status.err { color: #ef4444; }
+
+    /* Score screen */
+    .score-screen {
+      text-align: center; padding: 3rem 1.5rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .score-emoji { font-size: 3.5rem; margin-bottom: 1rem; }
+    .score-pct { font-size: 3rem; font-weight: 800; color: var(--primary); }
+    .score-sub { font-size: 1rem; color: var(--text-muted); margin-bottom: 2rem; }
+    .btn-restart {
+      background: var(--primary); color: white; border: none;
+      border-radius: 10px; padding: .7rem 1.75rem;
+      font-size: .95rem; font-weight: 600; cursor: pointer; margin: .4rem;
+    }
+    .btn-restart:hover { background: var(--primary-light); }
+    .btn-back {
+      background: var(--surface2); color: var(--primary);
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: .7rem 1.75rem; font-size: .95rem; font-weight: 600;
+      cursor: pointer; text-decoration: none; margin: .4rem;
+      display: inline-block;
+    }
+
+    #error-msg {
+      background: #fef2f2; border: 1px solid #fca5a5;
+      border-radius: var(--radius); padding: 1.5rem;
+      color: #7f1d1d; text-align: center;
+    }
+    #loading-msg { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="breadcrumb">
+    <a href="./">🏥 MED-Vault</a>
+    <span>›</span>
+    <span id="crumb-disc">Quiz</span>
+    <span>›</span>
+    <span>🎯 Quiz</span>
+  </div>
+  <h1>🎯 Quiz Interativo</h1>
+  <p id="quiz-subtitle" style="opacity:.8">Carregando...</p>
+</header>
+
+<div class="layout">
+<nav class="sidebar">
+  <div class="sidebar-title">Disciplinas</div>
+  <a class="sidebar-link" href="./">🏠 Início</a>
+  <a class="sidebar-link" href="farmacologia/">💊 Farmacologia</a>
+  <a class="sidebar-link" href="semiologia-medica/">🩺 Semiologia Médica</a>
+  <a class="sidebar-link" href="urologia/">🔬 Urologia</a>
+  <a class="sidebar-link" href="etica-medica/">⚖️ Ética Médica</a>
+  <a class="sidebar-link" href="semiologia-cirurgica/">🔪 Sem. Cirúrgica</a>
+</nav>
+<div class="page-content">
+<main>
+<div class="quiz-wrap">
+  <div id="loading-msg">⏳ Carregando quiz...</div>
+  <div id="error-msg" style="display:none"></div>
+  <div id="quiz-root" style="display:none"></div>
+</div>
+</main>
+<footer>MED-Vault 2.0 · <a href="./">← Voltar ao início</a></footer>
+</div>
+</div>
+
+<script>
+(async () => {
+  const params  = new URLSearchParams(window.location.search);
+  const dataPath = params.get('data');
+  const backHref = params.get('back') || './';
+
+  if (!dataPath) { showError('Parâmetro <code>?data=</code> não encontrado na URL.'); return; }
+
+  // Build absolute URL relative to site root
+  const base = window.location.origin +
+               window.location.pathname.replace(/\/[^/]*$/, '/');
+  const fetchUrl = base + dataPath;
+
+  let quizData;
+  try {
+    const res = await fetch(fetchUrl);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    quizData = await res.json();
+  } catch (e) {
+    showError(`Não foi possível carregar o quiz.<br><small>${fetchUrl}</small><br><small>${e}</small>`);
+    return;
+  }
+
+  // Update page header
+  document.getElementById('quiz-subtitle').textContent = quizData.title || 'Quiz';
+  document.title = (quizData.title || 'Quiz') + ' — MED-Vault';
+  // Guess discipline from path for breadcrumb
+  const disc = (dataPath.match(/03-disciplinas\/([^/]+)/) || [])[1] || '';
+  const discNames = {
+    'farmacologia':'Farmacologia','semiologia-medica':'Semiologia Médica',
+    'urologia':'Urologia','etica-medica':'Ética Médica',
+    'semiologia-quirurgica':'Semiologia Cirúrgica'
+  };
+  document.getElementById('crumb-disc').textContent = discNames[disc] || disc;
+
+  const questions = quizData.questions || [];
+  if (!questions.length) { showError('Quiz sem questões.'); return; }
+
+  document.getElementById('loading-msg').style.display = 'none';
+  const root = document.getElementById('quiz-root');
+  root.style.display = 'block';
+
+  let current = 0, score = 0;
+  const answered = new Array(questions.length).fill(false);
+
+  function render() {
+    if (current >= questions.length) { renderScore(); return; }
+    const q = questions[current];
+    const pct = Math.round((current / questions.length) * 100);
+
+    root.innerHTML = `
+      <div class="quiz-header">
+        <div class="quiz-title">${quizData.title || 'Quiz'}</div>
+        <div class="progress-bar-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
+        <div class="progress-label">Questão ${current + 1} de ${questions.length}</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-text" id="q-text">${q.question}</div>
+
+        ${q.hint ? `
+        <div class="hint-wrap">
+          <button class="hint-btn" onclick="toggleHint()">💡 Ver dica</button>
+          <div class="hint-text" id="hint-box">${q.hint}</div>
+        </div>` : ''}
+
+        <div class="options" id="options">
+          ${q.answerOptions.map((opt, i) => `
+            <button class="option-btn" id="opt-${i}" onclick="choose(${i})" data-correct="${opt.isCorrect}">
+              <span class="opt-letter">${String.fromCharCode(65+i)}</span>
+              <span>${opt.text}</span>
+            </button>
+          `).join('')}
+        </div>
+
+        ${q.answerOptions.map((opt, i) => `
+          <div class="rationale" id="rat-${i}">
+            <strong>${opt.isCorrect ? '✅ Correto' : '❌ Incorreto'}</strong> — ${opt.rationale}
+          </div>
+        `).join('')}
+
+        <div class="nav-row">
+          <span class="answer-status" id="status-msg"></span>
+          <button class="btn-primary" id="next-btn" onclick="next()" disabled>
+            ${current + 1 < questions.length ? 'Próxima →' : 'Ver resultado 🏁'}
+          </button>
+        </div>
+      </div>`;
+
+    typeset();
+  }
+
+  window.choose = function(idx) {
+    if (answered[current]) return;
+    answered[current] = true;
+
+    const q = questions[current];
+    const isCorrect = q.answerOptions[idx].isCorrect;
+    if (isCorrect) score++;
+
+    // Style all options
+    q.answerOptions.forEach((opt, i) => {
+      const btn = document.getElementById(`opt-${i}`);
+      btn.classList.add('answered');
+      if (opt.isCorrect) btn.classList.add('correct');
+      else if (i === idx) btn.classList.add('wrong');
+      else btn.classList.add('dimmed');
+    });
+
+    // Show clicked rationale + correct rationale
+    document.getElementById(`rat-${idx}`).classList.add('visible');
+    if (!isCorrect) {
+      const corrIdx = q.answerOptions.findIndex(o => o.isCorrect);
+      document.getElementById(`rat-${corrIdx}`).classList.add('visible');
+    }
+
+    const status = document.getElementById('status-msg');
+    status.textContent = isCorrect ? '✅ Correto!' : '❌ Incorreto';
+    status.className = 'answer-status ' + (isCorrect ? 'ok' : 'err');
+    document.getElementById('next-btn').disabled = false;
+    typeset();
+  };
+
+  window.next = function() {
+    current++;
+    render();
+  };
+
+  window.toggleHint = function() {
+    const box = document.getElementById('hint-box');
+    box.classList.toggle('visible');
+  };
+
+  function renderScore() {
+    const pct = Math.round((score / questions.length) * 100);
+    const emoji = pct >= 80 ? '🏆' : pct >= 60 ? '👍' : '📚';
+    root.innerHTML = `
+      <div class="score-screen">
+        <div class="score-emoji">${emoji}</div>
+        <div class="score-pct">${pct}%</div>
+        <div class="score-sub">${score} de ${questions.length} questões corretas</div>
+        <div>
+          <button class="btn-restart" onclick="restart()">🔄 Refazer quiz</button>
+          <a class="btn-back" href="${backHref}">← Voltar</a>
+        </div>
+      </div>`;
+  }
+
+  window.restart = function() {
+    current = 0; score = 0;
+    answered.fill(false);
+    render();
+  };
+
+  function typeset() {
+    if (window.MathJax?.typesetPromise) MathJax.typesetPromise([root]);
+  }
+
+  function showError(msg) {
+    document.getElementById('loading-msg').style.display = 'none';
+    document.getElementById('error-msg').innerHTML = msg;
+    document.getElementById('error-msg').style.display = 'block';
+  }
+
+  render();
+})();
+</script>
+
+</body>
+</html>
