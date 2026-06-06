@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T02: Sintomas Respiratórios",
+  "cards": [
+    {
+      "front": "Tipos de escarro e o que cada um sugere",
+      "back": "Mucóide (claro): bronquite crônica, asma\nPurulento (amarelo-verde): infecção bacteriana\nFerrugínoso (marrom): pneumonia pneumocócica\nFétido: abscesso pulmonar (anaeróbios)\nRóseo espumoso: edema agudo de pulmão\nHemoptoico: TB, câncer, bronquiectasia"
+    },
+    {
+      "front": "Hemoptise vs hematemese — diferenciação clínica",
+      "back": "Hemoptise: sangue TOSSIDO, vermelho-vivo, espumoso, aerado, pH alcalino\nHematemese: sangue VOMITADO, pode ser borra de café, pH ácido\nHemoptise = origem respiratória; hematemese = origem digestiva"
+    },
+    {
+      "front": "Causas de hemoptise — mnemônico ABC",
+      "back": "A — Abscesso, Aspergiloma\nB — Bronquiectasia, Bronquite\nC — Carcinoma, Corpo estranho\nT — Tuberculose\nI — Infarto pulmonar (TEP)\nOutras: vasculite, malformação arteriovenosa"
+    },
+    {
+      "front": "Escala MRC de dispneia — 5 graus",
+      "back": "Grau 1: falta de ar em exercício intenso (corrida)\nGrau 2: subir escadas ou ladeira\nGrau 3: caminhar no plano em passo normal com pares\nGrau 4: parar após poucos metros no plano\nGrau 5: dispneia ao se vestir ou em repouso"
+    },
+    {
+      "front": "Ortopneia vs dispneia paroxística noturna (DPN)",
+      "back": "Ortopneia: dispneia imediata ao deitar → alivia ao sentar. Graus = número de travesseiros.\nDPN: acorda 1–3h após dormir com dispneia intensa → alivia ao sentar/levantar.\nAmbas: ICC descompensada. DPN mais grave (latência de redistribuição hídrica)."
+    },
+    {
+      "front": "Cianose central vs periférica",
+      "back": "Central: mucosas azuladas (língua, lábios) = SaO₂ baixa = hipoxemia real\nCausa: cardiopatia cianótica, insuficiência respiratória\nPeriférica: extremidades azuis com mucosas normais = hipoperfusão\nCausa: vasoconstrição, ICC, choque\nTeste: aquecer as extremidades — cianose periférica desaparece"
+    },
+    {
+      "front": "Tosse crônica não fumante — 3 causas mais comuns",
+      "back": "1. Gotejamento pós-nasal (drip pós-nasal) — rinite, sinusite\n2. Asma (variant cough) — broncoespasmo sem sibilância clínica\n3. DRGE — refluxo irritando a laringe/traqueia\nJuntas = causa > 90% dos casos de tosse crônica em não fumantes"
+    },
+    {
+      "front": "Características da dor pleurítica",
+      "back": "Localização: unilateral, pontada\nPiora: inspiração profunda, tosse, espirro\nMelhora: decúbito sobre o lado afetado (imobiliza hemitórax)\nCausas: pleurite, pneumonia com pleurite, TEP, pneumotórax\nDiferencia-se da dor cardíaca por ser respiratória (ventilatória)"
+    },
+    {
+      "front": "Baqueteamento digital (clubbing) — critérios e causas respiratórias",
+      "back": "Critério: ângulo de Lovibond > 180° (entre a pele e a base da unha). 'Sinal da janela' (perda do espaço).\nCausas respiratórias: fibrose pulmonar, bronquiectasia, abscesso, câncer, mesotelioma\nTambém: cardiopatia cianótica, cirrose, DII"
+    },
+    {
+      "front": "Sibilo (wheezing) — tipos e significado",
+      "back": "Expiratório difuso: asma, DPOC exacerbado\nInspiratorio + expiratório: obstrução grave\nUnilateral e localizado: corpo estranho, tumor obstrutivo (ALERTA: investigar!)\nEstridor (som na garganta/traqueia): obstrução de via aérea superior"
+    },
+    {
+      "front": "Dispneia — inspeção: o que observar no padrão respiratório?",
+      "back": "Frequência: normal 12–20 irpm. Taquipneia (> 20), Bradipneia (< 12)\nProfundidade: superficial (pleurite, dor) ou profunda (acidose = Kussmaul)\nRitmo: Cheyne-Stokes (ICC, AVC), Biot (lesão bulbar), Kussmaul (acidose metabólica)\nMúsculos acessórios: ECM, escalenos = insuficiência respiratória"
+    },
+    {
+      "front": "O que é dispneia de Kussmaul e em que contexto ocorre?",
+      "back": "Respiração profunda, ritmada, com frequência normal ou aumentada — sem pausa.\nContexto: acidose metabólica grave (CAD, IRC terminal, intoxicação por metanol/etilenoglicol).\nO organismo tenta compensar excretando CO₂ pelo pulmão para reduzir a acidez."
+    }
+  ]
+}

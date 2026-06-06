@@ -1,0 +1,126 @@
+{
+  "title": "Farmacologia — T00 — Insuficiência Cardíaca",
+  "questions": [
+    {
+      "question": "Qual é a tríade de mecanismos compensadores que, a longo prazo, acelera a progressão da IC?",
+      "answerOptions": [
+        {"text": "Ativação do SRAA + ativação do sistema simpático (SNS) + retenção de sódio e água", "isCorrect": true, "rationale": "Esses três mecanismos compensatórios inicialmente mantêm o débito cardíaco, mas cronicamente causam remodelamento cardíaco adverso (fibrose, hipertrofia, apoptose de cardiomiócitos) e pioram a IC."},
+        {"text": "Taquicardia + hipotensão + edema pulmonar", "isCorrect": false, "rationale": "Estes são sintomas da IC descompensada, não mecanismos compensatórios primários."},
+        {"text": "Vasodilatação + bradicardia + natriurese", "isCorrect": false, "rationale": "Estes seriam efeitos dos tratamentos (IECA, betabloqueante, diurético), não compensações fisiológicas da IC."},
+        {"text": "Hipertrofia + dilatação + fibrose", "isCorrect": false, "rationale": "Estes são resultados do remodelamento a longo prazo causado pelos mecanismos compensadores, não os mecanismos em si."}
+      ],
+      "hint": "Pense nos sistemas ativados cronicamente na IC que os 4 pilares do tratamento visam bloquear."
+    },
+    {
+      "question": "Um paciente com IC crônica com FEVE de 35% apresenta tosse seca intensa após iniciar enalapril. Qual é a conduta correta?",
+      "answerOptions": [
+        {"text": "Substituir por ARA-II (ex: losartan ou valsartan)", "isCorrect": true, "rationale": "A tosse seca é causada pelo acúmulo de bradicinina (a ECA também a degrada). ARA-II bloqueia o receptor AT₁ sem afetar a degradação da bradicinina → sem tosse."},
+        {"text": "Associar um ARA-II ao enalapril para potencializar o efeito", "isCorrect": false, "rationale": "O estudo ONTARGET mostrou que a combinação IECA + ARA-II não traz benefício adicional e aumenta hipotensão, hipercalemia e IRA. É contraindicada rotineiramente."},
+        {"text": "Reduzir a dose do enalapril pela metade", "isCorrect": false, "rationale": "A tosse por IECA é um efeito de classe, não dose-dependente. Mesmo com doses menores a tosse persiste."},
+        {"text": "Adicionar anti-histamínico para controle da tosse", "isCorrect": false, "rationale": "A tosse por IECA é mediada por bradicinina/substância P nas vias aéreas, não por histamina. Anti-histamínicos não resolvem."}
+      ],
+      "hint": "A tosse é um efeito de classe dos IECA. Existe uma alternativa da mesma classe que bloqueia o SRAA sem tosse."
+    },
+    {
+      "question": "Paciente em choque cardiogênico: PA = 70/50 mmHg, FC = 120 bpm, sinais de hipoperfusão. Qual inotrópico e em que dose?",
+      "answerOptions": [
+        {"text": "Dopamina em dose > 10 µg/kg/min (efeito α1 vascular)", "isCorrect": true, "rationale": "Em choque cardiogênico COM hipotensão grave, é necessário vasoconstrição para manter PA. Dopamina em alta dose ativa receptores α1 → vasoconstrição → ↑ PA. Dobutamina sozinha causaria vasodilatação adicional, piorando a hipotensão."},
+        {"text": "Dobutamina em 5 µg/kg/min (efeito β1 predominante)", "isCorrect": false, "rationale": "Dobutamina é preferível no choque cardiogênico SEM hipotensão grave. Com PA = 70 mmHg, sua leve vasodilatação poderia piorar a hipotensão."},
+        {"text": "Levosimendan em infusão de 24h", "isCorrect": false, "rationale": "Levosimendan tem risco principal de hipotensão. Em PA = 70 mmHg já comprometida, o risco é inaceitável como primeira escolha."},
+        {"text": "Milrinona em infusão IV (inibidor de PDE3)", "isCorrect": false, "rationale": "Milrinona é um inodilador (inotrópico + vasodilatador) — contraindicado quando há hipotensão grave, pois piora a PA."}
+      ],
+      "hint": "Lembre o mnemônico 1-3-10 da dopamina e qual receptor domina em doses altas."
+    },
+    {
+      "question": "Por que betabloqueantes melhoram a sobrevida na IC crônica com FEr, mesmo deprimindo a contratilidade a curto prazo?",
+      "answerOptions": [
+        {"text": "Porque bloqueiam a ativação crônica do SNS, que causa apoptose de cardiomiócitos, taquicardia deletéria e remodelamento adverso", "isCorrect": true, "rationale": "A norepinefrina em excesso é diretamente cardiotóxica. Ao longo do tempo, o bloqueio β melhora a FEVE, reverte o remodelamento e reduz arritmias letais — daí a redução de mortalidade nos estudos COPERNICUS, MERIT-HF e CIBIS-II."},
+        {"text": "Porque aumentam a frequência cardíaca e melhoram o débito a longo prazo", "isCorrect": false, "rationale": "Betabloqueantes reduzem a frequência cardíaca (cronotropismo negativo). A melhora do débito vem da melhora da FEVE ao longo do tempo, não do aumento de FC."},
+        {"text": "Porque têm efeito diurético e reduzem a pré-carga", "isCorrect": false, "rationale": "Betabloqueantes não têm efeito diurético. A redução de pré-carga é função dos diuréticos e nitratos."},
+        {"text": "Porque bloqueiam os receptores AT₁ da angiotensina II", "isCorrect": false, "rationale": "O bloqueio do receptor AT₁ é o mecanismo dos ARA-II, não dos betabloqueantes."}
+      ],
+      "hint": "Pense no papel da norepinefrina crônica no cardiomiócito."
+    },
+    {
+      "question": "Qual é o mecanismo do levosimendan que o diferencia de todos os outros inotrópicos positivos?",
+      "answerOptions": [
+        {"text": "Liga-se à troponina C na presença de Ca2+, aumentando a sensibilidade das proteínas contráteis sem elevar o Ca2+ total intracelular", "isCorrect": true, "rationale": "Todos os outros inotrópicos (digoxina, dobutamina, milrinona) elevam o Ca2+ intracelular total. O levosimendan aumenta a contratilidade usando o Ca2+ que já está presente → menor consumo de O2 e menor risco de arritmia."},
+        {"text": "Inibe a fosfodiesterase 3, elevando o AMPc e aumentando o Ca2+ intracelular", "isCorrect": false, "rationale": "Este é o mecanismo da milrinona (inibidor de PDE3), que eleva Ca2+ total e por isso tem maior risco de arritmia."},
+        {"text": "Inibe a ATPase Na+/K+, aumentando o Na+ intracelular e indiretamente o Ca2+", "isCorrect": false, "rationale": "Este é o mecanismo da digoxina, que eleva Ca2+ total e tem margem terapêutica estreita."},
+        {"text": "Estimula receptores β1, aumentando o AMPc e a concentração de Ca2+ intracelular", "isCorrect": false, "rationale": "Este é o mecanismo da dobutamina e dopamina (em dose cardíaca), que também elevam Ca2+ total."}
+      ],
+      "hint": "O levosimendan é o único inotrópico que não aumenta o Ca2+ total — apenas muda como as proteínas contráteis respondem ao Ca2+ disponível."
+    },
+    {
+      "question": "Um paciente com IC e IRC (clearance de creatinina = 22 ml/min) precisa de diurético para controlar edema. Qual escolher?",
+      "answerOptions": [
+        {"text": "Furosemida (diurético de alça)", "isCorrect": true, "rationale": "Furosemida age no NKCC2 da alça de Henle e mantém eficácia mesmo com TFG reduzida (doses maiores podem ser necessárias por competição com solutos urêmicos). Tiazídicos perdem eficácia quando Clcr < 30 ml/min."},
+        {"text": "Hidroclorotiazida (tiazídico)", "isCorrect": false, "rationale": "Tiazídicos são ineficazes quando clearance < 30 ml/min, pois o NCC do TCD requer quantidade suficiente de Na filtrado para exercer efeito."},
+        {"text": "Clortalidona (tiazídico de ação prolongada)", "isCorrect": false, "rationale": "Mesmo sendo tiazídico de longa duração, perde eficácia em IRC grave (Clcr < 30 ml/min). A regra vale para toda a classe tiazídica."},
+        {"text": "Espironolactona como diurético principal", "isCorrect": false, "rationale": "Espironolactona é K-poupadora de baixa potência diurética. Além disso, em IRC grave há risco alto de hipercalemia grave, especialmente associada a IECA."}
+      ],
+      "hint": "Pense em qual diurético mantém eficácia independentemente da taxa de filtração glomerular."
+    },
+    {
+      "question": "Um paciente com IC NYHA III faz uso de furosemida + digoxina. O K+ sérico é 2,8 mEq/L. Qual o risco principal e o mecanismo?",
+      "answerOptions": [
+        {"text": "Toxicidade digitálica: K+ baixo → digoxina inibe mais a ATPase Na+/K+ → ↑ Ca2+ intracelular → arritmias", "isCorrect": true, "rationale": "K+ compete com digoxina pelo sítio de ligação na ATPase. Com K+ baixo, a digoxina ocupa mais sítios → inibição excessiva → ↑ Na+ → ↑ Ca2+ via intercambiador → risco de arritmias ventriculares graves."},
+        {"text": "Hipercalemia grave com risco de parada cardíaca", "isCorrect": false, "rationale": "A furosemida causa HIPO-calemia (perda de K+), não hipercalemia. K+ = 2,8 mEq/L confirma hipocalemia."},
+        {"text": "Insuficiência renal aguda por depleção de volume", "isCorrect": false, "rationale": "Embora a depleção de volume possa ocorrer com diurético excessivo, o risco imediato mais crítico com K+ = 2,8 é a toxicidade digitálica."},
+        {"text": "Hiponatremia dilucional por excesso de diurese", "isCorrect": false, "rationale": "Furosemida causa principalmente perda de Na+ e K+, não hiponatremia dilucional (que é mais típica de diuréticos tiazídicos em excesso)."}
+      ],
+      "hint": "Lembre o mnemônico HI-AID e o papel do K+ na ligação da digoxina à sua bomba alvo."
+    },
+    {
+      "question": "Qual é o papel do IECA no tratamento da IC, além da vasodilatação?",
+      "back": "Bloqueia remodelamento cardíaco",
+      "answerOptions": [
+        {"text": "Bloqueia o SRAA, reduzindo a fibrose cardíaca e o remodelamento adverso causado pela Angiotensina II via receptor AT₁", "isCorrect": true, "rationale": "A Ang II via AT₁ causa vasoconstrição, retenção de Na+/H₂O, hipertrofia e fibrose cardíaca. O IECA interrompe toda essa cascata → reduz remodelamento + mortalidade (estudo CONSENSUS: −40% mortalidade com enalapril)."},
+        {"text": "Aumenta a contratilidade cardíaca por efeito inotrópico positivo direto", "isCorrect": false, "rationale": "IECA não tem efeito inotrópico positivo. Sua ação é anti-remodelamento e vasodilatadora (reduz pré e pós-carga)."},
+        {"text": "Antagoniza diretamente a aldosterona no túbulo coletor", "isCorrect": false, "rationale": "O antagonismo direto da aldosterona é o mecanismo da espironolactona e eplerenona. O IECA reduz a produção de Ang II, o que indiretamente diminui a aldosterona."},
+        {"text": "Bloqueia os receptores β1 no nó sinusal reduzindo a frequência cardíaca", "isCorrect": false, "rationale": "Esse é o mecanismo dos betabloqueantes. IECA não tem efeito cronotrópico direto."}
+      ],
+      "hint": "Pense além da vasodilatação: o SRAA ativo causa o quê no miocárdio a longo prazo?"
+    },
+    {
+      "question": "Paciente com IC tem FEVE = 32%, ritmo sinusal, FC = 88 bpm em uso de IECA + betabloqueante + espironolactona. Qual fármaco add-on pode ser considerado para reduzir mais a FC?",
+      "answerOptions": [
+        {"text": "Ivabradina — bloqueia canal If no nó sinusal, reduzindo a FC sem efeito inotrópico negativo", "isCorrect": true, "rationale": "Ivabradina é indicada em IC estável com FEVE ≤ 35%, ritmo sinusal e FC > 70 bpm em uso de betabloqueante na dose máxima tolerada. Reduz FC sem deprimir a contratilidade ou a condução AV."},
+        {"text": "Amiodarona — antiarrítmico que reduz FC e tem efeito inotrópico leve", "isCorrect": false, "rationale": "Amiodarona tem efeito inotrópico negativo e múltiplos efeitos adversos (tireoidite, fibrose pulmonar). Não é indicada para controle de FC em IC estável com ritmo sinusal."},
+        {"text": "Digoxina — para controle de FC via efeito vagotônico", "isCorrect": false, "rationale": "Digoxina é mais indicada quando há IC + fibrilação atrial para controle de frequência ventricular. Em ritmo sinusal, ivabradina é a opção preferencial para redução adicional de FC."},
+        {"text": "Verapamil — bloqueador de canal de cálcio com efeito cronotrópico negativo", "isCorrect": false, "rationale": "Verapamil tem efeito inotrópico negativo significativo e é contraindicado em IC com FEr. Pode precipitar descompensação aguda."}
+      ],
+      "hint": "Existe um fármaco específico para reduzir FC no nó sinusal sem afetar a contratilidade."
+    },
+    {
+      "question": "Na IC aguda com edema agudo de pulmão, furosemida IV melhora a dispneia em minutos. Qual mecanismo explica esse efeito antes da diurese?",
+      "answerOptions": [
+        {"text": "Indução de COX-2 → síntese de PGE₂ → venodilatação pulmonar precoce", "isCorrect": true, "rationale": "A furosemida induz a COX-2, levando à síntese de prostaglandina E₂ (PGE₂), que causa venodilatação. Isso reduz o retorno venoso e a pressão capilar pulmonar em minutos, antes de qualquer aumento do débito urinário."},
+        {"text": "Bloqueio do receptor NKCC2 no pulmão, causando vasodilatação local", "isCorrect": false, "rationale": "O alvo renal da furosemida é o NKCC2 na alça de Henle. O efeito pulmonar precoce é mediado por prostaglandinas, não por bloqueio de cotransportadores pulmonares."},
+        {"text": "Efeito inotrópico positivo direto que melhora o débito cardíaco imediatamente", "isCorrect": false, "rationale": "Furosemida não tem efeito inotrópico positivo. Sua principal ação é diurética e o efeito precoce no edema agudo é via venodilatação por PGE₂."},
+        {"text": "Broncodilatação direta pelo relaxamento da musculatura lisa brônquica", "isCorrect": false, "rationale": "Furosemida não é broncodilatadora. O alívio da dispneia no edema agudo é por redução da pressão capilar pulmonar via venodilatação."}
+      ],
+      "hint": "Por que a dispneia melhora em minutos após furosemida IV, antes de qualquer diurese mensurável?"
+    },
+    {
+      "question": "Qual estudo demonstrou que a espironolactona reduz mortalidade na IC grave e qual foi o resultado?",
+      "answerOptions": [
+        {"text": "Estudo RALES (1999): espironolactona 25 mg/dia → redução de 30% na mortalidade e 35% nas hospitalizações em NYHA III-IV com FEVE < 35%", "isCorrect": true, "rationale": "O estudo RALES foi landmark porque mostrou que a espironolactona vai além do efeito diurético — seu efeito anti-fibrótico direto no miocárdio contribui para a redução de mortalidade."},
+        {"text": "Estudo CONSENSUS: espironolactona → redução de 40% na mortalidade", "isCorrect": false, "rationale": "O estudo CONSENSUS avaliou o ENALAPRIL (IECA), demonstrando redução de 40% na mortalidade em IC grave, não a espironolactona."},
+        {"text": "Estudo MERIT-HF: espironolactona → redução de mortalidade em IC com FEVE < 40%", "isCorrect": false, "rationale": "O estudo MERIT-HF avaliou o METOPROLOL SUCCINATO (betabloqueante), não a espironolactona."},
+        {"text": "Estudo ONTARGET: espironolactona → superior à combinação IECA + ARA-II", "isCorrect": false, "rationale": "O estudo ONTARGET avaliou a combinação IECA + ARA-II (ramipril + telmisartan) e mostrou que a combinação não trouxe benefício adicional e aumentou efeitos adversos."}
+      ],
+      "hint": "Qual é o estudo específico que fundamentou o uso da espironolactona como pilar 4 da IC?"
+    },
+    {
+      "question": "Um paciente com IC tem FEVE de 45%. Como classificar e tratar?",
+      "answerOptions": [
+        {"text": "ICFEi (intermediária: 40–49%) — tratar como ICFEr com os 4 pilares", "isCorrect": true, "rationale": "FEVE entre 40–49% classifica IC com fração de ejeção intermediária (ICFEi). Por convenção, trata-se como ICFEr, pois os dados de benefício dos 4 pilares foram extrapolados para essa faixa."},
+        {"text": "ICFEp (preservada: ≥ 50%) — apenas controle da congestão e causa base", "isCorrect": false, "rationale": "ICFEp requer FEVE ≥ 50%. Com FEVE = 45%, o paciente está na faixa intermediária (40–49%), não na faixa preservada."},
+        {"text": "ICFEr (reduzida: < 40%) — 4 pilares completos obrigatórios", "isCorrect": false, "rationale": "ICFEr requer FEVE < 40%. Com FEVE = 45%, o paciente está na faixa intermediária."},
+        {"text": "IC normal — sem tratamento necessário com FEVE de 45%", "isCorrect": false, "rationale": "FEVE de 45% está abaixo do normal (>55%) e na faixa intermediária, ainda exigindo tratamento."}
+      ],
+      "hint": "Lembre as 3 faixas de FEVE na classificação da IC e os valores de corte."
+    }
+  ]
+}

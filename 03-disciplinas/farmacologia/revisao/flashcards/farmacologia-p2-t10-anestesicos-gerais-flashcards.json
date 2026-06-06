@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T10 — Anestésicos Gerais",
+  "cards": [
+    {"front": "Quais são as 4 fases da anestesia geral (clássico de Guedel)?", "back": "Fase 1: analgesia (consciente); Fase 2: excitação (delírio, movimentos); Fase 3: anestesia cirúrgica (planos I–IV); Fase 4: bulbar (parada respiratória, morte)"},
+    {"front": "Quais são os 4 componentes da anestesia geral?", "back": "1) Inconsciência (hipnose); 2) Analgesia; 3) Relaxamento muscular; 4) Bloqueio de reflexos autonômicos (amnésia inclusa)"},
+    {"front": "O que é MAC (Concentração Alveolar Mínima)?", "back": "Concentração alveolar do anestésico inalatório necessária para prevenir movimentos em 50% dos pacientes com estímulo cirúrgico padrão. MAC é inversamente proporcional à potência"},
+    {"front": "Anestésicos inalatórios — exemplos e características", "back": "Halotano (histórico, hepatotóxico); Isoflurano; Sevoflurano (rápida indução/recuperação, ideal para pediátrico); Desflurano (mais volátil, odor pungente); Óxido nitroso N₂O (analgésico, baixa potência, MAC=104%)"},
+    {"front": "Coeficiente de partição sangue/gás — o que representa?", "back": "Quanto maior o coeficiente, mais o anestésico se dissolve no sangue → mais lento para atingir equilíbrio → indução e recuperação mais lentas. Desflurano < N₂O < sevoflurano < isoflurano < halotano"},
+    {"front": "Sevoflurano — por que preferido em pediatria?", "back": "Sem odor pungente → tolerado em máscara (indução inalatória). Rápida indução e recuperação (baixo coeficiente sangue/gás). Sem efeito hepatotóxico relevante"},
+    {"front": "Halotano — por que foi descontinuado?", "back": "Hepatite por halotano (hepatite fulminante em 1/35.000): metabolismo oxidativo produz ácido trifluoroacético → reação imune. Também: ↑ sensibilidade miocárdica às catecolaminas → arritmias"},
+    {"front": "Anestésicos IV de indução — exemplos e características", "back": "Propofol: rápido, fenol (leite branco), hipnótico, antiemético; Tiopental: barbitúrico, rápido, não mais disponível; Etomidato: estável hemodinâmico, ↓ cortisol; Quetamina: simpatomimético, analgesia, dissociativo"},
+    {"front": "Propofol — vantagens e desvantagens", "back": "Vantagens: rápida indução/recuperação, antiemético, ↓ PIC. Desvantagens: hipotensão (vasodilatação), apneia, dor na injeção. Síndrome de infusão de propofol: acidose metabólica, rabdomiólise (infusão prolongada)"},
+    {"front": "Quetamina — mecanismo e características únicas", "back": "Antagonista de receptores NMDA → anestesia dissociativa. Mantém tônus simpático → ↑ FC e PA (útil em choque). Broncodilatador (útil em asmáticos). Causa alucinações → associar benzodiazepínico"},
+    {"front": "Etomidato — por que usar no paciente instável hemodinamicamente?", "back": "Induz anestesia com mínimo efeito cardiovascular (não ↓ PA, não ↓ FC). Mas: suprime córtex adrenal → ↓ cortisol por 24h (não usar infusão contínua em sépticos)"},
+    {"front": "Anestesia total intravenosa (TIVA) — o que é?", "back": "Anestesia mantida com fármacos IV (sem gases inalatórios). Geralmente: propofol (hipnose) + remifentanil (analgesia) + bloqueador NMJ. Vantagem: controle preciso, ↓ poluição, rápida recuperação"},
+    {"front": "Malignant hyperthermia (hipertermia maligna) — o que é?", "back": "Reação farmacogenética ao halogenados e succinilcolina → liberação massiva de Ca²⁺ do RS muscular → hipermetabolismo → ↑↑ T°, rigidez, acidose, rabdomiólise. Tratamento: DANTROLENE (bloqueia liberação de Ca²⁺)"},
+    {"front": "N₂O — vantagens e desvantagens", "back": "Vantagem: analgésico, ansiolítico, rápida indução/recuperação, baixo custo. Desvantagem: MAC muito alto (104%, não anestesia sozinho), expande cavidades com gás (pneumotórax, obstrução intestinal → contraindicado), depressão de vitamina B12"},
+    {"front": "Órgãos mais sensíveis à anóxia durante anestesia", "back": "1) Cérebro (4–6 min); 2) Coração (20–30 min); 3) Rins e fígado (45–60 min). Por isso monitorizar SpO₂ e PET CO₂ durante toda anestesia geral"}
+  ]
+}

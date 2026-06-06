@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T01: IPPA do Sistema Respiratório",
+  "questions": [
+    {
+      "question": "O frêmito toracovocal (fremitus vocal) é percebido por palpação quando o paciente fala 'trinta e três'. O que indica quando está AUMENTADO em uma região?",
+      "answerOptions": [
+        {"text": "Condensação pulmonar (pneumonia, atelectasia com brônquio pérvio)", "isCorrect": true, "rationale": "O frêmito aumenta quando o tecido pulmonar está condensado — o parênquima sólido transmite melhor as vibrações. Condição: brônquio pérvio (aberto) é necessário."},
+        {"text": "Derrame pleural (empiema)", "isCorrect": false, "rationale": "O líquido pleural REDUZ o frêmito — interpõe-se entre o parênquima e a parede torácica, amortecendo as vibrações."},
+        {"text": "Pneumotórax", "isCorrect": false, "rationale": "O ar no espaço pleural ABOLE o frêmito — ar não conduz vibrações."},
+        {"text": "Enfisema pulmonar", "isCorrect": false, "rationale": "No enfisema, o frêmito está DIMINUÍDO — pulmões hiperinsuflados transmitem mal as vibrações."}
+      ],
+      "hint": "Condensação = pulmão mais 'sólido' = transmite melhor as vibrações."
+    },
+    {
+      "question": "Qual som é produzido à percussão sobre pulmão normal e qual sobre derrame pleural?",
+      "answerOptions": [
+        {"text": "Pulmão normal: som claro pulmonar (sonoridade); derrame pleural: macicez", "isCorrect": true, "rationale": "O pulmão normal cheio de ar produz som claro (sonoro) à percussão. O líquido pleural, sendo sólido/líquido, produz macicez."},
+        {"text": "Pulmão normal: macicez; derrame pleural: hipersonoridade", "isCorrect": false, "rationale": "Invertido — pulmão normal é sonoro; líquido produz macicez."},
+        {"text": "Pulmão normal: timpanismo; derrame pleural: macicez", "isCorrect": false, "rationale": "Timpanismo é o som gástrico (câmara de ar gástrica) ou pneumotórax — não é o som normal do pulmão."},
+        {"text": "Ambos produzem o mesmo som à percussão", "isCorrect": false, "rationale": "Sons diferentes — ar e líquido têm densidades completamente distintas."}
+      ],
+      "hint": "Ar = sonoro; líquido = macio (macicez)."
+    },
+    {
+      "question": "Qual é o murmúrio vesicular normal e o que significa quando está abolido em uma base pulmonar?",
+      "answerOptions": [
+        {"text": "Som suave e contínuo na inspiração; abolição indica: derrame pleural, pneumotórax, atelectasia ou consolidação maciça", "isCorrect": true, "rationale": "O MV normal é produzido pelo fluxo aéreo nos alvéolos — suave, longo na inspiração, curto na expiração. Abolição indica interposição de fluido ou ar, ou ausência de ventilação local."},
+        {"text": "Som alto e tubular; abolição indica pneumonia", "isCorrect": false, "rationale": "Som tubular (sopro tubário ou brônquico) é patológico — indica condensação. O MV normal não é tubular."},
+        {"text": "Som curto na inspiração e longo na expiração; abolição indica bronquite", "isCorrect": false, "rationale": "No MV normal a inspiração é mais longa que a expiração — não o inverso."},
+        {"text": "O MV normal é igual ao som broncovesicular e não tem significado diagnóstico", "isCorrect": false, "rationale": "MV e som broncovesicular são distintos — o broncovesicular é mais grosseiro e ouvido sobre grandes brônquios."}
+      ],
+      "hint": "MV ausente na base → pense em derrame, pneumotórax ou consolidação."
+    },
+    {
+      "question": "No exame do tórax, o que é a 'expansibilidade torácica' e como é avaliada pela palpação?",
+      "answerOptions": [
+        {"text": "Amplitude de expansão do tórax durante respiração; avaliada com mãos espalmadas nas bases posteriores — o polegar deve se afastar simetricamente", "isCorrect": true, "rationale": "A expansibilidade avalia se os dois hemitóraces expandem de forma igual. Na condensação ou derrame unilateral, o lado afetado expande menos."},
+        {"text": "Frequência respiratória medida pela palpação do tórax", "isCorrect": false, "rationale": "Frequência é contada visualmente ou pelo ritmo, não avaliada desta forma."},
+        {"text": "Presença de frêmito vocal palpável", "isCorrect": false, "rationale": "Frêmito e expansibilidade são avaliações distintas à palpação."},
+        {"text": "Temperatura da parede torácica comparada bilateralmente", "isCorrect": false, "rationale": "Temperatura não faz parte da avaliação da expansibilidade."}
+      ],
+      "hint": "Polegar na coluna vertebral — afasta-se igual dos dois lados no normal."
+    },
+    {
+      "question": "O tórax 'em barril' (tonel) — com diâmetro anteroposterior aumentado e ângulo de Charpy > 90° — é característico de qual síndrome?",
+      "answerOptions": [
+        {"text": "Enfisema pulmonar (DPOC avançado)", "isCorrect": true, "rationale": "No enfisema, a hiperinsuflação crônica expande o tórax em todas as dimensões — aumentando o diâmetro AP e abrindo o ângulo subcostal (Charpy). É o 'tórax em tonel'."},
+        {"text": "Derrame pleural bilateral massivo", "isCorrect": false, "rationale": "Derrame bilateral causa expansão mas não o padrão característico de tonel com hiperinsuflação."},
+        {"text": "Pneumonia bilateral", "isCorrect": false, "rationale": "Pneumonia não causa deformidade torácica crônica em barril."},
+        {"text": "Atelectasia bilateral", "isCorrect": false, "rationale": "Atelectasia reduz volume — causaria tórax menor, não em barril."}
+      ],
+      "hint": "Ângulo de Charpy normal < 90°. Hiperinsuflação = > 90°."
+    },
+    {
+      "question": "Onde é auscultatoriamente adequado ouvir som broncovesicular (intermediário) em adulto saudável?",
+      "answerOptions": [
+        {"text": "Região esternal superior (manúbrio) e região interescapular posterior", "isCorrect": true, "rationale": "O som broncovesicular é normal sobre os grandes brônquios — esternalmente na região paraesternal superior e dorsalmente na região interescapulovertebral. Em outras regiões sugere consolidação."},
+        {"text": "Bases pulmonares bilateralmente", "isCorrect": false, "rationale": "Nas bases o normal é o murmúrio vesicular — som broncovesicular nas bases sugere condensação."},
+        {"text": "Ápices pulmonares bilateralmente", "isCorrect": false, "rationale": "Nos ápices o normal é MV — som broncovesicular nos ápices é anormal."},
+        {"text": "Em toda a superfície pulmonar igualmente", "isCorrect": false, "rationale": "A distribuição dos sons é regional — não é uniforme em todo o pulmão."}
+      ],
+      "hint": "Sons mais grosseiros = onde os brônquios são maiores."
+    },
+    {
+      "question": "O 'sinal de Skoda' (ressonância timpânica acima do derrame pleural) ocorre por quê?",
+      "answerOptions": [
+        {"text": "O líquido abaixo comprime e atelecia o parênquima acima, que fica frouxo e ressoa mais", "isCorrect": true, "rationale": "A compressão pelo derrame colapsa parcialmente o parênquima adjacente — o pulmão comprimido ressoa com som mais timpânico à percussão acima do nível do líquido."},
+        {"text": "O ar sobe e se acumula acima do líquido na cavidade pleural", "isCorrect": false, "rationale": "Não há ar acumulado acima do derrame pleural no hemitórax."},
+        {"text": "A inflamação pleural cria bolhas de ar no parênquima", "isCorrect": false, "rationale": "Não há formação de bolhas — é um fenômeno de ressonância do parênquima comprimido."},
+        {"text": "O mediastino desvia para o lado sadio, comprimindo o pulmão do lado oposto", "isCorrect": false, "rationale": "O desvio mediastinal causa outros achados — não o sinal de Skoda."}
+      ],
+      "hint": "Skoda = timpanismo acima do derrame = parênquima comprimido (atelectasia de compressão)."
+    },
+    {
+      "question": "O retardo na expansão (lagging) unilateral à palpação indica que aquele hemitórax expande menos. Quais são as causas mais comuns?",
+      "answerOptions": [
+        {"text": "Derrame pleural, pneumonia lobar, pneumotórax, pleurite com dor (respiração superficial)", "isCorrect": true, "rationale": "Qualquer condição que reduza a ventilação ipsilateral ou aumente a rigidez pleural causará retardo de expansão — liquido, consolidação, ar pleural ou dor."},
+        {"text": "Apenas derrame pleural massivo", "isCorrect": false, "rationale": "Várias condições causam retardo — não apenas derrame."},
+        {"text": "Apenas fratura de costelas", "isCorrect": false, "rationale": "Fratura causa retardo por dor, mas não é a única causa."},
+        {"text": "Derrame pleural bilateral — os dois lados ficam com retardo", "isCorrect": false, "rationale": "Derrame bilateral causa redução simétrica, não retardo unilateral (lagging)."}
+      ],
+      "hint": "Retardo unilateral = problema ipsilateral que impede expansão normal."
+    },
+    {
+      "question": "O que é broncofonia e em que condição está aumentada?",
+      "answerOptions": [
+        {"text": "Transmissão da voz (palavras) pelo estetoscópio — aumentada na condensação pulmonar com brônquio pérvio", "isCorrect": true, "rationale": "Broncofonia é ouvir a voz do paciente pelo estetoscópio. Na consolidação, o parênquima sólido transmite melhor a voz — as palavras ficam mais nítidas e altas (como ao falar no telefone)."},
+        {"text": "Murmúrio produzido pelos brônquios normais — aumentado no enfisema", "isCorrect": false, "rationale": "Broncofonia não é um murmúrio brônquico normal — é a transmissão da voz falada."},
+        {"text": "Frêmito vocal auscultatório — aumentado no derrame pleural", "isCorrect": false, "rationale": "No derrame pleural a broncofonia está DIMINUÍDA — líquido amortece a transmissão."},
+        {"text": "Transmissão do sopro cardíaco pelo parênquima — aumentada em cardiopatias", "isCorrect": false, "rationale": "Broncofonia não é relacionada a sopros cardíacos."}
+      ],
+      "hint": "Broncofonia = ouvir a voz do paciente pelo estetoscópio. Condensação = voz mais clara."
+    },
+    {
+      "question": "O que é a egofonia (voz de cabra) e em qual contexto clínico clássico é encontrada?",
+      "answerOptions": [
+        {"text": "Som nasalado/belante à ausculta quando paciente diz 'ê' — clássico na borda superior do derrame pleural", "isCorrect": true, "rationale": "Na borda do derrame, o parênquima está parcialmente comprimido — transmite a voz com qualidade nasalada e 'cabrina'. É sinal clássico de derrame pleural (limite superior)."},
+        {"text": "Som normal da ausculta cardíaca — indica valvopatia mitral", "isCorrect": false, "rationale": "Egofonia é ausculta pulmonar, não cardíaca."},
+        {"text": "Voz rouca audível ao exame — indica laringite", "isCorrect": false, "rationale": "Egofonia é um achado auscultatório pulmonar específico — não rouquidão laríngea."},
+        {"text": "Tom anasalado do MV em pulmão normal nos ápices", "isCorrect": false, "rationale": "Egofonia é sinal patológico, não achado normal."}
+      ],
+      "hint": "'Ê' → 'Â' (nasalado) = egofonia = borda superior do derrame."
+    }
+  ]
+}

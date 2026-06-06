@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T02 — Betabloqueantes",
+  "cards": [
+    {"front": "Quais são os três tipos de receptores adrenérgicos e suas localizações principais?", "back": "β₁: coração (cronotropismo, inotropismo, dromotropismo) e rim (secreção de renina); β₂: brônquios, vasos, útero; β₃: tecido adiposo (lipólise)"},
+    {"front": "Mecanismo de ação dos betabloqueantes", "back": "Antagonistas competitivos dos receptores β-adrenérgicos. Bloqueiam os efeitos das catecolaminas (adrenalina, noradrenalina) → ↓ FC, ↓ PA, ↓ contratilidade"},
+    {"front": "O que é seletividade cardíaca (cardiosseletividade)?", "back": "Preferência pelo receptor β₁ em detrimento do β₂. Exemplos seletivos: metoprolol, atenolol, bisoprolol, nebivolol. Atenção: seletividade é dose-dependente"},
+    {"front": "Betabloqueantes não seletivos — exemplos e riscos", "back": "Propranolol, carvedilol (α+β), nadolol. Risco: bloqueio β₂ → broncoespasmo (asma/DPOC), vasoconstrição periférica, mascaramento de hipoglicemia"},
+    {"front": "5 indicações principais dos betabloqueantes", "back": "1) IC com FEVE reduzida (carvedilol, metoprolol, bisoprolol); 2) HAS; 3) Pós-IAM; 4) Arritmias (FA, flutter); 5) Angina pectoris"},
+    {"front": "Por que betabloqueantes são indicados na IC com FEVE reduzida?", "back": "Bloqueio da ativação simpática crônica → ↓ remodelamento cardíaco, ↓ frequência cardíaca, melhora o enchimento diastólico e reduz mortalidade"},
+    {"front": "Contraindicações absolutas dos betabloqueantes", "back": "1) Bloqueio AV de 2º ou 3º grau; 2) Bradicardia severa; 3) Choque cardiogênico; 4) Asma brônquica grave (contraindicação relativa no DPOC)"},
+    {"front": "Por que não suspender betabloqueantes abruptamente?", "back": "Efeito rebote: up-regulation de receptores β durante uso crônico → ao suspender abruptamente, catecolaminas agem em receptores sensibilizados → taquicardia, isquemia, angina rebote"},
+    {"front": "O que é atividade simpatomimética intrínseca (ASI)?", "back": "Alguns betabloqueantes são agonistas parciais do receptor β → causam menos bradicardia em repouso. Exemplos: pindolol, acebutolol. Desvantagem: menor proteção cardíaca"},
+    {"front": "Carvedilol — perfil farmacológico completo", "back": "Betabloqueante não seletivo + bloqueador α₁. Vasodilatador periférico. 1ª escolha na IC com FEVE reduzida junto com bisoprolol e metoprolol succinato"},
+    {"front": "Nebivolol — característica especial", "back": "Betabloqueante β₁-seletivo de 3ª geração + libera NO endotelial → vasodilatação adicional. Menor impacto metabólico"},
+    {"front": "Efeitos adversos metabólicos dos betabloqueantes", "back": "1) Mascaramento de hipoglicemia (exceto sudorese); 2) Hipertrigliceridemia; 3) ↓ HDL; 4) Resistência insulínica. Preferir cardiosseletivos em diabéticos"},
+    {"front": "Betabloqueantes e função sexual", "back": "Disfunção erétil é efeito adverso conhecido (principalmente propranolol e atenolol). Nebivolol e carvedilol têm menor incidência por mecanismos vasodilatadores"},
+    {"front": "Qual betabloqueante usar em crise hipertensiva IV?", "back": "Labetalol (α+β, IV) ou esmolol (β₁-seletivo, ultra-curta ação, IV — ideal para cirurgia e crise hipertensiva perioperatória)"},
+    {"front": "Propranolol — características especiais", "back": "Não seletivo, lipofílico (atravessa BHE) → efeitos no SNC (insônia, pesadelos, depressão). Usado também em tremor essencial, enxaqueca e síndrome de abstinência alcoólica"}
+  ]
+}

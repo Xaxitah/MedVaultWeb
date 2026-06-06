@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T04: Grandes Síndromes Bronquiais",
+  "cards": [
+    {
+      "front": "Definição clínica de bronquite crônica (OMS)",
+      "back": "Tosse produtiva (com expectoração) por ≥ 3 meses/ano durante ≥ 2 anos consecutivos, excluídas outras causas.\nÉ uma definição CLÍNICA (não histológica).\nFator etiológico principal: tabagismo."
+    },
+    {
+      "front": "Asma brônquica — 4 características fisiopatológicas",
+      "back": "1. Inflamação crônica das vias aéreas (eosinófilos, mastócitos)\n2. Hiperresponsividade brônquica (broncoespasmo a estímulos variados)\n3. Obstrução ao fluxo aéreo (REVERSÍVEL)\n4. Remodelamento brônquico (casos crônicos)\nKey: reversibilidade distingue asma de DPOC"
+    },
+    {
+      "front": "Critérios de reversibilidade na espirometria (asma)",
+      "back": "Prova broncodilatadora POSITIVA:\n• VEF₁ aumenta ≥ 12% E\n• VEF₁ aumenta ≥ 200 mL em valor absoluto\nApós 400 mcg de salbutamol inalado (aguardar 15–20 min).\nAMBOS os critérios são necessários."
+    },
+    {
+      "front": "Classificação de gravidade da asma (GINA)",
+      "back": "1. Intermitente: < 1x/semana, VEF₁ ≥ 80%\n2. Persistente leve: > 1x/sem, < diário, VEF₁ ≥ 80%\n3. Persistente moderada: diária, VEF₁ 60–79%\n4. Persistente grave: contínua, VEF₁ < 60%\n→ Classifica para INICIAR tratamento"
+    },
+    {
+      "front": "Síndrome de obstrução brônquica — achados ao IPPA",
+      "back": "Inspeção: tórax hiperinsuflado, uso de musculatura acessória, expiração prolongada\nPalpação: frêmito diminuído, expansibilidade reduzida\nPercussão: hipertimpanismo\nAusculta: MV diminuído, sibilos expiratórios, expiração prolongada"
+    },
+    {
+      "front": "Bronquiectasia — tríade clínica e causas",
+      "back": "Tríade: tosse crônica com escarro purulento abundante + hemoptise recorrente + baqueteamento digital\nCausas:\n• FC (mucoviscidose) — jovens\n• Kartagener (discinesia ciliar) — situs inversus\n• Pós-infecciosa (TB, pneumonia grave)\n• Imunodeficiência (IgA, ICV)\n• Obstrução brônquica"
+    },
+    {
+      "front": "Fibrose cística (FC) — defeito e manifestações",
+      "back": "Defeito: mutação CFTR → disfunção canal Cl⁻ → secreções espessas\nManifestações pulmonares: bronquiectasia, infecções (Pseudomonas, S. aureus), insuficiência respiratória\nExtra-pulmonares: insuficiência pancreática exócrina, íleo meconial, infertilidade masculina\nDiagnóstico: teste do suor (Cl⁻ > 60 mEq/L)"
+    },
+    {
+      "front": "Síndrome de Kartagener — o que é?",
+      "back": "Discinesia ciliar primária: cílios não funcionam → clearance mucociliar ausente\nTríade: bronquiectasia + sinusite crônica + situs inversus\nSitus inversus: órgãos espelhados (dextrocardia + fígado à esquerda)\nInfertilidade masculina (espermatozoides imóveis)"
+    },
+    {
+      "front": "Bronquite aguda — etiologia e duração",
+      "back": "Etiologia: predominantemente VIRAL (90%) — rinovírus, influenza, parainfluenza\nBacteriana: Bordetella pertussis (coqueluche), Mycoplasma\nDuração: tosse pode persistir 3–8 semanas (mesmo após resolução da infecção)\nTosse > 3 semanas sem causa → investigar"
+    },
+    {
+      "front": "Disfunção de Cordas Vocais (DCV) vs asma",
+      "back": "DCV: adução paradoxal das cordas durante inspiração → estridor inspiratório\n• Espirometria: normal\n• Prova broncodilatadora: negativa\n• Fatores: estresse, exercício, refluxo\n• Resolução: rápida e espontânea\nAsma: broncoespasmo, reversível com BD, eosinófilos\nDiagnóstico DCV: laringoscopia em crise"
+    },
+    {
+      "front": "Tratamento de manutenção da asma — escada terapêutica básica",
+      "back": "Degrau 1: SABA (alívio) apenas se necessário\nDegrau 2: CI baixa dose\nDegrau 3: CI + LABA (ou CI dose média)\nDegrau 4: CI alta dose + LABA (± anti-leucotrieno)\nDegrau 5: adicionar biológico (anti-IL-5, anti-IgE)\nCI = corticoide inalado; SABA = beta-2 de curta ação; LABA = beta-2 de longa ação"
+    },
+    {
+      "front": "Sinal de alerta ('red flags') na asma grave em crise",
+      "back": "• Tórax silencioso (ausência de sibilos = fluxo mínimo)\n• Cianose\n• Alteração de consciência\n• SpO₂ < 92%\n• Incapacidade de completar frases\n• FR > 30 irpm, FC > 120 bpm\n→ Internação imediata, oxigênio, beta-2 nebulizado, corticoide sistêmico"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T04 — Princípios Bioéticos",
+  "questions": [
+    {
+      "question": "Uma paciente adulta, capaz e informada, recusa transfusão de sangue por razões religiosas (Testemunha de Jeová), mesmo sabendo que pode morrer. Qual é a conduta eticamente correta?",
+      "answerOptions": [
+        {"text": "Realizar a transfusão de qualquer forma — a vida tem prioridade sobre crenças religiosas", "isCorrect": false, "rationale": "Forçar tratamento a adulto capaz, mesmo que salve a vida, viola a autonomia — princípio central da bioética contemporânea. Adultos capazes têm direito de recusar tratamento por qualquer razão, inclusive religiosa."},
+        {"text": "Respeitar a recusa, documentar extensamente e continuar o cuidado com alternativas disponíveis", "isCorrect": true, "rationale": "Adulto capaz, informado e sem coerção pode recusar qualquer tratamento — inclusive transfusão. O médico deve: respeitar a decisão, documentar que as consequências foram explicadas e compreendidas, explorar alternativas (expansores de volume, eritropoetina), manter o vínculo. A autonomia prevalece sobre a beneficência quando há conflito em adultos capazes."},
+        {"text": "Solicitar ao juiz que ordene a transfusão por medida de urgência", "isCorrect": false, "rationale": "Judicialização é considerada para menores de idade ou incapazes — adultos capazes têm direito constitucional de recusar tratamento. Buscar ordem judicial para forçar adulto capaz é geralmente ineficaz e eticamente questionável."},
+        {"text": "Convencer a família a assinar autorização contra a vontade da paciente", "isCorrect": false, "rationale": "A família não tem poder de sobrepor a decisão de adulto capaz — apenas pode representar o incapaz. Usar a família para contornar a vontade da paciente viola sua autonomia."}
+      ],
+      "hint": "Adulto capaz + informação + voluntariedade = autonomia plena, inclusive de recusar tratamento vital."
+    },
+    {
+      "question": "O princípio da não maleficência ('primum non nocere') implica que o médico nunca deve realizar procedimentos que causem dor ou risco ao paciente. Essa afirmação é:",
+      "answerOptions": [
+        {"text": "Verdadeira — nenhum procedimento que cause sofrimento é ético", "isCorrect": false, "rationale": "Se fosse assim, cirurgias, quimioterapia, exames invasivos e até vacinas seriam proibidos — o que seria absurdo. A não maleficência não proíbe dano, mas proíbe dano desnecessário ou desproporcional."},
+        {"text": "Falsa — não maleficência exige que o benefício esperado supere o risco, não que não haja risco ou dano", "isCorrect": true, "rationale": "'Primum non nocere' significa não causar dano desnecessário ou desproporcional — não a ausência absoluta de risco. Cirurgia, quimioterapia e procedimentos invasivos causam dano, mas o benefício supera o risco. A não maleficência exige avaliação da relação risco-benefício, não risco zero."},
+        {"text": "Verdadeira apenas para procedimentos eletivos; procedimentos de emergência são sempre justificados", "isCorrect": false, "rationale": "A avaliação de risco-benefício se aplica a qualquer procedimento — eletivo ou emergencial. Mesmo em emergências, intervenções desproporcionais podem violar a não maleficência."},
+        {"text": "Falsa — o princípio foi abolido pela bioética moderna por ser muito restritivo", "isCorrect": false, "rationale": "Não maleficência é um dos 4 princípios fundamentais da bioética — continua plenamente válido e relevante."}
+      ],
+      "hint": "Medicina sem qualquer dano seria impossível — o princípio trata de proporcionalidade, não de risco zero."
+    },
+    {
+      "question": "O que são 'diretivas antecipadas de vontade' (testamento vital) e qual princípio bioético fundamenta sua validade?",
+      "answerOptions": [
+        {"text": "Documentos que designam um herdeiro para receber os bens do paciente em caso de morte — baseados em justiça", "isCorrect": false, "rationale": "Testamento de bens é um documento jurídico diferente — diretivas antecipadas referem-se a decisões de saúde, não à herança."},
+        {"text": "Documentos onde o paciente registra suas vontades sobre tratamentos para situações futuras de incapacidade — baseados na autonomia prospectiva", "isCorrect": true, "rationale": "Diretivas antecipadas (ou testamento vital) permitem ao paciente exercer sua autonomia mesmo quando estiver incapaz de decidir: 'Recuso ventilação mecânica em fase terminal', 'Autorizo doação de órgãos'. Fundamentam-se na autonomia — o respeito à vontade do paciente, projetada no futuro quando ele não pode mais expressá-la."},
+        {"text": "Instruções ao médico sobre como tratar a doença do paciente, baseadas na beneficência", "isCorrect": false, "rationale": "As diretivas são de vontade do paciente — não instruções técnicas para o médico. São baseadas na autonomia, não na beneficência."},
+        {"text": "Permissão escrita do paciente para o médico compartilhar informações com a família — baseada em sigilo", "isCorrect": false, "rationale": "Autorização para compartilhamento de informações é uma das formas de exercício da autonomia, mas não é a definição de diretiva antecipada."}
+      ],
+      "hint": "O paciente faz hoje a escolha que valerá quando não puder mais escolher."
+    },
+    {
+      "question": "Um hospital tem apenas uma UTI disponível e dois pacientes precisam dela simultaneamente: um jovem de 20 anos com acidente e um idoso de 75 anos com pneumonia grave. Qual princípio guia a decisão de alocação?",
+      "answerOptions": [
+        {"text": "Autonomia — o paciente que mais quer a UTI deve receber", "isCorrect": false, "rationale": "A vontade dos pacientes é importante, mas em alocação de recursos escassos, critérios clínicos objetivos são mais relevantes do que a intensidade do desejo."},
+        {"text": "Justiça — critérios equitativos e transparentes baseados em probabilidade de benefício, não em características pessoais irrelevantes (raça, riqueza)", "isCorrect": true, "rationale": "Justiça distributiva: alocar recursos escassos de forma equitativa usando critérios clínicos (probabilidade de benefício, gravidade, prognóstico) — não critérios arbitrários (idade isoladamente, raça, riqueza). Protocolos institucionais transparentes devem guiar a decisão — não a preferência do médico de plantão."},
+        {"text": "Beneficência — o médico deve salvar quem ele julgar ter mais potencial de vida", "isCorrect": false, "rationale": "Beneficência é relevante, mas a decisão subjetiva do médico sobre 'potencial de vida' não é um critério ético adequado — seria paternalismo e potencialmente discriminatório."},
+        {"text": "Não maleficência — negar a UTI ao mais novo causaria menos dano", "isCorrect": false, "rationale": "Não maleficência se aplica a danos de intervenção, não à alocação de recursos — e a lógica de 'negar para o mais novo' é invertida em termos de prioridade clínica."}
+      ],
+      "hint": "Recursos escassos = justiça distributiva + critérios objetivos e transparentes."
+    },
+    {
+      "question": "O paternalismo médico é eticamente problemático principalmente porque:",
+      "answerOptions": [
+        {"text": "Viola o princípio de justiça ao não tratar todos os pacientes igualmente", "isCorrect": false, "rationale": "Paternalismo viola autonomia — o problema central não é a igualdade entre pacientes, mas o desrespeito à capacidade decisória do indivíduo."},
+        {"text": "Viola a autonomia do paciente ao substituir sua vontade pela do médico, mesmo em adultos capazes", "isCorrect": true, "rationale": "Paternalismo: médico decide 'pelo bem' do paciente sem considerar sua vontade — como um pai com criança. Eticamente problemático: adultos capazes têm direito de decidir por si mesmos, mesmo que a decisão pareça errada. O paternalismo só é justificado em incapazes (crianças, pacientes sem discernimento)."},
+        {"text": "Aumenta a carga de trabalho do médico ao ter que tomar todas as decisões sozinho", "isCorrect": false, "rationale": "O problema do paternalismo não é prático (carga de trabalho) mas ético — viola a dignidade e a autonomia do paciente."},
+        {"text": "É contrário às regulamentações do CFM", "isCorrect": false, "rationale": "Embora o CEM valorize a autonomia, a questão central do paternalismo é ética (violação da autonomia) — não apenas legal ou regulatória."}
+      ],
+      "hint": "Quem tem o direito de decidir sobre a vida de um adulto capaz?"
+    },
+    {
+      "question": "O princípio do duplo efeito permite que uma ação cause dano se:",
+      "answerOptions": [
+        {"text": "O dano for intencional mas compensado por benefício maior ao paciente", "isCorrect": false, "rationale": "Se o dano for intencional como meio para o benefício, viola o princípio do duplo efeito — que exige que o dano seja não intencional e inevitável, não deliberadamente causado."},
+        {"text": "O efeito ruim não é intencional, não é o meio para o bem e o benefício é proporcional ao dano", "isCorrect": true, "rationale": "Princípio do duplo efeito: ação boa pode ser feita mesmo gerando efeito ruim inevitável se: 1) intenção primária é boa; 2) o mal não é o meio para alcançar o bem; 3) benefício proporcional ao dano. Ex.: morfina em altas doses para dor terminal pode acelerar a morte — mas a intenção é aliviar a dor, o efeito sobre a morte é secundário e não intencional."},
+        {"text": "A maioria dos pacientes aprovaria a ação se soubesse do dano causado", "isCorrect": false, "rationale": "Aprovação hipotética da maioria é um raciocínio consequencialista — o princípio do duplo efeito é deontológico e se baseia na intenção e na proporcionalidade, não na aprovação popular."},
+        {"text": "O paciente consentiu com o procedimento antes que o dano ocorresse", "isCorrect": false, "rationale": "O consentimento é necessário, mas não é o que define o duplo efeito — o princípio foca na intenção e no tipo de relação entre o bem desejado e o mal produzido."}
+      ],
+      "hint": "O que importa é a intenção + a relação entre o bem e o mal (o mal como meio vs. efeito secundário)."
+    },
+    {
+      "question": "O que significa dizer que os 4 princípios bioéticos são 'prima facie'?",
+      "answerOptions": [
+        {"text": "São princípios criados pelo Papa (prima = papado) e portanto têm base religiosa", "isCorrect": false, "rationale": "Prima facie é uma expressão latina jurídica que significa 'à primeira vista' — não tem relação com religião ou o papado."},
+        {"text": "São válidos à primeira vista, mas podem ser superados por outro princípio mais relevante no contexto específico", "isCorrect": true, "rationale": "'Prima facie': obrigação válida a priori, que se presume vinculante mas que pode ser suplantada por outra obrigação mais urgente no contexto. Ex.: a obrigação de manter sigilo é prima facie — válida em geral, mas pode ceder quando há risco grave para terceiros. Isso explica por que os princípios podem conflitar sem que nenhum seja absoluto."},
+        {"text": "São princípios de primeira linha — devem ser aplicados antes de qualquer outra consideração ética", "isCorrect": false, "rationale": "Embora sejam referência principal, 'prima facie' não significa que devem ser aplicados antes de tudo sem ponderação — significa que são presumivelmente válidos, mas ponderáveis."},
+        {"text": "São princípios provisórios, sujeitos a revisão periódica pela Associação Médica Mundial", "isCorrect": false, "rationale": "Prima facie não tem o sentido de 'provisório' — é um conceito filosófico sobre a natureza das obrigações morais, não sobre revisão de normas."}
+      ],
+      "hint": "Prima facie = à primeira vista, presumivelmente obrigatório — mas sujeito à ponderação contextual."
+    },
+    {
+      "question": "Uma paciente oncológica competente pede para o médico não revelar seu diagnóstico de câncer a sua família. O médico deve:",
+      "answerOptions": [
+        {"text": "Revelar à família — eles precisam se preparar para o pior e têm direito de saber", "isCorrect": false, "rationale": "A família não tem direito automático às informações de saúde de adulto capaz — o sigilo pertence ao paciente, não à família."},
+        {"text": "Respeitar a vontade da paciente e não revelar à família sem sua autorização", "isCorrect": true, "rationale": "A autonomia da paciente inclui decidir quem pode acessar suas informações de saúde. O sigilo médico protege essas informações inclusive da família. O médico pode encorajar a paciente a conversar com a família, mas não pode revelar sem autorização — exceto em situações de risco real para terceiros, que não é o caso aqui."},
+        {"text": "Revelar apenas ao cônjuge — cônjuge sempre tem direito às informações médicas", "isCorrect": false, "rationale": "Cônjuge não tem acesso automático — precisa da autorização expressa do paciente, como qualquer familiar."},
+        {"text": "Revelar em termos vagos ('há uma condição séria') sem detalhes", "isCorrect": false, "rationale": "Qualquer revelação sem autorização da paciente viola o sigilo médico — mesmo que incompleta. A paciente tem direito de decidir o que revelar e a quem."}
+      ],
+      "hint": "O sigilo pertence ao paciente — não à família."
+    },
+    {
+      "question": "Qual é o princípio que fundamenta a obrigação do médico de tratar igualmente pacientes de diferentes origens étnicas, econômicas ou religiosas?",
+      "answerOptions": [
+        {"text": "Beneficência — agir pelo bem de todos os pacientes igualmente", "isCorrect": false, "rationale": "Beneficência obriga a agir pelo bem de cada paciente — mas não fundamenta especificamente a não discriminação entre grupos."},
+        {"text": "Justiça — tratar desigualmente os desiguais é injusto; discriminação é violação do princípio de equidade", "isCorrect": true, "rationale": "Justiça na bioética inclui equidade: tratar cada pessoa conforme suas necessidades, sem discriminação por raça, religião, renda, gênero ou orientação sexual. Negar ou piorar o cuidado com base nessas características viola diretamente o princípio de justiça."},
+        {"text": "Autonomia — cada paciente tem autonomia para exigir igual tratamento", "isCorrect": false, "rationale": "Autonomia é o direito individual de decidir — a equidade no tratamento é fundamentada pela justiça, não pela autonomia."},
+        {"text": "Não maleficência — discriminar causaria dano ao paciente", "isCorrect": false, "rationale": "Embora discriminação cause dano (e viole a não maleficência), o fundamento específico da igualdade no tratamento é o princípio de justiça."}
+      ],
+      "hint": "Distribuição equitativa de cuidados sem discriminação = qual princípio?"
+    },
+    {
+      "question": "A teoria principialista recebe críticas por ser excessivamente individualista. O que isso significa?",
+      "answerOptions": [
+        {"text": "Os princípios focam demais no médico individual, ignorando a equipe de saúde", "isCorrect": false, "rationale": "Individualismo aqui não se refere ao médico — mas ao foco na autonomia individual do paciente."},
+        {"text": "Ao focar na autonomia individual, o principialismo pode ignorar valores comunitários, culturais e sociais que moldam as decisões de saúde", "isCorrect": true, "rationale": "Crítica válida ao principialismo: é desenvolvido em contexto americano, liberal-individualista — valoriza a autonomia individual acima de laços familiares ou comunitários. Em culturas coletivistas (Ásia, África, América Latina), a família participa centralmente das decisões. O principialismo pode ser insensível a esses contextos quando aplicado universalmente."},
+        {"text": "Os 4 princípios foram criados apenas por dois indivíduos — falta representatividade", "isCorrect": false, "rationale": "A crítica não é sobre autoria, mas sobre o conteúdo cultural do framework — seu foco no indivíduo vs. a comunidade."},
+        {"text": "O principialismo não se aplica a decisões de saúde coletiva (epidemias, vacinação)", "isCorrect": false, "rationale": "O principialismo pode ser aplicado à saúde coletiva — a crítica de individualismo é sobre o peso dado à autonomia individual em detrimento de valores comunitários."}
+      ],
+      "hint": "Autonomia individual vs. valores coletivos — qual contexto cultural moldou os 4 princípios?"
+    }
+  ]
+}

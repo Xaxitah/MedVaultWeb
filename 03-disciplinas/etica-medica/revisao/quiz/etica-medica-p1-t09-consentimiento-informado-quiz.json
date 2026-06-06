@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T09 — Consentimento Informado",
+  "questions": [
+    {
+      "question": "Quais são os 3 elementos essenciais para que um consentimento informado seja válido?",
+      "answerOptions": [
+        {"text": "Assinatura do paciente, testemunha presente e notarização do documento", "isCorrect": false, "rationale": "Consentimento informado não requer notarização — é um processo de comunicação, não um documento notarial. Assinatura e testemunha são formais, não os elementos essenciais."},
+        {"text": "Competência do paciente, informação adequada e voluntariedade (sem coerção)", "isCorrect": true, "rationale": "Os 3 elementos essenciais: 1) Competência/capacidade — paciente capaz de compreender e decidir; 2) Informação — dados completos, compreensíveis e suficientes (diagnóstico, tratamento, riscos, alternativas); 3) Voluntariedade — decisão livre de coerção. Sem qualquer um dos 3, o CI é eticamente inválido — mesmo que o paciente assine."},
+        {"text": "Diagnóstico confirmado, presença de familiar e gravação em vídeo da conversa", "isCorrect": false, "rationale": "Diagnóstico confirmado é ideal, mas o CI pode ser obtido para procedimentos diagnósticos. Familiar e gravação em vídeo não são requisitos do CI."},
+        {"text": "Aprovação do comitê de bioética, registro em prontuário e entrega de via ao paciente", "isCorrect": false, "rationale": "Comitê de bioética é para casos especiais — CI não requer aprovação prévia do comitê em cada caso. Registro e entrega de via são boas práticas, não os elementos essenciais."}
+      ],
+      "hint": "3 elementos = pode decidir + tem informação + decide livremente."
+    },
+    {
+      "question": "Um paciente inconsciente chega ao pronto-socorro com hemorragia grave. Não há familiar presente. O cirurgião deve:",
+      "answerOptions": [
+        {"text": "Aguardar a chegada de um familiar para obter consentimento antes de operar", "isCorrect": false, "rationale": "Aguardar familiar em emergência com risco de vida imediato causaria morte por omissão — é antiético e contrário ao dever de beneficência."},
+        {"text": "Operar imediatamente — em emergência com risco de vida sem condição de consentir, presume-se consentimento para procedimento salvador", "isCorrect": true, "rationale": "A exceção emergencial ao CI: quando o paciente não pode consentir, não há representante disponível e há risco de vida iminente, presume-se que o paciente desejaria ser salvo. O médico opera por beneficência e não maleficência. Deve documentar no prontuário as circunstâncias e buscar CI assim que possível (familiar ou do próprio paciente ao recuperar a consciência)."},
+        {"text": "Ligar para o CRM para obter autorização de operar sem consentimento", "isCorrect": false, "rationale": "Em emergência com risco de vida, não há tempo para consultar o CRM — a decisão é imediata e baseada na beneficência. O CRM não é instância de autorização para procedimentos emergenciais."},
+        {"text": "Realizar apenas procedimentos mínimos (analgesia e acesso venoso) — nunca operar sem consentimento", "isCorrect": false, "rationale": "Em emergência com risco de vida, o médico pode e deve realizar a intervenção necessária para salvar a vida — limitá-la a analgesia seria abandono e violação da beneficência."}
+      ],
+      "hint": "Emergência = exceção ao CI. O que o paciente presumivelmente desejaria?"
+    },
+    {
+      "question": "Uma criança de 14 anos com leucemia precisa de quimioterapia. Os pais são Testemunhas de Jeová e recusam o tratamento por motivos religiosos. O médico deve:",
+      "answerOptions": [
+        {"text": "Respeitar integralmente a decisão dos pais — eles são os representantes legais da criança", "isCorrect": false, "rationale": "Em menores de idade, quando a recusa dos pais coloca em risco a vida da criança, o interesse superior da criança prevalece sobre a decisão dos pais — o médico pode e deve acionar a Justiça."},
+        {"text": "Acionar a Justiça para obter ordem judicial para tratar a criança — o interesse superior do menor prevalece", "isCorrect": true, "rationale": "Para menores, os pais são representantes mas não podem recusar tratamento que coloque a vida da criança em risco. O médico deve: informar os pais das consequências, acionar o Conselho Tutelar e/ou a Justiça, obter ordem judicial para tratar. O interesse superior da criança e seu direito à vida prevalecem sobre as crenças religiosas dos pais."},
+        {"text": "Respeitar a decisão dos pais mas registrar no prontuário — a responsabilidade é deles", "isCorrect": false, "rationale": "Registrar no prontuário não exime o médico — que tem dever de proteger a vida da criança. Aceitar passivamente a recusa dos pais em caso de risco de vida do menor é abandono."},
+        {"text": "Tratar imediatamente sem acionar a Justiça — a emergência justifica qualquer ação", "isCorrect": false, "rationale": "Se não há emergência imediata (leucemia é grave mas raramente emergência aguda na apresentação), há tempo para acionar a Justiça — o que é mais seguro legal e eticamente do que tratar contra a vontade dos pais sem ordem judicial."}
+      ],
+      "hint": "Menor + risco de vida + recusa dos pais = interesse superior do menor."
+    },
+    {
+      "question": "O que é 'capacidade decisional' e como é avaliada?",
+      "answerOptions": [
+        {"text": "É sinônimo de diagnóstico psiquiátrico — todo paciente com doença mental é incapaz", "isCorrect": false, "rationale": "Doença mental não equivale a incapacidade — muitos pacientes com transtornos psiquiátricos mantêm plena capacidade decisional para certas decisões."},
+        {"text": "Habilidade de compreender a informação, aplicá-la à situação, raciocinar sobre alternativas e comunicar uma decisão — avaliada caso a caso", "isCorrect": true, "rationale": "Capacidade decisional (competência): 1) Compreender a informação fornecida; 2) Apreciar como se aplica à sua situação; 3) Raciocinar sobre as alternativas; 4) Comunicar uma decisão consistente. Avaliada caso a caso — não por diagnóstico. Pode ser parcial ou situacional. Varia com o contexto (capaz para recusar analgesia, incapaz para decidir sobre cirurgia complexa)."},
+        {"text": "Capacidade legal definida apenas por laudo psiquiátrico formal e homologada pelo juiz", "isCorrect": false, "rationale": "Na prática clínica, capacidade é avaliada clinicamente pelo médico assistente — não requer laudo psiquiátrico ou homologação judicial para cada decisão cotidiana (embora laudo e Justiça possam ser necessários em casos complexos)."},
+        {"text": "É determinada pela idade: adultos são sempre capazes; menores sempre incapazes", "isCorrect": false, "rationale": "Criança pode ter capacidade para certas decisões; adulto pode ser incapaz por doença. A avaliação é individual e contextual — não automática pela idade."}
+      ],
+      "hint": "4 componentes: compreender + aplicar + raciocinar + comunicar."
+    },
+    {
+      "question": "O consentimento informado em pesquisa clínica tem características adicionais em relação ao CI clínico. Qual das seguintes é exclusiva da pesquisa?",
+      "answerOptions": [
+        {"text": "Deve ser obtido antes do procedimento — na pesquisa pode ser retroativo", "isCorrect": false, "rationale": "CI tanto clínico quanto de pesquisa deve ser obtido ANTES — CI retroativo não existe."},
+        {"text": "Garantia de que o participante pode retirar o consentimento a qualquer momento sem prejuízo ao seu tratamento médico", "isCorrect": true, "rationale": "Na pesquisa clínica, o CI deve incluir: 1) Natureza voluntária e experimental; 2) Possibilidade de sair a qualquer momento SEM que isso afete o tratamento clínico que recebe. Essa garantia é especialmente crítica na pesquisa — pacientes vulneráveis podem sentir-se pressionados a continuar para não 'perder' o cuidado. O CEM e a Resolução CNS 466/2012 exigem essa cláusula."},
+        {"text": "Deve ser obtido por escrito — na pesquisa pode ser verbal", "isCorrect": false, "rationale": "É o contrário — na pesquisa, CI escrito é obrigatório (Resolução CNS 466/2012). No atendimento clínico, pode ser verbal para procedimentos simples."},
+        {"text": "A família deve assinar juntamente com o paciente em todos os casos de pesquisa", "isCorrect": false, "rationale": "Assinatura da família não é requisito universal do CI em pesquisa — é o próprio participante que assina (ou seu representante legal se incapaz)."}
+      ],
+      "hint": "Na pesquisa, participar é voluntário — mas o que acontece se o participante quiser sair?"
+    },
+    {
+      "question": "Um médico explica um procedimento cirúrgico complexo ao paciente em linguagem técnica. O paciente diz 'sim, pode fazer'. Esse consentimento é eticamente válido?",
+      "answerOptions": [
+        {"text": "Sim — o paciente respondeu 'sim', o que constitui consentimento verbal válido", "isCorrect": false, "rationale": "Consentimento verbal existe, mas depende de compreensão real — responder 'sim' sem compreender o que está consentindo não é CI válido."},
+        {"text": "Não necessariamente — sem compreensão real (verificada por teach-back, por exemplo), a informação não foi adequada e o CI é inválido", "isCorrect": true, "rationale": "O CI requer INFORMAÇÃO ADEQUADA, o que inclui compreensão real. Linguagem técnica inacessível viola esse requisito. O médico deve verificar compreensão (teach-back: pedir ao paciente que repita com suas próprias palavras). 'Sim' sem compreensão é consentimento de forma (assentimento), não de substância."},
+        {"text": "Sim — o médico cumpriu seu dever ao informar, independente do nível de compreensão", "isCorrect": false, "rationale": "O dever de informar inclui o dever de ser compreendido — transmitir informação sem garantir compreensão não cumpre o elemento informação do CI."},
+        {"text": "Depende do tipo de procedimento — para cirurgias simples, 'sim' basta; para complexas, exige-se mais", "isCorrect": false, "rationale": "A validade do CI não depende da complexidade da cirurgia, mas da real compreensão do paciente sobre qualquer procedimento ao qual está consentindo."}
+      ],
+      "hint": "Informação adequada = linguagem acessível + compreensão verificada."
+    },
+    {
+      "question": "Quem pode dar consentimento substituto para um paciente adulto que está inconsciente e não tem familiar imediato disponível?",
+      "answerOptions": [
+        {"text": "Apenas o cônjuge — outros familiares não têm poder legal", "isCorrect": false, "rationale": "Na ausência de cônjuge, outros familiares podem servir como representantes — a ordem de prioridade varia por legislação, mas o cônjuge não é o único com essa capacidade."},
+        {"text": "Representante legal nomeado, cônjuge, filhos adultos ou pais — em ordem de prioridade estabelecida por lei ou protocolos institucionais", "isCorrect": true, "rationale": "Consentimento substituto: dado por representante que decide pelo paciente incapaz. Ordem típica: 1) Representante nomeado formalmente (procuração ou diretiva antecipada); 2) Cônjuge/companheiro; 3) Filhos adultos; 4) Pais; 5) Irmãos adultos. O representante deve decidir conforme os valores conhecidos do paciente (substituição) ou o melhor interesse do paciente (se os valores forem desconhecidos)."},
+        {"text": "O médico assistente — que conhece melhor o caso e pode decidir pelo paciente", "isCorrect": false, "rationale": "O médico toma decisões clínicas, mas o consentimento substituto deve vir de representante do paciente — não do próprio médico, para evitar conflito de interesses."},
+        {"text": "O Estado — em casos de adultos sem família, o Estado é automaticamente tutor", "isCorrect": false, "rationale": "Tutela estatal requer processo judicial formal — não é automática e não serve para decisões clínicas urgentes."}
+      ],
+      "hint": "Quem decide pelo incapaz? Quem o paciente teria escolhido."
+    },
+    {
+      "question": "O que são 'diretivas antecipadas de vontade' e por que são eticamente valorizadas?",
+      "answerOptions": [
+        {"text": "Documentos legais que permitem ao paciente designar um herdeiro para seus bens em caso de incapacidade futura", "isCorrect": false, "rationale": "Designar herdeiro é testamento — diretivas antecipadas tratam de decisões de SAÚDE, não de bens materiais."},
+        {"text": "Documentos onde o paciente registra suas vontades sobre tratamentos futuros — permitem exercer autonomia mesmo quando incapaz", "isCorrect": true, "rationale": "Diretivas antecipadas (testamento vital): o paciente registra em vida o que quer e o que não quer em situações de incapacidade futura ('Não quero ventilação mecânica em estado vegetativo', 'Autorizo doação de órgãos'). São eticamente valorizadas porque: prolongam a autonomia do paciente além da capacidade; reduzem conflitos familiares; guiam médicos em situações difíceis. Respeitadas pelo CEM e crescente legislação mundial."},
+        {"text": "Protocolos clínicos que o médico antecipa para o tratamento de condições crônicas antes de qualquer sintoma", "isCorrect": false, "rationale": "Protocolos de tratamento preventivo são diferentes — diretivas antecipadas são documentos de VONTADE do paciente, não protocolos médicos."},
+        {"text": "Autorizações prévias do plano de saúde para procedimentos de alto custo", "isCorrect": false, "rationale": "Autorização do plano de saúde é burocrática — diretivas antecipadas são documentos pessoais de exercício da autonomia."}
+      ],
+      "hint": "Antecipadas = registradas hoje para valer quando não puder mais decidir."
+    },
+    {
+      "question": "O 'privilégio terapêutico' justifica ocultar informações ao paciente quando o médico julga que a verdade causaria dano psicológico grave. Por que essa prática é eticamente problemática?",
+      "answerOptions": [
+        {"text": "Porque aumenta o risco de ação judicial por omissão de informação", "isCorrect": false, "rationale": "O risco legal é consequência — o problema fundamental é ético, não legal."},
+        {"text": "Porque substitui a avaliação do paciente sobre o que é suportável para si pela avaliação paternalista do médico, violando a autonomia", "isCorrect": true, "rationale": "Privilégio terapêutico: médico oculta informação 'pelo bem' do paciente — mas é o MÉDICO quem decide o que o paciente pode suportar, sem perguntar ao paciente. Isso é paternalismo — viola autonomia (paciente não pode decidir sem informação real) e veracidade. Pesquisas mostram que pacientes geralmente preferem receber informações verídicas, mesmo difíceis. Justificável apenas em casos raríssimos e deve ser documentado."},
+        {"text": "Porque é proibido pelo Código Penal brasileiro como omissão dolosa", "isCorrect": false, "rationale": "Não há tipificação penal específica do 'privilégio terapêutico' como crime — o problema é ético (violação de autonomia e veracidade), não necessariamente criminal."},
+        {"text": "Porque prejudica a relação médico-paciente ao criar distância emocional desnecessária", "isCorrect": false, "rationale": "A distância emocional é uma consequência, não a razão principal pela qual o privilégio terapêutico é problemático. O problema central é a violação da autonomia."}
+      ],
+      "hint": "Quem tem o direito de decidir o que o paciente pode ou não suportar saber?"
+    },
+    {
+      "question": "Um paciente capaz assina um termo de CI para cirurgia abdominal. No dia da cirurgia, ele muda de ideia e quer retirar o consentimento. O médico deve:",
+      "answerOptions": [
+        {"text": "Realizar a cirurgia — o consentimento assinado é vinculante e o paciente não pode retirar", "isCorrect": false, "rationale": "CI não é contrato irrevogável — pode ser retirado a qualquer momento antes do procedimento por paciente capaz."},
+        {"text": "Respeitar a retirada do consentimento — paciente capaz pode revogar CI a qualquer momento antes do procedimento", "isCorrect": true, "rationale": "O CI é revogável enquanto o paciente tiver capacidade decisional. Assinatura não cria obrigação irrevogável. O médico deve: respeitar a retirada, explorar os motivos (talvez haja medo ou informação faltante que possa ser esclarecida), documentar no prontuário e orientar sobre consequências da não cirurgia. Em emergência com inconsciência — aí o CI prévio pode guiar a decisão."},
+        {"text": "Consultar a família antes de respeitar a retirada — eles podem ter argumento que convença o paciente", "isCorrect": false, "rationale": "A família pode ser consultada com permissão do paciente, mas não tem poder de sobrepor a decisão do adulto capaz. Tentar convencer o paciente pela família sem sua permissão pode ser coercitivo."},
+        {"text": "Realizar apenas parte da cirurgia — o que já foi preparado não pode ser revertido", "isCorrect": false, "rationale": "A preparação pré-cirúrgica (anestesia não iniciada, incisão não realizada) não cria obrigação de prosseguir contra a vontade do paciente capaz."}
+      ],
+      "hint": "CI é revogável — autonomia persiste enquanto o paciente for capaz."
+    }
+  ]
+}

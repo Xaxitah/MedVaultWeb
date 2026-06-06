@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T07 — Normolipemiantes",
+  "cards": [
+    {"front": "Quais são os 5 grupos de normolipemiantes e seus alvos?", "back": "1) Estatinas: ↓ LDL (principal); 2) Fibratos: ↓ TG, ↑ HDL; 3) Ezetimiba: ↓ LDL; 4) Resinas de troca iônica: ↓ LDL; 5) Inibidores de PCSK9: ↓ LDL (máximo)"},
+    {"front": "Mecanismo das estatinas", "back": "Inibem a HMG-CoA redutase (enzima limitante da síntese de colesterol no fígado) → ↓ colesterol intracelular → up-regulation de receptores de LDL → ↑ captação de LDL → ↓ LDL plasmático"},
+    {"front": "Estatinas mais potentes na redução de LDL", "back": "Rosuvastatina e atorvastatina são as mais potentes (reduzem LDL em até 50–60%). Sinvastatina e lovastatina são menos potentes. Pravastatina tem menor metabolismo CYP450"},
+    {"front": "Efeito pleiotrópico das estatinas", "back": "Além de ↓ LDL: estabilização de placas ateroscleróticas, efeito anti-inflamatório (↓ PCR), melhora de função endotelial, antiagregante leve. Benefício CV além do efeito lipídico"},
+    {"front": "Principais efeitos adversos das estatinas", "back": "1) Miopatia (mialgia → miosite → rabdomiólise — dosar CPK); 2) Aumento de transaminases; 3) Raramente hepatotoxicidade; 4) ↑ leve de glicemia; 5) Interações com CYP3A4 (sinvastatina)"},
+    {"front": "Rabdomiólise por estatinas — quando suspeitar?", "back": "CPK > 10x o limite superior + dor muscular + urina escura (mioglobinúria). Risco aumentado com: doses altas, combinação com fibratos (especialmente genfibrozila), ciclosporina, amiodarona"},
+    {"front": "Mecanismo dos fibratos (fenofibrato, bezafibrato, genfibrozila)", "back": "Agonistas do receptor nuclear PPAR-α → ↑ síntese de lipase lipoproteica (LPL) → ↑ catabolismo de VLDL → ↓ TG. Também ↑ HDL. Pequeno efeito sobre LDL"},
+    {"front": "Fibratos — quando indicar?", "back": "Hipertrigliceridemia isolada ou combinada (↑ TG + ↓ HDL), especialmente quando TG > 500 mg/dL (risco de pancreatite). Síndrome metabólica com hipertrigliceridemia"},
+    {"front": "Mecanismo e uso da ezetimiba", "back": "Inibe o transportador NPC1L1 no intestino → ↓ absorção de colesterol dietético e biliar → ↓ LDL (15–20%). Usado em combinação com estatina quando LDL-alvo não atingido"},
+    {"front": "Inibidores de PCSK9 — mecanismo e indicação", "back": "Evolocumabe, alirocumabe (anticorpos monoclonais) → inibem PCSK9 (que normalmente degrada receptores de LDL) → ↑ receptores de LDL → máxima redução de LDL (50–70%). Indicados em: hipercolesterolemia familiar, alto risco CV refratário"},
+    {"front": "Resinas de troca iônica (colestiramina, colesevelam)", "back": "Ligam ácidos biliares no intestino → não são absorvidos → ↑ excreção fecal de colesterol → fígado usa mais LDL para síntese de sais biliares → ↓ LDL. Efeito adverso: constipação, interferência na absorção de outros fármacos"},
+    {"front": "Ácido nicotínico (niacina) — mecanismo e problemas", "back": "↓ lipólise no tecido adiposo → ↓ VLDL → ↓ TG e ↑ HDL mais do que qualquer outro fármaco. Efeito adverso maior: flushing (rubor cutâneo por prostaglandinas — ↓ com AAS prévio). Hepatotoxicidade em doses altas"},
+    {"front": "Qual é a combinação farmacológica mais eficaz para ↓ LDL?", "back": "Estatina de alta potência + ezetimiba + inibidor de PCSK9. Esta tripla terapia reduz LDL em >80%. Para a maioria dos pacientes: estatina + ezetimiba é suficiente"},
+    {"front": "Hipertrigliceridemia grave (>1000 mg/dL) — tratamento de emergência", "back": "Risco de pancreatite aguda. Tratamento: restrição de gorduras/álcool, fibratos, ácidos graxos ômega-3 (EPA/DHA). Nas doses altas (4g/dia), ômega-3 reduz TG em 20–30%"},
+    {"front": "Qual normolipemiante é CONTRAINDICADO na gravidez?", "back": "Estatinas — categoria X de risco na gravidez (teratogênicas em animais). Suspender ao planejar gravidez ou ao confirmar. Resinas e colesevelam são seguros na gravidez"}
+  ]
+}

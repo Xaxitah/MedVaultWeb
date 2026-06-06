@@ -1,0 +1,23 @@
+{
+  "title": "Farmacologia P2 — T01 — IECA e ARA II",
+  "cards": [
+    {"front": "Qual é a cascata completa do SRAA?", "back": "Angiotensinógeno (fígado) → renina (rim) → Ang I → ECA (pulmão) → Ang II → receptores AT₁/AT₂"},
+    {"front": "Além de converter Ang I em Ang II, o que mais a ECA faz?", "back": "Degrada bradicinina, substância P e encefalinas — por isso os IECA causam acúmulo de bradicinina"},
+    {"front": "Quais são os efeitos da Ang II via receptor AT₁?", "back": "Vasoconstrição, liberação de aldosterona, retenção de Na⁺/H₂O, remodelamento cardíaco e inflamação vascular"},
+    {"front": "Quais são os efeitos via receptor AT₂?", "back": "Vasodilatação, efeitos antiproliferativos e apoptose — opostos ao AT₁"},
+    {"front": "Mecanismo dos IECA", "back": "Bloqueiam a ECA → ↓ Ang II → ↓ vasoconstrição + ↓ aldosterona. Secundariamente acumulam bradicinina"},
+    {"front": "Mecanismo dos ARA II (Sartans)", "back": "Bloqueiam seletivamente o receptor AT₁ da Ang II. Não interferem com a ECA → não acumulam bradicinina → sem tosse"},
+    {"front": "Por que os IECA causam tosse seca?", "back": "Acúmulo de bradicinina e substância P nas vias aéreas (5–20% dos pacientes). Solução: trocar por ARA II"},
+    {"front": "Por que os IECA causam angioedema?", "back": "Acúmulo de bradicinina → vasodilatação e edema em face, lábios, língua e laringe. Risco de obstrução de via aérea (0,1–0,5%)"},
+    {"front": "Contraindicações absolutas para IECA e ARA II", "back": "1) Gravidez (2º e 3º trimestres) — teratogênicos; 2) Estenose bilateral de artéria renal — risco de IRA; 3) Histórico de angioedema (para IECA)"},
+    {"front": "Por que IECA/ARA II são contraindicados na estenose bilateral de artéria renal?", "back": "O rim dependia de Ang II para manter pressão de filtração glomerular via vasoconstrição da arteriola eferente. Com bloqueio → ↓ TFG → IRA"},
+    {"front": "Quais são as 5 indicações principais de IECA/ARA II?", "back": "1) HAS; 2) IC sistólica (FEVE reduzida); 3) Nefropatia diabética; 4) Pós-IAM com disfunção VE; 5) Proteinúria"},
+    {"front": "Qual IECA é o mais antigo e tem grupo sulfidril?", "back": "Captopril — requer 2–3 doses/dia e tem mais efeitos adversos dermatológicos e disgeusia"},
+    {"front": "Exemplos de IECA de ação prolongada (1x/dia)", "back": "Enalapril, Lisinopril, Ramipril, Perindopril"},
+    {"front": "Exemplos de ARA II (Sartans)", "back": "Losartana, Valsartana, Irbesartana, Candesartana, Telmisartana, Olmesartana"},
+    {"front": "IECA vs ARA II — qual tem tosse? qual tem melhor evidência em IC?", "back": "IECA → tosse (5-20%); ARA II → sem tosse. Para IC com FVE reduzida, IECA têm mais evidência histórica, mas ARA II são equivalentes quando há intolerância"},
+    {"front": "O que é a Ang (1-7) e qual sua importância?", "back": "Fragmento gerado pela degradação de Ang II pelas angiotensinases. Age no receptor Mas → vasodilatação, natriurese, efeitos antiproliferativos (oposto à Ang II)"},
+    {"front": "Hiperpotassemia: qual combinação de risco?", "back": "IECA ou ARA II + diuréticos poupadores de K⁺ (espironolactona, amilorida) + IRC → risco de hipercalemia grave. Monitorar K⁺"},
+    {"front": "Qual é o efeito renal benéfico de IECA/ARA II na nefropatia diabética?", "back": "Vasodilatação preferencial da arteriola EFERENTE → ↓ pressão intraglomerular → ↓ proteinúria → nefroproteção independente do efeito anti-hipertensivo"}
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T02 — Ética Médica",
+  "questions": [
+    {
+      "question": "Um médico recusa-se a realizar um aborto legal por motivos religiosos, mas não encaminha a paciente a outro profissional. Qual princípio ético é violado?",
+      "answerOptions": [
+        {"text": "Apenas o princípio de justiça — recursos de saúde não são distribuídos equitativamente", "isCorrect": false, "rationale": "Embora justiça esteja envolvida, o principal problema é a combinação de violação de autonomia (recusa sem alternativa) e abandono do paciente."},
+        {"text": "Nenhum — objeção de consciência é um direito ético e legal irrestrito do médico", "isCorrect": false, "rationale": "Objeção de consciência é um direito, mas não é irrestrito — o médico DEVE encaminhar a paciente a outro profissional e não pode abandoná-la sem garantir continuidade do cuidado."},
+        {"text": "Autonomia da paciente e dever de não abandono — a objeção é legítima mas exige encaminhamento", "isCorrect": true, "rationale": "Objeção de consciência é eticamente válida, mas o médico tem a obrigação de encaminhar a paciente a outro profissional que realize o procedimento. Recusar E não encaminhar configura abandono do paciente — violação grave dos deveres deontológicos."},
+        {"text": "Apenas não maleficência — a recusa causa dano ao negar o procedimento", "isCorrect": false, "rationale": "O dano é real, mas o problema principal é o abandono sem alternativa — a recusa em si pode ser legítima, mas exige encaminhamento."}
+      ],
+      "hint": "O médico tem direito de recusar — mas tem deveres que acompanham esse direito."
+    },
+    {
+      "question": "Um médico desconfiado informa ao paciente que a condição 'provavelmente é grave, pode ser câncer ou pode não ser', sem ter exames que confirmem. Qual princípio ético é violado?",
+      "answerOptions": [
+        {"text": "Beneficência — o médico não está atuando em prol do bem do paciente ao gerar ansiedade", "isCorrect": false, "rationale": "Beneficência está implicada, mas o problema central é a veracidade — comunicar incerteza como se fosse um diagnóstico provável, sem base em dados, é uma violação da honestidade."},
+        {"text": "Veracidade e não maleficência — afirmar hipótese não confirmada causa dano psicológico desnecessário", "isCorrect": true, "rationale": "Comunicar hipóteses não confirmadas como se fossem prováveis viola a veracidade (honestidade) e a não maleficência — causa ansiedade e sofrimento desnecessários. O médico deve comunicar o que sabe, o que ainda não sabe, e o que vai investigar — com clareza sobre o estado do conhecimento."},
+        {"text": "Autonomia — o paciente não tem como decidir sobre seu tratamento sem diagnóstico firme", "isCorrect": false, "rationale": "Autonomia requer informação adequada, mas o principal problema aqui é a comunicação imprecisa e potencialmente danosa, não a ausência de diagnóstico."},
+        {"text": "Sigilo médico — o médico revelou suspeita sem confirmação", "isCorrect": false, "rationale": "Sigilo médico trata da revelação de informações a terceiros — aqui o problema é a qualidade da comunicação com o próprio paciente, não revelação a terceiros."}
+      ],
+      "hint": "O que há de errado não é falar de incerteza, mas sim como ela foi comunicada."
+    },
+    {
+      "question": "Qual é a diferença central entre a corrente ética deontológica (Kant) e a consequencialista (Mill)?",
+      "answerOptions": [
+        {"text": "A deontológica valoriza o resultado; a consequencialista valoriza a intenção", "isCorrect": false, "rationale": "Está invertido — deontologia foca no dever (intenção/regra), consequencialismo foca no resultado."},
+        {"text": "A deontológica avalia a ação pelo dever e pela regra moral; a consequencialista avalia pelo resultado (maior bem para o maior número)", "isCorrect": true, "rationale": "Kant: a ação é correta se segue um dever moral (imperativo categórico) — independente das consequências. Mill: a ação é correta se maximiza o bem-estar geral (utilitarismo). Na ética médica: deontologia guia regras absolutas (não mentir); consequencialismo permite exceções se o resultado for melhor."},
+        {"text": "A deontológica é baseada em religião; a consequencialista é secular", "isCorrect": false, "rationale": "Tanto deontologia quanto consequencialismo são correntes filosóficas seculares — ambas podem ser adotadas independente de crença religiosa."},
+        {"text": "São equivalentes — ambas chegam às mesmas conclusões práticas", "isCorrect": false, "rationale": "Não são equivalentes — em muitos dilemas chegam a conclusões diferentes. Ex.: mentir para salvar uma vida. Kant: nunca minta (dever absoluto). Mill: minta se salvar vidas (consequência boa)."}
+      ],
+      "hint": "Pense em 'o que importa mais: a regra ou o resultado?'"
+    },
+    {
+      "question": "O Código de Ética Médica difere da bioética porque:",
+      "answerOptions": [
+        {"text": "O CEM é opcional; a bioética é obrigatória", "isCorrect": false, "rationale": "É o contrário — o CEM tem força normativa e sancionatória; a bioética é uma área de reflexão, não um conjunto de regras obrigatórias."},
+        {"text": "O CEM codifica deveres profissionais específicos com sanção; a bioética é reflexão filosófica mais ampla sobre dilemas não previstos em código", "isCorrect": true, "rationale": "O CEM diz: 'é vedado ao médico...'. A bioética pergunta: 'por que isso é vedado? E quando há conflito entre normas?'. A bioética inclui pesquisa, saúde pública, biotecnologia e questões que os códigos não alcançam — é interdisciplinar e não tem poder punitivo direto."},
+        {"text": "O CEM se aplica apenas a médicos; a bioética se aplica a todos os cidadãos", "isCorrect": false, "rationale": "A bioética abrange questões de saúde pública e pesquisa que envolvem toda a sociedade — mas o CEM também tem reflexos éticos para além dos médicos (influi em políticas de saúde, relações com outros profissionais)."},
+        {"text": "O CEM é baseado nos 4 princípios de Beauchamp; a bioética não tem base definida", "isCorrect": false, "rationale": "O CEM brasileiro não é explicitamente baseado no principialismo — é baseado em tradição deontológica. O principialismo (Beauchamp & Childress) é uma corrente da bioética, não do CEM."}
+      ],
+      "hint": "Pense em norma vs. reflexão; punição vs. diálogo."
+    },
+    {
+      "question": "O princípio ético que define que o médico deve ser honesto com o paciente, mesmo quando a verdade é dolorosa, é chamado de:",
+      "answerOptions": [
+        {"text": "Beneficência", "isCorrect": false, "rationale": "Beneficência obriga a agir para o bem do paciente — pode ser usada para justificar (equivocadamente) ocultar a verdade 'para não causar sofrimento'. O princípio da veracidade é distinto."},
+        {"text": "Veracidade (ou fidelidade)", "isCorrect": true, "rationale": "Veracidade: dever do médico de ser honesto ao comunicar diagnósticos, prognósticos e incertezas ao paciente. Inclui: não mentir, não omitir informações relevantes, não usar linguagem manipuladora. Viola-se quando o médico mente 'pelo bem do paciente' — o chamado 'privilégio terapêutico'."},
+        {"text": "Não maleficência", "isCorrect": false, "rationale": "Não maleficência obriga a não causar dano — embora a mentira possa ser vista como um dano, o princípio específico que regula a honestidade na comunicação é a veracidade."},
+        {"text": "Autonomia", "isCorrect": false, "rationale": "Autonomia é o direito do paciente de decidir — depende da veracidade para funcionar (não há autonomia real sem informação verdadeira), mas são princípios distintos."}
+      ],
+      "hint": "Existe um princípio específico sobre honestidade na relação médico-paciente."
+    },
+    {
+      "question": "O Juramento de Hipócrates é considerado a base da ética médica ocidental. Qual limitação ética ele apresenta sob a ótica contemporânea?",
+      "answerOptions": [
+        {"text": "Não inclui nenhum princípio sobre não causar dano", "isCorrect": false, "rationale": "'Primum non nocere' (associado à tradição hipocrática) é central no juramento — a não maleficência é um de seus pilares."},
+        {"text": "Reflete um modelo paternalista que não contempla a autonomia do paciente", "isCorrect": true, "rationale": "O Juramento de Hipócrates centra-se no dever do médico de 'fazer o bem' ao paciente — mas é o médico quem define o que é bem, sem consultar o paciente. Ignora a autonomia como valor central. Também não prevê consentimento informado, não discriminação ou direitos dos pacientes — conceitos contemporâneos."},
+        {"text": "Proíbe o uso de qualquer medicamento que cause dor", "isCorrect": false, "rationale": "O juramento não proíbe medicamentos dolorosos — inclui compromisso de aliviar sofrimento."},
+        {"text": "Não se aplica à medicina moderna por ser muito antigo", "isCorrect": false, "rationale": "Os valores fundamentais do juramento (beneficência, sigilo, não maleficência) ainda são relevantes — a limitação é na falta de autonomia do paciente, não na antiguidade do documento."}
+      ],
+      "hint": "O que o Juramento não menciona que a bioética contemporânea considera essencial?"
+    },
+    {
+      "question": "Um médico descobre que cometeu um erro de diagnóstico que atrasou o tratamento do paciente. Qual é a conduta eticamente correta?",
+      "answerOptions": [
+        {"text": "Não informar ao paciente para evitar perda de confiança e risco de processo judicial", "isCorrect": false, "rationale": "Ocultar o erro viola o dever de veracidade, agrava a responsabilidade ética e legal, e impede o paciente de buscar reparação ou segundo tratamento. É antiético e geralmente piora as consequências legais."},
+        {"text": "Informar ao paciente, corrigir o erro, documentar no prontuário e aprender com o ocorrido", "isCorrect": true, "rationale": "Disclosure (comunicação do erro) é obrigação ética — o paciente tem direito de saber. O médico deve: informar honestamente o que ocorreu, tomar medidas imediatas de correção, registrar no prontuário, notificar a instituição (controle de qualidade) e usar o caso como aprendizado. Ocultar é antiético e agrava a responsabilidade."},
+        {"text": "Informar apenas à equipe de saúde, não ao paciente — é informação técnica", "isCorrect": false, "rationale": "O paciente é o principal interessado e tem direito de saber sobre erros que afetam sua saúde. A informação à equipe é necessária, mas não substitui a comunicação ao paciente."},
+        {"text": "Aguardar que o paciente perceba o erro por conta própria e então explicar", "isCorrect": false, "rationale": "Aguardar passivamente pode causar mais dano ao paciente (tempo perdido para tratamento correto) e é considerado abandono ético da obrigação de transparência."}
+      ],
+      "hint": "A honestidade é mais importante que a autopreservação — e geralmente mais protetora também."
+    },
+    {
+      "question": "O que é 'iatrogenia psicológica' e com que frequência ela ocorre?",
+      "answerOptions": [
+        {"text": "Dano causado por medicamentos psicotrópicos prescritos incorretamente", "isCorrect": false, "rationale": "Esse seria um tipo de iatrogenia farmacológica, não psicológica. Iatrogenia psicológica refere-se ao dano emocional causado pelas palavras e atitudes do médico."},
+        {"text": "Dano psicológico causado por palavras descuidadas, atitudes frias ou comunicação inadequada do médico", "isCorrect": true, "rationale": "Iatrogenia psicológica é frequentemente subestimada: um diagnóstico comunicado de forma brutal ('Você vai morrer em 3 meses'), termos assustadores sem contexto, atitudes julgadoras sobre estilo de vida — tudo pode causar ansiedade, depressão, recusa de tratamento. É tão real quanto a iatrogenia física."},
+        {"text": "Transtorno mental induzido por hospitalização prolongada", "isCorrect": false, "rationale": "A síndrome de hospitalismo é uma forma de dano psicológico institucional, mas iatrogenia psicológica no sentido ético refere-se especificamente ao dano causado pela comunicação médica inadequada."},
+        {"text": "Efeito colateral previsível dos medicamentos sobre a função cognitiva", "isCorrect": false, "rationale": "Isso seria iatrogenia farmacológica com expressão cognitiva — não iatrogenia psicológica no sentido comunicacional."}
+      ],
+      "hint": "As palavras do médico têm poder de curar ou de ferir — às vezes mais do que os medicamentos."
+    },
+    {
+      "question": "Qual é o fundamento ético para a obrigatoriedade do prontuário médico ser legível, claro e completo?",
+      "answerOptions": [
+        {"text": "Exigência burocrática dos planos de saúde para pagamento dos procedimentos", "isCorrect": false, "rationale": "Embora planos exijam documentação, o fundamento ético do prontuário não é burocrático — é a continuidade e segurança do cuidado."},
+        {"text": "Proteger o médico em casos de processos judiciais", "isCorrect": false, "rationale": "O prontuário serve como evidência legal, mas seu fundamento ético primário não é proteção do médico — é proteção e continuidade do cuidado do paciente."},
+        {"text": "Garantir continuidade do cuidado, comunicação entre profissionais e direito do paciente à informação", "isCorrect": true, "rationale": "Um prontuário ilegível, incompleto ou tardio pode causar erros clínicos, interromper a continuidade do cuidado e violar o direito do paciente de acessar suas próprias informações de saúde. A clareza e completude são requisitos éticos — derivados de beneficência, não maleficência e autonomia."},
+        {"text": "Atender às exigências do Ministério da Saúde para estatísticas", "isCorrect": false, "rationale": "Dados de saúde pública são uma função secundária — o prontuário existe primariamente para o cuidado do paciente individual."}
+      ],
+      "hint": "Pense em quem depende do prontuário para tomar decisões seguras."
+    },
+    {
+      "question": "Qual é a diferença entre erro médico e intercorrência clínica (evento adverso inevitável)?",
+      "answerOptions": [
+        {"text": "Erro médico sempre resulta em morte; intercorrência resulta em complicações menores", "isCorrect": false, "rationale": "Erros médicos podem resultar em qualquer grau de dano — e intercorrências inevitáveis podem ser graves ou fatais. A distinção não é a severidade, mas a previsibilidade e evitabilidade."},
+        {"text": "Erro médico decorre de negligência, imprudência ou imperícia — é evitável; intercorrência é complicação esperada de procedimento correto — não é evitável", "isCorrect": true, "rationale": "Erro médico: resultado de falha humana evitável — requer comunicação ao paciente, aprendizado e, às vezes, reparação. Intercorrência: complicação conhecida e esperada de um procedimento corretamente indicado e realizado (ex.: hematoma pós-biópsia). Em ambos os casos, comunicação ao paciente é obrigatória — mas a responsabilidade ética e legal difere."},
+        {"text": "Intercorrência clínica sempre gera responsabilidade legal; erro médico pode não gerar", "isCorrect": false, "rationale": "É geralmente o oposto — erro médico (evitável) é mais frequentemente responsabilizado que intercorrência inevitável."},
+        {"text": "Não há diferença prática — o paciente foi prejudicado em ambos os casos", "isCorrect": false, "rationale": "Do ponto de vista do paciente o dano pode parecer igual, mas eticamente e legalmente há diferença fundamental entre dano evitável e inevitável."}
+      ],
+      "hint": "A chave está em 'evitável' vs. 'inevitável'."
+    }
+  ]
+}

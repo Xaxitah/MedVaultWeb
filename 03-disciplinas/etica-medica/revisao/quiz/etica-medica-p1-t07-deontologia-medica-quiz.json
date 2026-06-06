@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T07 — Deontologia Médica",
+  "questions": [
+    {
+      "question": "Um médico emite atestado de saúde para um paciente que não examinou. Qual infração deontológica e penal cometeu?",
+      "answerOptions": [
+        {"text": "Apenas infração ética — atestado falso não é crime se não causar dano", "isCorrect": false, "rationale": "Atestado falso é crime (art. 302 CP — falsidade ideológica) independente de causar dano imediato ao paciente."},
+        {"text": "Falsidade ideológica (crime) + infração ao Código de Ética Médica — o médico só deve atestar o que examinou diretamente", "isCorrect": true, "rationale": "O CEM proíbe o médico de atestar o que não examinou ou não comprovou. O art. 302 CP classifica como crime falsidade ideológica — detenção de 1 a 3 anos. Consequências: cassação do CRM, processo criminal, responsabilidade civil. O médico só pode atestar o que pessoalmente examinou, comprovou por exame complementar ou observou."},
+        {"text": "Nenhuma — atestado a pedido do paciente é direito do paciente e obrigação do médico atender", "isCorrect": false, "rationale": "O paciente não tem direito a atestado falso. O médico tem obrigação de ser verídico — atestado é documento legal com consequências para terceiros (empregador, seguradora, previdência)."},
+        {"text": "Apenas infração administrativa — sujeita a advertência do CRM sem implicações penais", "isCorrect": false, "rationale": "A responsabilidade vai além de advertência — pode incluir cassação do CRM e processo criminal."}
+      ],
+      "hint": "Atestar sem examinar = documento falso = responsabilidade ética + penal."
+    },
+    {
+      "question": "O que é 'junta médica' e em que situações é convocada?",
+      "answerOptions": [
+        {"text": "Reunião do Conselho de Medicina para julgar processos ético-disciplinares", "isCorrect": false, "rationale": "O julgamento de processos ético-disciplinares ocorre no CRM/CFM — não é o que define junta médica."},
+        {"text": "Reunião de 2 ou mais médicos para avaliação conjunta de caso complexo ou quando há divergência de condutas", "isCorrect": true, "rationale": "Junta médica: avaliação por múltiplos médicos quando há: diagnóstico difícil, divergência de conduta entre profissionais, solicitação do paciente por segunda opinião formalizada, decisões de alto impacto (amputação, quimioterapia). Garante: decisão mais fundamentada, proteção legal do médico, melhor qualidade de cuidado. Paciente tem direito de solicitar."},
+        {"text": "Comitê de bioética que decide sobre dilemas éticos hospitalares", "isCorrect": false, "rationale": "Comitê de bioética é distinto — junta médica é reunião de especialistas para avaliação clínica do caso, não para análise ética."},
+        {"text": "Consulta obrigatória com especialista antes de qualquer cirurgia eletiva", "isCorrect": false, "rationale": "Junta médica não é obrigatória antes de qualquer cirurgia — é convocada em casos específicos de complexidade ou divergência."}
+      ],
+      "hint": "Junta = vários médicos avaliando o mesmo caso — quando e por quê?"
+    },
+    {
+      "question": "Qual é a diferença entre o CRM (Conselho Regional de Medicina) e o CFM (Conselho Federal de Medicina)?",
+      "answerOptions": [
+        {"text": "CRM é sindicato; CFM é órgão governamental de regulação", "isCorrect": false, "rationale": "Ambos são autarquias federais (não sindicatos nem órgão governamental direto). Sindicato médico é entidade separada."},
+        {"text": "CRM registra e fiscaliza médicos no estado; CFM normatiza a profissão em âmbito nacional e é instância recursal", "isCorrect": true, "rationale": "CRM: registra médicos, emite CRM (número de registro), fiscaliza exercício, julga processos ético-disciplinares no estado. CFM: emite resoluções com força normativa em todo o Brasil (ex.: Resolução CFM 1931/2009 — Código de Ética Médica), serve de instância recursal dos julgamentos do CRM. Ambos são financiados pelas anuidades dos médicos."},
+        {"text": "CRM julga ética profissional; CFM apenas emite registros de médicos formados no exterior", "isCorrect": false, "rationale": "Registro de estrangeiros é uma das funções do CFM, mas não é sua principal. O julgamento ético começa no CRM e pode ser recorrido ao CFM."},
+        {"text": "São a mesma instituição com nomes diferentes dependendo do estado", "isCorrect": false, "rationale": "São instituições distintas — o CRM tem sede em cada estado; o CFM tem sede em Brasília e jurisdição nacional."}
+      ],
+      "hint": "Regional = estado; Federal = nação. O que cada um faz em seu nível?"
+    },
+    {
+      "question": "O Código de Ética Médica proíbe ao médico 'usar sua posição para obter vantagens pessoais'. Qual princípio bioético isso protege?",
+      "answerOptions": [
+        {"text": "Não maleficência — evitar causar dano físico ao paciente", "isCorrect": false, "rationale": "Não maleficência trata de dano físico/clínico — o problema aqui é exploração da relação de poder, que é protegida por outro princípio."},
+        {"text": "Autonomia e justiça — protegendo o paciente de exploração de sua vulnerabilidade na relação assimétrica", "isCorrect": true, "rationale": "A relação médico-paciente é inerentemente assimétrica: paciente está vulnerável (doente), dependente (precisa do médico) e confia. Usar essa posição para vantagem pessoal (financeira, sexual, favorecimento) explora a vulnerabilidade — viola autonomia (decisão não é livre quando há exploração) e justiça (tratamento desigual por razões inadequadas)."},
+        {"text": "Beneficência — o médico deve agir apenas pelo bem do paciente", "isCorrect": false, "rationale": "Beneficência está implicada, mas o problema central da proibição é a exploração da assimetria de poder — que viola autonomia e justiça."},
+        {"text": "Sigilo — vantagens pessoais frequentemente envolvem revelação de informações", "isCorrect": false, "rationale": "O sigilo pode ser violado como parte da exploração, mas não é o princípio central protegido por essa regra deontológica."}
+      ],
+      "hint": "O paciente está vulnerável — quem precisa ser protegido dessa vulnerabilidade?"
+    },
+    {
+      "question": "O que é objeção de consciência médica e quais são seus limites éticos?",
+      "answerOptions": [
+        {"text": "Direito irrestrito do médico de recusar qualquer procedimento por qualquer motivo", "isCorrect": false, "rationale": "Objeção de consciência tem limites — o médico deve garantir continuidade do cuidado e nunca pode recusar em emergências com risco de vida."},
+        {"text": "Direito do médico de recusar procedimento contrário a seus valores morais/religiosos, COM obrigação de encaminhar e não recusar em emergências vitais", "isCorrect": true, "rationale": "Objeção de consciência: o médico pode recusar aborto legal, eutanásia, experimentação etc. por princípios éticos/religiosos. Mas: DEVE encaminhar para outro profissional disponível; DEVE atender em emergências com risco de vida; NÃO PODE discriminar o paciente por recusar o procedimento; NÃO PODE abandonar sem garantir continuidade. Direito do médico + deveres que acompanham esse direito."},
+        {"text": "Recusa de tratar pacientes de certas religiões ou crenças por parte do médico", "isCorrect": false, "rationale": "Isso seria discriminação religiosa — completamente distinto de objeção de consciência. Objeção de consciência é sobre o procedimento, não sobre a identidade do paciente."},
+        {"text": "Direito aplicável apenas a médicos de religiões específicas reconhecidas pelo CFM", "isCorrect": false, "rationale": "Objeção de consciência pode ser fundamentada em qualquer sistema de valores — religioso, filosófico, ético. Não é restrita a religiões específicas."}
+      ],
+      "hint": "Objeção de consciência = pode recusar o ATO; não pode recusar GARANTIR que o paciente receba cuidados."
+    },
+    {
+      "question": "O processo ético-profissional (PEP) no CRM pode resultar em qual punição máxima?",
+      "answerOptions": [
+        {"text": "Multa financeira de valor definido pelo conselho estadual", "isCorrect": false, "rationale": "O CEM não prevê multa como punição — a punição máxima é a cassação do registro."},
+        {"text": "Cassação do registro médico (CRM) — o médico perde o direito de exercer a medicina", "isCorrect": true, "rationale": "Punições do PEP em ordem crescente: 1) Advertência confidencial; 2) Censura confidencial; 3) Censura pública; 4) Suspensão do exercício (1–30 dias); 5) Cassação do registro. A cassação é a punição máxima — o médico perde definitivamente (ou temporariamente) o direito de exercer a medicina no Brasil."},
+        {"text": "Prisão — o CFM tem poder de detenção de profissionais", "isCorrect": false, "rationale": "O CRM/CFM não tem poder de prender — isso é prerrogativa do Poder Judiciário. O PEP é processo administrativo, não criminal."},
+        {"text": "Obrigação de indenizar financeiramente o paciente prejudicado", "isCorrect": false, "rationale": "Indenização é decisão da Justiça Civil — não do Conselho de Medicina. O CRM pode punir disciplinarmente, mas não impõe indenização."}
+      ],
+      "hint": "A punição máxima é perder o direito de ser médico."
+    },
+    {
+      "question": "Um médico atende um paciente e descobre que ele é suspeito de ter cometido um crime grave. O médico deve:",
+      "answerOptions": [
+        {"text": "Denunciar imediatamente à polícia — o dever cívico supera o sigilo médico", "isCorrect": false, "rationale": "Revelar informações do atendimento médico para polícia sem ordem judicial viola o sigilo médico — o dever cívico não supera automaticamente o sigilo."},
+        {"text": "Manter o sigilo médico sobre o conteúdo do atendimento — o crime não é motivo suficiente para quebra do sigilo sem ordem judicial ou flagrante", "isCorrect": true, "rationale": "O sigilo médico se mantém mesmo quando o paciente é suspeito de crime. O médico NÃO é obrigado a denunciar à polícia o que soube no atendimento (exceto em casos específicos: notificação compulsória, violência contra crianças/idosos). Em caso de ordem judicial: o médico pode testemunhar sobre o que sabe. O atendimento médico é protegido pelo sigilo independente dos atos do paciente."},
+        {"text": "Recusar o atendimento — não pode tratar criminosos por questão ética", "isCorrect": false, "rationale": "Recusar atendimento com base em suspeita de crime viola o dever de não abandono e a não discriminação. O médico trata a saúde do paciente, independente de seus atos."},
+        {"text": "Avisar a família do paciente sobre o crime que ele teria cometido", "isCorrect": false, "rationale": "Revelar informações à família do paciente viola o sigilo — independente de o paciente ser suspeito de crime."}
+      ],
+      "hint": "Quem pode legalmente ordenar ao médico que revele informações do atendimento?"
+    },
+    {
+      "question": "O Código de Ética Médica proíbe o médico de 'agir de forma que possa levar ao descrédito da profissão'. Qual é a fundamentação ética dessa proibição?",
+      "answerOptions": [
+        {"text": "Proteger a imagem comercial da profissão médica no mercado de trabalho", "isCorrect": false, "rationale": "A fundamentação não é comercial — é a confiança que a sociedade deposita na medicina como um todo, que fundamenta a prática e o benefício social da profissão."},
+        {"text": "Proteger a confiança pública na medicina — que é o fundamento da relação terapêutica e do acesso ao cuidado", "isCorrect": true, "rationale": "A confiança na medicina como instituição é um bem coletivo: pacientes precisam confiar que médicos são competentes, honestos e éticos para buscar cuidado. Comportamentos que desacreditam a profissão prejudicam toda a sociedade — não apenas o médico infrator. Por isso a deontologia médica protege a imagem coletiva da profissão."},
+        {"text": "Proteger os interesses econômicos dos médicos de eventuais concorrentes", "isCorrect": false, "rationale": "Proteção de interesses econômicos de uma classe não é base ética — é corporativismo. A fundamentação ética é a confiança pública, não os interesses dos médicos."},
+        {"text": "Cumprir determinação do Ministério da Saúde sobre comportamento profissional", "isCorrect": false, "rationale": "O CEM é autorregulatório — criado pelos próprios médicos, não imposto pelo Ministério da Saúde. Mas a fundamentação da norma é ética, não administrativa."}
+      ],
+      "hint": "A confiança pública na medicina é um bem coletivo — o que acontece quando ela é abalada?"
+    },
+    {
+      "question": "Qual é a principal diferença entre o Código de Ética Médica (CEM) e a lei penal no contexto da iatrogenia?",
+      "answerOptions": [
+        {"text": "O CEM pune com prisão; a lei penal pune com advertência profissional", "isCorrect": false, "rationale": "É o inverso — o CEM pune disciplinarmente (até cassação); a lei penal pode punir com detenção/prisão."},
+        {"text": "O CEM regula a conduta profissional (punição disciplinar até cassação); a lei penal regula crimes (punição com reclusão/detenção)", "isCorrect": true, "rationale": "São sistemas paralelos e independentes: CEM → processo ético-profissional → advertência, censura, suspensão, cassação. Lei penal → inquérito policial → processo criminal → detenção, reclusão, pena restritiva. Um médico pode ser punido em ambos os sistemas ao mesmo tempo pelo mesmo ato — a absolvição penal não implica absolvição ética (e vice-versa)."},
+        {"text": "O CEM se aplica apenas a médicos; a lei penal não se aplica a profissionais de saúde", "isCorrect": false, "rationale": "A lei penal se aplica a qualquer cidadão, incluindo médicos. Médicos têm responsabilidade ética (CEM) E penal (CP) simultaneamente."},
+        {"text": "São sistemas equivalentes — a punição em um exclui a punição no outro", "isCorrect": false, "rationale": "Os sistemas são independentes — o médico pode ser punido nos dois simultaneamente: cassado pelo CRM E condenado criminalmente pelo mesmo ato."}
+      ],
+      "hint": "Dois sistemas paralelos: disciplinar (CRM) e penal (Judiciário) — ambos podem punir o mesmo ato."
+    },
+    {
+      "question": "O que o Código de Ética Médica diz sobre publicidade médica?",
+      "answerOptions": [
+        {"text": "É completamente proibida — médico não pode fazer nenhum tipo de publicidade", "isCorrect": false, "rationale": "Publicidade não é completamente proibida — há regras sobre o que é permitido e o que é vedado."},
+        {"text": "É permitida, mas proíbe autopromoção exagerada, promessas de cura, resultados garantidos e uso de pacientes como propaganda", "isCorrect": true, "rationale": "O CEM (arts. 115-126) e a Resolução CFM 1974/2011 permitem publicidade médica informativa, mas proíbem: sensacionalismo, promessa de cura/resultado, concorrência desleal, uso de pacientes (mesmo com consentimento) para autopromoção, divulgação de técnicas experimentais como se fossem definitivas. O objetivo é informar, não persuadir ou crear expectativas irreais."},
+        {"text": "É permitida apenas em mídia social — TV e jornais são proibidos para médicos", "isCorrect": false, "rationale": "As restrições do CEM não se baseiam no veículo de comunicação, mas no conteúdo da publicidade — tanto em redes sociais quanto em TV, devem ser seguidas as mesmas regras."},
+        {"text": "Médicos podem publicar qualquer conteúdo — a liberdade de expressão prevalece sobre o CEM", "isCorrect": false, "rationale": "A liberdade de expressão não é irrestrita para profissionais regulamentados — o CEM e as resoluções do CFM estabelecem limites éticos à publicidade médica."}
+      ],
+      "hint": "Publicidade permitida = informativa; proibida = persuasiva com promessas irreais."
+    }
+  ]
+}

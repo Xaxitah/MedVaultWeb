@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T00: Anatomia e Fisiologia do Tórax",
+  "cards": [
+    {
+      "front": "Onde se projeta o ápice pulmonar em relação à clavícula?",
+      "back": "2–3 cm acima do terço médio da clavícula. Clinicamente relevante para detecção de TB apical."
+    },
+    {
+      "front": "Quantos lobos tem cada pulmão e quais as fissuras que os separam?",
+      "back": "Pulmão direito: 3 lobos (superior, médio, inferior) separados pelas fissuras oblíqua e horizontal.\nPulmão esquerdo: 2 lobos (superior, inferior) separados pela fissura oblíqua. Esquerdo tem língula (equivalente ao lobo médio)."
+    },
+    {
+      "front": "Quais são os volumes pulmonares estáticos básicos (4 volumes)?",
+      "back": "1. Volume corrente (VC): ar em repouso ~500 mL\n2. Volume de reserva inspiratório (VRI): ar extra na inspiração máxima\n3. Volume de reserva expiratório (VRE): ar extra na expiração máxima\n4. Volume residual (VR): ar que não sai mesmo na expiração máxima ~1.200 mL"
+    },
+    {
+      "front": "O que é a Capacidade Vital (CV) e como se calcula?",
+      "back": "CV = VRI + VC + VRE\nÉ o maior volume de ar que pode ser expirado após inspiração máxima. Normal ≈ 4.500 mL em adulto médio. Medida pela espirometria."
+    },
+    {
+      "front": "O que o Volume Residual (VR) NÃO pode ser medido pela espirometria e como é medido?",
+      "back": "O VR permanece nos pulmões após expiração máxima — não pode ser expirado, portanto a espirometria não o detecta. \nMétodos: pletismografia corporal total ou diluição de hélio."
+    },
+    {
+      "front": "Qual é a relação V/Q normal e o que significa V/Q → 0 vs V/Q → ∞?",
+      "back": "V/Q normal ≈ 0,8 (ventilação levemente menor que perfusão).\nV/Q → 0 = shunt (perfusão sem ventilação — sangue não oxigenado)\nV/Q → ∞ = espaço morto (ventilação sem perfusão — ar desperdiçado)"
+    },
+    {
+      "front": "Por que a tuberculose prefere os lobos superiores?",
+      "back": "Nos ápices: V/Q alto → maior pO₂ alveolar → favorece M. tuberculosis (aeróbio estrito). A gravidade reduz a perfusão apical, mas mantém ventilação razoável — criando ambiente rico em O₂."
+    },
+    {
+      "front": "O que são as Zonas de West (I, II, III)?",
+      "back": "Zona I (ápice): Palv > Part > Pven → capilares colabados → espaço morto\nZona II (meio): Part > Palv > Pven → fluxo intermitente\nZona III (base): Part > Pven > Palv → fluxo contínuo → maior perfusão\nA gravidade determina as zonas."
+    },
+    {
+      "front": "Quais são os músculos inspiratórios principais e acessórios?",
+      "back": "Principais: diafragma (70% do trabalho respiratório), intercostais externos\nAcessórios (recrutados na dispneia severa): esternocleidomastóideo, escalenos, peitoral maior (com braços fixos)\nUso de acessórios = sinal de dificuldade respiratória"
+    },
+    {
+      "front": "Qual é o limite inferior normal do pulmão na linha hemiclavicular e na linha escapular?",
+      "back": "Linha hemiclavicular (MCL): 6ª costela\nLinha axilar média (MAL): 8ª costela\nLinha escapular: 10ª costela\nEssas referências são importantes para localizar achados à percussão e ausculta."
+    },
+    {
+      "front": "O que é a capacidade residual funcional (CRF) e seu significado clínico?",
+      "back": "CRF = VRE + VR\nÉ o volume que fica nos pulmões ao final de uma expiração passiva em repouso. Representa o ponto de equilíbrio entre a retração elástica pulmonar e a expansão da parede torácica. Reduzida em doenças restritivas; aumentada no enfisema."
+    },
+    {
+      "front": "O que é o seio costofrênico e qual seu significado radiológico?",
+      "back": "É o recesso mais inferior da cavidade pleural — onde diafragma encontra parede costal. Na radiografia em PA, seu embotamento (obliteração) indica derrame pleural ≥ 200–300 mL. Primeiro sinal radiológico de derrame."
+    }
+  ]
+}

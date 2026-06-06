@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T06: Síndromes Pleurais",
+  "cards": [
+    {
+      "front": "Critérios de Light — transudato vs exsudato",
+      "back": "EXSUDATO (basta 1 critério):\n• Proteína pleural/sérica > 0,5\n• DHL pleural/sérico > 0,6\n• DHL pleural > 2/3 do limite superior sérico\nTRANSUDATO: nenhum critério acima\nSensibilidade 99%, especificidade 85%\nFalha: ICC tratada com diurético pode parecer exsudato (gradiente de albumina > 1,2 g/dL = transudato)"
+    },
+    {
+      "front": "Causas de transudato vs exsudato",
+      "back": "TRANSUDATO (↑P hidrostática ou ↓P oncótica):\n• ICC, cirrose, síndrome nefrótica, mixedema\nEXSUDATO (↑permeabilidade ou obstrução linfática):\n• Infeccioso: pneumonia, TB, empiema\n• Neoplásico: metástase, mesotelioma, linfoma\n• Imunológico: LES, AR\n• Vascular: TEP, hemotórax\n• Quirúrgico/iatrogênico"
+    },
+    {
+      "front": "Derrame pleural — IPPA completo",
+      "back": "Inspeção: abaulamento hemitórax, retardo de expansão\nPalpação: frêmito ABOLIDO/diminuído\nPercussão: macicez (curva de Damoiseau em derrames livres)\nAusculta: MV ABOLIDO, egofonia na borda superior, sinal de Skoda (timpanismo acima)\nDesvio mediastinal: contralateral (se grande)"
+    },
+    {
+      "front": "Pneumotórax — IPPA e tipos",
+      "back": "IPPA:\n• Frêmito ABOLIDO\n• Hipertimpanismo\n• MV ABOLIDO\n• Desvio traqueal: contralateral (se hipertensivo)\nTipos:\n• Espontâneo primário: jovem longilíneo, blebs apicais\n• Espontâneo secundário: DPOC, fibrose, Langerhans\n• Traumático, iatrogênico, hipertensivo"
+    },
+    {
+      "front": "Pneumotórax hipertensivo — fisiopatologia e sinais",
+      "back": "Mecanismo: válvula unidirecional → ar acumula progressivamente → pressão pleural positiva\nComprime: pulmão ipsilateral + mediastino + veia cava + coração\nResultado: choque OBSTRUTIVO\nSinais: desvio traqueal contralateral, MV abolido, hipertimpanismo, hipotensão, turgência jugular\nTratamento IMEDIATO: punção descompressiva no 2° EIC linha hemiclavicular"
+    },
+    {
+      "front": "Tuberculose pleural — características do líquido",
+      "back": "Exsudato com:\n• Predomínio de LINFÓCITOS (> 90%)\n• ADA (adenosina deaminase) > 40 U/L ← melhor marcador\n• Proteínas elevadas\n• Glicose reduzida (< 60 mg/dL)\n• pH baixo\nClínica: febre, suores noturnos, emagrecimento\nDiagnóstico: biópsia pleural (maior sensibilidade)"
+    },
+    {
+      "front": "Empiema (piotórax) — critérios e estágios",
+      "back": "Exsudato com pus na pleura\nCritérios: pH < 7,2 E/OU glicose < 60 E/OU DHL > 1000 E/OU cultura positiva\nEstágios:\n1. Exsudativo: líquido livre, pH normal\n2. Fibrinopurulento: septos, pH baixo\n3. Organizado: casca pleural fibrosa → restritiva\nTratamento: drenagem (tubo) + antibiótico ± fibrinolítico ± decorticação"
+    },
+    {
+      "front": "Hemotórax — definição, causas e tratamento",
+      "back": "Definição: hematócrito pleural ≥ 50% do hematócrito periférico\nCausas: trauma torácico, iatrógeno (punção subclávia), TEP, tumor\nTratamento: drenagem (tubo 28-36 Fr) para:\n• Monitorar sangramento\n• Evitar fibrotórax por coágulo retido\n• Indicação cirúrgica: > 1500 mL inicial ou > 200 mL/h por 4h"
+    },
+    {
+      "front": "Quilotórax — líquido e causas",
+      "back": "Líquido: leitoso, branco-opalescente; triglicerídeos > 110 mg/dL; quilomicrons presentes\nCausas:\n• Linfoma (mais comum — compressão do ducto torácico)\n• Trauma cirúrgico (esôfago, aorta, cardiovascular)\n• Traumatismo torácico\nTratamento: dieta sem gordura (ou NPT) + drenagem; cirurgia se não resolver"
+    },
+    {
+      "front": "Toracocentese — técnica segura",
+      "back": "Posição: sentado, inclinado à frente (braços em suporte)\nLocal: bordo SUPERIOR da costela inferior do espaço escolhido\n(evita nervo-artéria-veia que passam no sulco do bordo inferior da costela acima)\nEspaço: 7°–9° EIC posterior, linha escapular ou axilar posterior\nComplicações: pneumotórax, hemotórax, infecção, espessamento pleural"
+    },
+    {
+      "front": "Comparação: derrame pleural × pneumotórax × condensação — resumo IPPA",
+      "back": "| | Derrame | Pneumotórax | Condensação |\n|---|---|---|---|\n| Frêmito | abolido | abolido | aumentado |\n| Percussão | macicez | hipertimpanismo | macicez |\n| MV | abolido | abolido | sopro tubário |\n| Desvio | contralat. | contralat. | ipsilat. (se colapso) |"
+    },
+    {
+      "front": "Indicações de drenagem no derrame pleural",
+      "back": "OBRIGATÓRIA:\n• Empiema (pH < 7,2, glicose < 60, cultura +)\n• Hemotórax significativo\n• Quilotórax\n• Derrame causando instabilidade hemodinâmica\nELETIVA/DIAGNÓSTICA:\n• Derrame unilateral sem causa clara\n• Derrame neoplásico sintomático (paliativo)\nNÃO drena: ICC simples (tratar causa)"
+    }
+  ]
+}

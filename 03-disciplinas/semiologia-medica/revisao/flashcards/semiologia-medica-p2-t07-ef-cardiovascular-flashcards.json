@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T07: Exame Físico Cardiovascular",
+  "cards": [
+    {
+      "front": "Ictus cordis — localização normal e achados patológicos",
+      "back": "Normal: 5° EIC esquerdo na LHC (ou medial a ela), ≤ 2,5 cm (1 polpa digital)\nPatológico:\n• Deslocado para esquerda/baixo: cardiomegalia\n• Aumentado (> 2,5 cm): hipertrofia/dilatação do VE\n• Hiperdinâmico: estados hipercinéticos (anemia, febre, hipertireoidismo)\n• Sustentado/forte: hipertrofia VE (HAS, EA)"
+    },
+    {
+      "front": "Bulhas cardíacas — B1, B2, B3, B4",
+      "back": "B1 (TUM): fechamento mitral+tricúspide = início sístole; melhor no ápice\nB2 (TÁ): fechamento aórtica+pulmonar = início diástole; melhor na base\nB3: enchimento ventricular rápido = protodiastólica; fisiológica < 40 anos; patológica (ICC) em > 40\nB4: contração atrial em VE rígido = pré-sistólica; sempre patológica; ausente na FA"
+    },
+    {
+      "front": "Desdobramento de B2 — fisiológico vs patológico",
+      "back": "Fisiológico: desdobramento inspiratório (A2 antes de P2, separação aumenta na inspiração)\nDesdobramento fixo: CIA (independe da respiração)\nDesdobramento paradoxal (invertido): BREE, estenose aórtica grave (P2 antes de A2, pior na inspiração)\nDesdobramento amplo: BRD, estenose pulmonar"
+    },
+    {
+      "front": "Focos de ausculta cardíaca",
+      "back": "Foco aórtico: 2° EIC direito na linha paraesternal\nFoco pulmonar: 2° EIC esquerdo na linha paraesternal\nFoco de Erb (3° EIC esquerdo): onde sopros de IA e EA propagam\nFoco tricúspide: 4°–5° EIC esquerdo na linha paraesternal (base do apêndice xifóide)\nFoco mitral (ápice): 5° EIC esquerdo na LHC"
+    },
+    {
+      "front": "Sopros cardíacos — 6 características de avaliação",
+      "back": "1. Localização (foco mais intenso)\n2. Irradiação (axila, pescoço, dorso)\n3. Timing (sistólico, diastólico, contínuo)\n4. Intensidade (Levine 1–6; frêmito a partir do grau 4)\n5. Timbre (rude, suave, em jato de vapor)\n6. Comportamento com manobras (Valsalva, agachamento, inspiração)"
+    },
+    {
+      "front": "Escala de Levine para intensidade de sopros",
+      "back": "1: muito suave, difícil de ouvir em silêncio\n2: suave, audível facilmente\n3: moderado, sem frêmito\n4: alto, COM frêmito palpável\n5: muito alto, com frêmito, audível com borda do estetoscópio\n6: audível SEM estetoscópio\nFrêmito = sopro ≥ 4"
+    },
+    {
+      "front": "Pulsos arteriais — tipos e causas",
+      "back": "Parvus et tardus: pequeno e lento → estenose aórtica\nCeler (Corrigan): amplo e colapsa → insuficiência aórtica\nBisferiente: duas elevações na sístole → IA grave ou CMD\nAlternante: alternância de força → ICC severa\nParadoxal (Kussmaul): cai > 10 mmHg na inspiração → tamponamento, asma grave\nDicroto: onda dicrota palpável → ICC, febre tifoide"
+    },
+    {
+      "front": "Pressão venosa jugular (PVJ) — técnica e significado",
+      "back": "Veia: jugular interna DIREITA\nPosição: paciente a 45°\nNormal: coluna venosa ≤ 4 cm acima do ângulo de Louis\nAumentada: ICC direita, tamponamento, pericardite constritiva, hipertensão pulmonar\nSinal de Abdominojugular (Kussmaul): comprimir abdome → jugular sobe → ICC oculta\nSinal de Kussmaul: PVJ SOBE na inspiração → pericardite constritiva"
+    },
+    {
+      "front": "Tríade de Beck (tamponamento cardíaco)",
+      "back": "1. Hipotensão arterial\n2. Turgência jugular (PVJ elevada)\n3. Abafamento das bulhas cardíacas\nMais: pulso paradoxal > 10 mmHg, taquicardia, hepatomegalia\nTratamento: pericardiocentese urgente\nDiferencia de pneumotórax hipertensivo: no pneumotórax há hipertimpanismo e MV abolido"
+    },
+    {
+      "front": "Sopros sistólicos vs diastólicos — principais diagnósticos",
+      "back": "SISTÓLICOS (entre B1 e B2):\n• Ejeção (crescendo-decrescendo): estenose aórtica/pulmonar, miocardiopatia hipertrófica\n• Regurgitação (em banda, plateau): insuficiência mitral/tricúspide, CIV\nDIASTÓLICOS (entre B2 e B1):\n• Decrescendo proto-diastólico: insuficiência aórtica/pulmonar\n• Ruflar mesodiastólico: estenose mitral/tricúspide"
+    },
+    {
+      "front": "Manobra de Valsalva e agachamento — efeito nos sopros",
+      "back": "Valsalva (↓ retorno venoso → ↓ volume VE):\n• Maioria dos sopros: diminui\n• Exceção: CMH (aumenta) e PVM (aumenta — prolápso se acentua)\nAgachamento (↑ retorno venoso + RVP → ↑ volume VE):\n• CMH: diminui\n• PVM: diminui (separa o click de B1)\nRegra: manobras que ↓ volume → pioram CMH e PVM"
+    },
+    {
+      "front": "Semiologia do pericárdio — atrito pericárdico",
+      "back": "Som: rangido de couro, sistólico-diastólico (às vezes trifásico)\nMelhor ouvido: paciente sentado, inclinado à frente, em expiração com membrana do estetoscópio\nPosição: 3°–4° EIC esquerdo (foco de Erb)\nCaracterística: muda com a posição\nDiagnóstico: pericardite aguda (atrito ± elevação difusa do ST em sela de montar)"
+    }
+  ]
+}

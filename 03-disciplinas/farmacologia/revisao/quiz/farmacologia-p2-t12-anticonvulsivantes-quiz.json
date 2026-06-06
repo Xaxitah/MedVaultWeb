@@ -1,0 +1,105 @@
+{
+  "title": "Farmacologia P2 — T12 — Anticonvulsivantes",
+  "questions": [
+    {
+      "question": "Uma paciente com epilepsia de ausência típica (pequeno mal) deve receber qual anticonvulsivante como 1ª linha?",
+      "answerOptions": [
+        {"text": "Carbamazepina", "isCorrect": false, "rationale": "Carbamazepina pode PIORAR crises de ausência — é contraindicada nesse tipo de epilepsia."},
+        {"text": "Etossuximida", "isCorrect": true, "rationale": "Etossuximida bloqueia seletivamente canais de Ca²⁺ tipo T no tálamo — seu único mecanismo e sua única indicação é a crise de ausência típica."},
+        {"text": "Fenitoína", "isCorrect": false, "rationale": "Fenitoína bloqueia Na⁺ e é indicada para crises focais e tônico-clônicas, não para ausência."},
+        {"text": "Gabapentina", "isCorrect": false, "rationale": "Gabapentina atua em canais de Ca²⁺ α2δ e é usada para epilepsia focal e dor neuropática, não para ausência."}
+      ],
+      "hint": "Pense no mecanismo tálamo-cortical das crises de ausência."
+    },
+    {
+      "question": "Qual é o tratamento de 1ª linha para status epilepticus?",
+      "answerOptions": [
+        {"text": "Fenitoína IV", "isCorrect": false, "rationale": "Fenitoína é a 2ª linha no status epilepticus, usada se o BZD falhar."},
+        {"text": "Fenobarbital IV", "isCorrect": false, "rationale": "Fenobarbital é a 3ª linha no status epilepticus."},
+        {"text": "Lorazepam ou diazepam IV", "isCorrect": true, "rationale": "Benzodiazepínicos IV são a 1ª linha por sua rápida ação: potenciam GABA-A, terminando a crise em minutos. Lorazepam é preferido por duração de ação mais longa."},
+        {"text": "Propofol IV", "isCorrect": false, "rationale": "Propofol é reservado para status refratário, quando as 3 primeiras linhas falharam (anestesia geral)."}
+      ],
+      "hint": "O fármaco de ação mais rápida e disponível por via IV é a escolha inicial."
+    },
+    {
+      "question": "Uma mulher com epilepsia generalizada deseja engravidar. Qual anticonvulsivante apresenta o MAIOR risco teratogênico e deve ser evitado?",
+      "answerOptions": [
+        {"text": "Lamotrigina", "isCorrect": false, "rationale": "Lamotrigina tem o melhor perfil de segurança na gravidez entre os antiepilépticos e é a preferida nesse contexto."},
+        {"text": "Levetiracetam", "isCorrect": false, "rationale": "Levetiracetam tem dados razoáveis de segurança na gravidez, embora o monitoramento seja necessário."},
+        {"text": "Valproato", "isCorrect": true, "rationale": "Valproato causa espinha bífida (defeito do tubo neural) em ~1–2% dos casos, além de malformações cardíacas e face dismórfica — é o antiepiléptico com maior risco teratogênico e deve ser evitado na gravidez."},
+        {"text": "Gabapentina", "isCorrect": false, "rationale": "Gabapentina tem dados limitados mas não é classificada como o antiepiléptico de maior risco teratogênico."}
+      ],
+      "hint": "Este fármaco de amplo espectro é associado a defeitos do tubo neural."
+    },
+    {
+      "question": "Carbamazepina é 1ª linha para crises focais e também tratamento específico para qual condição neurológica?",
+      "answerOptions": [
+        {"text": "Enxaqueca com aura", "isCorrect": false, "rationale": "Profilaxia de enxaqueca usa topiramato, valproato ou propranolol — não carbamazepina."},
+        {"text": "Neuralgia do trigêmeo", "isCorrect": true, "rationale": "Carbamazepina é o tratamento de 1ª linha da neuralgia do trigêmeo, reduzindo a excitabilidade das fibras nociceptivas por bloqueio de Na⁺."},
+        {"text": "Dor neuropática diabética", "isCorrect": false, "rationale": "Dor neuropática diabética prefere gabapentina, pregabalina ou duloxetina — carbamazepina tem uso limitado nesse contexto."},
+        {"text": "Síndrome de Lennox-Gastaut", "isCorrect": false, "rationale": "Lennox-Gastaut usa valproato, topiramato, rufinamida ou clobazam — carbamazepina pode piorar crises atônicas."}
+      ],
+      "hint": "Dor facial lancinante em idosos, no território do nervo craniano V."
+    },
+    {
+      "question": "Qual anticonvulsivante é chamado de 'dopiramato' pelos pacientes por seu efeito adverso cognitivo?",
+      "answerOptions": [
+        {"text": "Levetiracetam", "isCorrect": false, "rationale": "Levetiracetam causa irritabilidade e alterações de humor, não comprometimento cognitivo proeminente."},
+        {"text": "Topiramato", "isCorrect": true, "rationale": "Topiramato causa comprometimento cognitivo (lentidão de pensamento, dificuldade de concentração) de forma tão frequente que ficou conhecido como 'dopiramato'. Também causa nefrolitíase e perda de peso."},
+        {"text": "Fenobarbital", "isCorrect": false, "rationale": "Fenobarbital causa sedação, mas não o comprometimento cognitivo característico que deu o apelido ao topiramato."},
+        {"text": "Vigabatrina", "isCorrect": false, "rationale": "Vigabatrina causa perda visual periférica irreversível, não o comprometimento cognitivo do topiramato."}
+      ],
+      "hint": "Lembre do apelido — combina o nome do fármaco com uma palavra que descreve o efeito cognitivo."
+    },
+    {
+      "question": "Ao combinar lamotrigina com valproato, qual é o principal risco e como deve ser a introdução da lamotrigina?",
+      "answerOptions": [
+        {"text": "Hepatotoxicidade grave — iniciar com dose alta e reduzir rapidamente", "isCorrect": false, "rationale": "Hepatotoxicidade é um risco do valproato isolado, não da combinação com lamotrigina."},
+        {"text": "Síndrome de Stevens-Johnson — iniciar com dose muito baixa e titular lentamente", "isCorrect": true, "rationale": "Valproato inibe o metabolismo da lamotrigina → ↑ 2x os níveis de lamotrigina → ↑ risco de síndrome de hipersensibilidade/Stevens-Johnson. A lamotrigina deve ser iniciada com dose mínima (25 mg/quinzena) e titulada muito lentamente."},
+        {"text": "Depressão respiratória — evitar completamente a combinação", "isCorrect": false, "rationale": "Não há risco de depressão respiratória nessa combinação — ambos são antiepilépticos não sedantes."},
+        {"text": "Hiponatremia — monitorar eletrólitos semanalmente", "isCorrect": false, "rationale": "Hiponatremia é um efeito da carbamazepina, não da lamotrigina ou valproato."}
+      ],
+      "hint": "O valproato aumenta os níveis da lamotrigina por inibição enzimática."
+    },
+    {
+      "question": "Qual anticonvulsivante usa um mecanismo completamente diferente dos outros — ligando-se a uma proteína da vesícula sináptica?",
+      "answerOptions": [
+        {"text": "Gabapentina", "isCorrect": false, "rationale": "Gabapentina liga-se à subunidade α2δ de canais de Ca²⁺ voltagem-dependentes, não a proteínas de vesícula sináptica."},
+        {"text": "Levetiracetam", "isCorrect": true, "rationale": "Levetiracetam liga-se à proteína SV2A das vesículas sinápticas, modulando a liberação de neurotransmissores. Esse mecanismo único não tem indução/inibição enzimática e não causa sedação."},
+        {"text": "Fenitoína", "isCorrect": false, "rationale": "Fenitoína bloqueia canais de Na⁺ voltagem-dependentes no estado inativo."},
+        {"text": "Etossuximida", "isCorrect": false, "rationale": "Etossuximida bloqueia canais de Ca²⁺ tipo T no tálamo."}
+      ],
+      "hint": "SV = synaptic vesicle."
+    },
+    {
+      "question": "Um paciente em uso de carbamazepina para epilepsia focal inicia contracepção oral. Qual é a preocupação farmacológica?",
+      "answerOptions": [
+        {"text": "Carbamazepina pode ser inibida pelo contraceptivo, aumentando risco de toxicidade", "isCorrect": false, "rationale": "É o contrário — carbamazepina é indutora enzimática, não é inibida por contraceptivos."},
+        {"text": "Carbamazepina induz CYP3A4 → ↓ níveis de estrógeno/progestagênio → falha contraceptiva", "isCorrect": true, "rationale": "Carbamazepina é potente indutor do CYP3A4 → metaboliza mais rapidamente os hormônios contraceptivos → níveis insuficientes → falha do método. Recomendar método não hormonal ou antiepiléptico não indutor."},
+        {"text": "O contraceptivo aumenta o risco de hiponatremia pela carbamazepina", "isCorrect": false, "rationale": "Hiponatremia é um efeito da carbamazepina independente do contraceptivo."},
+        {"text": "Não há interação clínica relevante entre carbamazepina e contraceptivos", "isCorrect": false, "rationale": "Essa é uma interação clinicamente muito relevante — responsável por gestações não planejadas em mulheres epilépticas."}
+      ],
+      "hint": "Carbamazepina é um indutor enzimático potente."
+    },
+    {
+      "question": "Qual é a diferença no mecanismo de ação entre benzodiazepínicos e fenobarbital, ambos atuando em GABA-A?",
+      "answerOptions": [
+        {"text": "BZD ↑ duração de abertura do canal Cl⁻; fenobarbital ↑ frequência de abertura", "isCorrect": false, "rationale": "Essa afirmação está invertida — é o contrário."},
+        {"text": "BZD ↑ frequência de abertura do canal Cl⁻; fenobarbital ↑ duração de abertura", "isCorrect": true, "rationale": "Benzodiazepínicos potenciam GABA ligando-se ao sítio alostérico e aumentando a FREQUÊNCIA de abertura do canal. Barbitúricos (fenobarbital) aumentam a DURAÇÃO de abertura. Em doses altas, barbitúricos podem ativar o canal diretamente, sem GABA."},
+        {"text": "Ambos agem no mesmo sítio de ligação no receptor GABA-A", "isCorrect": false, "rationale": "BZD ligam-se à interface α/γ; barbitúricos ligam-se à interface α/β — sítios distintos."},
+        {"text": "BZD bloqueiam canais de Na⁺ além de potenciar GABA; fenobarbital só atua em GABA", "isCorrect": false, "rationale": "BZD não bloqueiam canais de Na⁺ — atuam exclusivamente no receptor GABA-A."}
+      ],
+      "hint": "Frequência vs. duração — mnemônico: 'BZD = Bate mais vezes (frequência); Barbitúrico = Fica aberto mais tempo (duração)'."
+    },
+    {
+      "question": "Gabapentina e pregabalina são frequentemente chamados de análogos do GABA. Qual é o mecanismo real de ação?",
+      "answerOptions": [
+        {"text": "Agonistas do receptor GABA-B", "isCorrect": false, "rationale": "Agonistas GABA-B são o baclofeno — gabapentina e pregabalina não agem em receptores GABA."},
+        {"text": "Inibidores da GABA-transaminase → ↑ GABA cerebral", "isCorrect": false, "rationale": "Esse é o mecanismo da vigabatrina, não da gabapentina/pregabalina."},
+        {"text": "Ligação à subunidade α2δ de canais de Ca²⁺ voltagem-dependentes → ↓ liberação de neurotransmissores excitatórios", "isCorrect": true, "rationale": "Apesar do nome, gabapentina e pregabalina NÃO agem em receptores GABA. Ligam-se à subunidade α2δ dos canais de Ca²⁺ pré-sinápticos → ↓ influxo de Ca²⁺ → ↓ liberação de glutamato, substância P e noradrenalina — daí o efeito anticonvulsivante e analgésico."},
+        {"text": "Bloqueio de canais de Na⁺ voltagem-dependentes, similar à fenitoína", "isCorrect": false, "rationale": "Bloqueio de Na⁺ é o mecanismo da fenitoína, carbamazepina e lamotrigina — não de gabapentina/pregabalina."}
+      ],
+      "hint": "O nome é enganoso — a ação real é em canais de cálcio, não em receptores GABA."
+    }
+  ]
+}

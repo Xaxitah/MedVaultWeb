@@ -1,0 +1,21 @@
+{
+  "title": "Farmacologia P2 — T03 — Diuréticos",
+  "cards": [
+    {"front": "Quais são os 5 grupos principais de diuréticos?", "back": "1) Tiazídicos (TCP/TCD); 2) Alça (ramo espesso da alça de Henle); 3) Poupadores de K⁺ (TCD/TC); 4) Inibidores de anidrase carbônica; 5) Osmóticos"},
+    {"front": "Mecanismo e exemplos dos diuréticos tiazídicos", "back": "Inibem co-transportador Na⁺/Cl⁻ no TCD. Exemplos: hidroclorotiazida, clortalidona (mais longa), indapamida. Efeito moderado, hipocalêmico"},
+    {"front": "Mecanismo e exemplos dos diuréticos de alça", "back": "Inibem co-transportador Na⁺/K⁺/2Cl⁻ no ramo espesso da alça de Henle. Furosemida, bumetanida, torasemida. Mais potentes, hipocalêmicos"},
+    {"front": "Por que furosemida causa hipocalemia?", "back": "↑ fluxo de Na⁺ ao néfron distal → maior atividade da bomba Na⁺/K⁺ ATPase → excreção de K⁺. Também ativa SRAA (↓ volemia) → aldosterona → excreção de K⁺"},
+    {"front": "Diuréticos poupadores de K⁺ — mecanismo e exemplos", "back": "Espironolactona/eplerenona: antagonistas da aldosterona (receptor mineralocorticoide). Amilorida/triantereno: bloqueiam canais ENaC no TC. Retêm K⁺"},
+    {"front": "Por que espironolactona é usada na IC?", "back": "Bloqueio da aldosterona → antirremodelamento cardíaco (↓ fibrose), poupadora de K⁺, reduz mortalidade na IC grave (estudo RALES). Efeito diurético secundário"},
+    {"front": "Efeitos adversos dos diuréticos tiazídicos (6 principais)", "back": "1) Hipocalemia; 2) Hiponatremia; 3) Hiperuricemia (gota); 4) Hiperglicemia; 5) Hiperlipidemia; 6) Hipercalcemia (retém Ca²⁺)"},
+    {"front": "Efeitos adversos dos diuréticos de alça", "back": "1) Hipocalemia; 2) Hipomagnesemia; 3) Hiperuricemia; 4) Ototoxicidade (furosemida IV rápida); 5) Hipocalcemia (excretam Ca²⁺ — oposto dos tiazídicos)"},
+    {"front": "Espironolactona — efeitos adversos específicos", "back": "1) Hiperpotassemia (perigosa com IECA/ARA II); 2) Ginecomastia e mastodinia (ação anti-andrôgenica); 3) Disfunção erétil; 4) Irregularidade menstrual"},
+    {"front": "Eplerenona vs espironolactona — qual diferença?", "back": "Eplerenona é mais seletiva para receptor mineralocorticoide → menos efeitos androgênicos (sem ginecomastia). Porém mais cara"},
+    {"front": "Diuréticos osmóticos — mecanismo e uso principal", "back": "Manitol: filtrado mas não reabsorvido → mantém osmolaridade no túbulo → retém água. Indicado em HIC (hipertensão intracraniana) e glaucoma agudo de ângulo fechado"},
+    {"front": "Acetazolamida — mecanismo e indicação", "back": "Inibidor da anidrase carbônica no TCP → ↓ reabsorção de HCO₃⁻ → diurese com perda de bicarbonato → acidose metabólica. Usada em glaucoma e mal das alturas"},
+    {"front": "Qual diurético usar na HIC (hipertensão intracraniana)?", "back": "1ª escolha: manitol (osmótico). Alternativa: solução salina hipertônica. Furosemida pode ser adjuvante"},
+    {"front": "Tiazídico + K⁺: por que a combinação pode ser prejudicial?", "back": "Tiazídicos causam hipocalemia; se usados com digoxina, a hipocalemia potencializa a toxicidade digitálica (K⁺ e digoxina competem pelo mesmo sítio na Na⁺/K⁺ ATPase)"},
+    {"front": "Clortalidona vs hidroclorotiazida — qual preferir e por quê?", "back": "Clortalidona tem meia-vida muito mais longa (35–50h vs 8–12h) e redução de eventos cardiovasculares superiores em estudos. Preferida nas guidelines de HAS"},
+    {"front": "Qual é o diurético de escolha na crise hipertensiva com edema agudo de pulmão?", "back": "Furosemida IV — ação rápida (15 min), grande diurese, vasodilatação venosa prévia à diurese propriamente dita"}
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T06: Síndromes Pleurais",
+  "questions": [
+    {
+      "question": "Os Critérios de Light diferenciam exsudato de transudato no derrame pleural. Qual é a definição correta?",
+      "answerOptions": [
+        {"text": "Exsudato: proteína pleural/sérica > 0,5 OU DHL pleural/sérica > 0,6 OU DHL pleural > 2/3 do limite superior sérico — basta UM critério", "isCorrect": true, "rationale": "Critérios de Light (1972): exsudato = proteínas pleurais/séricas > 0,5 OU DHL pleural/sérico > 0,6 OU DHL pleural > 2/3 do limite superior normal do DHL sérico. Basta UM dos três para ser exsudato."},
+        {"text": "Exsudato: proteína pleural > 3,0 g/dL E DHL pleural > 200 U/L — ambos os critérios são necessários", "isCorrect": false, "rationale": "Os critérios de Light são razões (pleural/sérico) — não valores absolutos. E basta UM critério (não ambos)."},
+        {"text": "Transudato: proteína pleural > 3,0 g/dL + glicose < 60 mg/dL", "isCorrect": false, "rationale": "Glicose < 60 no líquido pleural sugere exsudato complicado (empiema, artrite reumatoide, TB) — não é o critério de Light para transudato."},
+        {"text": "Exsudato e transudato são diferenciados apenas pela aparência macroscópica do líquido", "isCorrect": false, "rationale": "A aparência macroscópica auxilia mas não é suficiente — são necessários os critérios bioquímicos de Light."}
+      ],
+      "hint": "Light: razões (pleural/sérico) — proteína > 0,5 OU DHL > 0,6 OU DHL > 2/3 máximo."
+    },
+    {
+      "question": "Quais são as causas mais comuns de transudato pleural?",
+      "answerOptions": [
+        {"text": "Insuficiência cardíaca congestiva, cirrose hepática (hipoalbuminemia) e síndrome nefrótica", "isCorrect": true, "rationale": "Transudatos ocorrem por aumento da pressão hidrostática (ICC) ou redução da pressão oncótica (cirrose, síndrome nefrótica). Não há processo inflamatório pleural — o líquido 'vaza' passivamente."},
+        {"text": "Tuberculose, pneumonia e câncer de pulmão", "isCorrect": false, "rationale": "Esses causam EXSUDATOS — há processo inflamatório ou neoplásico que altera a permeabilidade pleural."},
+        {"text": "Embolia pulmonar, pleurite e hemotórax", "isCorrect": false, "rationale": "Embolia pulmonar, pleurite e hemotórax causam exsudato — há componente inflamatório ou hemorrágico."},
+        {"text": "Asma, DPOC e fibrose pulmonar", "isCorrect": false, "rationale": "Essas doenças raramente causam derrame pleural significativo e quando causam são geralmente por outro mecanismo."}
+      ],
+      "hint": "Transudato = 'vazamento passivo' = ICC (↑P hidrostática) ou cirrose/néfrótico (↓P oncótica)."
+    },
+    {
+      "question": "No derrame pleural volumoso, o mediastino se desvia para qual direção e o que isso implica?",
+      "answerOptions": [
+        {"text": "Para o lado oposto ao derrame (contralateral) — o líquido empurra o mediastino; se não desviar, suspeitar de fixação por tumor ou atelectasia ipsilateral", "isCorrect": true, "rationale": "O derrame grande empurra o mediastino para o lado contralateral. Se o mediastino não desvia apesar de derrame maciço, suspeitar de: fixação tumoral do mediastino, colapso/atelectasia ipsilateral concomitante (que puxa para mesmo lado), ou mesotelioma."},
+        {"text": "Para o mesmo lado do derrame — o peso do líquido o faz desviar ipsilateralmente", "isCorrect": false, "rationale": "O peso não desvia — a pressão positiva gerada pelo líquido EMPURRA o mediastino para o lado oposto."},
+        {"text": "O derrame pleural nunca causa desvio mediastinal — apenas a atelectasia causa", "isCorrect": false, "rationale": "Derrame volumoso definitivamente causa desvio mediastinal contralateral."},
+        {"text": "Desvio para cima ou baixo dependendo do lobo afetado", "isCorrect": false, "rationale": "O desvio mediastinal é lateral (contralateral ao derrame) — não superior ou inferior."}
+      ],
+      "hint": "Derrame empurra o mediastino para o lado OPOSTO. Atelectasia puxa para o MESMO lado."
+    },
+    {
+      "question": "O pneumotórax hipertensivo é uma emergência. Por qual mecanismo ele causa colapso cardiovascular?",
+      "answerOptions": [
+        {"text": "Ar entra na pleura com mecanismo de válvula → pressão positiva progressiva → comprime veia cava e coração → reduz retorno venoso e débito cardíaco → choque obstrutivo", "isCorrect": true, "rationale": "No pneumotórax hipertensivo, um flap de tecido age como válvula unidirecional — ar entra na inspiração mas não sai na expiração → pressão pleural aumenta progressivamente → comprime mediastino e coração → retorno venoso cai → colapso cardiovascular."},
+        {"text": "Hipoxemia severa causa falência miocárdica direta por isquemia", "isCorrect": false, "rationale": "A hipoxemia contribui mas o mecanismo principal é o obstrutivo (compressão mediastinal), não a falência miocárdica direta."},
+        {"text": "O pulmão colapsado libera mediadores inflamatórios que causam vasodilatação sistêmica", "isCorrect": false, "rationale": "Esse não é o mecanismo do choque no pneumotórax hipertensivo — o mecanismo é puramente mecânico (obstrutivo)."},
+        {"text": "Ar entra na circulação venosa causando embolia gasosa", "isCorrect": false, "rationale": "Embolia gasosa venosa é uma complicação diferente — não é o mecanismo do pneumotórax hipertensivo."}
+      ],
+      "hint": "Válvula unidirecional → pressão pleural crescente → comprime coração → choque obstrutivo."
+    },
+    {
+      "question": "A tríade de Beck (hipotensão, turgência jugular, abafamento de bulhas) diferencia pneumotórax hipertensivo de qual outro diagnóstico de emergência?",
+      "answerOptions": [
+        {"text": "Tamponamento cardíaco — ambos causam choque obstrutivo mas o tamponamento abafa as bulhas; no pneumotórax hipertensivo o MV está abolido ipsilateralmente e há hipertimpanismo", "isCorrect": true, "rationale": "A tríade de Beck ocorre em ambos. Diferenciação: no pneumotórax hipertensivo o MV está abolido no lado afetado, há hipertimpanismo e desvio de traqueia para o lado oposto — ausentes no tamponamento cardíaco."},
+        {"text": "Síndrome coronariana aguda — a tríade de Beck é exclusiva do IAM de parede posterior", "isCorrect": false, "rationale": "A tríade de Beck NÃO é de IAM — é do tamponamento cardíaco (e pode ocorrer no pneumotórax hipertensivo)."},
+        {"text": "Embolia pulmonar maciça — a tríade de Beck é patognomônica de TEP", "isCorrect": false, "rationale": "TEP maciço pode causar choque obstrutivo mas não apresenta tipicamente a tríade de Beck."},
+        {"text": "Pneumotórax hipertensivo e tamponamento são clinicamente idênticos — apenas a TC diferencia", "isCorrect": false, "rationale": "A ausculta pulmonar (MV abolido) e a percussão (hipertimpanismo) diferenciam clinicamente."}
+      ],
+      "hint": "Tríade de Beck = tamponamento OU pneumotórax hipertensivo. O MV diferencia."
+    },
+    {
+      "question": "O derrame pleural unilateral à direita, com DHL elevado e predomínio de linfócitos no líquido, em paciente com febre e sudorese noturna — qual é o diagnóstico mais provável?",
+      "answerOptions": [
+        {"text": "Tuberculose pleural — exsudato linfocítico, ADA elevada, febre e suores noturnos são característicos", "isCorrect": true, "rationale": "TB pleural: exsudato, predomínio de linfócitos (> 90%), ADA (adenosina deaminase) > 40 U/L, proteínas altas, glicose pode estar reduzida. Síndrome sistêmica (febre, suores, emagrecimento) é típica."},
+        {"text": "Insuficiência cardíaca — derrame por transudato com linfócitos", "isCorrect": false, "rationale": "ICC causa transudato (proteínas baixas, DHL baixo) — não exsudato linfocítico com febre e suores."},
+        {"text": "Pneumonia bacteriana com derrame parapneumônico — sempre linfocítico", "isCorrect": false, "rationale": "Derrame parapneumônico é exsudato predominantemente NEUTROFÍLICO — não linfocítico."},
+        {"text": "Mesotelioma — causa exsudato linfocítico em jovens", "isCorrect": false, "rationale": "Mesotelioma é mais comum em idosos com exposição ao asbesto — e não é a primeira hipótese com febre e suores noturnos."}
+      ],
+      "hint": "Exsudato + linfocítico + febre + suores = TB pleural. Dosar ADA."
+    },
+    {
+      "question": "A toracocentese diagnóstica é indicada em derrame pleural. Qual é a posição adequada do paciente e onde se insere a agulha?",
+      "answerOptions": [
+        {"text": "Sentado com braços sobre suporte (inclinado à frente); agulha no bordo superior da costela inferior do espaço intercostal escolhido (evita nervo/vaso do bordo inferior da costela acima)", "isCorrect": true, "rationale": "A posição sentada maximiza o acúmulo de líquido nas bases. A agulha vai no bordo SUPERIOR da costela de baixo — porque o nervo intercostal, artéria e veia passam pelo sulco do bordo INFERIOR da costela de cima."},
+        {"text": "Em decúbito dorsal; agulha no bordo inferior da costela para evitar a pleura parietal", "isCorrect": false, "rationale": "Decúbito dorsal não é a posição ideal para toracocentese diagnóstica. E o bordo inferior da costela contém o feixe neurovascular — evitar!"},
+        {"text": "Em decúbito lateral sobre o lado afetado; agulha no centro do espaço intercostal", "isCorrect": false, "rationale": "Decúbito lateral pode ser usado mas sentado é preferido. O centro do espaço é aceitável mas o bordo superior da costela de baixo é mais seguro."},
+        {"text": "Em pé com braços levantados; agulha no segundo espaço intercostal anterior", "isCorrect": false, "rationale": "Segundo espaço anterior é o local de punção do pneumotórax hipertensivo (descompressão) — não da toracocentese de derrame pleural."}
+      ],
+      "hint": "Bordo SUPERIOR da costela inferior = evita o feixe neurovascular que corre no sulco da costela de cima."
+    },
+    {
+      "question": "O hemotórax é definido como líquido pleural com hematócrito de quanto percentual em relação ao hematócrito periférico?",
+      "answerOptions": [
+        {"text": "≥ 50% do hematócrito periférico", "isCorrect": true, "rationale": "Hemotórax = hematócrito do líquido pleural ≥ 50% do hematócrito sanguíneo. Abaixo disso, o líquido hemorrágico pode ter outras causas (neoplasia, TEP)."},
+        {"text": "≥ 10% do hematócrito periférico — qualquer líquido hemorrágico", "isCorrect": false, "rationale": "10% é muito baixo — a maioria dos exsudatos pode ter algum sangramento. O critério para hemotórax é ≥ 50%."},
+        {"text": "≥ 25% do hematócrito periférico", "isCorrect": false, "rationale": "O critério correto é ≥ 50%, não 25%."},
+        {"text": "Hematócrito pleural > 100.000 células/mm³ em vez de percentual", "isCorrect": false, "rationale": "Hemotórax é definido por hematócrito (percentual) — não por contagem de células."}
+      ],
+      "hint": "Hemotórax = hematócrito pleural ≥ 50% do periférico."
+    },
+    {
+      "question": "O pneumotórax espontâneo primário afeta principalmente qual perfil de paciente?",
+      "answerOptions": [
+        {"text": "Homem jovem, alto, magro (longilíneo), sem doença pulmonar prévia — por ruptura de blebs subpleurais apicais", "isCorrect": true, "rationale": "O pneumotórax espontâneo primário ocorre em jovens longilíneos (a tensão apical é maior em pulmões longos e estreitos). Os blebs (bolhas) subpleurais nos ápices se rompem espontaneamente — sem doença pulmonar prévia."},
+        {"text": "Mulher idosa, obesa, com asma — por hiperinsuflação e ruptura alveolar", "isCorrect": false, "rationale": "Esse perfil não corresponde ao pneumotórax espontâneo primário — que afeta jovens magros."},
+        {"text": "Paciente com DPOC avançado e bolhas de enfisema — pneumotórax primário", "isCorrect": false, "rationale": "Isso descreve o pneumotórax SECUNDÁRIO (em doença pulmonar prévia: DPOC, fibrose, Langerhans) — não o primário."},
+        {"text": "Paciente sob ventilação mecânica com pressão alta — barotrauma", "isCorrect": false, "rationale": "Barotrauma em VM causa pneumotórax iatrogênico — não espontâneo primário."}
+      ],
+      "hint": "Primário = jovem + magro + alto + sem doença pulmonar. Blebs apicais."
+    },
+    {
+      "question": "O quilotórax é um tipo especial de derrame pleural. O que é e qual a sua causa mais comum?",
+      "answerOptions": [
+        {"text": "Líquido leitoso (linfático) por lesão do ducto torácico — causa: linfoma (mais comum), trauma cirúrgico", "isCorrect": true, "rationale": "Quilotórax = linfa rica em quilomicrons no espaço pleural → líquido leitoso branco-opalescente. Causa mais comum: linfoma (compressão/infiltração do ducto torácico). Traumático: cirurgia de tórax, esôfago ou grande vaso."},
+        {"text": "Líquido purulento por infecção bacteriana da pleura — empiema é sinônimo de quilotórax", "isCorrect": false, "rationale": "Empiema é pus na pleura — diferente do quilotórax que contém linfa/quilomicrons."},
+        {"text": "Acúmulo de colesterol no líquido pleural por colesterol alto — hipercolesterolemia", "isCorrect": false, "rationale": "Derrame colesteroliforme (pseudoquilotórax) ocorre em derrames crônicos — distinto do quilotórax verdadeiro."},
+        {"text": "Líquido claro por transudato de origen renal — síndrome nefrótica grave", "isCorrect": false, "rationale": "Quilotórax não é um transudato e não tem origem renal."}
+      ],
+      "hint": "Quilotórax = leitoso = linfa = ducto torácico lesado = linfoma."
+    }
+  ]
+}

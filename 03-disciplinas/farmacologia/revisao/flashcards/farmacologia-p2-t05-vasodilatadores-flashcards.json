@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T05 — Vasodilatadores",
+  "cards": [
+    {"front": "Quais são os principais grupos de vasodilatadores?", "back": "1) Nitratos (nitroglicerina, nitroprussiato); 2) Bloqueadores dos canais de Ca²⁺ (BCC); 3) Hidralazina; 4) Inibidores de PDE5 (sildenafila); 5) Minoxidil"},
+    {"front": "Mecanismo dos nitratos orgânicos (nitroglicerina)", "back": "Pró-fármaco → libera NO nas células musculares lisas → ativa guanilato ciclase → ↑ GMPc → desfosforilação de miosina → vasodilatação. Predomínio em veias → ↓ pré-carga"},
+    {"front": "Nitroglicerina vs nitroprussiato — diferença principal", "back": "Nitroglicerina: dilata preferencialmente veias (↓ pré-carga) → angina, EAP. Nitroprussiato: dilata igualmente artérias E veias → ↓ pré e pós-carga → crise hipertensiva grave"},
+    {"front": "Tolerância aos nitratos — como evitar?", "back": "Uso contínuo → depleção de grupos tiol → tolerância em 24h. Evitar com período livre de 8–10h (intervalo sem nitrato, geralmente à noite)"},
+    {"front": "Toxicidade do nitroprussiato sódico", "back": "Metabolizado em cianeto → toxicidade por cianeto (especialmente com doses altas ou IRC). Sinais: acidose láctica, colapso CV. Antídoto: tiossulfato de sódio"},
+    {"front": "Bloqueadores dos canais de Ca²⁺ (BCC) — dois subgrupos", "back": "Di-hidropiridinas (nifedipina, anlodipino, felodipino): agem em vasos (vasodilatação periférica). Não-DHP (verapamil, diltiazem): agem em coração e vasos → bradicardia e ↓ condução AV"},
+    {"front": "Di-hidropiridinas vs não-di-hidropiridinas — indicações e contraindicações", "back": "DHP: HAS, angina vasoespástica, doença de Raynaud. Não-DHP: FA/flutter (controle FC), angina estável. Contraindicação não-DHP: IC com FEVE reduzida, bloqueio AV"},
+    {"front": "Por que anlodipino é preferido às di-hidropiridinas de curta ação?", "back": "Anlodipino tem meia-vida longa (35–50h) → concentração estável, sem taquicardia reflexa (diferente da nifedipina de liberação rápida que causava ↑ FC e isquemia de rebote)"},
+    {"front": "Hidralazina — mecanismo e combinação clássica", "back": "Vasodilatador arteriolar direto (mecanismo exato incompleto). Provoca taquicardia reflexa → sempre associar a betabloqueante. Combinação hidralazina + nitrato: IC em pacientes intolerantes a IECA/ARA II"},
+    {"front": "Efeitos adversos da hidralazina", "back": "1) Taquicardia reflexa (combinar com betabloqueante); 2) Lúpus farmacoinduzido (com dose >200mg/dia); 3) Cefaleia e flushing; 4) Retenção de Na⁺/H₂O"},
+    {"front": "Minoxidil — mecanismo e uso tópico", "back": "Abre canais de K⁺ → hiperpolarização → relaxamento muscular liso → potente vasodilatador arteriolar. Uso sistêmico: HAS grave refratária. Uso tópico: alopecia (estimula crescimento capilar)"},
+    {"front": "Inibidores da PDE5 (sildenafila, tadalafila) — mecanismo cardiovascular", "back": "↑ GMPc nos vasos → vasodilatação arterial e venosa (pulmonar e sistêmica). Indicados em: disfunção erétil, hipertensão arterial pulmonar (HAP). Contraindicado com nitratos (hipotensão grave)"},
+    {"front": "Qual vasodilatador usar na crise hipertensiva hipertensiva aguda com risco de vida?", "back": "Nitroprussiato IV ou nicardipina IV (BCC IV). Na emergência eclâmptica: hidralazina IV, labetalol IV ou nifedipina oral"},
+    {"front": "Fenoldopam — mecanismo e indicação especial", "back": "Agonista D₁ dopaminérgico periférico → vasodilatação renal seletiva. Usado em crise hipertensiva com disfunção renal — preserva fluxo renal"},
+    {"front": "Bosentana — mecanismo e indicação", "back": "Antagonista do receptor de endotelina (ET-A e ET-B) → vasodilatação. 1ª escolha oral na hipertensão arterial pulmonar (HAP). Hepatotóxico — monitorar enzimas hepáticas"}
+  ]
+}

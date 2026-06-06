@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T02: Sintomas Respiratórios",
+  "questions": [
+    {
+      "question": "Qual é a diferença entre tosse produtiva e tosse seca, e o que o caráter do escarro pode indicar?",
+      "answerOptions": [
+        {"text": "Tosse produtiva = com escarro; escarro purulento (amarelo-esverdeado) sugere infecção bacteriana; ferrugínoso (marrom) sugere pneumonia pneumocócica; fétido sugere abscesso", "isCorrect": true, "rationale": "O caráter do escarro orienta o diagnóstico: purulento = bacteriano; ferrugínoso = pneumonia lobar por S. pneumoniae; fétido = bactérias anaeróbias (abscesso); róseo-espumoso = edema pulmonar."},
+        {"text": "Tosse produtiva = com dispneia; tosse seca = sem dispneia; o escarro não tem valor diagnóstico", "isCorrect": false, "rationale": "Tosse produtiva/seca refere-se à presença/ausência de escarro — não à dispneia. O escarro tem grande valor diagnóstico."},
+        {"text": "Escarro amarelo sempre indica tuberculose; escarro branco indica vírus", "isCorrect": false, "rationale": "Escarro amarelo é purulento (bacteriano em geral); TB classicamente tem escarro muco-purulento com possível sangue — mas não necessariamente amarelo como marcador único."},
+        {"text": "Escarro ferrugínoso indica hemorragia alveolar difusa", "isCorrect": false, "rationale": "Hemorragia alveolar causa escarro avermelhado/hemoptoico. Ferrugínoso (marrom-enferrujado) é clássico da pneumonia pneumocócica — sangue antigo + muco."}
+      ],
+      "hint": "Ferrugínoso = cor de ferrugem = pneumonia pneumocócica."
+    },
+    {
+      "question": "A hemoptise deve ser diferenciada da hematemese. Qual a principal diferença?",
+      "answerOptions": [
+        {"text": "Hemoptise: sangue vermelho-vivo, espumoso, acompanhada de tosse, pH alcalino; hematemese: sangue escuro (borra de café), sem tosse, pH ácido", "isCorrect": true, "rationale": "Hemoptise vem das vias aéreas — sangue é aerado (espumoso), vivo, tossido. Hematemese vem do trato digestivo — sangue pode ser escuro por ação do ácido gástrico, vomitado com náusea."},
+        {"text": "Hemoptise e hematemese são idênticas clinicamente; apenas a endoscopia diferencia", "isCorrect": false, "rationale": "A história clínica já diferencia — tosse vs vômito, cor e espumosidade do sangue."},
+        {"text": "Hemoptise: sangue escuro e vomitado; hematemese: sangue vermelho tossido", "isCorrect": false, "rationale": "É o contrário — hemoptise é tossida e vermelha; hematemese é vomitada e frequentemente escura."},
+        {"text": "Hemoptise indica sempre câncer de pulmão", "isCorrect": false, "rationale": "Hemoptise tem muitas causas: tuberculose, bronquiectasia, câncer, infecções — não indica exclusivamente neoplasia."}
+      ],
+      "hint": "Tosse + espumoso = hemoptise (vias aéreas); vômito + escuro = hematemese (estômago)."
+    },
+    {
+      "question": "A dispneia de esforço é avaliada pela escala MRC (Medical Research Council). Qual grau corresponde a 'falta de ar ao caminhar no plano em passo normal'?",
+      "answerOptions": [
+        {"text": "Grau 3 (MRC 3)", "isCorrect": true, "rationale": "MRC 1: dispneia intensa. MRC 2: caminhar em subida. MRC 3: caminhar no plano em passo normal com pessoas da mesma idade (ou para em < 100m). MRC 4: parar após 100m. MRC 5: falta de ar ao se vestir."},
+        {"text": "Grau 1 (MRC 1)", "isCorrect": false, "rationale": "MRC 1 corresponde à dispneia apenas em exercício muito intenso."},
+        {"text": "Grau 5 (MRC 5)", "isCorrect": false, "rationale": "MRC 5 é dispneia ao se vestir ou em repouso — grau mais severo."},
+        {"text": "Grau 2 (MRC 2)", "isCorrect": false, "rationale": "MRC 2 corresponde a dispneia ao caminhar em subida ou apressar o passo."}
+      ],
+      "hint": "Plano normal = MRC 3. Escada/subida = MRC 2. Vestir = MRC 5."
+    },
+    {
+      "question": "A ortopneia (dispneia em decúbito que melhora ao sentar) é causada principalmente por qual mecanismo?",
+      "answerOptions": [
+        {"text": "Em decúbito, o líquido redistribui para os pulmões (↑ pré-carga) e o diafragma é empurrado para cima pelo conteúdo abdominal", "isCorrect": true, "rationale": "Ao deitar: retorno venoso aumenta (pré-carga aumenta), edema pulmonar piora; diafragma é elevado pelo conteúdo abdominal. Ambos reduzem a capacidade respiratória."},
+        {"text": "Em decúbito, os músculos intercostais relaxam completamente e não funcionam", "isCorrect": false, "rationale": "Os intercostais não relaxam completamente em decúbito — o mecanismo é hemodinâmico e mecânico."},
+        {"text": "Em decúbito, o murmúrio vesicular abolido impede a oxigenação adequada", "isCorrect": false, "rationale": "O MV não se abole ao deitar — o mecanismo é de redistribuição hídrica e posição diafragmática."},
+        {"text": "Ortopneia é exclusiva de DPOC e não tem relação com ICC", "isCorrect": false, "rationale": "Ortopneia é clássica da ICC descompensada — é um dos critérios de Framingham para ICC."}
+      ],
+      "hint": "Ortopneia = ICC. Deitar aumenta retorno venoso → mais líquido nos pulmões."
+    },
+    {
+      "question": "O que é dispneia paroxística noturna (DPN) e como difere da ortopneia?",
+      "answerOptions": [
+        {"text": "DPN: acorda o paciente 1–3h após dormir com dispneia intensa; ortopneia: começa imediatamente ao deitar — DPN tem latência de redistribuição maior", "isCorrect": true, "rationale": "Na DPN, o reabsorção do edema intersticial das pernas ao deitar leva 1–3h para aumentar suficientemente o líquido pulmonar e despertar o paciente. A ortopneia é imediata porque o efeito gravitacional é direto."},
+        {"text": "DPN e ortopneia são sinônimos — descrevem o mesmo fenômeno", "isCorrect": false, "rationale": "São fenômenos distintos: ortopneia é imediata ao deitar; DPN ocorre horas depois durante o sono."},
+        {"text": "DPN é exclusiva de asma noturna e não tem relação com ICC", "isCorrect": false, "rationale": "DPN ocorre na ICC mas também pode haver dispneia noturna na asma — porém o mecanismo e o contexto clínico diferem."},
+        {"text": "DPN: dispneia ao exercício noturno; ortopneia: dispneia ao exercício diurno", "isCorrect": false, "rationale": "DPN e ortopneia ocorrem em repouso, não no exercício."}
+      ],
+      "hint": "DPN acorda o paciente no meio da noite — ortopneia aparece logo ao deitar."
+    },
+    {
+      "question": "A cianose central vs periférica — qual a diferença fundamental?",
+      "answerOptions": [
+        {"text": "Central: mucosas azuladas (língua/lábios) = hipoxemia (baixa saturação arterial); periférica: extremidades azuladas com mucosas normais = hipoperfusão local", "isCorrect": true, "rationale": "Cianose central indica que o sangue arterial em si está pouco saturado — manifesta em mucosas centrais (língua). Periférica é por vasoconstrição/stase — o sangue arterial é normal mas as extremidades extraem mais O₂."},
+        {"text": "Central: apenas nos membros; periférica: apenas na face", "isCorrect": false, "rationale": "Definição invertida — central é na mucosa (língua/lábios), periférica é nas extremidades."},
+        {"text": "Ambas indicam insuficiência respiratória grave e requerem oxigênio imediato", "isCorrect": false, "rationale": "Apenas a cianose central indica hipoxemia real — periférica pode ser por vasoconstrição (frio) sem hipoxemia."},
+        {"text": "Cianose só é detectável clinicamente quando a SpO₂ < 80%", "isCorrect": false, "rationale": "A cianose clínica aparece quando há > 5 g/dL de hemoglobina desoxigenada — em paciente com Hb normal isso equivale a SpO₂ ~85–88%."}
+      ],
+      "hint": "Língua azul = central = problema pulmonar/cardíaco. Dedos azuis com língua rosada = periférica = vasoconstricção."
+    },
+    {
+      "question": "A tosse crônica (> 3 semanas) em adulto não tabagista sem outra causa óbvia — quais são as 3 causas mais comuns?",
+      "answerOptions": [
+        {"text": "Síndrome de tosse do trato respiratório superior (gotejamento pós-nasal), asma e DRGE", "isCorrect": true, "rationale": "A tríade clássica de tosse crônica sem causa óbvia: drip pós-nasal (rinite/sinusite), asma coughing variant e refluxo gastroesofágico. Juntas respondem pela maioria dos casos em não fumantes."},
+        {"text": "Tuberculose, câncer de pulmão e bronquite crônica", "isCorrect": false, "rationale": "Essas causas existem mas não são as 'mais comuns' em geral — tuberculose em contexto específico, câncer especialmente em fumantes idosos."},
+        {"text": "DPOC, insuficiência cardíaca e sarcoidose", "isCorrect": false, "rationale": "DPOC é mais comum em fumantes; ICC pode causar tosse mas não é das 3 mais comuns em não fumantes."},
+        {"text": "Pneumonia atípica, pleurite e mediastinite", "isCorrect": false, "rationale": "Essas causas são agudas ou subagudas — não se enquadram em tosse crônica como causas principais."}
+      ],
+      "hint": "Pense no nariz (gotejo), pulmão (asma) e estômago (refluxo)."
+    },
+    {
+      "question": "A dor pleurítica tem características típicas. Qual das alternativas a descreve corretamente?",
+      "answerOptions": [
+        {"text": "Dor em pontada, unilateral, que piora na inspiração profunda e na tosse, mas melhora em decúbito sobre o lado afetado", "isCorrect": true, "rationale": "A dor pleurítica é causada pelo atrito das folhas pleurais inflamadas — aumenta com o movimento das pleuras (inspiração, tosse) e é aliviada ao imobilizar o hemitórax afetado (deitar sobre ele)."},
+        {"text": "Dor em queimação retroesternal que piora em decúbito — clássica de pleurite", "isCorrect": false, "rationale": "Queimação retroesternal que piora em decúbito é mais sugestiva de DRGE ou pericardite — não pleurite."},
+        {"text": "Dor irradiada para o braço esquerdo que piora com exercício — pleurite de esforço", "isCorrect": false, "rationale": "Dor irradiada para braço esquerdo com exercício sugere angina — não pleurite."},
+        {"text": "Dor difusa, bilateral, que piora à palpação — pleurite bilateral", "isCorrect": false, "rationale": "Pleurite é tipicamente unilateral; dor difusa bilateral à palpação sugere outro diagnóstico (musculoesquelético)."}
+      ],
+      "hint": "Pleurítica: pontada + piora na inspiração + melhora deitando sobre o lado dolorido."
+    },
+    {
+      "question": "O baqueteamento digital (clubbing) é um achado no exame físico que pode indicar doenças respiratórias. Em qual condição é mais característico?",
+      "answerOptions": [
+        {"text": "Fibrose pulmonar idiopática, bronquiectasia, abscesso pulmonar, mesotelioma e câncer de pulmão", "isCorrect": true, "rationale": "Baqueteamento associa-se a condições de hipoxemia crônica ou inflamação crônica pleuro-pulmonar: FPI, bronquiectasia, abscesso, mesotelioma, carcinoma broncogênico. Também ocorre em cardiopatias congênitas cianóticas e cirrose."},
+        {"text": "DPOC e asma são as causas mais comuns de baqueteamento", "isCorrect": false, "rationale": "DPOC e asma raramente causam baqueteamento — hipoxemia crônica não é o mecanismo principal do clubbing."},
+        {"text": "Baqueteamento é achado normal em populações de altitude elevada", "isCorrect": false, "rationale": "Baqueteamento não é achado normal em nenhuma população."},
+        {"text": "Baqueteamento é específico de câncer de pulmão — deve-se solicitar TC imediatamente", "isCorrect": false, "rationale": "Não é específico de câncer — tem múltiplas causas respiratórias, cardíacas e hepáticas."}
+      ],
+      "hint": "Fibrose pulmonar + bronquiectasia + câncer = causas respiratórias clássicas de clubbing."
+    },
+    {
+      "question": "A sibilância (wheezing) — o que é e o que indica?",
+      "answerOptions": [
+        {"text": "Som musical de alta frequência produzido por obstrução/estreitamento das vias aéreas — indica broncoespasmo, asma ou obstrução brônquica", "isCorrect": true, "rationale": "Sibilância (sibilo) é produzida quando o fluxo de ar passa por via aérea estreitada — cria vibração musical. Classicamente na asma (expiratória), mas também em obstrução mecânica."},
+        {"text": "Som grave de baixa frequência — indica consolidação pulmonar", "isCorrect": false, "rationale": "Som grave de baixa frequência são os roncos (rhonchi) — associados a secreção em vias aéreas grandes. Sibilos são de alta frequência."},
+        {"text": "Sibilância é sempre bilateral e expiratória — sibilância inspiratória unilateral não existe", "isCorrect": false, "rationale": "Sibilância unilateral inspiratória pode indicar corpo estranho ou tumor obstrutivo em brônquio principal — é sinal de alerta importante."},
+        {"text": "Sibilância em lactente exclui asma pois nessa faixa etária não existe broncoespasmo", "isCorrect": false, "rationale": "Lactentes podem ter sibilância por bronquiolite viral, asma do lactente ou outras causas — broncoespasmo pode ocorrer em qualquer idade."}
+      ],
+      "hint": "Sibilo = estreitamento = asma em adultos. Unilateral = corpo estranho."
+    }
+  ]
+}

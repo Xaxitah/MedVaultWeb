@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T01: IPPA do Sistema Respiratório",
+  "cards": [
+    {
+      "front": "Quais as 4 etapas do IPPA do tórax?",
+      "back": "1. Inspeção: forma, simetria, padrão respiratório\n2. Palpação: expansibilidade, frêmito toracovocal\n3. Percussão: sonoridade, macicez, timpanismo\n4. Ausculta: MV, sons adventícios, voz"
+    },
+    {
+      "front": "O frêmito toracovocal: quando está AUMENTADO vs DIMINUÍDO/ABOLIDO?",
+      "back": "Aumentado: condensação pulmonar (pneumonia, atelectasia com brônquio pérvio)\nDiminuído: enfisema, derrame pleural, espessamento pleural\nAbolido: pneumotórax, derrame maciço\nCondiçao: brônquio pérvio necessário para aumento"
+    },
+    {
+      "front": "Sons à percussão do tórax — quais são e o que indicam?",
+      "back": "Sonoridade (som claro pulmonar): pulmão normal cheio de ar\nMacicez: líquido ou sólido (derrame, consolidação, massa)\nHipersonoridade: hiperinsuflação (enfisema, asma)\nTimpanismo: ar livre (pneumotórax, câmara gástrica)"
+    },
+    {
+      "front": "O murmúrio vesicular (MV) — características normais vs patológicas",
+      "back": "Normal: suave, contínuo, inspiração > expiração (relação 3:1)\nAumentado: hiperventilação compensatória no lado sadio\nDiminuído: enfisema, derrame, obesidade\nAbolido: pneumotórax, derrame maciço, atelectasia completa"
+    },
+    {
+      "front": "O que é o sopro tubário (brônquico) e o que indica?",
+      "back": "Som semelhante ao produzido ao expirar na letra 'H'. É alto, tubular, com expiração ≥ inspiração.\nIndicação: condensação pulmonar (pneumonia lobar) com brônquio pérvio.\nO parênquima sólido transmite diretamente o som brônquico até a superfície."
+    },
+    {
+      "front": "O tórax em tonel (barril) — o que é e qual sua causa?",
+      "back": "Diâmetro anteroposterior (AP) aumentado ≈ diâmetro lateral. Ângulo de Charpy (subcostal) > 90°. Costelas horizontalizadas.\nCausa: hiperinsuflação crônica = DPOC/Enfisema avançado."
+    },
+    {
+      "front": "Outras deformidades torácicas importantes no exame físico",
+      "back": "Pectus excavatum (tórax de sapateiro): depressão do esterno\nPectus carinatum (tórax de pombo): projeção esternal\nTórax em sino: alargamento basal (raquitismo)\nEscoliose/cifose: deformidades vertebrais que alteram mecânica respiratória"
+    },
+    {
+      "front": "O que é a broncofonia e a egofonia?",
+      "back": "Broncofonia: voz transmitida ao estetoscópio — aumentada na condensação (palavras mais nítidas)\nEgofonia: som 'nasalado/cabrina' quando paciente diz 'ê' → soa como 'â' — sinal da borda superior do derrame pleural\nAmbas avaliadas pedindo ao paciente para falar"
+    },
+    {
+      "front": "Qual o sinal de Skoda e onde ocorre?",
+      "back": "Ressonância timpânica imediatamente ACIMA de derrame pleural.\nCausa: atelectasia de compressão do parênquima acima do derrame → pulmão comprimido soa mais timpânico.\nAuxilia a delimitar o nível superior do derrame."
+    },
+    {
+      "front": "Como avaliar expansibilidade torácica — técnica correta?",
+      "back": "Posterior: mãos espalmadas nas bases posteriores, polegares na linha vertebral — paciente inspira fundo — polegares devem se afastar simetricamente.\nAnterior: mãos nas bases anteriores abaixo das mamas.\nRetardo unilateral = problema ipsilateral (derrame, pneumonia, pneumotórax)."
+    },
+    {
+      "front": "Padrão respiratório de Cheyne-Stokes — o que é e o que indica?",
+      "back": "Respiração em crescendo-decrescendo seguida de apneia. Ciclos se repetem regularmente.\nIndica: ICC descompensada (↓ débito ao centro respiratório), lesão cerebral, uremia, altitude extrema.\nReflete instabilidade do controle central da respiração."
+    },
+    {
+      "front": "Resumo: achados típicos do derrame pleural ao IPPA",
+      "back": "Inspeção: abaulamento do hemitórax, retardo de expansão\nPalpação: frêmito abolido/diminuído, retardo\nPercussão: macicez\nAusculta: MV abolido/diminuído; egofonia na borda superior; sinal de Skoda acima"
+    }
+  ]
+}

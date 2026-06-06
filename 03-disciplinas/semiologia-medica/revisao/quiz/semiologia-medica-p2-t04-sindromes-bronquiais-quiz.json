@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T04: Grandes Síndromes Bronquiais",
+  "questions": [
+    {
+      "question": "A bronquite crônica é definida clinicamente como tosse com expectoração por pelo menos quantos meses por ano e por quantos anos consecutivos?",
+      "answerOptions": [
+        {"text": "3 meses por ano por 2 anos consecutivos", "isCorrect": true, "rationale": "Definição clássica (OMS): bronquite crônica = tosse produtiva por ≥ 3 meses/ano por ≥ 2 anos consecutivos, excluídas outras causas. É uma definição clínica (não anatomopatológica)."},
+        {"text": "6 meses por ano por 1 ano", "isCorrect": false, "rationale": "A definição é 3 meses (não 6) por 2 anos (não 1)."},
+        {"text": "1 mês por ano por 3 anos consecutivos", "isCorrect": false, "rationale": "Incorreto — são 3 meses por ano, 2 anos consecutivos."},
+        {"text": "2 meses por ano por 2 anos consecutivos", "isCorrect": false, "rationale": "São 3 meses (não 2) por 2 anos — a definição estabelece 3 meses."}
+      ],
+      "hint": "3 × 2 = 3 meses × 2 anos. Definição da OMS para bronquite crônica."
+    },
+    {
+      "question": "Na asma brônquica, a obstrução ao fluxo aéreo tem caráter reversível. Quais são os critérios que definem reversibilidade no espirometria?",
+      "answerOptions": [
+        {"text": "Aumento do VEF₁ ≥ 12% E ≥ 200 mL após broncodilatador (prova broncodilatadora positiva)", "isCorrect": true, "rationale": "Reversibilidade: VEF₁ aumenta ≥ 12% do valor pré-BD E ≥ 200 mL em valor absoluto após 400 mcg de salbutamol. Ambos os critérios (percentual e absoluto) são necessários."},
+        {"text": "Aumento do VEF₁ ≥ 5% após broncodilatador", "isCorrect": false, "rationale": "5% é insuficiente — o critério é ≥ 12% E ≥ 200 mL."},
+        {"text": "Normalização completa do VEF₁ após broncodilatador", "isCorrect": false, "rationale": "Normalização completa não é o critério — o critério é o incremento de ≥ 12% e ≥ 200 mL."},
+        {"text": "Ausência de sibilos após broncodilatador — critério puramente clínico", "isCorrect": false, "rationale": "A reversibilidade é definida por critérios espirométricos — não apenas pela ausência de sibilos."}
+      ],
+      "hint": "Reversibilidade = ≥ 12% E ≥ 200 mL. Ambos os critérios são necessários."
+    },
+    {
+      "question": "A bronquiectasia é uma dilatação anormal e permanente dos brônquios. Qual é a tríade clínica clássica?",
+      "answerOptions": [
+        {"text": "Tosse crônica produtiva com escarro purulento abundante + hemoptise recorrente + dedos em baqueta (clubbing)", "isCorrect": true, "rationale": "Bronquiectasia se apresenta com tríade clínica: (1) tosse crônica com escarro purulento volumoso (especialmente posicional — aumenta ao mudar de posição); (2) hemoptise recorrente; (3) baqueteamento digital por hipoxemia crônica e inflamação."},
+        {"text": "Sibilos difusos + tosse seca + hipoxemia", "isCorrect": false, "rationale": "Sibilos difusos e tosse seca são mais típicos de asma — não da bronquiectasia."},
+        {"text": "Dispneia de esforço progressiva + tosse seca + cianose", "isCorrect": false, "rationale": "Esse padrão é mais sugestivo de doenças parenquimatosas (FPI) ou DPOC — não bronquiectasia típica."},
+        {"text": "Dor pleurítica + febre + expectoração muco-sanguinolenta", "isCorrect": false, "rationale": "Isso descreve mais a pneumonia — não a tríade da bronquiectasia crônica."}
+      ],
+      "hint": "Bronquiectasia = tosse produtiva abundante + hemoptise + baqueteamento."
+    },
+    {
+      "question": "Na síndrome de obstrução brônquica, quais são os achados físicos esperados ao IPPA?",
+      "answerOptions": [
+        {"text": "Tórax hiperinsuflado (hipertimpanismo), MV diminuído, sibilos expiratórios, expiração prolongada, uso de musculatura acessória", "isCorrect": true, "rationale": "A obstrução retém ar → hiperinsuflação → hipertimpanismo; o ar passa com dificuldade → sibilos e expiração prolongada; o trabalho aumentado ativa musculatura acessória."},
+        {"text": "Macicez unilateral, frêmito abolido, MV abolido", "isCorrect": false, "rationale": "Esse padrão é do derrame pleural — não da obstrução brônquica."},
+        {"text": "Sopro tubário, broncofonia aumentada, macicez localizada", "isCorrect": false, "rationale": "Esse padrão é da condensação pulmonar (pneumonia) — não da obstrução brônquica."},
+        {"text": "Expansibilidade simétrica normal, MV normal, crepitantes basais", "isCorrect": false, "rationale": "Crepitantes basais sem obstrução sugerem ICC ou fibrose — não síndrome obstrutiva."}
+      ],
+      "hint": "Obstrução = air trapping = hiperinsuflação = sibilos expiratórios."
+    },
+    {
+      "question": "A asma de difícil controle pode manifestar sibilância INSPIRATÓRIA em vez de expiratória. O que isso indica?",
+      "answerOptions": [
+        {"text": "Obstrução GRAVE (fluxo muito reduzido) — sibilos inspiratórios indicam estreitamento significativo da via aérea central ou obstrução grave de vias pequenas", "isCorrect": true, "rationale": "Na obstrução leve-moderada, os sibilos são expiratórios (brônquios estreitam na expiração forçada). Na obstrução grave ou central, há sibilos em ambas as fases ou predominantemente inspiratórios."},
+        {"text": "Melhora clínica — sibilos inspiratórios indicam que o broncoespasmo reverteu", "isCorrect": false, "rationale": "Sibilos inspiratórios não indicam melhora — indicam obstrução grave ou envolvimento de via aérea central."},
+        {"text": "Asma leve — apenas a expiração está comprometida", "isCorrect": false, "rationale": "Na asma leve, os sibilos são expiratórios e podem ser ausentes em repouso."},
+        {"text": "O diagnóstico é de bronquite aguda, não asma", "isCorrect": false, "rationale": "O caráter inspiratório dos sibilos não exclui asma — indica envolvimento mais grave."}
+      ],
+      "hint": "Sibilos inspiratórios = obstrução mais grave ou central."
+    },
+    {
+      "question": "A disfunção de cordas vocais (DCV) pode mimetizar asma. Qual característica a diferencia?",
+      "answerOptions": [
+        {"text": "DCV: estridor inspiratório, resolução rápida, normal na espirometria, fatores emocionais precipitantes — prova broncodilatadora negativa", "isCorrect": true, "rationale": "A DCV causa adução paradoxal das cordas vocais → obstrução inspiratória (estridor) → imita asma. Mas a espirometria é normal, a prova broncodilatadora é negativa, e há resolução rápida. Laringoscopia é confirmatória."},
+        {"text": "DCV: apenas em crianças com atopia; asma: apenas em adultos", "isCorrect": false, "rationale": "Ambas podem ocorrer em qualquer faixa etária. DCV é mais comum em adolescentes e adultos jovens."},
+        {"text": "DCV e asma têm exatamente as mesmas características — apenas a histologia diferencia", "isCorrect": false, "rationale": "Há diferenças clínicas importantes: DCV é inspiratória, normal na espirometria, sem resposta a broncodilatadores."},
+        {"text": "DCV responde bem ao salbutamol inalatório — isso a distingue da asma", "isCorrect": false, "rationale": "DCV NÃO responde ao salbutamol — essa é justamente uma das diferenças em relação à asma."}
+      ],
+      "hint": "DCV = estridor inspiratório + espirometria normal + sem resposta ao BD."
+    },
+    {
+      "question": "Qual é a classificação da gravidade da asma persistente? (GINA — 4 níveis de gravidade)",
+      "answerOptions": [
+        {"text": "Intermitente → Persistente leve → Persistente moderada → Persistente grave — baseada em sintomas, limitação e função pulmonar", "isCorrect": true, "rationale": "A classificação GINA da asma: Intermitente (< 1x/semana, VEF₁ ≥ 80%), Persistente leve (> 1x/sem mas < 1x/dia), Persistente moderada (diária, VEF₁ 60–79%), Persistente grave (contínua, VEF₁ < 60%)."},
+        {"text": "Leve, moderada e grave — apenas 3 classificações", "isCorrect": false, "rationale": "São 4 categorias incluindo intermitente — não 3."},
+        {"text": "A asma é classificada apenas pelo VEF₁ em 3 grupos: > 80%, 50–80%, < 50%", "isCorrect": false, "rationale": "A classificação considera sintomas, limitação de atividade, uso de broncodilatador e função pulmonar — não apenas VEF₁."},
+        {"text": "A GINA não classifica por gravidade — apenas avalia controle (bem controlada, parcialmente controlada, não controlada)", "isCorrect": false, "rationale": "A GINA tem AMBAS as classificações: gravidade (para iniciar tratamento) e controle (para ajustar tratamento)."}
+      ],
+      "hint": "4 níveis: Intermitente → P. Leve → P. Moderada → P. Grave."
+    },
+    {
+      "question": "A bronquiectasia tem causas variadas. Qual síndrome congênita causa bronquiectasia bilateral, sinusite crônica e situs inversus (órgãos espelhados)?",
+      "answerOptions": [
+        {"text": "Síndrome de Kartagener (discinesia ciliar primária)", "isCorrect": true, "rationale": "A síndrome de Kartagener é uma forma de discinesia ciliar primária — os cílios não funcionam corretamente → clearance mucociliar prejudicado → bronquiectasia + sinusite crônica. O situs inversus ocorre por defeito na lateralização embrionária dependente dos cílios."},
+        {"text": "Fibrose cística (mucoviscidose)", "isCorrect": false, "rationale": "FC causa bronquiectasia + sinusite mas NÃO causa situs inversus. É por disfunção do canal CFTR, não dos cílios."},
+        {"text": "Síndrome de Williams-Campbell", "isCorrect": false, "rationale": "É uma condição rara de deficiência cartilaginosa brônquica — não inclui situs inversus."},
+        {"text": "Imunodeficiência comum variável (ICV)", "isCorrect": false, "rationale": "ICV causa bronquiectasia por infecções recorrentes — não situs inversus."}
+      ],
+      "hint": "Situs inversus + sinusite + bronquiectasia = tríade de Kartagener."
+    },
+    {
+      "question": "No exame físico de um paciente com bronquiectasia, qual é o achado auscultatório mais característico nas áreas afetadas?",
+      "answerOptions": [
+        {"text": "Subcrepitantes (crepitantes grossos) e roncos que MUDAM ou desaparecem após tosse e drenagem postural", "isCorrect": true, "rationale": "A bronquiectasia contém secreção purulenta nos brônquios dilatados. Os subcrepitantes e roncos são produzidos pela secreção. A drenagem postural e a tosse movem a secreção, alterando ou eliminando esses sons."},
+        {"text": "Sibilos fixos unilaterais que não mudam com tosse", "isCorrect": false, "rationale": "Sibilos fixos que não mudam sugerem obstrução por tumor ou corpo estranho — não bronquiectasia típica."},
+        {"text": "Sopro tubário bilateral com broncofonia aumentada", "isCorrect": false, "rationale": "Sopro tubário indica consolidação — não é o achado típico da bronquiectasia."},
+        {"text": "Ausculta completamente normal entre as exacerbações", "isCorrect": false, "rationale": "Nas áreas de bronquiectasia, geralmente há subcrepitantes mesmo fora das exacerbações — especialmente nas manhãs."}
+      ],
+      "hint": "Bronquiectasia = secreção crônica = subcrepitantes que mudam com drenagem."
+    },
+    {
+      "question": "A fibrose cística é a causa mais comum de bronquiectasia em jovens nos países desenvolvidos. Qual é o defeito básico?",
+      "answerOptions": [
+        {"text": "Mutação do gene CFTR → disfunção do canal de cloreto → secreções espessas em pulmões, pâncreas, intestino e ductos genitais", "isCorrect": true, "rationale": "O CFTR (cystic fibrosis transmembrane conductance regulator) regula o transporte de íons Cl⁻. A mutação (ΔF508 mais comum) produz secreções anormalmente espessas → obstrução → infecção → bronquiectasia."},
+        {"text": "Deficiência de alfa-1 antitripsina → elastases não inibidas → destruição brônquica", "isCorrect": false, "rationale": "Deficiência de alfa-1 AT causa enfisema predominantemente basal — não é a FC."},
+        {"text": "Defeito dos cílios → clearance mucociliar ausente → infecções recorrentes", "isCorrect": false, "rationale": "Isso descreve a discinesia ciliar primária (Kartagener) — não a fibrose cística."},
+        {"text": "Deficiência de IgA → infecções bacterianas recorrentes → bronquiectasia", "isCorrect": false, "rationale": "Deficiência de IgA pode causar bronquiectasia mas não é a FC."}
+      ],
+      "hint": "FC = CFTR = canal de cloreto defeituoso = secreções espessas."
+    }
+  ]
+}

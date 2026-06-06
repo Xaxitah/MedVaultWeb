@@ -1,0 +1,105 @@
+{
+  "title": "Farmacologia P2 — T13 — Anestésicos Locais",
+  "questions": [
+    {
+      "question": "Um dentista injeta anestésico local em um abscesso dentário e o paciente relata alívio mínimo da dor. Qual é a explicação farmacológica?",
+      "answerOptions": [
+        {"text": "O anestésico foi metabolizado muito rapidamente pela pseudocolinesterase local", "isCorrect": false, "rationale": "Pseudocolinesterase é plasmática — não há metabolismo local no abscesso. Além disso, isso explicaria efeito curto, não ausência de efeito."},
+        {"text": "O pH ácido do tecido infectado impede a penetração do anestésico local na membrana", "isCorrect": true, "rationale": "No tecido inflamado/infectado, o pH é ácido (~6,5–7). Anestésicos locais (bases fracas, pKa 7,5–9) ficam majoritariamente na forma ionizada (catiônica) em pH ácido — essa forma não atravessa a membrana lipídica. Menos fármaco entra na célula → menor bloqueio de Na⁺."},
+        {"text": "A vasodilatação do tecido inflamado aumentou a eliminação do fármaco", "isCorrect": false, "rationale": "Embora a vasodilatação aumente a absorção sistêmica (reduzindo duração), o mecanismo principal de falha anestésica em tecido infectado é o pH ácido, não a vasodilatação."},
+        {"text": "O anestésico bloqueou preferencialmente fibras motoras em vez de sensitivas", "isCorrect": false, "rationale": "Anestésicos locais bloqueiam preferencialmente fibras menores (dor) antes das maiores (motoras). O problema aqui é de penetração, não de seletividade."}
+      ],
+      "hint": "Pense no equilíbrio da forma ionizada vs. não ionizada em função do pH."
+    },
+    {
+      "question": "Qual a sequência correta de bloqueio das fibras nervosas pelos anestésicos locais?",
+      "answerOptions": [
+        {"text": "Motora → sensitiva (dor) → sensitiva (tato) → autonômica", "isCorrect": false, "rationale": "Essa sequência está invertida — as fibras maiores (motoras Aα) são as últimas a ser bloqueadas, não as primeiras."},
+        {"text": "Autonômica (B) → dor/temperatura (C, Aδ) → tato/pressão (Aβ) → motora (Aα)", "isCorrect": true, "rationale": "Fibras menores e/ou mais mielinizadas são bloqueadas primeiro. A sequência clínica é: vasodilatação (autonômico) → perda de dor e temperatura → perda de tato e pressão → perda da função motora. Na recuperação, a ordem é inversa."},
+        {"text": "Dor → tato → temperatura → motora → autonômica", "isCorrect": false, "rationale": "Temperatura é bloqueada junto com dor (fibras C e Aδ), não separadamente. E autonômico é o primeiro, não o último."},
+        {"text": "Tato → dor → autonômica → motora", "isCorrect": false, "rationale": "Essa sequência mistura o diâmetro e a mielinização de forma incorreta."}
+      ],
+      "hint": "Fibras menores em diâmetro = bloqueadas primeiro. Autonômicas (fibras B) são as menores."
+    },
+    {
+      "question": "Por que a adrenalina NÃO deve ser adicionada ao anestésico local para anestesia de um dedo?",
+      "answerOptions": [
+        {"text": "A adrenalina reduz a eficácia do anestésico local nas extremidades", "isCorrect": false, "rationale": "A adrenalina não reduz a eficácia anestésica — pelo contrário, prolonga o efeito ao retardar a absorção."},
+        {"text": "A adrenalina causa vasoconstrição em circulação terminal → isquemia e necrose do dígito", "isCorrect": true, "rationale": "Extremidades como dedos têm circulação terminal (artérias sem anastomoses colaterais suficientes). A vasoconstrição adrenérgica pode obliterar o fluxo → isquemia → gangrena do dígito. Por isso, em extremidades, usar apenas AL sem vasoconstritor."},
+        {"text": "A adrenalina é contraindicada em qualquer anestesia regional periférica", "isCorrect": false, "rationale": "Adrenalina é amplamente usada em bloqueios de nervos periféricos em outras regiões (plexo braquial, ciático, etc.) — o problema é específico de circulação terminal."},
+        {"text": "A adrenalina causa taquicardia que interfere com a cirurgia digital", "isCorrect": false, "rationale": "A taquicardia é um efeito sistêmico da adrenalina, não o mecanismo de dano ao dígito."}
+      ],
+      "hint": "Pense na anatomia vascular das extremidades — artérias terminais sem circulação colateral."
+    },
+    {
+      "question": "Um paciente em anestesia epidural para cirurgia de quadril apresenta convulsão e depois bradicardia e hipotensão graves. Qual é o tratamento específico para a toxicidade sistêmica?",
+      "answerOptions": [
+        {"text": "Atropina para bradicardia + fenitoína para convulsão", "isCorrect": false, "rationale": "Fenitoína NÃO é a primeira linha para convulsão por AL (é para epilepsia crônica). A atropina pode ser usada para bradicardia, mas o tratamento específico para toxicidade por AL é a emulsão lipídica."},
+        {"text": "Emulsão lipídica 20% IV (lipid rescue) + benzodiazepínico para convulsão", "isCorrect": true, "rationale": "Emulsão lipídica 20% (Intralipid) é o antídoto específico para toxicidade sistêmica grave por AL — cria um 'sink lipídico' que sequestra o AL lipofílico. BZD (midazolam) controla a convulsão. Manter vias aéreas pérvias é prioritário."},
+        {"text": "Bicarbonato de sódio IV para alcalinizar o sangue e reter o AL", "isCorrect": false, "rationale": "Bicarbonato não é o tratamento de toxicidade por AL — é usado ocasionalmente para arritmias por sódio bloqueado (como quinidina), mas não é o tratamento padrão aqui."},
+        {"text": "Adrenalina em alta dose para reverter a toxicidade cardíaca", "isCorrect": false, "rationale": "Adrenalina em alta dose é controversa na toxicidade por bupivacaína — pode piorar a toxicidade. Doses baixas podem ser necessárias, mas a emulsão lipídica é o tratamento específico."}
+      ],
+      "hint": "O antídoto específico para toxicidade por AL foi aprovado há cerca de 20 anos — pense em lipídios."
+    },
+    {
+      "question": "Qual anestésico local é o único que tem atividade vasoconstritora intrínseca?",
+      "answerOptions": [
+        {"text": "Lidocaína", "isCorrect": false, "rationale": "Lidocaína não tem atividade vasoconstritora intrínseca — ao contrário, causa leve vasodilatação."},
+        {"text": "Bupivacaína", "isCorrect": false, "rationale": "Bupivacaína não tem atividade vasoconstritora intrínseca."},
+        {"text": "Cocaína", "isCorrect": true, "rationale": "Cocaína é o único AL com atividade vasoconstritora intrínseca — inibe a recaptação de catecolaminas (noradrenalina, dopamina) → ↑ noradrenalina na sinapse adrenérgica → vasoconstrição. Por isso é o único AL que não precisa de adrenalina adicionada e ainda assim reduz sangramento."},
+        {"text": "Ropivacaína", "isCorrect": false, "rationale": "Ropivacaína causa leve vasoconstrição inerente (menos que bupivacaína), mas não por inibição de recaptação de catecolaminas como a cocaína."}
+      ],
+      "hint": "Este AL é também o único com potencial de abuso significativo — bloqueia a recaptação de dopamina no nucleus accumbens."
+    },
+    {
+      "question": "Uma paciente gestante recebe bupivacaína epidural para analgesia de parto. Por que ropivacaína seria preferível?",
+      "answerOptions": [
+        {"text": "Ropivacaína tem início de ação mais rápido que bupivacaína", "isCorrect": false, "rationale": "Início de ação não é a principal vantagem da ropivacaína sobre bupivacaína na obstétrica."},
+        {"text": "Ropivacaína tem menor cardiotoxicidade e maior seletividade sensitiva vs. motora", "isCorrect": true, "rationale": "Ropivacaína é menos cardiotóxica que bupivacaína (menor afinidade pelo canal de Na⁺ cardíaco) e tem maior seletividade pelas fibras sensitivas — bloqueia mais dor e menos motricidade. Isso permite 'analgesia de parto ambulatória' onde a parturiente mantém mobilidade."},
+        {"text": "Ropivacaína não atravessa a barreira placentária, protegendo o feto", "isCorrect": false, "rationale": "Todos os AL atravessam a barreira placentária em algum grau — a vantagem da ropivacaína não é esse mecanismo."},
+        {"text": "Ropivacaína tem duração de ação mais longa, exigindo menos reposições", "isCorrect": false, "rationale": "A duração de ação de ropivacaína e bupivacaína é similar (ambas longas). A vantagem é perfil de segurança e seletividade."}
+      ],
+      "hint": "Pense no que a parturiente precisa: ausência de dor mas capacidade de movimentar-se."
+    },
+    {
+      "question": "Qual fármaco é o antídoto específico para metemoglobinemia causada por benzocaína ou prilocaína?",
+      "answerOptions": [
+        {"text": "N-acetilcisteína IV", "isCorrect": false, "rationale": "N-acetilcisteína é o antídoto da intoxicação por paracetamol, não de metemoglobinemia."},
+        {"text": "Azul de metileno IV", "isCorrect": true, "rationale": "Azul de metileno (1–2 mg/kg IV) reduz a metemoglobina (Fe³⁺ → Fe²⁺) pela via da metemoglobina redutase dependente de NADPH. Restaura a capacidade de transporte de O₂ da hemoglobina."},
+        {"text": "Emulsão lipídica 20%", "isCorrect": false, "rationale": "Emulsão lipídica é para toxicidade sistêmica por AL lipofílicos — não para metemoglobinemia."},
+        {"text": "Oxigênio hiperbárico", "isCorrect": false, "rationale": "Oxigênio hiperbárico pode ser adjuvante em casos graves, mas não é o antídoto específico — o azul de metileno é o tratamento de 1ª linha."}
+      ],
+      "hint": "A cor do antídoto é uma pista — literalmente azul."
+    },
+    {
+      "question": "Qual é a principal diferença entre raquianestesia e anestesia epidural?",
+      "answerOptions": [
+        {"text": "Raquianestesia usa volumes maiores de AL; epidural usa volumes menores", "isCorrect": false, "rationale": "É o contrário — raquianestesia usa volumes MENORES (1–3 mL) porque o fármaco vai diretamente ao LCR; epidural usa volumes maiores (10–20 mL)."},
+        {"text": "Raquianestesia atinge o espaço subaracnóideo (LCR); epidural fica no espaço peridural", "isCorrect": true, "rationale": "Raquianestesia: agulha atravessa a dura-máter e a aracnóide → LCR → fármaco se mistura ao LCR diretamente. Epidural: agulha para no espaço peridural (extradural) → fármaco difunde para nervos espinhais. Raquianestesia: menor dose, início mais rápido, bloqueio mais denso, maior hipotensão."},
+        {"text": "Epidural é realizada apenas em nível torácico; raquianestesia apenas lombar", "isCorrect": false, "rationale": "Epidural pode ser torácica, lombar ou cervical. Raquianestesia é feita no nível lombar (abaixo de L2 para evitar lesão medular)."},
+        {"text": "Raquianestesia permite adicionar cateter para infusão contínua; epidural não", "isCorrect": false, "rationale": "É o contrário — epidural é que permite cateter para infusão contínua (muito usada em trabalho de parto). Raquianestesia geralmente é dose única."}
+      ],
+      "hint": "Pense em onde o fármaco vai parar — dentro ou fora do LCR."
+    },
+    {
+      "question": "Por que os anestésicos locais do tipo éster têm maior incidência de reações alérgicas que os do tipo amida?",
+      "answerOptions": [
+        {"text": "Os ésteres têm maior penetração no SNC, causando reações sistêmicas mais intensas", "isCorrect": false, "rationale": "A penetração no SNC não é a causa das reações alérgicas — o tipo de metabolismo é a diferença relevante."},
+        {"text": "Os ésteres são metabolizados em PABA (ácido para-aminobenzoico), que é alergênico", "isCorrect": true, "rationale": "Pseudocolinesterases plasmáticas hidrolisam os ésteres → produzem PABA (ácido para-aminobenzoico). PABA é alergênico e responsável pela maioria das reações alérgicas verdadeiras a AL. Amidas são metabolizadas no fígado (CYP450) sem produzir PABA → menor incidência de alergia."},
+        {"text": "Os ésteres têm maior ligação a proteínas plasmáticas, causando liberação lenta de haptenos", "isCorrect": false, "rationale": "Ligação a proteínas plasmáticas não é o mecanismo das reações alérgicas aos ésteres."},
+        {"text": "Os ésteres inibem a pseudocolinesterase, causando reação de hipersensibilidade", "isCorrect": false, "rationale": "Os ésteres são substratos (não inibidores) da pseudocolinesterase — são metabolizados por ela, não a inibem."}
+      ],
+      "hint": "O metabólito do grupo éster é o responsável pela alergia — lembre do nome do metabólito."
+    },
+    {
+      "question": "A cefaleia pós-punção raquianestesia ocorre por qual mecanismo e qual é o tratamento definitivo?",
+      "answerOptions": [
+        {"text": "Vasoespasmo cerebral após contato com AL; tratar com nimodipino oral", "isCorrect": false, "rationale": "Nimodipino é para vasoespasmo em hemorragia subaracnóidea — a cefaleia pós-punção tem mecanismo completamente diferente."},
+        {"text": "Extravasamento de LCR pelo orifício da punção → ↓ pressão do LCR → tração das estruturas meníngeas; tratamento definitivo: blood patch (tampão hemático)", "isCorrect": true, "rationale": "O extravasamento de LCR pelo orifício deixado pela agulha causa queda da pressão do LCR → o encéfalo 'afunda' → tração das meninges e vasos → cefaleia postural (piora em pé, melhora deitado). Tratamento conservador: repouso, hidratação, cafeína. Definitivo: blood patch epidural — sangue autólogo coagula e tampa o orifício."},
+        {"text": "Inflamação meníngea pelo AL; tratar com dexametasona IV", "isCorrect": false, "rationale": "Meningite química pode ocorrer com alguns AL, mas cefaleia pós-punção é causada por perda de LCR, não inflamação."},
+        {"text": "Hipertensão intracraniana por obstrução ao fluxo de LCR; tratar com manitol IV", "isCorrect": false, "rationale": "Cefaleia pós-punção é causada por BAIXA pressão de LCR (hipotensão intracraniana), não hipertensão."}
+      ],
+      "hint": "A cefaleia melhora deitado e piora em pé — esse padrão postural é a chave do mecanismo."
+    }
+  ]
+}

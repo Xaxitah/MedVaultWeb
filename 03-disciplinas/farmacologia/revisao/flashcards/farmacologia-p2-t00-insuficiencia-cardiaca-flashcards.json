@@ -1,0 +1,105 @@
+{
+  "title": "Farmacologia P2 — T00 — Insuficiência Cardíaca",
+  "cards": [
+    {
+      "front": "Defina insuficiência cardíaca (IC) como síndrome clínica.",
+      "back": "Incapacidade do coração de fornecer débito cardíaco suficiente para atender às demandas metabólicas dos tecidos, ou de fazê-lo apenas a um custo de pressões de enchimento elevadas."
+    },
+    {
+      "front": "Quais são as duas grandes manifestações clínicas da IC?",
+      "back": "1) Hipoperfusão celular → fadiga, intolerância ao exercício, confusão mental\n2) Congestão → dispneia, edema pulmonar (IC esquerda) / edema periférico, hepatomegalia (IC direita)"
+    },
+    {
+      "front": "Quais são os 4 pilares do tratamento farmacológico da IC crônica com FEr? (Mnemônico IBES)",
+      "back": "I = IECA (ou ARA-II) → bloqueia SRAA\nB = Betabloqueante (carvedilol, metoprolol succinato, bisoprolol) → bloqueia SNS\nE = Espironolactona → anti-fibrótico + K-poupador\nS = Sintoma controlado com furosemida (diurético de alça)"
+    },
+    {
+      "front": "Qual é a sequência fisiopatológica do ciclo vicioso da IC?",
+      "back": "↓ Débito cardíaco → Ativação SRAA (↑ Ang II → vasoconstrição + retenção Na+/H₂O + fibrose) + Ativação SNS (norepinefrina → taquicardia + apoptose cardiomiócitos) → ↑ pré e pós-carga → piora da disfunção → edema → nova deterioração"
+    },
+    {
+      "front": "Por que os mecanismos compensadores da IC (SRAA e SNS) pioram o prognóstico a longo prazo?",
+      "back": "Aliviam sintomas a curto prazo, mas aceleram a progressão da IC: causam remodelamento adverso (hipertrofia, dilatação, fibrose, apoptose de cardiomiócitos). Por isso IECAs, betabloqueantes e espironolactona reduzem mortalidade mesmo sem aliviar sintomas imediatamente."
+    },
+    {
+      "front": "Quais são os 4 determinantes do débito cardíaco e quais fármacos atuam em cada um?",
+      "back": "1) Precarga → diuréticos, nitratos (venodilat.)\n2) Contractilidade → inotrópicos positivos\n3) Pós-carga → IECAs, vasodilatadores arteriais\n4) Frequência cardíaca → betabloqueantes, digoxina, ivabradina"
+    },
+    {
+      "front": "Qual é o mecanismo celular da digoxina e sua cadeia de 4 elos?",
+      "back": "Inibe ATPase Na+/K+ → ↑ Na+ intracelular → intercambiador Na+/Ca2+ compensa (entra mais Ca2+) → ↑ Ca2+ no retículo sarcoplasmático → ↑ força de contração (inotrópico positivo)"
+    },
+    {
+      "front": "Quais são os 5 fatores que aumentam o risco de toxicidade por digoxina? (Mnemônico HI-AID)",
+      "back": "H = Hipocalemia (furosemida → ↓ K+ → digoxina inibe mais a ATPase)\nI = Insuficiência renal (↓ excreção → acúmulo)\nA = Amiodarona/Quinidina/Verapamil (↑ digoxinemia)\nI = Idade avançada (↓ depuração renal + ↓ massa muscular)\nD = Doses altas (> 2,4 ng/mL → ⅔ dos pacientes com toxicidade)"
+    },
+    {
+      "front": "Quais são as indicações atuais da digoxina na IC?",
+      "back": "1) IC com fibrilação atrial → controle de frequência ventricular\n2) IC sistólica refratária (FEr < 40%) como add-on aos 4 pilares\nNão é mais primeira linha na IC crônica isolada."
+    },
+    {
+      "front": "Qual é a margem terapêutica da digoxina?",
+      "back": "Nível terapêutico: 0,5–2,0 ng/mL\nNível tóxico: > 2,4 ng/mL (⅔ dos pacientes com sintomas)\nMeia-vida: 36–48h; excreção renal → ajustar obrigatoriamente em IRC"
+    },
+    {
+      "front": "Por que a hipocalemia causada por furosemida aumenta a toxicidade da digoxina?",
+      "back": "K+ baixo → digoxina compete menos com K+ pela ATPase Na+/K+ → mais inibição da bomba → ↑ Na+ intracelular → ↑ Ca2+ via intercambiador → excesso de Ca2+ → arritmias. A combinação furosemida + digoxina exige monitorização do K+."
+    },
+    {
+      "front": "Quais são os 3 betabloqueantes com evidência de redução de mortalidade em IC com FEr e seus respectivos estudos?",
+      "back": "1) Carvedilol (β1+β2+α1) → COPERNICUS\n2) Metoprolol succinato (β1 seletivo, liberação prolongada) → MERIT-HF\n3) Bisoprolol (β1 seletivo, alta seletividade) → CIBIS-II\nAtenolol e metoprolol tartrato NÃO têm evidência em IC."
+    },
+    {
+      "front": "Por que betabloqueantes melhoram a sobrevida em IC se reduzem a contratilidade a curto prazo?",
+      "back": "A ativação crônica do SNS é deletéria: taquicardia crônica → ↓ eficiência miocárdica; norepinefrina em excesso → apoptose de cardiomiócitos; remodelamento adverso. O betabloqueante interrompe esse ciclo → melhora da FEVE a longo prazo."
+    },
+    {
+      "front": "Qual a regra sobre iniciar betabloqueante na IC aguda descompensada?",
+      "back": "NUNCA iniciar betabloqueante na IC aguda descompensada — pode precipitar choque cardiogênico. Só iniciar após estabilização clínica, com dose baixa e titulação gradual."
+    },
+    {
+      "front": "Qual é o mecanismo e a regra das doses de dopamina? (Mnemônico 1-3-10)",
+      "back": "1 µg/kg/min → D1 renal → ↑ perfusão renal, natriurese (RIM)\n3 µg/kg/min → β1 cardíaco → ↑ contratilidade + FC (CORAÇÃO)\n> 10 µg/kg/min → α1 vascular → vasoconstrição → ↑ PA (PRESSÃO)"
+    },
+    {
+      "front": "Quando escolher dobutamina versus dopamina no choque cardiogênico?",
+      "back": "Dobutamina (β1 predominante): choque cardiogênico SEM hipotensão grave → ↑ contratilidade + leve vasodilatação\nDopamina (dose-dependente): choque cardiogênico COM hipotensão arterial → doses altas → vasoconstrição via α1 → ↑ PA"
+    },
+    {
+      "front": "Qual é o mecanismo único do levosimendan e por que tem menor risco de arritmia?",
+      "back": "Liga-se à troponina C na presença de Ca2+ → aumenta sensibilidade das proteínas contráteis ao Ca2+ já presente → ↑ contratilidade SEM aumentar Ca2+ total intracelular. Também abre canais K-ATP → vasodilatação. Menor Ca2+ total = menor risco de arritmia."
+    },
+    {
+      "front": "Qual é a classificação NYHA para IC? (4 classes)",
+      "back": "I: Sem limitação — atividade habitual não causa sintomas\nII: Limitação leve — sintomas com atividade moderada (subir escada)\nIII: Limitação importante — sintomas com atividade mínima (caminhar no plano)\nIV: Sintomas em repouso — incapacidade de qualquer atividade"
+    },
+    {
+      "front": "Qual a diferença crítica entre classificação NYHA e FEVE?",
+      "back": "NYHA: avalia SINTOMAS (subjetivo, muda com tratamento)\nFEVE: avalia FUNÇÃO (objetivo, estrutural)\nSão complementares: paciente com FEVE = 30% pode ser NYHA II se bem compensado."
+    },
+    {
+      "front": "Quais são os 3 tipos de IC por fração de ejeção?",
+      "back": "ICFEr (FE reduzida): FEVE < 40% → disfunção sistólica → 4 pilares completos\nICFEp (FE preservada): FEVE ≥ 50% → disfunção diastólica → controle congestão + causa base\nICFEi (FE intermediária): FEVE 40–49% → mista → tratar como ICFEr"
+    },
+    {
+      "front": "Por que a furosemida melhora a dispneia no edema agudo de pulmão em minutos, antes da diurese?",
+      "back": "Furosemida induz COX-2 → síntese de PGE₂ → venodilatação pulmonar precoce. A melhora da dispneia ocorre antes de qualquer aumento do débito urinário."
+    },
+    {
+      "front": "Qual o mecanismo e benefício extra da espironolactona na IC crônica (além do efeito diurético)?",
+      "back": "Antagoniza receptor mineralocorticoide → efeito anti-fibrótico direto no miocárdio. Estudo RALES: espironolactona 25 mg/dia → redução de 30% na mortalidade + 35% nas hospitalizações em IC grave (FEVE < 35%, NYHA III-IV)."
+    },
+    {
+      "front": "Por que tiazídico é contraindicado em IC com IRC grave?",
+      "back": "Tiazídicos perdem eficácia quando clearance < 30 ml/min (o NCC do TCD requer Na filtrado suficiente). Em IRC grave, usar furosemida — mantém eficácia mesmo com TFG reduzida (age no NKCC2 da alça de Henle)."
+    },
+    {
+      "front": "Qual IECA é preferencial em pacientes com IC e insuficiência renal crônica e por quê?",
+      "back": "Fosinopril — tem eliminação mista renal + hepática (50%/50%). Quando o rim falha, o fígado compensa → menos acúmulo → mais seguro em IRC. Captopril e lisinopril são os únicos IECA já ativos (não pró-fármacos)."
+    },
+    {
+      "front": "O que o estudo CONSENSUS demonstrou e qual fármaco estudou?",
+      "back": "Estudo CONSENSUS: enalapril → redução de 40% na mortalidade em IC grave. Foi o estudo que estabeleceu os IECA como pilar 1 do tratamento da IC com FEr."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T03: Estertores e Ruídos Adventícios",
+  "questions": [
+    {
+      "question": "Os estertores crepitantes finos (fine crackles) têm características específicas. Qual das alternativas os descreve corretamente?",
+      "answerOptions": [
+        {"text": "Sons descontínuos, de alta frequência, inspiratórios tardios, semelhantes ao som de rasgar velcro — não desaparecem com a tosse", "isCorrect": true, "rationale": "Crepitantes finos = abertura explosiva de alvéolos colabados na inspiração tardia. São como velcro sendo aberto. Não mudam com tosse (origem alveolar, não em secreção). Clássico: fibrose pulmonar, pneumonia, edema pulmonar."},
+        {"text": "Sons contínuos, de alta frequência, expiratórios, que mudam com a tosse", "isCorrect": false, "rationale": "Sons contínuos de alta frequência que variam com tosse são sibilos — não crepitantes."},
+        {"text": "Sons de baixa frequência, inspiratórios precoces, que desaparecem com a tosse", "isCorrect": false, "rationale": "Isso descreve os estertores grossos (roncos) — relacionados a secreção em vias aéreas grandes."},
+        {"text": "Sons produzidos pelo ar passando por secreção pleural", "isCorrect": false, "rationale": "Estertores são de origem intrapulmonar (alvéolos ou brônquios) — não pleural."}
+      ],
+      "hint": "Velcro = crepitante fino = alvéolos se abrindo na inspiração tardia."
+    },
+    {
+      "question": "Os roncos (rhonchi) diferem dos sibilos. Qual é a distinção fundamental?",
+      "answerOptions": [
+        {"text": "Roncos: sons de baixa frequência (graves), produzidos por secreção em vias aéreas grandes — mudam ou somem com tosse; sibilos: alta frequência (agudos), por estreitamento brônquico — não mudam com tosse", "isCorrect": true, "rationale": "Roncos são graves e produzidos por muco em brônquios maiores — a tosse move a secreção e o som muda. Sibilos são agudos e causados por espasmo/estreitamento — a tosse não muda a obstrução."},
+        {"text": "Roncos: sons agudos e expiratórios; sibilos: sons graves e inspiratórios", "isCorrect": false, "rationale": "Invertido — roncos são graves (baixa frequência), sibilos são agudos (alta frequência)."},
+        {"text": "Roncos e sibilos são sinônimos — ambos indicam broncoespasmo", "isCorrect": false, "rationale": "São fenômenos distintos: roncos = secreção; sibilos = estreitamento."},
+        {"text": "Roncos: unilaterais e localizados; sibilos: sempre bilaterais e difusos", "isCorrect": false, "rationale": "Ambos podem ser unilaterais ou bilaterais dependendo da causa."}
+      ],
+      "hint": "Ronco = grave + tosse muda. Sibilo = agudo + tosse NÃO muda."
+    },
+    {
+      "question": "O atrito pleural (fricção pleural) — o que é e o que indica?",
+      "answerOptions": [
+        {"text": "Som como couro rangendo, em inspiração E expiração, que NÃO muda com tosse — indica pleurite (inflamação das folhas pleurais)", "isCorrect": true, "rationale": "O atrito pleural é produzido pelo deslizamento rugoso das pleuras inflamadas entre si. É bifásico (inspiração e expiração), local, não muda com tosse (não é secreção). Causas: pleurite viral, pneumonia com pleurite, TEP, TB."},
+        {"text": "Som que desaparece quando o derrame pleural se forma — presente apenas antes do derrame", "isCorrect": false, "rationale": "O derrame separa as pleuras e FAZ o atrito desaparecer. Portanto é verdade que desaparece quando o derrame aumenta — mas o enunciado não está completo/adequado como única resposta."},
+        {"text": "Som produzido exclusivamente na inspiração — diferente dos crepitantes que são bifásicos", "isCorrect": false, "rationale": "O atrito pleural é BIFÁSICO (inspiratório E expiratório) — distingue-se dos crepitantes que são principalmente inspiratórios."},
+        {"text": "Atrito pleural indica sempre hemotórax — deve-se fazer toracocentese imediata", "isCorrect": false, "rationale": "Atrito pleural indica pleurite — não hemotórax necessariamente. Toracocentese não é a conduta imediata para pleurite simples."}
+      ],
+      "hint": "Atrito pleural = couro rangendo = bifásico = não muda com tosse."
+    },
+    {
+      "question": "Os estertores crepitantes são ouvidos nas bases pulmonares em paciente com insuficiência cardíaca. Por qual mecanismo?",
+      "answerOptions": [
+        {"text": "O transudato edematoso inunda os alvéolos basais — ao inspirar, eles se abrem explosivamente produzindo o estalo (crepitante)", "isCorrect": true, "rationale": "Na ICC, o aumento da pressão hidrostática capilar puxa líquido para o interstício e alvéolos. Os alvéolos colabados (cheios de edema) se abrem com estalido na inspiração = crepitante."},
+        {"text": "A fibrose pulmonar associada à ICC produz os estertores basais", "isCorrect": false, "rationale": "Na ICC aguda não há fibrose — os crepitantes são por edema, não fibrose."},
+        {"text": "Secreção brônquica abundante na ICC produz os crepitantes", "isCorrect": false, "rationale": "Crepitantes finos não são produzidos por secreção — são por abertura de alvéolos. Secreção produz roncos ou crepitantes grossos."},
+        {"text": "Derrame pleural na ICC empurra o parênquima, criando os crepitantes", "isCorrect": false, "rationale": "O derrame pleural produz macicez e abolição do MV, não crepitantes."}
+      ],
+      "hint": "Edema pulmonar → alvéolos colabados → ao inspirar se abrem com estalido."
+    },
+    {
+      "question": "Qual é a diferença entre estertores crepitantes na fibrose pulmonar e na pneumonia?",
+      "answerOptions": [
+        {"text": "Fibrose: crepitantes inspiratórios tardios, bilaterais, nas bases, persistentes; pneumonia: crepitantes localizados na área consolidada, acompanhados de sopro tubário e macicez", "isCorrect": true, "rationale": "Na fibrose, os crepitantes são crônicos, bilaterais e basais — o pulmão fibrótico reabre alvéolos a cada respiração. Na pneumonia, os crepitantes são focais na área de consolidação, acompanhados de outros achados consolidativos."},
+        {"text": "Na fibrose, os crepitantes mudam com a tosse; na pneumonia não mudam", "isCorrect": false, "rationale": "Os crepitantes finos NÃO mudam com tosse em nenhuma das duas condições — são de origem alveolar, não em secreção."},
+        {"text": "Na fibrose, os crepitantes são grossos; na pneumonia são finos", "isCorrect": false, "rationale": "Na fibrose, os crepitantes são tipicamente FINOS (como velcro). Na pneumonia também são finos. Crepitantes grossos = secreção ou edema maciço."},
+        {"text": "Não há diferença auscultatória entre fibrose e pneumonia — apenas a TC diferencia", "isCorrect": false, "rationale": "Há diferença no contexto clínico e na distribuição dos achados — a clínica diferencia."}
+      ],
+      "hint": "Fibrose = crônico + bilateral + bases. Pneumonia = agudo + focal."
+    },
+    {
+      "question": "O estridor é um ruído adventício de alta importância clínica. O que indica e como se distingue dos sibilos?",
+      "answerOptions": [
+        {"text": "Estridor: som inspiratório de alta frequência produzido na laringe/traqueia — indica obstrução de via aérea superior (corpo estranho, epiglotite, anafilaxia, croup)", "isCorrect": true, "rationale": "O estridor origina-se na via aérea central (laringe/traqueia) e é audível sem estetoscópio. É predominantemente inspiratório. Indica emergência em muitos casos — obstrução pode ser fatal."},
+        {"text": "Estridor: som expiratório produzido nos brônquios terminais — diagnóstico de bronquiolite", "isCorrect": false, "rationale": "Estridor não é expiratório nem de origem nos bronquíolos. Bronquiolite causa crepitantes finos e sibilos."},
+        {"text": "Estridor é sinônimo de sibilo de alta intensidade e não tem significado clínico diferente", "isCorrect": false, "rationale": "Estridor é uma urgência — indica obstrução de via aérea superior. Sibilo indica obstrução brônquica distal."},
+        {"text": "Estridor é bifásico (inspiratório e expiratório) em todas as causas", "isCorrect": false, "rationale": "Estridor é predominantemente inspiratório. Bifásico pode ocorrer em obstrução traqueal fixa — mas a regra geral é inspiratório."}
+      ],
+      "hint": "Estridor = audível sem estetoscópio = emergência de via aérea."
+    },
+    {
+      "question": "Em qual fase do ciclo respiratório são mais audíveis cada ruído adventício?",
+      "answerOptions": [
+        {"text": "Crepitantes finos: inspiração tardia; Roncos: inspiração e expiração (movem com tosse); Sibilos: expiração (obstrução brônquica); Atrito pleural: inspiração E expiração", "isCorrect": true, "rationale": "Cada ruído tem sua fase característica: crepitantes finos são tardios inspiratórios (alvéolos); roncos em qualquer fase; sibilos predominantemente expiratórios (brônquios estreitados no esvaziamento); atrito bifásico (pleura)."},
+        {"text": "Todos os ruídos adventícios são exclusivamente inspiratórios", "isCorrect": false, "rationale": "Cada ruído tem fase característica — não são todos inspiratórios."},
+        {"text": "Sibilos: apenas inspiratórios; atrito pleural: apenas expiratório", "isCorrect": false, "rationale": "Sibilos podem ser expiratórios OU bifásicos; atrito é bifásico."},
+        {"text": "Crepitantes: apenas expiratórios na fibrose; inspiratórios na pneumonia", "isCorrect": false, "rationale": "Crepitantes finos são inspiratórios tardios em ambas as condições."}
+      ],
+      "hint": "Sibilos expiratórios = brônquios estreitados ao esvaziar. Atrito = bifásico."
+    },
+    {
+      "question": "Quais ruídos adventícios NÃO mudam com a tosse e quais mudam?",
+      "answerOptions": [
+        {"text": "NÃO mudam: sibilos, crepitantes finos, atrito pleural; MUDAM: roncos e crepitantes grossos", "isCorrect": true, "rationale": "Roncos e crepitantes grossos são causados por secreção em vias aéreas — a tosse move a secreção e modifica/elimina o som. Sibilos (broncoespasmo), crepitantes finos (alvéolos) e atrito (pleura) não dependem de secreção — a tosse não os altera."},
+        {"text": "Todos os ruídos adventícios mudam com a tosse", "isCorrect": false, "rationale": "Sibilos, crepitantes finos e atrito NÃO mudam com tosse."},
+        {"text": "Nenhum ruído adventício muda com a tosse", "isCorrect": false, "rationale": "Roncos e crepitantes grossos mudam com tosse pois são causados por secreção."},
+        {"text": "Atrito pleural muda com tosse; sibilos não mudam", "isCorrect": false, "rationale": "Atrito pleural NÃO muda com tosse — é de origem pleural, não em secreção."}
+      ],
+      "hint": "Tosse move secreção → roncos mudam. Broncoespasmo e alvéolos não são secreção → não mudam."
+    },
+    {
+      "question": "Os subcrepitantes (crepitantes grossos/coarse crackles) — de onde originam e o que indicam?",
+      "answerOptions": [
+        {"text": "Produzidos por bolhas de ar em secreção espessa em brônquios médios — audíveis na inspiração precoce, mudam com tosse — indicam bronquite, bronquiectasia, abscesso",  "isCorrect": true, "rationale": "Subcrepitantes (crepitantes grossos) = secreção em brônquios de médio calibre. Som mais grave e úmido que os crepitantes finos. Modificam com tosse. Bronquiectasia, bronquite supurativa, abscesso pulmonar."},
+        {"text": "Produzidos por colapso alveolar — não mudam com tosse — indicam fibrose", "isCorrect": false, "rationale": "Colapso alveolar produz crepitantes FINOS que não mudam com tosse. Subcrepitantes têm origem em brônquios com secreção."},
+        {"text": "Subcrepitantes são idênticos ao atrito pleural — ambos indicam pleurite", "isCorrect": false, "rationale": "Subcrepitantes são intrapulmonares (brônquicos); atrito é pleural. Sons e causas distintas."},
+        {"text": "Subcrepitantes são produzidos em alvéolos distais — indicam edema pulmonar exclusivamente", "isCorrect": false, "rationale": "Crepitantes finos nos alvéolos distais indicam edema pulmonar. Subcrepitantes são de brônquios médios."}
+      ],
+      "hint": "Subcrepitantes = brônquios + secreção espessa + som grosseiro + muda com tosse."
+    },
+    {
+      "question": "Em qual condição ouviríamos SIMULTANEAMENTE sibilos bilaterais, hipertimpanismo e MV diminuído?",
+      "answerOptions": [
+        {"text": "Crise de asma brônquica moderada a grave", "isCorrect": true, "rationale": "Na asma: broncoespasmo → sibilos expiratórios; hiperinsuflação por air trapping → hipertimpanismo; hiperinsuflação e brônquios estreitados → MV diminuído. Tríade característica."},
+        {"text": "Pneumonia lobar direita", "isCorrect": false, "rationale": "Pneumonia causa macicez (não hipertimpanismo), sopro tubário e crepitantes — não sibilos."},
+        {"text": "Derrame pleural bilateral", "isCorrect": false, "rationale": "Derrame causa macicez e MV abolido — não hipertimpanismo nem sibilos."},
+        {"text": "Fibrose pulmonar avançada", "isCorrect": false, "rationale": "Fibrose causa crepitantes velcro, restrição (volumes reduzidos) — não hipertimpanismo."}
+      ],
+      "hint": "Sibilo + hiperinsuflação (timpanismo) + MV reduzido = asma em crise."
+    }
+  ]
+}

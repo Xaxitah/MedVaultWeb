@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T03 — Bioética",
+  "questions": [
+    {
+      "question": "Quem cunhou o termo 'bioética' e quando?",
+      "answerOptions": [
+        {"text": "Tom Beauchamp e James Childress, em 1979, no livro 'Principles of Biomedical Ethics'", "isCorrect": false, "rationale": "Beauchamp e Childress sistematizaram o principialismo (os 4 princípios), mas não cunharam o termo 'bioética'."},
+        {"text": "Van Rensselaer Potter, em 1970, em seu livro 'Bioethics: Bridge to the Future'", "isCorrect": true, "rationale": "Potter (oncologista americano) cunhou o termo em 1970, concebendo a bioética como uma ponte entre ciências biológicas e valores humanos — preocupado com a sobrevivência da humanidade. O Kennedy Institute of Ethics (1971) formalizou a área academicamente."},
+        {"text": "Hipócrates de Cós, no séc. V a.C., com o Juramento Hipocrático", "isCorrect": false, "rationale": "Hipócrates criou o juramento e a tradição ética médica, mas a bioética como disciplina formal surgiu em 1970 — muito depois de Hipócrates."},
+        {"text": "Henry Beecher, em 1966, ao denunciar experimentos antiéticos em seres humanos", "isCorrect": false, "rationale": "Beecher contribuiu para a ética em pesquisa ao denunciar experimentos antiéticos, mas não cunhou o termo 'bioética'."}
+      ],
+      "hint": "O nome do campo vem de um oncologista americano preocupado com ecologia e sobrevivência humana."
+    },
+    {
+      "question": "O caso Tuskegee (1932–1972) impactou a bioética porque:",
+      "answerOptions": [
+        {"text": "Foi o primeiro transplante de órgão realizado sem consentimento do doador", "isCorrect": false, "rationale": "Tuskegee não envolveu transplante — foi um estudo observacional de sífilis não tratada em homens negros americanos."},
+        {"text": "Homens negros com sífilis foram deliberadamente privados de tratamento sem seu conhecimento por 40 anos, revelando racismo e falta de ética em pesquisa", "isCorrect": true, "rationale": "O escândalo Tuskegee (1972) mostrou que o sistema médico americano podia ser profundamente discriminatório e antiético. Criou desconfiança duradoura da medicina entre afro-americanos e levou ao Relatório Belmont (1979) — base das regulamentações modernas de ética em pesquisa."},
+        {"text": "Médicos alemães realizaram experimentos em prisioneiros de guerra durante a 2ª Guerra", "isCorrect": false, "rationale": "Os experimentos nazistas são um caso diferente (levaram ao Código de Nuremberg, 1947) — Tuskegee foi um estudo americano conduzido pelo governo dos EUA em cidadãos americanos."},
+        {"text": "Pacientes foram tratados com medicamentos experimentais sem divulgação dos riscos na Europa", "isCorrect": false, "rationale": "Isso descreveria outro escândalo — Tuskegee específico é sobre a NÃO administração de tratamento existente (penicilina) a pacientes com sífilis."}
+      ],
+      "hint": "A injustiça de Tuskegee foi por omissão de tratamento — não por uso de tratamento experimental."
+    },
+    {
+      "question": "O principialismo de Beauchamp e Childress propõe que os 4 princípios têm:",
+      "answerOptions": [
+        {"text": "Hierarquia fixa: autonomia > beneficência > não maleficência > justiça", "isCorrect": false, "rationale": "O principialismo não estabelece hierarquia — os 4 princípios têm o mesmo peso prima facie. A ponderação depende do contexto clínico específico."},
+        {"text": "Hierarquia variável: não maleficência sempre prevalece sobre os outros", "isCorrect": false, "rationale": "'Primum non nocere' é importante, mas não é hierarquicamente superior — há situações em que causar algum dano é necessário para o bem do paciente (cirurgia, quimioterapia)."},
+        {"text": "O mesmo peso prima facie — nenhum princípio tem hierarquia absoluta; o conflito entre eles é resolvido caso a caso", "isCorrect": true, "rationale": "No principialismo, os 4 princípios são obrigações prima facie — ou seja, obrigações válidas a priori, mas que podem ser superadas por outro princípio mais relevante no contexto. Não há hierarquia fixa: em algumas situações autonomia prevalece, em outras beneficência, dependendo dos fatos do caso."},
+        {"text": "Peso igual em todos os casos — nunca podem conflitar entre si", "isCorrect": false, "rationale": "Conflitos entre os princípios são comuns e são exatamente o que torna a bioética necessária — se nunca conflitassem, bastaria aplicar regras simples."}
+      ],
+      "hint": "'Prima facie' significa 'à primeira vista' — válido a priori, mas revisável pelo contexto."
+    },
+    {
+      "question": "Um comitê de ética hospitalar é solicitado a decidir sobre um dilema clínico. Qual é o papel correto desse comitê?",
+      "answerOptions": [
+        {"text": "Tomar a decisão final pelo paciente e pela equipe médica", "isCorrect": false, "rationale": "O comitê tem função CONSULTIVA — não decisória. Quem decide é o paciente (ou seu representante) junto à equipe médica."},
+        {"text": "Fornecer orientação consultiva, educação ética e auxiliar na análise do dilema — sem poder de decisão obrigatória", "isCorrect": true, "rationale": "O comitê de bioética hospitalar é multidisciplinar (médicos, enfermeiros, psicólogos, advogados, leigos) e tem papel consultivo: auxilia na análise do dilema, educa profissionais, elabora protocolos. A decisão final cabe à equipe e ao paciente/representante — não ao comitê."},
+        {"text": "Punir os profissionais que agiram de forma antiética no caso", "isCorrect": false, "rationale": "Punição ética é papel dos Conselhos de Medicina (CRM/CFM) — não do comitê hospitalar. O comitê é consultivo, não punitivo."},
+        {"text": "Aprovar ou reprovar protocolos de pesquisa clínica no hospital", "isCorrect": false, "rationale": "Aprovação de pesquisa clínica é papel do Comitê de Ética em Pesquisa (CEP) — distinto do comitê de ética clínica hospitalar."}
+      ],
+      "hint": "Comitê de ética = suporte e orientação, não decisão."
+    },
+    {
+      "question": "A diferença fundamental entre bioética de pesquisa e bioética clínica é:",
+      "answerOptions": [
+        {"text": "Bioética de pesquisa usa apenas o princípio de beneficência; bioética clínica usa os 4 princípios", "isCorrect": false, "rationale": "Ambas aplicam os 4 princípios — a diferença é de contexto e ênfase, não dos princípios utilizados."},
+        {"text": "Bioética clínica foca no cuidado do paciente individual; bioética de pesquisa foca na proteção de sujeitos de pesquisa e na validade científica", "isCorrect": true, "rationale": "Clínica: dilemas no cuidado individual (recusa de tratamento, fim de vida, recursos escassos). Pesquisa: proteção de participantes (consentimento, risco/benefício, confidencialidade, equidade na seleção). Ambas aplicam os mesmos princípios em contextos distintos com ênfases diferentes."},
+        {"text": "A bioética de pesquisa não exige consentimento informado para estudos observacionais", "isCorrect": false, "rationale": "Estudos observacionais também exigem CI — embora as exigências possam ser adaptadas, o princípio de consentimento se aplica a toda pesquisa com seres humanos."},
+        {"text": "Bioética clínica é regulamentada; bioética de pesquisa é opcional", "isCorrect": false, "rationale": "Ambas têm regulamentação — a pesquisa talvez com regulamentação ainda mais rigorosa (CEP, Resolução CNS 466/2012, Declaração de Helsinki)."}
+      ],
+      "hint": "Pense no sujeito central de cada área: paciente individual vs. sujeito de pesquisa."
+    },
+    {
+      "question": "O Relatório Belmont (1979) foi desenvolvido em resposta a qual escândalo?",
+      "answerOptions": [
+        {"text": "Experimentos médicos nazistas revelados nos Julgamentos de Nuremberg (1947)", "isCorrect": false, "rationale": "Os experimentos nazistas levaram ao Código de Nuremberg (1947) — o Relatório Belmont foi uma resposta americana mais recente."},
+        {"text": "Estudo Tuskegee — tratamento de sífilis negado a homens negros americanos por décadas", "isCorrect": true, "rationale": "O escândalo Tuskegee (revelado em 1972) chocou a opinião pública americana e levou o Congresso a criar a Comissão Nacional de Ética em Pesquisa, que produziu o Relatório Belmont (1979). O relatório definiu 3 princípios: respeito pelas pessoas (autonomia), beneficência, justiça."},
+        {"text": "Uso de talidomida em gestantes causando focomelia nos anos 1960", "isCorrect": false, "rationale": "A tragédia da talidomida levou ao fortalecimento do controle regulatório de medicamentos (FDA) — mas não foi o gatilho direto do Relatório Belmont."},
+        {"text": "Transplante cardíaco de Barnard sem aprovação do comitê ético (1967)", "isCorrect": false, "rationale": "O transplante de Barnard levantou questões éticas sobre morte cerebral e seleção de receptores, mas não foi o gatilho do Relatório Belmont."}
+      ],
+      "hint": "Tuskegee é o escândalo americano que mais impactou a bioética nos EUA."
+    },
+    {
+      "question": "Um paciente com doença terminal recusa tratamento intensivo e prefere cuidados paliativos. O médico discorda e insiste no tratamento. Qual princípio é violado pelo médico?",
+      "answerOptions": [
+        {"text": "Não maleficência — o tratamento intensivo causaria dano", "isCorrect": false, "rationale": "Não maleficência está implicada, mas o problema central é a violação da autonomia — o médico ignorou a decisão informada do paciente."},
+        {"text": "Autonomia — o paciente capaz tem direito de recusar tratamento, mesmo que isso resulte em morte", "isCorrect": true, "rationale": "Adulto capaz, informado e sem coerção tem direito pleno de recusar tratamento — inclusive tratamento que poderia prolongar sua vida. Insistir após recusa clara configura violação da autonomia e pode ser considerado paternalismo e até coerção. O médico pode expressar sua opinião, mas deve respeitar a decisão final."},
+        {"text": "Justiça — recursos de UTI deveriam ir para quem os quer", "isCorrect": false, "rationale": "Justiça distributiva é relevante, mas o problema direto aqui é a violação da autonomia individual do paciente que recusa."},
+        {"text": "Beneficência — o médico não está agindo pelo bem do paciente", "isCorrect": false, "rationale": "O médico acredita estar agindo pela beneficência — mas o problema é que está usando sua definição de 'bem' sobre a do paciente. A autonomia prevalece quando há conflito entre a perspectiva do médico e a do paciente capaz."}
+      ],
+      "hint": "A autonomia do paciente capaz inclui o direito de recusar — mesmo quando o médico discorda."
+    },
+    {
+      "question": "Por que a bioética é considerada uma disciplina interdisciplinar?",
+      "answerOptions": [
+        {"text": "Porque é ensinada em faculdades de medicina, direito e filosofia ao mesmo tempo", "isCorrect": false, "rationale": "O fato de ser ensinada em diferentes faculdades é uma consequência de sua interdisciplinaridade, não sua definição."},
+        {"text": "Porque ela aplica perspectivas de filosofia, direito, ciências sociais, teologia e medicina para analisar dilemas éticos em saúde", "isCorrect": true, "rationale": "A bioética exige múltiplas perspectivas para analisar dilemas complexos: a filosofia fornece as bases normativas (o que é certo); o direito define as obrigações legais; as ciências sociais mostram o contexto; a teologia representa valores religiosos; a medicina fornece o contexto clínico. Nenhuma disciplina isolada resolve os dilemas sozinha."},
+        {"text": "Porque médicos, enfermeiros e farmacêuticos participam dos comitês de ética", "isCorrect": false, "rationale": "A multiprofissionalidade dos comitês é uma característica operacional, não a definição de interdisciplinaridade da bioética."},
+        {"text": "Porque os 4 princípios de Beauchamp são usados em múltiplas especialidades médicas", "isCorrect": false, "rationale": "O principialismo é uma teoria dentro da bioética — a interdisciplinaridade se refere à combinação de campos do conhecimento, não ao uso de uma teoria em múltiplas especialidades."}
+      ],
+      "hint": "Interdisciplinar = múltiplos campos do conhecimento, não múltiplas especialidades médicas."
+    },
+    {
+      "question": "O que é 'privilegio terapéutico' (therapeutic privilege) e por que é eticamente problemático?",
+      "answerOptions": [
+        {"text": "Direito do médico de cobrar mais por procedimentos complexos", "isCorrect": false, "rationale": "Privilégio terapêutico não tem relação com cobranças — é um conceito de ética na comunicação."},
+        {"text": "Prática de ocultar informações do paciente 'pelo seu bem', julgando que a verdade seria prejudicial — viola a autonomia e a veracidade", "isCorrect": true, "rationale": "Privilégio terapêutico: médico omite diagnóstico ou prognóstico por acreditar que a informação causaria dano emocional ao paciente. Eticamente problemático: viola autonomia (paciente não pode decidir sem informação) e veracidade. Só seria justificável em situações extremamente raras e documentadas — não como prática rotineira."},
+        {"text": "Direito do médico de recusar atender pacientes que não pagam consulta", "isCorrect": false, "rationale": "Recusa de atendimento é questão diferente — relacionada à objeção de consciência ou obrigações contratuais, não ao privilégio terapêutico."},
+        {"text": "Autorização para usar medicamentos não registrados em casos de urgência extrema", "isCorrect": false, "rationale": "Uso compaixivo ou de emergência de medicamentos não aprovados é um conceito diferente — privilégio terapêutico refere-se à comunicação de informações."}
+      ],
+      "hint": "Privile 'terapêutico' é uma justificativa para ocultar informação — mas é a justificativa eticamente problemática."
+    },
+    {
+      "question": "Qual foi a contribuição do Código de Nuremberg (1947) para a bioética?",
+      "answerOptions": [
+        {"text": "Estabeleceu a definição legal de morte cerebral para fins de transplante", "isCorrect": false, "rationale": "A definição de morte cerebral surgiu mais tarde (final dos anos 1960) — o Código de Nuremberg tratou de ética em pesquisa."},
+        {"text": "Estabeleceu que o consentimento voluntário do sujeito humano é absolutamente essencial em pesquisa", "isCorrect": true, "rationale": "O Código de Nuremberg (1947) foi o primeiro documento internacional sobre ética em pesquisa com seres humanos. Seu primeiro princípio: 'o consentimento voluntário do ser humano é absolutamente essencial'. Também: pesquisa deve ter valor científico real, riscos mínimos, possibilidade de retirada. Base de toda regulamentação subsequente."},
+        {"text": "Proibiu experiências com animais sem supervisão ética", "isCorrect": false, "rationale": "Nuremberg tratou de experimentos em seres humanos durante a 2ª Guerra — não de ética em pesquisa animal."},
+        {"text": "Criou os Conselhos de Medicina nacionais para regulamentar a profissão", "isCorrect": false, "rationale": "Conselhos de Medicina existem independentemente do Código de Nuremberg — que é um documento de ética internacional em pesquisa, não de organização profissional."}
+      ],
+      "hint": "Nuremberg surgiu após os julgamentos dos médicos nazistas — o foco era experimentos em humanos."
+    }
+  ]
+}

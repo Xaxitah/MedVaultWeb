@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T08 — AINEs",
+  "cards": [
+    {"front": "Mecanismo de ação dos AINEs", "back": "Inibem a ciclooxigenase (COX) → ↓ síntese de prostaglandinas, prostaciclina (PGI₂) e tromboxano (TXA₂) a partir do ácido araquidônico"},
+    {"front": "COX-1 vs COX-2 — diferença de função", "back": "COX-1: constitutiva → produz prostaglandinas protetoras na mucosa gástrica e TXA₂ plaquetário. COX-2: induzível por inflamação → produz PG pró-inflamatórias e PGI₂ vascular"},
+    {"front": "Quais AINEs são seletivos para COX-2?", "back": "Celecoxibe, rofecoxibe (retirado), etoricoxibe. Vantagem: menos úlcera gástrica. Desvantagem: sem efeito antiagregante; ↑ risco cardiovascular (trombose) por não inibir TXA₂ plaquetário"},
+    {"front": "Por que AINEs causam úlcera gástrica?", "back": "COX-1 → PGE₂ → proteção mucosa (↑ muco, ↓ ácido, ↑ bicarbonato). Com COX-1 inibida → ↓ PGE₂ → mucosa desprotegida → úlcera. Mais grave com naproxeno e indometacina"},
+    {"front": "Como proteger a mucosa gástrica em paciente que precisa de AINE?", "back": "Associar inibidor de bomba de prótons (IBP: omeprazol, pantoprazol). Alternativa: misoprostol (análogo de PGE₂) — mas causa diarreia. Preferir COX-2 seletivo se há alto risco GI"},
+    {"front": "Por que AINEs pioram função renal?", "back": "Em hipoperfusão renal, PG renais (PGE₂, PGI₂) são vasodilatadoras e essenciais para manter TFG. AINEs bloqueiam essas PG → vasoconstrição renal → IRA. Risco ↑ em: idosos, IC, cirrose, DRC, depleção volêmica"},
+    {"front": "AINEs e risco cardiovascular — qual o mecanismo?", "back": "COX-2 → PGI₂ (vasodilatação + antiagregante). COX-2 seletivos inibem PGI₂ mas preservam TXA₂ → desequilíbrio pró-trombótico. Risco CV ↑ com todos os AINEs (menos com naproxeno e AAS)"},
+    {"front": "AAS em baixas doses (75–100 mg/dia) — por que é antiagregante?", "back": "Inibe COX-1 plaquetária irreversivelmente → ↓ TXA₂ → antiagregação. A dose baixa inibe COX plaquetária sem afetar significativamente COX endotelial (que produz PGI₂ protetora)"},
+    {"front": "Indometacina — características especiais", "back": "AINE muito potente, não seletivo. Uso: gota aguda, artrite reumatoide, espondilite, fechar canal arterial persistente no neonato (prematuro). Efeitos GI e renais intensos"},
+    {"front": "Cetoprofeno, ibuprofeno, naproxeno — diferenças práticas", "back": "Ibuprofeno: menor risco GI, mais usado na automedicação. Naproxeno: longa duração (2x/dia) e menor risco CV entre os AINEs não seletivos. Cetoprofeno: uso tópico e sistêmico; risco de fotossensibilidade"},
+    {"front": "Diclofenaco — perfil especial", "back": "AINE com relativa seletividade COX-2 > COX-1. Menor risco gástrico que ibuprofeno em doses equivalentes. Maior risco CV. Uso amplo: dor musculoesquelética, pós-operatório"},
+    {"front": "Nimesulida — risco específico", "back": "Preferencial COX-2. Risco de hepatotoxicidade documentado → proibido em crianças <12 anos em vários países. Monitorar transaminases com uso prolongado"},
+    {"front": "Por que AINEs são contraindicados na gravidez (especialmente 3º trimestre)?", "back": "↓ PGE₂ → fechamento prematuro do canal arterial fetal → hipertensão pulmonar neonatal. Também: oligohidrâmnio, retardo no trabalho de parto. 1º trimestre: risco de malformações e abortamento"},
+    {"front": "Escada analgésica da OMS — onde entram os AINEs?", "back": "Degrau 1: analgésicos não opioides (AAS, paracetamol, AINEs) → dor leve. Degrau 2: opioides fracos + AINE → dor moderada. Degrau 3: opioides fortes → dor intensa"},
+    {"front": "Paracetamol vs AINEs — diferença fundamental", "back": "Paracetamol: analgésico e antipirético SEM efeito anti-inflamatório periférico (mecanismo central). Sem efeito antiagregante, sem úlcera gástrica, sem risco renal nas doses terapêuticas. Hepatotóxico em overdose"}
+  ]
+}

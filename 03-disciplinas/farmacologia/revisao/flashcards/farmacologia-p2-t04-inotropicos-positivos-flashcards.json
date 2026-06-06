@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T04 — Inotrópicos Positivos",
+  "cards": [
+    {"front": "O que são inotrópicos positivos? Quais são os principais grupos?", "back": "Fármacos que aumentam a força de contração cardíaca. Grupos: 1) Glicosídeos cardíacos (digoxina); 2) Catecolaminas (dopamina, dobutamina); 3) Inibidores de PDE3 (milrinona)"},
+    {"front": "Mecanismo de ação da digoxina", "back": "Inibe a bomba Na⁺/K⁺ ATPase → acúmulo intracelular de Na⁺ → ativação do trocador Na⁺/Ca²⁺ → acúmulo de Ca²⁺ intracelular → maior força de contração"},
+    {"front": "Efeito vagotônico da digoxina", "back": "Estimula o nervo vago → ↓ FC (cronotrópico negativo) e ↓ condução no nó AV (dromotrópico negativo) → útil no controle de FC na FA"},
+    {"front": "Indicações da digoxina", "back": "1) IC com FEVE reduzida (sintomática, refratária — 3ª linha); 2) Controle de FC em FA/flutter atrial. Não melhora mortalidade"},
+    {"front": "Sinais de toxicidade digitálica — tríade clássica", "back": "1) Gastrointestinais: náuseas, vômitos, anorexia; 2) Neurológicos: visão amarelada/esverdeada (xantopsia), confusão; 3) Cardíacos: bradiarritmias, bloqueio AV, taquicardia ventricular"},
+    {"front": "Fatores que aumentam toxicidade da digoxina", "back": "1) Hipocalemia (↓ K⁺ reduz competição com digoxina na bomba); 2) Hipercalcemia; 3) Hipomagnesemia; 4) IRC (↓ eliminação renal); 5) Hipotireoidismo; 6) Interações (amiodarona, quinidina)"},
+    {"front": "Tratamento da intoxicação digitálica grave", "back": "Fragmentos Fab anti-digoxina (anticorpos específicos). Monitorar e corrigir eletrólitos, especialmente K⁺ e Mg²⁺"},
+    {"front": "Dopamina — efeitos dose-dependentes", "back": "Dose baixa (1–3 μg/kg/min): receptores D₁ renais → vasodilatação renal; Dose média (3–10): receptores β₁ → ↑ inotropismo; Dose alta (>10): receptores α₁ → vasoconstrição"},
+    {"front": "Dobutamina — mecanismo e indicação", "back": "Agonista β₁ (predominante) e β₂ → ↑ inotropismo com alguma vasodilatação. Indicada em IC aguda descompensada e choque cardiogênico. Não aumenta PA (diferente da dopamina em alta dose)"},
+    {"front": "Dopamina vs dobutamina — diferença prática", "back": "Dopamina em alta dose: vasopressora (α₁) → uso em choque com hipotensão. Dobutamina: inotrópica pura, vasodilatadora → uso em IC com PA adequada. Dobutamina não tem efeito α"},
+    {"front": "Milrinona — mecanismo e característica", "back": "Inibidor da fosfodiesterase 3 (PDE3) → ↑ AMPc → ↑ Ca²⁺ intracelular → ↑ inotropismo + vasodilatação (inodilatador). Uso IV em IC aguda refratária. Risco de arritmias"},
+    {"front": "Por que inotrópicos positivos aumentam mortalidade na IC crônica?", "back": "Aumentam o trabalho cardíaco e o consumo de O₂, potencializam arritmias. Exceção: digoxina melhora sintomas sem ↑ mortalidade, mas não a reduz"},
+    {"front": "Levosimendan — mecanismo inovador", "back": "Sensibilizador de Ca²⁺ (não aumenta Ca²⁺, mas aumenta a sensibilidade da troponina C) + inibidor de PDE + vasodilatador. Menos arritmogênico. Usado na IC aguda"},
+    {"front": "Qual inotrópico positivo usar no choque séptico com disfunção cardíaca?", "back": "Dobutamina associada ao vasopressor (noradrenalina). A noradrenalina mantém a PA e a dobutamina melhora o débito cardíaco"},
+    {"front": "Janela terapêutica estreita da digoxina — nível sérico", "back": "Faixa terapêutica: 0,5–2 ng/mL. Para controle de FC na FA: manter 0,5–0,9 ng/mL (menor toxicidade). Colher nível 6h após dose oral"}
+  ]
+}

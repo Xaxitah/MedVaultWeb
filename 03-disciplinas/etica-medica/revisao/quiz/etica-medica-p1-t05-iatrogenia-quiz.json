@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T05 — Iatrogenia",
+  "questions": [
+    {
+      "question": "Um médico esquece de verificar alergias antes de prescrever penicilina. O paciente tem anafilaxia grave. Que tipo de iatrogenia ocorreu?",
+      "answerOptions": [
+        {"text": "Imperícia — o médico não sabia como verificar alergias", "isCorrect": false, "rationale": "Verificar alergias é conhecimento básico — o médico sabe como fazê-lo. O problema foi não fazer, não não saber fazer."},
+        {"text": "Negligência — falta de cuidado e diligência ao omitir verificação de alergias", "isCorrect": true, "rationale": "Negligência: falha por omissão de cuidado que o médico deveria ter. Verificar alergias antes de prescrever antibióticos é protocolo básico — não fazê-lo é negligência, não impericia (não é falta de habilidade) nem imprudência (não é excesso de ousadia)."},
+        {"text": "Imprudência — o médico agiu com excesso de confiança", "isCorrect": false, "rationale": "Imprudência é agir sem precaução quando deveria ser cauteloso — aqui o problema foi a omissão (não perguntar sobre alergias), característica de negligência."},
+        {"text": "Evento adverso inevitável — reações alérgicas não podem ser previstas", "isCorrect": false, "rationale": "Reação a alérgeno CONHECIDO (se o paciente soubesse e fosse perguntado) é evitável — não é evento inevitável. Reação imprevisível em paciente sem histórico de alergia seria diferente."}
+      ],
+      "hint": "Negligência = omitir o que devia ser feito; imperícia = não saber fazer; imprudência = fazer sem cautela."
+    },
+    {
+      "question": "Qual das seguintes situações representa iatrogenia inevitável (não negligência)?",
+      "answerOptions": [
+        {"text": "Infecção hospitalar por mãos não higienizadas do profissional de saúde", "isCorrect": false, "rationale": "Infecção por falta de higienização das mãos é evitável — é iatrogenia por negligência, não inevitável."},
+        {"text": "Hematoma no local de punção venosa em paciente anticoagulado terapeuticamente", "isCorrect": true, "rationale": "Hematoma pós-punção em paciente anticoagulado é uma complicação esperada e conhecida do procedimento — independente de técnica perfeita. É iatrogenia inevitável (evento adverso esperado), não resultado de negligência. O médico deve informar o paciente sobre essa possibilidade antes do procedimento."},
+        {"text": "Prescrição de dose excessiva de medicamento por falha de cálculo", "isCorrect": false, "rationale": "Erro de cálculo de dose é evitável — resultado de negligência ou imperícia, não evento inevitável."},
+        {"text": "Alta hospitalar prematura antes da resolução do quadro infeccioso", "isCorrect": false, "rationale": "Alta prematura é decisão médica — se precipitada e sem avaliação adequada, configura negligência."}
+      ],
+      "hint": "Inevitável = complicação esperada de procedimento correto; evitável = resultado de falha humana."
+    },
+    {
+      "question": "Um residente de medicina realiza uma apendicectomia laparoscópica pela primeira vez, sem supervisão adequada, e perfura a bexiga do paciente. Qual tipo de iatrogenia ocorreu?",
+      "answerOptions": [
+        {"text": "Negligência — o residente não se preparou adequadamente para o procedimento", "isCorrect": false, "rationale": "Preparação inadequada pode ter ocorrido, mas o elemento central aqui é a falta de habilidade técnica para realizar o procedimento sem supervisão."},
+        {"text": "Imperícia — falta de habilidade técnica para realizar o procedimento sem supervisão adequada", "isCorrect": true, "rationale": "Imperícia: falta de habilidade ou capacitação técnica para determinada ação. Um residente em formação realizando procedimento complexo sem supervisão adequada e causando dano = imperícia. A responsabilidade também recai sobre o supervisor que deveria estar presente."},
+        {"text": "Imprudência — o residente agiu com excesso de ousadia", "isCorrect": false, "rationale": "Embora haja elemento de imprudência (realizar sem supervisão), o dano direto foi causado por falta de habilidade técnica — que caracteriza imperícia. Na prática, pode haver sobreposição entre os tipos."},
+        {"text": "Evento adverso inevitável — perfuração de bexiga é complicação conhecida da apendicectomia", "isCorrect": false, "rationale": "Perfuração de bexiga em apendicectomia laparoscópica sem supervisão em residente inexperiente não é inevitável — é resultado de falta de qualificação adequada."}
+      ],
+      "hint": "Quem não tem habilidade para fazer e faz = imperícia."
+    },
+    {
+      "question": "O que é iatrogenia psicológica e qual sua relevância clínica?",
+      "answerOptions": [
+        {"text": "Efeitos colaterais psiquiátricos de medicamentos prescritos — ansiedade induzida por fármacos", "isCorrect": false, "rationale": "Esse seria um tipo de iatrogenia farmacológica com manifestação psiquiátrica — iatrogenia psicológica no sentido ético refere-se ao dano causado pela comunicação e atitudes do médico."},
+        {"text": "Dano psicológico causado por palavras descuidadas, diagnóstico comunicado brutalmente ou atitudes julgadoras do médico", "isCorrect": true, "rationale": "Iatrogenia psicológica é frequentemente subestimada: comunicar 'você tem 3 meses de vida' sem apoio emocional, termos assustadores sem contexto, julgamentos sobre estilo de vida, abandono emocional. Pode causar: ansiedade, depressão, recusa de tratamento, piora clínica. Tão real quanto dano físico — e prevenível com boa comunicação."},
+        {"text": "Transtorno de estresse pós-traumático causado por procedimentos cirúrgicos dolorosos", "isCorrect": false, "rationale": "TEPT pós-cirúrgico é uma complicação psicológica de procedimento físico — pode ser iatrogenia, mas não é a definição de iatrogenia psicológica no sentido comunicacional-ético."},
+        {"text": "Dependência psicológica a medicamentos prescritos pelo médico", "isCorrect": false, "rationale": "Dependência iatrogênica é tipo de iatrogenia farmacológica — não iatrogenia psicológica no sentido de dano causado pela relação e comunicação médica."}
+      ],
+      "hint": "Palavras do médico podem curar ou ferir — literalmente."
+    },
+    {
+      "question": "A cultura de segurança do paciente vê os erros médicos principalmente como:",
+      "answerOptions": [
+        {"text": "Falhas morais individuais que devem ser punidas para dissuadir outros profissionais", "isCorrect": false, "rationale": "Punição individual sem análise sistêmica não previne erros — é a abordagem antiquada que a cultura de segurança busca superar."},
+        {"text": "Falhas de sistema que devem ser analisadas para melhorar processos e prevenir recorrência", "isCorrect": true, "rationale": "Cultura de segurança do paciente (OMS, IHI): erros raramente são resultado de má intenção — são resultado de sistemas com falhas (comunicação inadequada, protocolos inexistentes, sobrecarga). A resposta ética e eficaz é análise sistêmica (root cause analysis), não punição individual. Cria ambiente onde erros podem ser reportados sem medo."},
+        {"text": "Inevitáveis em qualquer sistema de saúde e por isso não merecem investigação", "isCorrect": false, "rationale": "Erros são esperados em sistemas complexos, mas não são inevitáveis no sentido de não poderem ser prevenidos. A análise e melhoria contínua podem reduzir sua frequência significativamente."},
+        {"text": "Responsabilidade exclusiva do médico assistente, independente do contexto", "isCorrect": false, "rationale": "Atribuir responsabilidade exclusiva ao médico ignora fatores sistêmicos (sobrecarga, falta de protocolos, comunicação ruim entre equipes) — que geralmente contribuem tanto quanto fatores individuais."}
+      ],
+      "hint": "Sistema vs. indivíduo — qual a perspectiva que previne mais erros?"
+    },
+    {
+      "question": "Qual é a obrigação ética do médico ao descobrir que cometeu um erro que causou dano ao paciente?",
+      "answerOptions": [
+        {"text": "Aguardar que o paciente perceba o erro antes de agir — para avaliar se o dano é real", "isCorrect": false, "rationale": "Aguardar passivamente é uma forma de encobrir o erro — e pode causar dano adicional ao atrasar a correção. O médico tem obrigação ativa de comunicar."},
+        {"text": "Informar o paciente, corrigir o erro, documentar e aprender — mesmo que implique responsabilidade legal", "isCorrect": true, "rationale": "A obrigação ética (disclosure) é clara: comunicar ao paciente o que ocorreu, de forma honesta e compreensível; tomar medidas imediatas para corrigir; registrar no prontuário; notificar a instituição (controle de qualidade). Ocultar o erro viola veracidade e agrava eticamente — e geralmente agrava legalmente também."},
+        {"text": "Comunicar apenas ao chefe de serviço, mantendo sigilo com o paciente", "isCorrect": false, "rationale": "Comunicar à equipe é necessário, mas não substitui a comunicação ao paciente. O paciente é o principal interessado e tem direito de saber."},
+        {"text": "Priorizar a proteção legal — consultar advogado antes de informar o paciente", "isCorrect": false, "rationale": "Consultar advogado é legítimo, mas não deve ser motivo para atrasar ou impedir a comunicação ao paciente. A obrigação ética de disclosure não depende da avaliação legal prévia."}
+      ],
+      "hint": "Honestidade = obrigação ética, mesmo quando é difícil e tem consequências."
+    },
+    {
+      "question": "O 'checklist cirúrgico' da OMS (Surgical Safety Checklist) é exemplo de qual estratégia de prevenção de iatrogenia?",
+      "answerOptions": [
+        {"text": "Punição de cirurgiões que cometem erros operatórios", "isCorrect": false, "rationale": "O checklist não é punitivo — é uma ferramenta preventiva sistemática."},
+        {"text": "Protocolo sistêmico que padroniza verificações críticas antes, durante e após cirurgia para prevenir erros evitáveis", "isCorrect": true, "rationale": "O checklist cirúrgico da OMS (2008) verifica: identidade do paciente, sítio cirúrgico, alergias, equipamentos, contagem de compressas. Reduz complicações em 30–40% e mortalidade em 40% quando usado corretamente. É exemplo de prevenção sistêmica — a equipe toda participa, não apenas o cirurgião."},
+        {"text": "Formulário de consentimento informado para cirurgia", "isCorrect": false, "rationale": "Consentimento informado é documento ético-legal separado — o checklist é ferramenta operacional de segurança intraoperatória."},
+        {"text": "Sistema de avaliação de complicações pós-operatórias para fins de pesquisa", "isCorrect": false, "rationale": "O checklist é pré, intra e pós-operatório imediato — é preventivo, não avaliativo retrospectivo."}
+      ],
+      "hint": "O checklist funciona antes de pilotar um avião — e antes de operar também."
+    },
+    {
+      "question": "A talidomida causou milhares de casos de focomelia nos anos 1960. Do ponto de vista ético, que lição central ela trouxe?",
+      "answerOptions": [
+        {"text": "Medicamentos nunca devem ser aprovados para uso em gestantes", "isCorrect": false, "rationale": "Gestantes precisam de medicamentos — a lição não é proibição absoluta, mas rigidez nos testes e transparência sobre riscos antes da aprovação."},
+        {"text": "Testagem rigorosa em populações vulneráveis (gestantes) antes da aprovação e obrigação de transparência sobre riscos", "isCorrect": true, "rationale": "A tragédia da talidomida (aprovada sem testes adequados em gestantes no 1º trimestre) levou ao fortalecimento do controle regulatório de medicamentos mundialmente: FDA nos EUA, ANVISA no Brasil. A lição: rigor pré-mercado, transparência sobre riscos, farmacologia clínica em populações vulneráveis. Talidomida hoje é usada com controle rigoroso (mieloma múltiplo, hanseníase)."},
+        {"text": "Medicamentos aprovados na Europa são automaticamente seguros para todo o mundo", "isCorrect": false, "rationale": "A talidomida foi aprovada na Europa mas não nos EUA (FDA Frances Kelsey a bloqueou) — a lição é o oposto: aprovação europeia não é garantia universal."},
+        {"text": "Pesquisa em animais é suficiente para determinar segurança em humanos", "isCorrect": false, "rationale": "A talidomida era 'segura' em animais — a lição é exatamente que pesquisa animal tem limitações e estudos em humanos, com monitoramento pós-mercado, são essenciais."}
+      ],
+      "hint": "Talidomida = exemplo de aprovação sem rigor suficiente → consequências devastáveis em populações vulneráveis."
+    },
+    {
+      "question": "Qual é a diferença entre iatrogenia por negligência e iatrogenia por imprudência?",
+      "answerOptions": [
+        {"text": "Negligência é mais grave que imprudência — resulta em punição mais severa", "isCorrect": false, "rationale": "A gravidade ética e legal depende das consequências e do contexto — não há hierarquia fixa de gravidade entre negligência e imprudência."},
+        {"text": "Negligência = omissão de cuidado que devia ser prestado; Imprudência = ação sem precaução necessária", "isCorrect": true, "rationale": "Negligência: 'Não fiz o que devia fazer' — omissão (não verificar alergias, não prescrever medicamento essencial). Imprudência: 'Fiz sem a cautela necessária' — ação imprecavida (operar sem exames mínimos, prescrever sem avaliar). Ambas violam o dever de cuidado do médico, mas por mecanismos opostos."},
+        {"text": "Negligência é intencional; imprudência é acidental", "isCorrect": false, "rationale": "Ambas são involuntárias (sem intenção de causar dano) — a distinção é omissão vs. ação descuidada, não intencionalidade."},
+        {"text": "Negligência afeta pacientes externos; imprudência afeta internados", "isCorrect": false, "rationale": "Ambos os tipos podem ocorrer em qualquer contexto de atendimento — ambulatório, emergência, internação."}
+      ],
+      "hint": "Negligência = omitir; Imprudência = fazer sem cautela."
+    },
+    {
+      "question": "O checklist de 'Sign In, Time Out e Sign Out' na cirurgia serve principalmente para prevenir qual tipo de iatrogenia?",
+      "answerOptions": [
+        {"text": "Infecções hospitalares relacionadas ao sítio cirúrgico", "isCorrect": false, "rationale": "Infecção de sítio cirúrgico é prevenida principalmente por assepsia, antissepsia e antibióticoprofilaxia — não pelo checklist verbal."},
+        {"text": "Erros de identificação do paciente, cirurgia no local errado e objetos retidos", "isCorrect": true, "rationale": "O checklist OMS visa prevenir eventos sentinela (wrong patient, wrong site, wrong procedure) e retenção de material cirúrgico (compressas, instrumentos). 'Time Out' ocorre antes da incisão: toda equipe confirma em voz alta identidade, procedimento, sítio. Erros de identificação eram mais comuns do que se imaginava."},
+        {"text": "Reações alérgicas a anestésicos durante a cirurgia", "isCorrect": false, "rationale": "Alergias são verificadas no checklist (Sign In), mas o propósito central não é apenas esse — é prevenir toda a categoria de eventos cirúrgicos evitáveis."},
+        {"text": "Hemorragia pós-operatória por técnica cirúrgica inadequada", "isCorrect": false, "rationale": "Hemorragia por técnica cirúrgica é problema de habilidade — o checklist verifica preparação e identificação, não corrige falhas técnicas intraoperatórias."}
+      ],
+      "hint": "Wrong patient, wrong site, wrong procedure — qual ferramenta previne esses erros críticos?"
+    }
+  ]
+}

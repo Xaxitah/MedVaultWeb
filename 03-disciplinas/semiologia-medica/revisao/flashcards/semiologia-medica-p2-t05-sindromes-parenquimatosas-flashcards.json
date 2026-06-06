@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T05: Síndromes Parenquimatosas",
+  "cards": [
+    {
+      "front": "Enfisema pulmonar — fisiopatologia e tipos",
+      "back": "Destruição dos septos alveolares → alargamento dos espaços aéreos distais → perda de retração elástica → air trapping\nTipos:\n• Centroacinar (centrolobular): tabagismo, ápices\n• Panacinar (panlobular): alfa-1 AT, bases\n• Paraseptal: subpleural, associado a pneumotórax espontâneo em jovens"
+    },
+    {
+      "front": "Tipos de atelectasia e mecanismos",
+      "back": "1. Reabsortiva (obstrutiva): obstrução brônquica → ar distal reabsorvido\n2. Compressiva: derrame pleural ou pneumotórax comprime parênquima\n3. Por tração: fibrose puxa o parênquima\n4. Por surfactante: SDRA, aspiração, RNL prematuro\nDesvio mediastinal: IPSILATERAL na atelectasia (perde volume)"
+    },
+    {
+      "front": "Síndrome de condensação pulmonar — IPPA completo",
+      "back": "Inspeção: retardo de expansão ipsilateral\nPalpação: frêmito AUMENTADO (com brônquio pérvio)\nPercussão: macicez\nAusculta: sopro tubário, broncofonia aumentada, egofonia, crepitantes de resolução\nCondição obrigatória: brônquio pérvio (aberto) para transmissão de sons"
+    },
+    {
+      "front": "Pneumonia lobar — fases anatomopatológicas",
+      "back": "1. Congestão: edema + hiperemia (horas)\n2. Hepatização vermelha: fibrina + hemácias + PMN (dias 2–3)\n3. Hepatização cinza: PMN substituem hemácias + fibrina (dias 4–6)\n4. Resolução: macrófagos limpam debris (1–3 semanas)\nAchado auscultatório: sopro tubário na hepatização; crepitantes na congestão e resolução"
+    },
+    {
+      "front": "Pneumonia vs broncopneumonia — diferença radiológica",
+      "back": "Pneumonia lobar: condensação homogênea que respeita um lobo/segmento, limites nítidos pelas cisuras\nBroncopneumonia: infiltrado multifocal irregular ('manchas'), bilateral, peribrônquico, sem respeitar limites lobares\nEtiologia broncopneumonia: S. aureus, Gram-negativos, vírus"
+    },
+    {
+      "front": "DPOC — critério diagnóstico espirométrico (GOLD)",
+      "back": "VEF₁/CVF < 0,70 pós-broncodilatador = diagnóstico de obstrução\nClassificação de gravidade (pelo VEF₁ % do previsto):\n• GOLD 1 (leve): VEF₁ ≥ 80%\n• GOLD 2 (moderado): 50–79%\n• GOLD 3 (grave): 30–49%\n• GOLD 4 (muito grave): < 30%"
+    },
+    {
+      "front": "Deficiência de alfa-1 antitripsina — padrão e diagnóstico",
+      "back": "Desequilíbrio protease/antiprotease: elastase não inibida → destroi septos\nDistribuição do enfisema: bases (panlobular) → oposto ao tabagismo\nPensar em alfa-1 AT: enfisema em < 45 anos, não fumante ou fumante leve, bases afetadas\nDiagnóstico: dosagem sérica de alfa-1 AT + genótipo (PiZZ = mais grave)"
+    },
+    {
+      "front": "Nódulo pulmonar solitário — critérios de malignidade",
+      "back": "Maior risco de malignidade:\n• Tamanho > 2 cm\n• Espículas/bordas irregulares\n• Localização em lobo superior\n• Crescimento em TC seriada (tempo de dobramento 20–400 dias)\n• História de tabagismo > 20 maços-anos\nMenor risco: calcificação central/lamelar/difusa, forma de pipoca"
+    },
+    {
+      "front": "Comparação: condensação vs derrame pleural ao IPPA",
+      "back": "| Achado | Condensação | Derrame |\n|---|---|---|\n| Frêmito | ↑ | abolido |\n| Percussão | macicez | macicez |\n| MV | sopro tubário | abolido |\n| Broncofonia | ↑ | abolida |\n| Egofonia | + (borda) | + (borda) |\nAmbos têm macicez — diferenciados pelo frêmito e MV"
+    },
+    {
+      "front": "Resolução radiológica da pneumonia — cronograma",
+      "back": "Melhora clínica: 3–5 dias\nResolução radiológica:\n• Paciente jovem sadio: 2–4 semanas\n• Idoso ou imunodeprimido: 4–8 semanas\n• Pneumonia por L. pneumophila (legionella): pode levar meses\nMelhora clínica sem melhora radiológica = normal — não mudar antibiótico"
+    },
+    {
+      "front": "Diferença entre atelectasia e condensação no IPPA",
+      "back": "Semelhantes: macicez, retardo de expansão\nDiferença principal:\n• Condensação: frêmito AUMENTADO (com brônquio pérvio)\n• Atelectasia completa: frêmito ABOLIDO (brônquio obstruído, sem transmissão)\nDesvio mediastinal: ambos para o lado ipsilateral (perda de volume)"
+    },
+    {
+      "front": "Síndrome do desconforto respiratório agudo (SDRA) — critérios de Berlim",
+      "back": "1. Início: dentro de 1 semana de fator precipitante\n2. Imagem bilateral: opacidades não explicadas por derrame/atelectasia\n3. Origem: não cardíaca (ou pressão hidrostática insuficiente para explicar)\n4. PaO₂/FiO₂: leve 200–300, moderada 100–200, grave < 100\nFisiopatologia: dano difuso ao alvéolo → inflamação → perda de surfactante"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T09 — Analgésicos Opioides",
+  "cards": [
+    {"front": "Quais são os 3 tipos de receptores opioides e seus efeitos principais?", "back": "μ (mu): analgesia, euforia, depressão respiratória, dependência. κ (kappa): analgesia espinhal, sedação, disforia. δ (delta): analgesia, modulação do humor"},
+    {"front": "Mecanismo de ação dos opioides nos receptores", "back": "Receptores opioides acoplados à proteína Gi → ↓ AMPc → abertura de canais de K⁺ (hiperpolarização) + fechamento de canais de Ca²⁺ → ↓ transmissão do impulso doloroso"},
+    {"front": "Tríade clássica da intoxicação por opioides", "back": "1) Miose (pupilas puntiformes); 2) Depressão respiratória; 3) Coma/inconsciência"},
+    {"front": "Tratamento da intoxicação aguda por opioides", "back": "Naloxona IV (antagonista μ puro). Dose: 0,4–2 mg IV/IM/SC, pode repetir a cada 2–3 min. Duração curta (30–90 min) → remonitorar paciente (opioidepode durar mais que a naloxona)"},
+    {"front": "Morfina — características farmacológicas", "back": "Protótipo dos opioides agonistas μ. Hidrofílica → atravessa BHE lentamente. Ativo: morfina-6-glucuronídeo (M6G) acumula na IRC. Liberação de histamina → broncoespasmo, prurido, hipotensão"},
+    {"front": "Fentanil vs morfina — diferenças", "back": "Fentanil: muito mais lipofílico → início de ação rápido (IV em 1–2 min). 100x mais potente que morfina. Sem liberação de histamina. Transdermal (72h). Sublingual e intranasal para dor irruptiva"},
+    {"front": "Tramadol — mecanismo dual", "back": "1) Agonista fraco μ; 2) Inibe recaptação de serotonina e noradrenalina (SNRI-like). Menos depressão respiratória. Convulsão em altas doses ou com inibidores de recaptação. Não usar com IMAOs"},
+    {"front": "Codeína — mecanismo de ativação", "back": "Pró-fármaco → metabolizada pelo CYP2D6 em morfina (ativa). Metabolizadores lentos: sem efeito analgésico. Ultrarrápidos: morfina em excesso → risco de toxicidade. Usada em tosse e dor leve/moderada"},
+    {"front": "Efeitos adversos dos opioides (6 principais)", "back": "1) Depressão respiratória (mais perigoso); 2) Constipação (sem tolerância); 3) Náusea/vômito; 4) Sedação; 5) Miose; 6) Retenção urinária. A constipação não tem tolerância — sempre prescrever laxante"},
+    {"front": "O que é tolerância e dependência com opioides?", "back": "Tolerância: ↓ efeito com doses repetidas → necessidade de doses maiores (especialmente analgesia, euforia e depressão respiratória; menos para constipação). Dependência física: abstinência ao suspender"},
+    {"front": "Síndrome de abstinência a opioides — sinais", "back": "Bostejo, lacrimejamento, rinorreia, suor, piloereção ('pele de galinha'), midríase, taquicardia, ansiedade, cólicas, diarreia, vômitos. Não é letal (diferente de álcool/benzodiazepínico)"},
+    {"front": "Metadona — características especiais", "back": "Opioide μ + antagonista NMDA. Meia-vida muito longa (24–60h) → risco de acúmulo e QTc prolongado. Usada na terapia de substituição em dependência de opioides e dor crônica"},
+    {"front": "Buprenorfina — mecanismo especial", "back": "Agonista parcial μ (efeito teto → menos depressão respiratória) + antagonista κ. Usado em TOD (transtorno por uso de opioides) e dor crônica. Menos euforia que agonistas plenos"},
+    {"front": "Naltrexona — diferença da naloxona", "back": "Naltrexona: antagonista μ, oral, longa duração (24h). Usada em manutenção na abstinência de opioides e álcool. Naloxona: IV, curta duração, para overdose aguda"},
+    {"front": "Opioides fracos vs fortes — exemplos", "back": "Fracos (degrau 2 OMS): codeína, tramadol, dihidrocodeína. Fortes (degrau 3 OMS): morfina, fentanil, oxicodona, hidromorfona, metadona, buprenorfina (agonista parcial)"}
+  ]
+}

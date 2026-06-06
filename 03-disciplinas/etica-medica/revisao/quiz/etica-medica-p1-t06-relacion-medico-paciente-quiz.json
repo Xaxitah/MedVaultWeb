@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T06 — Relação Médico-Paciente",
+  "questions": [
+    {
+      "question": "Um médico inicia a consulta dizendo 'Vou explicar o que você tem e o que faremos' sem perguntar ao paciente o que o trouxe. Qual modelo de relação médico-paciente isso representa?",
+      "answerOptions": [
+        {"text": "Deliberativo — decisão compartilhada entre médico e paciente", "isCorrect": false, "rationale": "O deliberativo incluiria o paciente na discussão desde o início — o que não ocorre aqui."},
+        {"text": "Paternalista — o médico assume que sabe o que o paciente precisa sem perguntar", "isCorrect": true, "rationale": "O modelo paternalista: médico define o diagnóstico e o tratamento sem investigar os valores e as expectativas do paciente. Inicia a consulta com conclusões, não com perguntas. É o modelo mais criticado eticamente por ignorar a autonomia do paciente."},
+        {"text": "Informativo — médico informa e paciente decide", "isCorrect": false, "rationale": "O informativo dá ao paciente os dados para decidir — mas aqui o médico decide o que será feito, não apenas informa."},
+        {"text": "Interpretativo — médico ajuda o paciente a entender seus valores", "isCorrect": false, "rationale": "Modelo interpretativo pressupõe diálogo sobre os valores do paciente — o que também está ausente no exemplo."}
+      ],
+      "hint": "O médico decide sem perguntar — qual modelo é esse?"
+    },
+    {
+      "question": "O que caracteriza a 'aliança terapêutica' na relação médico-paciente?",
+      "answerOptions": [
+        {"text": "Acordo formal assinado entre médico e paciente sobre as responsabilidades de cada um no tratamento", "isCorrect": false, "rationale": "Aliança terapêutica não é um contrato formal — é um vínculo de confiança e colaboração mútua que se constrói na relação."},
+        {"text": "Colaboração ativa e confiante entre médico e paciente em direção a objetivos terapêuticos compartilhados", "isCorrect": true, "rationale": "Aliança terapêutica: relação de trabalho colaborativo baseada em confiança, respeito mútuo e objetivos compartilhados. Está associada a: melhor adesão ao tratamento, maior satisfação do paciente, melhores resultados clínicos, menos abandono do tratamento e menos processos por negligência."},
+        {"text": "Relação comercial entre médico e plano de saúde para atendimento do paciente", "isCorrect": false, "rationale": "A relação comercial é o contrato com o plano — aliança terapêutica é o vínculo pessoal e terapêutico com o paciente."},
+        {"text": "Reunião da equipe multiprofissional para definir o plano terapêutico do paciente", "isCorrect": false, "rationale": "Reunião de equipe é boa prática clínica, mas não define aliança terapêutica — que é especificamente a relação médico-paciente (ou profissional-paciente)."}
+      ],
+      "hint": "Aliança = colaboração ativa em direção a um objetivo comum."
+    },
+    {
+      "question": "Um paciente diz que prefere não saber detalhes sobre seu diagnóstico grave — 'o médico pode fazer o que achar melhor'. Como o médico deve agir?",
+      "answerOptions": [
+        {"text": "Insistir em dar todas as informações — o paciente tem direito de saber e o médico tem obrigação de informar", "isCorrect": false, "rationale": "Impor informação que o paciente não quer receber viola a autonomia — que inclui o direito de não saber. O paciente pode renunciar ao direito de receber informação."},
+        {"text": "Respeitar a preferência do paciente de não saber, mas garantir que ele nomeie um representante para decisões", "isCorrect": true, "rationale": "A autonomia inclui o direito de não saber ('right not to know'). O médico deve respeitar essa preferência. Porém, é importante garantir que alguém (familiar, representante nomeado pelo paciente) possa receber informações para decisões futuras. Registrar no prontuário a preferência declarada do paciente."},
+        {"text": "Informar a família em vez do paciente, pois alguém precisa saber", "isCorrect": false, "rationale": "Informar a família sem autorização do paciente viola o sigilo — mesmo que o paciente não queira a informação, não significa que autorizou compartilhá-la com a família."},
+        {"text": "Suspender o tratamento até que o paciente aceite receber as informações", "isCorrect": false, "rationale": "Condicionar o tratamento à aceitação de informações seria coerção — o paciente tem direito de recusar informações sem perder o cuidado."}
+      ],
+      "hint": "Autonomia inclui o direito de saber E o direito de não saber."
+    },
+    {
+      "question": "O que é 'transferência' na relação médico-paciente e por que é relevante clinicamente?",
+      "answerOptions": [
+        {"text": "Processo de transferir o paciente para outro médico ou serviço de saúde", "isCorrect": false, "rationale": "Transferência clínica é diferente — transferência psicológica é um conceito de psicanálise/psicologia clínica aplicado à relação terapêutica."},
+        {"text": "Projeção pelo paciente de sentimentos de figuras passadas (pai, autoridade) no médico — pode gerar idealização ou hostilidade", "isCorrect": true, "rationale": "Transferência (conceito psicanalítico de Freud): o paciente atribui ao médico características e sentimentos que originalmente pertencem a figuras significativas de sua vida. Idealização ('você é o único que pode me salvar') ou hostilidade. Relevante: pode explicar comportamentos irracionais do paciente e deve ser reconhecida (não reforçada) pelo médico."},
+        {"text": "Transferência de responsabilidade legal do médico para o hospital em caso de erro", "isCorrect": false, "rationale": "Responsabilidade legal é questão jurídica — não o conceito de transferência psicológica na relação terapêutica."},
+        {"text": "Encaminhamento para especialista quando o médico de família não consegue resolver o problema", "isCorrect": false, "rationale": "Referência/encaminhamento é prática clínica — transferência psicológica é um fenômeno da dinâmica relacional entre médico e paciente."}
+      ],
+      "hint": "Psicanálise + relação médico-paciente — o paciente projeta no médico quem?"
+    },
+    {
+      "question": "Qual é o limite ético mais importante que o médico deve manter na relação com o paciente?",
+      "answerOptions": [
+        {"text": "Nunca revelar informações pessoais suas ao paciente", "isCorrect": false, "rationale": "Autodesvelação seletiva do médico pode ser parte de relação humanizada — o limite central não é sobre informações pessoais do médico."},
+        {"text": "Não estabelecer relação afetiva-sexual ou exploratória com o paciente", "isCorrect": true, "rationale": "O limite ético fundamental na relação médico-paciente é a não exploração da vulnerabilidade do paciente: relação sexual, exploração financeira, dependência emocional intencional. O CEM proíbe explicitamente. A relação terapêutica cria um desequilíbrio de poder que exige proteção do paciente — qualquer exploração desse desequilíbrio é violação grave."},
+        {"text": "Sempre manter distância emocional para preservar a objetividade clínica", "isCorrect": false, "rationale": "Distância emocional excessiva prejudica a relação terapêutica — o médico deve ter empatia (reconhecer e validar emoções) sem se tornar distante nem excessivamente envolvido."},
+        {"text": "Nunca expressar suas próprias emoções ou opiniões durante a consulta", "isCorrect": false, "rationale": "Expressar emoções com autenticidade (compaixão, preocupação) e opiniões profissionais faz parte de uma relação humana e profissional — o limite não é emocional, mas de exploração da vulnerabilidade."}
+      ],
+      "hint": "Qual tipo de limite protege o paciente da exploração de sua vulnerabilidade?"
+    },
+    {
+      "question": "O modelo 'centrado no paciente' difere do modelo 'centrado na doença' em que:",
+      "answerOptions": [
+        {"text": "O modelo centrado no paciente ignora os achados clínicos objetivos", "isCorrect": false, "rationale": "Centrado no paciente não ignora dados objetivos — integra-os com a experiência subjetiva. Não é menos rigoroso, é mais completo."},
+        {"text": "Inclui a experiência subjetiva da doença, os valores e o contexto biopsicossocial do paciente nas decisões clínicas", "isCorrect": true, "rationale": "Medicina centrada no paciente (Stewart et al.): incorpora além da doença (disease) a experiência do paciente com a doença (illness) — seus medos, expectativas, valores, contexto familiar e social. Pesquisas mostram que melhora a satisfação, a adesão ao tratamento e os resultados clínicos — sem aumentar o tempo de consulta quando bem treinado."},
+        {"text": "Prioriza as preferências do paciente sobre o julgamento clínico do médico em todos os casos", "isCorrect": false, "rationale": "A medicina centrada no paciente integra as perspectivas — não subordina o julgamento clínico às preferências, mas considera ambos. É um equilíbrio, não uma hierarquia."},
+        {"text": "É aplicável apenas em consultas de atenção primária, não em especialidades", "isCorrect": false, "rationale": "A abordagem centrada no paciente é relevante em todas as especialidades — em oncologia, cirurgia, psiquiatria. A forma de aplicação varia, mas o princípio é universal."}
+      ],
+      "hint": "Disease vs. illness — qual a diferença?"
+    },
+    {
+      "question": "Por que é eticamente problemático o médico aceitar presentes de grande valor de pacientes?",
+      "answerOptions": [
+        {"text": "Porque cria obrigação de tratamento diferenciado que pode comprometer a equidade e a objetividade clínica", "isCorrect": true, "rationale": "Presentes de valor significativo criam obrigação implícita — o médico pode inconscientemente beneficiar o paciente que presenteia em detrimento de outros, ou evitar decisões difíceis (como encaminhar ou dar diagnóstico ruim). O CEM proíbe presentes que possam comprometer a independência profissional. Presentes simbólicos de pequeno valor são geralmente aceitos socialmente."},
+        {"text": "Porque é proibido pela legislação tributária — bens recebidos devem ser declarados", "isCorrect": false, "rationale": "A questão tributária é secundária — o problema central é ético: conflito de interesses e comprometimento da objetividade clínica."},
+        {"text": "Porque outros pacientes podem ficar com inveja e prejudicar a relação com o médico", "isCorrect": false, "rationale": "O problema não é a percepção de outros pacientes, mas a comprometimento real da imparcialidade do médico que recebe o presente."},
+        {"text": "Porque o médico pode ser acusado de corrupção passiva perante o conselho", "isCorrect": false, "rationale": "Embora haja implicações regulatórias, o fundamento ético central é o conflito de interesses — não apenas a possibilidade de punição."}
+      ],
+      "hint": "Presentes criam obrigações implícitas — o que isso faz com a objetividade do médico?"
+    },
+    {
+      "question": "Em qual situação o médico pode legalmente encerrar o vínculo com um paciente sem configurar abandono?",
+      "answerOptions": [
+        {"text": "Quando o paciente não paga a consulta", "isCorrect": false, "rationale": "Negar atendimento por falta de pagamento, especialmente em emergências, é antiético e pode ser crime. O vínculo não pode ser rompido apenas por questão financeira sem garantir continuidade."},
+        {"text": "Com aviso prévio adequado, indicação de outro profissional e entrega do prontuário — em situação de não urgência", "isCorrect": true, "rationale": "O médico pode encerrar a relação por razões legítimas (incompatibilidade, mudança de cidade, aposentadoria) se: avisar com antecedência razoável; indicar outro profissional qualificado; fornecer cópia do prontuário; garantir que o paciente não fique sem cuidados. Nunca encerrar em emergência ou sem garantir continuidade."},
+        {"text": "Quando o paciente não adere ao tratamento prescrito", "isCorrect": false, "rationale": "Não adesão é motivo para diálogo sobre barreiras ao tratamento — não justifica abandono. O médico deve explorar os motivos e ajustar o plano terapêutico."},
+        {"text": "Quando o médico discorda dos valores pessoais do paciente", "isCorrect": false, "rationale": "Discordância de valores não é motivo ético para abandono — o médico não pode discriminar pacientes com base em valores pessoais (exceto em casos de objeção de consciência, com encaminhamento garantido)."}
+      ],
+      "hint": "Abandono = interromper sem garantir continuidade; encerramento legítimo = garantir transição adequada."
+    },
+    {
+      "question": "O que é 'medicina defensiva' e qual seu impacto ético?",
+      "answerOptions": [
+        {"text": "Prática de manter registros detalhados do prontuário para proteção em processos judiciais — eticamente neutra", "isCorrect": false, "rationale": "Registros adequados são obrigação ética — não são medicina defensiva. Medicina defensiva é algo mais específico e problemático."},
+        {"text": "Prática de solicitar exames e procedimentos desnecessários para proteção legal do médico, não pelo benefício do paciente — viola não maleficência e gera custos desnecessários", "isCorrect": true, "rationale": "Medicina defensiva: médico solicita exames, encaminha desnecessariamente ou evita procedimentos necessários, motivado pelo medo de processos judiciais — não pela necessidade clínica do paciente. Viola não maleficência (procedimentos desnecessários têm riscos) e justiça (consome recursos públicos). Consequência da judicialização excessiva da medicina."},
+        {"text": "Protocolo de segurança que impede o médico de cometer erros — eticamente positivo", "isCorrect": false, "rationale": "Medicina defensiva não é protocolo de segurança — é um comportamento guiado pelo medo de processos, não pela segurança do paciente."},
+        {"text": "Recusa de atendimento a pacientes com condições de alto risco para evitar responsabilidade", "isCorrect": false, "rationale": "Recusa de atendimento é um comportamento que pode ocorrer como parte da medicina defensiva, mas não é sua definição principal."}
+      ],
+      "hint": "O motivador da ação é o medo do médico, não o benefício do paciente."
+    },
+    {
+      "question": "Como diferenças culturais entre médico e paciente podem impactar a relação terapêutica?",
+      "answerOptions": [
+        {"text": "Diferenças culturais não afetam a relação médico-paciente — a medicina é universal", "isCorrect": false, "rationale": "Essa afirmação é equivocada — diferenças culturais afetam profundamente a comunicação, a adesão e a relação de confiança."},
+        {"text": "Podem gerar mal-entendidos, desconfiança e falta de adesão — o médico deve ser culturalmente sensível sem impor seus próprios valores", "isCorrect": true, "rationale": "Diferentes culturas têm: diferentes concepções de doença e cura, diferentes papéis da família na decisão, diferentes formas de expressar dor e sofrimento, diferentes atitudes em relação à autoridade médica, práticas religiosas que afetam o tratamento. Competência cultural = reconhecer e adaptar a comunicação, respeitando a dignidade do paciente sem abrir mão de padrões éticos universais."},
+        {"text": "O médico deve sempre seguir as práticas culturais do paciente, mesmo que conflitem com a medicina baseada em evidências", "isCorrect": false, "rationale": "Competência cultural não significa aceitar qualquer prática — significa comunicar-se efetivamente e respeitar os valores, enquanto mantém padrões éticos e científicos."},
+        {"text": "O intérprete deve sempre ser um familiar do paciente para garantir comunicação adequada", "isCorrect": false, "rationale": "Usar familiares como intérpretes é problemático: questões de sigilo, imprecisões na tradução, influência emocional. Intérpretes profissionais certificados são a melhor prática."}
+      ],
+      "hint": "Competência cultural = adaptar a comunicação sem abrir mão da ética."
+    }
+  ]
+}

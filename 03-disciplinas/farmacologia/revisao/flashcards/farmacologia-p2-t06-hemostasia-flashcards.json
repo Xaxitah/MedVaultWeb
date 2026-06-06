@@ -1,0 +1,20 @@
+{
+  "title": "Farmacologia P2 — T06 — Hemostasia e Antitrombóticos",
+  "cards": [
+    {"front": "Quais são os 4 grupos de fármacos antitrombóticos?", "back": "1) Antiagregantes plaquetários; 2) Anticoagulantes parenterais (heparina, LMWH, fondaparinux); 3) Anticoagulantes orais (varfarina, DOACs); 4) Fibrinolíticos (tPA, estreptoquinase)"},
+    {"front": "Mecanismo do AAS (ácido acetilsalicílico) como antiagregante", "back": "Inibe irreversivelmente a COX-1 plaquetária → ↓ síntese de TXA₂ (tromboxano A₂ → vasoconstrição + agregação). Efeito permanente na plaqueta (sem núcleo — não sintetiza nova COX)"},
+    {"front": "Quanto tempo leva para recuperar a função plaquetária após AAS?", "back": "7–10 dias (tempo de vida das plaquetas). Por isso suspender 7–10 dias antes de cirurgias com risco de sangramento"},
+    {"front": "Clopidogrel — mecanismo e uso", "back": "Pró-fármaco → metabolizado pelo CYP2C19 → bloqueia receptor P2Y₁₂ (ADP) nas plaquetas → inibe agregação. Usado em síndrome coronariana aguda, stents, AVC isquêmico"},
+    {"front": "Ticagrelor e prasugrel vs clopidogrel — vantagem", "back": "Ticagrelor: bloqueio reversível de P2Y₁₂, não precisa de ativação metabólica → efeito mais previsível. Prasugrel: pró-fármaco com ativação mais eficiente. Ambos mais potentes que clopidogrel"},
+    {"front": "Mecanismo da heparina não fracionada (HNF)", "back": "Ativa a antitrombina III → ↑ inibição dos fatores IIa (trombina), Xa, IXa, XIa, XIIa. Monitorar com TTPA (tempo de tromboplastina parcial ativada)"},
+    {"front": "LMWH (heparina de baixo peso molecular) vs HNF", "back": "LMWH (enoxaparina, dalteparina): maior efeito anti-Xa, menor anti-IIa, biodisponibilidade SC consistente, sem necessidade de monitorização rotineira. Reverter com protamina (parcialmente)"},
+    {"front": "Fondaparinux — mecanismo e vantagem", "back": "Inibidor seletivo do fator Xa via antitrombina. SC, 1x/dia. Sem TIH (trombocitopenia induzida por heparina). Não revertido pela protamina"},
+    {"front": "TIH — trombocitopenia induzida por heparina — o que é?", "back": "Anticorpos contra complexo heparina-fator plaquetário 4 (PF4) → ativação plaquetária → trombose paradoxal + trombocitopenia. Suspender heparina IMEDIATAMENTE e trocar por argatroban ou fondaparinux"},
+    {"front": "Varfarina — mecanismo de ação", "back": "Antagonista da vitamina K → inibe os fatores dependentes de vitamina K: II, VII, IX, X, proteína C e S. Monitorar com INR (RNI). Início de ação em 3–5 dias (eliminação dos fatores já formados)"},
+    {"front": "Interações da varfarina (mais importantes)", "back": "↑ efeito (↑ sangramento): amiodarona, metronidazol, fluconazol, ciprofloxacino, AINEs. ↓ efeito: rifampicina, fenitoína, carbamazepina, barbitúricos, vitamina K em excesso"},
+    {"front": "DOACs — quais são e mecanismos", "back": "Inibidores diretos de Xa: apixabana, rivaroxabana, edoxabana. Inibidor direto de trombina (IIa): dabigatrana. Vantagem: dose fixa, sem monitorização rotineira, poucos alimentos/medicamentos de interação"},
+    {"front": "Reversão dos anticoagulantes — qual reversor para cada um?", "back": "Varfarina: vitamina K IV + CCP (complex. protromb. concentr.) ou PFC; HNF: protamina; LMWH: protamina (parcial); Dabigatrana: idarucizumabe; Apixabana/rivaroxabana: andexanet alfa"},
+    {"front": "Fibrinolíticos — mecanismo e indicações", "back": "tPA (alteplase), estreptoquinase → convertem plasminogênio em plasmina → dissolução da fibrina. Indicados em: IAM com CSST sem ICP disponível, AVC isquêmico (<4,5h), TEP maciço"},
+    {"front": "Contraindicações absolutas aos fibrinolíticos", "back": "Cirurgia/trauma recente (<3 meses), AVC hemorrágico, neoplasia intracraniana, sangramento ativo, PA >185/110 refratária, dissecção de aorta, punção não compressível recente"}
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Semiologia Médica P2 — T03: Estertores e Ruídos Adventícios",
+  "cards": [
+    {
+      "front": "Classificação dos ruídos adventícios — contínuos vs descontínuos",
+      "back": "CONTÍNUOS (duração > 250ms):\n• Sibilos (wheezes): agudos, musicais, via aérea pequena/média estreitada\n• Roncos (rhonchi): graves, via aérea grande com secreção\n• Estridor: alto, laringe/traqueia, inspiratório\nDESCONTÍNUOS (estalidos):\n• Crepitantes finos: agudos, alvéolos\n• Subcrepitantes (grossos): baixos, brônquios com secreção"
+    },
+    {
+      "front": "Crepitantes finos — mecanismo, características e causas",
+      "back": "Mecanismo: abertura explosiva de alvéolos colabados na inspiração tardia\nSom: como rasgar velcro, agudo, curto\nFase: inspiração tardia\nTosse: NÃO muda\nCausas: fibrose pulmonar (basais, crônicos), pneumonia, EAP, sarcoidose"
+    },
+    {
+      "front": "Subcrepitantes (crepitantes grossos) — mecanismo, características e causas",
+      "back": "Mecanismo: bolhas de ar em secreção espessa em brônquios médios\nSom: mais grave e 'úmido' que crepitantes finos\nFase: inspiração precoce (e também expiração)\nTosse: MUDA ou desaparece\nCausas: bronquiectasia, abscesso pulmonar, bronquite supurativa"
+    },
+    {
+      "front": "Sibilos (wheezes) — mecanismo e causas",
+      "back": "Mecanismo: fluxo turbulento através de via aérea estreitada\nSom: agudo, musical, contínuo\nFase: predominantemente expiratória (ou bifásica)\nTosse: NÃO muda (não é secreção)\nCausas: asma (difuso), DPOC exacerbado, corpo estranho (localizado), tumor (localizado)"
+    },
+    {
+      "front": "Roncos (rhonchi) — diferença dos sibilos",
+      "back": "Mecanismo: secreção espessa em vias aéreas grandes\nSom: GRAVE (baixa frequência), musical\nFase: inspiração e/ou expiração\nTosse: MUDA (move a secreção)\nCausas: bronquite, aspiração, abscesso drenando\nDistinguir: sibilos = estreitamento (sem secreção); roncos = secreção"
+    },
+    {
+      "front": "Atrito pleural — características e diagnóstico diferencial com crepitantes",
+      "back": "Mecanismo: pleuras inflamadas deslizando uma sobre a outra\nSom: rangido de couro ou caminhada na neve\nFase: BIFÁSICO (inspiração E expiração)\nTosse: NÃO muda\nLocalização: ponto fixo na parede torácica\nDiagnóstico diferencial: crepitantes só são inspiratórios; atrito é bifásico e mais local"
+    },
+    {
+      "front": "Estridor — características e urgência clínica",
+      "back": "Origem: laringe ou traqueia proximal\nSom: alto, agudo, audível SEM estetoscópio\nFase: predominantemente inspiratório\nCausas: croup (laringotraqueobronquite viral), epiglotite, anafilaxia, corpo estranho, anel vascular\nUrgência: obstrução pode ser rapidamente fatal → avaliar e tratar imediatamente"
+    },
+    {
+      "front": "Quais ruídos MUDAM vs NÃO MUDAM com tosse?",
+      "back": "MUDAM com tosse (= origem em secreção):\n• Roncos\n• Subcrepitantes (crepitantes grossos)\n\nNÃO MUDAM com tosse (= não é secreção):\n• Sibilos (broncoespasmo)\n• Crepitantes finos (alvéolos)\n• Atrito pleural (pleura)"
+    },
+    {
+      "front": "Tríade auscultatória da pneumonia lobar",
+      "back": "1. Sopro tubário (brônquico): som alto, tubular, expiração ≥ inspiração\n2. Broncofonia/egofonia aumentadas: parênquima sólido transmite a voz\n3. Crepitantes finos (fase de resolução)\nMais: macicez à percussão, frêmito aumentado"
+    },
+    {
+      "front": "Tríade auscultatória da asma em crise",
+      "back": "1. Sibilos difusos e bilaterais (predominantemente expiratórios)\n2. MV diminuído (hiperinsuflação)\n3. Expiração prolongada\nSinal de gravidade: 'tórax silencioso' = obstrução tão grave que não há fluxo suficiente para gerar sibilos"
+    },
+    {
+      "front": "O 'tórax silencioso' na asma grave — o que significa?",
+      "back": "Ausência de sibilos em crise asmática grave indica que o fluxo aéreo está tão reduzido que não há turbulência suficiente para gerar som.\nNÃO significa melhora — é sinal de PIORA GRAVE (iminente parada respiratória).\nContraintuitivo: 'silêncio' = alarme máximo."
+    },
+    {
+      "front": "Resumo: relação dos ruídos com patologias principais",
+      "back": "Crepitantes finos basais crônicos: fibrose pulmonar idiopática\nCrepitantes finos agudos focais: pneumonia\nCrepitantes finos + piora ao deitar: ICC (edema)\nSibilos difusos: asma, DPOC\nSubcrepitantes: bronquiectasia, abscesso\nAtrito pleural: pleurite\nEstridor: via aérea superior"
+    }
+  ]
+}

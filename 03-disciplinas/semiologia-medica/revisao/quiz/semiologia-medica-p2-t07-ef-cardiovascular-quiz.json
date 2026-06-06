@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T07: Exame Físico Cardiovascular",
+  "questions": [
+    {
+      "question": "O ictus cordis normal é palpável em qual localização e qual o tamanho máximo considerado normal?",
+      "answerOptions": [
+        {"text": "5° espaço intercostal esquerdo na linha hemiclavicular (ou medial a ela); diâmetro máximo de 2,5 cm (1 polpa digital)", "isCorrect": true, "rationale": "O ictus normal corresponde à ponta do ventrículo esquerdo. É palpável no 5° EIC esquerdo na LHC ou medial a ela. Diâmetro > 2,5 cm e/ou localização lateral à LHC sugerem cardiomegalia."},
+        {"text": "4° espaço intercostal direito na linha paraesternal; sem limite de tamanho", "isCorrect": false, "rationale": "O ictus é à esquerda, não à direita — e há limite de tamanho (2,5 cm)."},
+        {"text": "2° espaço intercostal esquerdo na linha hemiclavicular — área da base cardíaca", "isCorrect": false, "rationale": "2° EIC esquerdo é o foco pulmonar (ausculta da valva pulmonar) — não o ictus cordis."},
+        {"text": "6° espaço intercostal esquerdo na linha axilar anterior; > 5 cm é normal em atletas", "isCorrect": false, "rationale": "6° EIC na axilar anterior pode ser o ictus de coração com desvio — não é a posição normal."}
+      ],
+      "hint": "Ictus = ponta do VE = 5° EIC esquerdo na LHC. Polpa digital = normal."
+    },
+    {
+      "question": "As bulhas cardíacas B1 e B2 — o que cada uma representa e onde é mais bem auscultatada?",
+      "answerOptions": [
+        {"text": "B1 = fechamento de mitral + tricúspide (início da sístole) — melhor no ápice; B2 = fechamento de aórtica + pulmonar (início da diástole) — melhor na base", "isCorrect": true, "rationale": "B1 (TUM) = fechamento das valvas atrioventriculares no início da contração ventricular. B2 (TÁ) = fechamento das valvas semilunares no início da diástole. B1 é mais audível no ápice (mitral); B2 na base (aórtica e pulmonar)."},
+        {"text": "B1 = abertura de mitral; B2 = fechamento de aórtica", "isCorrect": false, "rationale": "B1 é o FECHAMENTO da mitral (não abertura) no início da sístole."},
+        {"text": "B1 = mais alta na base; B2 = mais alta no ápice", "isCorrect": false, "rationale": "B1 é mais audível no ÁPICE (mitral); B2 é mais audível na BASE (aórtica/pulmonar)."},
+        {"text": "B1 e B2 representam o início e fim da sístole respectivamente — são produzidas pelo músculo cardíaco", "isCorrect": false, "rationale": "As bulhas são produzidas pelo fechamento das valvas — não pela contração muscular diretamente."}
+      ],
+      "hint": "B1 = 'TUM' (fecha AV) = início da sístole = ápice. B2 = 'TÁ' (fecha semilunares) = fim da sístole = base."
+    },
+    {
+      "question": "A B3 (terceira bulha) pode ser fisiológica em certas condições. Quando é patológica e o que indica?",
+      "answerOptions": [
+        {"text": "Patológica em > 40 anos — indica disfunção diastólica/sistólica do VE (ICC, cardiomiopatia dilatada) — produzida pelo enchimento rápido ventricular em câmara dilatada ou rígida", "isCorrect": true, "rationale": "B3 no início da diástole, audível no ápice com o diafragma. É fisiológica em < 40 anos e na gravidez. Em > 40 anos, B3 é sinal de ICC com disfunção ventricular esquerda (um dos critérios de Framingham maior)."},
+        {"text": "B3 é sempre patológica e indica estenose mitral grave", "isCorrect": false, "rationale": "B3 não é sempre patológica — é fisiológica em jovens. E estenose mitral causa estalido de abertura, não B3."},
+        {"text": "B3 é ouvida na telediástole logo antes de B1 — indica hipertensão arterial", "isCorrect": false, "rationale": "B3 é no INÍCIO da diástole (protodiastólica) — logo após B2. B4 (telediástólica) é que vem antes de B1."},
+        {"text": "B3 indica ruptura de corda tendínea — é sinal de regurgitação valvar aguda", "isCorrect": false, "rationale": "B3 não é específica de ruptura de corda — indica disfunção ventricular em geral."}
+      ],
+      "hint": "B3 fisiológica = jovens. Patológica em adultos > 40 = ICC (Framingham maior)."
+    },
+    {
+      "question": "A B4 (quarta bulha) — quando ocorre e o que indica?",
+      "answerOptions": [
+        {"text": "Pré-sistólica (contração atrial forçada em ventrículo não complacente) — indica HAS, hipertrofia do VE, estenose aórtica ou cardiomiopatia hipertrófica", "isCorrect": true, "rationale": "B4 ocorre imediatamente antes de B1, gerada pela contração atrial em câmara ventricular rígida (complacência reduzida). É sempre patológica — indica hipertrofia ou rigidez ventricular. Ausente em FA (sem contração atrial efetiva)."},
+        {"text": "Protodiastólica — indica cardiomiopatia dilatada com VE aumentado", "isCorrect": false, "rationale": "Protodiastólica é a B3 — B4 é PRÉ-sistólica (telediástólica)."},
+        {"text": "B4 é fisiológica em atletas de alto nível por hipertrofia fisiológica", "isCorrect": false, "rationale": "B4 é SEMPRE patológica — indica rigidez/hipertrofia ventricular não fisiológica."},
+        {"text": "B4 está presente em fibrilação atrial — associada à falta de contração atrial", "isCorrect": false, "rationale": "B4 requer contração atrial ativa — na FA não há contração atrial organizada, portanto B4 ESTÁ AUSENTE."}
+      ],
+      "hint": "B4 = pré-sistólica = átrio empurrando em VE rígido = HAS, HVE, estenose aórtica."
+    },
+    {
+      "question": "Os sopros cardíacos são avaliados por 6 características. Qual delas é a intensidade segundo a escala de Levine?",
+      "answerOptions": [
+        {"text": "Grau 1: apenas com estetoscópio em ambiente silencioso; Grau 3: alto sem frêmito; Grau 4: com frêmito; Grau 6: audível sem estetoscópio", "isCorrect": true, "rationale": "Escala de Levine (1–6): 1=muito suave; 2=suave; 3=moderado sem frêmito; 4=com frêmito palpável; 5=muito alto com frêmito, audível com borda do estetoscópio; 6=audível sem estetoscópio."},
+        {"text": "Grau 1: audível sem estetoscópio; Grau 6: apenas com estetoscópio em silêncio", "isCorrect": false, "rationale": "A escala está invertida — grau 1 é o mais suave, grau 6 o mais intenso."},
+        {"text": "A intensidade do sopro correlaciona diretamente com a gravidade da lesão valvar", "isCorrect": false, "rationale": "A intensidade do sopro NÃO correlaciona com gravidade — um sopro suave de IM aguda pode ser mais grave do que um sopro alto de IM crônica compensada."},
+        {"text": "Sopros grau 1–2 são sempre funcionais (sem lesão orgânica)", "isCorrect": false, "rationale": "Sopros suaves podem ser orgânicos — a intensidade não define etiologia."}
+      ],
+      "hint": "Levine 1–6: frêmito começa no grau 4. Grau 6 = sem estetoscópio."
+    },
+    {
+      "question": "O pulso paradoxal de Kussmaul (redução da PA sistólica > 10 mmHg na inspiração) é encontrado em qual condição cardíaca?",
+      "answerOptions": [
+        {"text": "Tamponamento cardíaco — o líquido pericárdico impede a expansão do VD na inspiração, causando interdependência ventricular e queda da PA sistólica", "isCorrect": true, "rationale": "No tamponamento, a pressão pericárdica comprime o coração. Na inspiração, o VD expande (enchimento venoso aumenta) mas comprime o VE — reduz o volume sistólico esquerdo → queda da PA > 10 mmHg. Também ocorre em pericardite constritiva e asma grave."},
+        {"text": "Estenose aórtica grave — a válvula não abre adequadamente na inspiração", "isCorrect": false, "rationale": "A estenose aórtica não causa pulso paradoxal — causa pulso parvus et tardus (pequeno e lento)."},
+        {"text": "Insuficiência aórtica — o refluxo cria variação pressórica com a respiração", "isCorrect": false, "rationale": "Insuficiência aórtica causa pulso de Corrigan (aumento da pressão de pulso) — não pulso paradoxal."},
+        {"text": "Fibrilação atrial — as variações do ciclo RR criam variação da PA", "isCorrect": false, "rationale": "FA causa variações de PA por irregularidade do ciclo cardíaco — mas não é o pulso paradoxal de Kussmaul respiratório."}
+      ],
+      "hint": "Pulso paradoxal = tamponamento cardíaco = líquido pericárdico comprime o coração."
+    },
+    {
+      "question": "O frêmito cardíaco é o correlato palpável de um achado auscultatório. O que representa?",
+      "answerOptions": [
+        {"text": "O correlato palpável de um sopro de grau ≥ 4 de Levine — indica que o sopro é intenso o suficiente para gerar vibração perceptível à palpação", "isCorrect": true, "rationale": "Frêmito cardíaco = sopro ≥ grau 4 de Levine. É sentido como um 'ronronar de gato' à palpação do precórdio. Sua localização indica a origem: ápice = mitral; base esquerda = pulmonar; base direita = aórtico."},
+        {"text": "O correlato palpável de B3 — indica ICC descompensada", "isCorrect": false, "rationale": "B3 não é audível o suficiente para ser palpável na maioria dos casos — frêmito é o correlato de sopros intensos."},
+        {"text": "Frêmito é o ictus cardíaco palpável — indica cardiomegalia", "isCorrect": false, "rationale": "Frêmito e ictus são diferentes: ictus = impulso apical; frêmito = vibração de sopro intenso."},
+        {"text": "Frêmito indica sempre doença valvar grave e requer cirurgia imediata", "isCorrect": false, "rationale": "Frêmito indica sopro intenso mas a gravidade depende da valvopatia específica — não indica cirurgia imediata automaticamente."}
+      ],
+      "hint": "Frêmito = sopro ≥ 4 de Levine = 'ronronar' palpável."
+    },
+    {
+      "question": "A área de ausculta do foco aórtico fica no 2° espaço intercostal direito na linha paraesternal. Mas a insuficiência aórtica é melhor auscultada em qual posição?",
+      "answerOptions": [
+        {"text": "Sentado, inclinado à frente com o tórax nu, em apneia após expiração — o sopro proto-diastólico de IA fica mais próximo do estetoscópio", "isCorrect": true, "rationale": "O sopro da insuficiência aórtica é suave e proto-diastólico — facilmente perdido. Inclinado à frente, o coração se aproxima da parede torácica anterior e o mediastino se organiza melhor. Expiração maximiza o som."},
+        {"text": "Em decúbito lateral esquerdo — mesma posição para a estenose mitral", "isCorrect": false, "rationale": "Decúbito lateral esquerdo é para o sopro da estenose mitral (rumor diastólico de baixa frequência) — não da IA."},
+        {"text": "Em decúbito dorsal com o estetoscópio no 4° EIC esquerdo na linha paraesternal", "isCorrect": false, "rationale": "O 4° EIC esquerdo (foco de Erb) pode captar o sopro da IA, mas a posição de inclinação à frente é mais eficaz."},
+        {"text": "A posição não influencia a ausculta da IA — qualquer posição é equivalente", "isCorrect": false, "rationale": "A posição influencia significativamente a detecção de sopros suaves como o da IA."}
+      ],
+      "hint": "IA = inclinado à frente + expiração. EM = decúbito lateral esquerdo + esforço."
+    },
+    {
+      "question": "A pressão venosa jugular (PVJ) — qual veia é usada para estimativa e o que seu aumento indica?",
+      "answerOptions": [
+        {"text": "Veia jugular interna direita; PVJ > 4 cm acima do ângulo esternal (ângulo de Louis) em 45° indica hipertensão venosa central (ICC direita, tamponamento, pericardite constritiva)", "isCorrect": true, "rationale": "A jugular interna direita reflete diretamente a pressão atrial direita sem válvulas interpostas. Avaliada com paciente a 45°. Distensão > 4 cm acima do ângulo de Louis indica PAD elevada."},
+        {"text": "Veia jugular externa esquerda; elevação indica hipertensão arterial sistêmica", "isCorrect": false, "rationale": "A jugular interna direita (não externa, não esquerda) é o padrão. Hipertensão venosa não reflete HAD diretamente na jugular externa."},
+        {"text": "Veia subclávia; avaliada com paciente em decúbito dorsal a 0°", "isCorrect": false, "rationale": "A subclávia não é visível à inspeção. E 45° é o ângulo padrão — a 0° a jugular estaria distendida falsamente."},
+        {"text": "A PVJ não tem valor clínico — o ultrassom bedside substituiu completamente esse exame", "isCorrect": false, "rationale": "A PVJ ainda tem valor clínico importante e é parte do exame físico cardiovascular — o US bedside complementa mas não substitui o exame."}
+      ],
+      "hint": "PVJ = jugular interna direita + paciente a 45°. > 4 cm acima de Louis = hipertensão venosa."
+    },
+    {
+      "question": "O sinal de Kussmaul (aumento da PVJ na inspiração) está presente no tamponamento cardíaco?",
+      "answerOptions": [
+        {"text": "NÃO no tamponamento — sinal de Kussmaul é clássico da pericardite constritiva; no tamponamento a PVJ cai na inspiração (normal) ou varia pouco", "isCorrect": true, "rationale": "No Kussmaul: inspiração normalmente reduz PVJ (sangue entra no tórax). Na pericardite constritiva, a casca rígida não permite expansão do VD na inspiração → PVJ sobe (paradoxal). No tamponamento, há pulso paradoxal mas o sinal de Kussmaul geralmente está ausente."},
+        {"text": "SIM no tamponamento — sinal de Kussmaul e pulso paradoxal ocorrem juntos no tamponamento", "isCorrect": false, "rationale": "Sinal de Kussmaul é mais característico da pericardite constritiva. Tamponamento = pulso paradoxal + tríade de Beck."},
+        {"text": "Sinal de Kussmaul não existe — é um achado inventado", "isCorrect": false, "rationale": "O sinal de Kussmaul é real e tem importância clínica, especialmente na pericardite constritiva."},
+        {"text": "Sinal de Kussmaul indica insuficiência ventricular direita isolada sem pericárdio comprometido", "isCorrect": false, "rationale": "ICC direita isolada pode causar distensão jugular mas o sinal de Kussmaul clássico (aumento na inspiração) é da pericardite constritiva."}
+      ],
+      "hint": "Kussmaul = PVJ sobe na inspiração = pericardite constritiva. Tamponamento = pulso paradoxal."
+    }
+  ]
+}

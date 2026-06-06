@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T05: Síndromes Parenquimatosas",
+  "questions": [
+    {
+      "question": "O enfisema pulmonar causa destruição dos septos alveolares com alargamento dos espaços aéreos distais. Qual é o mecanismo fisiopatológico central no enfisema por tabagismo?",
+      "answerOptions": [
+        {"text": "Desequilíbrio protease/antiprotease → neutrófilos e macrófagos liberam elastases que destroem a elastina dos septos alveolares", "isCorrect": true, "rationale": "A fumaça do cigarro recrutam neutrófilos que liberam elastase. Normalmente a alfa-1 antitripsina inibe a elastase — mas a fumaça oxida e inativa a alfa-1 AT, permitindo destruição dos septos."},
+        {"text": "Hipersecreção de muco que obstrui os bronquíolos terminais, causando colapso alveolar distal", "isCorrect": false, "rationale": "Hipersecreção de muco define a bronquite crônica — não o enfisema. O enfisema é destruição, não obstrução por muco."},
+        {"text": "Inflamação eosinofílica crônica que espessa os septos e reduz o espaço aéreo", "isCorrect": false, "rationale": "Eosinófilos são típicos da asma — o enfisema por tabagismo é mediado por neutrófilos/macrófagos."},
+        {"text": "Colonização bacteriana crônica que causa fibrose dos septos alveolares", "isCorrect": false, "rationale": "Fibrose septal é achado de doenças intersticiais — não do enfisema, que é destruição com perda de septos."}
+      ],
+      "hint": "Tabaco → neutrófilos → elastases → destroem a elastina (suporte dos alvéolos)."
+    },
+    {
+      "question": "Na atelectasia por obstrução (reabsortiva), qual é a sequência de eventos que leva ao colapso?",
+      "answerOptions": [
+        {"text": "Obstrução brônquica → ar distal é reabsorvido pelo sangue capilar → alvéolos colabam → colapso do parênquima", "isCorrect": true, "rationale": "Com o brônquio obstruído, o ar distal é gradativamente reabsorvido pela circulação capilar (O₂, N₂, CO₂). Sem ar para manter a distensão, os alvéolos colabam — atelectasia de reabsorção."},
+        {"text": "Líquido pleural comprime o parênquima adjacente, colapsando-o", "isCorrect": false, "rationale": "Isso descreve a atelectasia de compressão (por derrame ou pneumotórax) — não a atelectasia reabsortiva."},
+        {"text": "Perda de surfactante causa aumento da tensão superficial → colapso", "isCorrect": false, "rationale": "Isso descreve a síndrome do desconforto respiratório neonatal (SDRNL) ou SDRA — não a atelectasia obstrutiva típica."},
+        {"text": "Fibrose pulmonar progressiva traciona e colapsa os alvéolos adjacentes", "isCorrect": false, "rationale": "Isso seria atelectasia por tração — mecanismo distinto da obstrução reabsortiva."}
+      ],
+      "hint": "Brônquio obstruído → ar reabsorvido → vácuo → colapso."
+    },
+    {
+      "question": "Na pneumonia lobar por Streptococcus pneumoniae, qual é a progressão das fases anatomopatológicas e os achados clínicos correspondentes?",
+      "answerOptions": [
+        {"text": "Congestão → hepatização vermelha (exsudato rico em hemácias) → hepatização cinza (PMN) → resolução; achados: crepitantes precoces → sopro tubário → crepitantes de retorno", "isCorrect": true, "rationale": "4 fases: (1) Congestão = hiperemia; (2) Hepatização vermelha = fibrina + hemácias → parênquima como fígado; (3) Hepatização cinza = PMN substituem hemácias; (4) Resolução = macrófagos limpam o debris. Auscultatoriamente: crepitantes no início e fim, sopro tubário na consolidação."},
+        {"text": "Edema → fibrose → cavitação → cura; sopro tubário presente apenas na fase de fibrose", "isCorrect": false, "rationale": "Essa não é a sequência correta — fibrose e cavitação são complicações, não fases normais da pneumonia pneumocócica."},
+        {"text": "Necrose → abscesso → granuloma → calcificação — evolução padrão de pneumonia lobar", "isCorrect": false, "rationale": "Necrose e abscesso são complicações de pneumonias específicas (S. aureus, Klebsiella, anaeróbios) — não da evolução típica da pneumonia pneumocócica."},
+        {"text": "Toda pneumonia lobar progride para resolução completa sem qualquer fase de consolidação", "isCorrect": false, "rationale": "A consolidação (hepatização) é a fase central — o parênquima fica sólido por exsudato."}
+      ],
+      "hint": "Congestão → vermelha → cinza → resolução. Sopro tubário = fase de hepatização (consolidação)."
+    },
+    {
+      "question": "A síndrome de condensação pulmonar é detectada ao IPPA. Qual conjunto de achados a caracteriza?",
+      "answerOptions": [
+        {"text": "Frêmito aumentado + macicez + sopro tubário + broncofonia aumentada (brônquio pérvio obrigatório)", "isCorrect": true, "rationale": "Na condensação, o parênquima sólido transmite melhor: frêmito aumentado, macicez à percussão, sopro tubário (voz brônquica transmitida), broncofonia aumentada. CONDIÇÃO: brônquio pérvio (aberto) é necessário — sem ele, o frêmito e sopro tubário estão ausentes (como na atelectasia completa)."},
+        {"text": "Frêmito abolido + hipertimpanismo + MV abolido + sibilos difusos", "isCorrect": false, "rationale": "Frêmito abolido + hipertimpanismo = pneumotórax. MV abolido + sibilos = obstrução grave. Não é condensação."},
+        {"text": "Frêmito normal + sonoridade normal + MV diminuído + crepitantes basais", "isCorrect": false, "rationale": "Esse padrão é mais típico do início da pneumonia ou doença intersticial — não da síndrome de condensação estabelecida."},
+        {"text": "Frêmito aumentado + hipertimpanismo + sopro tubário + sibilos focais", "isCorrect": false, "rationale": "Hipertimpanismo indica ar — não compatível com condensação sólida. Condensação = macicez, não hipertimpanismo."}
+      ],
+      "hint": "Condensação = parênquima sólido = tudo AUMENTADO (frêmito, transmissão de sons) + macicez."
+    },
+    {
+      "question": "O tumor pulmonar (nódulo ou massa) — qual é a regra de Fleischner para acompanhamento de nódulo pulmonar sólido detectado incidentalmente < 6 mm?",
+      "answerOptions": [
+        {"text": "< 6 mm em baixo risco: sem seguimento rotineiro recomendado; alto risco: TC em 12 meses (opcional)", "isCorrect": true, "rationale": "Nódulos < 6 mm têm risco de malignidade muito baixo. A regra de Fleischner (2017) não recomenda seguimento rotineiro para nódulos < 6 mm em pacientes de baixo risco. Em alto risco (fumante, história familiar), TC em 12 meses é opcional."},
+        {"text": "< 6 mm: PET-CT imediato para avaliar metabolismo", "isCorrect": false, "rationale": "PET-CT não tem resolução suficiente para nódulos < 6 mm (abaixo do limiar de resolução). Não é indicado."},
+        {"text": "< 6 mm: biópsia transbrônquica obrigatória para excluir neoplasia", "isCorrect": false, "rationale": "Biópsia de nódulo < 6 mm tem alto risco de complicação e baixo yield — não é recomendada para nódulos pequenos."},
+        {"text": "< 6 mm: cirurgia de ressecção deve ser considerada em todos os casos", "isCorrect": false, "rationale": "Absolutamente incorreto — nódulos < 6 mm raramente requerem qualquer intervenção."}
+      ],
+      "hint": "Nódulo < 6 mm baixo risco = sem seguimento. Fleischner 2017."
+    },
+    {
+      "question": "A deficiência de alfa-1 antitripsina (alfa-1 AT) causa enfisema com distribuição atípica. Em qual parte do pulmão predomina?",
+      "answerOptions": [
+        {"text": "Bases pulmonares (panlobular) — ao contrário do enfisema tabágico que predomina nos ápices", "isCorrect": true, "rationale": "O enfisema por tabagismo é centroacinar e predomina nos ápices (maior V/Q, mais exposição). O enfisema por deficiência de alfa-1 AT é panlobular e predomina nas bases — pois as bases têm maior perfusão e mais enzimas proteolíticas circulantes."},
+        {"text": "Ápices pulmonares — igual ao enfisema por tabagismo", "isCorrect": false, "rationale": "O enfisema por tabagismo predomina nos ápices; o por alfa-1 AT predomina nas bases."},
+        {"text": "Distribuição uniforme — sem predileção por região", "isCorrect": false, "rationale": "Há predileção pelas bases no enfisema por alfa-1 AT."},
+        {"text": "Lobos médios — distribuição exclusiva do deficiente de alfa-1 AT", "isCorrect": false, "rationale": "Não há predileção pelos lobos médios — são as bases que são predominantemente afetadas."}
+      ],
+      "hint": "Alfa-1 AT: bases. Tabagismo: ápices. Mnemônico: alfa-1 AT = bases (como a letra A = base do triângulo)."
+    },
+    {
+      "question": "Na broncopneumonia, diferentemente da pneumonia lobar, qual é o padrão de distribuição do infiltrado?",
+      "answerOptions": [
+        {"text": "Infiltrado multifocal em 'manchas' (patchy), bilateral, sem respeitar os limites dos lóbulos — inicia ao redor dos brônquios", "isCorrect": true, "rationale": "Na broncopneumonia, o processo inflamatório começa nos brônquios e se estende ao parênquima peribrônquico de forma irregular — múltiplos focos bilaterais em distribuição lobular (não lobar). Agentes: S. aureus, Gram-negativos, vírus."},
+        {"text": "Infiltrado homogêneo, lobar, que respeita as cisuras — igual à pneumonia pneumocócica", "isCorrect": false, "rationale": "Infiltrado lobar homogêneo é da pneumonia lobar — não da broncopneumonia."},
+        {"text": "Infiltrado unilateral, apical, com cavitação — típico de broncopneumonia", "isCorrect": false, "rationale": "Infiltrado apical com cavitação é mais sugestivo de tuberculose — não de broncopneumonia típica."},
+        {"text": "Broncopneumonia e pneumonia lobar são radiologicamente indistinguíveis", "isCorrect": false, "rationale": "São radiologicamente distintas — lobar é homogênea e delimitada; broncopneumonia é multifocal e irregular."}
+      ],
+      "hint": "Broncopneumonia = iniciou no brônquio → 'manchas' irregulares peribrônquicas."
+    },
+    {
+      "question": "O critério espirométrico que define obstrução ao fluxo aéreo no DPOC (segundo GOLD) é:",
+      "answerOptions": [
+        {"text": "VEF₁/CVF < 0,70 após broncodilatador (razão fixa)", "isCorrect": true, "rationale": "O GOLD define obstrução como VEF₁/CVF (Índice de Tiffeneau) < 0,70 pós-broncodilatador. É a razão fixa — controversa em idosos (onde VEF₁/CVF pode ser < 0,70 sem doença). Alternativa: usar LIN (lower limit of normal)."},
+        {"text": "VEF₁ < 80% do previsto", "isCorrect": false, "rationale": "VEF₁ < 80% define a GRAVIDADE da obstrução — não a obstrução em si. O diagnóstico requer VEF₁/CVF < 0,70."},
+        {"text": "CVF < 80% do previsto", "isCorrect": false, "rationale": "CVF reduzida pode indicar restrição — não obstrução. O critério de obstrução é a RAZÃO VEF₁/CVF."},
+        {"text": "VEF₁/CVF < 0,50 após broncodilatador", "isCorrect": false, "rationale": "O corte é < 0,70, não < 0,50. Isso levaria a subdiagnóstico de DPOC."}
+      ],
+      "hint": "GOLD: VEF₁/CVF < 0,70 pós-BD = obstrução confirmada."
+    },
+    {
+      "question": "A atelectasia lobar (colapso de um lobo pulmonar) causa desvio do mediastino para qual direção?",
+      "answerOptions": [
+        {"text": "Para o mesmo lado da atelectasia (ipsilateral) — perda de volume puxa as estruturas para o lado colapsado", "isCorrect": true, "rationale": "Na atelectasia, o lobo colapsado tem menor volume → cria 'vácuo relativo' que atrai estruturas mediastinais ipsilateralmente. Contrário do derrame pleural, que desvia o mediastino para o lado oposto."},
+        {"text": "Para o lado oposto à atelectasia (contralateral) — efeito de 'empurrão'", "isCorrect": false, "rationale": "Isso descreve o derrame pleural ou pneumotórax — que EMPURRAM o mediastino para o lado oposto. A atelectasia PUXA."},
+        {"text": "A atelectasia não causa desvio mediastinal — apenas altera a ausculta", "isCorrect": false, "rationale": "Atelectasia significativa de um lobo inteiro causa desvio mediastinal ipsilateral visível na radiografia."},
+        {"text": "O desvio depende de qual lobo — superior desvia para cima, inferior desvia para baixo", "isCorrect": false, "rationale": "O desvio é sempre ipsilateral — não depende da posição vertical do lobo."}
+      ],
+      "hint": "Atelectasia = perda de volume = PUXA. Derrame/pneumotórax = ganho de volume = EMPURRA."
+    },
+    {
+      "question": "Um paciente com pneumonia apresenta melhora clínica mas a radiografia ainda mostra consolidação após 10 dias de antibiótico correto. Qual é a conduta?",
+      "answerOptions": [
+        {"text": "Observar — a resolução radiológica é mais lenta que a clínica (pode levar 4–8 semanas em idosos e imunodeprimidos)", "isCorrect": true, "rationale": "A resolução radiológica da pneumonia é notoriamente mais lenta que a melhora clínica — especialmente em idosos, imunodeprimidos e pneumonias por S. pneumoniae ou L. pneumophila. Radiografia com consolidação persistente após melhora clínica com tratamento correto não indica falha terapêutica."},
+        {"text": "Mudar o antibiótico imediatamente — a persistência radiológica indica falha do tratamento", "isCorrect": false, "rationale": "Manter o antibiótico se houver melhora clínica — a persistência radiológica isolada não é critério de falha."},
+        {"text": "Solicitar broncoscopia com biópsia — a persistência indica tumor subjacente", "isCorrect": false, "rationale": "Broncoscopia é indicada quando há falta de resposta clínica ou consolidação que nunca regride — não rotineiramente após 10 dias de melhora."},
+        {"text": "Realizar TC de tórax urgente — a persistência indica abscesso pulmonar em formação", "isCorrect": false, "rationale": "Abscesso se manifesta com piora clínica, febre persistente e escarro fétido — não com melhora clínica e persistência radiológica."}
+      ],
+      "hint": "Melhora clínica > resolução radiológica. Esperar 4–8 semanas para confirmação radiológica."
+    }
+  ]
+}

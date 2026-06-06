@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T08 — História da Ética Médica",
+  "questions": [
+    {
+      "question": "O Juramento de Hipócrates, fundamento da ética médica ocidental, tem qual limitação do ponto de vista contemporâneo?",
+      "answerOptions": [
+        {"text": "Proíbe o uso de medicamentos que possam causar dor ou sofrimento", "isCorrect": false, "rationale": "O juramento não proíbe tratamentos dolorosos — inclui o compromisso de aliviar sofrimento."},
+        {"text": "Reflete modelo paternalista que não contempla a autonomia do paciente como valor central", "isCorrect": true, "rationale": "O Juramento de Hipócrates é centrado nos deveres do médico — o médico 'faz o bem', o médico 'não causa dano'. Mas quem define o que é bem é o MÉDICO, não o paciente. A autonomia, o consentimento informado e os direitos dos pacientes — valores centrais da bioética contemporânea — estão ausentes. Essa é sua limitação principal vista hoje."},
+        {"text": "Permite a prática de aborto e eutanásia — incompatível com a ética médica moderna", "isCorrect": false, "rationale": "O juramento original proíbe aborto e venenos letais — é mais restritivo nesse sentido, não mais permissivo."},
+        {"text": "Foi escrito em grego e nunca foi formalmente traduzido para uso universal", "isCorrect": false, "rationale": "O juramento foi amplamente traduzido e adaptado — a limitação não é linguística, é filosófica (paternalismo vs. autonomia)."}
+      ],
+      "hint": "O que o juramento diz sobre a VONTADE do paciente?"
+    },
+    {
+      "question": "O que foi o caso Tuskegee e por que é considerado um marco negativo na história da ética médica?",
+      "answerOptions": [
+        {"text": "Uso de armas biológicas em civis durante a 2ª Guerra Mundial — marco da bioética internacional", "isCorrect": false, "rationale": "Armas biológicas em civis é um crime de guerra diferente — Tuskegee foi um estudo médico americano em tempo de paz."},
+        {"text": "Estudo americano (1932–1972) em que homens negros com sífilis foram deliberadamente não tratados sem seu conhecimento por décadas", "isCorrect": true, "rationale": "O estudo Tuskegee (governo americano) acompanhou 399 homens negros com sífilis sem tratamento adequado — nem mesmo com penicilina após 1947, quando havia cura disponível. Sem consentimento, sem revelação do diagnóstico. Revelado em 1972: criou desconfiança duradoura da medicina entre afro-americanos. Levou ao Relatório Belmont (1979) e reformas em ética de pesquisa."},
+        {"text": "Experimentos cirúrgicos em prisioneiros de guerra japoneses pelo Japão na 2ª Guerra (Unidade 731)", "isCorrect": false, "rationale": "Unidade 731 é um caso diferente — Tuskegee é especificamente o estudo americano de sífilis em homens negros."},
+        {"text": "Uso de talidomida em gestantes europeias sem adequados testes de segurança nos anos 1960", "isCorrect": false, "rationale": "A tragédia da talidomida levou ao fortalecimento do controle de medicamentos — Tuskegee levou a reformas na ética de pesquisa com seres humanos."}
+      ],
+      "hint": "40 anos + sífilis + homens negros + EUA = qual escândalo?"
+    },
+    {
+      "question": "A Declaração de Helsinki (1964) foi criada pela Associação Médica Mundial em resposta à necessidade de:",
+      "answerOptions": [
+        {"text": "Definir os critérios de morte cerebral para fins de transplante de órgãos", "isCorrect": false, "rationale": "Morte cerebral foi definida pelo Harvard Criteria (1968) — posterior à Declaração de Helsinki, que trata de ética em pesquisa."},
+        {"text": "Regular globalmente a ética em pesquisa com seres humanos após os escândalos dos experimentos nazistas e outros", "isCorrect": true, "rationale": "A Declaração de Helsinki (1964, AMM) estabeleceu princípios para pesquisa médica em seres humanos: consentimento informado, comitê de ética aprovando protocolos, proporcionalidade risco-benefício, publicação dos resultados, proteção especial para vulneráveis. Revisada múltiplas vezes (última: 2013). Base das regulamentações de pesquisa clínica mundialmente."},
+        {"text": "Padronizar os currículos de medicina nas universidades mundiais", "isCorrect": false, "rationale": "A Declaração de Helsinki não regula educação médica — foca especificamente em ética em pesquisa clínica."},
+        {"text": "Proibir experimentos com animais em pesquisa biomédica", "isCorrect": false, "rationale": "Pesquisa com animais tem suas próprias regulamentações — a Declaração de Helsinki regula pesquisa com seres humanos."}
+      ],
+      "hint": "Helsinki = 1964 = AMM = pesquisa com humanos."
+    },
+    {
+      "question": "Qual foi a contribuição de Ibn Sina (Avicena) para a história da ética médica?",
+      "answerOptions": [
+        {"text": "Criou o Juramento de Hipócrates e traduziu para o árabe", "isCorrect": false, "rationale": "O Juramento de Hipócrates é grego (séc. V a.C.) — Avicena viveu no séc. XI e não o criou."},
+        {"text": "Preservou e sistematizou o conhecimento médico grego no mundo islâmico, incluindo princípios éticos, no 'Cânon da Medicina'", "isCorrect": true, "rationale": "Ibn Sina (980–1037 d.C.) foi médico, filósofo e cientista islâmico. Seu Cânon da Medicina (1025) foi referência médica até o séc. XVII na Europa e no Oriente. Incluía: código de conduta do médico, cuidado com pobres, relação ética médico-paciente. A medicina islâmica preservou e expandiu o conhecimento grego durante a Idade das Trevas europeia."},
+        {"text": "Realizou o primeiro transplante de órgão documentado na história", "isCorrect": false, "rationale": "O primeiro transplante de órgão moderno é do séc. XX — Ibn Sina é do séc. XI e não realizou transplantes."},
+        {"text": "Fundou o primeiro hospital com regras éticas documentadas no Ocidente", "isCorrect": false, "rationale": "Ibn Sina atuou no mundo islâmico — não no Ocidente — e os primeiros hospitais islâmicos antecederam o Ocidente medieval."}
+      ],
+      "hint": "Avicena = cânon = mundo islâmico = preservação do conhecimento grego."
+    },
+    {
+      "question": "O Código de Nuremberg (1947) estabeleceu que 'o consentimento voluntário é absolutamente essencial'. Qual escândalo histórico foi o catalisador desse documento?",
+      "answerOptions": [
+        {"text": "Estudo Tuskegee nos Estados Unidos", "isCorrect": false, "rationale": "Tuskegee foi revelado em 1972 — 25 anos após Nuremberg. O catalisador de Nuremberg foi diferente."},
+        {"text": "Experimentos médicos nazistas em prisioneiros de campos de concentração", "isCorrect": true, "rationale": "Os Julgamentos de Nuremberg (1945-46) revelaram ao mundo os experimentos médicos realizados por Josef Mengele e outros médicos nazistas em prisioneiros dos campos de concentração — sem consentimento, frequentemente letais. O escândalo levou à criação do Código de Nuremberg (1947), primeiro documento internacional de ética em pesquisa."},
+        {"text": "Uso de talidomida em gestantes europeias sem adequados estudos clínicos", "isCorrect": false, "rationale": "A tragédia da talidomida ocorreu no final dos anos 1950-60 — após o Código de Nuremberg. Levou a diferentes reformas regulatórias."},
+        {"text": "Experimentos de vacinação não consentida em crianças africanas por pesquisadores europeus", "isCorrect": false, "rationale": "Esse tipo de exploração colonial ocorreu em vários contextos, mas não foi o catalisador específico do Código de Nuremberg."}
+      ],
+      "hint": "Nuremberg = julgamento de médicos nazistas após a 2ª Guerra."
+    },
+    {
+      "question": "A Declaração de Genebra (1948) é considerada uma atualização do Juramento de Hipócrates. Qual elemento ela ADICIONA em relação ao juramento original?",
+      "answerOptions": [
+        {"text": "Proibição de aborto e eutanásia — ausentes no juramento original", "isCorrect": false, "rationale": "O juramento original já incluía essas proibições — a Declaração de Genebra as reformulou, mas não as adicionou como novidade."},
+        {"text": "Não discriminação, respeito à autonomia e saúde do próprio médico como valores profissionais", "isCorrect": true, "rationale": "A Declaração de Genebra (1948, revisada em 2017) adiciona ao juramento: 'não permitirei que considerações de idade, doença, deficiência, gênero, religião influenciem meu dever'; 'atenderei minha própria saúde para prestar melhor cuidado' (2017). Contexto pós-2ª Guerra: reação explícita ao uso da medicina para discriminação racial/étnica pelos nazistas."},
+        {"text": "Obrigação de manter prontuário médico e registros clínicos detalhados", "isCorrect": false, "rationale": "Prontuário e registro são desenvolvimentos posteriores das regulamentações profissionais — não são o diferencial da Declaração de Genebra."},
+        {"text": "Dever de notificar doenças infectocontagiosas às autoridades de saúde", "isCorrect": false, "rationale": "Notificação compulsória é regulamentação de saúde pública — não um elemento diferencial da Declaração de Genebra."}
+      ],
+      "hint": "A Declaração foi criada em 1948 — o que o contexto do pós-guerra exigia que fosse adicionado?"
+    },
+    {
+      "question": "O transplante cardíaco de Christiaan Barnard (1967) impulsionou a ética médica a resolver qual dilema urgente?",
+      "answerOptions": [
+        {"text": "Como distribuir equitativamente órgãos escassos entre pacientes que precisam de transplante", "isCorrect": false, "rationale": "A lista de espera e distribuição de órgãos são dilemas importantes, mas não foram o dilema MAIS urgente criado pelo transplante de Barnard."},
+        {"text": "A definição legal e médica de morte encefálica — para determinar quando o doador está morto e o coração pode ser retirado", "isCorrect": true, "rationale": "O transplante cardíaco criou urgência em definir quando alguém está 'morto o suficiente' para ter o coração retirado. Em 1968, a Escola de Medicina de Harvard definiu os critérios de morte encefálica (Harvard Criteria) — ausência de atividade cerebral mesmo com coração funcionando com suporte. Esse conceito redefiniu legalmente a morte e tornou possível os transplantes."},
+        {"text": "Se o médico tem obrigação de informar o paciente sobre todas as opções de tratamento", "isCorrect": false, "rationale": "Consentimento informado sobre opções é um dilema mais antigo — não foi especificamente criado pelos transplantes cardíacos."},
+        {"text": "A ética de usar corpos de executados para pesquisa médica", "isCorrect": false, "rationale": "Esse dilema existia antes dos transplantes — o dilema específico do transplante de Barnard foi a definição de morte encefálica."}
+      ],
+      "hint": "Para retirar o coração de um doador, precisa-se definir quando exatamente ele está morto."
+    },
+    {
+      "question": "A bioética como disciplina formal surgiu nos anos 1970, principalmente nos Estados Unidos. Qual fator cultural explica essa origem geográfica?",
+      "answerOptions": [
+        {"text": "Os EUA eram o único país com faculdades de medicina avançadas na época", "isCorrect": false, "rationale": "Faculdades de medicina avançadas existiam em vários países — a origem da bioética nos EUA tem causas mais específicas."},
+        {"text": "Conjunção de movimentos de direitos civis, escândalos como Tuskegee e rápido desenvolvimento tecnológico médico que criou dilemas inéditos", "isCorrect": true, "rationale": "Nos EUA dos anos 60-70: movimento pelos direitos civis (questionamento de autoridades e paternalismo), movimento feminista (controle sobre o próprio corpo), escândalo Tuskegee (1972), rápido desenvolvimento de UTIs, transplantes, suporte artificial de vida — criando dilemas que o paternalismo médico não conseguia resolver. Contexto único que fez florescer a bioética institucionalizada."},
+        {"text": "O governo americano financiou a bioética para proteger a indústria farmacêutica de processos judiciais", "isCorrect": false, "rationale": "A bioética não surgiu para proteger a indústria — surgiu justamente de críticas a experimentos que serviam interesses corporativos/governamentais à custa dos sujeitos de pesquisa."},
+        {"text": "Hipócrates era americano de origem e os EUA reivindicaram a herança da ética médica ocidental", "isCorrect": false, "rationale": "Hipócrates era grego — e a ética médica não tem origem americana. A bioética moderna como disciplina tem origem americana, mas por razões históricas específicas."}
+      ],
+      "hint": "Tuskegee + direitos civis + tecnologia + feminismo = caldo cultural para a bioética americana."
+    },
+    {
+      "question": "O que é o Relatório Belmont (1979) e quais seus 3 princípios?",
+      "answerOptions": [
+        {"text": "Declaração internacional sobre guerra biológica — respeito, prevenção e reparação", "isCorrect": false, "rationale": "O Relatório Belmont não trata de guerra biológica — é especificamente sobre ética em pesquisa com seres humanos."},
+        {"text": "Relatório americano sobre ética em pesquisa com humanos — 3 princípios: respeito pelas pessoas (autonomia), beneficência e justiça", "isCorrect": true, "rationale": "O Relatório Belmont (1979) foi produzido pela Comissão Nacional dos EUA após o escândalo Tuskegee. Definiu 3 princípios básicos para pesquisa: 1) Respeito pelas pessoas (autonomia — consentimento informado); 2) Beneficência (maximizar benefícios, minimizar danos); 3) Justiça (equidade na seleção de sujeitos — não usar populações vulneráveis apenas pela conveniência). Base das regulamentações de pesquisa nos EUA (Common Rule)."},
+        {"text": "Declaração europeia sobre transplante de órgãos — igualdade, reciprocidade e solidariedade", "isCorrect": false, "rationale": "Belmont é americano e trata de pesquisa com humanos — não transplante de órgãos."},
+        {"text": "Código de conduta da OMS para pesquisadores — sigilo, precisão e replicabilidade", "isCorrect": false, "rationale": "O Relatório Belmont é americano (não da OMS) e seus princípios são éticos (respeito, beneficência, justiça) — não metodológicos."}
+      ],
+      "hint": "Belmont = 1979 = resposta a Tuskegee = 3 princípios éticos para pesquisa."
+    },
+    {
+      "question": "Como a medicina foi utilizada de forma antiética durante o regime nazista (1933–1945)?",
+      "answerOptions": [
+        {"text": "Médicos foram forçados a tratar gratuitamente a população, violando seu direito a honorários", "isCorrect": false, "rationale": "Essa não é a violação ética do regime nazista — que envolveu crimes muito mais graves contra a humanidade."},
+        {"text": "Experimentos não consentidos em prisioneiros; eugenia forçada; utilização da medicina para seleção e extermínio racial", "isCorrect": true, "rationale": "Médicos nazistas como Mengele realizaram experimentos letais em prisioneiros (hipotermia, altitude, infecções, cirurgias sem anestesia) sem consentimento. O programa T4 usou médicos para 'selecionar' deficientes para eutanásia. A medicina foi instrumentalizada para fins ideológicos racistas — a antítese do juramento hipocrático. Os Julgamentos de Nuremberg condenaram 20 médicos por crimes de guerra."},
+        {"text": "Médicos se recusavam a tratar pacientes com doenças contagiosas, abandonando-os sem cuidados", "isCorrect": false, "rationale": "Esse comportamento, embora antiético, não caracteriza o uso da medicina pelo nazismo — que foi ativo (realizando experimentos e eutanásia), não passivo."},
+        {"text": "Discriminação de médicos judeus no exercício profissional — violando o direito ao trabalho", "isCorrect": false, "rationale": "A discriminação de médicos judeus ocorreu, mas a violação central foi o uso da medicina contra a humanidade — experimentos em prisioneiros e eugenia compulsória."}
+      ],
+      "hint": "Mengele, Nuremberg, experimentos em campos de concentração — o que caracteriza o nazismo na medicina?"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Ética Médica P1 — T01 — Comunicação Médica",
+  "questions": [
+    {
+      "question": "Uma paciente chora ao receber um diagnóstico de câncer. O médico diz: 'Não se preocupe, já tratei de muitos casos assim.' Qual é o problema ético nessa resposta?",
+      "answerOptions": [
+        {"text": "O médico não deveria informar o diagnóstico de câncer diretamente", "isCorrect": false, "rationale": "O paciente tem direito a saber seu diagnóstico — o problema não é a revelação em si."},
+        {"text": "A resposta minimiza a emoção da paciente e impede a empatia terapêutica", "isCorrect": true, "rationale": "Dizer 'não se preocupe' invalida o sofrimento da paciente. A comunicação empática exige reconhecer a emoção: 'Entendo que essa notícia é muito difícil' — e depois informar sobre o plano. Minimizar a emoção prejudica a relação terapêutica e a adesão ao tratamento."},
+        {"text": "O médico não deveria mencionar outros casos que tratou", "isCorrect": false, "rationale": "Embora a comparação possa ser imprecisa, o problema central é a falta de validação emocional, não a menção a outros casos."},
+        {"text": "A resposta é tecnicamente adequada e eticamente correta", "isCorrect": false, "rationale": "Não é eticamente adequada — ignora a dimensão emocional que é parte fundamental da comunicação médica efetiva."}
+      ],
+      "hint": "Pense no que a paciente precisa naquele momento — informação ou reconhecimento do seu sofrimento?"
+    },
+    {
+      "question": "Qual das seguintes representa melhor o uso de 'escuta ativa' durante uma consulta médica?",
+      "answerOptions": [
+        {"text": "Fazer perguntas fechadas para obter respostas precisas rapidamente", "isCorrect": false, "rationale": "Perguntas fechadas são úteis para confirmar dados específicos, mas não caracterizam escuta ativa — que requer espaço para o paciente se expressar livremente."},
+        {"text": "Manter contato visual, não interromper e resumir o que o paciente disse para confirmar compreensão", "isCorrect": true, "rationale": "Escuta ativa envolve: atenção plena ao paciente (contato visual), não interromper sua fala, confirmar compreensão ('Se entendi bem, o sr. está sentindo...'), reconhecer emoções e fazer perguntas abertas. É uma habilidade ativa, não passiva."},
+        {"text": "Registrar no prontuário enquanto o paciente fala para não perder informações", "isCorrect": false, "rationale": "Anotar enquanto o paciente fala pode comprometer a conexão — o ideal é manter contato visual e anotar após ou em momentos naturais da conversa."},
+        {"text": "Oferecer solução imediata para cada problema que o paciente menciona", "isCorrect": false, "rationale": "Oferecer soluções antes de compreender completamente o problema do paciente impede a escuta ativa e pode levar a diagnósticos incorretos."}
+      ],
+      "hint": "Escuta ativa é um processo bidirecional que confirma que a mensagem foi recebida corretamente."
+    },
+    {
+      "question": "O protocolo SPIKES é utilizado especificamente para qual situação na comunicação médica?",
+      "answerOptions": [
+        {"text": "Anamnese inicial de qualquer paciente novo", "isCorrect": false, "rationale": "A anamnese tem seu próprio roteiro — SPIKES é específico para situações de más notícias."},
+        {"text": "Comunicação de más notícias (diagnósticos graves, prognóstico reservado)", "isCorrect": true, "rationale": "SPIKES é um protocolo de 6 etapas: Setting (preparar o ambiente), Perception (o que o paciente sabe), Invitation (quanto quer saber), Knowledge (dar a informação), Emotions (responder emocionalmente), Strategy & Summary (plano e resumo). Desenvolvido especificamente para comunicar diagnósticos e prognósticos graves."},
+        {"text": "Discussão de consentimento informado antes de procedimentos cirúrgicos", "isCorrect": false, "rationale": "Consentimento informado tem seus próprios elementos — SPIKES é para más notícias, não especificamente para consentimento."},
+        {"text": "Comunicação entre médico e equipe de enfermagem", "isCorrect": false, "rationale": "SPIKES é voltado para a relação médico-paciente/família em situações de más notícias, não para comunicação interprofissional."}
+      ],
+      "hint": "Pense no contexto mais difícil de comunicação na medicina — quando há diagnósticos graves."
+    },
+    {
+      "question": "Um médico usa linguagem técnica complexa ao explicar o diagnóstico ao paciente. O paciente acena com a cabeça, mas não compreendeu. Qual é a principal consequência ética?",
+      "answerOptions": [
+        {"text": "O paciente viola a relação de confiança ao fingir compreender", "isCorrect": false, "rationale": "A responsabilidade primária pela comunicação clara é do médico — o paciente muitas vezes não compreende mas não sente-se seguro para dizer isso."},
+        {"text": "O consentimento informado baseado nessa explicação será inválido — sem compreensão real, não há decisão autônoma", "isCorrect": true, "rationale": "O consentimento informado requer que o paciente compreenda a informação (não apenas ouça). Usar linguagem inacessível invalida eticamente o processo de CI. O médico deve confirmar compreensão pedindo ao paciente para repetir com suas próprias palavras ('teach-back')."},
+        {"text": "O prontuário deve registrar que o paciente concordou com o cabeça", "isCorrect": false, "rationale": "O aceno de cabeça sem compreensão real não é consentimento válido. Apenas registrar no prontuário não resolve o problema ético."},
+        {"text": "Não há problema — o médico cumpriu seu dever ao informar", "isCorrect": false, "rationale": "Informar não é suficiente — a informação deve ser compreendida. O dever do médico inclui verificar a compreensão real do paciente."}
+      ],
+      "hint": "O objetivo da comunicação é compreensão, não apenas transmissão de informação."
+    },
+    {
+      "question": "Qual modelo de relação médico-paciente é considerado eticamente mais adequado pela bioética contemporânea?",
+      "answerOptions": [
+        {"text": "Paternalista: o médico decide o que é melhor para o paciente", "isCorrect": false, "rationale": "O paternalismo viola a autonomia do paciente — é considerado o modelo menos ético na bioética contemporânea, embora ainda prevalente na prática."},
+        {"text": "Informativo: o médico informa fatos e o paciente decide sozinho", "isCorrect": false, "rationale": "O modelo informativo respeita a autonomia mas pode ser frio e deixar o paciente sem suporte para interpretar informações complexas."},
+        {"text": "Deliberativo: médico e paciente discutem valores e objetivos e decidem conjuntamente", "isCorrect": true, "rationale": "O modelo deliberativo é a síntese ideal — combina a expertise médica com os valores e preferências do paciente, construindo uma decisão compartilhada. Respeita autonomia sem abandonar o paciente à sobrecarga da decisão solitária."},
+        {"text": "Interpretativo: o médico guia o paciente a descobrir seus próprios valores", "isCorrect": false, "rationale": "O modelo interpretativo é válido e respeito da autonomia, mas o deliberativo vai além — inclui a dimensão de compartilhar a decisão, não apenas interpretar valores."}
+      ],
+      "hint": "O modelo ideal equilibra a expertise do médico com a autonomia do paciente."
+    },
+    {
+      "question": "Em qual tipo de comunicação o percentual de informação transmitida é maior — verbal, não verbal ou paraverbal?",
+      "answerOptions": [
+        {"text": "Verbal (as palavras ditas)", "isCorrect": false, "rationale": "Estudos clássicos (Mehrabian, 1967) indicam que as palavras são responsáveis por apenas ~7% da mensagem em contextos emocionais — embora esse percentual exato seja debatido, o princípio de que o não verbal domina é amplamente aceito."},
+        {"text": "Não verbal (linguagem corporal, expressões, gestos)", "isCorrect": true, "rationale": "A comunicação não verbal — expressão facial, postura, contato visual, gesticulação, distância — transmite 70–93% da mensagem. É por isso que médicos devem atentar à postura aberta, olho no olho e linguagem corporal acolhedora durante a consulta."},
+        {"text": "Paraverbal (tom, ritmo, volume da voz)", "isCorrect": false, "rationale": "O paraverbal é importante (tom e ritmo transmitem emoção), mas o não verbal ainda domina em quantidade de informação transmitida."},
+        {"text": "Escrita (prontuário, receituário)", "isCorrect": false, "rationale": "A comunicação escrita é vital para continuidade do cuidado, mas não é a que transmite mais informação em uma interação presencial."}
+      ],
+      "hint": "Pesquise mentalmente qual componente você 'lê' primeiro ao entrar em uma sala e encontrar alguém."
+    },
+    {
+      "question": "Um médico está em uma consulta e enquanto o paciente fala, olha para o computador para digitar informações no prontuário eletrônico. Qual é o impacto ético dessa prática?",
+      "answerOptions": [
+        {"text": "Nenhum — o registro em prontuário é obrigatório e deve ser feito em tempo real", "isCorrect": false, "rationale": "Embora o registro seja obrigatório, olhar para a tela durante a fala do paciente compromete o contato visual e a escuta ativa — há formas de equilibrar as duas necessidades."},
+        {"text": "Compromete o contato visual e a qualidade da escuta, prejudicando a relação terapêutica", "isCorrect": true, "rationale": "Estudos mostram que o uso do computador durante a consulta reduz a satisfação do paciente e a qualidade da comunicação. O ideal é: ouvir o paciente com atenção plena primeiro, depois registrar — ou usar sistemas de ditado por voz. A relação terapêutica depende de presença real."},
+        {"text": "O paciente não percebe quando o médico está digitando — não há impacto", "isCorrect": false, "rationale": "Pacientes percebem e relatam sentir-se menos ouvidos quando o médico foca no computador. Isso afeta a confiança e a abertura do paciente para compartilhar informações relevantes."},
+        {"text": "É eticamente aceitável pois o prontuário eletrônico melhora a segurança do paciente", "isCorrect": false, "rationale": "O prontuário eletrônico melhora a segurança, mas isso não justifica comprometer a comunicação na consulta — as duas coisas devem ser equilibradas."}
+      ],
+      "hint": "Pense no impacto do contato visual na conexão entre duas pessoas."
+    },
+    {
+      "question": "Qual é o principal objetivo do registro no prontuário médico do ponto de vista ético e legal?",
+      "answerOptions": [
+        {"text": "Proteger o médico de processos judiciais", "isCorrect": false, "rationale": "Embora o prontuário sirva como evidência em processos, seu objetivo primário é a continuidade e segurança do cuidado — não a proteção do médico."},
+        {"text": "Garantir a continuidade do cuidado, a comunicação entre profissionais e a segurança do paciente", "isCorrect": true, "rationale": "O prontuário é o instrumento central de comunicação entre profissionais de saúde e de continuidade do cuidado ao longo do tempo. Deve ser: claro, cronológico, objetivo, completo, assinado e datado. Toda a equipe que cuida do paciente depende do prontuário para tomar decisões seguras."},
+        {"text": "Fornecer dados estatísticos para a instituição hospitalar", "isCorrect": false, "rationale": "Dados epidemiológicos são uma função secundária — a função primária é o cuidado do paciente individual."},
+        {"text": "Cumprir exigência administrativa dos planos de saúde", "isCorrect": false, "rationale": "Planos de saúde usam prontuários para auditoria, mas isso é uma função terciária — o objetivo primário é clínico-ético."}
+      ],
+      "hint": "O prontuário existe para o paciente — não para o médico ou a instituição."
+    },
+    {
+      "question": "Como deve ser iniciada idealmente uma consulta médica do ponto de vista da comunicação?",
+      "answerOptions": [
+        {"text": "Com perguntas fechadas e objetivas para otimizar o tempo ('Onde dói? Há quanto tempo?')", "isCorrect": false, "rationale": "Iniciar com perguntas fechadas limita a narrativa do paciente e pode fazer o médico perder informações relevantes que o paciente não 'encaixa' nas perguntas."},
+        {"text": "Com uma pergunta aberta que permite ao paciente expressar-se livremente ('O que o trouxe aqui hoje?')", "isCorrect": true, "rationale": "Perguntas abertas no início da consulta ('O que o trouxe aqui?', 'Como posso ajudá-lo?') permitem ao paciente narrar sua história com suas próprias palavras — captando o motivo de consulta real, não o que o médico assume ser o motivo. A consulta ideal começa aberta e afunila para fechada."},
+        {"text": "Com a leitura do prontuário anterior em voz alta para o paciente", "isCorrect": false, "rationale": "Ler o prontuário anterior é importante, mas deve ser feito antes da consulta — não como abertura em voz alta, o que desperdiça tempo e não abre espaço para a narrativa atual do paciente."},
+        {"text": "Com a explicação imediata do protocolo de tratamento que será utilizado", "isCorrect": false, "rationale": "Explicar o tratamento antes de ouvir o paciente inverte a ordem lógica: deve-se primeiro entender o problema, depois propor a solução."}
+      ],
+      "hint": "O início da consulta define o tom — perguntas abertas vs. fechadas têm efeitos muito diferentes."
+    },
+    {
+      "question": "O que é 'teach-back' e qual sua importância na comunicação médica?",
+      "answerOptions": [
+        {"text": "Técnica de o médico repetir as informações do paciente para confirmar que anotou corretamente", "isCorrect": false, "rationale": "Teach-back é o inverso — é o paciente que repete as informações do médico, não o médico repetindo o que o paciente disse."},
+        {"text": "Pedir ao paciente que repita com suas próprias palavras o que foi explicado, para confirmar compreensão real", "isCorrect": true, "rationale": "Teach-back é a técnica mais eficaz para confirmar compreensão: 'Para ter certeza que me expliquei bem, pode me dizer como vai tomar esse remédio?' — não é teste, é confirmação de compreensão mútua. Reduz erros de medicação, melhora adesão e é especialmente importante antes do CI."},
+        {"text": "Técnica em que o médico usa slides ou folhetos para ensinar ao paciente sobre sua doença", "isCorrect": false, "rationale": "Material educativo é útil, mas teach-back é a técnica específica de pedir ao paciente que verbalize o que aprendeu."},
+        {"text": "Sistema de teleconsulta de retorno para pacientes crônicos", "isCorrect": false, "rationale": "Teleconsulta de retorno é um serviço de saúde, não a técnica de comunicação teach-back."}
+      ],
+      "hint": "'Teach' = ensinar; 'back' = de volta. Quem ensina de volta para o médico?"
+    }
+  ]
+}

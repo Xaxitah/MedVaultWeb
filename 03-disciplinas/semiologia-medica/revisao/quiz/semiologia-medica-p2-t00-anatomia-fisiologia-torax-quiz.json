@@ -1,0 +1,105 @@
+{
+  "title": "Semiologia Médica P2 — T00: Anatomia e Fisiologia do Tórax",
+  "questions": [
+    {
+      "question": "Qual é a localização do ápice do pulmão em relação à clavícula?",
+      "answerOptions": [
+        {"text": "2–3 cm acima da clavícula", "isCorrect": true, "rationale": "O ápice pulmonar projeta-se 2–3 cm acima do terço médio da clavícula — importante para identificar lesões apicais (ex.: tuberculose)."},
+        {"text": "Ao nível da clavícula", "isCorrect": false, "rationale": "Incorreto — o ápice ultrapassa a clavícula superiormente."},
+        {"text": "2–3 cm abaixo da clavícula", "isCorrect": false, "rationale": "Incorreto — isso corresponderia à parte superior do lobo superior, não ao ápice."},
+        {"text": "Ao nível da 1ª costela", "isCorrect": false, "rationale": "A 1ª costela está ao nível da clavícula — o ápice está acima disso."}
+      ],
+      "hint": "Pense no exame de tuberculose apical."
+    },
+    {
+      "question": "O lobo médio do pulmão existe apenas no pulmão direito. Em que porção do tórax é auscultado?",
+      "answerOptions": [
+        {"text": "Região axilar direita e face anterior direita entre 4ª e 6ª costelas", "isCorrect": true, "rationale": "O lobo médio tem projeção anterior e axilar — por isso é auscultado melhor na região anterior e axilar direita inferior."},
+        {"text": "Região posterior direita inferior", "isCorrect": false, "rationale": "A região posterior inferior corresponde ao lobo inferior, não ao lobo médio."},
+        {"text": "Face anterior direita superior (acima da 4ª costela)", "isCorrect": false, "rationale": "Essa posição corresponde ao lobo superior direito."},
+        {"text": "Face lateral esquerda", "isCorrect": false, "rationale": "O lobo médio é exclusivo do pulmão direito."}
+      ],
+      "hint": "Lobo médio = localização anterior e axilar."
+    },
+    {
+      "question": "Qual é a relação ventilação-perfusão (V/Q) normal e o que significa quando V/Q → 0?",
+      "answerOptions": [
+        {"text": "V/Q normal ≈ 0,8; V/Q → 0 = shunt (perfusão sem ventilação)", "isCorrect": true, "rationale": "Relação normal é ~0,8 (ventilação levemente menor que perfusão). Quando V/Q cai a 0, o sangue perfunde alvéolos não ventilados = shunt intrapulmonar."},
+        {"text": "V/Q normal = 1,0; V/Q → 0 = espaço morto", "isCorrect": false, "rationale": "V/Q normal não é 1,0 e V/Q → 0 não é espaço morto (espaço morto = V/Q → ∞)."},
+        {"text": "V/Q normal ≈ 0,8; V/Q → ∞ = shunt", "isCorrect": false, "rationale": "V/Q → ∞ é espaço morto (ventilação sem perfusão), não shunt."},
+        {"text": "V/Q normal ≈ 1,5; V/Q → 0 = shunt", "isCorrect": false, "rationale": "V/Q normal não é 1,5."}
+      ],
+      "hint": "Quando V/Q → 0 = problema de ventilação (shunt). Quando V/Q → ∞ = problema de perfusão (espaço morto)."
+    },
+    {
+      "question": "Qual volume pulmonar representa o ar que permanece nos pulmões mesmo após expiração máxima e NÃO é medido pela espirometria convencional?",
+      "answerOptions": [
+        {"text": "Volume residual (VR)", "isCorrect": true, "rationale": "O VR (~1,2 L) não pode ser expirado e portanto não é medido pela espirometria — requer pletismografia ou diluição de hélio."},
+        {"text": "Volume de reserva expiratório (VRE)", "isCorrect": false, "rationale": "O VRE é expirado voluntariamente e medido pela espirometria."},
+        {"text": "Capacidade funcional residual (CFR)", "isCorrect": false, "rationale": "A CFR inclui o VR mas a CFR total também não é medida pela espirometria simples — porém o conceito pedido é o VR especificamente."},
+        {"text": "Capacidade vital (CV)", "isCorrect": false, "rationale": "A CV é medida pela espirometria."}
+      ],
+      "hint": "É o ar que 'não sai' mesmo forçando ao máximo."
+    },
+    {
+      "question": "No gradiente de V/Q vertical do pulmão em posição ereta, qual é a situação nos ápices em relação às bases?",
+      "answerOptions": [
+        {"text": "Ápices: V/Q alto (mais ventilados que perfundidos); bases: V/Q baixo (mais perfundidas)", "isCorrect": true, "rationale": "Por efeito gravitacional, a perfusão aumenta do ápice para a base. A ventilação também aumenta para base mas menos que a perfusão — então ápices têm V/Q > 1 e bases V/Q < 1."},
+        {"text": "Ápices: V/Q baixo; bases: V/Q alto", "isCorrect": false, "rationale": "É o contrário — ápices têm maior V/Q e bases menor V/Q."},
+        {"text": "V/Q é uniforme em todo o pulmão em posição ereta", "isCorrect": false, "rationale": "Há gradiente V/Q vertical significativo por efeito gravitacional."},
+        {"text": "Ápices têm maior perfusão que as bases por efeito gravitacional", "isCorrect": false, "rationale": "A gravidade aumenta a perfusão nas bases, não nos ápices."}
+      ],
+      "hint": "Gravidade puxa o sangue para baixo — bases são mais perfundidas."
+    },
+    {
+      "question": "Qual a diferença entre capacidade pulmonar total (CPT) e capacidade vital (CV)?",
+      "answerOptions": [
+        {"text": "CPT = CV + Volume Residual; a CV pode ser expirada e o VR não", "isCorrect": true, "rationale": "CPT é o volume total nos pulmões na inspiração máxima. CV é a porção que pode ser expirada voluntariamente. A diferença é o Volume Residual."},
+        {"text": "CPT = CV + Volume Corrente; são equivalentes em pulmões saudáveis", "isCorrect": false, "rationale": "Incorreto — o VR não é o mesmo que Volume Corrente."},
+        {"text": "CV = CPT + Volume Residual", "isCorrect": false, "rationale": "A relação está invertida: CPT = CV + VR."},
+        {"text": "CPT e CV são sinônimos em adultos jovens saudáveis", "isCorrect": false, "rationale": "Nunca são sinônimos — sempre existe volume residual."}
+      ],
+      "hint": "O que não é possível expirar é o Volume Residual."
+    },
+    {
+      "question": "Em qual lobo pulmonar é mais comum a reativação de tuberculose e por quê?",
+      "answerOptions": [
+        {"text": "Lobo superior (segmentos apical e posterior) por alta relação V/Q e alta pO₂", "isCorrect": true, "rationale": "Os ápices têm V/Q alto → maior pO₂ alveolar → ambiente favorável para Mycobacterium tuberculosis, que é aeróbio estrito."},
+        {"text": "Lobo inferior por maior perfusão e deposição de bacilos", "isCorrect": false, "rationale": "Os bacilos se depositam inicialmente nas bases (primoinfecção), mas a reativação ocorre nos ápices."},
+        {"text": "Lobo médio direito por ser o mais pequeno e menos ventilado", "isCorrect": false, "rationale": "O lobo médio não é o mais afetado na tuberculose."},
+        {"text": "Qualquer lobo com igual probabilidade", "isCorrect": false, "rationale": "Há predileção clara pelos lobos superiores na tuberculose."}
+      ],
+      "hint": "Tuberculose = aeróbio estrito → onde tem mais oxigênio?"
+    },
+    {
+      "question": "O que é a Zona I de West em relação à pressão alveolar e capilar pulmonar?",
+      "answerOptions": [
+        {"text": "Palv > Paart > Pven — alvéolos colapsam capilares, sem fluxo (espaço morto alveolar)", "isCorrect": true, "rationale": "Na Zona I (ápice), a pressão alveolar supera tanto a pressão arterial quanto venosa pulmonar — os capilares são comprimidos pelos alvéolos, resultando em espaço morto."},
+        {"text": "Paart > Pven > Palv — fluxo contínuo independente do ciclo respiratório", "isCorrect": false, "rationale": "Isso descreve a Zona III (bases), não a Zona I."},
+        {"text": "Paart > Palv > Pven — fluxo intermitente na sístole", "isCorrect": false, "rationale": "Isso descreve a Zona II, não a Zona I."},
+        {"text": "A pressão alveolar não influencia o fluxo capilar pulmonar", "isCorrect": false, "rationale": "A pressão alveolar é fundamental no modelo de West."}
+      ],
+      "hint": "Zona I = ápices = capilares colabados = mais espaço morto."
+    },
+    {
+      "question": "Qual estrutura anatômica forma o ângulo costofrênico (seio costofrênico) e qual seu significado clínico?",
+      "answerOptions": [
+        {"text": "Junção entre a cúpula diafragmática e a parede costal; embotamento = derrame pleural > 200–300 mL", "isCorrect": true, "rationale": "O recesso costofrênico é o espaço mais inferior da cavidade pleural. Na radiografia, seu embotamento indica acúmulo de líquido ≥200–300 mL."},
+        {"text": "Junção entre os pulmões e o mediastino; embotamento = pneumonia central", "isCorrect": false, "rationale": "Isso descreve o ângulo hilar, não o costofrênico."},
+        {"text": "Espaço entre as costelas; embotamento = fratura de costela", "isCorrect": false, "rationale": "O seio costofrênico não é o espaço intercostal."},
+        {"text": "Cúpula diafragmática e o ápice pulmonar; embotamento = pneumotórax apical", "isCorrect": false, "rationale": "A localização anatômica está completamente incorreta."}
+      ],
+      "hint": "É o canto inferior da radiografia do tórax."
+    },
+    {
+      "question": "O músculo principal da inspiração é o diafragma. Qual músculo inspiratório acessório é recrutado durante dispneia severa e indica dificuldade respiratória?",
+      "answerOptions": [
+        {"text": "Esternocleidomastóideo (ECM) e escalenos", "isCorrect": true, "rationale": "O uso visível do ECM e escalenos é sinal de dificuldade respiratória importante — são músculos acessórios que só são ativados quando o diafragma e intercostais são insuficientes."},
+        {"text": "Abdominais retos e oblíquos", "isCorrect": false, "rationale": "Os músculos abdominais participam principalmente da expiração forçada, não da inspiração."},
+        {"text": "Trapézio e grande dorsal", "isCorrect": false, "rationale": "Esses músculos não são músculos respiratórios acessórios principais."},
+        {"text": "Peitoral maior apenas", "isCorrect": false, "rationale": "O peitoral maior pode auxiliar quando os braços estão fixos, mas não é o principal acessório monitorado clinicamente."}
+      ],
+      "hint": "Você vê o pescoço 'trabalhar' quando a pessoa está com muita falta de ar."
+    }
+  ]
+}
