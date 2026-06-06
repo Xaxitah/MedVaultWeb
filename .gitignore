@@ -7,8 +7,8 @@
 **/*.pptx
 **/*.pptm
 
-# Infográficos grandes — servidos via Google Drive (thumbnail URLs)
-**/revisao/infograficos/
+# Infográficos PNG grandes — servidos via Drive (HTMLs são mantidos)
+**/revisao/infograficos/*.png
 
 # Export duplicado
 med/
