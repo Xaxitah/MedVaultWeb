@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards — MED-Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+  <script>window.MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']] } };</script>
+  <style>
+    .fc-wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    .fc-header { margin-bottom: 1.5rem; }
+    .fc-title { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: .4rem; }
+    .progress-bar-wrap { height: 6px; background: var(--border); border-radius:4px; overflow:hidden; margin-bottom:.3rem; }
+    .progress-bar { height:100%; background: var(--primary); border-radius:4px; transition:width .3s; }
+    .progress-label { font-size:.8rem; color: var(--text-muted); }
+
+    .card-scene { perspective: 1000px; height: 220px; cursor: pointer; margin-bottom: 1rem; }
+    .card-inner {
+      position: relative; width: 100%; height: 100%;
+      transform-style: preserve-3d; transition: transform .45s cubic-bezier(.4,0,.2,1);
+    }
+    .card-inner.flipped { transform: rotateY(180deg); }
+    .card-face {
+      position: absolute; width: 100%; height: 100%;
+      backface-visibility: hidden; border-radius: var(--radius);
+      border: 1px solid var(--border); box-shadow: var(--shadow);
+      display: flex; align-items: center; justify-content: center;
+      padding: 1.5rem; text-align: center; font-size: 1rem; line-height: 1.6;
+    }
+    .card-front { background: var(--surface); color: var(--text); font-weight: 500; }
+    .card-back  { background: var(--primary); color: white; transform: rotateY(180deg); }
+    .card-hint  { position: absolute; bottom: .6rem; font-size: .72rem; opacity: .5; }
+    .card-front .card-hint { color: var(--text-muted); }
+    .card-back  .card-hint { color: rgba(255,255,255,.7); }
+
+    .nav-row { display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--primary); color: white; border: none;
+      border-radius: 10px; padding: .6rem 1.4rem;
+      font-size: .9rem; font-weight: 600; cursor: pointer;
+      transition: background .12s; display: inline-flex; align-items: center; gap:.4rem;
+    }
+    .btn-primary:hover { background: var(--primary-light); }
+    .btn-primary:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
+    .btn-secondary {
+      background: var(--surface2); color: var(--primary);
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: .6rem 1.1rem; font-size: .9rem; font-weight: 500; cursor: pointer;
+    }
+    .btn-secondary:hover { background: #e8f0fd; }
+
+    .mark-row { display: flex; gap: .5rem; margin-top: .5rem; }
+    .mark-btn {
+      flex: 1; padding: .5rem; border-radius: 8px; border: none;
+      font-size: .82rem; font-weight: 600; cursor: pointer; transition: filter .1s;
+    }
+    .mark-btn:hover { filter: brightness(.92); }
+    .btn-knew { background: #ecfdf5; color: #065f46; }
+    .btn-review { background: #fef2f2; color: #7f1d1d; }
+
+    .score-screen { text-align:center; padding:3rem 1.5rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .score-emoji { font-size:3.5rem; margin-bottom:1rem; }
+    .score-pct { font-size:3rem; font-weight:800; color:var(--primary); }
+    .score-sub { font-size:1rem; color:var(--text-muted); margin-bottom:2rem; }
+    #loading-msg { text-align:center; padding:3rem; color:var(--text-muted); }
+    #error-msg { background:#fef2f2; border:1px solid #fca5a5; border-radius:var(--radius); padding:1.5rem; color:#7f1d1d; text-align:center; display:none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="breadcrumb">
+    <a href="./">🏥 MED-Vault</a>
+    <span>›</span>
+    <span id="crumb-disc">Flashcards</span>
+    <span>›</span>
+    <span>🃏 Flashcards</span>
+  </div>
+  <h1>🃏 Flashcards</h1>
+  <p id="fc-subtitle" style="opacity:.8">Carregando...</p>
+</header>
+
+<div class="layout">
+<nav class="sidebar">
+  <div class="sidebar-title">Disciplinas</div>
+  <a class="sidebar-link" href="./">🏠 Início</a>
+  <a class="sidebar-link" href="farmacologia/">💊 Farmacologia</a>
+  <a class="sidebar-link" href="semiologia-medica/">🩺 Semiologia Médica</a>
+  <a class="sidebar-link" href="urologia/">🔬 Urologia</a>
+  <a class="sidebar-link" href="etica-medica/">⚖️ Ética Médica</a>
+  <a class="sidebar-link" href="semiologia-cirurgica/">🔪 Sem. Cirúrgica</a>
+</nav>
+<div class="page-content">
+<main>
+<div class="fc-wrap">
+  <div id="loading-msg">⏳ Carregando flashcards...</div>
+  <div id="error-msg"></div>
+  <div id="fc-root" style="display:none"></div>
+</div>
+</main>
+<footer>MED-Vault 2.0 · <a href="./">← Voltar ao início</a></footer>
+</div>
+</div>
+
+<script>
+(async () => {
+  const params = new URLSearchParams(window.location.search);
+  const dataPath = params.get('data');
+  const backHref = params.get('back') || './';
+  if (!dataPath) { showError('Parâmetro <code>?data=</code> não encontrado.'); return; }
+
+  const base = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+  let data;
+  try {
+    const res = await fetch(base + dataPath);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+  } catch(e) { showError(`Não foi possível carregar.<br><small>${base+dataPath}</small><br><small>${e}</small>`); return; }
+
+  document.getElementById('fc-subtitle').textContent = data.title || 'Flashcards';
+  document.title = (data.title || 'Flashcards') + ' — MED-Vault';
+  const disc = (dataPath.match(/03-disciplinas\/([^/]+)/) || [])[1] || '';
+  const discNames = { 'farmacologia':'Farmacologia','semiologia-medica':'Semiologia Médica','urologia':'Urologia','etica-medica':'Ética Médica','semiologia-quirurgica':'Semiologia Cirúrgica' };
+  document.getElementById('crumb-disc').textContent = discNames[disc] || disc;
+
+  const cards = [...data.cards];
+  let deck = [...cards];
+  let review = [];
+  let current = 0;
+  let knew = 0;
+  let flipped = false;
+
+  document.getElementById('loading-msg').style.display = 'none';
+  const root = document.getElementById('fc-root');
+  root.style.display = 'block';
+
+  function shuffle(arr) { for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];} return arr; }
+
+  function render() {
+    if (current >= deck.length) { renderScore(); return; }
+    const card = deck[current];
+    const total = cards.length;
+    const done = cards.length - deck.length + current;
+    const pct = Math.round((done / total) * 100);
+    flipped = false;
+
+    root.innerHTML = `
+      <div class="fc-header">
+        <div class="fc-title">${data.title || 'Flashcards'}</div>
+        <div class="progress-bar-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
+        <div class="progress-label">Carta ${done + 1} de ${total}</div>
+      </div>
+
+      <div class="card-scene" id="scene" onclick="flipCard()">
+        <div class="card-inner" id="card-inner">
+          <div class="card-face card-front">
+            <div>${card.front}</div>
+            <span class="card-hint">Toque para ver a resposta</span>
+          </div>
+          <div class="card-face card-back">
+            <div>${card.back}</div>
+            <span class="card-hint">Toque para voltar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mark-row" id="mark-row" style="display:none">
+        <button class="mark-btn btn-knew" onclick="markCard(true)">✅ Sabia</button>
+        <button class="mark-btn btn-review" onclick="markCard(false)">🔄 Revisar</button>
+      </div>
+
+      <div class="nav-row" style="margin-top:1rem">
+        <button class="btn-secondary" onclick="prevCard()" ${current===0?'disabled':''}>← Anterior</button>
+        <button class="btn-primary" id="next-btn" onclick="nextCard()">Próxima →</button>
+      </div>`;
+
+    if (window.MathJax?.typesetPromise) MathJax.typesetPromise([root]);
+  }
+
+  window.flipCard = function() {
+    flipped = !flipped;
+    document.getElementById('card-inner').classList.toggle('flipped', flipped);
+    if (flipped) document.getElementById('mark-row').style.display = 'flex';
+  };
+
+  window.markCard = function(knew_) {
+    if (knew_) knew++;
+    else review.push(deck[current]);
+    current++;
+    render();
+  };
+
+  window.nextCard = function() { current++; render(); };
+  window.prevCard = function() { if (current > 0) { current--; render(); } };
+
+  function renderScore() {
+    const pct = Math.round((knew / cards.length) * 100);
+    const emoji = pct >= 80 ? '🏆' : pct >= 60 ? '👍' : '📚';
+    const hasReview = review.length > 0;
+    root.innerHTML = `
+      <div class="score-screen">
+        <div class="score-emoji">${emoji}</div>
+        <div class="score-pct">${pct}%</div>
+        <div class="score-sub">${knew} de ${cards.length} cartas dominadas${hasReview ? ` · ${review.length} para revisar` : ''}</div>
+        <div style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-top:1rem">
+          ${hasReview ? `<button class="btn-primary" onclick="reviewOnly()">🔄 Revisar cartas marcadas (${review.length})</button>` : ''}
+          <button class="btn-primary" onclick="restart()">🔀 Reiniciar embaralhado</button>
+          <a class="btn-secondary" href="${backHref}" style="display:inline-flex;align-items:center;padding:.6rem 1.1rem;text-decoration:none">← Voltar</a>
+        </div>
+      </div>`;
+  }
+
+  window.restart = function() { deck = shuffle([...cards]); current = 0; knew = 0; review = []; render(); };
+  window.reviewOnly = function() { deck = shuffle([...review]); current = 0; knew = 0; review = []; render(); };
+
+  function showError(msg) {
+    document.getElementById('loading-msg').style.display = 'none';
+    const el = document.getElementById('error-msg');
+    el.innerHTML = msg; el.style.display = 'block';
+  }
+
+  shuffle(deck);
+  render();
+})();
+</script>
+</body>
+</html>
