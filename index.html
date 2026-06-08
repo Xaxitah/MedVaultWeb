@@ -1,94 +1,134 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MED-Vault â€” Simone</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="MedVaultWeb — Portal de materiais de estudo de medicina organizados por disciplina e prova.">
+  <title>MedVaultWeb — Materiais de Estudo de Medicina</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
 </head>
 <body>
 
-<header>
-  <h1>ðŸ¥ MED-Vault</h1>
-  <p>Materiais de estudo mÃ©dico Â· Simone Â· UNINTER â€” Pedro Juan Caballero</p>
-</header>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
 
-<div class="layout">
-<nav class="sidebar">
-  <div class="sidebar-title">Disciplinas</div>
-  <a class="sidebar-link active" href="./">ðŸ  InÃ­cio</a>
-  <a class="sidebar-link" href="farmacologia/">ðŸ’Š Farmacologia</a>
-  <a class="sidebar-link" href="semiologia-medica/">ðŸ©º Semiologia MÃ©dica</a>
-  <a class="sidebar-link" href="urologia/">ðŸ”¬ Urologia</a>
-  <a class="sidebar-link" href="etica-medica/">âš–ï¸ Ã‰tica MÃ©dica</a>
-  <a class="sidebar-link" href="semiologia-cirurgica/">ðŸ”ª Sem. CirÃºrgica</a>
-</nav>
-<div class="page-content">
-<main>
-  <div class="grid">
-
-    <a href="farmacologia/" class="card">
-      <div class="card-icon">ðŸ’Š</div>
-      <h2>Farmacologia</h2>
-      <p>P2 â€” T01 a T11 Â· Cardiovascular Â· AINEs Â· Opioides Â· AnestÃ©sicos Â· Relaxantes</p>
-      <div class="stats">
-        <span class="badge">ðŸŽ§ 8 podcasts</span>
-        <span class="badge">ðŸ“Š 22 infogr.</span>
-        <span class="badge">ðŸ—ºï¸ 11 mapas</span>
-        <span class="badge">ðŸŽ¯ 11 quizzes</span>
-      </div>
-    </a>
-
-    <a href="semiologia-medica/" class="card">
-      <div class="card-icon">ðŸ©º</div>
-      <h2>Semiologia MÃ©dica</h2>
-      <p>P1 (T01â€“T10) + P2 (T01â€“T07) Â· Exame FÃ­sico Â· RespiratÃ³rio Â· Cardiovascular</p>
-      <div class="stats">
-        <span class="badge">ðŸŽ§ 14 podcasts</span>
-        <span class="badge">ðŸ“Š 13 infogr.</span>
-        <span class="badge">ðŸ—ºï¸ 8 mapas</span>
-      </div>
-    </a>
-
-    <a href="urologia/" class="card">
-      <div class="card-icon">ðŸ”¬</div>
-      <h2>Urologia</h2>
-      <p>P1 â€” T01 InfecÃ§Ãµes InespecÃ­ficas Â· T02 EspecÃ­ficas Â· T10 Litiasis</p>
-      <div class="stats">
-        <span class="badge">ðŸŽ§ 1 podcast</span>
-        <span class="badge">ðŸ“Š 3 infogr.</span>
-        <span class="badge">ðŸ–¥ï¸ 2 slides PDF</span>
-      </div>
-    </a>
-
-    <a href="etica-medica/" class="card">
-      <div class="card-icon">âš–ï¸</div>
-      <h2>Ã‰tica MÃ©dica</h2>
-      <p>P1 â€” T01â€“T10 Â· BioÃ©tica Â· PrincÃ­pios Â· Deontologia Â· Consentimento</p>
-      <div class="stats">
-        <span class="badge">ðŸ“„ 10 resumos</span>
-        <span class="badge">ðŸ“Š 1 infogr.</span>
-        <span class="badge">ðŸ–¥ï¸ 3 slides PDF</span>
-      </div>
-    </a>
-
-    <a href="semiologia-cirurgica/" class="card">
-      <div class="card-icon">ðŸ”ª</div>
-      <h2>Semiologia CirÃºrgica</h2>
-      <p>P2 - T01-T05 - Dr. Armoa - resumos, quiz e flashcards</p>
-      <div class="stats">
-        <span class="badge">5 resumos</span>
-        <span class="badge">3 quizzes</span>
-        <span class="badge">ðŸƒ flashcards</span>
-      </div>
-    </a>
-
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
   </div>
-</main>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link">
+    <span class="icon">🏠</span> Início
+  </a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia
+    <span class="sidebar-badge">P1+P2</span>
+  </a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica
+    <span class="sidebar-badge">P1+P2</span>
+  </a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia
+    <span class="sidebar-badge">P1</span>
+  </a>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica
+    <span class="sidebar-badge">P1</span>
+  </a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica
+    <span class="sidebar-badge">P2</span>
+  </a>
+  <div class="sidebar-section">Ferramentas</div>
+  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link">
+    <span class="icon">🐙</span> Repositório
+  </a>
+</nav>
 
-<footer>MED-Vault 2.0 Â· Artefatos via NotebookLM Pipeline</footer>
-</div><!-- /page-content -->
-</div><!-- /layout -->
+<div class="main-content">
+  <div class="page-header">
+    <h1>🏥 MedVaultWeb — Materiais de Estudo de Medicina</h1>
+    <p>Portal de acesso aos artefatos produzidos no MED-Vault-2.0 · UNINTER · Pedro Juan Caballero</p>
+  </div>
 
+  <div class="content-area">
+    <div class="intro-box">
+      <h3>📖 Sobre este portal</h3>
+      <p>Este portal dá acesso aos materiais de estudo produzidos no MED-Vault-2.0.
+      Aqui você encontra resumos, infográficos, podcasts, quizzes, mapas mentais,
+      flashcards e revisões de véspera organizados por disciplina e por prova.
+      Todo o conteúdo foi elaborado com base em aulas, transcrições, slides e
+      livros-texto de referência médica.</p>
+    </div>
+
+    <h2 class="section-title">📚 Disciplinas Disponíveis</h2>
+    <div class="grid grid-disciplinas">
+
+      <a href="/MedVaultWeb/disciplinas/farmacologia/" class="card card-disciplina" style="border-top-color: var(--farm-color);">
+        <div class="card-cover" style="background: rgba(15,52,96,0.08);">💊</div>
+        <div class="card-body">
+          <div class="card-title">Farmacologia</div>
+          <div class="card-desc">Mecanismos de ação, farmacodinâmica e farmacoterapia</div>
+        </div>
+        <div class="card-footer">
+          <span class="pill pill-p1">P1 · 16 temas</span>
+          <span class="pill pill-p2">P2 · 12 temas</span>
+        </div>
+      </a>
+
+      <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="card card-disciplina" style="border-top-color: var(--semi-color);">
+        <div class="card-cover" style="background: rgba(27,94,32,0.08);">🩺</div>
+        <div class="card-body">
+          <div class="card-title">Semiologia Médica</div>
+          <div class="card-desc">Propedêutica, exame físico, semiologia dos sistemas</div>
+        </div>
+        <div class="card-footer">
+          <span class="pill pill-p1">P1 · 10 temas</span>
+          <span class="pill pill-p2">P2 · 8 temas</span>
+        </div>
+      </a>
+
+      <a href="/MedVaultWeb/disciplinas/urologia/" class="card card-disciplina" style="border-top-color: var(--urol-color);">
+        <div class="card-cover" style="background: rgba(74,20,140,0.08);">🫘</div>
+        <div class="card-body">
+          <div class="card-title">Urologia</div>
+          <div class="card-desc">Patologias do trato urinário e sistema reprodutor</div>
+        </div>
+        <div class="card-footer">
+          <span class="pill pill-p1">P1 · 14 temas</span>
+        </div>
+      </a>
+
+      <a href="/MedVaultWeb/disciplinas/etica-medica/" class="card card-disciplina" style="border-top-color: var(--etica-color);">
+        <div class="card-cover" style="background: rgba(191,54,12,0.08);">⚖️</div>
+        <div class="card-body">
+          <div class="card-title">Ética Médica</div>
+          <div class="card-desc">Princípios, deontologia e bioética médica</div>
+        </div>
+        <div class="card-footer">
+          <span class="pill pill-p1">P1 · 10 temas</span>
+        </div>
+      </a>
+
+      <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="card card-disciplina" style="border-top-color: var(--semiq-color);">
+        <div class="card-cover" style="background: rgba(0,96,100,0.08);">🔪</div>
+        <div class="card-body">
+          <div class="card-title">Semiologia Cirúrgica</div>
+          <div class="card-desc">Exame físico cirúrgico, propedêutica</div>
+        </div>
+        <div class="card-footer">
+          <span class="pill pill-p2">P2 · 7 temas</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>MedVaultWeb 2.0 · MED-Vault-2.0 Pipeline · UNINTER Paraguay</footer>
+</div>
+
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
 </body>
 </html>
