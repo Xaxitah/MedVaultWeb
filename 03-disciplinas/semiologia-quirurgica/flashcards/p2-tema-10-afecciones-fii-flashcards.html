@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards — Diverticulite e FII · Semiol. Cirúrgica · MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+</head>
+<style>
+.flash-wrap{max-width:680px;margin:0 auto}
+.flash-progress{text-align:center;font-size:13px;color:#546e7a;font-weight:600;margin-bottom:16px}
+.flash-scene{height:260px;perspective:1000px;cursor:pointer;margin-bottom:20px}
+.flash-card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .5s;border-radius:14px}
+.flash-card.flipped{transform:rotateY(180deg)}
+.flash-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:28px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.flash-front{background:#fff;border:2px solid #b2dfdb;color:#1a1a2e;font-size:16px;font-weight:600;line-height:1.6}
+.flash-back{background:#e0f7fa;border:2px solid #006064;color:#00363a;font-size:15px;line-height:1.6;transform:rotateY(180deg)}
+.flash-label{position:absolute;top:12px;left:16px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#78909c}
+.flash-nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.flash-btn{padding:10px 20px;background:#006064;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.flash-btn:hover{background:#00838f}
+.flash-btn.secondary{background:#eceff1;color:#37474f}
+.flash-btn.secondary:hover{background:#cfd8dc}
+</style>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo"><h2>🧠 MedVault</h2><p>Segundo Cérebro · Medicina</p></div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link"><span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link"><span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link"><span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link"><span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link"><span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+  <div class="sidebar-section">Ferramentas</div>
+  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link"><span class="icon">🐙</span> Repositório</a>
+</nav>
+<div class="main-content">
+  <div class="page-header" style="background:linear-gradient(135deg,#006064 0%,#00838f 100%);">
+    <h1>🔪 Flashcards — Diverticulite e FII</h1>
+    <p>Semiologia Cirúrgica · P2 · 25 cartões de revisão</p>
+  </div>
+  <div class="breadcrumb">
+    <a href="/MedVaultWeb/">Início</a><span>›</span>
+    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiol. Cirúrgica</a><span>›</span>
+    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/p2/t10-afecciones-fii/">T10 — Afecções FII</a><span>›</span>
+    <span>Flashcards</span>
+  </div>
+  <div class="content-area">
+    <div class="flash-wrap">
+      <div class="flash-progress" id="prog"></div>
+      <div class="flash-scene" onclick="flip()">
+        <div class="flash-card" id="card">
+          <div class="flash-face flash-front">
+            <div class="flash-label">Pergunta</div>
+            <div id="front-text"></div>
+          </div>
+          <div class="flash-face flash-back">
+            <div class="flash-label">Resposta</div>
+            <div id="back-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flash-nav">
+        <button class="flash-btn secondary" onclick="prev()">← Anterior</button>
+        <button class="flash-btn" onclick="flip()">↻ Virar</button>
+        <button class="flash-btn secondary" onclick="next()">Próximo →</button>
+      </div>
+    </div>
+    <p class="shortcut-hint" style="margin-top:20px">💡 <kbd>Space</kbd> virar · <kbd>→</kbd> próximo · <kbd>←</kbd> anterior · <kbd>R</kbd> embaralhar · <kbd>ESC</kbd> voltar</p>
+  </div>
+  <footer>MedVaultWeb 2.0 · Semiologia Cirúrgica · Vanuno 4ª ed.</footer>
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+<script>
+let CARDS=[{"front": "Qual é a patologia mais importante e frequente da fossa ilíaca esquerda?", "back": "Diverticulitis aguda do cólon sigmoide."}, {"front": "Quais estruturas devem ser lembradas no diagnóstico diferencial da FII?", "back": "Cólon sigmoide, ureter esquerdo, anexos ginecológicos esquerdos, psoas esquerdo e vasos ilíacos."}, {"front": "Qual é a tríade clínica básica da diverticulite aguda?", "back": "Dor em FII + febre + leucocitose, especialmente com desvio à esquerda quando há abscesso."}, {"front": "Por que o sigmoide favorece formação de divertículos?", "back": "Fezes mais sólidas, menor diâmetro, maior pressão intraluminal e herniação nos pontos de entrada dos vasos curtos."}, {"front": "O que é um divertículo falso?", "back": "Evaginação de mucosa/submucosa que NÃO contém todas as camadas da parede intestinal, especialmente a muscular própria."}, {"front": "Qual a diferença entre diverticulose e diverticulite?", "back": "Diverticulose = presença de divertículos; Diverticulite = inflamação/infecção desses divertículos."}, {"front": "Quais sintomas urinários podem ocorrer por irritação vesical na diverticulite?", "back": "Disúria, polaquiúria, urgência e nictúria."}, {"front": "Quais dois sinais praticamente fecham suspeita de fístula colovesical?", "back": "Fecalúria e pneumatúria."}, {"front": "Por que colonoscopia é perigosa na diverticulite aguda complicada?", "back": "A insuflação/tração pode romper microperfuração bloqueada e converter o quadro em perfuração livre."}, {"front": "Qual exame é mais útil para avaliar diverticulite complicada?", "back": "Tomografia de abdome e pelve, com possibilidade de guiar drenagem percutânea."}, {"front": "O que significa perda da matidez hepática em paciente com dor abdominal aguda?", "back": "Sugere pneumoperitônio por perfuração de víscera oca."}, {"front": "Diferença semiológica entre diverticulite localizada e peritonite generalizada?", "back": "Localizada: dor/defesa na FII. Generalizada: defesa e irritação peritoneal em todos os quadrantes."}, {"front": "O que é 'cuerda cólica'?", "back": "Sigmoide palpável, contraído e doloroso, típico de síndrome do intestino irritável/colite espástica."}, {"front": "Que achados tornam SII menos provável e diverticulite mais provável?", "back": "Febre, leucocitose, defesa muscular e irritação peritoneal."}, {"front": "Qual achado ajuda a diferenciar colite isquêmica de doença inflamatória intestinal?", "back": "Na colite isquêmica, o reto costuma estar respeitado (reto respetado)."}, {"front": "O que é a imagem de 'impressão digital' na colite isquêmica?", "back": "Sinal de edema/hematoma submucoso no cólon por sofrimento isquêmico."}, {"front": "Como se comporta o paciente com cólica renoureteral?", "back": "Costuma estar inquieto e ansioso, mudando de posição pela intensidade da dor."}, {"front": "Como se comporta o paciente com peritonite?", "back": "Prefere ficar imóvel, porque movimento, marcha e esforço pioram a dor."}, {"front": "Quais achados sugerem abscesso do psoas?", "back": "Dor flanco/FII, febre, impotência funcional e flexo-contratura antálgica da cíadeira."}, {"front": "Qual etiologia deve ser lembrada no abscesso do psoas segundo Vanuno?", "back": "Mal de Pott (tuberculose vertebral), com abscesso bacilar drenando pela bainha do psoas."}, {"front": "Quais são as quatro formas clínicas do tumor de cólon sigmoide?", "back": "Tumoral, inflamatória, obstrutiva e hemorrágica."}, {"front": "Por que tumor de sigmoide obstrui mais cedo que tumores em cólon de maior calibre?", "back": "O sigmoide tem menor diâmetro, então menor volume tumoral já dificulta a progressão fecal."}, {"front": "Que achado sugere aneurisma de vasos ilíacos na FII?", "back": "Tumoração pulsátil, possivelmente com sopro local e antecedente vascular ou traumático."}, {"front": "Quais campos a prova antiga sugere para resposta completa?", "back": "Diagnósticos patológico, sindrômico, etiológico e diferencial; sintoma, signo, manobra, complicação, exame e conduta."}, {"front": "Regra prática de conduta entre quadro localizado e generalizado?", "back": "Localizado pode começar clínico; peritonite generalizada é cirúrgica de entrada."}];
+let cur=0,flipped=false;
+function show(){
+  flipped=false;
+  document.getElementById('card').classList.remove('flipped');
+  document.getElementById('front-text').textContent=CARDS[cur].front;
+  document.getElementById('back-text').textContent=CARDS[cur].back;
+  document.getElementById('prog').textContent=`Cartão ${cur+1} de ${CARDS.length}`;
+}
+function flip(){flipped=!flipped;document.getElementById('card').classList.toggle('flipped',flipped);}
+function next(){cur=(cur+1)%CARDS.length;show();}
+function prev(){cur=(cur-1+CARDS.length)%CARDS.length;show();}
+function shuffle(){for(let i=CARDS.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[CARDS[i],CARDS[j]]=[CARDS[j],CARDS[i]];}cur=0;show();}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')history.back();
+  if(e.key===' '){e.preventDefault();flip();}
+  if(e.key==='ArrowRight')next();
+  if(e.key==='ArrowLeft')prev();
+  if(e.key==='r'||e.key==='R')shuffle();
+});
+show();
+</script>
+</body>
+</html>

@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T09 — Apendicitis e FID — Podcast | Semiologia Cirúrgica</title>
-<link rel="stylesheet" href="../../../../style.css">
-<style>
-  body { max-width: 860px; margin: 0 auto; padding: 1.5rem; font-family: system-ui, sans-serif; }
-  .pod-header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; }
-  .pod-header h1 { margin: 0 0 0.25rem; font-size: 1.4rem; }
-  .pod-header p { margin: 0; opacity: 0.8; font-size: 0.9rem; }
-  .tag-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
-  .tag { background: rgba(255,255,255,0.15); padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.75rem; }
-  .player-box { background: #fff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #4f46e5; }
-  .player-box p { color: #475569; font-size: 0.85rem; margin: 0 0 0.75rem; }
-  audio { width: 100%; }
-  .back-btn { display: inline-block; margin-bottom: 1rem; text-decoration: none; color: #4f46e5; font-size: 0.9rem; }
-</style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast — Apendicite e FID · Semiol. Cirúrgica · MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
 </head>
+<style>
+.audio-card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.1);max-width:620px;margin:0 auto}
+.audio-card h3{color:#006064;margin-bottom:8px}
+.audio-card p{color:#546e7a;font-size:14px;margin-bottom:20px}
+audio{width:100%;margin-top:8px;border-radius:8px}
+</style>
 <body>
-<a class="back-btn" href="../../semiologia-cirurgica/">← Voltar para Semiologia Cirúrgica</a>
-<div class="pod-header">
-  <h1>🎧 Podcast — T09 — Apendicitis e FID</h1>
-  <p>Semiologia Cirúrgica · Revisão em áudio gerada pelo NotebookLM</p>
-  <div class="tag-bar"><span class="tag">podcast</span><span class="tag">semiologia-cirurgica</span><span class="tag">P2</span></div>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo"><h2>🧠 MedVault</h2><p>Segundo Cérebro · Medicina</p></div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link"><span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link"><span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link"><span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link"><span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link"><span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+  <div class="sidebar-section">Ferramentas</div>
+  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link"><span class="icon">🐙</span> Repositório</a>
+</nav>
+<div class="main-content">
+  <div class="page-header" style="background:linear-gradient(135deg,#006064 0%,#00838f 100%);">
+    <h1>🔪 Podcast — Apendicite e FID</h1>
+    <p>Semiologia Cirúrgica · P2 · Áudio de revisão do Tema 09</p>
+  </div>
+  <div class="breadcrumb">
+    <a href="/MedVaultWeb/">Início</a><span>›</span>
+    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiol. Cirúrgica</a><span>›</span>
+    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/p2/t09-apendicite-fid/">T09 — Apendicite e FID</a><span>›</span>
+    <span>Podcast</span>
+  </div>
+  <div class="content-area">
+    <div class="audio-card">
+      <h3>🎧 Podcast — Apendicite e FID</h3>
+      <p>Revisão em áudio sobre apendicite aguda, diagnóstico diferencial da FID e score de Alvarado.</p>
+      <audio controls autoplay>
+        <source src="semiologia-quirurgica-t09-apendicitis-fid-podcast.mp3" type="audio/mpeg">
+        Seu navegador não suporta audio HTML5.
+      </audio>
+    </div>
+    <p class="shortcut-hint" style="margin-top:24px">💡 <kbd>ESC</kbd> voltar · <kbd>Space</kbd> pausar/reproduzir (clique no player)</p>
+  </div>
+  <footer>MedVaultWeb 2.0 · Semiologia Cirúrgica · Vanuno 4ª ed.</footer>
 </div>
-<div class="player-box">
-  <p>Ideal para revisar no caminho · Gerado automaticamente a partir do resumo</p>
-  <audio controls src="https://drive.google.com/uc?id=1AHKzi0onl1XCU7sEEftiRSTcnGxeRy9v"></audio>
-</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')history.back();});</script>
 </body>
 </html>
