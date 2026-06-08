@@ -1,0 +1,265 @@
+{
+  "title": "Hemorragia Quiz",
+  "questions": [
+    {
+      "question": "Qual é a característica fundamental do sangue na cavidade peritoneal que explica por que o choque predomina sobre a peritonite no abdome agudo hemorrágico?",
+      "answerOptions": [
+        {
+          "text": "O sangue é um líquido estéril e pouco irritante para o peritônio.",
+          "isCorrect": true,
+          "rationale": "Diferente de conteúdos como a bile ou fezes, o sangue não provoca uma resposta inflamatória peritoneal intensa imediata, tornando a instabilidade hemodinâmica mais evidente que a dor."
+        },
+        {
+          "text": "O sangue causa uma reação inflamatória química mais severa que o conteúdo gástrico.",
+          "isCorrect": false,
+          "rationale": "O conteúdo gástrico é altamente ácido e irritante, provocando 'barriga em tábua', o que não costuma ocorrer inicialmente com o sangue."
+        },
+        {
+          "text": "A presença de hemoglobina bloqueia os receptores de dor no peritônio parietal.",
+          "isCorrect": false,
+          "rationale": "Não existe bloqueio de receptores; a dor é apenas menos intensa devido à natureza estéril do sangue comparada a outros fluidos."
+        },
+        {
+          "text": "O sangue estimula a liberação imediata de endorfinas que mascaram a dor abdominal.",
+          "isCorrect": false,
+          "rationale": "A ausência de dor intensa deve-se à baixa capacidade irritativa do sangue, e não a um efeito analgésico sistêmico."
+        }
+      ],
+      "hint": "Considere o estado bacteriológico do sangue recém-extravasado em comparação com o conteúdo intestinal."
+    },
+    {
+      "question": "No contexto de abdome agudo hemorrágico não traumático, qual é a etiologia mais frequente?",
+      "answerOptions": [
+        {
+          "text": "Aneurisma de aorta abdominal roto.",
+          "isCorrect": false,
+          "rationale": "Embora seja uma causa grave e comum em idosos, não supera a frequência da gravidez ectópica na população geral."
+        },
+        {
+          "text": "Gravidez ectópica rota.",
+          "isCorrect": true,
+          "rationale": "Esta é a causa não traumática mais comum, representando uma das principais emergências cirúrgicas em mulheres em idade fértil."
+        },
+        {
+          "text": "Folículo ovariano hemorrágico.",
+          "isCorrect": false,
+          "rationale": "Pode causar hemoperitônio, mas geralmente é de baixo volume e frequentemente não requer intervenção cirúrgica de emergência."
+        },
+        {
+          "text": "Ruptura de hepatocarcinoma.",
+          "isCorrect": false,
+          "rationale": "É uma causa possível em pacientes com tumores hepáticos, mas é significativamente menos comum que a patologia gestacional."
+        }
+      ],
+      "hint": "Pense em uma emergência ginecológica ligada à implantação fora do útero."
+    },
+    {
+      "question": "Como é denominado o sinal clínico caracterizado por dor referida no ombro esquerdo devido à irritação do diafragma pelo sangue?",
+      "answerOptions": [
+        {
+          "text": "Sinal de Cullen.",
+          "isCorrect": false,
+          "rationale": "Este sinal refere-se à equimose periumbilical em casos de grandes hemorragias retroperitoneais ou intraperitoneais tardias."
+        },
+        {
+          "text": "Sinal de Geneau de Mussy.",
+          "isCorrect": false,
+          "rationale": "Este sinal representa a descompressão dolorosa difusa de todo o abdome, indicando irritação peritoneal generalizada."
+        },
+        {
+          "text": "Sinal de Kehr.",
+          "isCorrect": true,
+          "rationale": "A irritação do nervo frênico pelo sangue subdiafragmático projeta a sensação dolorosa para o dermátomo correspondente no ombro."
+        },
+        {
+          "text": "Sinal de Blumberg.",
+          "isCorrect": false,
+          "rationale": "Este sinal é a descompressão dolorosa localizada, tipicamente associada à apendicite aguda."
+        }
+      ],
+      "hint": "O nome deste sinal começa com a letra 'K'."
+    },
+    {
+      "question": "Qual é o mecanismo pelo qual o tabagismo aumenta o risco de gravidez ectópica?",
+      "answerOptions": [
+        {
+          "text": "Causa vasoconstrição das artérias uterinas impedindo a nidação.",
+          "isCorrect": false,
+          "rationale": "Embora cause vasoconstrição, o mecanismo principal na ectópica envolve a motilidade da trompa."
+        },
+        {
+          "text": "Provoca disfunção ciliar nas trompas de Falópio por hipóxia crônica.",
+          "isCorrect": true,
+          "rationale": "A fumaça do cigarro altera o batimento ciliar necessário para transportar o embrião até o útero, favorecendo a implantação tubária."
+        },
+        {
+          "text": "Aumenta a produção de progesterona, acelerando o trânsito ovular.",
+          "isCorrect": false,
+          "rationale": "O tabagismo não aumenta a progesterona; pelo contrário, ele prejudica o transporte adequado do ovo."
+        },
+        {
+          "text": "Induz a formação de aderências inflamatórias imediatas por nicotina.",
+          "isCorrect": false,
+          "rationale": "Aderências são geralmente causadas por processos infecciosos (ITS), não diretamente pelo depósito de nicotina."
+        }
+      ],
+      "hint": "Pense no transporte do embrião e nas pequenas estruturas que revestem internamente as trompas."
+    },
+    {
+      "question": "Um paciente de 70 anos, hipertenso e tabagista, apresenta-se com massa abdominal pulsátil e queda da pressão arterial. Qual tríade diagnóstica ele preenche?",
+      "answerOptions": [
+        {
+          "text": "Tríade da Gravidez Ectópica.",
+          "isCorrect": false,
+          "rationale": "Esta tríade envolveria atraso menstrual, dor abdominal e sangramento vaginal em mulheres jovens."
+        },
+        {
+          "text": "Tríade do Aneurisma de Aorta Abdominal.",
+          "isCorrect": true,
+          "rationale": "A idade avançada, associada à hipertensão e ao tabagismo, constitui o perfil clássico para a ruptura de aneurisma de aorta."
+        },
+        {
+          "text": "Tríade de Charcot.",
+          "isCorrect": false,
+          "rationale": "A tríade de Charcot (dor, febre e icterícia) é característica da colangite, uma patologia inflamatória biliar."
+        },
+        {
+          "text": "Tríade da Peritonite Química.",
+          "isCorrect": false,
+          "rationale": "Envolveria dor súbita, defesa abdominal e pneumoperitônio, geralmente por úlcera perfurada."
+        }
+      ],
+      "hint": "Os fatores de risco apontam para uma patologia vascular de grande calibre."
+    },
+    {
+      "question": "Qual achado no exame físico é considerado uma contraindicação absoluta para a realização do Lavado Peritoneal Diagnóstico (LPD)?",
+      "answerOptions": [
+        {
+          "text": "Sinal de Kehr positivo.",
+          "isCorrect": false,
+          "rationale": "A dor no ombro sugere hemoperitônio, o que na verdade seria um motivo para investigar a cavidade, não uma contraindicação."
+        },
+        {
+          "text": "Presença de cicatriz de cirurgia prévia.",
+          "isCorrect": false,
+          "rationale": "Cirurgias prévias são contraindicações relativas devido ao risco de aderências, mas não impedem o procedimento de forma absoluta."
+        },
+        {
+          "text": "Sinal de Jobert positivo (pneumoperitônio).",
+          "isCorrect": true,
+          "rationale": "O sinal de Jobert indica perfuração de víscera oca; nesse caso, a laparotomia é imediata e o LPD atrasaria o tratamento necessário."
+        },
+        {
+          "text": "Presença de massas anexiais ao toque vaginal.",
+          "isCorrect": false,
+          "rationale": "Massas anexiais sugerem patologia ginecológica que pode necessitar de diagnóstico invasivo se houver instabilidade."
+        }
+      ],
+      "hint": "O que a presença de ar livre na cavidade abdominal (pneumoperitônio) indica sobre a necessidade de cirurgia imediata?"
+    },
+    {
+      "question": "Qual é a conduta inicial correta no manejo de um choque hemorrágico grave antes da transfusão sanguínea?",
+      "answerOptions": [
+        {
+          "text": "Administração imediata de concentrado de hemácias.",
+          "isCorrect": false,
+          "rationale": "A transfusão trata a anemia, mas a expansão volêmica imediata com cristaloides é necessária para restaurar a pressão arterial primeiro."
+        },
+        {
+          "text": "Infusão de cristaloides (como Ringer Lactato) para normalizar a pressão arterial.",
+          "isCorrect": true,
+          "rationale": "O manejo inicial foca na reposição de volume para estabilização hemodinâmica antes da reposição de componentes sanguíneos."
+        },
+        {
+          "text": "Uso isolado de vasopressores para manter a perfusão cerebral.",
+          "isCorrect": false,
+          "rationale": "Vasopressores em um paciente com hipovolemia sem reposição de fluidos podem agravar a isquemia tecidual."
+        },
+        {
+          "text": "Realização de Tomografia Computadorizada para localizar o sangramento.",
+          "isCorrect": false,
+          "rationale": "A TC é contraindicada em pacientes instáveis; o foco deve ser a estabilização e a intervenção rápida."
+        }
+      ],
+      "hint": "Pense no primeiro passo para 'encher o tanque' e restaurar a volemia."
+    },
+    {
+      "question": "A 'Hemorragia Cataclísmica de Barnes' ocorre tipicamente em qual período gestacional e envolve qual estrutura vascular?",
+      "answerOptions": [
+        {
+          "text": "4 a 6 semanas; veias uterinas.",
+          "isCorrect": false,
+          "rationale": "Nesse período o embrião é muito pequeno para causar a ruptura cataclísmica descrita por Barnes."
+        },
+        {
+          "text": "8 a 12 semanas; artéria gonadal.",
+          "isCorrect": true,
+          "rationale": "A distensão máxima da ampola tubária ocorre entre 8 e 12 semanas, e a ruptura atinge vasos nutridos diretamente pela aorta (artéria gonadal)."
+        },
+        {
+          "text": "20 a 24 semanas; placenta prévia.",
+          "isCorrect": false,
+          "rationale": "Este período refere-se ao segundo trimestre, onde as causas de sangramento são geralmente obstétricas e não por gravidez ectópica rota."
+        },
+        {
+          "text": "14 a 16 semanas; artéria ilíaca interna.",
+          "isCorrect": false,
+          "rationale": "Embora a artéria ilíaca forneça ramos para a pelve, a descrição clássica de Barnes foca no suprimento gonadal da trompa."
+        }
+      ],
+      "hint": "Relacione o tempo de crescimento do embrião na trompa com o suprimento arterial direto da aorta abdominal."
+    },
+    {
+      "question": "Sobre o Lavado Peritoneal Diagnóstico (LPD), qual valor de contagem de glóbulos vermelhos indica um resultado positivo?",
+      "answerOptions": [
+        {
+          "text": "$> 10.000/mm^3$.",
+          "isCorrect": false,
+          "rationale": "Este valor é considerado baixo para indicar hemoperitônio cirúrgico no contexto de trauma ou abdome agudo."
+        },
+        {
+          "text": "$> 100.000/mm^3$.",
+          "isCorrect": true,
+          "rationale": "Este é o critério numérico clássico de positividade para hemácias no líquido retornado do lavado peritoneal."
+        },
+        {
+          "text": "$> 500/mm^3$.",
+          "isCorrect": false,
+          "rationale": "$500/mm^3$ é o valor de corte para glóbulos brancos (leucócitos), não para hemácias."
+        },
+        {
+          "text": "$> 1.000.000/mm^3$.",
+          "isCorrect": false,
+          "rationale": "Embora este valor seja positivo, o critério de corte oficial é dez vezes menor, permitindo maior sensibilidade diagnóstica."
+        }
+      ],
+      "hint": "O número é uma centena de milhar."
+    },
+    {
+      "question": "Qual é a explicação fisiopatológica para o tenesmo retal no paciente com hemoperitônio?",
+      "answerOptions": [
+        {
+          "text": "O sangue infectado causa uma proctite inflamatória aguda.",
+          "isCorrect": false,
+          "rationale": "O sangue no hemoperitônio inicial é estéril, não havendo infecção bacteriana imediata para causar proctite."
+        },
+        {
+          "text": "O acúmulo de sangue no fundo de saco de Douglas comprime a parede anterior do reto.",
+          "isCorrect": true,
+          "rationale": "Como o Douglas é o ponto mais baixo, o sangue se deposita ali e estimula os receptores de estiramento do reto, simulando a necessidade de evacuar."
+        },
+        {
+          "text": "A perda de sangue causa isquemia da mucosa retal e contrações involuntárias.",
+          "isCorrect": false,
+          "rationale": "O tenesmo é um sintoma irritativo local por ocupação de espaço, não um sintoma de isquemia sistêmica por choque."
+        },
+        {
+          "text": "A adrenalina liberada no choque inibe o esfíncter anal interno.",
+          "isCorrect": false,
+          "rationale": "O sistema simpático tende a contrair esfíncteres; o tenesmo é um reflexo parassimpático desencadeado pela pressão local."
+        }
+      ],
+      "hint": "Lembre-se da anatomia da pelve e do local onde os líquidos se acumulam quando o paciente está em pé ou deitado."
+    }
+  ]
+}

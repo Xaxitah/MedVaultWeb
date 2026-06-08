@@ -1,0 +1,221 @@
+{
+  "title": "Abdome Flashcards",
+  "cards": [
+    {
+      "front": "Definição de abdome agudo hemorrágico?",
+      "back": "Conjunto de sinais e sintomas causados por sangue na cavidade peritoneal."
+    },
+    {
+      "front": "Por que o sangue causa uma reação peritoneal leve no hemoperitoneo?",
+      "back": "Porque o sangue é um líquido estéril e pouco irritante para o peritônio."
+    },
+    {
+      "front": "No abdome agudo hemorrágico, o que predomina clinicamente sobre a dor abdominal?",
+      "back": "Clínica de choque (shock) e instabilidade hemodinâmica."
+    },
+    {
+      "front": "Qual a causa não traumática mais frequente de abdome agudo hemorrágico?",
+      "back": "Gravidez ectópica rota."
+    },
+    {
+      "front": "O Signo de Geneau de Mussy caracteriza-se por _____.",
+      "back": "Descompressão dolorosa difusa em todo o abdome."
+    },
+    {
+      "front": "Definição do Signo de Kehr?",
+      "back": "Dor referida no ombro esquerdo devido à irritação do hemidiafragma."
+    },
+    {
+      "front": "Qual o mecanismo fisiopatológico do Signo de Kehr?",
+      "back": "Irritação reflexa do nervo frênico pelo sangue subdiafragmático."
+    },
+    {
+      "front": "O que é o 'Grito de Douglas' no exame físico?",
+      "back": "Dor intensa à mobilização do colo uterino no toque vaginal."
+    },
+    {
+      "front": "Qual a causa do tenesmo retal no hemoperitoneo?",
+      "back": "O sangue no fundo de saco de Douglas comprime a parede anterior do reto."
+    },
+    {
+      "front": "Mecanismo do singulto (soluço) no abdome hemorrágico?",
+      "back": "Irritação reflexa do nervo frênico pelo sangue."
+    },
+    {
+      "front": "Significado clínico das equimoses de Cullen e Grey-Turner?",
+      "back": "Sangramento volumoso com evolução de várias horas ou dias."
+    },
+    {
+      "front": "Diferença da contratura abdominal no hemoperitoneo vs. peritonite perfurativa?",
+      "back": "No hemoperitoneo a contratura é leve, na perfurativa é rígida ('em tábua')."
+    },
+    {
+      "front": "Qual escola de classificação subdivide o abdome hemorrágico em traumático e não traumático?",
+      "back": "Escola Americana."
+    },
+    {
+      "front": "Órgão mais frequentemente lesionado no trauma abdominal fechado?",
+      "back": "Baço (trauma esplênico)."
+    },
+    {
+      "front": "Tríade epidemiológica clássica do aneurisma de aorta abdominal roto?",
+      "back": "Idoso, hipertenso (HAS) e tabagista."
+    },
+    {
+      "front": "Achado físico que sugere aneurisma de aorta abdominal em dissecção?",
+      "back": "Massa abdominal pulsátil com diminuição de pulsos em membros inferiores."
+    },
+    {
+      "front": "Definição de gravidez ectópica?",
+      "back": "Implantação do ovo fertilizado fora do endométrio."
+    },
+    {
+      "front": "Percentual de gravidez ectópica que ocorre nas trompas (tubária)?",
+      "back": "95%."
+    },
+    {
+      "front": "Localização específica mais comum da gravidez ectópica tubária?",
+      "back": "Ampola tubária (~80%)."
+    },
+    {
+      "front": "O que caracteriza a Hemorragia Cataclísmica de Barnes?",
+      "back": "Perda súbita de 1 a 2 litros de sangue arterial por ruptura tubária."
+    },
+    {
+      "front": "Qual vaso sanguíneo é a fonte da Hemorragia de Barnes?",
+      "back": "Artéria gonadal (ramo direto da aorta)."
+    },
+    {
+      "front": "Faixa de tempo gestacional em que ocorre a maioria das rupturas ectópicas?",
+      "back": "Entre 8 e 12 semanas."
+    },
+    {
+      "front": "Por que o tabagismo é fator de risco para gravidez ectópica?",
+      "back": "Causa disfunção ciliar nas trompas, impedindo o transporte do embrião."
+    },
+    {
+      "front": "Tríade ecográfica da gravidez ectópica rota?",
+      "back": "Útero vazio, líquido livre em cavidade e massa anexial."
+    },
+    {
+      "front": "Achado da culdocentese que confirma hemoperitoneo?",
+      "back": "Líquido hemorrágico que não coagula."
+    },
+    {
+      "front": "Qual a diferença entre salpingostomia e salpingectomia?",
+      "back": "A salpingostomia preserva a trompa; a salpingectomia retira a trompa."
+    },
+    {
+      "front": "O que indica o Sinal de Jobert positivo?",
+      "back": "Pneumoperitônio (presença de ar por perfuração de víscera oca)."
+    },
+    {
+      "front": "Conduta inicial obrigatória no choque hemorrágico antes da transfusão?",
+      "back": "Expansão volêmica com cristaloides (ex: Ringer Lactato)."
+    },
+    {
+      "front": "Quando a Tomografia Computadorizada (TC) é indicada no abdome hemorrágico?",
+      "back": "Apenas em pacientes hemodinamicamente estáveis."
+    },
+    {
+      "front": "O que significa a sigla EcoFAST?",
+      "back": "Focused Abdominal Sonography for Trauma (Ultrassonografia abdominal focada no trauma)."
+    },
+    {
+      "front": "Quais são as 4 zonas de exploração do EcoFAST?",
+      "back": "Epigástrio, Quadrante Superior Direito, Quadrante Superior Esquerdo e Pelve."
+    },
+    {
+      "front": "O que se busca avaliar no Quadrante Superior Direito durante o FAST?",
+      "back": "Espaço de Morrison (entre fígado e rim direito)."
+    },
+    {
+      "front": "Indicação para o Lavado Peritoneal Diagnóstico (LPD)?",
+      "back": "Suspeita de hemoperitoneo com EcoFAST negativo ou indisponível em paciente estável."
+    },
+    {
+      "front": "Critério quantitativo de glóbulos vermelhos para LPD positivo?",
+      "back": "> 100.000/$mm^3$."
+    },
+    {
+      "front": "Critério quantitativo de glóbulos brancos para LPD positivo?",
+      "back": "> 500/$mm^3$."
+    },
+    {
+      "front": "Volume de sangue na aspiração inicial que indica laparotomia imediata no LPD?",
+      "back": "> 10 mL."
+    },
+    {
+      "front": "Contraindicação absoluta para a realização do LPD?",
+      "back": "Pneumoperitônio (Sinal de Jobert positivo)."
+    },
+    {
+      "front": "Por que o Jobert positivo contraindica o LPD?",
+      "back": "Indica perfuração de víscera oca, o que já exige cirurgia imediata."
+    },
+    {
+      "front": "No paciente instável com EcoFAST positivo, qual a conduta?",
+      "back": "Laparotomia exploradora de urgência."
+    },
+    {
+      "front": "Diferença entre gravidez ectópica e eutópica?",
+      "back": "Ectópica é fora do endométrio; eutópica é dentro do endométrio."
+    },
+    {
+      "front": "O que é gravidez heterotópica?",
+      "back": "Presença simultânea de uma gravidez ectópica e uma eutópica."
+    },
+    {
+      "front": "Qual o principal fator de risco infeccioso para gravidez ectópica?",
+      "back": "Infecções Sexualmente Transmissíveis (ITS) como gonorreia e clamídia."
+    },
+    {
+      "front": "Mecanismo do DIU como fator de risco para ectópica?",
+      "back": "Previne a implantação uterina, mas não protege contra a implantação tubária."
+    },
+    {
+      "front": "Por que a velocidade do sangramento é mais grave que o volume total perdido?",
+      "back": "O corpo tem menos tempo para ativar mecanismos compensatórios de choque."
+    },
+    {
+      "front": "Principal utilidade da TC no abdome agudo hemorrágico?",
+      "back": "Localizar e classificar o grau da lesão orgânica."
+    },
+    {
+      "front": "Na percussão abdominal, o que se espera no hemoperitoneo?",
+      "back": "Macicez fixa ou móvel (presença de líquido livre)."
+    },
+    {
+      "front": "Qual o ponto mais baixo do peritônio onde o sangue costuma se acumular?",
+      "back": "Fundo de saco de Douglas."
+    },
+    {
+      "front": "A Manobra de Proust refere-se à dor ao palpar o _____.",
+      "back": "Fundo de saco de Douglas."
+    },
+    {
+      "front": "Fator de risco 'ITS-DETEC' para ectópica: o 'E' final refere-se a _____.",
+      "back": "Edad (Idade avançada)."
+    },
+    {
+      "front": "O sangue no hemoperitoneo estimula o peritônio de forma _____.",
+      "back": "Leve."
+    },
+    {
+      "front": "Diferencial ginecológico não cirúrgico do hemoperitoneo?",
+      "back": "Folículo ovariano hemorrágico ou endometriose."
+    },
+    {
+      "front": "Em pacientes com trauma esplênico estáveis, qual a preferência de exame?",
+      "back": "Tomografia Computadorizada (TC)."
+    },
+    {
+      "front": "O uso de adrenalina e ácido tranexâmico no manejo atua como _____.",
+      "back": "Hemostáticos auxiliares."
+    },
+    {
+      "front": "No LPD, a infusão de soro fisiológico é de aproximadamente _____.",
+      "back": "500 mL a 1 Litro."
+    }
+  ]
+}
