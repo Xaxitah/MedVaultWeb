@@ -1,101 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afecções da Fossa Ilíaca Esquerda · Semiol. Cirúrgica · MedVaultWeb</title>
-  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P2 tema 10 afeccoes da fossa iliaca esquerda - Infografico - MedVaultWeb</title>
+  <style>
+    :root{--bg:#f6f8fb;--surface:#fff;--text:#182230;--muted:#667085;--line:#d9e2ec;--brand:#155e75;--brand2:#0f766e}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    header{background:linear-gradient(120deg,#164e63,#0f766e);color:#fff;padding:24px 18px}
+    header .inner,main{max-width:1100px;margin:0 auto}
+    h1{margin:0;font-size:1.6rem;line-height:1.25;letter-spacing:0}
+    header p{margin:.4rem 0 0;opacity:.9}
+    main{padding:20px 16px 52px}
+    .panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+    .media{margin-top:14px;text-align:center}
+    img{display:block;max-width:100%;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+    .drive-player{width:100%;height:420px;border:1px solid var(--line);border-radius:8px;background:#fff}
+    audio{width:100%;margin-top:12px}
+    .actions{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:7px;padding:.55rem .8rem;text-decoration:none;color:#0f5f76;background:#fff;font-weight:700}
+    .btn.primary{background:#155e75;color:#fff;border-color:#155e75}
+    .hint,.meta{color:var(--muted);font-size:.92rem}
+    code{background:#eef2f7;border-radius:4px;padding:.12rem .3rem}
+  </style>
 </head>
-
-<style>
-.content-body{font-family:'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.75;color:#1a1a2e;max-width:100%}
-.content-body h1,.content-body h2{color:#006064;border-bottom:2px solid #b2dfdb;padding-bottom:6px;margin-top:28px}
-.content-body h3{color:#00838f;margin-top:20px}
-.content-body h4{color:#37474f;margin-top:16px}
-.content-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
-.content-body table th{background:#006064;color:#fff;padding:9px 12px;text-align:left}
-.content-body table td{padding:8px 12px;border-bottom:1px solid #e0e0e0;vertical-align:top}
-.content-body table tr:nth-child(even) td{background:#f5f5f5}
-.content-body blockquote{border-left:4px solid #00838f;background:#e0f7fa;padding:12px 16px;margin:14px 0;border-radius:0 8px 8px 0}
-.content-body .callout{border-radius:8px;padding:14px 18px;margin:16px 0;border-left:5px solid #ccc}
-.content-body .callout[data-callout="info"]{background:#e3f2fd;border-color:#1565c0}
-.content-body .callout[data-callout="warning"]{background:#fff8e1;border-color:#f9a825}
-.content-body .callout[data-callout="danger"],.content-body .callout[data-callout="error"]{background:#ffebee;border-color:#c62828}
-.content-body .callout[data-callout="tip"],.content-body .callout[data-callout="success"]{background:#e8f5e9;border-color:#2e7d32}
-.content-body .callout[data-callout="example"]{background:#f3e5f5;border-color:#6a1b9a}
-.content-body .callout[data-callout="quote"]{background:#eceff1;border-color:#546e7a}
-.content-body .callout[data-callout="abstract"],.content-body .callout[data-callout="summary"]{background:#e0f2f1;border-color:#00695c}
-.content-body .callout-title{font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.content-body .callout-title-inner{font-size:14px;text-transform:uppercase;letter-spacing:.5px}
-.content-body .callout-fold{margin-left:auto;cursor:pointer}
-.content-body code{background:#e0f7fa;color:#006064;padding:2px 6px;border-radius:4px;font-family:monospace;font-size:.88em}
-.content-body pre{background:#263238;color:#e0f7fa;padding:16px;border-radius:8px;overflow-x:auto;font-size:.88em}
-.content-body pre code{background:transparent;color:inherit;padding:0}
-.content-body ul,.content-body ol{padding-left:22px}
-.content-body li{margin-bottom:4px}
-.content-body strong{color:#006064;font-weight:700}
-.content-body em{color:#00838f}
-.content-body mark{background:#b2dfdb;color:#006064;padding:1px 4px;border-radius:3px}
-.content-body figure{text-align:center;margin:20px 0}
-.content-body figure img{max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.15)}
-.content-body figcaption{font-size:13px;color:#666;margin-top:6px}
-.content-body img{max-width:100%;height:auto}
-.shortcut-hint{text-align:center;color:#78909c;font-size:13px;margin-top:18px;padding:10px;background:#f5f5f5;border-radius:6px}
-.shortcut-hint kbd{background:#263238;color:#e0f7fa;padding:2px 7px;border-radius:4px;font-family:monospace;font-size:12px}
-</style>
 <body>
-<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-<nav id="sidebar" class="sidebar">
-  <div class="sidebar-logo"><h2>🧠 MedVault</h2><p>Segundo Cérebro · Medicina</p></div>
-  <div class="sidebar-section">Navegação</div>
-  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
-  <div class="sidebar-section">Disciplinas</div>
-  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link"><span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link"><span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link"><span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link"><span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link"><span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
-  <div class="sidebar-section">Ferramentas</div>
-  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link"><span class="icon">🐙</span> Repositório</a>
-</nav>
-<div class="main-content">
-  <div class="page-header" style="background:linear-gradient(135deg,#006064 0%,#00838f 100%);">
-    <h1>🔪 Afecções da Fossa Ilíaca Esquerda</h1>
-    <p>Semiologia Cirúrgica · P2 · Diverticulite, diagnóstico diferencial FII</p>
-  </div>
-  <div class="breadcrumb">
-    <a href="/MedVaultWeb/">Início</a><span>›</span>
-    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiol. Cirúrgica</a><span>›</span>
-    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/p2/t10-afecciones-fii/">T10 — Afecções FII</a><span>›</span>
-    <span>Infográfico — FIE</span>
-  </div>
-  <div class="content-area">
-    <div style="text-align:center;padding:10px 0;">
-      <img id="main-img" src="p2-tema-10-afeccoes-da-fossa-iliaca-esquerda.png" alt="Afecções da Fossa Ilíaca Esquerda"
-           style="max-width:100%;height:auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.18);cursor:zoom-in;">
-    </div>
-    <p class="shortcut-hint">💡 <kbd>ESC</kbd> voltar · <kbd>+</kbd><kbd>-</kbd> zoom · <kbd>0</kbd> ajustar · <kbd>click</kbd> toggle zoom</p>
-  </div>
-  <footer>MedVaultWeb 2.0 · Semiologia Cirúrgica · Vanuno 4ª ed.</footer>
-</div>
-<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
-<script>
-(function(){
-  const img = document.getElementById('main-img');
-  if(!img) return;
-  let zoomed = false;
-  img.addEventListener('click', () => {
-    zoomed = !zoomed;
-    img.style.maxWidth = zoomed ? 'none' : '100%';
-    img.style.cursor = zoomed ? 'zoom-out' : 'zoom-in';
-    img.style.width = zoomed ? 'auto' : '';
-  });
-  document.addEventListener('keydown', e => {
-    if(e.key === 'Escape') history.back();
-    if(e.key === '+' || e.key === '=') { img.style.maxWidth='none'; img.style.width=(parseFloat(img.style.width||img.naturalWidth)||img.naturalWidth)*1.2+'px'; }
-    if(e.key === '-') { img.style.maxWidth='none'; img.style.width=(parseFloat(img.style.width||img.naturalWidth)||img.naturalWidth)*0.8+'px'; }
-    if(e.key === '0') { img.style.maxWidth='100%'; img.style.width=''; }
-  });
-})();
-</script>
+  <header><div class="inner"><h1>P2 tema 10 afeccoes da fossa iliaca esquerda</h1><p>Infografico servido pelo Google Drive publico.</p></div></header>
+  <main>
+    <section class="panel">
+      <p class="meta">Arquivo fonte: <code>p2-tema-10-afeccoes-da-fossa-iliaca-esquerda.png</code></p>
+      <div class="media">
+        <a class="media-link" href="https://drive.google.com/file/d/1TNoTGFo-5PiqejF_uc7xCEwbsbW-oShe/view" target="_blank" rel="noopener"><img src="https://drive.google.com/thumbnail?id=1TNoTGFo-5PiqejF_uc7xCEwbsbW-oShe&sz=w1600" alt="P2 tema 10 afeccoes da fossa iliaca esquerda" loading="eager"></a>
+      <p class="hint">Se a imagem nao carregar aqui, use os botoes abaixo para abrir ou baixar no Google Drive.</p>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://drive.google.com/file/d/1TNoTGFo-5PiqejF_uc7xCEwbsbW-oShe/view" target="_blank" rel="noopener">Abrir no Drive</a>
+        <a class="btn" href="https://drive.google.com/uc?export=download&id=1TNoTGFo-5PiqejF_uc7xCEwbsbW-oShe" target="_blank" rel="noopener">Baixar arquivo</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,56 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast — Apendicite e FID · Semiol. Cirúrgica · MedVaultWeb</title>
-  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semiologia quirurgica t09 apendicitis fid podcast - Podcast - MedVaultWeb</title>
+  <style>
+    :root{--bg:#f6f8fb;--surface:#fff;--text:#182230;--muted:#667085;--line:#d9e2ec;--brand:#155e75;--brand2:#0f766e}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    header{background:linear-gradient(120deg,#164e63,#0f766e);color:#fff;padding:24px 18px}
+    header .inner,main{max-width:1100px;margin:0 auto}
+    h1{margin:0;font-size:1.6rem;line-height:1.25;letter-spacing:0}
+    header p{margin:.4rem 0 0;opacity:.9}
+    main{padding:20px 16px 52px}
+    .panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+    .media{margin-top:14px;text-align:center}
+    img{display:block;max-width:100%;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+    .drive-player{width:100%;height:420px;border:1px solid var(--line);border-radius:8px;background:#fff}
+    audio{width:100%;margin-top:12px}
+    .actions{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:7px;padding:.55rem .8rem;text-decoration:none;color:#0f5f76;background:#fff;font-weight:700}
+    .btn.primary{background:#155e75;color:#fff;border-color:#155e75}
+    .hint,.meta{color:var(--muted);font-size:.92rem}
+    code{background:#eef2f7;border-radius:4px;padding:.12rem .3rem}
+  </style>
 </head>
-<style>
-.audio-card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.1);max-width:620px;margin:0 auto}
-.audio-card h3{color:#006064;margin-bottom:8px}
-.audio-card p{color:#546e7a;font-size:14px;margin-bottom:20px}
-audio{width:100%;margin-top:8px;border-radius:8px}
-</style>
 <body>
-<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-<nav id="sidebar" class="sidebar">
-  <div class="sidebar-logo"><h2>🧠 MedVault</h2><p>Segundo Cérebro · Medicina</p></div>
-  <div class="sidebar-section">Navegação</div>
-  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
-  <div class="sidebar-section">Disciplinas</div>
-  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link"><span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link"><span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link"><span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link"><span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link"><span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
-  <div class="sidebar-section">Ferramentas</div>
-  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link"><span class="icon">🐙</span> Repositório</a>
-</nav>
-<div class="main-content">
-  <div class="page-header" style="background:linear-gradient(135deg,#006064 0%,#00838f 100%);">
-    <h1>🔪 Podcast — Apendicite e FID</h1>
-    <p>Semiologia Cirúrgica · P2 · Áudio de revisão do Tema 09</p>
-  </div>
-  <div class="breadcrumb">
-    <a href="/MedVaultWeb/">Início</a><span>›</span>
-    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiol. Cirúrgica</a><span>›</span>
-    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/p2/t09-apendicite-fid/">T09 — Apendicite e FID</a><span>›</span>
-    <span>Podcast</span>
-  </div>
-  <div class="content-area">
-    <div class="audio-card">
-      <h3>🎧 Podcast — Apendicite e FID</h3>
-      <p>Revisão em áudio sobre apendicite aguda, diagnóstico diferencial da FID e score de Alvarado.</p>
-      <audio controls autoplay>
-        <source src="semiologia-quirurgica-t09-apendicitis-fid-podcast.mp3" type="audio/mpeg">
-        Seu navegador não suporta audio HTML5.
-      </audio>
-    </div>
-    <p class="shortcut-hint" style="margin-top:24px">💡 <kbd>ESC</kbd> voltar · <kbd>Space</kbd> pausar/reproduzir (clique no player)</p>
-  </div>
-  <footer>MedVaultWeb 2.0 · Semiologia Cirúrgica · Vanuno 4ª ed.</footer>
-</div>
-<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
-<script>document.addEventListener('keydown',e=>{if(e.key==='Escape')history.back();});</script>
+  <header><div class="inner"><h1>Semiologia quirurgica t09 apendicitis fid podcast</h1><p>Podcast servido pelo Google Drive publico.</p></div></header>
+  <main>
+    <section class="panel">
+      <p class="meta">Arquivo fonte: <code>semiologia-quirurgica-t09-apendicitis-fid-podcast.mp3</code></p>
+      <div class="media">
+        <iframe class="drive-player" src="https://drive.google.com/file/d/1AHKzi0onl1XCU7sEEftiRSTcnGxeRy9v/preview" allow="autoplay"></iframe>
+      <audio controls preload="metadata" src="https://drive.google.com/uc?export=download&id=1AHKzi0onl1XCU7sEEftiRSTcnGxeRy9v"></audio>
+      <p class="hint">Se o player nao iniciar aqui, use os botoes abaixo para abrir ou baixar no Google Drive.</p>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://drive.google.com/file/d/1AHKzi0onl1XCU7sEEftiRSTcnGxeRy9v/view" target="_blank" rel="noopener">Abrir no Drive</a>
+        <a class="btn" href="https://drive.google.com/uc?export=download&id=1AHKzi0onl1XCU7sEEftiRSTcnGxeRy9v" target="_blank" rel="noopener">Baixar arquivo</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
