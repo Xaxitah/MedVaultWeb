@@ -1,57 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Semiol. Cirúrgica P2 T03 — Fossa Ilíaca Direita">
-  <title>T03 — Fossa Ilíaca Direita · Semiol. Cirúrgica P2 — MedVaultWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>P2-T03 - Fosa iliaca derecha - MedVaultWeb</title>
   <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    .artifact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .artifact-card{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:#123;border:1px solid #d9e2ec;border-top:4px solid #00838f;border-radius:10px;background:#fff;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+    .artifact-card:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
+    .artifact-label{font-weight:700;color:#006064;font-size:1.05rem}
+    .artifact-status{font-size:.82rem;color:#166534;background:#dcfce7;border-radius:999px;padding:3px 9px;width:max-content}
+    .notice{background:#e0f7fa;border-left:4px solid #00838f;border-radius:0 8px 8px 0;padding:12px 16px;margin:16px 0}
+  </style>
 </head>
 <body>
-<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<button class="sidebar-toggle" id="sidebar-toggle">Menu</button>
 <nav id="sidebar" class="sidebar">
-  <div class="sidebar-logo"><h2>🧠 MedVault</h2><p>Segundo Cérebro · Medicina</p></div>
-  <div class="sidebar-section">Navegação</div>
-  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
-  <div class="sidebar-section">Disciplinas</div>
-  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link"><span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link"><span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
-  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link"><span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link"><span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
-  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link"><span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
-  <div class="sidebar-section">Ferramentas</div>
-  <a href="https://github.com/Xaxitah/MED-Vault" target="_blank" class="sidebar-link"><span class="icon">🐙</span> Repositório</a>
+  <div class="sidebar-logo"><h2>MedVault</h2><p>Segundo Cerebro - Medicina</p></div>
+  <div class="sidebar-section">Navegacao</div>
+  <a href="/MedVaultWeb/" class="sidebar-link">Inicio</a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">Semiologia Cirurgica</a>
+  <a href="/MedVaultWeb/semiologia-cirurgica/p2.html" class="sidebar-link">Hub P2 completo</a>
 </nav>
 <div class="main-content">
-  <div class="page-header" style="background: linear-gradient(135deg, #006064 0%, #00838f 100%);">
-    <h1>🔪 T03 — Fossa Ilíaca Direita</h1>
-    <p>Semiol. Cirúrgica · P2 · Diagnóstico diferencial FID, apendicite</p>
+  <div class="page-header" style="background:linear-gradient(135deg,#006064 0%,#00838f 100%);">
+    <h1>P2-T03 - Fosa iliaca derecha</h1>
+    <p>Semiologia Cirurgica - P2 - Dr. Armoa</p>
   </div>
   <div class="breadcrumb">
-    <a href="/MedVaultWeb/">Início</a><span>›</span>
-    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiol. Cirúrgica</a><span>›</span>
-    <span>P2 · T03 — Fossa Ilíaca Direita</span>
+    <a href="/MedVaultWeb/">Inicio</a><span>></span>
+    <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/">Semiologia Cirurgica</a><span>></span>
+    <span>P2-T03</span>
   </div>
   <div class="content-area">
-    <h2 class="section-title">🗂️ Materiais Disponíveis</h2>
-    <div class="grid grid-artefatos">
-      <a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/resumos/p2/p2-t03-fosa-iliaca-derecha/index.html" target="_blank" class="card card-artefato disponivel" style="border-top-color: var(--resumo);">
-        <span class="art-icon">📄</span><span class="art-label">Resumo</span><span class="art-status">Disponível</span>
-      </a>
-      <div class="card card-artefato pendente">
-        <span class="art-icon">🖼️</span><span class="art-label">Infográfico</span><span class="art-status">Em breve</span>
-      </div>
-      <div class="card card-artefato pendente">
-        <span class="art-icon">🗺️</span><span class="art-label">Mapa Mental</span><span class="art-status">Em breve</span>
-      </div>
-      <div class="card card-artefato pendente">
-        <span class="art-icon">🎧</span><span class="art-label">Podcast</span><span class="art-status">Em breve</span>
-      </div>
-      <div class="card card-artefato pendente">
-        <span class="art-icon">❓</span><span class="art-label">Quiz</span><span class="art-status">Em breve</span>
-      </div>
-    </div>
+    <div class="notice">Esta pagina da rota antiga agora aponta para todos os artefatos ativos do tema. Arquivos pesados abrem por wrappers HTML com Google Drive.</div>
+    <h2 class="section-title">Materiais Disponiveis</h2>
+    <div class="artifact-grid"><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/resumos/p2/p2-t03-fosa-iliaca-derecha/index.html" class="artifact-card"><span class="artifact-label">Resumo</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/quiz.html?data=03-disciplinas/semiologia-quirurgica/revisao/quiz/semiologia-quirurgica-t03-fosa-iliaca-derecha-quiz.json&amp;back=semiologia-cirurgica/p2.html" class="artifact-card"><span class="artifact-label">Quiz interativo</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/flashcards/p2-t03-fosa-iliaca-derecha-flashcards.html" class="artifact-card"><span class="artifact-label">Flashcards</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/mapas-mentais/p2-t03-fosa-iliaca-derecha-mapa.html" class="artifact-card"><span class="artifact-label">Mapa mental</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/infograficos/p2-t03-fosa-iliaca-derecha-infografico.html" class="artifact-card"><span class="artifact-label">Infografico</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/podcast/p2-t03-fosa-iliaca-derecha-podcast.html" class="artifact-card"><span class="artifact-label">Podcast</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/podcast/p2-t03-fosa-iliaca-derecha-audio-extra.html" class="artifact-card"><span class="artifact-label">Audio extra</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/video/p2-t03-fosa-iliaca-derecha-video.html" class="artifact-card"><span class="artifact-label">Video</span><span class="artifact-status">Disponivel</span></a><a href="/MedVaultWeb/03-disciplinas/semiologia-quirurgica/revisao/tabelas/p2-t03-fosa-iliaca-derecha-tabela.html" class="artifact-card"><span class="artifact-label">Tabela</span><span class="artifact-status">Disponivel</span></a></div>
   </div>
-  <footer>MedVaultWeb 2.0 · Semiol. Cirúrgica P2 · Semiologia Cirúrgica</footer>
+  <footer>MedVaultWeb - Semiologia Cirurgica P2</footer>
 </div>
 <script src="/MedVaultWeb/assets/js/sidebar.js"></script>
 </body>
