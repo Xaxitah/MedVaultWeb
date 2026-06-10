@@ -1,0 +1,139 @@
+{
+  "mind_map": {
+    "name": "T13 - Anestesicos Locais",
+    "children": [
+      {
+        "name": "Conceito e alvo",
+        "children": [
+          {
+            "name": "Bloqueio reversivel da conducao nervosa sem perda de consciencia"
+          },
+          {
+            "name": "Alvo: canal de Na+ voltagem-dependente"
+          },
+          {
+            "name": "Ligacao pela face citoplasmatica, segmentos S6"
+          },
+          {
+            "name": "Bloqueio uso-dependente: mais estimulo, mais bloqueio"
+          }
+        ]
+      },
+      {
+        "name": "Estrutura e classificacao",
+        "children": [
+          {
+            "name": "Nucleo aromatico: lipossolubilidade, potencia e duracao"
+          },
+          {
+            "name": "Cadeia intermediaria define ester ou amida"
+          },
+          {
+            "name": "Grupo amina: hidrossolubilidade e pKa"
+          },
+          {
+            "name": "Esteres: procaina, tetracaina, benzocaina, cocaina, cloroprocaina"
+          },
+          {
+            "name": "Amidas: lidocaina, bupivacaina, mepivacaina, prilocaina, ropivacaina, levobupivacaina, articaina"
+          }
+        ]
+      },
+      {
+        "name": "Ordem de bloqueio",
+        "children": [
+          {
+            "name": "B e C primeiro: simpatico, dor e temperatura"
+          },
+          {
+            "name": "A delta: dor e temperatura"
+          },
+          {
+            "name": "A gamma e A beta: propriocepcao, tato e pressao"
+          },
+          {
+            "name": "A alfa por ultimo: motor e propriocepcao"
+          }
+        ]
+      },
+      {
+        "name": "Fatores clinicos",
+        "children": [
+          {
+            "name": "pH acido/inflamacao: mais droga ionizada, menor penetracao e falha anestesica"
+          },
+          {
+            "name": "Adrenalina: aumenta duracao e reduz toxicidade sistemica"
+          },
+          {
+            "name": "Adrenalina contraindicada em dedos, orelhas, nariz e penis"
+          },
+          {
+            "name": "Cocaina + adrenalina: dupla vasoconstricao, hipertensao e arritmia"
+          }
+        ]
+      },
+      {
+        "name": "Farmacos-chave",
+        "children": [
+          {
+            "name": "Lidocaina: prototipo das amidas, tambem antiarritmico classe Ib"
+          },
+          {
+            "name": "Bupivacaina: longa duracao, cardiotoxicidade grave, contraindicada no bloqueio de Bier"
+          },
+          {
+            "name": "Prilocaina: metemoglobinemia por o-toluidina; tratar com azul de metileno"
+          },
+          {
+            "name": "Ropivacaina: S-enantiomero, menos cardiotoxica e vasoconstricao intrinseca"
+          },
+          {
+            "name": "Levobupivacaina: S-enantiomero da bupivacaina, potencia similar e menor cardiotoxicidade"
+          },
+          {
+            "name": "Articaina: hibrida ester/amida, 4%, excelente difusao ossea, odontologia"
+          }
+        ]
+      },
+      {
+        "name": "Toxicidade",
+        "children": [
+          {
+            "name": "SNC: sonolencia, tinnitus, disgeusia, tremor, convulsoes, coma"
+          },
+          {
+            "name": "Tratamento convulsao por AL: benzodiazepinico IV e suporte ventilatorio"
+          },
+          {
+            "name": "Cardiovascular: reducao de condução e contratilidade; bupivacaina e a mais perigosa"
+          },
+          {
+            "name": "Prilocaina: cianose, SpO2 baixa falsa, PaO2 normal"
+          }
+        ]
+      },
+      {
+        "name": "Pegadinhas de prova",
+        "children": [
+          {
+            "name": "Inflamacao explica falha do anestesico local"
+          },
+          {
+            "name": "Motor e bloqueado por ultimo"
+          },
+          {
+            "name": "Ester faz PABA e alergia cruzada; amida tem alergia rara"
+          },
+          {
+            "name": "Bupivacaina 0,75% contraindicada em obstetricia"
+          },
+          {
+            "name": "Mepivacaina contraindicada em obstetricia por ion trapping fetal"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "farmacologia-p2-t13-anestesicos-locais"
+}

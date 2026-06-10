@@ -1,0 +1,128 @@
+{
+  "mind_map": {
+    "name": "T12 - Anticonvulsivantes",
+    "children": [
+      {
+        "name": "Base fisiopatologica",
+        "children": [
+          {
+            "name": "Crise convulsiva: descarga neuronal sincronica e ritmica"
+          },
+          {
+            "name": "Epilepsia: recorrencia; nao e igual a uma crise isolada"
+          },
+          {
+            "name": "Excitacao: Na+, Ca2+, glutamato"
+          },
+          {
+            "name": "Inibicao: GABA, Cl-, K+"
+          }
+        ]
+      },
+      {
+        "name": "Mecanismos principais",
+        "children": [
+          {
+            "name": "Bloqueio Na+: carbamazepina, fenitoina, lamotrigina, oxcarbazepina, topiramato"
+          },
+          {
+            "name": "Potencia GABA-A: benzodiazepinas e fenobarbital"
+          },
+          {
+            "name": "Inibe GABA-T: valproato e vigabatrina"
+          },
+          {
+            "name": "Bloqueio Ca2+ tipo T: etosuximida e valproato"
+          },
+          {
+            "name": "SV2A: levetiracetam"
+          },
+          {
+            "name": "Subunidade alfa2delta Ca2+: gabapentina e pregabalina"
+          }
+        ]
+      },
+      {
+        "name": "Escolha por tipo de crise",
+        "children": [
+          {
+            "name": "Ausencia tipica: etosuximida; valproato se houver tonico-clonica associada"
+          },
+          {
+            "name": "Tonico-clonica: valproato, carbamazepina, fenitoina, fenobarbital"
+          },
+          {
+            "name": "Parciais/focais: carbamazepina, fenitoina, lamotrigina, levetiracetam"
+          },
+          {
+            "name": "Mioclonias: valproato, clonazepam, levetiracetam"
+          },
+          {
+            "name": "Status epilepticus: lorazepam IV -> fenitoina/fosfenitoina -> fenobarbital"
+          }
+        ]
+      },
+      {
+        "name": "Farmacos classicos",
+        "children": [
+          {
+            "name": "Carbamazepina: Na+, neuralgia trigeminal, indutor CYP, SIADH/hiponatremia"
+          },
+          {
+            "name": "Fenitoina: Na+, cinetica zero ordem, hiperplasia gengival, teratogenia"
+          },
+          {
+            "name": "Valproato: Na+ + GABA + Ca2+T, amplo espectro, hepatotoxicidade e espinha bifida"
+          },
+          {
+            "name": "Fenobarbital: GABA-A, sedacao, tolerancia, pior rendimento escolar"
+          },
+          {
+            "name": "Etosuximida: Ca2+T, ausencia tipica e nada mais"
+          }
+        ]
+      },
+      {
+        "name": "Farmacos novos",
+        "children": [
+          {
+            "name": "Lamotrigina: Na+, risco de Stevens-Johnson"
+          },
+          {
+            "name": "Levetiracetam: SV2A, irritabilidade e sonolencia"
+          },
+          {
+            "name": "Gabapentina/pregabalina: alfa2delta, dor neuropatica, tontura/sonolencia"
+          },
+          {
+            "name": "Topiramato: Na+ + GABA + AMPA, perda de peso"
+          },
+          {
+            "name": "Vigabatrina: GABA-T irreversivel, defeito permanente de campo visual"
+          }
+        ]
+      },
+      {
+        "name": "Pegadinhas de prova",
+        "children": [
+          {
+            "name": "Disritmia no EEG nao obriga tratamento"
+          },
+          {
+            "name": "Carbamazepina e fenitoina pioram ausencias e mioclonias"
+          },
+          {
+            "name": "Valproato e o classico de amplo espectro, mas evitar na gestacao"
+          },
+          {
+            "name": "Fenitoina: pequenos aumentos de dose podem intoxicar"
+          },
+          {
+            "name": "Etosuximida nao cobre crise tonico-clonica"
+          }
+        ]
+      }
+    ]
+  },
+  "note_id": "farmacologia-p2-t12-anticonvulsivantes"
+}
