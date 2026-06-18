@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2 — Ajuntado Pulmão e Coração | MED-Vault</title>
+<style>
+:root{
+  --bg:#0b1220;--panel:#111a2d;--panel2:#17223a;
+  --ink:#edf4ff;--ink2:#a8c0e0;
+  --accent:#5db7ff;--accent2:#3d9bef;
+  --brand:#155e75;--brand2:#0f766e;
+  --danger:#f87171;--warning:#fbbf24;--success:#4ade80;
+  --info:#60a5fa;--tip:#c084fc;
+  --border:#1e3352;--sw:260px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden}
+
+/* TOPBAR */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--panel);border-bottom:1px solid var(--border);height:48px;display:flex;align-items:center;padding:0 16px;gap:12px}
+.tb-brand{font-size:11px;font-weight:700;color:var(--brand2);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.tb-title{font-size:13px;font-weight:600;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-bar-wrap{flex:1;background:var(--panel2);border-radius:4px;height:6px;min-width:60px}
+.tb-bar{height:100%;background:linear-gradient(90deg,var(--brand),var(--accent));border-radius:4px;transition:width .4s ease;width:0%}
+.tb-pct{font-size:11px;color:var(--ink2);white-space:nowrap;min-width:32px;text-align:right}
+.menu-btn{display:none;background:none;border:1px solid var(--border);color:var(--ink);padding:4px 10px;border-radius:6px;cursor:pointer;font-size:18px;flex-shrink:0}
+
+/* LAYOUT */
+.layout{display:flex;margin-top:48px}
+
+/* SIDEBAR */
+.sidebar{width:var(--sw);min-width:var(--sw);height:calc(100vh - 48px);position:fixed;top:48px;left:0;overflow-y:auto;background:var(--panel);border-right:1px solid var(--border);padding:10px 0 20px}
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sb-head{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink2);padding:10px 16px 3px}
+.nav-a{display:flex;align-items:flex-start;gap:8px;padding:5px 12px;font-size:12.5px;color:var(--ink2);text-decoration:none;border-left:2px solid transparent;transition:all .15s;line-height:1.3}
+.nav-a:hover{color:var(--ink);background:var(--panel2)}
+.nav-a.active{color:var(--accent);border-left-color:var(--accent);background:rgba(93,183,255,.07)}
+.nav-ico{font-size:14px;flex-shrink:0;margin-top:1px}
+.nav-sub{padding-left:34px;font-size:11.5px}
+.sb-div{height:1px;background:var(--border);margin:8px 12px}
+.sb-stat{padding:8px 14px;font-size:11px;color:var(--ink2);display:flex;flex-direction:column;gap:3px}
+.sb-stat strong{color:var(--accent);font-size:13px}
+
+/* MAIN */
+.main{margin-left:var(--sw);max-width:880px;padding:32px 32px 100px;width:100%}
+
+/* TYPOGRAPHY */
+[id]{scroll-margin-top:64px}
+h1{font-size:24px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3}
+h2{font-size:19px;font-weight:700;color:var(--accent);margin:36px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+h2 .h2-left{display:flex;align-items:center;gap:10px}
+h3{font-size:15px;font-weight:600;color:var(--ink);margin:18px 0 10px}
+h4{font-size:14px;font-weight:600;color:var(--ink2);margin:14px 0 8px}
+p{margin-bottom:10px}
+strong{color:var(--ink)}
+em{color:var(--ink2);font-style:italic}
+mark{background:rgba(251,191,36,.18);color:var(--warning);padding:1px 4px;border-radius:3px}
+
+/* TABLES */
+.tw{overflow-x:auto;margin:12px 0;border-radius:8px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{background:var(--panel2);color:var(--accent);padding:8px 12px;text-align:left;font-weight:600;border-bottom:2px solid var(--border);white-space:nowrap}
+td{padding:7px 12px;border-bottom:1px solid rgba(30,51,82,.5);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even){background:rgba(17,26,45,.5)}
+tr:hover{background:rgba(93,183,255,.04)}
+
+/* CALLOUTS */
+.callout{margin:14px 0;padding:11px 15px;border-radius:8px;border-left:4px solid;font-size:13.5px}
+.callout-t{font-weight:700;margin-bottom:5px;font-size:13px}
+.callout.danger{border-color:var(--danger);background:rgba(248,113,113,.08)}
+.callout.danger .callout-t{color:var(--danger)}
+.callout.warning{border-color:var(--warning);background:rgba(251,191,36,.08)}
+.callout.warning .callout-t{color:var(--warning)}
+.callout.info{border-color:var(--info);background:rgba(96,165,250,.08)}
+.callout.info .callout-t{color:var(--info)}
+.callout.tip{border-color:var(--tip);background:rgba(192,132,252,.08)}
+.callout.tip .callout-t{color:var(--tip)}
+.callout.success{border-color:var(--success);background:rgba(74,222,128,.08)}
+.callout.success .callout-t{color:var(--success)}
+.callout.note{border-color:var(--ink2);background:rgba(168,192,224,.05)}
+.callout.note .callout-t{color:var(--ink2)}
+.callout ul,.callout ol{margin-top:6px;padding-left:18px}
+.callout li{margin-bottom:2px}
+
+/* CHECKLIST */
+.checklist{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin:12px 0}
+.cl-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--panel2);border-radius:8px;border:1px solid var(--border);cursor:pointer;transition:all .15s;font-size:13.5px;user-select:none}
+.cl-item:hover{border-color:var(--accent)}
+.cl-item.checked{border-color:var(--success);background:rgba(74,222,128,.06)}
+.cl-item.checked span{color:var(--success);text-decoration:line-through;opacity:.75}
+.cl-item input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px;cursor:pointer;flex-shrink:0}
+
+/* TIMER */
+.timer{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--border);border-radius:20px;padding:3px 11px;font-size:12px;color:var(--ink2);float:right;margin-top:2px}
+.timer-d{font-family:'Courier New',monospace;font-size:13px;color:var(--accent);min-width:42px;text-align:center}
+.timer-btn{background:none;border:none;color:var(--ink2);cursor:pointer;font-size:13px;padding:0 2px;transition:color .15s}
+.timer-btn:hover{color:var(--accent)}
+
+/* VF QUESTIONS */
+.vf-list{list-style:none;margin:10px 0;display:flex;flex-direction:column;gap:8px}
+.vf-item{padding:11px 15px;background:var(--panel);border:1px solid var(--border);border-radius:8px;font-size:13.5px;cursor:pointer;transition:border-color .15s}
+.vf-item:hover{border-color:var(--ink2)}
+.vf-q{margin-bottom:0}
+.vf-hint{font-size:11px;color:var(--ink2);margin-top:3px}
+.vf-ans{display:none;margin-top:8px;padding:7px 11px;border-radius:5px;font-size:13px;font-weight:600}
+.vf-ans.V{background:rgba(74,222,128,.12);border:1px solid rgba(74,222,128,.3);color:var(--success)}
+.vf-ans.F{background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.3);color:var(--danger)}
+.vf-item.revealed .vf-ans{display:block}
+.vf-item.revealed{cursor:default}
+
+/* MC QUESTIONS */
+.mc{background:var(--panel);border:1px solid var(--border);border-radius:10px;margin:14px 0;overflow:hidden}
+.mc-q{padding:12px 16px;background:var(--panel2);font-size:13.5px;font-weight:500;line-height:1.5}
+.mc-opts{padding:10px 16px 14px;display:flex;flex-direction:column;gap:6px}
+.mc-opt{padding:7px 12px;border-radius:6px;border:1px solid var(--border);cursor:pointer;font-size:13px;transition:all .15s;display:flex;align-items:center;gap:8px}
+.mc-opt:not(.done):hover{border-color:var(--accent);background:rgba(93,183,255,.06)}
+.mc-opt.correct{border-color:var(--success)!important;background:rgba(74,222,128,.1);color:var(--success)}
+.mc-opt.wrong{border-color:var(--danger)!important;background:rgba(248,113,113,.08);color:var(--danger);opacity:.65}
+.mc-opt .ol{font-weight:700;font-size:12px;background:var(--panel2);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mc-exp{display:none;padding:8px 16px 12px;font-size:12.5px;border-top:1px solid var(--border);color:var(--success)}
+.mc-exp.show{display:block}
+
+/* CASES */
+.case-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;margin:12px 0;overflow:hidden}
+.case-hd{padding:10px 16px;background:var(--panel2);display:flex;align-items:center;gap:8px;font-weight:600;font-size:13.5px}
+.case-badge{background:var(--brand);color:#fff;font-size:11px;font-weight:700;padding:2px 9px;border-radius:12px}
+.case-body{padding:14px 16px;font-size:13.5px;line-height:1.7}
+.case-ans{display:none;margin-top:10px;padding:10px 14px;background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.2);border-radius:6px;font-size:13px}
+.case-ans.show{display:block}
+.btn-rev{background:none;border:1px solid var(--accent);color:var(--accent);padding:5px 14px;border-radius:6px;font-size:12px;cursor:pointer;transition:all .15s;margin-top:8px}
+.btn-rev:hover{background:var(--accent);color:#000}
+
+/* IMG PLACEHOLDER */
+.img-ph{background:var(--panel2);border:1px dashed var(--border);border-radius:8px;padding:20px 16px;margin:12px 0;text-align:center;font-size:13px;color:var(--ink2)}
+.img-ph .ph-ico{font-size:28px;margin-bottom:6px}
+.img-ph .ph-cap{font-weight:600;color:var(--ink);margin-bottom:3px;font-size:13.5px}
+.img-ph .ph-file{font-family:monospace;font-size:11px;opacity:.6}
+
+/* QUICK-REF GRID */
+.qr-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.qr-item{padding:9px 12px;background:var(--panel2);border-radius:6px;border:1px solid var(--border);font-size:12.5px}
+.qr-trigger{color:var(--warning);font-weight:600;font-size:11.5px;margin-bottom:2px}
+.qr-dx{color:var(--accent);font-weight:700;font-size:13px}
+
+/* PAGE HEADER */
+.pg-hd{margin-bottom:28px;padding-bottom:18px;border-bottom:2px solid var(--border)}
+.pg-meta{font-size:12px;color:var(--ink2);display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+
+/* BLOCKQUOTE */
+blockquote{border-left:3px solid var(--brand2);background:rgba(15,118,110,.07);padding:10px 16px;margin:12px 0;border-radius:0 6px 6px 0;font-size:13.5px;font-style:italic;color:var(--ink2)}
+
+/* BADGES */
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px}
+.badge-resp{background:rgba(96,165,250,.18);color:var(--info)}
+.badge-card{background:rgba(248,113,113,.18);color:var(--danger)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  :root{--sw:0px}
+  .sidebar{transform:translateX(-100%);transition:transform .25s;z-index:90;width:260px;min-width:260px}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0;padding:20px 14px 80px}
+  .menu-btn{display:block}
+  .qr-grid{grid-template-columns:1fr}
+  .checklist{grid-template-columns:1fr}
+  .timer{float:none;margin-top:6px}
+  h2{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+  <span class="tb-brand">MED-Vault</span>
+  <span class="tb-title">P2 — Pulmão &amp; Coração</span>
+  <div class="tb-bar-wrap"><div class="tb-bar" id="progressBar"></div></div>
+  <span class="tb-pct" id="progressPct">0%</span>
+</header>
+
+<!-- SIDEBAR -->
+<nav class="sidebar" id="sidebar">
+  <div class="sb-head">Navegação</div>
+
+  <a class="nav-a" href="#sec0"><span class="nav-ico">🗓️</span>0. Como usar</a>
+  <a class="nav-a" href="#sec1"><span class="nav-ico">✅</span>1. Checklist</a>
+
+  <div class="sb-div"></div>
+  <div class="sb-head">Respiratório</div>
+  <a class="nav-a" href="#sec2"><span class="nav-ico">🫁</span>2. EF Respiratório</a>
+  <a class="nav-a nav-sub" href="#sec21">2.1 Inspeção</a>
+  <a class="nav-a nav-sub" href="#sec22">2.2 Palpação</a>
+  <a class="nav-a nav-sub" href="#sec23">2.3 Percussão</a>
+  <a class="nav-a nav-sub" href="#sec24">2.4 Ausculta</a>
+  <a class="nav-a" href="#sec3"><span class="nav-ico">💬</span>3. Sintomas Resp.</a>
+  <a class="nav-a" href="#sec4"><span class="nav-ico">🔬</span>4. Síndromes Resp.</a>
+  <a class="nav-a nav-sub" href="#sec41">4.1 Tabela</a>
+  <a class="nav-a nav-sub" href="#sec42">4.2 Chave VV</a>
+  <a class="nav-a nav-sub" href="#sec43">4.3 Detalhes</a>
+  <a class="nav-a nav-sub" href="#sec44">4.4 Imagens</a>
+
+  <div class="sb-div"></div>
+  <div class="sb-head">Cardiovascular</div>
+  <a class="nav-a" href="#sec5"><span class="nav-ico">🫀</span>5. EF Cardiovascular</a>
+  <a class="nav-a nav-sub" href="#sec51">5.1 Inspeção</a>
+  <a class="nav-a nav-sub" href="#sec52">5.2 Palpação</a>
+  <a class="nav-a nav-sub" href="#sec53">5.3 Percussão</a>
+  <a class="nav-a nav-sub" href="#sec54">5.4 Focos</a>
+  <a class="nav-a" href="#sec6"><span class="nav-ico">🔊</span>6. Bulhas e Sopros</a>
+  <a class="nav-a" href="#sec7"><span class="nav-ico">💬</span>7. Sintomas Cardio.</a>
+  <a class="nav-a nav-sub" href="#sec71">7.1 ALICIA dor</a>
+  <a class="nav-a nav-sub" href="#sec72">7.2 Edema</a>
+  <a class="nav-a" href="#sec8"><span class="nav-ico">🔬</span>8. Síndromes Cardio.</a>
+  <a class="nav-a nav-sub" href="#sec82">8.2 NYHA</a>
+  <a class="nav-a nav-sub" href="#sec83">8.3 HTA</a>
+  <a class="nav-a nav-sub" href="#sec84">8.4 Shock</a>
+
+  <div class="sb-div"></div>
+  <div class="sb-head">Prática</div>
+  <a class="nav-a" href="#sec9"><span class="nav-ico">🖼️</span>9. Imagens</a>
+  <a class="nav-a" href="#sec10"><span class="nav-ico">🔎</span>10. Diagnóstico</a>
+  <a class="nav-a" href="#sec11"><span class="nav-ico">🏥</span>11. Casos Clínicos</a>
+  <a class="nav-a" href="#sec12"><span class="nav-ico">✔️</span>12. V ou F</a>
+  <a class="nav-a" href="#sec13"><span class="nav-ico">🧩</span>13. Múltipla Escolha</a>
+  <a class="nav-a" href="#sec14"><span class="nav-ico">⚡</span>14. Referência Rápida</a>
+  <a class="nav-a" href="#sec15"><span class="nav-ico">⚠️</span>15. Lacunas</a>
+
+  <div class="sb-div"></div>
+  <div class="sb-stat">
+    <span>Seções visitadas</span>
+    <strong id="visitedCount">0 / 16</strong>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- PAGE HEADER -->
+<div class="pg-hd">
+  <h1>P2 — Ajuntado de Revisão<br>Pulmão &amp; Coração</h1>
+  <div class="pg-meta">
+    <span>📚 LLANIO Caps 33–42</span>
+    <span>🖥️ Slides Dra. Fúnez</span>
+    <span>📝 Resumos T01–T07</span>
+    <span>🖼️ 10 imagens mapeadas</span>
+  </div>
+</div>
+
+<!-- SEC 0 -->
+<section id="sec0">
+<h2><span class="h2-left">🗓️ 0. Como usar esta revisão em 24h</span>
+<span class="timer" id="timer-0"><span class="timer-d" id="td-0">00:00</span><button class="timer-btn" onclick="startTimer('0')" title="Iniciar">▶</button><button class="timer-btn" onclick="resetTimer('0')" title="Resetar">↺</button></span></h2>
+<div class="tw"><table>
+<thead><tr><th>Bloco</th><th>Conteúdo</th><th>Tempo sugerido</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>EF respiratório (seção 2)</td><td>30 min</td></tr>
+<tr><td><strong>2</strong></td><td>Sintomas respiratórios (seção 3)</td><td>20 min</td></tr>
+<tr><td><strong>3</strong></td><td>Síndromes respiratórias (seção 4)</td><td>40 min</td></tr>
+<tr><td><strong>4</strong></td><td>EF cardiovascular (seções 5–6)</td><td>30 min</td></tr>
+<tr><td><strong>5</strong></td><td>Sintomas cardiovasculares (seção 7)</td><td>20 min</td></tr>
+<tr><td><strong>6</strong></td><td>Síndromes cardiovasculares (seção 8)</td><td>40 min</td></tr>
+<tr><td><strong>7</strong></td><td>Casos clínicos (seção 11)</td><td>30 min</td></tr>
+<tr><td><strong>8</strong></td><td>VF + múltipla escolha (seções 12–13)</td><td>30 min</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- SEC 1 -->
+<section id="sec1">
+<h2><span class="h2-left">✅ 1. Checklist da Professora</span></h2>
+<ul class="checklist" id="checklist">
+<li class="cl-item" onclick="toggleCheck(this,'chk0')"><input type="checkbox" id="chk0"><span>Exame físico de 🫁 pulmão</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk1')"><input type="checkbox" id="chk1"><span>Exame físico de 🫀 coração</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk2')"><input type="checkbox" id="chk2"><span>Síntomas y signos respiratórios</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk3')"><input type="checkbox" id="chk3"><span>Síntomas y signos cardiovasculares</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk4')"><input type="checkbox" id="chk4"><span>Síndromes respiratórias</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk5')"><input type="checkbox" id="chk5"><span>Síndromes cardiovasculares</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk6')"><input type="checkbox" id="chk6"><span>Imagens ✅</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk7')"><input type="checkbox" id="chk7"><span>V ou F</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk8')"><input type="checkbox" id="chk8"><span>Múltipla escolha</span></li>
+<li class="cl-item" onclick="toggleCheck(this,'chk9')"><input type="checkbox" id="chk9"><span>Diagnóstico clínico</span></li>
+</ul>
+</section>
+
+<!-- SEC 2 - EF RESPIRATÓRIO -->
+<section id="sec2">
+<h2><span class="h2-left">🫁 2. Exame Físico Respiratório</span>
+<span class="timer" id="timer-2"><span class="timer-d" id="td-2">00:00</span><button class="timer-btn" onclick="startTimer('2')">▶</button><button class="timer-btn" onclick="resetTimer('2')">↺</button></span></h2>
+<p style="font-size:12.5px;color:var(--ink2)">Fonte: T01-P1, T01-P2, LLANIO Cap 9, Slides EF Respiratório Dra. Fúnez</p>
+
+<h3 id="sec21">2.1 Inspeção respiratória</h3>
+<div class="tw"><table>
+<thead><tr><th>O que avaliar</th><th>Normal</th><th>Alterado</th><th>Significado</th></tr></thead>
+<tbody>
+<tr><td><strong>Aleteo nasal</strong></td><td>Ausente</td><td>Presente</td><td>Sinal de esforço / insuf. respiratória</td></tr>
+<tr><td><strong>Cianosis</strong></td><td>Ausente</td><td>Central ou periférica</td><td>Hipoxemia (central) / vasoconstrição (periférica)</td></tr>
+<tr><td><strong>FR</strong></td><td>16–20/min</td><td>&gt;20 = taquipneia; &lt;12 = bradipneia</td><td>&gt;20 = IR leve; &gt;30 = grave</td></tr>
+<tr><td><strong>Tipo respiratório</strong></td><td>Costal sup. (♀) / abdominal (♂)</td><td>Misto, paradoxal</td><td>Disfunção muscular ou pleural</td></tr>
+<tr><td><strong>Ritmo</strong></td><td>Regular</td><td>Cheyne-Stokes, Kussmaul, Biot</td><td>Patologias neurológicas, metabólicas, IC</td></tr>
+<tr><td><strong>Tiraje</strong></td><td>Ausente</td><td>Supra, inter, infracostal</td><td>Obstrução, insuf. respiratória</td></tr>
+<tr><td><strong>Expansibilidade</strong></td><td>Simétrica bilateral</td><td>Assimetria</td><td>Derrame, pneumotórax, atelectasia ipsilateral</td></tr>
+<tr><td><strong>Forma do tórax</strong></td><td>Normoconfigurado</td><td>Tonel (enfisema), quilha, escavado</td><td>Patologia crônica ou congênita</td></tr>
+</tbody>
+</table></div>
+
+<div class="callout danger">
+<div class="callout-t">⚠️ Regra da Dra. Fúnez — prova prática</div>
+<strong>≥ 2 critérios alterados</strong> (aleteo + cianosis + FR &gt; 20 + tiraje) = <strong>Insuficiência Respiratória</strong>. Conduta: O₂ imediato.
+</div>
+
+<h3 id="sec22">2.2 Palpação respiratória</h3>
+<div class="tw"><table>
+<thead><tr><th>Manobra</th><th>O que avalia</th><th>Normal</th><th>Alterado</th></tr></thead>
+<tbody>
+<tr><td><strong>Expansibilidade (Hirtz)</strong></td><td>Amplitude de expansão torácica</td><td>Simétrica, 2–4 cm</td><td>Assimetria = lesão ipsilateral</td></tr>
+<tr><td><strong>Vibraciones vocales</strong></td><td>Transmissão de sons brônquicos</td><td>Simétricas, melhores nas bases posteriores</td><td>↑ = condensação; ↓ = derrame, enfisema, pneumotórax</td></tr>
+<tr><td><strong>Frêmito brônquico</strong></td><td>Secreção em vias aéreas</td><td>Ausente</td><td>Presente = bronquite, bronquiectasia</td></tr>
+<tr><td><strong>Roce pleural</strong></td><td>Fricção entre folhetos pleurais</td><td>Ausente</td><td>Presente = pleurite seca</td></tr>
+</tbody>
+</table></div>
+<div class="callout tip">
+<div class="callout-t">💡 Como pedir o frêmito vocal</div>
+Pedir que o paciente diga <strong>"33"</strong> ou <strong>"uno uno uno"</strong> — sons graves transmitem melhor.
+</div>
+
+<h3 id="sec23">2.3 Percussão respiratória</h3>
+<div class="tw"><table>
+<thead><tr><th>Som</th><th>Característico de</th><th>Diagnóstico sugerido</th></tr></thead>
+<tbody>
+<tr><td><strong>Ressonância</strong> (claro pulmonar)</td><td>Parênquima normal</td><td>Normal</td></tr>
+<tr><td><strong>Submatidez</strong></td><td>Transição</td><td>Consolidação inicial, base pulmonar normal</td></tr>
+<tr><td><strong>Matidez</strong></td><td>Líquido ou tecido sólido</td><td>Derrame pleural, condensação, atelectasia</td></tr>
+<tr><td><strong>Hipersonoridade</strong></td><td>Ar em excesso</td><td>Enfisema, pneumotórax, asma em crise</td></tr>
+<tr><td><strong>Timpanismo</strong></td><td>Câmara de ar</td><td>Pneumotórax de grande volume</td></tr>
+</tbody>
+</table></div>
+<div class="callout warning">
+<div class="callout-t">Curva de Damoiseau (derrame pleural)</div>
+Percussão basal com matidez em <strong>curva côncava para cima</strong> (paraespinhal &gt; lateral &gt; anterior). Patognomônico de derrame.
+</div>
+
+<h3 id="sec24">2.4 Ausculta respiratória</h3>
+<div class="tw"><table>
+<thead><tr><th>Achado</th><th>Características</th><th>Significado</th></tr></thead>
+<tbody>
+<tr><td><strong>MV normal</strong></td><td>Suave, contínuo, insp &gt; exp</td><td>Parênquima normal</td></tr>
+<tr><td><strong>MV diminuído</strong></td><td>Menos audível</td><td>Derrame, enfisema, obesidade, pneumotórax</td></tr>
+<tr><td><strong>MV abolido</strong></td><td>Ausente</td><td>Pneumotórax completo, derrame volumoso, atelectasia</td></tr>
+<tr><td><strong>Sopro tubário</strong></td><td>Ruído áspero, expiração &gt; inspiração</td><td>Condensação (pneumonia, TBC)</td></tr>
+<tr><td><strong>Sopro anfórico</strong></td><td>Tom de garrafa</td><td>Caverna ou pneumotórax com fístula</td></tr>
+<tr><td><strong>Roncos</strong></td><td>Graves, insp e exp</td><td>Secreção em brônquios calibrosos</td></tr>
+<tr><td><strong>Sibilos</strong></td><td>Agudos, musicais, expiratórios</td><td>Obstrução brônquica (asma, bronquite)</td></tr>
+<tr><td><strong>Estertores crepitantes</strong></td><td>Finos, ao fim da inspiração</td><td>Fibrose, pneumonia, IC</td></tr>
+<tr><td><strong>Estertores subcrepitantes</strong></td><td>Médios/grosseiros, bolhosas</td><td>Edema alveolar, bronquite com secreção</td></tr>
+<tr><td><strong>Atrito pleural</strong></td><td>Couro rangendo, ambas fases</td><td>Pleurite seca</td></tr>
+</tbody>
+</table></div>
+<div class="callout info">
+<div class="callout-t">Transmissão de voz patológica</div>
+<ul>
+<li><strong>Broncofonia aumentada</strong> → condensação</li>
+<li><strong>Pectorilóquia áfona</strong> (voz sussurrada audível) → condensação com brônquio pérvio</li>
+<li><strong>Egofonia</strong> (voz de cabra) → condensação + derrame (interface)</li>
+</ul>
+</div>
+</section>
+
+<!-- SEC 3 - SINTOMAS RESPIRATÓRIOS -->
+<section id="sec3">
+<h2><span class="h2-left">💬 3. Principais Sintomas e Signos Respiratórios</span>
+<span class="timer" id="timer-3"><span class="timer-d" id="td-3">00:00</span><button class="timer-btn" onclick="startTimer('3')">▶</button><button class="timer-btn" onclick="resetTimer('3')">↺</button></span></h2>
+<div class="tw"><table>
+<thead><tr><th>Sintoma/Signo</th><th>O que significa</th><th>Perguntas-chave (ALICIA)</th><th>Síndromes</th><th>⚠️ Pegadinha</th></tr></thead>
+<tbody>
+<tr><td><strong>Tosse</strong></td><td>Reflexo de limpeza das VAs</td><td>Seca ou produtiva? Horário? Caráter?</td><td>Bronquite, asma, pneumonia, IC</td><td>Tosse noturna = pode ser IC esquerda</td></tr>
+<tr><td><strong>Expectoração</strong></td><td>Secreção eliminada pela tosse</td><td>Cor? Quantidade? Odor? Sangue?</td><td>Bronquite, bronquiectasia, pneumonia</td><td>Expectoração <mark>ferruginosa</mark> = pneumonia pneumocócica</td></tr>
+<tr><td><strong>Hemoptise</strong></td><td>Sangue expectorado de origem pulmonar</td><td>Quantidade? Cor viva ou escura?</td><td>Bronquiectasia, TBC, câncer, estenose mitral</td><td>Distinguir de hematêmese (pH ácido, alimentos)</td></tr>
+<tr><td><strong>Dispneia</strong></td><td>Falta de ar</td><td>Esforço ou repouso? Progressiva ou súbita? Posição?</td><td>IC, EPOC, asma, pneumotórax, derrame</td><td>Dispneia súbita + dor = pneumotórax/TEP</td></tr>
+<tr><td><strong>Dor torácica pleurítica</strong></td><td>Dor por inflamação pleural</td><td>Piora com inspiração e tosse? Melhora sentado?</td><td>Pleurite, pneumonia, TEP</td><td>Dor que piora na inspiração = PLEURAL</td></tr>
+<tr><td><strong>Cianosis</strong></td><td>Coloração azulada</td><td>Central (mucosas) ou periférica?</td><td>Insuf. respiratória, IC descompensada</td><td>Cianose central = problema grave</td></tr>
+<tr><td><strong>Aleteo nasal</strong></td><td>Asa do nariz em movimento</td><td>Espontâneo ao examinar</td><td>Insuf. respiratória</td><td>Sinal de esforço ≠ patognomônico</td></tr>
+<tr><td><strong>Tiraje</strong></td><td>Retração intercostal/supraesternal</td><td>Localização? Bilateral?</td><td>Obstrução brônquica, insuf. resp. grave</td><td>Tiraje inspiratório = obstrução alta; expiratório = baixa</td></tr>
+<tr><td><strong>Sopro tubário</strong></td><td>Ar em brônquio rodeado de condensação</td><td>Signo ao exame — não há perguntas</td><td>Condensação pneumônica</td><td>Sopro tubário = brônquio ABERTO; silêncio = FECHADO (atelectasia)</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- PLACEHOLDER FOR SECTIONS 4-15 -->
+<!-- SEC 4 -->
+<section id="sec4">
+<h2><span class="h2-left">🔬 4. Principais Síndromes Respiratórias</span>
+<span class="timer" id="timer-4"><span class="timer-d" id="td-4">00:00</span><button class="timer-btn" onclick="startTimer('4')">▶</button><button class="timer-btn" onclick="resetTimer('4')">↺</button></span></h2>
+
+<h3 id="sec41">4.1 Tabela comparativa completa</h3>
+<div class="tw"><table>
+<thead><tr><th>Síndrome</th><th>Inspeção</th><th>Palpação (VV)</th><th>Percussão</th><th>Ausculta</th><th>Diagnóstico principal</th></tr></thead>
+<tbody>
+<tr><td><strong>Condensação pneumônica</strong></td><td>FR ↑, possível tiraje</td><td>VV <mark>aumentadas</mark></td><td><strong>Matidez</strong></td><td>Sopro tubário + crepitantes + broncofonia ↑</td><td>Pneumonia lobar, TBC</td></tr>
+<tr><td><strong>Atelectasia</strong></td><td>Retração ipsilateral</td><td>VV <mark>diminuídas/abolidas</mark></td><td><strong>Matidez</strong></td><td>Silêncio respiratório</td><td>Obstrução brônquica (tumor, CE)</td></tr>
+<tr><td><strong>Derrame pleural</strong></td><td>Expansibilidade ↓ ipsilateral</td><td>VV <mark>abolidas</mark></td><td><strong>Matidez</strong> (curva Damoiseau)</td><td>Silêncio / egofonia na interface</td><td>Pleurite, IC, câncer, TBC</td></tr>
+<tr><td><strong>Pneumotórax</strong></td><td>Expansibilidade ↓ ipsilateral</td><td>VV <mark>abolidas</mark></td><td><strong>Hipersonoridade / timpanismo</strong></td><td>Silêncio respiratório</td><td>Espontâneo, trauma</td></tr>
+<tr><td><strong>Sínd. bronquial obstrutiva</strong></td><td>Tórax em inspiração, sibilos visíveis</td><td>VV normais ou ↓</td><td>Normal ou hipersonoridade leve</td><td>Sibilos + roncos disseminados</td><td>Asma, bronquite crônica</td></tr>
+<tr><td><strong>Enfisema / EPOC</strong></td><td>Tórax em <mark>tonel</mark>, uso musc. acessória</td><td>VV <mark>diminuídas</mark></td><td><strong>Hipersonoridade</strong> global</td><td>MV ↓, expiração prolongada</td><td>EPOC, enfisema</td></tr>
+<tr><td><strong>Bronquiectasia</strong></td><td>Dedos em palito (crônico)</td><td>Frêmito brônquico</td><td>Normal</td><td>Estertores subcrepitantes localizados</td><td>Infecção crônica, FC</td></tr>
+<tr><td><strong>Cavitária</strong></td><td>Normal ou tiraje</td><td>VV ↑ (caverna com brônquio aberto)</td><td>Timpanismo localizado</td><td>Sopro anfórico / cavernoso</td><td>TBC cavernosa, abscesso</td></tr>
+</tbody>
+</table></div>
+
+<h3 id="sec42">4.2 Chave rápida: matidez × vibrações vocais</h3>
+<div class="callout danger">
+<div class="callout-t">🔑 Diferencial mais cobrado</div>
+<div class="tw" style="margin:0"><table>
+<thead><tr><th>Achado</th><th>VV aumentadas</th><th>VV diminuídas/abolidas</th></tr></thead>
+<tbody>
+<tr><td><strong>Matidez</strong></td><td>Condensação pneumônica</td><td>Derrame pleural ou atelectasia</td></tr>
+<tr><td><strong>Hipersonoridade</strong></td><td>—</td><td>Enfisema ou asma</td></tr>
+<tr><td><strong>Timpanismo</strong></td><td>—</td><td>Pneumotórax</td></tr>
+</tbody>
+</table></div>
+</div>
+
+<h3 id="sec43">4.3 Detalhes das síndromes mais cobradas</h3>
+
+<h4>Pneumonia lobar (condensação inflamatória)</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>Agente principal: <em>Streptococcus pneumoniae</em> (90–95% — Llanio)</li>
+<li>Clínica: <strong>febre + calafrios + dor em ponta de costado + expectoração ferruginosa</strong></li>
+<li>EF: VV ↑ + matidez + sopro tubário + crepitantes + broncofonia aumentada</li>
+<li>Rx: opacidade densa homogênea lobar | Início: <strong>AGUDO</strong> (horas)</li>
+</ul>
+
+<h4>Derrame pleural</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>Líquido entre os folhetos pleurais</li>
+<li>Curva de Damoiseau: matidez mais alta na axila que paraesternal</li>
+<li>EF: VV abolidas + matidez + silêncio (egofonia na interface)</li>
+<li>Causas: IC, pleurite, câncer, TBC, parapneumônica</li>
+</ul>
+
+<h4>Pneumotórax</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>Ar no espaço pleural | Início: <strong>AGUDO BRUSCO</strong></li>
+<li>EF: VV abolidas + <mark>timpanismo</mark> + silêncio respiratório</li>
+<li>Hipertensivo: emergência — desvio de mediastino para o lado são</li>
+</ul>
+
+<h4>Atelectasia</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>Colapso alveolar por obstrução</li>
+<li>EF: retração + VV abolidas + matidez + silêncio</li>
+<li>Rx: opacidade com <strong>retração</strong> do mediastino para o lado afetado</li>
+</ul>
+
+<h4>EPOC / Enfisema</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>EPOC = bronquite crônica + enfisema</li>
+<li>Bronquite crônica: tosse + expectoração <mark>≥ 3 meses/ano por ≥ 2 anos consecutivos</mark> (Llanio)</li>
+<li><em>Blue bloater</em>: IC + hipoxemia | <em>Pink puffer</em>: enfisema puro, sem IC</li>
+<li>EF enfisema: tórax em tonel + VV ↓ + hipersonoridade + MV ↓ + expiração prolongada</li>
+</ul>
+
+<h4>Asma brônquica</h4>
+<ul style="padding-left:20px;font-size:13.5px;margin-bottom:10px">
+<li>Obstrução <strong>reversível</strong> + inflamação + hiper-reatividade brônquica</li>
+<li>Crise: dispneia expiratória súbita + sibilos + tórax em inspiração forçada + ortopneia</li>
+<li>EF: sibilos e roncos disseminados / percussão normal ou hipersonora</li>
+</ul>
+
+<h3 id="sec44">4.4 Imagens do LLANIO — Síndromes Respiratórias (Cap 36)</h3>
+<div class="callout info">
+<div class="callout-t">Fonte: LLANIO Propedéutica Clínica Tomo I — Cap 36</div>
+Figuras extraídas do PDF. Disponíveis no vault local em <code>07-Biblioteca-Geral/01-Livros/LLANIO-Propedeutica-Clinica-Tomo-I/imagens/</code>
+</div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 1 — Asma brônquica</div>Vias aéreas com tapões mucosos e inflamação — obstrução reversível<div class="ph-file">cap36-fig01-p04.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 2 — Bronquiectasias</div>Dilatações brônquicas saculares e tubulares — infecção crônica<div class="ph-file">cap36-fig02-p05.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 3 — Enfisema</div>Hiperinsuflação + bolhas na superfície pleural — tórax em tonel<div class="ph-file">cap36-fig03-p07.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 4 — Condensação pneumônica</div>Pulmão compacto e escuro por exsudato inflamatório<div class="ph-file">cap36-fig04-p08.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 5 — Atelectasia</div>Pulmão colapsado e retraído junto ao mediastino<div class="ph-file">cap36-fig05-p10.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 6 — Lesão cavitária</div>Abordagem de caverna / punção torácica — TBC cavernosa<div class="ph-file">cap36-fig06-p12.jpg</div></div>
+
+<div class="img-ph"><div class="ph-ico">🫁</div><div class="ph-cap">Fig 7 — Pneumotórax</div>Espaço pleural amplo com pulmão colapsado medialmente<div class="ph-file">cap36-fig07-p16.jpg</div></div>
+</section>
+<!-- SEC 5 -->
+<section id="sec5">
+<h2><span class="h2-left">🫀 5. Exame Físico Cardiovascular</span>
+<span class="timer" id="timer-5"><span class="timer-d" id="td-5">00:00</span><button class="timer-btn" onclick="startTimer('5')">▶</button><button class="timer-btn" onclick="resetTimer('5')">↺</button></span></h2>
+<p style="font-size:12.5px;color:var(--ink2)">Fonte: T07-EF-Cardiovascular, LLANIO Cap 10–12, 39–41, Slides Dra. Fúnez</p>
+
+<h3 id="sec51">5.1 Inspeção cardiovascular</h3>
+<div class="tw"><table>
+<thead><tr><th>O que avaliar</th><th>Normal</th><th>Alterado</th><th>Significado</th></tr></thead>
+<tbody>
+<tr><td><strong>Ictus cordis</strong> (choque de ponta)</td><td>Visível em delgados: 5° EIC, LMC</td><td>Deslocado lateral/inferior</td><td>HVE, IC</td></tr>
+<tr><td><strong>Cianosis</strong></td><td>Ausente</td><td>Labial/lingual (central)</td><td>IC descompensada, valvopatia</td></tr>
+<tr><td><strong>Facies mitral</strong></td><td>Ausente</td><td>Eritema malar bilateral</td><td>Estenose mitral</td></tr>
+<tr><td><strong>Turgência jugular</strong></td><td>Veias jugulares colabadas a 45°</td><td>Turgência ou pulsação visível</td><td>IC direita, tamponamento</td></tr>
+<tr><td><strong>Edema periférico</strong></td><td>Ausente</td><td>MMII, bilateral, cacifo</td><td>IC direita / global</td></tr>
+<tr><td><strong>Cicatrizes pré-cordianas</strong></td><td>Ausentes</td><td>Esternotomia, drenos</td><td>Cirurgia cardíaca prévia</td></tr>
+<tr><td><strong>Pulsações precordiais</strong></td><td>Ausentes</td><td>Latido paraesternal, movimentos difusos</td><td>Cor pulmonale, aneurisma VE</td></tr>
+</tbody>
+</table></div>
+
+<h3 id="sec52">5.2 Palpação cardiovascular</h3>
+<div class="tw"><table>
+<thead><tr><th>Manobra</th><th>O que avalia</th><th>Normal</th><th>Alterado</th></tr></thead>
+<tbody>
+<tr><td><strong>Ictus cordis — Maniobra de Pachón</strong></td><td>Localização, amplitude, ritmo</td><td>5° EIC na LMC; 2–3 cm</td><td>Deslocado → HVE; amplo → insuf. aórtica</td></tr>
+<tr><td><strong>Frêmito</strong> (thrill)</td><td>Sopro palpável</td><td>Ausente</td><td>Presente = sopro grau ≥ IV</td></tr>
+<tr><td><strong>Pulsos periféricos</strong></td><td>Amplitude, ritmo, simetria</td><td>Iguais bilateral, cheios</td><td>Ausente, filiforme, deficit</td></tr>
+<tr><td><strong>Refluxo hepatojugular</strong></td><td>IC direita</td><td>Negativo</td><td>Positivo = IC direita</td></tr>
+</tbody>
+</table></div>
+<div class="callout note">
+<div class="callout-t">Posição de Pachón</div>
+Paciente em decúbito lateral esquerdo 45°. Aproxima o coração da parede — melhor para palpar o ictus.
+</div>
+
+<h3 id="sec53">5.3 Percussão cardiovascular</h3>
+<div class="tw"><table>
+<thead><tr><th>Área</th><th>O que delimita</th></tr></thead>
+<tbody>
+<tr><td><strong>Matidez absoluta</strong> (VD contra parede)</td><td>Triângulo: ápice 4° cartilagem costal, base = matidez hepática</td></tr>
+<tr><td><strong>Matidez relativa</strong> (área cardíaca real)</td><td>Mais ampla; borda D: 3°–5° EIC paraesternal D; borda E: 5° EIC LMC</td></tr>
+</tbody>
+</table></div>
+<div class="callout info">
+<div class="callout-t">Nota</div>
+A percussão cardíaca é <strong>inexata</strong> (Dra. Fúnez) — percutir ambos os hemitórax de fora para dentro.
+</div>
+
+<h3 id="sec54">5.4 Ausculta cardíaca — Focos</h3>
+<div class="tw"><table>
+<thead><tr><th>Foco</th><th>Localização</th><th>O que escuta melhor</th></tr></thead>
+<tbody>
+<tr><td><strong>Aórtico (A2)</strong></td><td>2° EIC direito</td><td>Fechamento da válvula aórtica (componente aórtico de B2)</td></tr>
+<tr><td><strong>Pulmonar (P2)</strong></td><td>2° EIC esquerdo</td><td>Fechamento da válvula pulmonar (componente pulmonar de B2)</td></tr>
+<tr><td><strong>Erb</strong> (foco mesocárdico)</td><td>3° EIC esquerdo</td><td>Sopros de base (insuf. aórtica se irradiar para baixo)</td></tr>
+<tr><td><strong>Tricúspide</strong></td><td>4° EIC esquerdo / borda E do esterno</td><td>Válvula tricúspide</td></tr>
+<tr><td><strong>Mitral (apical/A1)</strong></td><td>5° EIC linha medioclavicular esquerda</td><td>Fechamento mitral (B1); sopros mitrais</td></tr>
+</tbody>
+</table></div>
+
+<div class="img-ph"><div class="ph-ico">🫀</div><div class="ph-cap">Focos cardíacos de ausculta</div>Silhueta torácica anterior com marcação dos 5 focos: A2 (2° EIC D), P2 (2° EIC E), Erb (3° EIC E), Tricúspide (4° EIC E), Mitral (5° EIC LMC E)<div class="ph-file">cap39-fig03-p09.jpg + cap39-fig04-p09.jpg</div></div>
+</section>
+<!-- SEC 6 -->
+<section id="sec6">
+<h2><span class="h2-left">🔊 6. Bulhas e Alterações da Ausculta</span></h2>
+<div class="tw"><table>
+<thead><tr><th>Bulha</th><th>Origem</th><th>Normal</th><th>Alterações importantes</th></tr></thead>
+<tbody>
+<tr><td><strong>B1</strong> (primeira)</td><td>Fechamento de mitral + tricúspide</td><td>Mais audível no ápice; "lub"</td><td>B1 ↑ = estenose mitral; B1 ↓ = IAM, miocardite</td></tr>
+<tr><td><strong>B2</strong> (segunda)</td><td>Fechamento de aórtica + pulmonar</td><td>Mais audível na base; "dub"</td><td>B2 ↑ aorta = HTA; B2 ↑ pulmonar = HTP; desdobramento patológico</td></tr>
+<tr><td><strong>B3</strong> (terceira)</td><td>Enchimento rápido ventricular</td><td>Fisiológica em jovens/atletas</td><td>Patológica em IC esquerda = <strong>ritmo de galope</strong></td></tr>
+<tr><td><strong>B4</strong> (quarta)</td><td>Contração atrial contra ventrículo rígido</td><td>Ausente normalmente</td><td>HTA, IAM = <strong>pré-sistólica</strong></td></tr>
+<tr><td><strong>Ritmo de galope</strong></td><td>B3 ou B4</td><td>Ausente</td><td>IC, sobrecarga — "ritmo de 3 tempos"</td></tr>
+</tbody>
+</table></div>
+<div class="callout tip">
+<div class="callout-t">Sopro = Grau ≥ IV → frêmito palpável (thrill)</div>
+</div>
+
+<h3>6.1 Sopros cardíacos — classificação</h3>
+<div class="tw"><table>
+<thead><tr><th>Grau</th><th>Características</th></tr></thead>
+<tbody>
+<tr><td><strong>I</strong></td><td>Muito suave; audível apenas em silêncio total</td></tr>
+<tr><td><strong>II</strong></td><td>Suave; audível facilmente</td></tr>
+<tr><td><strong>III</strong></td><td>Moderado; sem frêmito</td></tr>
+<tr><td><strong>IV</strong></td><td>Moderado; com frêmito palpável</td></tr>
+<tr><td><strong>V</strong></td><td>Forte; frêmito ++</td></tr>
+<tr><td><strong>VI</strong></td><td>Audível sem estetoscópio</td></tr>
+</tbody>
+</table></div>
+<div class="tw"><table>
+<thead><tr><th>Timing</th><th>Tipo</th><th>Exemplos clínicos</th></tr></thead>
+<tbody>
+<tr><td><strong>Sistólico</strong></td><td>Entre B1 e B2</td><td>Estenose aórtica, insuficiência mitral, CIV</td></tr>
+<tr><td><strong>Diastólico</strong></td><td>Entre B2 e B1</td><td>Estenose mitral (rodado diastólico), insuficiência aórtica</td></tr>
+<tr><td><strong>Contínuo</strong></td><td>Ambas as fases</td><td>PCA (persistência do canal arterial)</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- SEC 7 -->
+<section id="sec7">
+<h2><span class="h2-left">💬 7. Principais Sintomas e Signos Cardiovasculares</span>
+<span class="timer" id="timer-7"><span class="timer-d" id="td-7">00:00</span><button class="timer-btn" onclick="startTimer('7')">▶</button><button class="timer-btn" onclick="resetTimer('7')">↺</button></span></h2>
+<div class="tw"><table>
+<thead><tr><th>Sintoma/Signo</th><th>O que significa</th><th>Perguntas ALICIA</th><th>Síndromes</th><th>⚠️ Pegadinha</th></tr></thead>
+<tbody>
+<tr><td><strong>Dolor precordial</strong></td><td>Dor de origem cardíaca</td><td>A/L/I/C/I/A/FRE/DU/SA</td><td>Angina, IAM, pericardite, dissecção</td><td>&lt; 30 min + nitrato = angina; &gt; 30 min + sem alívio = IAM</td></tr>
+<tr><td><strong>Disnea</strong></td><td>Falta de ar</td><td>Esforço ou repouso? Progressiva? Posição?</td><td>IC esquerda, valvopatia, HTA</td><td>Ortopneia = IC esquerda; paroxística noturna = IC esquerda</td></tr>
+<tr><td><strong>Ortopneia</strong></td><td>Dispneia ao deitar</td><td>Quantos travesseiros usa?</td><td>IC esquerda, estenose mitral</td><td>Melhora ao sentar ≠ pericardite (que melhora ao inclinar para frente)</td></tr>
+<tr><td><strong>DPN</strong></td><td>Acorda com falta de ar à noite</td><td>Acorda à noite com falta de ar?</td><td>IC esquerda avançada</td><td>"Asma cardíaca" — pseudoasma</td></tr>
+<tr><td><strong>Palpitaciones</strong></td><td>Percepção dos batimentos</td><td>Rítmicas ou irregulares? Início e fim súbitos?</td><td>Arritmias, estenose mitral (FA)</td><td>Início e fim súbitos = taquicardia paroxística</td></tr>
+<tr><td><strong>Síncope</strong></td><td>Perda súbita de consciência</td><td>Ao esforço? Com pródromo?</td><td>Estenose aórtica, arritmia, vasovagal</td><td>Síncope de esforço = <mark>estenose aórtica</mark></td></tr>
+<tr><td><strong>Lipotimia</strong></td><td>Pré-síncope / quase-desmaio</td><td>Visão escura, fraqueza súbita, sem perda total</td><td>IC, arritmia, HTA</td><td>Lipotimia ≠ síncope: sem perda de consciência</td></tr>
+<tr><td><strong>Edema periférico</strong></td><td>Acúmulo de líquido</td><td>MMII? Bilateral? Cacifo?</td><td>IC direita/global</td><td>Edema cardíaco = <mark>quente + bilateral + cacifo + rojizo-cianótico</mark></td></tr>
+<tr><td><strong>Turgência jugular</strong></td><td>Ingurgitação das veias do pescoço</td><td>Avaliado a 45°; altura da coluna venosa</td><td>IC direita, tamponamento, TEP</td><td>&gt; 3–4 cm acima do ângulo de Louis = patológico</td></tr>
+</tbody>
+</table></div>
+
+<h3 id="sec71">7.1 ALICIA aplicada ao dolor precordial</h3>
+<div class="tw"><table>
+<thead><tr><th>Letra</th><th>Pergunta</th><th>Angina</th><th>IAM</th></tr></thead>
+<tbody>
+<tr><td><strong>A</strong>parición</td><td>Quando e como começou?</td><td>Ao esforço, emoção, frio</td><td>Repouso ou esforço</td></tr>
+<tr><td><strong>L</strong>ocalización</td><td>Onde é a dor?</td><td>Retroesternal / precordial</td><td>Retroesternal / precordial</td></tr>
+<tr><td><strong>I</strong>rradiación</td><td>Irradia para onde?</td><td>Braço E, mandíbula, pescoço</td><td>Braço E, mandíbula; Libman = braço D</td></tr>
+<tr><td><strong>C</strong>arácter</td><td>Como é a dor?</td><td>Opressiva, constritiva</td><td>Opressiva + angústia intensa</td></tr>
+<tr><td><strong>I</strong>ntensidade</td><td>Escala 0–10</td><td>Variável</td><td>Geralmente intensa</td></tr>
+<tr><td><strong>A</strong>tenuación</td><td>Com que melhora?</td><td>Repouso + nitrato sublingual (&lt; 30 min)</td><td><strong>Não melhora</strong> com repouso nem nitrato</td></tr>
+<tr><td><strong>FRE</strong>cuencia</td><td>1ª vez ou recorrente?</td><td>Recorrente</td><td>Pode ser 1ª vez</td></tr>
+<tr><td><strong>DU</strong>ración</td><td>Quanto tempo dura?</td><td><mark>&lt; 20–30 min</mark></td><td><mark>&gt; 30 min</mark> (horas)</td></tr>
+<tr><td><strong>SA</strong></td><td>Outros sintomas?</td><td>Sudorese leve</td><td>Sudorese profusa, náuseas, vômitos, sensação de morte</td></tr>
+</tbody>
+</table></div>
+<div class="callout danger">
+<div class="callout-t">Regra de ouro</div>
+<strong>Dor &gt; 30 min + não melhora com nitrato</strong> → IAM até prova em contrário → ECG urgente.
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0">
+<div class="img-ph"><div class="ph-ico">🫀</div><div class="ph-cap">Irradiações da dor anginosa</div>Silhuetas com áreas: braço E, pescoço, mandíbula, dorso<div class="ph-file">cap37-fig01-p07.jpg</div></div>
+<div class="img-ph"><div class="ph-ico">🫀</div><div class="ph-cap">Causas do dolor precordial</div>Corte anatômico: coronária, pericárdio, aorta, digestivo, musculoesquelético<div class="ph-file">cap37-fig02-p10.jpg</div></div>
+<div class="img-ph"><div class="ph-ico">🫀</div><div class="ph-cap">Causas de palpitações</div>Encéfalo, tireoide, suprarrenal, coração — não só cardíaco!<div class="ph-file">cap37-fig03-p19.jpg</div></div>
+</div>
+
+<h3 id="sec72">7.2 Edema — diferencial por etiologia</h3>
+<div class="tw"><table>
+<thead><tr><th>Critério</th><th>Cardíaco</th><th>Renal</th><th>Venoso</th><th>Linfático</th></tr></thead>
+<tbody>
+<tr><td><strong>Temperatura</strong></td><td><mark>Quente</mark></td><td>Frio</td><td>Quente</td><td>Frio</td></tr>
+<tr><td><strong>Cor</strong></td><td>Rojizo-cianótico</td><td>Pálido</td><td>Normal ou eritematoso</td><td>Pálido</td></tr>
+<tr><td><strong>Cacifo (godet)</strong></td><td>Presente</td><td>Presente</td><td>Presente</td><td><strong>Ausente</strong> (fibroso)</td></tr>
+<tr><td><strong>Localização</strong></td><td>MMII bilateral, maléolos</td><td>Periorbital + MMII</td><td>MMII + trajeto venoso</td><td>Localizado por drenagem</td></tr>
+<tr><td><strong>Horário</strong></td><td>Piora à tarde</td><td>Pior pela manhã</td><td>Piora à tarde</td><td>Constante</td></tr>
+<tr><td><strong>Dor</strong></td><td><mark>Doloroso</mark></td><td>Indolor</td><td>Doloroso</td><td>Pouco doloroso</td></tr>
+</tbody>
+</table></div>
+</section>
+<!-- SEC 8 -->
+<section id="sec8">
+<h2><span class="h2-left">🔬 8. Principais Síndromes Cardiovasculares</span>
+<span class="timer" id="timer-8"><span class="timer-d" id="td-8">00:00</span><button class="timer-btn" onclick="startTimer('8')">▶</button><button class="timer-btn" onclick="resetTimer('8')">↺</button></span></h2>
+
+<h3>8.1 Tabela comparativa</h3>
+<div class="tw"><table>
+<thead><tr><th>Síndrome</th><th>Sintomas principais</th><th>Signos principais</th><th>Como reconhecer na prova</th></tr></thead>
+<tbody>
+<tr><td><strong>IC Esquerda</strong></td><td>Dispneia de esforço, ortopneia, DPN, tosse noturna</td><td>Crepitantes basais bilaterais, B3, taquicardia</td><td>Dispneia + ortopneia + crepitantes basais = IC esq</td></tr>
+<tr><td><strong>IC Direita</strong></td><td>Edema MMII, dor hipocôndrio D, oligúria, cansaço</td><td>Hepatomegalia dolorosa, edema bilateral, turgência jugular</td><td>Edema + jugular ingurgitada + hepatomegalia = IC dir</td></tr>
+<tr><td><strong>IC Global</strong></td><td>Tudo de ambas</td><td>Todos os sinais</td><td>Edema + dispneia + jugular + hepatomegalia</td></tr>
+<tr><td><strong>Angina estável</strong></td><td>Dor precordial &lt; 30 min ao esforço, alivia com repouso/nitrato</td><td>ECG alterado ao esforço</td><td>Dor que alivia → angina</td></tr>
+<tr><td><strong>IAM</strong></td><td>Dor &gt; 30 min, sudorese, náuseas, sensação de morte</td><td>ECG: supra ST + enzimas ↑</td><td>Dor &gt; 30 min + não alivia = IAM → ECG urgente</td></tr>
+<tr><td><strong>HTA</strong></td><td>Cefaleia occipital, palpitações, tontura</td><td>PA ≥ 140/90 mmHg</td><td>PA ≥ 140/90 em ≥ 2 medições</td></tr>
+<tr><td><strong>Estenose mitral</strong></td><td>Dispneia progressiva, hemoptise, palpitações (FA)</td><td>Facies mitral, B1 hiper, rodado diastólico</td><td><mark>Tríade de Huchard</mark>: dispneia + hemoptise + palpitações</td></tr>
+<tr><td><strong>Insuficiência mitral</strong></td><td>Dispneia, fadiga, palpitações</td><td>B1 hipo, sopro sistólico apical com irradiação axilar</td><td>Sopro sistólico apical = insuf. mitral</td></tr>
+<tr><td><strong>Estenose aórtica</strong></td><td>Dispneia de esforço, angina, <mark>síncope de esforço</mark></td><td>B2 aórtica hipo, sopro sistólico ejetivo em A2</td><td><mark>Tríade EA</mark>: IC + angina + síncope</td></tr>
+<tr><td><strong>Insuficiência aórtica</strong></td><td>Dispneia, palpitações, pulso "em martelo de água"</td><td>B2 hipo, sopro diastólico decrescente em Erb</td><td>Pulso amplo d'água + sopro diastólico = insuf. aórtica</td></tr>
+<tr><td><strong>Shock cardiogênico</strong></td><td>Hipotensão grave, confusão, oligúria</td><td>PA &lt; 80/50, pele fria, cianose, pulso filiforme</td><td>Hipotensão + pele fria + oligúria = SHOCK</td></tr>
+</tbody>
+</table></div>
+
+<h3 id="sec82">8.2 Insuficiência Cardíaca — Classificação NYHA</h3>
+<div class="tw"><table>
+<thead><tr><th>Classe</th><th>Sintomas</th><th>Limitação</th></tr></thead>
+<tbody>
+<tr><td><strong>I</strong></td><td>Sem sintomas em atividade ordinária</td><td>Nenhuma</td></tr>
+<tr><td><strong>II</strong></td><td>Dispneia em esforços intensos</td><td>Leve</td></tr>
+<tr><td><strong>III</strong></td><td>Dispneia em atividade inferior à ordinária</td><td>Importante</td></tr>
+<tr><td><strong>IV</strong></td><td>Dispneia em repouso</td><td>Total</td></tr>
+</tbody>
+</table></div>
+
+<h3 id="sec83">8.3 HTA — Classificação</h3>
+<div class="tw"><table>
+<thead><tr><th>Categoria</th><th>PAS (mmHg)</th><th>PAD (mmHg)</th></tr></thead>
+<tbody>
+<tr><td>Normal</td><td>&lt; 120</td><td>&lt; 80</td></tr>
+<tr><td>Pré-hipertenso</td><td>121–139</td><td>81–89</td></tr>
+<tr><td><strong>HTA estágio 1</strong></td><td>140–159</td><td>90–99</td></tr>
+<tr><td><strong>HTA estágio 2</strong></td><td>160–179</td><td>100–109</td></tr>
+<tr><td><strong>HTA estágio 3</strong></td><td>≥ 180</td><td>≥ 110</td></tr>
+</tbody>
+</table></div>
+<div class="callout tip"><div class="callout-t">Pródromos da HTA</div>Cefaleia occipital, palpitações, rubor facial, tontura, visão turva, nictúria.</div>
+
+<h3 id="sec84">8.4 Shock — Classificação</h3>
+<div class="tw"><table>
+<thead><tr><th>Tipo</th><th>Causa</th><th>Mecanismo</th></tr></thead>
+<tbody>
+<tr><td><strong>Hipovolêmico</strong></td><td>Hemorragia, desidratação, plasma</td><td>Volume intravascular ↓</td></tr>
+<tr><td><strong>Cardiogênico</strong></td><td>IAM, arritmia grave, miocardiopatia</td><td>Falha de bomba</td></tr>
+<tr><td><strong>Distributivo</strong></td><td>Sepse, anafilaxia, neurogênico</td><td>Vasodilatação extrema → má distribuição</td></tr>
+<tr><td><strong>Obstrutivo</strong></td><td>TEP, tamponamento, pneumotórax hipertensivo</td><td>Obstrução mecânica do fluxo</td></tr>
+</tbody>
+</table></div>
+<div class="callout warning"><div class="callout-t">Fases do Shock (Dra. Fúnez)</div>
+<ul>
+<li><strong>Compensado (latente):</strong> PA normal, pulso ↑, palidez, ansiedade</li>
+<li><strong>Descompensado:</strong> PA &lt; 80/50, pele fria, cianose, oligúria, ruídos apagados</li>
+<li><strong>Irreversível:</strong> falência de múltiplos órgãos, pulso filiforme</li>
+</ul>
+</div>
+</section>
+
+<!-- SEC 9 -->
+<section id="sec9">
+<h2><span class="h2-left">🖼️ 9. Imagens que podem cair</span></h2>
+<div class="callout info"><div class="callout-t">Fonte: LLANIO Tomo I — imagens no vault</div>Caminho local: <code>07-Biblioteca-Geral/01-Livros/LLANIO-Propedeutica-Clinica-Tomo-I/imagens/</code></div>
+<div class="tw"><table>
+<thead><tr><th>Tema</th><th>Arquivo</th><th>Pergunta provável</th><th>Resposta esperada</th></tr></thead>
+<tbody>
+<tr><td>Asma brônquica — vias aéreas</td><td><code>cap36-fig01-p04.jpg</code></td><td>"O que essa imagem mostra?"</td><td>Obstrução brônquica com tapões mucosos — asma</td></tr>
+<tr><td>Bronquiectasias</td><td><code>cap36-fig02-p05.jpg</code></td><td>"Que síndrome?"</td><td>Síndrome bronquiectásica (dilatação das vias aéreas)</td></tr>
+<tr><td>Enfisema — tórax em tonel</td><td><code>cap36-fig03-p07.jpg</code></td><td>"Que síndrome causa esse tórax?"</td><td>Enfisema / EPOC — hiperinsuflação + bolhas</td></tr>
+<tr><td>Condensação pneumônica</td><td><code>cap36-fig04-p08.jpg</code></td><td>"Condensação ou derrame?"</td><td>Condensação — pulmão denso sem curva Damoiseau</td></tr>
+<tr><td>Atelectasia</td><td><code>cap36-fig05-p10.jpg</code></td><td>"Diferença do derrame?"</td><td>Atelectasia = retração; derrame = curva Damoiseau</td></tr>
+<tr><td>Pneumotórax</td><td><code>cap36-fig07-p16.jpg</code></td><td>"Que diagnóstico?"</td><td>Pneumotórax — ar pleural + colapso pulmonar</td></tr>
+<tr><td>Irradiações da dor anginosa</td><td><code>cap37-fig01-p07.jpg</code></td><td>"Para onde irradia a angina?"</td><td>Braço E, mandíbula, pescoço, dorso</td></tr>
+<tr><td>Causas do dolor precordial</td><td><code>cap37-fig02-p10.jpg</code></td><td>"Causas de dor precordial?"</td><td>Coronária, pericardite, aorta, digestiva, musculoesquelética</td></tr>
+<tr><td>Causas de palpitações</td><td><code>cap37-fig03-p19.jpg</code></td><td>"Apenas cardíaco?"</td><td>Não — tireoide, SNC, suprarrenal, medicamentos também</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- SEC 10 -->
+<section id="sec10">
+<h2><span class="h2-left">🔎 10. Diagnóstico clínico — modelo de resposta</span></h2>
+<blockquote>
+<em>"El/La paciente presenta un cuadro compatible con síndrome _______, evidenciado por _______.
+El diagnóstico nosológico probable es _______.
+Los principales diagnósticos diferenciales son _______.
+Al examen físico, espero encontrar _______.
+Para confirmar o complementar, solicitaría _______."</em>
+</blockquote>
+<div class="tw"><table>
+<thead><tr><th>#</th><th>Passo</th><th>O que fazer</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Diagnóstico sindrômico</strong></td><td>Agrupar os achados em uma síndrome</td></tr>
+<tr><td>2</td><td><strong>Diagnóstico nosológico</strong></td><td>Nome da doença provável</td></tr>
+<tr><td>3</td><td><strong>Diagnóstico etiológico</strong></td><td>Causa da doença (se possível)</td></tr>
+<tr><td>4</td><td><strong>Diagnósticos diferenciais</strong></td><td>Outras doenças que começam assim</td></tr>
+<tr><td>5</td><td><strong>Anamnese</strong></td><td>Sintomas que sustentam</td></tr>
+<tr><td>6</td><td><strong>Exame físico</strong></td><td>Signos que confirmam</td></tr>
+<tr><td>7</td><td><strong>Exames complementares</strong></td><td>O que pedir para confirmar</td></tr>
+<tr><td>8</td><td><strong>Conduta</strong></td><td>O que fazer primeiro</td></tr>
+</tbody>
+</table></div>
+
+<h4>Exemplo 1 — Pneumonia lobar</h4>
+<blockquote><em>"La paciente presenta un cuadro compatible con <strong>síndrome de condensación inflamatoria</strong>, evidenciado por fiebre alta, tos productiva con esputo herrumbroso, dolor en punta de costado y dificultad respiratoria. El diagnóstico nosológico probable es <strong>neumonía lobar</strong> por Streptococcus pneumoniae. Los diagnósticos diferenciales incluyen tuberculosis, derrame pleural paraneumónico y atelectasia. Al examen físico espero encontrar: vibraciones vocales aumentadas, matidez a la percusión, soplo tubario y estertores crepitantes. Solicitaría: hemograma, radiografía de tórax, hemocultivos y esputo para cultivo."</em></blockquote>
+
+<h4>Exemplo 2 — IC esquerda</h4>
+<blockquote><em>"El paciente presenta un cuadro compatible con <strong>síndrome de insuficiencia cardíaca izquierda</strong>, evidenciado por disnea progresiva, ortopnea (duerme con 3 almohadas) y disnea paroxística nocturna. El diagnóstico nosológico probable es <strong>insuficiencia cardíaca izquierda descompensada</strong>. Los diagnósticos diferenciales incluyen EPOC, asma cardíaca y TEP. Al examen físico espero encontrar: ictus deslocado, ritmo de galope (B3), estertores crepitantes basales bilaterales, taquicardia. Solicitaría: ECG, radiografía de tórax (cardiomegalia, líneas B de Kerley), BNP, ecocardiograma."</em></blockquote>
+</section>
+<!-- SEC 11 -->
+<section id="sec11">
+<h2><span class="h2-left">🏥 11. Casos Clínicos para Treinar</span>
+<span class="timer" id="timer-11"><span class="timer-d" id="td-11">00:00</span><button class="timer-btn" onclick="startTimer('11')">▶</button><button class="timer-btn" onclick="resetTimer('11')">↺</button></span></h2>
+<p style="font-size:12px;color:var(--ink2)">Clique em <em>"Ver resposta"</em> para revelar o diagnóstico.</p>
+
+<span class="badge badge-resp">Respiratório</span>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">R1</span> EPOC — Tabagismo</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 65 anos, tabagista 40 anos-maço. Tosse matinal com expectoração mucopurulenta há 5 anos, piora no inverno. Dispneia progressiva — antes aos grandes esforços, agora ao se vestir. EF: tórax em tonel, hipersonoridade bilateral, MV ↓ com expiração prolongada.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-r1')">Ver resposta</button>
+<div class="case-ans" id="ans-r1">
+<strong>Sindrômico:</strong> Síndrome Obstrutiva Brônquica + Síndrome Enfisematosa<br>
+<strong>Nosológico:</strong> EPOC (bronquite crônica + enfisema) por tabagismo<br>
+<strong>EF:</strong> Tórax em tonel + hipersonoridade + MV ↓ + expiração prolongada
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">R2</span> Asma — Crise noturna</div>
+<div class="case-body">
+<p class="case-text">Paciente feminina, 25 anos. Acorda à noite com falta de ar súbita, sibilos audíveis à distância, fica sentada com cotovelos nos joelhos. EF: tórax em posição inspiratória, sibilos e roncos disseminados bilaterais, percussão normal.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-r2')">Ver resposta</button>
+<div class="case-ans" id="ans-r2">
+<strong>Sindrômico:</strong> Síndrome Obstrutiva Brônquica aguda<br>
+<strong>Nosológico:</strong> Crise de Asma Brônquica<br>
+<strong>Sustentação:</strong> Dispneia expiratória + sibilos disseminados + ortopneia + tórax em inspiração forçada
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">R3</span> Pneumonia lobar</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 40 anos. Febre 39°C, calafrios, dor em "ponta de costado" direito, tosse com expectoração ferrugem. EF: VV aumentadas em base D, matidez em 1/3 inferior D, sopro tubário + estertores crepitantes.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-r3')">Ver resposta</button>
+<div class="case-ans" id="ans-r3">
+<strong>Sindrômico:</strong> Síndrome de Condensação Inflamatória<br>
+<strong>Nosológico:</strong> Pneumonia Lobar por pneumococo<br>
+<strong>EF:</strong> VV ↑ + matidez + sopro tubário + crepitantes + febre + expectoração ferruginosa
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">R4</span> Pneumotórax hipertensivo</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 22 anos. Dor súbita no hemitórax esquerdo + dispneia súbita sem febre. EF: VV abolidas à esquerda, timpanismo à percussão esquerda, silêncio respiratório esquerdo. Traqueia desviada para a direita.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-r4')">Ver resposta</button>
+<div class="case-ans" id="ans-r4">
+<strong>Sindrômico:</strong> Síndrome de Pneumotórax<br>
+<strong>Nosológico:</strong> Pneumotórax espontâneo hipertensivo (desvio mediastinal)<br>
+<strong>Urgência:</strong> Drenagem imediata — desvio = hemodinâmica comprometida
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">R5</span> Derrame pleural maligno</div>
+<div class="case-body">
+<p class="case-text">Paciente feminina, 55 anos, ex-tabagista, emagrece 8 kg em 3 meses, tosse seca persistente. EF: VV abolidas em base direita, matidez até 2/3 inferior D, silêncio respiratório; curva de Damoiseau à percussão.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-r5')">Ver resposta</button>
+<div class="case-ans" id="ans-r5">
+<strong>Sindrômico:</strong> Síndrome de Derrame Pleural<br>
+<strong>Nosológico provável:</strong> Neoplasia pulmonar com derrame pleural maligno<br>
+<strong>Exames:</strong> Rx tórax + TC + toracocentese diagnóstica + citologia do líquido
+</div>
+</div>
+</div>
+
+<span class="badge badge-card" style="margin-top:16px;display:inline-block">Cardiovascular</span>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">C1</span> IAM + Shock cardiogênico</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 58 anos, HTA e DM2. Dor precordial intensa ("aperta o peito"), irradiada para braço esquerdo, sudorese fria, iniciou há 2 horas, não melhora com repouso. PA 90/60 mmHg, FC 110 bpm, pele fria e úmida.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-c1')">Ver resposta</button>
+<div class="case-ans" id="ans-c1">
+<strong>Sindrômico:</strong> Síndrome Coronário Agudo com Insuficiência Circulatória (Shock cardiogênico)<br>
+<strong>Nosológico:</strong> IAM com supra ST (suspeita) + Shock cardiogênico<br>
+<strong>Conduta imediata:</strong> ECG urgente + enzimas + O₂ + acesso venoso + heparina
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">C2</span> IC direita — Cor pulmonale</div>
+<div class="case-body">
+<p class="case-text">Paciente feminina, 70 anos. Edema bilateral de tornozelos, cansaço, hepatomegalia dolorosa, veias jugulares ingurgitadas. Nega dispneia de repouso. APP: EPOC grave.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-c2')">Ver resposta</button>
+<div class="case-ans" id="ans-c2">
+<strong>Sindrômico:</strong> Síndrome de Insuficiência Cardíaca Direita<br>
+<strong>Nosológico:</strong> Cor Pulmonale Crônico (IC direita por EPOC)<br>
+<strong>Chave:</strong> Edema + hepatomegalia + turgência jugular — sem crepitantes (sem IC esquerda)
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">C3</span> Angina estável</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 45 anos. Dor precordial ao subir escadas, duração &lt; 10 min, melhora com repouso. Nega dor em repouso. PA 150/90 mmHg.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-c3')">Ver resposta</button>
+<div class="case-ans" id="ans-c3">
+<strong>Sindrômico:</strong> Síndrome Coronário Crônico<br>
+<strong>Nosológico:</strong> Angina Estável por Cardiopatia Isquêmica Crônica<br>
+<strong>Exames:</strong> ECG repouso + ergometria + coronariografia se positiva
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">C4</span> Estenose mitral + FA</div>
+<div class="case-body">
+<p class="case-text">Paciente feminina, 35 anos. Dispneia progressiva, hemoptise ocasional, palpitações com ritmo irregular. EF: facies mitral, B1 hiperfonética, estalido de abertura, rodado diastólico em ápice, ritmo irregular.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-c4')">Ver resposta</button>
+<div class="case-ans" id="ans-c4">
+<strong>Sindrômico:</strong> Síndrome Valvular — Estenose Mitral<br>
+<strong>Nosológico:</strong> Estenose Mitral reumática + FA (fibrilação atrial)<br>
+<strong>Tríade de Huchard:</strong> dispneia + hemoptise + palpitações ✅
+</div>
+</div>
+</div>
+
+<div class="case-card">
+<div class="case-hd"><span class="case-badge">C5</span> Crise hipertensiva</div>
+<div class="case-body">
+<p class="case-text">Paciente masculino, 65 anos. PA 200/110 mmHg. Cefaleia occipital intensa, tontura, escotomas visuais. EF: B2 hiperfonética em A2, fundo de olho com cruzamentos AV e hemorragias.</p>
+<button class="btn-rev" onclick="revealCase(this,'ans-c5')">Ver resposta</button>
+<div class="case-ans" id="ans-c5">
+<strong>Sindrômico:</strong> Síndrome de HTA grave (crise hipertensiva)<br>
+<strong>Nosológico:</strong> HTA estágio 3 com lesão de órgão-alvo (retina = grau IV Keith-Wagener)<br>
+<strong>Conduta:</strong> Anti-hipertensivo EV + monitoramento + redução gradual da PA
+</div>
+</div>
+</div>
+</section>
+<!-- SEC 12 -->
+<section id="sec12">
+<h2><span class="h2-left">✔️ 12. Questões V ou F</span>
+<span class="timer" id="timer-12"><span class="timer-d" id="td-12">00:00</span><button class="timer-btn" onclick="startTimer('12')">▶</button><button class="timer-btn" onclick="resetTimer('12')">↺</button></span></h2>
+<p style="font-size:12px;color:var(--ink2)">Clique em cada questão para revelar a resposta.</p>
+
+<span class="badge badge-resp">Bloco Respiratório — 10 questões</span>
+<ul class="vf-list">
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">1. As vibrações vocais estão aumentadas no derrame pleural.</p><p class="vf-hint">👆 clique para revelar</p><div class="vf-ans F">FALSO — No derrame, as VV estão <strong>abolidas</strong> (líquido entre folhetos bloqueia transmissão).</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">2. A percussão hipersonora é achado típico do pneumotórax.</p><div class="vf-ans V">VERDADEIRO — Pneumotórax = ar no espaço pleural → hipersonoridade / timpanismo.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">3. O sopro tubário indica que o brônquio adjacente está pérvio.</p><div class="vf-ans V">VERDADEIRO — Sopro tubário exige brônquio aberto transmitindo sons traqueais ao parênquima condensado.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">4. Na atelectasia, as vibrações vocais estão abolidas e há matidez à percussão.</p><div class="vf-ans V">VERDADEIRO — Atelectasia: retração + VV abolidas + matidez + silêncio.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">5. A bronquite crônica é definida como tosse com expectoração por pelo menos 3 meses/ano durante 2 anos consecutivos.</p><div class="vf-ans V">VERDADEIRO — Definição clássica do Llanio e da OMS.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">6. O tórax em tonel é característico da asma aguda, não do enfisema.</p><div class="vf-ans F">FALSO — Tórax em tonel é do <strong>enfisema</strong> (hiperinsuflação crônica). Na asma aguda há tórax em inspiração forçada.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">7. O atrito pleural é audível apenas na inspiração.</p><div class="vf-ans F">FALSO — Atrito pleural é audível em <strong>ambas as fases</strong> (inspiração e expiração).</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">8. Na condensação pneumônica, a broncofonia está aumentada.</p><div class="vf-ans V">VERDADEIRO — Condensação = alvéolos cheios transmitem melhor → broncofonia ↑.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">9. Sibilos são ruídos graves, associados à secreção em brônquios calibrosos.</p><div class="vf-ans F">FALSO — Sibilos são <strong>agudos e musicais</strong> (obstrução de pequenos brônquios). Roncos são graves.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">10. A expectoração ferruginosa é característica da pneumonia pneumocócica.</p><div class="vf-ans V">VERDADEIRO — Expectoração ferrugem = hemoglobina degradada = pneumonia lobar pneumocócica.</div></li>
+</ul>
+
+<span class="badge badge-card" style="margin-top:14px;display:inline-block">Bloco Cardiovascular — 10 questões</span>
+<ul class="vf-list">
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">1. B1 corresponde ao fechamento das válvulas aórtica e pulmonar.</p><div class="vf-ans F">FALSO — B1 = fechamento de <strong>mitral e tricúspide</strong> (início da sístole). B2 = aórtica + pulmonar.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">2. O ictus cordis normal está no 5° EIC na linha medioclavicular esquerda.</p><div class="vf-ans V">VERDADEIRO — Localização normal do ictus em adultos normoconformados.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">3. O frêmito (thrill) é palpável em sopros grau IV ou maior.</p><div class="vf-ans V">VERDADEIRO — Frêmito (thrill palpável) = sopro grau IV–VI.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">4. A estenose mitral causa sopro diastólico audível no foco mitral.</p><div class="vf-ans V">VERDADEIRO — Estenose mitral = rodado diastólico + estalido de abertura no foco apical/mitral.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">5. Na insuficiência cardíaca direita, o achado principal é ortopneia.</p><div class="vf-ans F">FALSO — Ortopneia é de <strong>IC esquerda</strong>. IC direita: edema periférico + turgência jugular + hepatomegalia.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">6. Dor precordial que melhora com nitroglicerina em menos de 30 min é sugestiva de IAM.</p><div class="vf-ans F">FALSO — Dor que melhora &lt; 30 min com nitrato = <strong>angina</strong>. IAM = não melhora / dura &gt; 30 min.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">7. O edema de causa cardíaca é tipicamente frio, pálido e sem cacifo.</p><div class="vf-ans F">FALSO — Edema cardíaco = <strong>quente + bilateral + cacifo + rojizo-cianótico</strong>. Edema renal = frio + pálido.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">8. A PA ≥ 140/90 mmHg em pelo menos 2 medições é critério para diagnóstico de HTA.</p><div class="vf-ans V">VERDADEIRO — Critério padrão para diagnóstico de HTA.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">9. Na insuficiência aórtica, o sopro é diastólico e decrescente, audível no foco de Erb.</p><div class="vf-ans V">VERDADEIRO — Insuf. aórtica: sopro diastólico decrescente (Erb/Botkin), pulso d'água.</div></li>
+<li class="vf-item" onclick="revealVF(this)"><p class="vf-q">10. O ritmo de galope é gerado pela presença de B3 em adultos com IC.</p><div class="vf-ans V">VERDADEIRO — B3 patológica em adultos = IC esquerda com sobrecarga = ritmo de galope.</div></li>
+</ul>
+</section>
+<!-- SEC 13 -->
+<section id="sec13">
+<h2><span class="h2-left">🧩 13. Questões de Múltipla Escolha</span>
+<span class="timer" id="timer-13"><span class="timer-d" id="td-13">00:00</span><button class="timer-btn" onclick="startTimer('13')">▶</button><button class="timer-btn" onclick="resetTimer('13')">↺</button></span></h2>
+<p style="font-size:12px;color:var(--ink2)">Clique em uma opção para responder. A resposta correta é revelada automaticamente.</p>
+
+<span class="badge badge-resp">Bloco Respiratório — Q1 a Q10</span>
+
+<div class="mc"><div class="mc-q"><strong>Q1.</strong> Paciente com febre, tosse produtiva, dor em ponta de costado. EF: matidez + VV aumentadas + sopro tubário. Qual o diagnóstico sindrômico?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp1')"><span class="ol">A</span>Derrame pleural</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp1')"><span class="ol">B</span>Pneumotórax</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp1')"><span class="ol">C</span>Condensação inflamatória ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp1')"><span class="ol">D</span>Atelectasia</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp1')"><span class="ol">E</span>Síndrome enfisematosa</div>
+</div><div class="mc-exp" id="exp1">✅ C — VV aumentadas + matidez + sopro tubário = condensação pneumônica.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q2.</strong> O achado que diferencia condensação pneumônica de atelectasia à percussão e palpação é:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp2')"><span class="ol">A</span>Ambas têm hipersonoridade e VV aumentadas</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp2')"><span class="ol">B</span>Ambas têm matidez, mas VV aumentadas na condensação e abolidas na atelectasia ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp2')"><span class="ol">C</span>Condensação tem timpanismo; atelectasia tem matidez</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp2')"><span class="ol">D</span>Ambas têm silêncio à ausculta</div>
+</div><div class="mc-exp" id="exp2">✅ B — Chave diferencial: vibrações vocais (condensação ↑; atelectasia abolidas).</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q3.</strong> Qual é a definição padrão de bronquite crônica segundo Llanio?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp3')"><span class="ol">A</span>Tosse por 1 mês/ano durante 3 anos</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp3')"><span class="ol">B</span>Tosse + expectoração por 3 meses/ano durante 2 anos consecutivos ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp3')"><span class="ol">C</span>Tosse produtiva associada a tabagismo ativo</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp3')"><span class="ol">D</span>Dispneia + tosse + expectoração durante 6 meses</div>
+</div><div class="mc-exp" id="exp3">✅ B — Definição clássica Llanio/OMS.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q4.</strong> Paciente com dispneia súbita + dor unilateral + timpanismo + ausência de MV ipsilateral. Diagnóstico?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp4')"><span class="ol">A</span>Derrame pleural</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp4')"><span class="ol">B</span>Condensação pneumônica</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp4')"><span class="ol">C</span>Atelectasia</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp4')"><span class="ol">D</span>Pneumotórax ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp4')"><span class="ol">E</span>Enfisema</div>
+</div><div class="mc-exp" id="exp4">✅ D — Timpanismo + MV abolido + dispneia súbita = pneumotórax.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q5.</strong> Qual ruído adventício é típico da obstrução de vias aéreas de pequeno calibre?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp5')"><span class="ol">A</span>Roncos</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp5')"><span class="ol">B</span>Estertores subcrepitantes</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp5')"><span class="ol">C</span>Atrito pleural</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp5')"><span class="ol">D</span>Sibilos ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp5')"><span class="ol">E</span>Sopro anfórico</div>
+</div><div class="mc-exp" id="exp5">✅ D — Sibilos = obstrução de brônquios pequenos (asma, broncoespasmo).</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q6.</strong> O padrão de exame físico da asma em crise inclui:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp6')"><span class="ol">A</span>Matidez + VV abolidas + silêncio</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp6')"><span class="ol">B</span>VV aumentadas + sopro tubário + crepitantes</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp6')"><span class="ol">C</span>Hipersonoridade + sibilos + tórax em inspiração ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp6')"><span class="ol">D</span>Timpanismo + desvio de traqueia</div>
+</div><div class="mc-exp" id="exp6">✅ C — Asma: hiperinsuflação + obstrução = hipersonoridade + sibilos + posição inspiratória.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q7.</strong> Qual é o agente etiológico mais frequente da pneumonia lobar segundo Llanio?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp7')"><span class="ol">A</span>Staphylococcus aureus</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp7')"><span class="ol">B</span>Klebsiella pneumoniae</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp7')"><span class="ol">C</span>Haemophilus influenzae</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp7')"><span class="ol">D</span>Streptococcus pneumoniae ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp7')"><span class="ol">E</span>Pseudomonas aeruginosa</div>
+</div><div class="mc-exp" id="exp7">✅ D — Pneumococo = 90–95% das pneumonias lobares (Llanio Cap 36).</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q8.</strong> A curva de Damoiseau à percussão é característica de:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp8')"><span class="ol">A</span>Pneumotórax</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp8')"><span class="ol">B</span>Condensação lobar</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp8')"><span class="ol">C</span>Derrame pleural ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp8')"><span class="ol">D</span>Atelectasia</div>
+</div><div class="mc-exp" id="exp8">✅ C — Curva côncava para cima (axila mais alta que paraesternal) = derrame pleural.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q9.</strong> "Blue bloater" (abotagado azul) descreve o paciente com:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp9')"><span class="ol">A</span>Asma grave com crise prolongada</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp9')"><span class="ol">B</span>Pneumotórax hipertensivo</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp9')"><span class="ol">C</span>EPOC com cor pulmonale e hipoxemia ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp9')"><span class="ol">D</span>Enfisema puro sem IC</div>
+</div><div class="mc-exp" id="exp9">✅ C — Blue bloater = bronquite crônica predominante + IC + cianose.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q10.</strong> O sinal de egofonia é encontrado em qual situação?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp10')"><span class="ol">A</span>Pneumotórax completo</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp10')"><span class="ol">B</span>Interface entre derrame pleural e parênquima condensado ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp10')"><span class="ol">C</span>Enfisema avançado</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp10')"><span class="ol">D</span>Bronquite crônica</div>
+</div><div class="mc-exp" id="exp10">✅ B — Egofonia = voz de cabra na interface líquido-condensação.</div></div>
+
+<span class="badge badge-card" style="margin-top:14px;display:inline-block">Bloco Cardiovascular — Q11 a Q20</span>
+
+<div class="mc"><div class="mc-q"><strong>Q11.</strong> Qual é a localização anatômica normal do ictus cordis?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp11')"><span class="ol">A</span>4° EIC linha paraesternal esquerda</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp11')"><span class="ol">B</span>5° EIC linha medioclavicular esquerda ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp11')"><span class="ol">C</span>3° EIC linha axilar anterior esquerda</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp11')"><span class="ol">D</span>2° EIC linha paraesternal direita</div>
+</div><div class="mc-exp" id="exp11">✅ B — 5° EIC LMC esquerda = localização padrão do ictus.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q12.</strong> Dor precordial de início brusco, duração &gt; 30 min, sem alívio com nitroglicerina, irradiada para mandíbula, com sudorese profusa. Diagnóstico?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp12')"><span class="ol">A</span>Angina estável</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp12')"><span class="ol">B</span>Pericardite aguda</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp12')"><span class="ol">C</span>Espasmo esofágico</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp12')"><span class="ol">D</span>IAM ✅</div>
+</div><div class="mc-exp" id="exp12">✅ D — Critérios de IAM: dor &gt; 30 min + sem alívio + sintomas associados.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q13.</strong> A tríade clínica clássica da estenose aórtica é:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp13')"><span class="ol">A</span>Dispneia + hemoptise + palpitações</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp13')"><span class="ol">B</span>Angina + síncope de esforço + IC ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp13')"><span class="ol">C</span>Edema + turgência jugular + hepatomegalia</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp13')"><span class="ol">D</span>Cianose + palpitações + dispneia noturna</div>
+</div><div class="mc-exp" id="exp13">✅ B — Tríade EA: angina de esforço + síncope de esforço + IC (dispneia).</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q14.</strong> Qual característica do edema cardíaco o diferencia do edema renal?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp14')"><span class="ol">A</span>É frio, pálido e sem cacifo</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp14')"><span class="ol">B</span>É bilateral, quente, doloroso e com cacifo ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp14')"><span class="ol">C</span>Aparece primeiro na face e depois nos membros</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp14')"><span class="ol">D</span>Não tem cacifo (godet negativo)</div>
+</div><div class="mc-exp" id="exp14">✅ B — Edema cardíaco: quente + bilateral + cacifo + doloroso + rojizo-cianótico.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q15.</strong> O sopro sistólico apical com irradiação para axila é característico de:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp15')"><span class="ol">A</span>Estenose aórtica</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp15')"><span class="ol">B</span>Insuficiência tricúspide</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp15')"><span class="ol">C</span>Estenose mitral</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp15')"><span class="ol">D</span>Insuficiência mitral ✅</div>
+</div><div class="mc-exp" id="exp15">✅ D — Insuf. mitral = regurgitação sistólica pelo ápice → axila.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q16.</strong> Na IC direita, qual é o conjunto de achados mais esperado?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp16')"><span class="ol">A</span>Crepitantes + ortopneia + B3 + ictus deslocado</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp16')"><span class="ol">B</span>Edema + turgência jugular + hepatomegalia dolorosa ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp16')"><span class="ol">C</span>Dispneia paroxística noturna + sudorese noturna</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp16')"><span class="ol">D</span>Sopro diastólico + facies mitral + hemoptise</div>
+</div><div class="mc-exp" id="exp16">✅ B — IC direita: remanso venoso sistêmico = edema + jugular + hepatomegalia.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q17.</strong> O B3 patológico em adultos sugere:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp17')"><span class="ol">A</span>Hipertrofia ventricular esquerda por HTA</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp17')"><span class="ol">B</span>Bloqueio AV de primeiro grau</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp17')"><span class="ol">C</span>Insuficiência cardíaca esquerda com sobrecarga ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp17')"><span class="ol">D</span>Estenose mitral grave</div>
+</div><div class="mc-exp" id="exp17">✅ C — B3 em adultos = enchimento rápido patológico = IC esquerda = ritmo de galope.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q18.</strong> A tríade de Huchard (dispneia + hemoptise + palpitações) é característica de:</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp18')"><span class="ol">A</span>Insuficiência cardíaca global</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp18')"><span class="ol">B</span>Estenose aórtica</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp18')"><span class="ol">C</span>Estenose mitral ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp18')"><span class="ol">D</span>IAM anterior extenso</div>
+</div><div class="mc-exp" id="exp18">✅ C — Tríade de Huchard = estenose mitral ("doença disneizante, hemoptizante e palpitante").</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q19.</strong> Qual achado é mais sugestivo de shock cardiogênico descompensado?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp19')"><span class="ol">A</span>PA normal + FC 100 + pele corada</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp19')"><span class="ol">B</span>PA &lt; 80/50 + pele fria + oligúria + cianose ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp19')"><span class="ol">C</span>Edema bilateral + turgência jugular + PA normal</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp19')"><span class="ol">D</span>Síncope de esforço + sopro sistólico</div>
+</div><div class="mc-exp" id="exp19">✅ B — Shock descompensado: PA &lt; 80/50, pele fria, cianose, oligúria.</div></div>
+
+<div class="mc"><div class="mc-q"><strong>Q20.</strong> Qual das alternativas descreve corretamente o foco de Erb (3° EIC esquerdo)?</div>
+<div class="mc-opts">
+<div class="mc-opt" onclick="selectMC(this,false,'exp20')"><span class="ol">A</span>Melhor local para ouvir a válvula tricúspide</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp20')"><span class="ol">B</span>Localização do foco pulmonar</div>
+<div class="mc-opt" data-correct="true" onclick="selectMC(this,true,'exp20')"><span class="ol">C</span>Usado para ouvir sopros que irradiam da aorta para o ápice ✅</div>
+<div class="mc-opt" onclick="selectMC(this,false,'exp20')"><span class="ol">D</span>Equivale ao foco apical / mitral</div>
+</div><div class="mc-exp" id="exp20">✅ C — Erb (foco mesocárdico) = sopros de base que irradiam para baixo, especialmente insuf. aórtica.</div></div>
+</section>
+<!-- SEC 14 -->
+<section id="sec14">
+<h2><span class="h2-left">⚡ 14. Referência Rápida — Síndrome × Achado-chave</span></h2>
+<p style="font-size:12px;color:var(--ink2)">Memorização para o dia da prova</p>
+<div class="qr-grid">
+<div class="qr-item"><div class="qr-trigger">Matidez + VV aumentadas + sopro tubário</div><div class="qr-dx">→ Condensação pneumônica</div></div>
+<div class="qr-item"><div class="qr-trigger">Matidez + VV abolidas + silêncio</div><div class="qr-dx">→ Derrame pleural</div></div>
+<div class="qr-item"><div class="qr-trigger">Matidez + VV abolidas + retração</div><div class="qr-dx">→ Atelectasia</div></div>
+<div class="qr-item"><div class="qr-trigger">Hipersonoridade + MV ↓ + expiração prolongada + tórax em tonel</div><div class="qr-dx">→ Enfisema / EPOC</div></div>
+<div class="qr-item"><div class="qr-trigger">Timpanismo + VV abolidas + desvio traqueal contralateral</div><div class="qr-dx">→ Pneumotórax hipertensivo</div></div>
+<div class="qr-item"><div class="qr-trigger">Sibilos disseminados + tórax em inspiração + ortopneia</div><div class="qr-dx">→ Asma em crise</div></div>
+<div class="qr-item"><div class="qr-trigger">Estertores crepitantes basais bilaterais + ortopneia + B3</div><div class="qr-dx">→ IC esquerda</div></div>
+<div class="qr-item"><div class="qr-trigger">Edema + turgência jugular + hepatomegalia</div><div class="qr-dx">→ IC direita</div></div>
+<div class="qr-item"><div class="qr-trigger">Dor precordial &gt; 30 min + sem alívio</div><div class="qr-dx">→ IAM — ECG urgente</div></div>
+<div class="qr-item"><div class="qr-trigger">Dor precordial &lt; 30 min + melhora com repouso/nitrato</div><div class="qr-dx">→ Angina estável</div></div>
+<div class="qr-item"><div class="qr-trigger">Dispneia + hemoptise + palpitações</div><div class="qr-dx">→ Estenose mitral (Tríade Huchard)</div></div>
+<div class="qr-item"><div class="qr-trigger">Síncope de esforço + sopro sistólico em A2</div><div class="qr-dx">→ Estenose aórtica</div></div>
+<div class="qr-item"><div class="qr-trigger">PA &lt; 80/50 + pele fria + oligúria</div><div class="qr-dx">→ Shock — buscar causa</div></div>
+<div class="qr-item"><div class="qr-trigger">Sopro diastólico decrescente em Erb + pulso amplo</div><div class="qr-dx">→ Insuficiência aórtica</div></div>
+<div class="qr-item"><div class="qr-trigger">Curva de Damoiseau à percussão</div><div class="qr-dx">→ Derrame pleural</div></div>
+<div class="qr-item"><div class="qr-trigger">Expectoração ferruginosa + febre + calafrios</div><div class="qr-dx">→ Pneumonia por pneumococo</div></div>
+<div class="qr-item"><div class="qr-trigger">Tosse matinal + expectoração abundante/fétida ± hemoptise</div><div class="qr-dx">→ Bronquiectasia</div></div>
+<div class="qr-item"><div class="qr-trigger">Tosse + expectoração ≥ 3 meses/ano × 2 anos</div><div class="qr-dx">→ Bronquite crônica (critério)</div></div>
+</div>
+</section>
+
+<!-- SEC 15 -->
+<section id="sec15">
+<h2><span class="h2-left">⚠️ 15. Lacunas — conferir antes da prova</span></h2>
+<div class="callout warning"><div class="callout-t">O que não está 100% coberto neste ajuntado</div></div>
+<div class="tw"><table>
+<thead><tr><th>Lacuna</th><th>Onde conferir</th></tr></thead>
+<tbody>
+<tr><td>Síndrome cavitária (TBC cavernosa, abscesso)</td><td>Llanio Cap 36 + T05-P2 — conteúdo truncado no resumo</td></tr>
+<tr><td>Síndrome mediastinal</td><td>Llanio Cap 36 — citado mas não desenvolvido</td></tr>
+<tr><td>Insuficiência respiratória — critérios completos</td><td>T01-P1 Apêndice + Llanio Cap 36</td></tr>
+<tr><td>SDRA (distress respiratório do adulto)</td><td>Llanio Cap 36 — truncado</td></tr>
+<tr><td>Valvopatia pulmonar e tricúspide (detalhes)</td><td>SINDROMES-CARDIOVASCULARES pp. 76–78</td></tr>
+<tr><td>Arritmias (FA, TSV, BAV) — detalhamento</td><td>Não há resumo específico — conteúdo disperso</td></tr>
+<tr><td>Exames complementares cardiovasculares (ECG básico)</td><td>Llanio Cap 42 / SINDROMES pág 56</td></tr>
+<tr><td>Critérios de Framingham para IC</td><td>T07 seção de comparação / Avulso-Discussao-Shock</td></tr>
+</tbody>
+</table></div>
+<div class="callout success" style="margin-top:20px">
+<div class="callout-t">✅ Revisão completa!</div>
+Se chegou até aqui, você passou por todas as seções. Boa prova, Simone! 🎯
+</div>
+</section>
+
+</main>
+
+<script>
+// ── SECTION IDs FOR TRACKING ─────────────────────────────────
+const SECTION_IDS = ['sec0','sec1','sec2','sec3','sec4','sec5','sec6','sec7',
+  'sec8','sec9','sec10','sec11','sec12','sec13','sec14','sec15'];
+const STORAGE_KEY = 'med-p2-ajuntado';
+
+// ── LOAD/SAVE STATE ──────────────────────────────────────────
+function loadState(){
+  try{ return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}; }
+  catch(e){ return {}; }
+}
+function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+
+// ── CHECKLIST ────────────────────────────────────────────────
+function toggleCheck(li, id){
+  const cb = document.getElementById(id);
+  cb.checked = !cb.checked;
+  li.classList.toggle('checked', cb.checked);
+  const s = loadState();
+  if(!s.checks) s.checks = {};
+  s.checks[id] = cb.checked;
+  saveState(s);
+}
+function initChecklist(){
+  const s = loadState();
+  if(!s.checks) return;
+  for(const [id, val] of Object.entries(s.checks)){
+    const cb = document.getElementById(id);
+    if(cb){ cb.checked = val; cb.closest('.cl-item')?.classList.toggle('checked', val); }
+  }
+}
+
+// ── VF REVEAL ────────────────────────────────────────────────
+function revealVF(el){
+  if(el.classList.contains('revealed')) return;
+  el.classList.add('revealed');
+  const ans = el.querySelector('.vf-ans');
+  if(ans){ ans.style.display = 'block'; }
+}
+
+// ── MC SELECT ────────────────────────────────────────────────
+function selectMC(el, isCorrect, expId){
+  const mc = el.closest('.mc');
+  if(mc.dataset.done === '1') return;
+  mc.dataset.done = '1';
+  mc.querySelectorAll('.mc-opt').forEach(o => {
+    o.classList.add('done');
+    if(o === el){
+      o.classList.add(isCorrect ? 'correct' : 'wrong');
+    } else if(o.dataset.correct === 'true'){
+      o.classList.add('correct');
+    }
+  });
+  const exp = document.getElementById(expId);
+  if(exp) exp.classList.add('show');
+}
+
+// ── CASES REVEAL ─────────────────────────────────────────────
+function revealCase(btn, answerId){
+  const ans = document.getElementById(answerId);
+  if(ans){ ans.classList.add('show'); btn.style.display='none'; }
+}
+
+// ── TIMERS ───────────────────────────────────────────────────
+const timerState = {};
+function startTimer(id){
+  if(timerState[id]?.running) return;
+  if(!timerState[id]) timerState[id] = {sec: 0};
+  timerState[id].running = true;
+  timerState[id].interval = setInterval(() => {
+    timerState[id].sec++;
+    const d = document.getElementById('td-' + id);
+    if(d){
+      const m = String(Math.floor(timerState[id].sec/60)).padStart(2,'0');
+      const s = String(timerState[id].sec%60).padStart(2,'0');
+      d.textContent = m + ':' + s;
+    }
+  }, 1000);
+}
+function resetTimer(id){
+  if(timerState[id]?.interval) clearInterval(timerState[id].interval);
+  timerState[id] = {sec:0, running:false};
+  const d = document.getElementById('td-' + id);
+  if(d) d.textContent = '00:00';
+}
+
+// ── PROGRESS TRACKING ────────────────────────────────────────
+const visited = new Set();
+function updateProgress(){
+  const pct = Math.round(visited.size / SECTION_IDS.length * 100);
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressPct').textContent = pct + '%';
+  document.getElementById('visitedCount').textContent = visited.size + ' / ' + SECTION_IDS.length;
+  const s = loadState();
+  s.visited = [...visited];
+  saveState(s);
+}
+
+// ── INTERSECTION OBSERVER ─────────────────────────────────────
+const navLinks = {};
+document.querySelectorAll('.nav-a').forEach(a => {
+  const href = a.getAttribute('href');
+  if(href) navLinks[href.slice(1)] = a;
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const id = entry.target.id;
+      // Mark active in sidebar
+      document.querySelectorAll('.nav-a').forEach(a => a.classList.remove('active'));
+      if(navLinks[id]) navLinks[id].classList.add('active');
+      // Track visited
+      if(!visited.has(id)){
+        visited.add(id);
+        updateProgress();
+      }
+    }
+  });
+}, { rootMargin: '-48px 0px -60% 0px', threshold: 0.01 });
+
+document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+
+// ── SIDEBAR TOGGLE (mobile) ───────────────────────────────────
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+// ── INIT ─────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  initChecklist();
+  // Restore visited from storage
+  const s = loadState();
+  if(s.visited) s.visited.forEach(id => visited.add(id));
+  updateProgress();
+});
+</script>
+</body>
+</html>
