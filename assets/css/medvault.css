@@ -198,6 +198,51 @@ body {
   box-shadow: var(--shadow-hover);
 }
 
+.card.destaque-new {
+  position: relative;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.42), 0 0 26px rgba(198, 40, 40, 0.36), var(--shadow);
+  animation: destaqueGlow 1.9s ease-in-out infinite;
+}
+
+.card.destaque-new:hover {
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.62), 0 0 34px rgba(198, 40, 40, 0.48), var(--shadow-hover);
+}
+
+.card.destaque-new::after {
+  content: "NEW";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  z-index: 2;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #fbbf24;
+  color: #7f1d1d;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  box-shadow: 0 0 14px rgba(251, 191, 36, 0.78);
+  animation: newBlink 0.95s steps(2, start) infinite;
+}
+
+.card-tema.destaque-new .card-header {
+  padding-right: 64px;
+}
+
+@keyframes destaqueGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.36), 0 0 20px rgba(198, 40, 40, 0.28), var(--shadow);
+  }
+  50% {
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.64), 0 0 38px rgba(198, 40, 40, 0.46), var(--shadow-hover);
+  }
+}
+
+@keyframes newBlink {
+  0%, 52% { opacity: 1; }
+  53%, 100% { opacity: 0.35; }
+}
+
 .card-disciplina {
   min-height: 220px;
   border-top-width: 6px;
