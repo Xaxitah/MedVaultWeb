@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T06 — Urgências Traumáticas — MedVaultWeb Urologia P2">
+  <title>P2-T06 — Urgências Traumáticas — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #b71c1c; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%);">
+    <h1>🚨 Urgências Traumáticas</h1>
+    <p>Trauma Genitourinário · Escala AAST — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T06</span></div>
+  <div class="content-area">
+    
+    <div class="resumo-content">
+      <h1>P2-T06 — Urgencias Traumaticas / Trauma Genitourinario</h1>
+<blockquote><strong>Fontes deste resumo:</strong> - 🖥️ Slide: <code>lesiones-genitourinarias</code> (99 slides — Lesiones genitourinarias.pptx) - 🖼️ Infografico de aula: <code>trauma-genitourinario</code> (extraido de Trauma Genitourinario.pdf) - 📌 Ambas as fontes sao derivadas das aulas (audio + slides da professora)</blockquote>
+<hr>
+<h2>0. Fontes Usadas</h2>
+<table><thead><tr><th>Origem</th><th>Conteudo confirmado</th><th>Observacoes</th></tr></thead><tbody><tr><td>Slide PPTX (99 slides)</td><td>Estrutura completa de todos os orgaos; dados numericos (85%, 3%, 10–14 dias)</td><td>Texto parcialmente garbled no alt-text; confirmado pelo infografico</td></tr><tr><td>Infografico de aula</td><td>Condensacao de toda a aula; 7 blocos tematicos</td><td>Fonte unica com texto legivel; base principal do resumo</td></tr><tr><td>Transcricao</td><td>Ausente</td><td>Nao ha transcricao de audio para este tema</td></tr><tr><td>Arquivo PREGUNTAS</td><td>Ausente</td><td>Nao localizado</td></tr></tbody></table>
+<hr>
+<h2>1. Visao Geral</h2>
+<p><strong>Trauma genitourinario</strong> (<em>traumatismo urogenital</em>) e a lesao de qualquer orgao do trato urinario ou genital por agente externo. Representa cerca de <strong>10% de todos os traumas abdominais</strong>.</p>
+<p>O <strong>rim</strong> e o orgao mais frequentemente lesado (1–5% de todos os traumas). A <strong>bexiga</strong> aparece em 3% dos traumas abdominais e esta quase sempre associada a fratura pelvica. A <strong>uretra</strong> e mais acometida no sexo masculino. O <strong>ureter</strong> e raramente lesado por trauma externo — sua lesao costuma ser <strong>iatrogênica</strong> (cirurgia ginecologica ou urologica).</p>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Ideia central</span><p>Cada orgao do trato GU tem um mecanismo tipico, um exame diagnostico padrao e uma regra de conduta. Decorar o trio: <strong>mecanismo → exame → conduta</strong> para cada orgao.</p></div>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<ul>
+<li><strong>Rim e o mais lesado</strong> — trauma renal menor (graus I–III) representa <strong>85%</strong> dos casos; conduta conservadora</li>
+<li><strong>Classificacao AAST</strong> — 5 graus (I contusao → V destruicao/avulsao pedicular); graus I–III conservador, IV–V cirurgico</li>
+<li><strong>TC com contraste</strong> — padrao-ouro para estadiamento do trauma renal</li>
+<li><strong>Bexiga</strong> — cistograma retrogrado e o exame padrao; extraperitoneal: sonda; intraperitoneal: <strong>cirurgia obrigatoria</strong></li>
+<li><strong>Uretra</strong> — nunca sondar antes de excluir lesao uretral; uretrografia retrograda e o exame; cistostomia suprapubica de urgencia</li>
+<li><strong>Fratura de penis</strong> — cirurgia imediata (ruptura da tunica albuginea)</li>
+<li><strong>Hematoma em "asas de borboleta"</strong> — sinal classico de ruptura uretral anterior com lesao da fascia de Buck</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Atencao para prova</span><p>A ordem dos exames importa. Suspeita de lesao uretral → uretrografia <strong>antes</strong> de qualquer sondagem. Suspeita de lesao vesical → cistograma <strong>antes</strong> de operar.</p></div>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Trauma Renal</h3>
+<p>O rim e protegido pela capsula renal e pela <strong>Fascia de Gerota</strong>, que condicionam a severidade da lesao ao conter fragmentos e hematomas. Na crianca, o rim e mais vulneravel (menor gordura perirrenal, menor musculatura, maior tamanho relativo).</p>
+<p><strong>Mecanismos:</strong></p>
+<ul>
+<li>Fechado (<em>cerrado</em>): desaceleracao, precipitacao, acidente de transito — mais comum</li>
+<li>Penetrante (<em>abierto</em>): arma de fogo, arma branca</li>
+</ul>
+<p><strong>Triada Diagnostica:</strong></p>
+<ol>
+<li><strong>Dor</strong> em flanco ou lombar</li>
+<li><strong>Hematuria</strong> (macro ou micro)</li>
+<li><strong>Massa palpavel</strong> em flanco (hematoma)</li>
+</ol>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Hematuria e trauma renal</span><p>Hematuria macro = investigar sempre com imagem. Hematuria micro isolada em trauma de baixo impacto pode ser observada. Em criancas, qualquer hematuria micro > 50 hem/campo exige TC.</p></div>
+<p><strong>Indicacoes de TC obrigatoria:</strong></p>
+<ul>
+<li>Hematuria macroscopica</li>
+<li>Hematuria microscopica + choque (PA < 90 mmHg)</li>
+<li>Trauma de alta energia (independente de hematuria)</li>
+<li>Crianca com hematuria microscopica significativa</li>
+</ul>
+<h3>3.2 Exames de Imagem — Trauma Renal</h3>
+<table><thead><tr><th>Exame</th><th>Caracteristica principal</th><th>Quando usar</th></tr></thead><tbody><tr><td><strong>TC com contraste</strong></td><td>Padrao-ouro; mais sensivel e especifica; define localizacao e segmentos</td><td>Paciente estavel — sempre</td></tr><tr><td><strong>Ecografia (FAST)</strong></td><td>Confirma presenca/ausencia do rim; define parenquima; rapida</td><td>Triagem em instabilidade</td></tr><tr><td><strong>Arteriografia</strong></td><td>Mais exata em lesoes vasculares; menos especifica que TC</td><td>Embolizacao de sangramento ativo</td></tr><tr><td><strong>Pielografia IV (UIV)</strong></td><td>Sensibilidade 92% para trauma; pouco usada se TC disponivel</td><td>Alternativa quando TC indisponivel</td></tr></tbody></table>
+<h3>3.3 Classificacao AAST de Trauma Renal</h3>
+<table><thead><tr><th>Grau</th><th>Lesao</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>Contusao ou hematoma subcapsular nao expansivo</td><td>Conservadora</td></tr><tr><td><strong>II</strong></td><td>Hematoma perirrenal nao expansivo; laceração cortical < 1 cm</td><td>Conservadora</td></tr><tr><td><strong>III</strong></td><td>Laceração cortical > 1 cm sem sistema coletor</td><td>Conservadora (monitorada)</td></tr><tr><td><strong>IV</strong></td><td>Laceração com sistema coletor + extravasamento; lesao vascular segmentar</td><td>Intervencao (embolizacao/cirurgia)</td></tr><tr><td><strong>V</strong></td><td>Rim destruido / avulsao do pediculo vascular</td><td>Cirurgia de urgencia / nefrectomia</td></tr></tbody></table>
+<p><strong>Tratamento conservador (graus I–III):</strong> repouso absoluto, hidratacao, hemoderivados, antibioticoterapia se necessario, controle clinico.</p>
+<p><strong>Cirurgia (graus IV–V):</strong> abordagem transperitoneal; objetivo = controlar hemorragia e salvar o rim (<strong>nefrorrafia</strong>); nefrectomia quando inviavel.</p>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Pegadinha</span><p>Grau IV nao e automaticamente cirurgico — pode ser tratado com embolizacao em centro especializado. Grau V com avulsao pedicular = cirugia de urgencia sem discussao.</p></div>
+<h3>3.4 Trauma Ureteral</h3>
+<p>Raro em trauma externo (< 1%). <strong>Principal causa: iatrogênica</strong> (cirurgia ginecologica, urologica, colorretal).</p>
+<p><strong>Diagnostico:</strong> TC fase excretora (extravasamento no trajeto ureteral); ureterograma retrogrado se duvida.</p>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li>Lesao parcial / intraoperatoria: reparo primario + stent DJ</li>
+<li>Lesao total / descoberta tardia: nefrostomia → reparo diferido</li>
+<li>Lesao proximal ampla: ureteroureterostomia ou nefrectomia</li>
+<li>Lesao inferior: ureteroneocistostomia, fixacao ao psoas, colgajo de Boari, reimplante</li>
+</ul>
+<h3>3.5 Trauma Vesical</h3>
+<p><strong>Epidemiologia:</strong> 3% dos traumas abdominais; 2% dos traumas que requerem cirurgia. Em 70–90% dos casos ha fratura pelvica associada.</p>
+<table><thead><tr><th>Tipo</th><th>Caracteristica</th><th>Conduta</th></tr></thead><tbody><tr><td>Contusao</td><td>Integridade mantida</td><td>Sonda vesical, observacao</td></tr><tr><td><strong>Extraperitoneal</strong></td><td>Laceração abaixo do peritôneo</td><td>Sonda Foley 22 Fr por 10–14 dias</td></tr><tr><td><strong>Intraperitoneal</strong></td><td>Rotura da cupula; urina na cavidade</td><td><strong>Cirurgia obrigatoria</strong></td></tr></tbody></table>
+<p><strong>Diagnostico — Cistografia Retrograda:</strong></p>
+<ul>
+<li>Infundir 300–400 mL de contraste via cateter e radiografar</li>
+<li>Extraperitoneal: contraste limitado ao espaco pelvico</li>
+<li>Intraperitoneal: contraste difunde entre as alcas intestinais</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Armadilha da cistografia</span><p>A <strong>quantidade</strong> de extravasamento na cistografia nao e proporcional a <strong>extensao</strong> real da lesao vesical — sempre realizar cistografia de controle apos tratamento conservador.</p></div>
+<p><strong>Indicacoes de cirurgia aberta precoce:</strong></p>
+<ul>
+<li>Compromisso do colo vesical</li>
+<li>Presenca de fragmentos osseos na bexiga</li>
+<li>Lesao nao cicatriza com cateterizacao isolada</li>
+<li>Lesao mais extensa do que sugerida pela cistografia</li>
+</ul>
+<h3>3.6 Trauma Uretral</h3>
+<p><strong>Classificacao por localizacao:</strong></p>
+<table><thead><tr><th>Tipo</th><th>Localizacao</th><th>Mecanismo tipico</th></tr></thead><tbody><tr><td><strong>Anterior</strong></td><td>Uretra bulbar / peniana</td><td><em>Straddle injury</em> (queda sobre barra, cavalete)</td></tr><tr><td><strong>Posterior</strong></td><td>Uretra membranosa / prostatica</td><td>Fratura pelvica</td></tr></tbody></table>
+<p><strong>Triada classica do trauma uretral posterior:</strong></p>
+<ol>
+<li><strong>Uretrorragia</strong> (sangue no meato)</li>
+<li><strong>Prostata alta</strong> ou impalpavel ao toque retal</li>
+<li><strong>Retencao urinaria</strong> aguda</li>
+</ol>
+<p><strong>Sinal de "asas de borboleta" (<em>alas de mariposa</em>):</strong> hematoma perineal tipico de ruptura uretral anterior com lesao da fascia de Buck — aspecto em borboleta pelo hematoma bilateral nas coxas.</p>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra de ouro do trauma uretral</span><p><strong>NUNCA</strong> passar sonda vesical antes de excluir lesao uretral. Se houver suspeita: uretrografia retrograda <strong>primeiro</strong>. Sondagem numa ruptura parcial pode transformar em ruptura total.</p></div>
+<p><strong>Diagnostico:</strong> Uretrografia retrograda — injetar contraste no meato uretral externo sob fluoroscopia.</p>
+<p><strong>Tratamento:</strong></p>
+<table><thead><tr><th>Fase</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Urgencia</strong></td><td>Cistostomia suprapubica (derivacao imediata sem sondagem)</td></tr><tr><td><strong>Tardio (3–6 meses)</strong></td><td>Uretroplastia / reparo definitivo</td></tr></tbody></table>
+<p><strong>Complicacoes tardias:</strong> estenose uretral (principal), disfuncao eretil, incontinencia urinaria.</p>
+<h3>3.7 Trauma Peniano, Escrotal e Testicular</h3>
+<p><strong>Fratura de penis</strong> (<em>fractura de pene</em>) — ruptura da tunica albuginea:</p>
+<ul>
+<li>Mecanismo: trauma direto durante erecao (coito, masturbacao)</li>
+<li>Clinica: "estalido" + deflexao subita + hematoma em "berinjela" + perda da erecao</li>
+<li>Tratamento: <strong>cirurgia imediata</strong></li>
+</ul>
+<p><strong>Trauma testicular:</strong></p>
+<ul>
+<li>Exame de eleicao: <strong>USG com Doppler</strong> de urgencia (integridade da albuginea + vascularizacao)</li>
+<li>Rotura da albuginea testicular → exploracao cirurgica</li>
+<li>Hematocele volumosa → exploracao cirurgica</li>
+</ul>
+<p><strong>Trauma escrotal:</strong></p>
+<ul>
+<li>Causas: trauma cerrado (compressao contra ossos pelvicos) e penetrante (assaltos, esportes)</li>
+<li>Lesoes por projetil de arma de fogo (PAF) sao raras</li>
+</ul>
+<hr>
+<h2>4. Classificacao / Componentes / Sequencia</h2>
+<h3>Sequencia de Atendimento no Trauma GU Grave</h3>
+<ol>
+<li><strong>ABC</strong> do ATLS — via aerea, acesso vascular, sonda vesical (se descartada lesao uretral)</li>
+<li><strong>Estabilizacao hemodinamica</strong> — hemoderivados, controle de sangramento</li>
+<li><strong>Imagem de estadiamento:</strong></li>
+</ol>
+<ul>
+<li>Rim → TC com contraste</li>
+<li>Bexiga → cistograma retrogrado</li>
+<li>Uretra → uretrografia retrograda (antes de qualquer sondagem)</li>
+</ul>
+<ol>
+<li><strong>Conduta definitiva</strong> por orgao e grau de lesao</li>
+<li><strong>Seguimento</strong> — controle clinico, imagem de controle (cistografia em 10–14 dias no trauma vesical)</li>
+</ol>
+<hr>
+<h2>5. Comparacao entre Conceitos Parecidos</h2>
+<h3>Trauma Vesical: Extraperitoneal vs. Intraperitoneal</h3>
+<table><thead><tr><th>Criterio</th><th>Extraperitoneal</th><th>Intraperitoneal</th></tr></thead><tbody><tr><td>Frequencia</td><td>Mais comum (associado a fratura pelvica)</td><td>Menos comum</td></tr><tr><td>Mecanismo</td><td>Fragmento osseo lacera bexiga</td><td>Impacto direto em bexiga cheia; decelera-cao</td></tr><tr><td>Cistografia</td><td>Contraste limitado ao espaco pelvico</td><td>Contraste entre alcas intestinais</td></tr><tr><td>Conduta</td><td>Sonda Foley 22 Fr (10–14 dias)</td><td><strong>Cirurgia obrigatoria</strong></td></tr></tbody></table>
+<h3>Trauma Uretral: Anterior vs. Posterior</h3>
+<table><thead><tr><th>Criterio</th><th>Anterior (bulbar/peniana)</th><th>Posterior (membranosa/prostatica)</th></tr></thead><tbody><tr><td>Mecanismo</td><td><em>Straddle injury</em>, queda, trauma perineal</td><td>Fratura pelvica</td></tr><tr><td>Sinal tipico</td><td>Hematoma em "asas de borboleta"</td><td>Prostata alta ao toque retal</td></tr><tr><td>Associacao</td><td>Lesao perineoscrotal</td><td>Fratura dos ramos pubianos</td></tr><tr><td>Conduta urgencia</td><td>Cistostomia suprapubica</td><td>Cistostomia suprapubica</td></tr></tbody></table>
+<h3>Exame-Chave por Orgao</h3>
+<table><thead><tr><th>Orgao</th><th>Exame padrao</th><th>Por que</th></tr></thead><tbody><tr><td>Rim</td><td>TC com contraste (fase arterial + excretora)</td><td>Estadiamento completo AAST</td></tr><tr><td>Ureter</td><td>TC fase excretora / ureterograma retrogrado</td><td>Visualiza extravasamento</td></tr><tr><td>Bexiga</td><td>Cistograma retrogrado</td><td>Diferencia extra vs. intraperitoneal</td></tr><tr><td>Uretra</td><td>Uretrografia retrograda</td><td>Localiza e classifica a ruptura</td></tr><tr><td>Testículo</td><td>USG com Doppler</td><td>Avalia vascularizacao e albuginea</td></tr></tbody></table>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<blockquote>Baseado na estrutura do slide (99 slides) e no infografico de aula.</blockquote>
+<h3>Muito provavel</h3>
+<ol>
+<li><strong>Classificacao AAST</strong> de trauma renal — grau I a V com conduta</li>
+<li><strong>Tríade do trauma uretral posterior</strong> — uretrorragia + prostata alta + retencao urinaria</li>
+<li><strong>Regra da sondagem</strong> — nunca sondar sem descartar lesao uretral (uretrografia primeiro)</li>
+<li><strong>Trauma vesical intraperitoneal = cirurgia obrigatoria</strong> (extraperitoneal = conservador)</li>
+<li><strong>TC com contraste</strong> como padrao-ouro no trauma renal</li>
+</ol>
+<h3>Provavel</h3>
+<ol>
+<li><strong>Hematoma em "asas de borboleta"</strong> — sinal de ruptura uretral anterior</li>
+<li><strong>Fratura de penis</strong> — cirurgia imediata, mecanismo (erecao + trauma)</li>
+<li><strong>Cistograma retrogrado</strong> como exame do trauma vesical</li>
+<li>Trauma de bexiga = <strong>3% dos traumas abdominais</strong>; 70–90% associados a fratura pelvica</li>
+</ol>
+<h3>A confirmar</h3>
+<ol>
+<li>Detalhes do tratamento cirurgico do ureter (Boari, ureteroneocistostomia)</li>
+<li>Se a professora cobrou a pielografia IV como alternativa a TC</li>
+</ol>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Nao confundir</span><p>Cistostomia suprapubica e a <strong>conduta de urgencia</strong> no trauma uretral — <strong>nao</strong> e o tratamento definitivo. O reparo definitivo (uretroplastia) e feito 3–6 meses depois.</p></div>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```text</p>
+<p>TRAUMA GENITOURINARIO</p>
+<p>│</p>
+<p>├── RIM (mais lesado — 1–5% traumas)</p>
+<p>│   ├── Diagnostico: TC com contraste</p>
+<p>│   ├── AAST Graus I–III → conservador (85% dos casos)</p>
+<p>│   ├── AAST Grau IV → embolizacao / cirurgia</p>
+<p>│   └── AAST Grau V → nefrectomia urgencia</p>
+<p>│</p>
+<p>├── URETER (< 1% — causa principal = iatrogenia)</p>
+<p>│   ├── Diagnostico: TC fase excretora</p>
+<p>│   └── Tratamento: reparo primario / nefrostomia / Boari</p>
+<p>│</p>
+<p>├── BEXIGA (3% traumas abdominais — 70–90% + fratura pelvica)</p>
+<p>│   ├── Diagnostico: cistograma retrogrado</p>
+<p>│   ├── Extraperitoneal → sonda Foley 10–14 dias</p>
+<p>│   └── Intraperitoneal → CIRURGIA OBRIGATORIA</p>
+<p>│</p>
+<p>├── URETRA (mais em homen)</p>
+<p>│   ├── Anterior: straddle injury → hematoma "asas de borboleta"</p>
+<p>│   ├── Posterior: fratura pelvica → triada (uretrorragia + prostata alta + retencao)</p>
+<p>│   ├── REGRA: uretrografia ANTES de sondar</p>
+<p>│   └── Conduta: cistostomia suprapubica → uretroplastia (3–6 m)</p>
+<p>│</p>
+<p>└── GENITAL</p>
+<p>    ├── Penis: fratura → cirurgia imediata</p>
+<p>    └── Testículo: USG Doppler urgencia</p>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<blockquote>Responder sem olhar o resumo. Conferir depois.</blockquote>
+<h3>Perguntas rapidas</h3>
+<ol>
+<li>Qual e o orgao genitourinario mais frequentemente lesado no trauma?</li>
+<li>Qual e o exame padrao-ouro para estadiamento do trauma renal?</li>
+<li>Quais graus AAST sao tratados de forma conservadora?</li>
+<li>O que significa trauma vesical intraperitoneal na conduta?</li>
+<li>Que sinal clinico indica suspeita de lesao uretral antes de sondar?</li>
+</ol>
+<h3>Perguntas de raciocinio</h3>
+<ol>
+<li>Paciente chega com hematuria macroscopica e instabilidade hemodinamica apos acidente de moto. Qual a sequencia de atendimento?</li>
+<li>Homem com fratura pelvica apos atropelamento, incapaz de urinar, sangue no meato e prostata nao palpavel ao toque. O que fazer antes de qualquer outra intervencao?</li>
+<li>Mulher com trauma pelvico; cistografia mostra contraste em torno das alcas intestinais. Qual tipo de lesao vesical e qual a conduta?</li>
+</ol>
+<h3>Perguntas estilo prova oral</h3>
+<ol>
+<li>Explique a classificacao AAST do trauma renal com a conduta correspondente a cada grau.</li>
+<li>Descreva a triada classica do trauma uretral posterior e explique por que nao se deve sondar.</li>
+<li>Compare trauma vesical extraperitoneal e intraperitoneal: diagnostico e conduta.</li>
+</ol>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Revisao em 10 minutos</span><p>1. Ler a tabela de comparacao (Secao 5) — exame por orgao 2. Revisar o mapa mental em texto 3. Responder as 5 perguntas rapidas 4. Checar as pegadinhas (Secao 2 e 6)</p></div>
+<p><strong>Mnemonico dos orgaos em ordem de frequencia:</strong></p>
+<blockquote><strong>R</strong>im <strong>U</strong>reter <strong>B</strong>exiga <strong>U</strong>retra <strong>G</strong>enital = <strong>RUBUG</strong> ("Rim Ureter Bexiga Uretra Genital" — do mais ao menos frequente)</blockquote>
+<p><strong>Regra de ouro da uretra:</strong></p>
+<blockquote>"Antes de sondar, <em>fotografar</em>" — uretrografia retrograda PRIMEIRO.</blockquote>
+<p><strong>Como lembrar Extra vs. Intra peritoneal:</strong></p>
+<blockquote>Extra = externo ao peritôneo = <strong>conservador com sonda</strong> Intra = dentro do peritôneo = <strong>intrometida nas alcas = cirurgia</strong></blockquote>
+<p><strong>Associacoes visuais:</strong></p>
+<ul>
+<li>Hematoma em "asas de borboleta" → ruptura uretral anterior com lesao da fascia de Buck</li>
+<li>Prostata flutuando alta → trauma uretral posterior por fratura pelvica</li>
+<li>Penis em "berinjela" → fratura de penis → cirurgia imediata</li>
+</ul>
+<p>🧠 Estrategia para TDAH:</p>
+<ol>
+<li>Ler o Nucleo Obrigatorio (Secao 2) — 5 regras</li>
+<li>Ver a tabela de exame por orgao</li>
+<li>Revisar classificacao AAST em 2 minutos</li>
+<li>Responder 3 perguntas rapidas</li>
+<li>Reler as pegadinhas</li>
+</ol>
+<hr>
+<h2>10. Duvidas para Confirmar</h2>
+<ul>
+<li>[ ] Confirmar se a professora cobrou UIV/pielografia IV ou apenas TC e ecografia</li>
+<li>[ ] Confirmar se os detalhes de Boari e ureteroneocistostomia fazem parte da prova ou sao apenas referencia</li>
+<li>[ ] Verificar se ha arquivo de PREGUNTAS para este tema (nao localizado)</li>
+<li>[ ] Confirmar numeracao definitiva do tema (T17 no indice geral ou manter P2-T06 na pasta)</li>
+</ul>
+<hr>
+<h2>Lacunas Identificadas</h2>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Conteudo do slide nao totalmente legivel</span><p>O PPTX de 99 slides tem texto embutido em imagens — aproximadamente 60% dos slides nao tiveram texto extraivel. O resumo foi construido a partir do infografico (que condensa a aula completa) e do texto extraivel dos slides. Topicos possivelmente omitidos: - Detalhes de manejo cirurgico do trauma renal Grau IV (embolizacao vs. cirurgia aberta) - Casos clinicos presentes nos slides (slide 20) - Detalhes do <em>management flowchart</em> do trauma ureteral (slide 36) - Conteudo dos slides 66–82 de trauma genital (maioria em imagem)</p></div>
+<hr>
+<h2>Navegacao</h2>
+<ul>
+<li>Voltar para prioridades: _Prioridades-P1</li>
+<li>Ver fontes: lesiones-genitourinarias | trauma-genitourinario</li>
+<li>Tema relacionado: its | lesiones-genitourinarias-preguntas</li>
+<li>Proximo tema sugerido: reflujo-vesicoureteral (T12 — tem transcricao nova disponivel)</li>
+</ul>
+<hr>
+<p><em>Status: pronto-para-revisao-humana — nao marcar como finalizado sem revisao.</em></p>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T06</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">28 cards · <span class="starred-count">⭐ 13 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual orgao genitourinario e o mais frequentemente lesado no trauma?</div><div class="fc-answer">O <strong>rim</strong> — lesado em 1–5% de todos os traumas. Representa a lesao GU mais comum.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o exame padrao-ouro para estadiamento do trauma renal?</div><div class="fc-answer"><strong>TC com contraste</strong> (fases arterial e excretora) — mais sensivel e especifica; define localizacao, segmentos e comprometimento do sistema coletor.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Cite a triada diagnostica classica do trauma renal.</div><div class="fc-answer">1. <strong>Dor</strong> em flanco/lombar 2. <strong>Hematuria</strong> (macro ou micro) 3. <strong>Massa palpavel</strong> em flanco (hematoma)</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Descreva a Classificacao AAST de trauma renal (graus I a V).</div><div class="fc-answer">- <strong>Grau I:</strong> contusao ou hematoma subcapsular nao expansivo
+- <strong>Grau II:</strong> hematoma perirrenal nao expansivo; laceração cortical < 1 cm
+- <strong>Grau III:</strong> laceração cortical > 1 cm sem sistema coletor
+- <strong>Grau IV:</strong> laceração com sistema coletor + extravasamento; lesao vascular segmentar
+- <strong>Grau V:</strong> rim destruido ou avulsao do pediculo vascular</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Quais graus AAST sao tratados de forma conservadora e quais exigem intervencao?</div><div class="fc-answer"><strong>Graus I–III → conservador</strong> (repouso, hidratacao, hemoderivados). <strong>Graus IV–V → intervencao</strong> (embolizacao ou cirurgia; grau V = nefrectomia de urgencia).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual percentual dos traumas renais sao classificados como "menores" (graus I–III)?</div><div class="fc-answer"><strong>85%</strong> dos traumas renais sao menores — tratados de forma conservadora.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais sao as indicacoes de TC obrigatoria no trauma renal?</div><div class="fc-answer">1. Hematuria macroscopica (qualquer trauma) 2. Hematuria microscopica + choque (PA < 90 mmHg) 3. Trauma de alta energia (mesmo sem hematuria) 4. Crianca com hematuria microscopica > 50 hem/campo</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e a funcao da Fascia de Gerota no trauma renal?</div><div class="fc-answer">Condiciona a <strong>severidade</strong> da lesao — mantem fragmentos unidos do parenquima e contem o hematoma, funcionando como barreira de contencao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a abordagem cirurgica no trauma renal e qual e o objetivo da cirurgia?</div><div class="fc-answer">Abordagem <strong>transperitoneal</strong>. Objetivo = controlar a hemorragia e <strong>salvar o rim</strong> (nefrorrafia). Nefrectomia e a ultima opcao quando o rim e inviavel.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a causa mais comum de trauma ureteral?</div><div class="fc-answer"><strong>Lesao iatrogênica</strong> — cirurgia ginecologica, urologica ou colorretal. Trauma externo e raro (< 1% das lesoes GU).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a frequencia do trauma vesical entre os traumas abdominais e qual a principal associacao?</div><div class="fc-answer"><strong>3% dos traumas abdominais</strong>. Em <strong>70–90%</strong> dos casos ha <strong>fratura pelvica</strong> associada.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Compare trauma vesical extraperitoneal e intraperitoneal: cistografia e conduta.</div><div class="fc-answer">| | Extraperitoneal | Intraperitoneal |
+|---|---|---|
+| Cistografia | Contraste no espaco pelvico | Contraste entre alcas |
+| Conduta | Sonda Foley 22 Fr (10–14 dias) | <strong>Cirurgia obrigatoria</strong> |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o exame padrao para diagnostico de trauma vesical?</div><div class="fc-answer"><strong>Cistograma retrogrado</strong> — infundir 300–400 mL de contraste via cateter e radiografar. Diferencia extraperitoneal de intraperitoneal.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que a cistografia controla no seguimento do trauma vesical conservador e quando?</div><div class="fc-answer">Cistografia de controle em <strong>10–14 dias</strong> apos o trauma — confirma cicatrizacao antes de retirar a sonda. A quantidade de extravasamento inicial nao e proporcional a extensao real da lesao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais sao as indicacoes de reparo cirurgico aberto precoce no trauma vesical?</div><div class="fc-answer">1. Compromisso do colo vesical 2. Presenca de fragmentos osseos na bexiga 3. Nao cicatrizacao com cateterizacao isolada 4. Lesao mais extensa do que sugerida pela cistografia</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a regra de ouro antes de sondar um paciente com suspeita de trauma uretral?</div><div class="fc-answer"><strong>NUNCA</strong> passar sonda vesical antes de excluir lesao uretral. Realizar primeiro a <strong>uretrografia retrograda</strong>. Sondagem em ruptura parcial pode transformar em ruptura total.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Descreva a triada classica do trauma uretral posterior.</div><div class="fc-answer">1. <strong>Uretrorragia</strong> (sangue no meato uretral externo) 2. <strong>Prostata alta</strong> ou impalpavel ao toque retal (deslocada por hematoma) 3. <strong>Retencao urinaria</strong> aguda</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Compare trauma uretral anterior e posterior: mecanismo e sinal tipico.</div><div class="fc-answer">| | Anterior (bulbar/peniana) | Posterior (membranosa/prostatica) |
+|---|---|---|
+| Mecanismo | <em>Straddle injury</em> (queda sobre barra) | Fratura pelvica |
+| Sinal tipico | Hematoma em "asas de borboleta" | Prostata alta ao toque retal |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e o hematoma em "asas de borboleta" e o que ele indica?</div><div class="fc-answer">Hematoma perineal bilateral (<em>hematoma en alas de mariposa</em>) causado por <strong>ruptura uretral anterior</strong> com lesao da <strong>fascia de Buck</strong> — o sangue se dissemina simetricamente pelas coxas formando o padrao de borboleta.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a conduta de urgencia no trauma uretral e qual o tratamento definitivo?</div><div class="fc-answer"><strong>Urgencia:</strong> cistostomia suprapubica (derivacao urinaria imediata sem sondagem uretral). <strong>Definitivo (3–6 meses depois):</strong> uretroplastia / reparo cirurgico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais sao as complicacoes tardias do trauma uretral?</div><div class="fc-answer">1. <strong>Estenose uretral</strong> (principal) 2. Disfuncao eretil 3. Incontinencia urinaria</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o quadro clinico da fratura de penis e qual e a conduta?</div><div class="fc-answer">"<strong>Estalido</strong>" audivel + deflexao subita do penis + hematoma em "berinjela" + perda da erecao. Causa: trauma direto durante erecao (coito, masturbacao). Conduta: <strong>cirurgia imediata</strong> (reparo da tunica albuginea).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual exame e indicado com urgencia no trauma testicular e quando ha indicacao cirurgica?</div><div class="fc-answer"><strong>USG com Doppler</strong> de urgencia — avalia integridade da albuginea e vascularizacao. Indicacao cirurgica: rotura da albuginea testicular OU hematocele volumosa.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Cite o mnemonico para lembrar a ordem de frequencia das lesoes GU no trauma.</div><div class="fc-answer"><strong>RUBUG</strong> = <strong>R</strong>im, <strong>U</strong>reter, <strong>B</strong>exiga, <strong>U</strong>retra, <strong>G</strong>enital — do mais ao menos frequente.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que a crianca e mais vulneravel ao trauma renal do que o adulto?</div><div class="fc-answer">Menor gordura perirrenal (menos amortecimento), menor musculatura lombar e maior tamanho relativo do rim em relacao ao corpo.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a diferenca entre o uso de ecografia e TC no trauma renal?</div><div class="fc-answer"><strong>Ecografia (FAST):</strong> rapida, confirma presenca/ausencia do rim, triagem em instabilidade hemodinamica — nao estadeia. <strong>TC com contraste:</strong> padrao-ouro, estateia completamente, exige paciente estavel.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e a tecnica da cistografia retrograda e o que diferencia extra de intraperitoneal?</div><div class="fc-answer">Infundir <strong>300–400 mL</strong> de contraste via cateter e radiografar. <strong>Extraperitoneal:</strong> contraste fica no espaco pelvico (limitado). <strong>Intraperitoneal:</strong> contraste difunde entre as alcas intestinais (espalhado).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e a conduta no trauma ureteral de porcao inferior descoberto durante cirurgia?</div><div class="fc-answer"><strong>Ureteroneocistostomia</strong> com fixacao ao psoas + bexiga; alternativamente <strong>colgajo de Boari</strong> ou <strong>reimplante ureteral</strong> dependendo da extensao da lesao.</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T07 — Tumores Urológicos — MedVaultWeb Urologia P2">
+  <title>P2-T07 — Tumores Urológicos — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #1a237e; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);">
+    <h1>🔬 Tumores Urológicos</h1>
+    <p>CCR · Ca Bexiga · Ca Pênis · Ca Testículo — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T07</span></div>
+  <div class="content-area">
+    
+    <div class="resumo-content">
+      <h1>P2-T07 — Tumores Renais (Parte 1 de 2)</h1>
+<blockquote>Ver tambem: P2-T07-Parte2-Ca-Bexiga-Pene-Testiculo</blockquote>
+<hr>
+<blockquote>🖼️ <strong>Infografico PDF</strong> — <code>01-Materiais-Brutos/PDFs/P2/Tumores Renais.pdf</code> (11 paginas — fonte principal) 🖥️ <strong>Slide</strong> — <code>Neoplasias.pptx</code> (75 slides — conteudo corroborado via alt-text) 📚 <strong>Smith-Tanagho 18a ed.</strong> — Wilms, Fuhrman, gaps bibliograficos</blockquote>
+<hr>
+<h2>1. Visao Geral</h2>
+<p>Os tumores renais se dividem em <strong>cisticos</strong> (conteudo liquido) e <strong>solidos</strong> (conteudo tecidual). A conduta depende dessa distinção basica.</p>
+<table><thead><tr><th>Tipo</th><th>Conteudo</th><th>Exemplos</th><th>Comportamento</th></tr></thead><tbody><tr><td><strong>Cistico</strong></td><td>Liquido</td><td>Quiste renal simples, DRP</td><td>Geralmente benigno</td></tr><tr><td><strong>Solido</strong></td><td>Tecido</td><td>Adenoma, CCR, AML, oncocitoma</td><td><strong>Maligno ate prova em contrario</strong></td></tr></tbody></table>
+<p><strong>Epidemiologia por faixa etaria:</strong></p>
+<ul>
+<li><strong>< 50 anos:</strong> ~50% benignos / ~50% malignos</li>
+<li><strong>> 50 anos:</strong> maioria malignos</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra de Ouro — Nao Esquecer</span><p><strong>Toda massa solida renal = MALIGNA ate prova em contrario.</strong> <strong>Paciente > 50 anos com hematuria = cancer renal ou vesical ate prova em contrario.</strong></p></div>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Ponto de prova</span><p>Tumores renais costumam ser <strong>ASSINTOMATICOS</strong>. Quando dao sintomas, geralmente ja estao grandes ou avancados. Diagnostico frequentemente incidental por imagem de rotina.</p></div>
+<hr>
+<h3>Terminologia Oncologica Basica</h3>
+<table><thead><tr><th>Termo</th><th>Significado</th></tr></thead><tbody><tr><td><strong>ONCO</strong></td><td>Tumor (generico)</td></tr><tr><td><strong>-OMA</strong></td><td>Sufixo de tumor benigno (exceto melanoma, linfoma, carcinoma)</td></tr><tr><td><strong>ADENOMA</strong></td><td>Tumor benigno de origem epitelial glandular</td></tr><tr><td><strong>CARCINOMA</strong></td><td>Tumor maligno de origem epitelial</td></tr><tr><td><strong>SARCOMA</strong></td><td>Tumor maligno de origem mesenquimal</td></tr><tr><td><strong>TERATOMA</strong></td><td>Tumor com elementos dos 3 folhetos embrionarios</td></tr></tbody></table>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<table><thead><tr><th>Conceito</th><th>Resposta rapida</th></tr></thead><tbody><tr><td>Tumor cistico benigno mais frequente</td><td>Quiste renal simples</td></tr><tr><td>Tumor solido benigno mais frequente</td><td>Adenoma renal</td></tr><tr><td>Sinal TC do oncocitoma</td><td>"Roda de bicicleta" (cicatriz central)</td></tr><tr><td>Sinal TC do AML</td><td>Gordura na TC (-10 UH) = diagnostico</td></tr><tr><td>Tumor maligno mais comum do rim (adulto)</td><td>CCR — Carcinoma de Celulas Renais</td></tr><tr><td>Tumor maligno mais comum do rim (crianca)</td><td>Tumor de Wilms (nefroblastoma)</td></tr><tr><td>Subtipo CCR mais comum</td><td>Celulas claras (70-80%)</td></tr><tr><td>Sindrome classica CCR</td><td>Hematuria + Dor no flanco + Massa palpavel</td></tr><tr><td>Exame de escolha para CCR</td><td>TC com contraste</td></tr><tr><td>Tratamento curativo CCR localizado</td><td>Nefrectomia (radical ou parcial)</td></tr></tbody></table>
+<hr>
+<h2>3. Tumores Benignos Renais</h2>
+<h3>3.1 Quiste Renal Simples</h3>
+<p><strong>Definicao:</strong> Lesao cistica benigna de conteudo liquido claro, revestida por epitelio simples, sem comunicacao com o sistema coletor.</p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>Tumor benigno mais frequente do rim</li>
+<li>~3% da populacao pode ter</li>
+<li>Mais comum > 50 anos, geralmente assintomatico</li>
+<li><strong>Nao evolui para cancer</strong></li>
+</ul>
+<p><strong>Diagnostico (USG):</strong></p>
+<ul>
+<li>Massa anecogica (liquido puro)</li>
+<li>Contornos bem definidos e lisos</li>
+<li>Sem ecos internos</li>
+<li>Transmissao posterior aumentada</li>
+</ul>
+<p><strong>Quando tratar:</strong></p>
+<ul>
+<li><strong>Quiste > 8 cm</strong> OU qualquer tamanho se <strong>sintomatico</strong></li>
+<li>Opcoes: puncao aspirativa guiada por USG → aspiracao + alcool absoluto → cirurgia (se recorrente)</li>
+</ul>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Classificacao de Bosniak</span><p>Cistos renais sao classificados pelo sistema de Bosniak (I a IV) baseado em TC: - <strong>Bosniak I–II:</strong> cistos simples e minimas modificacoes — benignos, sem cirurgia - <strong>Bosniak IIF:</strong> acompanhamento com imagens seriadas - <strong>Bosniak III–IV:</strong> risco de malignidade — indicacao cirurgica</p></div>
+<hr>
+<h3>3.2 Doenca Renal Policicistica (DRP)</h3>
+<p><strong>Definicao:</strong> Doenca hereditaria autossomica dominante — substitui progressivamente o parenquima renal por multiplos cistos.</p>
+<p><strong>Genetica:</strong></p>
+<ul>
+<li><strong>PKD1</strong> (cromossomo 16): 85% dos casos, inicio 30-40 anos</li>
+<li><strong>PKD2</strong> (cromossomo 4): 15% dos casos, inicio 50-70 anos, mais leve</li>
+</ul>
+<p><strong>Manifestacoes clinicas:</strong></p>
+<ul>
+<li>Hipertensao arterial (muito comum)</li>
+<li>Dor lombar ou em flancos</li>
+<li>Hematuria (macro ou microscopica)</li>
+<li>Infeccoes urinarias de repeticao</li>
+<li>Litíase (calculos)</li>
+<li>Progressao para IRC em <strong>50-70%</strong> dos casos</li>
+</ul>
+<p><strong>Diagnostico:</strong> USG renal + TC abdominal (multiplos cistos bilaterais).</p>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li>Nao ha cura — tratamento sintomatico</li>
+<li>Controle da HAS (IECAS/BRA)</li>
+<li>Tolvaptan (antagonista de vasopressina): retarda progressao</li>
+<li>Dialise ou transplante renal quando IRC estabelecida</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Rastreamento familiar</span><p>Por ser hereditaria, e obrigatorio rastrear familiares de 1o grau (pais e filhos). USG renal periodica e o metodo mais utilizado.</p></div>
+<hr>
+<h3>3.3 Adenoma Renal</h3>
+<p><strong>Definicao:</strong> Tumor solido benigno de origem epitelial — tumor <strong>solido benigno mais frequente do rim</strong> (apos o oncocitoma).</p>
+<p><strong>Caracteristicas:</strong></p>
+<ul>
+<li>95% assintomaticos</li>
+<li>Mais comum em <strong>homens</strong></li>
+<li>7-22% encontrados em autopsias (incidentais)</li>
+<li>Lesao unica em 75% dos casos</li>
+<li>Adenomas gigantes podem atingir 10 cm</li>
+</ul>
+<p><strong>Tipos histologicos:</strong> tubulopapilar, metanefrico, oncocítico.</p>
+<p><strong>Imagem:</strong></p>
+<ul>
+<li>USG: massa solida, isoecoica ou hipoecoica</li>
+<li>TC: lesao solida bem delimitada, realce homogeneo apos contraste</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Pedadinha de Prova</span><p><strong>Toda massa solida renal deve ser considerada MALIGNA ate prova em contrario</strong> — mesmo que o diagnostico final seja adenoma benigno! Na pratica: adenoma e CCR podem ser indistinguiveis na imagem.</p></div>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li>Lesao < 4 cm, assintomatica, sem crescimento → observar</li>
+<li>Indicar cirurgia: tamanho > 4 cm, crescimento rapido, sintomas, duvida diagnostica</li>
+<li>Opcoes: tumorectomia parcial, nefrectomia parcial, nefrectomia radical (rara)</li>
+</ul>
+<hr>
+<h3>3.4 Oncocitoma Renal</h3>
+<p><strong>Definicao:</strong> Adenoma oxifilico — tumor benigno derivado do tubulo proximal, constituido por celulas ricas em mitocondrias (oncocitos). <strong>Pode "imitar" o maligno.</strong></p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>3-6% dos tumores renais</li>
+<li>Mais comum em <strong>homens</strong>, 60-70 anos</li>
+<li>Geralmente unilateral e unico</li>
+</ul>
+<p><strong>Achado classico na TC:</strong></p>
+<ul>
+<li>Lesao sólida bem delimitada</li>
+<li>Cicatriz fibrosa <strong>central</strong> — "<strong>Roda de bicicleta</strong>" (achado patognomonico mas nem sempre presente)</li>
+<li>Realce homogeneo na fase arterial</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Atencao</span><p>A imagem pode ser dificil de diferenciar do CCR. <strong>Diagnostico definitivo = histopatologico</strong> (biopsia ou peca cirurgica).</p></div>
+<p><strong>Diferencial CCR:</strong></p>
+<table><thead><tr><th></th><th>Oncocitoma (benigno)</th><th>CCR (maligno)</th></tr></thead><tbody><tr><td>Bordas</td><td>Bem delimitadas</td><td>Irregulares</td></tr><tr><td>Cicatriz central</td><td>Presente (classic)</td><td>Ausente</td></tr><tr><td>Crescimento</td><td>Lento</td><td>Rapido</td></tr><tr><td>Necrose/hemorragia</td><td>Rara</td><td>Comum</td></tr></tbody></table>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li>Lesao > 4 cm, sintomatica, duvida diagnostica → cirurgia</li>
+<li>Nefrectomia parcial preferida</li>
+</ul>
+<hr>
+<h3>3.5 Angiomiolipoma Renal (AML)</h3>
+<p><strong>Definicao:</strong> Tumor benigno mesenquimal composto por <strong>vasos sanguineos anormais + musculo liso + tecido adiposo</strong> (composicao triphasica).</p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>1-3% dos tumores renais</li>
+<li>Mais comum em <strong>mulheres</strong> (60-80% dos AML)</li>
+<li>Idade tipica: 30-50 anos</li>
+<li>Geralmente assintomatico, unilateral e unico</li>
+</ul>
+<p><strong>Associacao importante:</strong></p>
+<ul>
+<li><strong>Esclerose Tuberosa</strong> → multiplos AML bilaterais (80% dos pacientes com ET tem AML)</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>TC: sinal da gordura</strong> (atenuacao < -10 UH) = <strong>diagnostico na maioria dos casos</strong></li>
+<li>USG: massa hiperecoica (gordura)</li>
+<li>RM: queda de sinal em sequencias fora de fase (gordura)</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Pedadinha</span><p>AML pequeno < 3 cm com gordura na TC → pode acompanhar. Se <strong>sem gordura visivel na TC</strong> → indistinguivel de CCR → cirurgia!</p></div>
+<p><strong>Risco de sangramento:</strong></p>
+<ul>
+<li>AML > 4 cm → risco de ruptura espontanea e hemorragia (pode ser fatal)</li>
+<li>Embolizacao seletiva indicada para tumores > 4 cm ou com sintomas</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li>< 4 cm, assintomatico → acompanhamento</li>
+<li>> 4 cm OU sintomatico OU mulher em idade fertil → tratamento ativo</li>
+<li>Opcoes: embolizacao seletiva (preferida) ou nefrectomia parcial</li>
+</ul>
+<hr>
+<h3>3.6 Hemangioma e Leiomioma Renais (Raros)</h3>
+<table><thead><tr><th></th><th>Hemangioma</th><th>Leiomioma</th></tr></thead><tbody><tr><td>Origem</td><td>Vascular</td><td>Musculo liso da parede de vasos</td></tr><tr><td>Frequencia</td><td>Muito raro (2-3:1 mulheres)</td><td>Extremamente raro</td></tr><tr><td>Achado TC</td><td>Realce intenso na fase arterial, homogeneo</td><td>Massa solida bem delimitada</td></tr><tr><td>Diagnostico definitivo</td><td>Histopatologico</td><td>Histopatologico</td></tr></tbody></table>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Ponto-chave</span><p>Ambos sao RAROS. Geralmente achados incidentais. <strong>Toda massa solida renal</strong> (mesmo hemangioma/leiomioma) <strong>deve ser considerada maligna</strong> ate o histopatologico.</p></div>
+<hr>
+<h2>4. Carcinoma de Celulas Renais (CCR)</h2>
+<h3>4.1 Definicao e Epidemiologia</h3>
+<p><strong>CCR:</strong> Neoplasia maligna originada das celulas epiteliais dos <strong>tubulos renais</strong> — mais frequentemente do <strong>tubulo proximal</strong> (celulas claras).</p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>1-3% de todos os canceres em adultos</li>
+<li>Mais comum entre <strong>50-80 anos</strong>, razao H:M = <strong>2:1</strong> (homens)</li>
+<li><strong>Tumor maligno mais comum do rim em adultos</strong></li>
+</ul>
+<p><strong>Fatores de Risco:</strong></p>
+<ul>
+<li><strong>Tabagismo</strong> (principal fator de risco modificavel)</li>
+<li>Obesidade</li>
+<li>Hipertensao arterial</li>
+<li>Gene VHL (Von Hippel-Lindau) — mutacao em 3p</li>
+<li>Doenca renal policicistica</li>
+<li>Exposicao ocupacional (solventes, cadmio, asbesto)</li>
+</ul>
+<hr>
+<h3>4.2 Subtipos Histologicos</h3>
+<table><thead><tr><th>Subtipo</th><th>Frequencia</th><th>Caracteristica</th><th>Prognostico</th></tr></thead><tbody><tr><td><strong>Celulas Claras</strong></td><td>70-80%</td><td>Mutacao VHL, crom. 3p; citoplasma claro e abundante</td><td>Moderado</td></tr><tr><td><strong>Papilifero</strong> (tipos 1 e 2)</td><td>10-15%</td><td>Celulas com borda de escovinha</td><td>Melhor</td></tr><tr><td><strong>Cromofibo</strong></td><td>5%</td><td>Celulas cromofobas; mais agressivo localmente</td><td>Bom</td></tr><tr><td><strong>Ductos de Bellini</strong></td><td>< 5%</td><td>Mais agressivo; geralmente ja metastatico ao diagnostico</td><td>Ruim</td></tr></tbody></table>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Grau de Fuhrman (classificacao nuclear)</span><p>Grau histologico nuclear de Fuhrman — avalia pleomorfismo e nucleo:  | Grau | Nucleo | Nucleo | Atipia | |---|---|---|---| | <strong>G1</strong> | Pequeno, uniforme | Sem nucleolo visivel | Minima | | <strong>G2</strong> | Levemente maior | Nucleolo pequeno visivel (40x) | Leve | | <strong>G3</strong> | Grande, irregular | Nucleolo proeminente (10x) | Moderada | | <strong>G4</strong> | Pleomorfico, bizarro | Nucleolo enorme, figuras mitoticas | Marcante |  G1-G2 = baixo grau (melhor prognostico) | G3-G4 = alto grau (pior prognostico) <strong>Substituido progressivamente pelo sistema ISUP/WHO de 4 nucleos</strong> (mesmos criterios, nomenclatura padronizada).</p></div>
+<hr>
+<h3>4.3 Manifestacoes Clinicas</h3>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Ponto critico</span><p>A maioria dos CCR e <strong>ASSINTOMATICA</strong> — diagnosticada incidentalmente em USG/TC de rotina. A sindrome classica aparece em apenas <strong>~10% dos casos</strong> e indica doenca avancada.</p></div>
+<p><strong>Sindrome Classica (Triada — apenas 10%):</strong></p>
+<ol>
+<li><strong>Hematuria</strong> (macro ou microscopica) — sintoma mais comum isolado (40%)</li>
+<li><strong>Dor no flanco/lombar</strong></li>
+<li><strong>Massa palpavel</strong> abdominal</li>
+</ol>
+<p><strong>Sindromes Paraneoplasicas (frequentes — 20-40%):</strong></p>
+<ul>
+<li>Febre sem causa (mais comum — 20%)</li>
+<li>Hipertensao (producao de renina)</li>
+<li>Hipercalcemia (PTHrP)</li>
+<li>Policitemia (producao ectopica de EPO)</li>
+<li>Elevacao de VHS e PCR (inespecificos)</li>
+<li><strong>Sindrome de Stauffer</strong> — disfuncao hepatica reversivel sem metastases hepaticas</li>
+</ul>
+<hr>
+<h3>4.4 Diagnostico</h3>
+<p><strong>Exame de imagem de eleicao:</strong> <strong>TC com contraste</strong> (multifasico)</p>
+<table><thead><tr><th>Exame</th><th>Papel</th></tr></thead><tbody><tr><td><strong>TC com contraste</strong></td><td>Padrao-ouro — estadiamento, caracterizacao, guia cirurgico</td></tr><tr><td><strong>USG renal</strong></td><td>Triagem — distingue cistico de solido</td></tr><tr><td><strong>RM</strong></td><td>Alternativa quando TC contraindicada; superior para extensao venosa</td></tr><tr><td><strong>Biopsia percutanea</strong></td><td>Para massas < 4 cm incertas antes de ablacao; nao necessaria se cirurgia planejada</td></tr></tbody></table>
+<p><strong>Achados na TC:</strong></p>
+<ul>
+<li>Massa solida heterogenea</li>
+<li>Realce em "anel periferico" ou heterogeneo apos contraste</li>
+<li>Pode ter necroses e hemorragias internas</li>
+</ul>
+<p><strong>Laboratorio:</strong></p>
+<ul>
+<li>Hemograma: anemia OU policitemia</li>
+<li>Creatinina e ureia: funcao renal</li>
+<li>Hipercalcemia (em alguns casos)</li>
+<li>VHS e PCR (elevados inespecificamente)</li>
+<li>Urina tipo 1: hematuria microscopica</li>
+</ul>
+<hr>
+<h3>4.5 Estadiamento TNM (Simplificado — AJCC/UICC)</h3>
+<table><thead><tr><th>Estadio</th><th>Criterio</th></tr></thead><tbody><tr><td><strong>T1a</strong></td><td>Tumor ≤ 4 cm, limitado ao rim</td></tr><tr><td><strong>T1b</strong></td><td>Tumor 4-7 cm, limitado ao rim</td></tr><tr><td><strong>T2a</strong></td><td>Tumor 7-10 cm, limitado ao rim</td></tr><tr><td><strong>T2b</strong></td><td>Tumor > 10 cm, limitado ao rim</td></tr><tr><td><strong>T3a</strong></td><td>Extensao para gordura peri-renal ou peripelvica / veia renal ou ramos segmentares</td></tr><tr><td><strong>T3b</strong></td><td>Tumor na veia cava abaixo do diafragma</td></tr><tr><td><strong>T3c</strong></td><td>Tumor na veia cava acima do diafragma</td></tr><tr><td><strong>T4</strong></td><td>Alem da fascia de Gerota / invasao de adrenal ipsilateral</td></tr><tr><td><strong>N1</strong></td><td>Metastase em 1+ linfonodo regional</td></tr><tr><td><strong>M1</strong></td><td>Metastases a distancia</td></tr></tbody></table>
+<p><strong>Estadios clinicos:</strong></p>
+<ul>
+<li>Estadio I: T1 N0 M0</li>
+<li>Estadio II: T2 N0 M0</li>
+<li>Estadio III: T3 N0 M0 ou T1-T3 N1 M0</li>
+<li>Estadio IV: T4 ou M1</li>
+</ul>
+<p><strong>Metastases mais frequentes:</strong> pulmao (50-60%) → gânglios (30-40%) → osso (30-40%) → figado (30-40%) → cerebro (5-10%)</p>
+<hr>
+<h3>4.6 Tratamento</h3>
+<h4>Doenca Localizada (M0)</h4>
+<table><thead><tr><th>Situacao</th><th>Tratamento preferido</th></tr></thead><tbody><tr><td>T1 (≤ 7 cm), rim contralateral normal</td><td><strong>Nefrectomia parcial</strong> (nephron-sparing)</td></tr><tr><td>T1a (≤ 4 cm)</td><td>Nefrectomia parcial ou ablacao (crioablacao/RFA)</td></tr><tr><td>T2-T3 ou centralizado</td><td><strong>Nefrectomia radical</strong></td></tr><tr><td>Rim unico / funcao renal comprometida</td><td>Nefrectomia parcial obrigatoria</td></tr></tbody></table>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Nefrectomia parcial vs. radical</span><p><strong>Nefrectomia parcial</strong> (preferida sempre que possivel): preserva massa funcional renal. <strong>Nefrectomia radical</strong>: retira rim + gordura perineal + adrenal + gânglios adjacentes. Abordagem laparoscopica/robotica = padrao atual (menos morbidade que aberta).</p></div>
+<h4>Doenca Avancada / Metastatica (M1)</h4>
+<p><strong>Imunoterapia + Terapia-Alvo (1a linha — celulas claras):</strong></p>
+<ul>
+<li>Nivolumabe + Ipilimumabe (anti-PD1 + anti-CTLA4) — risco intermediario/alto</li>
+<li>Pembrolizumabe + Axitinibe (anti-PD1 + TKI) — qualquer risco</li>
+<li>Sunitinibe / Sorafenibe / Cabozantinibe — TKIs anti-VEGF</li>
+</ul>
+<p><strong>mTOR (2a linha):</strong></p>
+<ul>
+<li>Everolimus, Temsirolimus</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Dica de prova</span><p><strong>CCR e um dos poucos tumores que responde a imunoterapia.</strong> Historicamente: IL-2 (taxas de resposta baixas, toxicidade alta). Atualmente: nivolumabe + ipilimumabe ou pembrolizumabe + axitinibe sao primeira linha.</p></div>
+<hr>
+<h3>4.7 Tumor de Wilms (Nefroblastoma)</h3>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Smith-Tanagho</span></div>
+<p><strong>Definicao:</strong> Tumor embrionario renal maligno — <strong>tumor renal mais comum em criancas</strong> (< 5 anos, pico 3-4 anos). Origem em restos nefrogênicos.</p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>~6% dos canceres pediatricos</li>
+<li>Pico: 3-4 anos</li>
+<li>5-10% bilateral</li>
+</ul>
+<p><strong>Sindromes associadas:</strong></p>
+<ul>
+<li><strong>WAGR:</strong> Wilms + Aniridia + GU malformacoes + Retardo mental (del 11p13)</li>
+<li><strong>Beckwith-Wiedemann:</strong> Wilms + Hemihipertrofia + Onfalocele + Macroglossia</li>
+<li><strong>Denys-Drash:</strong> Wilms + Insuficiencia renal precoce + Genitalia ambigua</li>
+</ul>
+<p><strong>Apresentacao clinica:</strong></p>
+<ul>
+<li>Massa abdominal indolor (sinal mais comum — pais percebem ao dar banho)</li>
+<li>Hipertensao arterial (producao de renina)</li>
+<li>Hematuria (menos comum)</li>
+<li>Febre e dor abdominal (menos frequentes)</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>USG + TC abdominal (staging)</li>
+<li><strong>NAO biopsiar antes da cirurgia</strong> (risco de disseminacao pelo peritonio)</li>
+</ul>
+<p><strong>Estadiamento (simplificado):</strong></p>
+<ul>
+<li>Estadio I: tumor confinado ao rim, resseccao completa</li>
+<li>Estadio II: extensao alem do rim, resseccao completa</li>
+<li>Estadio III: residuo pos-cirurgia ou gânglios positivos</li>
+<li>Estadio IV: metastases hematogenicas (pulmao mais frequente)</li>
+<li>Estadio V: doenca bilateral</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>Nefrectomia radical</strong> (abordagem transperitoneal)</li>
+<li>Quimioterapia (vincristina + actinomicina D ± doxorrubicina)</li>
+<li>Radioterapia (estadios III-IV ou histologia anaplasica)</li>
+</ul>
+<p><strong>Prognostico:</strong></p>
+<ul>
+<li>Excelente: sobrevida > 90% estadios I-II com histologia favoravel</li>
+<li>Histologia anaplasica = pior prognostico</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Regra critica</span><p><strong>NUNCA biopsiar tumor de Wilms antes da cirurgia</strong> — risco de upstaging por disseminacao peritoneal.</p></div>
+<hr>
+<h2>5. Comparacao entre Tumores Solidos Renais</h2>
+<table><thead><tr><th></th><th>Adenoma</th><th>Oncocitoma</th><th>AML</th><th>CCR</th></tr></thead><tbody><tr><td><strong>Comportamento</strong></td><td>Benigno</td><td>Benigno</td><td>Benigno</td><td><strong>Maligno</strong></td></tr><tr><td><strong>Sexo</strong></td><td>H > M</td><td>H > M</td><td><strong>M >> H</strong></td><td>H > M (2:1)</td></tr><tr><td><strong>Sinal TC classico</strong></td><td>Realce homogeneo</td><td>"Roda de bicicleta"</td><td><strong>Gordura (-10 UH)</strong></td><td>Heterogeneo, necrose</td></tr><tr><td><strong>Associacao</strong></td><td>—</td><td>—</td><td>Esclerose tuberosa</td><td>VHL, tabagismo</td></tr><tr><td><strong>Diagnostico def.</strong></td><td>Histopatologico</td><td>Histopatologico</td><td>TC (gordura)</td><td>TC + histopatologico</td></tr><tr><td><strong>Conduta < 4cm</strong></td><td>Observar</td><td>Observar</td><td>Observar</td><td><strong>Cirurgia</strong></td></tr></tbody></table>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Alta probabilidade</span></div>
+<ol>
+<li><strong>Regra de ouro:</strong> Massa solida renal = maligna ate prova em contrario</li>
+<li><strong>> 50 anos + hematuria</strong> = cancer renal/vesical ate prova em contrario</li>
+<li><strong>Sinal do AML na TC:</strong> gordura (< -10 UH) — diagnostico quase certo</li>
+<li><strong>Sinal do oncocitoma:</strong> "roda de bicicleta" na TC (cicatriz central)</li>
+<li><strong>CCR: exame de eleicao = TC com contraste</strong> (nao USG, nao RX)</li>
+<li><strong>Sindrome classica CCR:</strong> hematuria + dor flanco + massa = apenas 10%</li>
+<li><strong>CCR mais comum:</strong> celulas claras (70-80%), mutacao VHL</li>
+<li><strong>Subtipo mais agressivo CCR:</strong> ductos de Bellini</li>
+<li><strong>Wilms:</strong> tumor renal mais comum em criancas; NUNCA biopsiar antes da cirurgia</li>
+<li><strong>Fuhrman G1-G2</strong> = baixo grau (melhor prognostico); <strong>G3-G4</strong> = alto grau</li>
+<li><strong>Nefrectomia parcial</strong> preferida para T1 quando possivel</li>
+<li><strong>CCR metastatico:</strong> imunoterapia (nivolumabe + ipilimumabe) ou pembrolizumabe + TKI</li>
+</ol>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>TUMORES RENAIS</p>
+<p>|</p>
+<p>|— BENIGNOS</p>
+<p>|     |— CISTICOS</p>
+<p>|     |     |— Quiste Simples: > 8cm ou sintomatico → tratar</p>
+<table><thead><tr><th>— Doenca Renal Policicistica: PKD1/PKD2 → IRC em 50-70%</th></tr></thead><tbody><tr><td>— SOLIDOS BENIGNOS</td></tr><tr><td>— Adenoma: solido benigno mais frequente; < 4cm = observar</td></tr><tr><td>— Oncocitoma: "roda de bicicleta"; diagnostico = histopatologico</td></tr><tr><td>— AML: gordura TC = diagnostico; > 4cm = tratar; Esclerose Tuberosa</td></tr><tr><td>— Hemangioma / Leiomioma: raros; achados incidentais</td></tr><tr><td>— MALIGNOS</td></tr><tr><td>— ADULTO: CCR (Carcinoma de Celulas Renais)</td></tr><tr><td>— Celulas claras 70-80% (VHL, crom 3p)</td></tr><tr><td>— Papilífero 10-15% (melhor prognostico)</td></tr><tr><td>— Cromofibo 5%</td></tr><tr><td>— Ductos Bellini < 5% (pior prognostico)</td></tr><tr><td>— Clinica: ASSINTOMATICO (70%) / Triada classica (10%)</td></tr><tr><td>— Diagnostico: TC com contraste</td></tr><tr><td>— Fuhrman: G1-G2 (baixo) / G3-G4 (alto)</td></tr><tr><td>— TNM: T1 ≤7cm / T2 >7cm / T3 gordura / T4 fascia Gerota</td></tr><tr><td>— Tratamento: nefrectomia parcial (T1) / radical (T2-T4)</td></tr><tr><td>— Metastatico: Nivolumabe + Ipilimumabe / Pembrolizumabe + TKI</td></tr><tr><td>— CRIANCA: Tumor de Wilms (nefroblastoma)</td></tr><tr><td>— Pico 3-4 anos; massa abdominal indolor</td></tr><tr><td>— WAGR / Beckwith-Wiedemann / Denys-Drash</td></tr><tr><td>— NUNCA biopsiar; nefrectomia + QMT</td></tr><tr><td>— Prognostico excelente (estadios I-II)</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>P1:</strong> Qual a diferenca entre tumor renal cistico e solido? Qual a conduta inicial para cada um?</p>
+<blockquote><strong>R:</strong> Cistico = conteudo liquido (geralmente benigno; acompanhar ou tratar se > 8cm/sintomatico). Solido = conteudo tecidual (considerar maligno ate prova em contrario; indicar investigacao/cirurgia).</blockquote>
+<p><strong>P2:</strong> Homem de 68 anos com massa renal hiperecoica na USG. A TC mostra atenuacao de -15 UH. Qual o diagnostico provavel e a conduta?</p>
+<blockquote><strong>R:</strong> Angiomiolipoma renal — gordura na TC (< -10 UH) e pratica mente patognomonico. Se < 4 cm e assintomatico, observar. Se > 4 cm ou sintomatico, embolizacao ou nefrectomia parcial.</blockquote>
+<p><strong>P3:</strong> Qual a "triada classica" do CCR? Em que percentagem dos pacientes ela aparece?</p>
+<blockquote><strong>R:</strong> Hematuria + dor no flanco + massa palpavel. Aparece em apenas ~10% dos casos. Quando presente indica doenca avancada.</blockquote>
+<p><strong>P4:</strong> Qual o subtipo histologico mais comum do CCR? E o mais agressivo?</p>
+<blockquote><strong>R:</strong> Mais comum: celulas claras (70-80%), mutacao VHL. Mais agressivo: ductos de Bellini (ja geralmente metastatico ao diagnostico).</blockquote>
+<p><strong>P5:</strong> Crianca de 3 anos com massa abdominal indolor descoberta pela mae ao dar banho. Qual o diagnostico provavel? Qual e o erro critico a evitar?</p>
+<blockquote><strong>R:</strong> Tumor de Wilms (nefroblastoma). Erro critico: <strong>NUNCA biopsiar</strong> antes da cirurgia — risco de upstaging por disseminacao peritoneal.</blockquote>
+<p><strong>P6:</strong> Qual o exame de eleicao para diagnostico e estadiamento do CCR e por que?</p>
+<blockquote><strong>R:</strong> TC com contraste (multifasico). Caracteriza a massa (solido/cistico), estadiamento loco-regional, extensao vascular e metastases num unico exame.</blockquote>
+<p><strong>P7:</strong> Quais os graus de Fuhrman e o que representam?</p>
+<blockquote><strong>R:</strong> G1-G4, baseados no pleomorfismo nuclear. G1-G2 = baixo grau (nucleo pequeno, nucleolo discreto) = melhor prognostico. G3-G4 = alto grau (nucleo grande, nucleolo proeminente, figuras mitoticas) = pior prognostico.</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<h3>Sigla para tumores benignos solidos: <strong>AOLH</strong></h3>
+<p><strong>A</strong>denoma → <strong>O</strong>ncocitoma → <strong>A</strong>ngiomiolipoma → <strong>L</strong>eiomioma/<strong>H</strong>emangioma</p>
+<h3>Achados TC dos 3 principais tumores solidos:</h3>
+<ul>
+<li><strong>AML</strong> → <strong>Gordura</strong> (negativa HU)</li>
+<li><strong>Oncocitoma</strong> → <strong>Roda de bicicleta</strong> (cicatriz central)</li>
+<li><strong>CCR</strong> → <strong>Heterogeneo</strong> (necrose, hemorragia)</li>
+</ul>
+<h3>CCR — Celulas Claras: o "3V"</h3>
+<ul>
+<li><strong>V</strong>HL (gene mutado)</li>
+<li><strong>V</strong>ascularizado (muito vascularizado)</li>
+<li><strong>V</strong>EGF (angiogenico — alvo da imunoterapia)</li>
+</ul>
+<h3>Mnemônico Fuhrman — "Pequeno, Pequeno, Grande, Monstruoso"</h3>
+<ul>
+<li>G1: nucleo <strong>pequeno</strong>, sem nucleolo</li>
+<li>G2: nucleo <strong>pouco maior</strong>, nucleolo pequeno</li>
+<li>G3: nucleo <strong>grande</strong>, nucleolo proeminente</li>
+<li>G4: nucleo <strong>monstruoso</strong>, bizzaro, mitoses</li>
+</ul>
+<hr>
+<h2>Navegacao</h2>
+<ul>
+<li>P2-T07-Parte2-Ca-Bexiga-Pene-Testiculo — Continuacao: Ca bexiga, Ca pene, Tumores testiculares</li>
+<li>Prioridades P2 — Urologia</li>
+<li>Indice Urologia</li>
+</ul>
+<hr>
+<p><em>Resumo elaborado em 23-06-2026 | Fontes: Infografico PDF 11 paginas + Neoplasias.pptx 75 slides + Smith-Tanagho (gaps bibliograficos)</em></p>
+<h1>P2-T07 — Tumores de Bexiga, Pene e Testiculo (Parte 2 de 2)</h1>
+<blockquote>Ver tambem: P2-T07-Parte1-Tumores-Renais</blockquote>
+<hr>
+<blockquote>🖥️ <strong>Slide Neoplasias.pptx</strong> — slides 61-75: carcinoma de bexiga 🖥️ <strong>Slide Tumores de testículo y pene.pptx</strong> — 63 slides + 7 questoes de prova 📚 <strong>Smith-Tanagho 18a ed.</strong> — TNM bexiga, NIUB vs. MIB (gaps bibliograficos)</blockquote>
+<hr>
+<h2>1. Visao Geral — Tumores de Bexiga</h2>
+<p>O carcinoma de bexiga e o <strong>tumor maligno mais comum do trato urinario</strong> (mais frequente que o CCR em incidencia global).</p>
+<table><thead><tr><th>Dado</th><th>Valor</th></tr></thead><tbody><tr><td>Histologia predominante</td><td>Carcinoma de celulas transicionais (UCT) = <strong>94%</strong></td></tr><tr><td>Localizacao</td><td>90% na bexiga; 8% na pelve renal; 2% ureter ou uretra</td></tr><tr><td>Fator de risco #1</td><td><strong>Tabagismo</strong> (risco 4x maior; responsavel por 50% dos casos)</td></tr><tr><td>Sintoma principal</td><td><strong>Hematuria</strong> (macro ou microscopica, indolor)</td></tr><tr><td>Exame diagnostico</td><td><strong>Cistoscopia + biopsia</strong> (gold standard)</td></tr><tr><td>Divisao critica</td><td><strong>NIUB</strong> (Ta/Tis/T1) vs. <strong>MIB</strong> (T2-T4) → muda completamente a conduta</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra de ouro</span><p><strong>> 50 anos + hematuria INDOLOR = cancer vesical ate prova em contrario.</strong> Hematuria indolor e o sinal mais precoce e mais frequente (80% dos casos).</p></div>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<table><thead><tr><th>Conceito</th><th>Resposta rapida</th></tr></thead><tbody><tr><td>Histologia mais comum</td><td>UCT (carcinoma de celulas transicionais) — 94%</td></tr><tr><td>Fator de risco #1</td><td>Tabagismo</td></tr><tr><td>Sintoma #1</td><td>Hematuria macroscopica indolor</td></tr><tr><td>Exame diagnostico (gold standard)</td><td>Cistoscopia + biopsia</td></tr><tr><td>NIUB = estadios</td><td>Ta, Tis, T1 (sem invadir musculo detrusor)</td></tr><tr><td>MIB = estadios</td><td>T2-T4 (invade musculo detrusor ou alem)</td></tr><tr><td>Tratamento NIUB</td><td>RTU-V + BCG intravesical</td></tr><tr><td>Tratamento MIB</td><td><strong>Cistectomia radical</strong> + derivacao urinaria</td></tr><tr><td>Metastases mais comuns</td><td>Pulmao, osso, higado, linfonodos</td></tr></tbody></table>
+<hr>
+<h2>3. Fatores de Risco</h2>
+<table><thead><tr><th>Fator</th><th>Detalhe</th></tr></thead><tbody><tr><td><strong>Tabagismo</strong></td><td>Principal (50% dos casos); risco 4x maior</td></tr><tr><td>Anilinas e corantes (beta-naftilamina)</td><td>Profissionais de industria textil, borracha</td></tr><tr><td>Ciclofosfamida</td><td>Quimioterapico — cistite hemorragica → carcinogeno urotelial</td></tr><tr><td>Fenacetina</td><td>Analgesico nefrotossico e urotelial</td></tr><tr><td><strong>Schistosoma haematobium</strong></td><td>Associado a <strong>carcinoma epidermoide</strong> de bexiga (nao UCT)</td></tr><tr><td>Cateter urinario cronico</td><td>Irritacao cronica → Ca epidermoide</td></tr><tr><td>Irradiacao pelvica previa</td><td>Risco aumentado decadas depois</td></tr></tbody></table>
+<hr>
+<h2>4. Histologia</h2>
+<table><thead><tr><th>Tipo</th><th>Frequencia</th><th>Associacao</th></tr></thead><tbody><tr><td><strong>UCT</strong> (<em>Carcinoma de Celulas Transicionais</em>)</td><td><strong>94%</strong></td><td>Tabagismo, anilinas, ciclofosfamida</td></tr><tr><td><strong>Carcinoma Epidermoide</strong></td><td>~5%</td><td>Schistosoma haematobium, cateter cronico, ITU cronica</td></tr><tr><td><strong>Adenocarcinoma</strong></td><td>~1%</td><td>Uraco (carcinoma do uraco)</td></tr></tbody></table>
+<p><strong>Histologia do urotélio:</strong> 2% uréter ou uretra / <strong>90% bexiga</strong> / 8% pelve renal.</p>
+<p>Carcinoma de células transicionais pode ser multifocal em qualquer ponto do urotelio.</p>
+<hr>
+<h2>5. Estadiamento TNM — Detalhado</h2>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Smith-Tanagho + EAU Guidelines</span></div>
+<h3>Tumor (T)</h3>
+<table><thead><tr><th>Estadio</th><th>Descricao</th></tr></thead><tbody><tr><td><strong>Ta</strong></td><td>Carcinoma papilar <strong>nao invasivo</strong> — confinado ao epitélio, sem invadir lamina propria</td></tr><tr><td><strong>Tis</strong></td><td>Carcinoma in situ (CIS) — lesao plana, alto grau, confinada ao epitélio</td></tr><tr><td><strong>T1</strong></td><td>Invasao da <strong>lamina propria</strong> (subepitelio) — sem atingir muscular</td></tr><tr><td><strong>T2a</strong></td><td>Invasao do musculo detrusor <strong>superficial</strong> (metade interna)</td></tr><tr><td><strong>T2b</strong></td><td>Invasao do musculo detrusor <strong>profundo</strong> (metade externa)</td></tr><tr><td><strong>T3a</strong></td><td>Extensao <strong>microscopica</strong> alem da bexiga (gordura perivesical)</td></tr><tr><td><strong>T3b</strong></td><td>Extensao <strong>macroscopica</strong> alem da bexiga (massa palpavel fora)</td></tr><tr><td><strong>T4a</strong></td><td>Invasao de estruturas adjacentes: prostata, utero, vagina</td></tr><tr><td><strong>T4b</strong></td><td>Invasao da parede pelvica ou parede abdominal</td></tr></tbody></table>
+<h3>Linfonodos (N)</h3>
+<table><thead><tr><th>N</th><th>Descricao</th></tr></thead><tbody><tr><td>N0</td><td>Sem linfonodos positivos</td></tr><tr><td>N1</td><td>1 linfonodo pelvico ≤ 2 cm</td></tr><tr><td>N2</td><td>1 linfonodo pelvico 2-5 cm ou multiplos ≤ 5 cm</td></tr><tr><td>N3</td><td>Linfonodo > 5 cm</td></tr></tbody></table>
+<h3>Metastases (M)</h3>
+<ul>
+<li>M0: sem metastases</li>
+<li>M1: metastases a distancia (pulmao > osso > figado)</li>
+</ul>
+<hr>
+<h2>6. NIUB vs. MIB — Divisao Critica para a Prova</h2>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Conceito mais importante do Ca de Bexiga</span><p>A divisao entre <strong>NIUB</strong> e <strong>MIB</strong> define completamente o tratamento. A linha divisoria: <strong>o musculo detrusor (T2)</strong>.</p></div>
+<table><thead><tr><th></th><th><strong>NIUB</strong> (Nao Musculo-Invasivo)</th><th><strong>MIB</strong> (Musculo-Invasivo)</th></tr></thead><tbody><tr><td><strong>Estadios</strong></td><td>Ta, Tis, T1</td><td>T2a, T2b, T3, T4</td></tr><tr><td><strong>Invasao</strong></td><td>Ate lamina propria</td><td>Musculo detrusor ou alem</td></tr><tr><td><strong>Tratamento</strong></td><td>RTU-V + BCG intravesical</td><td><strong>Cistectomia radical</strong></td></tr><tr><td><strong>Prognostico</strong></td><td>Bom (mas alta recorrencia)</td><td>Reservado</td></tr><tr><td><strong>Monitoramento</strong></td><td>Cistoscopia seriada</td><td>Imagenologia sistemica</td></tr></tbody></table>
+<hr>
+<h3>6.1 Tratamento NIUB (Ta / Tis / T1)</h3>
+<p><strong>Passo 1 — RTU-V (<em>Resseccao Transuretral da Bexiga</em>):</strong></p>
+<ul>
+<li>Resseccao endoscopica de todas as lesoes visiveis</li>
+<li>Confirmacao histologica do estadio e grau</li>
+</ul>
+<p><strong>Passo 2 — Estratificacao por risco:</strong></p>
+<table><thead><tr><th>Risco</th><th>Estadio/Grau</th><th>Conduta apos RTU-V</th></tr></thead><tbody><tr><td><strong>Baixo</strong></td><td>Ta, grau baixo, lesao unica < 3 cm, sem Tis</td><td>RTU + instilacao unica de QMT intravesical imediata (mitomicina C)</td></tr><tr><td><strong>Intermediario</strong></td><td>Ta/T1 grau baixo multifocal ou recorrente</td><td>RTU + QMT intravesical seriada (mitomicina C)</td></tr><tr><td><strong>Alto</strong></td><td>T1 grau alto / Tis / multifocal recorrente</td><td>RTU + <strong>BCG intravesical</strong> (6 semanas inducao + manutencao 1-3 anos)</td></tr></tbody></table>
+<p><strong>BCG Intravesical (<em>Bacillus Calmette-Guerin</em>):</strong></p>
+<ul>
+<li>Imunoterapia intravesical</li>
+<li>Mecanismo: estimulacao imune local contra celulas tumorais</li>
+<li>Protocolo: 6 instilacoes semanais de inducao + manutencao</li>
+<li>Reduz drasticamente recorrencia e progressao em alto risco</li>
+<li>Contraindicado: hematuria macroscopica ativa, imunossupressao</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Quando indicar cistectomia mesmo em NIUB?</span><p>1. Falha de BCG (2 cursos sem resposta) 2. T1 grau alto recorrente 3. Tis extenso / multifocal refratario 4. Tumor papilifer de alto grau com Tis associado</p></div>
+<hr>
+<h3>6.2 Tratamento MIB (T2-T4)</h3>
+<p><strong>Abordagem padrao:</strong></p>
+<p><strong>1. QMT Neoadjuvante</strong> (antes da cirurgia):</p>
+<ul>
+<li>Cisplatina + Gencitabina (gem/cis) OU MVAC (metotrexato, vimblastina, adriamicina, cisplatina)</li>
+<li>Reduz massa, melhora sobrevida global</li>
+</ul>
+<p><strong>2. Cistectomia Radical:</strong></p>
+<ul>
+<li>Homem: retira bexiga + prostata + vesiculas seminais + gânglios pelvicos</li>
+<li>Mulher: retira bexiga + utero + ovarios + parede vaginal anterior + gânglios</li>
+</ul>
+<p><strong>3. Derivacao Urinaria</strong> (apos cistectomia radical):</p>
+<table><thead><tr><th>Tipo</th><th>Descricao</th><th>Vantagem</th></tr></thead><tbody><tr><td><strong>Bricker</strong> (<em>ileal conduit</em>)</td><td>Uréteres no segmento ileal → estoma abdominal</td><td>Mais simples; nao requer bexiga</td></tr><tr><td><strong>Neobexiga</strong> (<em>Studer</em>)</td><td>Reservatorio ileal anastomosado a uretra → meccao natural</td><td>Qualidade de vida melhor</td></tr><tr><td><strong>Ureterossigmoideostomia</strong></td><td>Uréteres no sigmóide</td><td>Evita estoma (raramente usada hoje)</td></tr></tbody></table>
+<p><strong>4. Alternativa a cistectomia</strong> (candidatos nao cirurgicos):</p>
+<ul>
+<li>Radioterapia de haz externo + QMT concomitante (cisplatina)</li>
+<li>Taxa de controle local inferior a cistectomia</li>
+</ul>
+<p><strong>Metastases a distancia:</strong> combinacao de QMT sistemica + imunoterapia (pembrolizumabe — aprovado em Ca bexiga refratario)</p>
+<hr>
+<h2>7. Diagnostico do Ca de Bexiga</h2>
+<p><strong>Fluxo diagnostico:</strong></p>
+<p>```</p>
+<p>Hematuria macroscopica indolor (+ de 50 anos)</p>
+<p>        ↓</p>
+<p>Urocultura (excluir ITU como causa)</p>
+<p>        ↓</p>
+<p>Urografia excretora OU UroTC (busca defeito de enchimento)</p>
+<p>        ↓</p>
+<p>CISTOSCOPIA (obrigatoria) — visao direta das lesoes</p>
+<p>        ↓</p>
+<p>BIOPSIA (RTU-V diagnostica) — confirma histologia + estadio</p>
+<p>        ↓</p>
+<p>TC toraco-abdomino-pelvica (estadiamento MIB)</p>
+<p>```</p>
+<p><strong>Cistoscopia:</strong></p>
+<ul>
+<li>Exame insubstituivel — permite visao direta, biopsia dirigida, resseccao</li>
+<li>Realizada sob anestesia; rigid ou flexivel</li>
+<li>Detecta lesoes planas (Tis) que nao aparecem na imagem</li>
+</ul>
+<p><strong>Citologia urinaria:</strong></p>
+<ul>
+<li>Alta especificidade para grau alto e Tis (80-90%)</li>
+<li>Sensibilidade baixa para grau baixo</li>
+<li>Util como triagem e seguimento</li>
+</ul>
+<hr>
+<h2>8. Tumores Testiculares</h2>
+<h3>8.1 Classificacao</h3>
+<table><thead><tr><th>Tipo</th><th>Frequencia</th><th>Faixa etaria</th></tr></thead><tbody><tr><td><strong>Germinais</strong></td><td>90-95%</td><td>15-35 anos (pico)</td></tr><tr><td>— Seminoma</td><td>60% dos germinais</td><td>30-40 anos</td></tr><tr><td>— Nao-seminoma (CE, CTC, Teratoma, CCEmbrionario)</td><td>40% dos germinais</td><td>15-30 anos</td></tr><tr><td><strong>Nao germinais</strong> (Leydig, Sertoli, Linfoma)</td><td>5-10%</td><td>Variavel</td></tr></tbody></table>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li>Tumor maligno mais comum em homens de <strong>15-35 anos</strong></li>
+<li>< 1% dos canceres masculinos; 2-5% dos tumores urogenitais masculinos</li>
+</ul>
+<p><strong>Fatores de risco:</strong></p>
+<ul>
+<li><strong>Criptorquidia</strong> (principal — risco 3-14x maior; bilatera l → risco nos dois testiculos)</li>
+<li>Historia familiar de Ca testicular</li>
+<li>Sindrome de Klinefelter (47,XXY)</li>
+<li>Orchite por caxumba</li>
+<li>Trauma testicular (nao confirmado como fator causal)</li>
+</ul>
+<hr>
+<h3>8.2 Clinica e Diagnostico</h3>
+<p><strong>Apresentacao tipica:</strong></p>
+<ul>
+<li>Massa <strong>dura, indolor</strong> no testiculo (principal sinal)</li>
+<li>Aumento de volume escrotal progressivo</li>
+<li>Raramente: dor, sensacao de peso</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Ponto de prova — Questoes da aula</span><p>Q: "Diagnostico dos tumores germinais de testículo se realiza principalmente?" <strong>R: Na juventude</strong> (pico 15-35 anos)  Q: "Melhor forma de diagnostico dos tumores testiculares?" <strong>R: Ecografia testicular (USG)</strong>  Q: "Homem de 20 anos, massa dura nao dolorosa em testiculo direito, imagem nodular hipoecoica na eco. Conduta?" <strong>R: Exploracao cirurgica</strong> (orquiectomia inguinal radical)</p></div>
+<p><strong>Exame de imagem:</strong></p>
+<ul>
+<li><strong>USG testicular</strong> = exame de eleicao (nao biopsia!)</li>
+<li>Nodulo hipoecoico intratesticular = suspeita de malignidade</li>
+</ul>
+<p><strong>Marcadores tumorais:</strong></p>
+<ul>
+<li><strong>AFP</strong> (alfa-fetoproteina): elevada em nao-seminomas (CE, carcinoma embrionario)</li>
+<li><strong>B-HCG</strong>: elevada em seminomas (parcialmente) e nao-seminomas</li>
+<li><strong>LDH</strong>: marcador de massa tumoral</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra critica</span><p><strong>NUNCA biopsiar testiculo com suspeita de tumor</strong> via escroto ou agulha. Risco de disseminacao via vasos linfaticos escrotais (diferentes dos inguinais). A biopsia e feita pela <strong>peca cirurgica apos orquiectomia inguinal</strong>.</p></div>
+<hr>
+<h3>8.3 Tratamento</h3>
+<table><thead><tr><th>Estadio</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>I</strong> (limitado ao testiculo)</td><td>Orquiectomia inguinal radical + vigilancia OU QMT adjuvante (1 ciclo BEP)</td></tr><tr><td><strong>II</strong> (linfonodos retroperitoneais)</td><td>Orquiectomia + DLRP (linfadenectomia retroperitoneal) ou QMT (BEP)</td></tr><tr><td><strong>III</strong> (metastatico)</td><td>QMT (3-4 ciclos BEP: Bleomicina + Etoposido + Cisplatina)</td></tr></tbody></table>
+<p><strong>Seminoma:</strong> muito radiossensivel → radioterapia retroperitoneal nos estadios I-II.</p>
+<p><strong>Nao-seminoma:</strong> QMT com BEP nos estadios avancados.</p>
+<p><strong>Prognostico excelente:</strong> sobrevida > 90% mesmo nos avancados com QMT adequada.</p>
+<hr>
+<h2>9. Cancer de Pene</h2>
+<h3>9.1 Epidemiologia</h3>
+<ul>
+<li>< 1% dos canceres masculinos em paises desenvolvidos</li>
+<li>90% dos carcinomas de pene ocorrem em <strong>pacientes com fimosis</strong></li>
+<li>Histologia: <strong>carcinoma de celulas escamosas</strong> (95%)</li>
+</ul>
+<p><strong>Fatores de risco:</strong></p>
+<ul>
+<li>Fimosis (principal)</li>
+<li><strong>HPV 16 e 18</strong> (alto risco oncogenico)</li>
+<li>Higiene deficiente</li>
+<li>Tabagismo</li>
+<li>Multiplos parceiros sexuais</li>
+</ul>
+<hr>
+<h3>9.2 Lesoes Pre-Malignas</h3>
+<table><thead><tr><th>Lesao</th><th>Descricao</th><th>Risco</th></tr></thead><tbody><tr><td><strong>Leucoplasias</strong></td><td>Placas brancas irregulares</td><td>Lesao pre-maligna</td></tr><tr><td><strong>Balanitis Xerotica Obliterante</strong></td><td>Parche branca em prepucio/glande; diabeticos</td><td>Pre-maligna</td></tr><tr><td><strong>Condiloma Acuminado Gigante</strong></td><td>"Coliflor" no prepucio; HPV 6 e 11</td><td>Baixo grau — pode malignizar</td></tr><tr><td><strong>Eritroplasia de Queyrat</strong></td><td>Lesao aterciopelada vermelha no glande; 10-20% progride a Ca invasivo</td><td>Alta suspeita</td></tr><tr><td><strong>Doenca de Bowen</strong></td><td>Carcinoma in situ do pene</td><td>Pre-invasivo</td></tr></tbody></table>
+<hr>
+<h3>9.3 Estadiamento de Jackson (classico)</h3>
+<table><thead><tr><th>Estadio</th><th>Criterio</th></tr></thead><tbody><tr><td><strong>E I</strong></td><td>Confinado ao glande ou prepucio</td></tr><tr><td><strong>E II</strong></td><td>Invasao do corpo do pene (sem gânglios)</td></tr><tr><td><strong>E III</strong></td><td>Gânglios inguinais ressecaveis</td></tr><tr><td><strong>E IV</strong></td><td>Gânglios nao ressecaveis / metastases a distancia</td></tr></tbody></table>
+<p><strong>Disseminacao:</strong> primaria linfatica → ganglios <strong>inguinais</strong> → ganglios <strong>pelvicos</strong> → metastases a distancia (pulmao, figado, osso, cerebro) em < 10% dos casos. A <strong>Fascia de Buck</strong> funciona como barreira.</p>
+<hr>
+<h3>9.4 Diagnostico e Tratamento</h3>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Exame clinico + <strong>biopsia</strong> da lesao primaria</li>
+<li>Estudo histopatologico obrigatorio</li>
+</ul>
+<p><strong>Tratamento — Lesao Primaria:</strong></p>
+<table><thead><tr><th>Estadio</th><th>Conduta</th></tr></thead><tbody><tr><td><strong>Ca in situ / lesoes superficiais</strong></td><td>Creme de 5-fluorouracilo, laser CO2/Nd-YAG, circuncisao</td></tr><tr><td><strong>T1 (E I) — glande</strong></td><td>Cirurgia de Mohs, glandectomia, radioterapia externa ou braquiterapia</td></tr><tr><td><strong>T1 — outra localizacao</strong></td><td>Penectomia parcial com margem de 2 cm</td></tr><tr><td><strong>T2-T3 (E II-III)</strong></td><td>Penectomia parcial ou total + linfadenectomia inguinal modificada</td></tr><tr><td><strong>T4 / gânglios nao ressecaveis</strong></td><td>QMT paliativa + RT</td></tr></tbody></table>
+<p><strong>Questao de prova (da aula):</strong></p>
+<blockquote>"Fator etiologico quase sempre relacionado ao cancer de pene?" <strong>R: A falta de higiene</strong> (fimosis + higiene deficiente + HPV)</blockquote>
+<hr>
+<h2>10. Comparacao entre Ca Bexiga vs. CCR</h2>
+<table><thead><tr><th></th><th>Ca Bexiga</th><th>CCR</th></tr></thead><tbody><tr><td>Histologia</td><td>UCT (94%)</td><td>Celulas claras (70-80%)</td></tr><tr><td>Sintoma principal</td><td>Hematuria <strong>indolor</strong></td><td>Frequentemente assintomatico</td></tr><tr><td>Diagnostico</td><td>Cistoscopia + biopsia</td><td>TC com contraste</td></tr><tr><td>Estadiamento decisivo</td><td>NIUB vs. MIB (musculo detrusor)</td><td>TNM (T1 vs. T3, M0 vs. M1)</td></tr><tr><td>Tratamento localizado</td><td>RTU-V + BCG (NIUB) / Cistectomia (MIB)</td><td>Nefrectomia parcial ou radical</td></tr><tr><td>Tratamento metastatico</td><td>Cisplatina + Pembrolizumabe</td><td>Nivolumabe + Ipilimumabe / TKI</td></tr><tr><td>Fator de risco #1</td><td><strong>Tabagismo</strong></td><td><strong>Tabagismo</strong></td></tr></tbody></table>
+<hr>
+<h2>11. O Que Mais Cai na Prova</h2>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Alta probabilidade</span></div>
+<ol>
+<li><strong>NIUB vs. MIB</strong> — linha divisoria e o musculo detrusor (T2)</li>
+<li><strong>BCG intravesical</strong> = imunoterapia para NIUB de alto risco (T1 grau alto, Tis)</li>
+<li><strong>Cistectomia radical</strong> = tratamento para MIB (T2-T4)</li>
+<li><strong>UCT = 94%</strong> dos canceres de bexiga</li>
+<li><strong>Hematuria indolor</strong> = sintoma mais comum do ca bexiga</li>
+<li><strong>Cistoscopia + biopsia</strong> = gold standard diagnostico</li>
+<li><strong>Ca espinocelular de bexiga</strong> = Schistosoma haematobium</li>
+<li><strong>Tumor testicular mais comum em jovens</strong> = 15-35 anos</li>
+<li><strong>NUNCA biopsiar testiculo</strong> antes de orquiectomia inguinal</li>
+<li><strong>USG testicular</strong> = exame de eleicao para massa testicular</li>
+<li><strong>Ca pene = carcinoma epidermoide</strong> (95%); fimosis + HPV + higiene</li>
+<li><strong>Eritroplasia de Queyrat</strong> = lesao pre-maligna 10-20% progride para Ca invasivo</li>
+<li><strong>Estadiamento de Jackson</strong> (classico do pene) — provavelmente cai</li>
+</ol>
+<hr>
+<h2>12. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>CA BEXIGA</p>
+<p>|</p>
+<table><thead><tr><th>— HISTOLOGIA: UCT 94% / Epidermoide 5% (Schistosoma) / Adenocarcinoma 1%</th></tr></thead><tbody><tr><td>— NIUB (Ta, Tis, T1) — sem musculo detrusor</td></tr><tr><td>— Baixo risco: RTU + QMT unica intravesical</td></tr><tr><td>— Alto risco: RTU + BCG intravesical (6 sem + manutencao)</td></tr><tr><td>— Falha BCG → cistectomia</td></tr><tr><td>— MIB (T2-T4) — com musculo detrusor</td></tr><tr><td>— QMT neoadjuvante (gem/cis) + CISTECTOMIA RADICAL</td></tr><tr><td>— Derivacao: Bricker / Neobexiga / Ureterossigmoide</td></tr></tbody></table>
+<p>CA TESTICULO</p>
+<p>|— Germinais 90-95% (jovens 15-35a)</p>
+<p>|— Seminoma (30-40a) = radiossensivel</p>
+<p>|— Nao-seminoma (15-30a) = BEP</p>
+<p>|— Diagnostico: USG; NUNCA biopsiar escrotalmente</p>
+<p>|— Conduta: orquiectomia inguinal + QMT/RT/DLR P</p>
+<p>CA PENE</p>
+<p>|— Epidermoide 95%</p>
+<p>|— Fimosis + HPV + higiene</p>
+<p>|— Lesoes pre-malignas: Eritroplasia Queyrat, Leucoplasia, BXO</p>
+<p>|— Estadiamento de Jackson (E I-IV)</p>
+<p>|— Tratamento: do laser/circuncisao ate penectomia + linfadenectomia</p>
+<p>```</p>
+<hr>
+<h2>13. Perguntas de Revisao Ativa</h2>
+<p><strong>P1:</strong> Qual a diferenca pratica entre NIUB e MIB? O que define essa divisao?</p>
+<blockquote><strong>R:</strong> A invasao do <strong>musculo detrusor</strong> (T2). NIUB = Ta, Tis, T1 (sem musculo) → RTU + BCG. MIB = T2-T4 (com musculo) → cistectomia radical.</blockquote>
+<p><strong>P2:</strong> Paciente de 60 anos com hematuria macroscopica indolor, sem febre, urocultura negativa. Qual a hipotese principal e a proxima conduta?</p>
+<blockquote><strong>R:</strong> Ca de bexiga ate prova em contrario. Proxima conduta: cistoscopia com biopsia (gold standard diagnostico).</blockquote>
+<p><strong>P3:</strong> Qual o papel do BCG intravesical? Em que casos e indicado?</p>
+<blockquote><strong>R:</strong> Imunoterapia local para NIUB de alto risco (T1 grau alto, Tis, multifocal). Estimula resposta imune contra celulas tumorais uroteliais. Reduz recorrencia e progressao.</blockquote>
+<p><strong>P4:</strong> Descreva o estadiamento TNM Ta vs. T1 vs. T2 de bexiga.</p>
+<blockquote><strong>R:</strong> Ta = carcinoma papilar nao invasivo, confinado ao epitélio. T1 = invasao da lamina propria (sem musculo). T2 = invasao do musculo detrusor (T2a superficial / T2b profundo). T2 = MIB → cistectomia.</blockquote>
+<p><strong>P5:</strong> Homem de 22 anos com massa dura indolor no testiculo esquerdo. Ecografia mostra nodulo hipoecoico. Qual a conduta imediata?</p>
+<blockquote><strong>R:</strong> Marcadores tumorais (AFP, B-HCG, LDH) + TC abdomino-pelvica para estadiamento. Tratamento: <strong>orquiectomia inguinal radical</strong> (nunca biopsia transescrotal).</blockquote>
+<p><strong>P6:</strong> Qual a relacao entre Schistosoma haematobium e cancer de bexiga?</p>
+<blockquote><strong>R:</strong> Schistosoma haematobium causa inflamacao cronica da bexiga → associado a <strong>carcinoma epidermoide</strong> de bexiga (nao UCT). Prevalente em Africa e Oriente Medio.</blockquote>
+<p><strong>P7:</strong> Cite 3 lesoes pre-malignas do pene e seus riscos de progressao.</p>
+<blockquote><strong>R:</strong> (1) Eritroplasia de Queyrat — 10-20% progride para Ca invasivo. (2) Leucoplasias — lesao pre-maligna. (3) Balanitis Xerotica Obliterante — potencial pre-maligno.</blockquote>
+<hr>
+<h2>14. Estrategia de Memorizacao</h2>
+<h3>Ca Bexiga — Regra dos 3 "T"</h3>
+<ul>
+<li><strong>T1</strong> = Trata com BCG (NIUB alto risco)</li>
+<li><strong>T2</strong> = Tira a bexiga (cistectomia radical — MIB)</li>
+<li><strong>T3-T4</strong> = Tira + QMT neoadjuvante</li>
+</ul>
+<h3>BCG — Por que "B" vem antes de Cirurgia?</h3>
+<p>B = BCG primeiro (conservador) → se falhar → Cirurgia (cistectomia).</p>
+<p>Assim como no esporte: Treino antes de Torneio.</p>
+<h3>Tumores Testiculares — "ABCD"</h3>
+<ul>
+<li><strong>A</strong>dequado exame (USG)</li>
+<li><strong>B</strong>iopsia = NUNCA transescrotal</li>
+<li><strong>C</strong>onduces: orquiectomia inguinal</li>
+<li><strong>D</strong>ivisao: seminoma (RT) vs. nao-seminoma (BEP)</li>
+</ul>
+<h3>Cancer de Pene — "Fimosis + HPV = risco duplo"</h3>
+<ul>
+<li>Fimosis retém sujeira + HPV favorece transformacao maligna</li>
+<li>Circuncisao previne: reduz risco em ~3x</li>
+</ul>
+<hr>
+<h2>Navegacao</h2>
+<ul>
+<li>P2-T07-Parte1-Tumores-Renais — Voltar: tumores renais benignos + CCR</li>
+<li>Prioridades P2 — Urologia</li>
+<li>Indice Urologia</li>
+</ul>
+<hr>
+<p><em>Resumo elaborado em 23-06-2026 | Fontes: Neoplasias.pptx 75 slides + Tumores testículo/pene.pptx 63 slides + Smith-Tanagho (gaps: TNM bexiga, NIUB/MIB, BCG)</em></p>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T07</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">40 cards · <span class="starred-count">⭐ 23 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a regra de ouro para toda massa solida renal? E para paciente > 50 anos com hematuria?</div><div class="fc-answer">Toda <strong>massa solida renal = MALIGNA ate prova em contrario</strong>. Paciente > 50 anos com hematuria = <strong>cancer renal ou vesical ate prova em contrario</strong>.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a diferenca entre tumor renal cistico e solido? Qual a conduta inicial para cada?</div><div class="fc-answer"><strong>Cistico</strong> (conteudo liquido): geralmente benigno; acompanhar ou tratar se > 8 cm / sintomatico. <strong>Solido</strong> (conteudo tecidual): considerar maligno; investigar e tratar.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">A partir de qual faixa etaria os tumores renais passam a ser predominantemente malignos?</div><div class="fc-answer">Apos <strong>50 anos</strong> os tumores renais sao predominantemente malignos. Antes dos 50 anos: ~50% benignos / ~50% malignos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e o tumor benigno cistico mais frequente do rim? Quando e indicado tratar?</div><div class="fc-answer"><strong>Quiste renal simples</strong>. Tratamento indicado quando > 8 cm OU sintomatico. Opcoes: puncao aspirativa guiada por USG, aspiracao + alcool absoluto, cirurgia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e o sinal classico do angiomiolipoma renal (AML) na TC? Por que e importante?</div><div class="fc-answer"><strong>Gordura na TC (atenuacao < -10 UH)</strong> — praticamente patognomonico de AML. Importante porque dispensa biopsia na maioria dos casos. Se AML sem gordura visivel → indistinguivel de CCR → cirurgia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o sinal classico do oncocitoma renal na TC? O que confirma o diagnostico?</div><div class="fc-answer">"<strong>Roda de bicicleta</strong>" — cicatriz fibrosa central na TC. Achado sugestivo mas nao patognomonico. <strong>Diagnostico definitivo = histopatologico</strong> (biopsia ou peca cirurgica).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Compare AML, oncocitoma e CCR quanto ao sinal na TC e ao sexo predominante.</div><div class="fc-answer">| | AML | Oncocitoma | CCR |
+|---|---|---|---|
+| Sinal TC | Gordura (-10 UH) | "Roda de bicicleta" | Heterogeneo, necrose |
+| Sexo | <strong>M >> H</strong> | H > M | H > M (2:1) |
+| Comportamento | Benigno | Benigno | <strong>Maligno</strong> |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a associacao do AML com doenca sistemica? Qual o risco cirurgico principal?</div><div class="fc-answer">Associado a <strong>Esclerose Tuberosa</strong> (80% dos pacientes tem AML, frequentemente bilateral e multiplo). Risco principal: <strong>ruptura espontanea com hemorragia</strong> em AML > 4 cm — pode ser fatal.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a genetica da Doenca Renal Policicistica (DRP) e qual o risco de longo prazo?</div><div class="fc-answer"><strong>PKD1</strong> (crom. 16) — 85% dos casos, inicio aos 30-40 anos. <strong>PKD2</strong> (crom. 4) — 15%, mais leve. Risco: <strong>IRC em 50-70%</strong> dos casos. Sem cura; controle sintomatico + Tolvaptan.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a triada classica do CCR? Em que percentagem dos pacientes ela aparece?</div><div class="fc-answer">1. <strong>Hematuria</strong> (macro ou microscopica) 2. <strong>Dor no flanco/lombar</strong> 3. <strong>Massa palpavel</strong> abdominal. Aparece em apenas <strong>~10% dos casos</strong> — indica doenca avancada.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Quais sao os 4 subtipos histologicos do CCR? Qual e o mais comum e o mais agressivo?</div><div class="fc-answer">1. <strong>Celulas claras</strong> (70-80%) — mais comum, mutacao VHL, crom. 3p 2. <strong>Papilifero</strong> (10-15%) — melhor prognostico 3. <strong>Cromofibo</strong> (5%) 4. <strong>Ductos de Bellini</strong> (< 5%) — <strong>mais agressivo</strong>, geralmente metastatico ao diagnostico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o exame de eleicao para diagnostico e estadiamento do CCR? Por que?</div><div class="fc-answer"><strong>TC com contraste</strong> (multifasica). Caracteriza a massa (solido/cistico/gordura), define estadio loco-regional, extensao venosa, metastases — tudo em um unico exame.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Descreva o Grau de Fuhrman G1 a G4 do CCR.</div><div class="fc-answer">| Grau | Nucleo | Nucleolo | Atipia |
+|---|---|---|---|
+| G1 | Pequeno, uniforme | Sem nucleolo | Minima |
+| G2 | Levemente maior | Pequeno (40x) | Leve |
+| G3 | Grande, irregular | Proeminente (10x) | Moderada |
+| G4 | Pleomorfico, bizzaro | Gigante + mitoses | Marcante |
+G1-G2 = baixo grau (melhor prognostico) | G3-G4 = alto grau.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Cite 4 sindromes paraneoplasicas do CCR.</div><div class="fc-answer">1. <strong>Febre sem causa</strong> (mais comum — 20%) 2. <strong>Hipercalcemia</strong> (PTHrP) 3. <strong>Policitemia</strong> (EPO ectopica) 4. <strong>Hipertensao</strong> (renina) 5. <strong>Sindrome de Stauffer</strong> (disfuncao hepatica sem metastases) — qualquer 4 das 5 respostas vale.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Resuma o estadiamento TNM do CCR: o que separa T1 de T2? E T3 de T4?</div><div class="fc-answer"><strong>T1 vs. T2:</strong> tamanho (T1 ≤ 7 cm limitado ao rim; T2 > 7 cm limitado ao rim). <strong>T3 vs. T4:</strong> T3 = extensao para gordura peri-renal ou veia renal/cava (ainda resecavel); T4 = alem da fascia de Gerota ou adrenal ipsilateral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual tratamento cirurgico e preferido para CCR T1 (≤ 7 cm)? E para T3-T4?</div><div class="fc-answer"><strong>T1:</strong> <strong>nefrectomia parcial</strong> preferida (preserva funcao renal; mesmo resultado oncologico que a radical). <strong>T3-T4 ou tumores complexos centrais:</strong> <strong>nefrectomia radical</strong> (rim + gordura + adrenal + ganglios adjacentes).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o tratamento de primeira linha para CCR metastatico (M1)?</div><div class="fc-answer">Imunoterapia combinada: <strong>Nivolumabe + Ipilimumabe</strong> (anti-PD1 + anti-CTLA4) para risco intermediario/alto. <strong>Pembrolizumabe + Axitinibe</strong> (anti-PD1 + TKI) para qualquer risco. CCR e um dos poucos tumores que responde a imunoterapia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais os 3 sitios mais frequentes de metastase do CCR?</div><div class="fc-answer">1. <strong>Pulmao</strong> (50-60%) 2. <strong>Ganglios</strong> (30-40%) 3. <strong>Osso</strong> (30-40%) 4. Figado (30-40%) — qualquer 3 corretos vale.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o tumor renal mais comum em criancas? Qual a faixa etaria e o sinal mais frequente?</div><div class="fc-answer"><strong>Tumor de Wilms (nefroblastoma)</strong>. Pico: <strong>3-4 anos</strong>. Sinal mais frequente: <strong>massa abdominal indolor</strong> (pais descobrem ao dar banho). Pode ter HAS (renina) e hematuria.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o erro critico a evitar no tumor de Wilms? Por que?</div><div class="fc-answer"><strong>NUNCA biopsiar antes da cirurgia</strong> (nem por agulha, nem aberta). Risco de <strong>disseminacao peritoneal</strong> que eleva o estadiamento de I/II para III — piora dramaticamente o prognostico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Cite 2 sindromes associadas ao tumor de Wilms.</div><div class="fc-answer">1. <strong>WAGR:</strong> Wilms + Aniridia + anomalias GU + Retardo mental (del 11p13). 2. <strong>Beckwith-Wiedemann:</strong> Wilms + Hemihipertrofia + Onfalocele + Macroglossia. Tambem: Denys-Drash (IRC precoce + genitalia ambigua).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento do tumor de Wilms e qual o prognostico?</div><div class="fc-answer"><strong>Nefrectomia radical</strong> (transperitoneal) + <strong>quimioterapia</strong> (vincristina + actinomicina D ± doxorrubicina) ± radioterapia (estadios III-IV). Prognostico excelente: sobrevida > 90% nos estadios I-II com histologia favoravel.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a histologia mais comum do cancer de bexiga e sua frequencia?</div><div class="fc-answer"><strong>Carcinoma de Celulas Transicionais</strong> (UCT / urotelial) = <strong>94%</strong> dos casos. Carcinoma epidermoide = 5% (Schistosoma haematobium / cateter cronico). Adenocarcinoma = 1%.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o sintoma mais comum do cancer de bexiga? Qual o fator de risco principal?</div><div class="fc-answer"><strong>Hematuria macroscopica INDOLOR</strong> (80% dos casos). Fator de risco #1: <strong>tabagismo</strong> (50% dos casos, risco 4x maior).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o gold standard diagnostico do cancer de bexiga?</div><div class="fc-answer"><strong>Cistoscopia + biopsia</strong>. A cistoscopia permite visao direta, biopsia dirigida e resseccao (RTU-V). A citologia urinaria tem alta especificidade para alto grau / Tis mas sensibilidade baixa.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Explique o estadiamento TNM do cancer de bexiga de Ta ate T4.</div><div class="fc-answer">- <strong>Ta:</strong> carcinoma papilar, confinado ao epitelio (sem invadir lamina propria)
+- <strong>Tis:</strong> carcinoma in situ — lesao plana, alto grau, apenas epitelio
+- <strong>T1:</strong> invasao da lamina propria (sem musculo)
+- <strong>T2a/T2b:</strong> invasao muscular superficial / profunda
+- <strong>T3a/T3b:</strong> extensao microscopica / macroscopica alem da bexiga
+- <strong>T4a/T4b:</strong> invasao de orgaos adjacentes / parede pelvica</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a diferenca critica entre NIUB e MIB? O que define essa fronteira?</div><div class="fc-answer">A <strong>invasao do musculo detrusor (T2)</strong> e a fronteira. <strong>NIUB</strong> (Ta, Tis, T1) = sem musculo → tratamento conservador (RTU + BCG). <strong>MIB</strong> (T2-T4) = com musculo → <strong>cistectomia radical</strong>.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o papel do BCG intravesical? Em que pacientes e indicado?</div><div class="fc-answer"><strong>Imunoterapia intravesical</strong> — estimula resposta imune local contra celulas uroteliais tumorais. Indicado em <strong>NIUB de alto risco</strong>: T1 grau alto, Tis, tumores multifocais recorrentes. Protocolo: 6 instilacoes semanais (inducao) + manutencao 1-3 anos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando e indicada cistectomia radical mesmo em NIUB?</div><div class="fc-answer">1. <strong>Falha de 2 cursos de BCG</strong> sem resposta 2. T1 grau alto recorrente 3. Tis extenso / multifocal refratario 4. Tumor papilar alto grau com Tis associado</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o tratamento padrao para Ca bexiga MIB (T2-T4)?</div><div class="fc-answer">1. <strong>QMT neoadjuvante</strong> (cisplatina + gencitabina ou MVAC) 2. <strong>Cistectomia radical</strong> (homem: bexiga + prostata + vesiculas; mulher: bexiga + utero + ovarios + vagina anterior) 3. <strong>Derivacao urinaria</strong> (Bricker / neobexiga / ureterossigmoide)</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Compare os 3 tipos de derivacao urinaria apos cistectomia radical.</div><div class="fc-answer">| | Bricker | Neobexiga | Ureterossigmoide |
+|---|---|---|---|
+| Tecnica | Uréteres → segmento ileal → estoma | Reservatorio ileal → uretra | Uréteres → sigmóide |
+| Meccao | Estoma abdominal | Natural pela uretra | Fecal (nao usada hoje) |
+| Vantagem | Mais simples | Melhor qualidade de vida | Evita estoma |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual tipo histologico de cancer de bexiga esta associado ao Schistosoma haematobium?</div><div class="fc-answer"><strong>Carcinoma epidermoide</strong> (nao UCT). A inflamacao cronica pelo esquistossoma leva a metaplasia escamosa → carcinoma epidermoide. Prevalente na Africa e Oriente Medio.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o tumor mais comum em homens de 15-35 anos? Qual a divisao histologica principal?</div><div class="fc-answer"><strong>Tumor de testiculo</strong> (tumor maligno mais comum nessa faixa etaria). Divisao: <strong>Germinais</strong> (90-95%) — seminoma (60%) e nao-seminoma (40%); <strong>Nao germinais</strong> (5-10%) — Leydig, Sertoli, Linfoma.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o erro critico no diagnostico de tumor testicular?</div><div class="fc-answer"><strong>NUNCA biopsiar o testiculo por via transescrotal ou agulha</strong>. Os linfaticos escrotais drenam para inguinais e iliofemurais — disseminacao fora da cadeia retroperitoneal eleva o estadiamento. Biopsia feita pela <strong>peca cirurgica apos orquiectomia inguinal radical</strong>.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais marcadores tumorais sao usados nos tumores testiculares? Qual e especifico dos nao-seminomas?</div><div class="fc-answer"><strong>AFP</strong> (alfa-fetoproteina) — elevada em <strong>nao-seminomas</strong> (CE, carcinoma embrionario); nunca elevada em seminoma puro. <strong>B-HCG</strong> — pode elevar em ambos. <strong>LDH</strong> — marcador de massa tumoral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Homem de 20 anos, massa dura indolor no testiculo direito, nodulo hipoecoico na USG. Qual a conduta?</div><div class="fc-answer"><strong>Exploracao cirurgica — orquiectomia inguinal radical</strong>. Nao biopsiar. Colher marcadores (AFP, B-HCG, LDH) + TC abdomino-pelvica para estadiamento antes ou simultaneamente.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a histologia mais comum do cancer de pene? Cite os 3 principais fatores de risco.</div><div class="fc-answer"><strong>Carcinoma de celulas escamosas (epidermoide)</strong> = 95%. Fatores de risco: 1. <strong>Fimosis</strong> (principal — 90% tem fimosis) 2. <strong>HPV 16 e 18</strong> 3. Higiene deficiente / tabagismo.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Cite 3 lesoes pre-malignas do pene e seus riscos.</div><div class="fc-answer">1. <strong>Eritroplasia de Queyrat</strong> — lesao aterciopelada vermelha no glande; <strong>10-20% progride</strong> para Ca invasivo 2. <strong>Leucoplasias</strong> — placas brancas pre-malignas 3. <strong>Balanitis Xerotica Obliterante (BXO)</strong> — parche branca em prepucio/glande; diabeticos</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e o estadiamento de Jackson do cancer de pene? Qual o tratamento para cada estadio?</div><div class="fc-answer">| Estadio | Criterio | Tratamento |
+|---|---|---|
+| E I | Confinado ao glande/prepucio | Cirurgia conservadora / laser / biopsia |
+| E II | Corpo do pene, sem ganglios | Penectomia parcial (margem 2 cm) |
+| E III | Ganglios inguinais ressecaveis | Penectomia parcial ou total + linfadenectomia |
+| E IV | Ganglios nao ressecaveis / metastases | QMT paliativa + RT |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Que estrutura funciona como barreira para a disseminacao do cancer de pene? Para onde vai a disseminacao linfatica primaria?</div><div class="fc-answer">A <strong>Fascia de Buck</strong> atua como barreira. Disseminacao linfatica primaria: ganglios <strong>inguinais</strong> (femorais e ilíacos) → ganglios <strong>pelvicos</strong>. Metastases a distancia (pulmao, figado, osso) em < 10% dos casos.</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

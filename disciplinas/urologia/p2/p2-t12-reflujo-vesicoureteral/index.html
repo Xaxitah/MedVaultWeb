@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T12 — Refluxo Vesicoureteral — MedVaultWeb Urologia P2">
+  <title>P2-T12 — Refluxo Vesicoureteral — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #1b5e20; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%);">
+    <h1>↩️ Refluxo Vesicoureteral</h1>
+    <p>Graus I-V · Classificação Sênior · Cirurgia de Cohen — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T12</span></div>
+  <div class="content-area">
+    
+    <div class="resumo-content">
+      <h1>P2-T12 — Reflujo Vesicoureteral (<em>Vesicoureteral Reflux</em>)</h1>
+<hr>
+<blockquote>🎧 <strong>Transcricao da aula</strong> — <code>02-Transcricoes/P2-T12-Reflujo-Vesicoureteral-Transcricao.md</code> (conteudo principal) 📚 <strong>Guyton-Hall Cap. 32</strong> — mecanismo de pielonefrite por RVU 📚 <strong>Smith-Tanagho Urologia Geral 18a ed.</strong> — complemento bibliografico (cap. Reflujo Vesicoureteral)</blockquote>
+<hr>
+<h2>1. Visao Geral</h2>
+<p>O <strong>reflujo vesicoureteral</strong> (<em>reflujo vesicoureteral</em>, RVU) e o retorno patologico de urina da bexiga para o ureter e o rim durante a miccao.</p>
+<p><strong>Por que importa?</strong></p>
+<ul>
+<li>Principal fator predisponente de <strong>pielonefrite</strong> em criancas</li>
+<li>Se intenso e prolongado → <strong>dano renal permanente</strong> e cicatriz renal</li>
+<li>E uma doenca <strong>curavel cirurgicamente</strong> — o risco e nao tratar a tempo</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Regra de ouro da apresentacao clinica</span><p><strong>Crianca de 2–6 anos com ITU recorrente = RVU ate provar o contrario.</strong> Tambem considerar em adultos > 50 anos com ITU.</p></div>
+<p><strong>Pode ser:</strong></p>
+<ul>
+<li><strong>Unilateral</strong> (maioria) — mais comum, dano apenas em um rim ou polo renal</li>
+<li><strong>Bilateral</strong> — pior prognostico, risco bilateral de dano renal</li>
+</ul>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<h3>O que e preciso saber antes de qualquer coisa</h3>
+<table><thead><tr><th>Conceito</th><th>Detalhe</th></tr></thead><tbody><tr><td><strong>Mecanismo central</strong></td><td>Porcao intramural curta → detrusor nao forma esfinter funcional</td></tr><tr><td><strong>Gold standard diagnostico</strong></td><td>Uretrocistografia miccional (<em>uretrocistografia miccional</em>)</td></tr><tr><td><strong>Graus de risco</strong></td><td>Graus 1–3: controlavel; Graus 4–5: dano renal irreversivel possivel</td></tr><tr><td><strong>Tecnica cirurgica preferida</strong></td><td>Gregoir — alonga porcao intramural para 3–5 cm</td></tr><tr><td><strong>Regra de conduta</strong></td><td>Tratar ITU PRIMEIRO, depois planejar cirurgia</td></tr><tr><td><strong>Resolucao espontanea</strong></td><td>Graus I–II: alta chance (criancas jovens); graus IV–V: raramente</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Conceito examinavel</span><p><strong>Nao ha esfinter anatomico</strong> na juncao ureterovesical. O "esfinter" e funcional: o <strong>detrusor</strong> comprimindo o ureter intramural. Se a porcao intramural e curta — esse mecanismo falha e o refluxo ocorre.</p></div>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Anatomia da Juncao Ureterovesical</h3>
+<p>O ureter penetra obliquamente a parede vesical formando a <strong>porcao intramural</strong> (ou <em>porcion intravesical</em>).</p>
+<ul>
+<li>Nao existe esfinter anatomico real nesse ponto</li>
+<li>A continencia ureteral e <strong>funcional</strong>: quando o detrusor se contrai, comprime o segmento intramural de fora para dentro</li>
+<li>Para que esse mecanismo funcione: <strong>comprimento minimo da porcao intramural = 3–5 cm</strong></li>
+<li>Relacao comprimento:diametro normal = <strong>5:1</strong></li>
+</ul>
+<p>Se a porcao intramural e muito curta (como no RVU primario), o detrusor nao consegue comprime-la adequadamente → orificio fica aberto durante a contracao vesical → urina sobe ao ureter.</p>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Consequencia clinica</span><p>Muitas vezes o ureter que drena o <strong>polo inferior</strong> e o mais curto — por isso o dano inicial frequentemente e no polo inferior renal.</p></div>
+<hr>
+<h3>3.2 Causas (Etiologia)</h3>
+<table><thead><tr><th>Tipo</th><th>Causa</th><th>Detalhe</th></tr></thead><tbody><tr><td><strong>Primario / Idiopatico</strong></td><td>Porcao intramural congenitamente curta</td><td>Causa MAIS FREQUENTE — sem malformacao estrutural evidente</td></tr><tr><td><strong>Ureterocele</strong></td><td>Dilatacao cistico-obstrutiva do ureter intramural</td><td>Raro; pode ser simples ou ectopica (ureter duplex)</td></tr><tr><td><strong>Bexiga neurogenia</strong></td><td>Congenita: mielomeningocele; Adulto: trauma medular</td><td>Perda do controle do detrusor → instabilidade / hiperpressao</td></tr><tr><td><strong>Cistite de repeticao</strong></td><td>Inflamacao aumenta pressao intravesical</td><td>Favorece refluxo secundario</td></tr><tr><td><strong>Eagle-Barrett (Prune Belly)</strong></td><td>Ausencia musculatura abdominal</td><td>RVU quase universal; maioria meninos; alta mortalidade por ITU</td></tr><tr><td><strong>Iatrogenia</strong></td><td>Prostatectomia danando colo vesical</td><td>Pode lesionar mecanismo esfincteriano</td></tr></tbody></table>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Ureterocele em detalhe</span><p>A <strong>ureterocele</strong> e uma dilatacao cistico-obstrutiva do ureter intramural, formando um "balao" dentro da bexiga visivel na ecografia. Pode ser <strong>simples</strong> (ureter unico) ou <strong>ectopica</strong> (sistema ureter duplex — o ureter do polo superior insere-se em posicao ectopica e forma ureterocele). Diagnostico: ecografia prenatal ou postnatal mostra estrutura anecogenica no trígono. Tratamento de 1a linha: <strong>puncao endoscopica</strong> (incisao transuretral); se persistir refluxo: ureteroneocistostomia.</p></div>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Sindrome de Eagle-Barrett (Prune Belly)</span><p>Triade classica: <strong>(1) ausencia da musculatura abdominal</strong> (parede "ameixada") + <strong>(2) malformacoes do trato urinario</strong> (bexiga gigante, ureteres tortuosos) + <strong>(3) criptorquidia bilateral</strong>. Afeta quase exclusivamente meninos. A distensao massiva do trato urinario fetal impede o desenvolvimento muscular abdominal. RVU e universal nesses pacientes. Expectativa de vida reduzida pelas ITUs de repeticao e insuficiencia renal.</p></div>
+<hr>
+<h3>3.3 Fisiopatologia — Do Refluxo ao Dano Renal</h3>
+<p>```</p>
+<p>Porcao intramural curta</p>
+<p>       ↓</p>
+<p>Detrusor nao comprime ureter adequadamente durante miccao</p>
+<p>       ↓</p>
+<p>Urina sobe ao ureter + pelve renal</p>
+<p>       ↓</p>
+<p>Bacterias da bexiga alcannam medula renal (Guyton Cap.32)</p>
+<p>       ↓</p>
+<p>Pielonefrite: infeccao comeca na medula → compromete concentracao urinaria</p>
+<p>       ↓</p>
+<p>Se cronico: lesao tubular, glomerular → DRC / cicatriz renal</p>
+<p>```</p>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Guyton-Hall Cap. 32</span><p>O RVU propulsiona urina (com bacterias) para cima durante a miccao. A pielonefrite começa na <strong>medula renal</strong> — compromete primeiro a <strong>capacidade de concentrar urina</strong>. Se prolongada: lesao tubular + glomerular + DRC progressiva.</p></div>
+<hr>
+<h3>3.4 Apresentacao Clinica</h3>
+<table><thead><tr><th>Grupo</th><th>Apresentacao</th></tr></thead><tbody><tr><td><strong>Criancas 2–6 anos</strong> (M ou F)</td><td>ITU recorrente — febre, disuria, choro ao urinar</td></tr><tr><td><strong>Adultos > 50 anos</strong></td><td>ITU de repeticao (especialmente mulheres)</td></tr><tr><td><strong>Forma grave</strong></td><td>Pielonefrite com febre alta, dor lombar, prostacao</td></tr><tr><td><strong>Incidental</strong></td><td>Diagnosticado na investigacao de hidronefrose fetal</td></tr></tbody></table>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Ponto de prova</span><p>Febre alta + dor lombar + ITU em crianca pequena = <strong>suspeita de pielonefrite</strong> = investigar RVU.</p></div>
+<hr>
+<h3>3.5 Diagnostico</h3>
+<h4>Gold Standard: Uretrocistografia Miccional (<em>Uretrocistografia Miccional</em>, UCG)</h4>
+<p><strong>Tecnica:</strong></p>
+<ol>
+<li>Inserir sonda vesical</li>
+<li>Infundir contraste iodado ate encher a bexiga</li>
+<li>Retirar sonda e pedir ao paciente para urinar</li>
+<li>Radiografias em tempo real durante a miccao</li>
+</ol>
+<p><strong>O que mostra:</strong> contraste subindo pelo ureter e/ou chegando ao rim durante a miccao</p>
+<h4>Outros exames</h4>
+<table><thead><tr><th>Exame</th><th>Papel</th></tr></thead><tbody><tr><td><strong>Ecografia renal</strong></td><td>Hidronefrose, tamanho renal, cicatrizes — triagem inicial</td></tr><tr><td><strong>Cintilografia DMSA</strong></td><td>Documenta cicatriz renal permanente pos-pielonefrite</td></tr><tr><td><strong>Urina + urocultura</strong></td><td>Confirma ITU e identifica agente</td></tr><tr><td><strong>UCG direta</strong></td><td>Contraste por sonda — detecta mas nao grau preciso</td></tr></tbody></table>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Diagnostico diferencial com Obstrucao Ureteropelvica (OUP)</span><p>Ambos causam <strong>hidronefrose</strong> e ITU recorrente, especialmente em criancas.  | | RVU | Obstrucao Ureteropelvica | |---|---|---| | Mecanismo | Urina sobe DURANTE miccao | Obstrucao CONTINUA da saida da pelve | | UCG Miccional | Positivo (contraste sobe) | <strong>Negativo</strong> (sem refluxo) | | Ecografia | Pode mostrar ureteroectasia | Apenas hidronefrose sem ureteroectasia | | Cintilografia | Cicatriz por pielonefrite | Curva de drenagem lenta / obstrucao | | Tratamento | Reimplante ureteral | Pieloplastia (Anderson-Hynes) |</p></div>
+<hr>
+<h2>4. Classificacao — Graus de RVU</h2>
+<table><thead><tr><th>Grau</th><th>O que acontece</th><th>Risco</th></tr></thead><tbody><tr><td><strong>I</strong></td><td>Contraste atinge o ureter apenas (nao chega ao rim)</td><td>Baixo</td></tr><tr><td><strong>II</strong></td><td>Atinge rim + sistema coletor; <strong>sem dilatacao</strong></td><td>Baixo</td></tr><tr><td><strong>III</strong></td><td>Dilatacao leve de ureter e rim, bilateral possivel</td><td>Moderado</td></tr><tr><td><strong>IV</strong></td><td>Dilatacao marcada de ureter e calices; algum tortuosidade</td><td>Alto</td></tr><tr><td><strong>V</strong></td><td><strong>Ureteronefrosis grave</strong>; ureter muito tortuoso; alta pressao intrarenal</td><td>Muito alto — dano irreversivel</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra de conduta por grau</span><p>- <strong>Graus I–III:</strong> tratamento conservador + profilaxia antibiotica + UCG de controle anual - <strong>Graus IV–V:</strong> cirurgia ou derivacao urinaria urgente — risco real de perda de funcao renal</p></div>
+<hr>
+<h2>5. Comparacao entre Conceitos Parecidos</h2>
+<h3>5.1 Tratamento Conservador vs. Cirurgico</h3>
+<table><thead><tr><th>Criterio</th><th>Conservador</th><th>Cirurgico</th></tr></thead><tbody><tr><td><strong>Indicacao</strong></td><td>Graus I–III, criancas jovens</td><td>Graus IV–V; grau III sem melhora</td></tr><tr><td><strong>Metodo</strong></td><td>Profilaxia antibiotica continua</td><td>Reimplantacao ureteral</td></tr><tr><td><strong>Duracao</strong></td><td>Ate resolucao espontanea ou puberdade</td><td>Definitivo</td></tr><tr><td><strong>Resolucao</strong></td><td>~80% grau I-II; ~50% grau III</td><td>> 95% de sucesso cirurgico</td></tr></tbody></table>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Tratamento Conservador em Detalhe</span><p><strong>Antibioticos profilaticos</strong> usados em baixas doses continuas: - Nitrofurantoina (nao cobrir Pseudomonas; risco de pneumonia intersticial em uso prolongado) - Trimetoprim-sulfametoxazol (TMP-SMX) - Amoxicilina (lactentes < 2 meses)  Objetivo: manter urina esteril para evitar pielonefrites durante a fase de espera. UCG de controle a <strong>cada 12–18 meses</strong> para documentar reducao do grau.  <strong>Quando suspender a profilaxia?</strong> - Resolucao confirmada na UCG (grau reduzido para 0) - Idade > 5-7 anos (maturacao do mecanismo vesicoureteral) - Ausencia de novas pielonefrites por 2 anos</p></div>
+<hr>
+<h3>5.2 Tecnicas Cirurgicas de Reimplantacao</h3>
+<table><thead><tr><th>Tecnica</th><th>Como funciona</th><th>Vantagem</th></tr></thead><tbody><tr><td><strong>Gregoir</strong> (preferida pelo professor)</td><td>Incisao extravesical; tunel submucoso criado <strong>sem abrir a mucosa</strong></td><td>Menos invasiva; sem cistotomia ampla</td></tr><tr><td><strong>Politano-Leadbetter</strong></td><td>Intravesical; orificio movido cranial e medial; tunel submucoso longo</td><td>Boa visualizacao; classica</td></tr><tr><td><strong>Cohen (transtrígonal)</strong></td><td>Ureter cruzado horizontalmente pelo trigono; tunel longo</td><td>Alta taxa de sucesso; mais usada em criancas; sem risco ao ureter contra-lateral com bom tecnico</td></tr></tbody></table>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Principio comum a todas</span><p>Todas as tecnicas visam criar uma porcao intramural com <strong>comprimento minimo de 3–5 cm</strong> e relacao comprimento:diametro <strong>5:1</strong> — suficiente para o detrusor funcionar como esfinter.</p></div>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> 📌 CONTEUDO DO LIVRO — Tecnica de Cohen (Transtrigonal)</span><p>E a tecnica cirurgica mais utilizada mundialmente em criancas. O ureter e <strong>desinsercido do orificio ureteral</strong> e reimplantado em nova posicao, cruzando horizontalmente o trigono vesical. Cria um tunel submucoso longo. Desvantagem: orificio ureteral muda de posicao → dificulta acesso endoscopico futuro (ex: ureteroscopia) caso necessario.</p></div>
+<hr>
+<h3>5.3 Resolucao Espontanea por Grau</h3>
+<table><thead><tr><th>Grau</th><th>Resolucao espontanea</th><th>Prazo esperado</th></tr></thead><tbody><tr><td>I</td><td>80–90%</td><td>< 2 anos</td></tr><tr><td>II</td><td>70–80%</td><td>2–3 anos</td></tr><tr><td>III</td><td>50–60%</td><td>3–5 anos</td></tr><tr><td>IV</td><td>< 20%</td><td>Raramente</td></tr><tr><td>V</td><td>< 5%</td><td>Quase nunca</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Fator favoravel para resolucao espontanea</span><p>Quanto <strong>mais nova</strong> a crianca e <strong>menor o grau</strong>, maior a chance de resolucao espontanea — pois a porcao intramural cresce com o crescimento da bexiga.</p></div>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Alta probabilidade de prova</span></div>
+<ol>
+<li><strong>Gold standard diagnostico:</strong> uretrocistografia miccional (nao ecografia, nao TC)</li>
+<li><strong>Mecanismo:</strong> ausencia de esfinter anatomico → esfinter funcional pelo detrusor → porcao intramural curta = refluxo</li>
+<li><strong>Paciente classico:</strong> crianca 2–6 anos com ITU recorrente</li>
+<li><strong>Tecnica de Gregoir:</strong> alonga porcao intramural; 3–5 cm minimo</li>
+<li><strong>Graus I–III = conservador; IV–V = cirurgia ou derivacao</strong></li>
+<li><strong>Nao operar sem tratar a ITU primeiro</strong></li>
+<li><strong>Grau V → derivacao urinaria</strong> (Bricker, sigmoideostomia)</li>
+<li><strong>Bexiga neurogenica:</strong> mielomeningocele (congenita) ou trauma medular (adulto)</li>
+<li><strong>Sindrome Eagle-Barrett:</strong> ausencia muscular abdominal + RVU quase universal</li>
+<li><strong>Prostatectomia</strong> pode causar RVU iatrogeNico por lesao do colo vesical</li>
+</ol>
+<div class="callout callout-example"><span class="callout-title"><span class="callout-icon">📋</span> Caso clinico classico de prova</span><p>Menino de 3 anos, 3 episodios de pielonefrite nos ultimos 8 meses, febre alta, urocultura +. Proxima conduta? → <strong>UCG miccional</strong> para confirmar e graduar o RVU.</p></div>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>REFLUJO VESICOURETERAL</p>
+<p>|</p>
+<table><thead><tr><th>— CAUSA PRINCIPAL: porcao intramural curta → esfinter funcional falha</th></tr></thead><tbody><tr><td>— CAUSAS SECUNDARIAS</td></tr><tr><td>— Bexiga neurogenica (mielomeningocele / trauma medular)</td></tr><tr><td>— Cistite de repeticao (hiperpressao)</td></tr><tr><td>— Ureterocele (obstrucao)</td></tr><tr><td>— Eagle-Barrett (sem musculo abdominal)</td></tr><tr><td>— Iatrogenia (prostatectomia)</td></tr><tr><td>— PACIENTE</td></tr><tr><td>— Criancas 2-6 anos com ITU recorrente</td></tr><tr><td>— Adultos > 50 com ITU</td></tr><tr><td>— DIAGNOSTICO: UCG Miccional (gold standard)</td></tr><tr><td>— Ecografia (triagem)</td></tr><tr><td>— Cintilografia DMSA (cicatriz renal)</td></tr><tr><td>— GRAUS</td></tr><tr><td>— I-III: conservador + profilaxia antibiotica</td></tr><tr><td>— IV-V: cirurgia ou derivacao</td></tr><tr><td>— TRATAMENTO CIRURGICO</td></tr><tr><td>— Tratar ITU ANTES de operar</td></tr><tr><td>— Gregoir / Cohen / Politano-Leadbetter</td></tr><tr><td>— Objetivo: porcao intramural 3-5 cm</td></tr><tr><td>— Graus IV-V: Bricker / sigmoideostomia</td></tr><tr><td>— COMPLICACOES POS-OP</td></tr><tr><td>— Estenose ureterovesical (mais temida)</td></tr><tr><td>— Persistencia do refluxo</td></tr><tr><td>— Disfuncao vesical transitoria</td></tr><tr><td>— RESOLUCAO ESPONTANEA</td></tr><tr><td>— Grau I: 80-90%</td></tr><tr><td>— Grau II: 70-80%</td></tr><tr><td>— Grau III: 50-60%</td></tr><tr><td>— Graus IV-V: < 20% / < 5%</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>P1:</strong> Qual e a base anatomica do mecanismo antirrefluxo normal? Por que ele falha no RVU primario?</p>
+<blockquote><strong>R:</strong> A porcao intramural do ureter, ao ser comprimida pelo detrusor, funciona como esfinter. No RVU primario, essa porcao e congenitamente curta → o detrusor nao consegue fechá-la adequadamente.</blockquote>
+<p><strong>P2:</strong> Qual o exame de escolha para diagnosticar RVU? O que ele mostra?</p>
+<blockquote><strong>R:</strong> Uretrocistografia miccional — contraste iodado injetado via sonda; radiografia durante a miccao mostra contraste subindo ao ureter/rim.</blockquote>
+<p><strong>P3:</strong> Um menino de 4 anos tem RVU grau II bilateral. Qual a conduta e qual o prognostico esperado?</p>
+<blockquote><strong>R:</strong> Tratamento conservador com profilaxia antibiotica continua + UCG anual. Resolucao espontanea esperada em ~70-80% dos casos de grau II.</blockquote>
+<p><strong>P4:</strong> Qual e o principio tecnico de todas as tecnicas de reimplantacao ureteral?</p>
+<blockquote><strong>R:</strong> Criar porcao intramural de 3–5 cm com relacao comprimento:diametro de 5:1 para que o detrusor funcione como esfinter funcional.</blockquote>
+<p><strong>P5:</strong> Paciente adulto com prostatectomia radical ha 3 anos evolui com ITUs recorrentes e pielonefrite. O que suspeitar?</p>
+<blockquote><strong>R:</strong> RVU iatrogenia por lesao do colo vesical durante a cirurgia. Investigar com UCG miccional.</blockquote>
+<p><strong>P6:</strong> Por que o dano renal da pielonefrite por RVU começa na medula e nao no cortex?</p>
+<blockquote><strong>R:</strong> A urina infectada que sobe pelo ureter alcanca primeiramente a pelve e o intersticio medular. A medula e o primeiro territorio atingido → comprometimento da capacidade de concentrar urina (Guyton Cap. 32).</blockquote>
+<p><strong>P7:</strong> Cite 3 causas de RVU secundario.</p>
+<blockquote><strong>R:</strong> (1) Bexiga neurogenica (mielomeningocele), (2) cistite de repeticao, (3) Sindrome Eagle-Barrett.</blockquote>
+<p><strong>P8:</strong> Qual a diferenca entre RVU e obstrucao ureteropelvica no UCG miccional?</p>
+<blockquote><strong>R:</strong> No RVU o contraste sobe ao ureter/rim durante a miccao (UCG positivo). Na obstrucao ureteropelvica o UCG e negativo — a hidronefrose tem outra causa.</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<h3>Mnemônico — GRUI (para lembrar as causas)</h3>
+<p><strong>G</strong> — <em>Genetico</em>/idiopatico (porcao intramural curta — mais frequente)</p>
+<p><strong>R</strong> — <em>Repeticao</em> de cistite (cistite de repeticao)</p>
+<p><strong>U</strong> — <em>Ureterocele</em> (rara)</p>
+<p><strong>I</strong> — <em>Iatrogenia</em> (prostatectomia)</p>
+<p><em>(Bexiga neurogenica e Eagle-Barrett ficam separados por serem categorias clinicas proprias)</em></p>
+<hr>
+<h3>Ancora visual — "Tunel do Gregoir"</h3>
+<p>Imagine um <strong>tunel de minhoca</strong> dentro da parede da bexiga: o ureter entra nesse tunel.</p>
+<p>Quando a bexiga aperta (miccao), o tunel se fecha e impede a urina de subir.</p>
+<p>Se o tunel e curto demais → nao fecha direito → refluxo.</p>
+<p>Gregoir alonga o tunel → problema resolvido.</p>
+<hr>
+<h3>Tabela-resumo final de memorização rapida</h3>
+<table><thead><tr><th>Pergunta</th><th>Resposta</th></tr></thead><tbody><tr><td>Exame gold standard</td><td>Uretrocistografia miccional</td></tr><tr><td>Mecanismo do esfinter</td><td>Detrusor comprime porcao intramural</td></tr><tr><td>Comprimento necessario</td><td>3–5 cm</td></tr><tr><td>Causa mais comum</td><td>Porcao intramural curta (primario/idiopatico)</td></tr><tr><td>Paciente classico</td><td>Crianca 2–6 anos com ITU recorrente</td></tr><tr><td>Graus conservadores</td><td>I–III (+ profilaxia antibiotica)</td></tr><tr><td>Graus cirurgicos</td><td>IV–V</td></tr><tr><td>Tecnica do professor</td><td>Gregoir</td></tr><tr><td>Tecnica mais usada no mundo</td><td>Cohen (transtrigonal)</td></tr><tr><td>Derivacao em grau V</td><td>Bricker / sigmoideostomia</td></tr><tr><td>Resolucao espontanea grau I</td><td>80–90%</td></tr><tr><td>Complicacao cirurgica mais temida</td><td>Estenose ureterovesical</td></tr><tr><td>Causa neurogenica congenita</td><td>Mielomeningocele</td></tr><tr><td>Sindrome sem musculo abdominal</td><td>Eagle-Barrett (Prune Belly)</td></tr></tbody></table>
+<hr>
+<h2>📌 Lacunas Identificadas</h2>
+<table><thead><tr><th>Lacuna</th><th>Status</th><th>Fonte sugerida</th></tr></thead><tbody><tr><td>Cintilografia DMSA — protocolo detalhado</td><td>Nao coberto em aula</td><td>Smith-Tanagho Cap. Reflujo</td></tr><tr><td>Indicacoes de UCG vs. cintilografia por faixa etaria</td><td>Parcialmente coberto</td><td>Smith-Tanagho / diretrizes EAU</td></tr><tr><td>Tecnica de Cohen — detalhe cirurgico</td><td>Nao coberto em aula</td><td>Smith-Tanagho Cap. Reflujo</td></tr><tr><td>Profilaxia antibiotica — qual antibiotico, dose, duracao</td><td>Nao coberto</td><td>Smith-Tanagho / Diretrizes AAP 2011</td></tr><tr><td>RVU e gestacao / mulher adulta</td><td>Nao mencionado</td><td>Smith-Tanagho</td></tr></tbody></table>
+<hr>
+<h2>Navegacao</h2>
+<ul>
+<li>Prioridades P2 — Urologia</li>
+<li>Indice Urologia</li>
+<li>Proximo tema sugerido: P2-T07-Tumores-Renais-e-Vejiga — <code>Tumores Renais.pdf</code> ja ingerido</li>
+</ul>
+<hr>
+<p><em>Resumo elaborado em 23-06-2026 | Fonte principal: transcricao da aula do professor | Complemento: Guyton-Hall Cap.32 + Smith-Tanagho (bibliografico)</em></p>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T12</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">31 cards · <span class="starred-count">⭐ 16 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Defina reflujo vesicoureteral. Por que e clinicamente importante?</div><div class="fc-answer">Retorno patologico de urina da bexiga para o ureter e o rim durante a miccao. Importa porque e o principal fator predisponente de <strong>pielonefrite</strong> em criancas e pode causar <strong>dano renal permanente</strong> se nao tratado.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o paciente classico do reflujo vesicoureteral? Qual a regra?</div><div class="fc-answer">Crianca de <strong>2–6 anos</strong> (M ou F) com ITU recorrente. Regra: <strong>RVU ate provar o contrario</strong>. Tambem considerar em adultos > 50 anos com ITU de repeticao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Por que NAO existe esfinter anatomico na juncao ureterovesical? Qual e o mecanismo de continencia normal?</div><div class="fc-answer">Nao ha esfinter anatomico real. O mecanismo e <strong>funcional</strong>: o <strong>detrusor</strong>, ao se contrair, comprime a <strong>porcao intramural</strong> do ureter (comprimento minimo 3–5 cm), impedindo o refluxo. Se essa porcao e curta, o mecanismo falha.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a causa mais frequente de RVU? Qual e o mecanismo?</div><div class="fc-answer"><strong>RVU primario / idiopatico</strong> — porcao intramural congenitamente curta. O detrusor nao consegue comprimi-la durante a miccao → orificio permanece aberto → urina sobe.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Cite 5 causas de RVU (alem do primario).</div><div class="fc-answer">1. <strong>Ureterocele</strong> (obstrucao distal) 2. <strong>Bexiga neurogenica</strong> (mielomeningocele ou trauma medular) 3. <strong>Cistite de repeticao</strong> (hiperpressao vesical) 4. <strong>Sindrome Eagle-Barrett</strong> (ausencia de musculatura abdominal) 5. <strong>Iatrogenia</strong> — prostatectomia danando colo vesical</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o gold standard para diagnostico e graduacao do RVU? Descreva a tecnica.</div><div class="fc-answer"><strong>Uretrocistografia miccional</strong> (<em>uretrocistografia miccional</em>). Tecnica: inserir sonda vesical → infundir contraste iodado → radiografar durante a miccao. Positivo se contraste sobe ao ureter ou rim.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Descreva os 5 graus do RVU e o que cada um indica clinicamente.</div><div class="fc-answer">- <strong>Grau I:</strong> contraste so no ureter
+- <strong>Grau II:</strong> atinge rim, sem dilatacao
+- <strong>Grau III:</strong> dilatacao leve de ureter e calices
+- <strong>Grau IV:</strong> dilatacao marcada, ureter tortuoso
+- <strong>Grau V:</strong> ureteronefrosis grave; risco de dano renal irreversivel</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a conduta para RVU graus I–III? E para graus IV–V?</div><div class="fc-answer"><strong>Graus I–III:</strong> tratamento <strong>conservador</strong> — profilaxia antibiotica continua + UCG de controle anual. <strong>Graus IV–V:</strong> <strong>cirurgia</strong> (reimplantacao ureteral) ou derivacao urinaria; grau V pode exigir Bricker ou sigmoideostomia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e a regra obrigatoria ANTES de operar o RVU?</div><div class="fc-answer"><strong>Tratar a ITU primeiro.</strong> Nunca operar com infeccao ativa. Sequencia: tratar ITU → estudar com UCG → planejar cirurgia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Descreva a tecnica de Gregoir. Qual e o objetivo?</div><div class="fc-answer">Incisao na <strong>parede muscular</strong> da bexiga <strong>sem abrir a mucosa</strong>. Cria-se um tunel, o ureter e inserido e a musculatura e fechada por cima. Objetivo: <strong>alongar a porcao intramural para minimo 3–5 cm</strong> para que o detrusor funcione como esfinter.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Compare as 3 tecnicas de reimplantacao ureteral: Gregoir, Cohen e Politano-Leadbetter.</div><div class="fc-answer">| Tecnica | Via | Detalhe |
+|---|---|---|
+| <strong>Gregoir</strong> | Extravesical | Sem cistotomia; preferida pelo professor |
+| <strong>Cohen</strong> | Intravesical | Ureter cruzado horizontalmente; mais usada no mundo |
+| <strong>Politano-Leadbetter</strong> | Intravesical | Orificio movido cranial + medial; classica |
+Todas criam porcao intramural 3–5 cm.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a chance de resolucao espontanea do RVU grau I e grau II em criancas jovens?</div><div class="fc-answer"><strong>Grau I:</strong> ~80–90%. <strong>Grau II:</strong> ~70–80%. A resolucao ocorre porque a porcao intramural cresce com o desenvolvimento vesical. Graus IV–V raramente resolvem (< 20% e < 5%, respectivamente).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que a profilaxia antibiotica e usada no tratamento conservador do RVU? Quais antibioticos?</div><div class="fc-answer">Para manter <strong>urina esteril</strong> e prevenir pielonefrites durante a fase de espera da resolucao espontanea. Antibioticos: <strong>nitrofurantoina</strong>, <strong>trimetoprim-sulfametoxazol</strong> (TMP-SMX), <strong>amoxicilina</strong> (em lactentes < 2 meses).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando suspender a profilaxia antibiotica no RVU conservador?</div><div class="fc-answer">1. <strong>UCG de controle mostra reducao do grau para 0</strong> 2. Idade > 5–7 anos (maturacao do mecanismo) 3. Ausencia de novas pielonefrites por <strong>2 anos</strong></div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e a Sindrome de Eagle-Barrett (Prune Belly)? Qual a relacao com RVU?</div><div class="fc-answer">Tríade: <strong>(1) ausencia da musculatura abdominal</strong> + <strong>(2) malformacoes do trato urinario</strong> (bexiga gigante, ureteres tortuosos) + <strong>(3) criptorquidia bilateral</strong>. RVU e <strong>quase universal</strong> nesses pacientes. Afeta principalmente meninos. Expectativa de vida reduzida por ITUs de repeticao e insuficiencia renal.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e uma ureterocele? Como se apresenta e como se trata?</div><div class="fc-answer">Dilatacao cistico-obstrutiva do <strong>segmento intramural distal</strong> do ureter, formando um "balao" dentro da bexiga. Diagnostico: ecografia (estrutura anecogenica no trígono). Tratamento 1a linha: <strong>puncao endoscopica</strong> transuretral. Se persistir refluxo: ureteroneocistostomia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Compare RVU com Obstrucao Ureteropelvica (OUP) — como diferenciar?</div><div class="fc-answer">| | RVU | OUP |
+|---|---|---|
+| UCG miccional | <strong>Positivo</strong> (contraste sobe) | <strong>Negativo</strong> |
+| Hidronefrose | Com ureteroectasia | Sem ureteroectasia |
+| Causa | Porcao intramural curta | Obstrucao na juncao ureteropelvica |
+| Tratamento | Reimplante ureteral | Pieloplastia |</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Como o RVU causa pielonefrite e dano renal? Qual e a sequencia?</div><div class="fc-answer">Urina + bacterias sobe ao ureter → alcanca pelve renal → infeccao da <strong>medula renal</strong> (primeiro local atingido) → compromete concentracao urinaria → se cronico: lesao tubular + glomerular + DRC / cicatriz renal. (Guyton-Hall Cap. 32)</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que o dano renal por pielonefrite começa na medula e nao no cortex?</div><div class="fc-answer">A urina infectada que sobe pelo ureter atinge primeiro a <strong>pelve renal e o intersticio medular</strong>. O cortex e comprometido secundariamente. Por isso o primeiro sinal funcional e <strong>perda da capacidade de concentrar urina</strong> (funcao tubular medular).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Quais exames complementam a UCG miccional na investigacao do RVU?</div><div class="fc-answer">- <strong>Ecografia renal:</strong> hidronefrose, tamanho renal, cicatrizes (triagem inicial)
+- <strong>Cintilografia com DMSA:</strong> documenta <strong>cicatriz renal permanente</strong> pos-pielonefrite
+- <strong>Urocultura:</strong> confirma ITU e identifica agente</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e a causa de bexiga neurogenica <strong>congenita</strong> e qual a causa em adultos?</div><div class="fc-answer"><strong>Congenita:</strong> mielomeningocele (malformacao do tubo neural). <strong>Adulto:</strong> lesao traumatica da coluna vertebral. Ambas causam perda do controle do detrusor → hiperpressao vesical → RVU secundario.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Como a cistite de repeticao causa RVU?</div><div class="fc-answer">A inflamacao cronica da bexiga aumenta a <strong>pressao intravesical</strong> durante a miccao, sobrecarregando o mecanismo esfincteriano funcional. O orificio ureteral nao resiste → refluxo secundario.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que pode ocorrer se o polo inferior de um rim for mais afetado que o polo superior no RVU?</div><div class="fc-answer">O ureter que drena o polo inferior e frequentemente o mais curto, com porcao intramural menor. O detrusor falha especificamente nesse ureter → refluxo e dano limitado ao <strong>polo inferior</strong> (nao ao rim todo).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual e o tratamento para RVU grau V com bexiga neurogenica?</div><div class="fc-answer"><strong>Derivacao urinaria</strong> — opcoes: nefrostomia, ureterostomia, <strong>tecnica de Bricker</strong> (segmento ileal exteriorizado), <strong>sigmoideostomia</strong> (ureteres no sigmoide). A bexiga nao funciona → urina precisa ser desviada.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a complicacao cirurgica mais temida apos reimplantacao ureteral? Quais outras podem ocorrer?</div><div class="fc-answer">Mais temida: <strong>estenose ureterovesical</strong> (obstrucao pos-reimplante; ~1–2%). Outras: persistencia/recorrencia do refluxo (5–10%), disfuncao vesical transitoria, ITU pos-operatoria.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a desvantagem especifica da tecnica de Cohen?</div><div class="fc-answer">O orificio ureteral muda de posicao (cruzado horizontalmente pelo trigono). Isso <strong>dificulta acesso endoscopico futuro</strong> ao ureter (ex: ureteroscopia) caso necessario.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Prostatectomia radical pode causar RVU? Qual o mecanismo?</div><div class="fc-answer">Sim. A prostatectomia pode lesionar o <strong>colo vesical</strong>, prejudicando o mecanismo esfincteriano. Historicamente: 80% impotencia + 60% incontinencia (cirurgia aberta). Com robotica/laparoscopica: ~30% de complicacoes (melhor visualizacao dos nervos eretores).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual o mnemônico para lembrar as causas de RVU?</div><div class="fc-answer"><strong>GRUI</strong>
+- <strong>G</strong> — Genetico/idiopatico (porcao intramural curta — mais frequente)
+- <strong>R</strong> — Repeticao de cistite
+- <strong>U</strong> — Ureterocele
+- <strong>I</strong> — Iatrogenia (prostatectomia)
+<em>(Bexiga neurogenica e Eagle-Barrett sao categorias clinicas proprias)</em></div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Qual a apresentacao de um caso clinico classico de RVU para prova?</div><div class="fc-answer">Menino de 3–5 anos, <strong>3 episodios de pielonefrite</strong> em 12 meses, febre alta, prostacao, urocultura positiva. Proxima conduta: <strong>UCG miccional</strong> para confirmar e graduar o RVU → decisao terapeutica baseada no grau.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>⭐ Quais sao os fatores favoraveis para resolucao espontanea do RVU?</div><div class="fc-answer">1. <strong>Idade jovem</strong> (< 2 anos — a bexiga ainda cresce muito) 2. <strong>Grau baixo</strong> (I ou II) 3. <strong>Unilateral</strong> 4. Ausencia de cicatriz renal previa 5. ITU controlada</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Em que situacao o ácido hialuronico e utilizado no RVU? Qual a limitacao?</div><div class="fc-answer">Injecao endoscopica <strong>submucosa no orificio ureteral</strong> para criar um "coxim" que aumenta a resistencia ao refluxo — alonga funcionalmente a porcao intramural. Indicado em graus I–III. Limitacoes: eficacia menor em graus IV–V; possivel extrusao do material; o professor nao tem experiencia pessoal com a tecnica.</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

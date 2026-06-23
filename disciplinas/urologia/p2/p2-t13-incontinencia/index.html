@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T13 — Incontinência Urinária — MedVaultWeb Urologia P2">
+  <title>P2-T13 — Incontinência Urinária — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #01579b; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #01579b 0%, #0288d1 100%);">
+    <h1>💧 Incontinência Urinária</h1>
+    <p>IUE · IUU · Bexiga Hiperativa · OAB · Mirabegron — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T13</span></div>
+  <div class="content-area">
+    
+    <div class="resumo-content">
+      <h1>P2-T13 — Incontinencia Urinaria (<em>Incontinencia Urinaria</em>)</h1>
+<blockquote>🖥️ <strong>Fonte:</strong> Incontinencia Urinaria.pptx (35 slides — imagem-based) 🎓 <strong>PREGUNTAS:</strong> Incontinencia Urinaria-PREGUNTAS.pptx (7 questoes) 📚 <strong>Bibliografico:</strong> Smith-Tanagho 18a ed. Cap. Incontinência + conhecimento padrao</blockquote>
+<hr>
+<h2>1. Visao Geral</h2>
+<p><strong>Incontinencia urinaria</strong> (<em>incontinencia urinaria</em> — IU) e a perda involuntaria de urina em quantidade ou momento que causa problema social, higienico ou de qualidade de vida.</p>
+<p><strong>Epidemiologia:</strong></p>
+<ul>
+<li><strong>Mais frequente em MULHERES</strong> (5-8x mais que homens) — pegadinha do PREGUNTAS</li>
+<li>Alta prevalencia na populacao geral: 30-40% das mulheres adultas</li>
+<li>Aumenta com a idade (especialmente > 75 anos)</li>
+<li>Pode ser sintoma de debut de doencas graves (Ca bexiga, doenca neurológica)</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Pegadinha PREGUNTAS</span><p>"Incontinencia e mais frequente em homens" = <strong>FALSO</strong> — e mais frequente em MULHERES. A unica excepcao e a incontinencia por transbordamento (overflow) — mais comum em homens por HPB.</p></div>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<table><thead><tr><th>Tipo</th><th>Mecanismo</th><th>Gatilho</th><th>Pergunta tipica</th></tr></thead><tbody><tr><td><strong>De esforco</strong> (IUE)</td><td>Hipermobilidade uretral / deficiencia do esfíncter</td><td>Tosse, espirro, riso, exercicio</td><td>Mulher 55a, 4 partos, perde ao tossir</td></tr><tr><td><strong>De urgencia</strong> (IUU)</td><td>Hiperatividade do detrusor</td><td>Urgencia suita, nao da tempo</td><td>Mulher 35a, urgencia intensa, nao chega ao banheiro</td></tr><tr><td><strong>Mista</strong></td><td>IUE + IUU</td><td>Ambos</td><td>Mais comum em > 75 anos</td></tr><tr><td><strong>Por transbordamento</strong></td><td>Bexiga superdistendida → gotejamento</td><td>Continuo, sem urgencia</td><td>Homem com HPB</td></tr><tr><td><strong>Funcional</strong></td><td>Vias urinarias normais, paciente imóvel</td><td>—</td><td>Demencia, paralisia</td></tr></tbody></table>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Incontinencia de Esforco (<em>Incontinencia de Esfuerzo</em>)</h3>
+<p><strong>Definicao:</strong> perda de urina ao aumento da pressao abdominal (sem contracao do detrusor).</p>
+<p><strong>Mecanismo:</strong> a pressao intra-abdominal elevada supera a resistencia uretral quando o suporte anatomico esta comprometido.</p>
+<p><strong>Dois mecanismos anatomicos:</strong></p>
+<ol>
+<li><strong>Hipermobilidade uretral:</strong> uretra desce ao esforco por fraqueza do suporte pelvico (ligamentos, musculatura)</li>
+<li><strong>Deficiencia intrinseca do esfíncter (ISD):</strong> esfíncter nao gera pressao suficiente mesmo em repouso</li>
+</ol>
+<p><strong>Causas femininas:</strong></p>
+<ul>
+<li><strong>Partos vaginais multiplos (multiparidade)</strong> — causa mais comum; lesao do assoalho pelvico</li>
+<li>Obesidade (aumento cronica da pressao abdominal)</li>
+<li>Menopausa (hipoestrogenismo → atrofia uretral e vaginal)</li>
+<li><strong>Cistocele</strong> — descenso da bexiga por fraqueza do suporte anterior</li>
+<li>Histerectomia, cirurgias pelvicas previas</li>
+<li>Tosse cronica (tabagismo, DPOC)</li>
+</ul>
+<p><strong>Causas masculinas:</strong></p>
+<ul>
+<li><strong>Pos-prostatectomia radical</strong> (lesao do esfíncter externo)</li>
+<li>RTU-P (raro)</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Cistocele = causa de incontinencia de esforco</span><p>Cistocele (descenso da bexiga atraves da parede vaginal anterior) comprometere o mecanismo de fechamento uretral → IUE. NENHUMA causa listada para IUE inclui HPB ou ureterocele.</p></div>
+<p><strong>Clinica:</strong></p>
+<ul>
+<li>Perda ao tossir, espirrar, rir, subir escadas, levantar peso</li>
+<li>SEM urgencia (a perda e sincrona com o esforco)</li>
+<li>Volume pequeno a moderado por episodio</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>Manobra de Valsalva/tosse:</strong> com bexiga moderadamente cheia → observar perda pelo meato</li>
+<li>Teste do absorvente (pad test): quantificar volume perdido em 1h de atividade</li>
+<li><strong>Urodinamica:</strong> demonstra perda sem contracao do detrusor (Leak Point Pressure)</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<table><thead><tr><th>Linha</th><th>Intervencao</th></tr></thead><tbody><tr><td>1a linha</td><td><strong>Fisioterapia pelvica</strong> (exercicios de Kegel — contracao do elevador do anus)</td></tr><tr><td>2a linha</td><td><strong>Duloxetina</strong> (IRSN — aumenta tonus do esfíncter uretral); pessário vaginal</td></tr><tr><td>Cirurgico</td><td><strong>Sling uretral medio</strong> (TVT ou TOT) — <strong>padrao ouro cirurgico</strong>; colpossuspensao de Burch</td></tr></tbody></table>
+<hr>
+<h3>3.2 Incontinencia de Urgencia — Bexiga Hiperativa (<em>Bexiga Hiperactiva</em>)</h3>
+<p><strong>Definicao:</strong> perda precedida de urgencia miccional intensa e subita que nao da tempo de chegar ao banheiro.</p>
+<p><strong>Mecanismo:</strong> contracao involuntaria e inibicao do detrusor (<em>hiperatividade do detrusor</em>).</p>
+<p><strong>Sindrome da Bexiga Hiperativa (OAB — <em>Overactive Bladder</em>):</strong></p>
+<ul>
+<li>Urgencia (principal sintoma) ± frequencia (> 8x/dia) ± nocturia ± incontinencia</li>
+<li>OAB "molhada" (com incontinencia) vs. OAB "seca" (sem incontinencia)</li>
+</ul>
+<p><strong>Causas:</strong></p>
+<ul>
+<li>Idiopatica (maioria — causa nao identificada)</li>
+<li><strong>Neurologica:</strong> AVC, Parkinson, esclerose multipla, lesao medular (bexiga neurologica)</li>
+<li><strong>Irritativa local:</strong> ITU, calculose vesical, Ca bexiga, radioterapia</li>
+<li><strong>Habitos miccionais:</strong> miccao preventiva muito frequente "trina" a bexiga a se contrair com pouco volume</li>
+</ul>
+<p><strong>Clinica:</strong></p>
+<ul>
+<li>Urgencia subita, incontrolavel — "vontade e vai embora"</li>
+<li>Frequencia aumentada (poliaquiuria) — > 8x/dia</li>
+<li>Nocturia — acorda para urinar</li>
+<li>Perda antes de chegar ao banheiro (pequeno a moderado volume)</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Clinico (historia tipica) + diario miccional</li>
+<li>Afastar causas tratáveis: urina I/urocultura (excluir ITU), cistoscopia (excluir Ca bexiga em hematuria)</li>
+<li><strong>Urodinamica:</strong> demonstra contraciones involuntarias do detrusor durante enchimento</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<table><thead><tr><th>Linha</th><th>Intervencao</th></tr></thead><tbody><tr><td>1a linha</td><td><strong>Treino vesical</strong> (aumentar progressivamente o intervalo miccional) + <strong>exercicios de Kegel</strong></td></tr><tr><td>Farmacologico</td><td><strong>Antimuscarinicos:</strong> oxibutinina, solifenacina, tolterodina, fesoterodina — inibem contracao do detrusor</td></tr><tr><td></td><td><strong>Mirabegron</strong> (agonista beta-3 — relaxa detrusor; sem efeitos anticolinérgicos — preferido em idosos)</td></tr><tr><td>Invasivo</td><td><strong>Toxina botulinica intravesical</strong> (Botox no detrusor) — paralisa contracoes; dura 6-12 meses</td></tr><tr><td></td><td><strong>Estimulacao sacral</strong> (neuromodulacao): modula o reflexo miccional</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Antimuscarinicos — efeitos adversos</span><p>Xerostomia (boca seca), constipacao, retencao urinaria, confusao mental (idosos). Por isso, <strong>mirabegron</strong> e preferido em idosos (sem efeito anticolinergico).</p></div>
+<hr>
+<h3>3.3 Incontinencia Mista (<em>Incontinencia Mixta</em>)</h3>
+<ul>
+<li>Coexistencia de IUE + IUU no mesmo paciente</li>
+<li><strong>Mais comum em mulheres acima de 75 anos</strong> (o corpo envelhecido perde ambos os mecanismos de controle)</li>
+<li>Tratamento: abordar o componente predominante primeiro</li>
+</ul>
+<hr>
+<h3>3.4 Incontinencia por Transbordamento (<em>Incontinencia por Rebosamiento</em>)</h3>
+<p><strong>Mecanismo:</strong> bexiga cronicamente superdistendida (por obstrucao ou bexiga hipotônica) — a pressao vesical ultrapassa a resistencia uretral → gotejamento involuntario continuo.</p>
+<p><strong>Caracteristicas:</strong></p>
+<ul>
+<li>Perda continua, em pequenos volumes, sem urgencia</li>
+<li>Bexiga palpavel suprapubica (globo vesical)</li>
+<li>Residuo pos-miccional > 300mL (medido por USG ou cateterismo)</li>
+</ul>
+<p><strong>Causas:</strong></p>
+<ul>
+<li><strong>Masculino:</strong> HPB (mais comum), estenose uretral, valva uretral</li>
+<li><strong>Feminino:</strong> cistocele grave, bexiga neurologica</li>
+<li>Bexiga hipotonica: DM (neuropatia autonômica), lesao cauda equina, pós-cx pelvica</li>
+</ul>
+<p><strong>Tratamento:</strong> remover a causa (RTUP para HPB) + cateterismo vesical intermitente (CIL)</p>
+<hr>
+<h2>4. Classificacao — Resumo Completo</h2>
+<p>```</p>
+<p>INCONTINENCIA URINARIA</p>
+<p>|</p>
+<p>|-- Por ESFORCO (IUE)</p>
+<p>|   |-- Hipermobilidade uretral (multiparidade, cistocele, menopausa)</p>
+<p>|   |-- Deficiencia do esfíncter (pos-prostatectomia)</p>
+<table><thead><tr><th>-- Tratamento: Kegel → Duloxetina → Sling cirurgico</th></tr></thead><tbody><tr><td>-- De URGENCIA (IUU) — Bexiga Hiperativa</td></tr><tr><td>-- Contracao involuntaria do detrusor</td></tr><tr><td>-- Causas: idiopatica, neurologica, ITU, Ca bexiga</td></tr><tr><td>-- Tratamento: treino vesical → antimuscarinicos/mirabegron → Botox → neuromodulacao</td></tr><tr><td>-- MISTA</td></tr><tr><td>-- IUE + IUU combinados</td></tr><tr><td>-- Mais comum em > 75 anos</td></tr><tr><td>-- Por TRANSBORDAMENTO</td></tr><tr><td>-- Obstrucao cronica ou bexiga hipotonica</td></tr><tr><td>-- Mais comum em homens (HPB)</td></tr><tr><td>-- Tratamento: remover obstrucao + CIL</td></tr><tr><td>-- FUNCIONAL</td></tr><tr><td>-- Vias normais, incapacidade de chegar ao banheiro</td></tr><tr><td>-- Idosos com demencia, paralisia</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>5. Comparacao — IUE vs. IUU</h2>
+<table><thead><tr><th>Criterio</th><th>Esforco (IUE)</th><th>Urgencia (IUU)</th></tr></thead><tbody><tr><td><strong>Gatilho</strong></td><td>Tosse, espirro, exercicio</td><td>Urgencia suita, sem gatilho fisico</td></tr><tr><td><strong>Contracao do detrusor</strong></td><td>Ausente</td><td><strong>Presente</strong> (contracao involuntaria)</td></tr><tr><td><strong>Urgencia</strong></td><td>Nao</td><td>Sim — caracteristica definidora</td></tr><tr><td><strong>Volume perdido</strong></td><td>Pequeno (sincronco ao esforco)</td><td>Variavel (pode ser grande)</td></tr><tr><td><strong>Perfil</strong></td><td>Mulher multipara, pos-menopausa</td><td>Qualquer idade, qualquer sexo</td></tr><tr><td><strong>Diagnostico</strong></td><td>Manobra de tosse + urodinamica</td><td>Urodinamica (det. hiperativo)</td></tr><tr><td><strong>Cirurgia</strong></td><td><strong>Sling</strong> (TVT/TOT)</td><td>Botox intravesical / neuromodulacao</td></tr><tr><td><strong>Farmacologia</strong></td><td>Duloxetina</td><td>Antimuscarinicos / Mirabegron</td></tr></tbody></table>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<p><strong>Questoes do PREGUNTAS:</strong></p>
+<blockquote>Q: Causa de incontinencia de esforco — qual e CORRETA? R: <strong>Cistocele</strong> — descenso da bexiga enfraquece suporte uretral → IUE. HPB e ureterocele NAO causam IUE.</blockquote>
+<blockquote>Q: IU — INCORRETO: R: "E mais frequente em homens" — <strong>FALSO</strong> (e mais frequente em MULHERES).</blockquote>
+<blockquote>Q: Fator de risco de IU — qual e correto? R: <strong>Habitos miccionais</strong> (miccao preventiva frequente condiciona hiperatividade vesical). Parto cesarea NAO e fator de risco (o vaginal e que lesiona o assoalho).</blockquote>
+<blockquote>Q: Incontinencia mista — LO CORRECTO? R: <strong>E a mais comum em maiores de 75 anos</strong> (opcao A).</blockquote>
+<blockquote>Q: Mulher 55a, 4 partos vaginais, perda ao tossir. Diagnostico? R: <strong>Incontinencia de esforco</strong> por multiparidade / lesao do assoalho pelvico.</blockquote>
+<blockquote>Q: Mulher 35a, urgencia intensa e incontrolavel, nao chega ao banheiro. Diagnostico? R: <strong>Incontinencia de urgencia</strong> (bexiga hiperativa) / hiperatividade do detrusor.</blockquote>
+<p><strong>Pegadinhas:</strong></p>
+<ol>
+<li>IU e mais frequente em <strong>MULHERES</strong> (nao homens)</li>
+<li>Parto <strong>vaginal</strong> lesiona o assoalho pelvico (cesariana NAO e fator de risco para IUE)</li>
+<li>Cistocele = causa de IUE (nao de urgencia)</li>
+<li>Mirabegron (agonista beta-3) e preferido em <strong>IDOSOS</strong> por nao ter efeito anticolinérgico</li>
+<li>Sling cirurgico (TVT/TOT) = padrao ouro para IUE cirurgica</li>
+<li>Incontinencia mista = mais comum em > 75 anos</li>
+</ol>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>INCONTINENCIA URINARIA</p>
+<p>|</p>
+<p>|-- MULHERES (mais freq): IUE + IUU + Mista</p>
+<table><thead><tr><th>-- HOMENS: transbordamento (HPB) > IUE (pos-cx)</th></tr></thead><tbody><tr><td>-- IUE: Kegel + duloxetina + sling (TVT/TOT)</td></tr><tr><td>Causas: cistocele, multiparidade, menopausa</td></tr><tr><td>-- IUU (bexiga hiperativa):</td></tr><tr><td>Treino vesical + antimuscarinicos/mirabegron + Botox/neuromodulacao</td></tr><tr><td>Causas: idiopatica, neurologica, ITU, Ca bexiga</td></tr><tr><td>-- MISTA: mais comum em > 75 anos</td></tr><tr><td>-- TRANSBORDAMENTO: HPB, bexiga hipotonica → residuo alto → cateterismo</td></tr><tr><td>-- FUNCIONAL: paciente imóvel, vias normais</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>Q1:</strong> Mulher de 55 anos, 4 partos vaginais, queixa de perda de urina ao tossir e espirrar. Tipo de incontinencia, mecanismo e tratamento inicial?</p>
+<blockquote>R: <strong>IUE</strong> por lesao do assoalho pelvico (multiparidade). Mecanismo: hipermobilidade uretral. Tratamento: <strong>exercicios de Kegel</strong> (1a linha).</blockquote>
+<p><strong>Q2:</strong> Mulher de 35 anos com urgencia miccional subita e intensa, frequencia > 10x/dia, nocturia. Diagnostico e tratamento farmacologico?</p>
+<blockquote>R: <strong>Bexiga hiperativa / IUU</strong>. Tratamento: <strong>antimuscarinicos</strong> (oxibutinina, solifenacina) — primeira escolha farmacologica. Em idosas: preferir mirabegron.</blockquote>
+<p><strong>Q3:</strong> Por que o parto cesarea NAO e fator de risco para incontinencia de esforco?</p>
+<blockquote>R: A IUE resulta de lesao do assoalho pelvico e do esfíncter, que ocorre no <strong>parto vaginal</strong>. O parto cesario nao traumatiza o assoalho pelvico — nao e fator de risco para IUE.</blockquote>
+<p><strong>Q4:</strong> Homem de 70 anos com HPB, perda continua de urina em pequenos volumes, bexiga palpavel. Tipo de IU e conduta?</p>
+<blockquote>R: <strong>Incontinencia por transbordamento</strong> (residuo pos-miccional elevado). Conduta: cateterismo vesical de alivio + tratamento da HPB (alfabloqueador → RTU-P se necessario).</blockquote>
+<p><strong>Q5:</strong> Por que o mirabegron e preferido em relacao aos antimuscarinicos em pacientes idosos com bexiga hiperativa?</p>
+<blockquote>R: Mirabegron e agonista beta-3 adrenergico — <strong>sem efeitos anticolinérgicos</strong>. Antimuscarinicos causam xerostomia, constipacao, retencao urinaria e confusao mental em idosos.</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<p><strong>Mnemônico tipos de IU — "ESTUF":</strong></p>
+<ul>
+<li><strong>E</strong>sforco (tosse, espirro)</li>
+<li><strong>S</strong>indrome de bexiga hiperativa / Urgencia</li>
+<li><strong>T</strong>ransbordamento (HPB, bexiga hipotonica)</li>
+<li><strong>U</strong>rgencia (ver S — sinonimo)</li>
+<li><strong>F</strong>uncional (paciente imóvel)</li>
+</ul>
+<p><strong>Mnemônico IUE — causas:</strong></p>
+<ul>
+<li>"<strong>MOCA</strong> → <strong>M</strong>ultiparidade + <strong>O</strong>besidade + <strong>C</strong>istocele + <strong>A</strong>trofia uretral (menopausa)"</li>
+</ul>
+<p><strong>Mnemônico tratamento IUU:</strong></p>
+<ul>
+<li>"<strong>TAB-M</strong> → <strong>T</strong>reino vesical → <strong>A</strong>ntimuscarinicos/mirabegron → <strong>B</strong>otox → neuro<strong>M</strong>odulacao sacral"</li>
+</ul>
+<hr>
+<blockquote>Controle: _Indice Relacionado: P2-T10-T11-Obstrucao-Litiasis (obstrucao bexiga/uretra) Proximo tema: Infeccoes-Inespecificas-e-Especificas-P2</blockquote>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T13</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">25 cards · <span class="starred-count">⭐ 10 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Em qual sexo a incontinencia urinaria e mais frequente?</div><div class="fc-answer"><strong>MULHERES</strong> — 5-8x mais frequente que em homens. Isso e o erro classico do PREGUNTAS: "mais frequente em homens" = INCORRETO.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais sao os 5 tipos principais de incontinencia urinaria?</div><div class="fc-answer">(1) Esforco (IUE) — tosse/espirro; (2) Urgencia (IUU/bexiga hiperativa) — urgencia intensa; (3) Mista — IUE+IUU; (4) Transbordamento — HPB/bexiga hipotonica; (5) Funcional — vias normais, paciente imóvel.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o tipo de incontinencia mais comum em mulheres acima de 75 anos?</div><div class="fc-answer"><strong>Incontinencia mista</strong> — combinacao de IUE + IUU. Em idosas, ambos os mecanismos de controle (suporte pelvico + contracao voluntaria do detrusor) estao comprometidos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Em que situacao a incontinencia por transbordamento e mais comum?</div><div class="fc-answer">Em <strong>homens com HPB</strong> — a obstrucao cronica leva a bexiga superdistendida com residuo elevado. Quando a pressao intravesical supera a resistencia uretral, ocorre gotejamento involuntario continuo.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que a incontinencia urinaria pode ser sinal de doenca grave?</div><div class="fc-answer">Pode ser manifestacao inaugural de: Ca bexiga (hematuria + urgencia), esclerose multipla (bexiga neurologica), Parkinson, AVC, tumor medular. Sempre investigar causas secundarias antes de tratar como "idiopatica".</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e OAB (Overactive Bladder) e quais sao seus 4 componentes?</div><div class="fc-answer">Sindrome da <strong>bexiga hiperativa</strong>: (1) <strong>Urgencia</strong> (principal, definidora), (2) Frequencia > 8x/dia, (3) Nocturia, (4) Incontinencia de urgencia (pode estar ausente = OAB "seca").</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais causas femininas de incontinencia de esforco e qual e a mais comum?</div><div class="fc-answer"><strong>Multiparidade/partos vaginais</strong> (mais comum) > obesidade > menopausa (hipoestrogenismo) > cistocele > cirurgias pelvicas previas. Parto vaginal lesiona musculos do assoalho e ligamentos de suporte uretral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>O cistocele e causa de qual tipo de incontinencia urinaria?</div><div class="fc-answer"><strong>Incontinencia de esforco (IUE)</strong> — o descenso da bexiga por fraqueza da parede vaginal anterior compromete o mecanismo de fechamento uretral durante o aumento da pressao abdominal. NAO causa incontinencia de urgencia.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que parto cesarea NAO e fator de risco para incontinencia de esforco?</div><div class="fc-answer">A IUE resulta de lesao do assoalho pelvico durante o <strong>parto vaginal</strong> (compressao do elevador do anus, distensao dos nervos pudendos). Na cesaria, o assoalho pelvico nao e traumatizado — nao e fator de risco.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento cirurgico padrao-ouro para IUE feminina?</div><div class="fc-answer"><strong>Sling uretral medio</strong> — TVT (Tension-free Vaginal Tape) ou TOT (Trans-Obturator Tape). Cria um suporte sob a uretra media, evitando hipermobilidade uretral ao esforco. Sucesso em 85-90% dos casos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual a sequencia de tratamento da IUE (esforco)?</div><div class="fc-answer">1a linha: <strong>exercicios de Kegel</strong> (fortalecimento do assoalho pelvico). 2a linha: <strong>duloxetina</strong> (IRSN — aumenta tonus do esfíncter uretral). Cirurgico: <strong>sling medio</strong> (TVT/TOT) — padrao ouro cirurgico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que sao os exercicios de Kegel e quando indicar?</div><div class="fc-answer">Contracao e relaxamento repetido do elevador do anus (musculatura do assoalho pelvico). Indicados como <strong>1a linha tanto na IUE quanto na IUU</strong>. Fortalecem o suporte uretral e melhoram o controle voluntario da miccao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o mecanismo de acao da duloxetina na incontinencia de esforco?</div><div class="fc-answer">Inibidor da recaptacao de serotonina e noradrenalina (IRSN). Aumenta a concentracao de serotonina e NA no nucleo de Onuf (nivel sacral) → aumenta o tonus do esfíncter estriado uretral → melhora a continencia ao esforco.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Caso clinico tipico de IUU: como se apresenta?</div><div class="fc-answer">Paciente (tipicamente mulher) com <strong>urgencia miccional subita e intensa</strong>, nao da tempo de chegar ao banheiro. Pode acordar a noite (nocturia). Perda ocorre <strong>antes</strong> de chegar ao banheiro. Gatilho pode ser a agua corrente, frio, chave na porta.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que "habitos miccionais" sao fator de risco para bexiga hiperativa?</div><div class="fc-answer">Miccao preventiva muito frequente (ir ao banheiro "por precaucao" mesmo sem vontade) <strong>condiciona a bexiga</strong> a se contrair com volumes cada vez menores → hiperatividade do detrusor. O treino vesical reverte esse padrao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o farmaco de 1a linha para bexiga hiperativa e qual o preferido em idosos?</div><div class="fc-answer"><strong>1a linha:</strong> antimuscarinicos (oxibutinina, solifenacina, tolterodina) — inibem a contracao do detrusor. <strong>Preferido em idosos:</strong> <strong>mirabegron</strong> (agonista beta-3 — sem efeitos anticolinérgicos como confusao mental, constipacao, retencao).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais os principais efeitos adversos dos antimuscarinicos na bexiga hiperativa?</div><div class="fc-answer">(Efeitos anticolinérgicos): <strong>xerostomia</strong> (boca seca) + <strong>constipacao</strong> + <strong>retencao urinaria</strong> + <strong>confusao mental</strong> (especialmente em idosos). Por isso, mirabegron (sem efeito anticolinérgico) e preferido em idosos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e o treino vesical e como funciona?</div><div class="fc-answer"><strong>Bladder training:</strong> programa de adiar progressivamente o intervalo miccional (ex: comecar de 1h → aumentar 15min a cada semana ate 3-4h entre as miccoes). Recondicionamento comportamental da bexiga hiperativa. E a <strong>1a linha de tratamento</strong> da IUU junto com exercicios de Kegel.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando indicar toxina botulinica intravesical (Botox) para bexiga hiperativa?</div><div class="fc-answer">Quando ha <strong>falha dos antimuscarinicos/mirabegron</strong> (refratarios a medicacao). Injetado diretamente no detrusor via cistoscopia — paralisa as contracoes involuntarias por 6-12 meses. Necessita re-aplicacao periodica.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais causas tratáveis de bexiga hiperativa devem ser EXCLUIDAS antes do tratamento?</div><div class="fc-answer">(1) <strong>ITU</strong> (urina I + urocultura — tratar infeccao pode curar a urgencia); (2) <strong>Ca bexiga</strong> (cistoscopia se hematuria ou > 50 anos); (3) calculose vesical; (4) causa neurologica (AVC, Parkinson, esclerose multipla). Sempre investigar antes de rotular como idiopatica.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e estimulacao sacral (neuromodulacao) e quando usar?</div><div class="fc-answer">Implantacao de eletrodo no forâme sacral S3 que modula o reflexo miccional (inibe aferentes da bexiga → reduz urgencia). Indicada em IUU <strong>refrataria</strong> a antimuscarinicos E ao Botox. E o tratamento de ultima linha.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Como se diferencia clinicamente a IUE da incontinencia por transbordamento?</div><div class="fc-answer"><strong>IUE:</strong> perda ao tosse/esforco, sem urgencia, bexiga normal ao USG, sem residuo. <strong>Transbordamento:</strong> perda continua em gotas, <strong>sem urgencia</strong>, bexiga distendida palpavel, residuo pos-miccional elevado (> 300mL). NAO ha gatilho de esforco.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento da incontinencia por transbordamento em homem com HPB?</div><div class="fc-answer">(1) Alivio imediato: cateterismo vesical (descompressao da bexiga); (2) Farmacologico: alfabloqueadores (tamsulosina) + 5-alfa-redutase (finasterida); (3) Cirurgico se refratario: <strong>RTU-P</strong> (resseccao transuretral da prostata).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e incontinencia funcional e qual a conduta?</div><div class="fc-answer">Perda de urina em paciente com <strong>trato urinario anatomicamente normal</strong> mas incapaz de chegar ao banheiro (demencia, imobilidade, depressao, barreiras fisicas). Conduta: otimizar mobilidade, adaptar o ambiente (comadre, banheiro acessivel), medicamentos adjuvantes.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Comparativo rapido: qual farmaco para cada tipo de IU?</div><div class="fc-answer">IUE → <strong>duloxetina</strong> (tonus uretral). IUU → <strong>antimuscarinicos</strong> ou <strong>mirabegron</strong> (relaxam detrusor). Transbordamento → <strong>alfabloqueadores</strong> (tamsulosina — para HPB) ou cateterismo. Funcional → nao ha farmaco especifico (adaptar ambiente).</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

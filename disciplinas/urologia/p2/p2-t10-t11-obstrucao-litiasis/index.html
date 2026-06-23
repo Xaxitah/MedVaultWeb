@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T10/T11 — Obstrução + Litiase Urinária — MedVaultWeb Urologia P2">
+  <title>P2-T10/T11 — Obstrução + Litiase Urinária — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #004d40; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #004d40 0%, #00796b 100%);">
+    <h1>🪨 Obstrução + Litiase Urinária</h1>
+    <p>VUP · HPB · Hidronefrose · Cálculos · Cólica Renal — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T10/T11</span></div>
+  <div class="content-area">
+    
+    <div class="resumo-content">
+      <h1>P2-T10/T11 — Obstrucao Urinaria e Litiasis</h1>
+<blockquote>🖥️ <strong>Fonte:</strong> Obstruccion urinaria.pptx (28 slides) + Litiasis.pptx (38 slides) — imagem-based 🎓 <strong>PREGUNTAS:</strong> Obstruccion-PREGUNTAS.pptx + questoes integradas no Litiasis.pptx 📚 <strong>Bibliografico:</strong> Smith-Tanagho 18a ed. — Cap. Obstrucao e Urolitiase ↔ Relacionado: Tema-T10-Litiasis-Resumo-Completo (versao P1)</blockquote>
+<hr>
+<h2>1. Visao Geral</h2>
+<p><strong>Obstrucao urinaria</strong> (<em>Obstruccion urinaria</em>) e qualquer impedimento ao fluxo normal da urina em qualquer nivel das vias urinarias — desde os calices renais ate o meato uretral externo.</p>
+<p><strong>Importancia clinica:</strong></p>
+<ul>
+<li>Obstrucao → aumento da pressao hidrostática → hidronefrosis</li>
+<li>Sem tratamento → atrofia renal → insuficiência renal cronica</li>
+<li>Frequentemente complicada por infeccao → dano adicional (pielonefrite obstructiva)</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Regra fundamental</span><p>Toda ITU de repeticao, especialmente em criancas e em homens jovens, deve alertar para a possibilidade de <strong>obstrucao urinaria subjacente</strong>. Tratar apenas a infeccao sem investigar a causa gera recidivas.</p></div>
+<p><strong>Litiasis urinaria</strong> (<em>Litiasis urinaria / Urolitiasis</em>) = formacao de calculos em qualquer parte do trato urinario. E a causa mais frequente de <strong>obstrucao adquirida no adulto jovem</strong>.</p>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<h3>Obstrucao Urinaria</h3>
+<table><thead><tr><th>Nivel</th><th>Exemplo congenito</th><th>Exemplo adquirido</th><th>Obstrucao</th></tr></thead><tbody><tr><td>Alta (rim/ureter)</td><td>Estenose UPJ, ureter ectopico</td><td>Calculo, tumor, fibrose retroperitoneal</td><td>Hidronefrosis</td></tr><tr><td>Baixa (bexiga/uretra)</td><td>Valva de uretra posterior, fimose</td><td>HPB, estenose uretral, calculo vesical</td><td>Retencao urinaria</td></tr></tbody></table>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Pegadinha recorrente no PREGUNTAS</span><p><strong>Valva de uretra posterior</strong> = causa CONGENITIA (NAO adquirida). <strong>Meningocele</strong> = causa CONGENITA (NAO adquirida — e mal-formacao ao nascimento). <strong>Calculo / HPB / fibrose retroperitoneal</strong> = causas ADQUIRIDAS.</p></div>
+<h3>Litiasis Urinaria</h3>
+<table><thead><tr><th>Tipo</th><th>Composicao</th><th>Radiopacidade</th><th>Associacao</th></tr></thead><tbody><tr><td><strong>Calcio (oxalato/fosfato)</strong></td><td>CaOx, CaFos</td><td>Radiopaco</td><td>Hipercalciuria, hiperparatireoidismo</td></tr><tr><td><strong>Estruvita</strong></td><td>MgNH4PO4</td><td>Radiopaco</td><td>ITU por bacterias urease-positivas</td></tr><tr><td><strong>Acido urico</strong></td><td>Urato</td><td><strong>RADIOTRANSPARENTE</strong></td><td>Gota, hiperuricemia</td></tr><tr><td><strong>Cistina</strong></td><td>Cistina</td><td>Fraco radiopaco</td><td>Cistinuria (doenca hereditaria)</td></tr></tbody></table>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Obstrucao Urinaria — Fisiopatologia</h3>
+<p>Independentemente da causa, o mecanismo final e o mesmo:</p>
+<p>```</p>
+<p>Obstrucao → aumento da pressao intraluminal</p>
+<p>    ↓</p>
+<p>Distensao do sistema coletor (calices, pelve, ureter)</p>
+<p>    ↓</p>
+<p>Vasoconstriccao da microvasculatura renal</p>
+<p>    ↓</p>
+<p>Reducao do fluxo sanguineo renal (FSR)</p>
+<p>    ↓</p>
+<p>Reducao da taxa de filtracao glomerular (TFG)</p>
+<p>    ↓</p>
+<p>Atrofia tubular + fibrose intersticial (se cronico)</p>
+<p>    ↓</p>
+<p>Insuficiência renal</p>
+<p>```</p>
+<p><strong>Fases da obstrucao aguda (unilateral):</strong></p>
+<table><thead><tr><th>Fase</th><th>Tempo</th><th>Mecanismo</th><th>FSR</th></tr></thead><tbody><tr><td>Aguda</td><td>0-2h</td><td>Dilatacao arterial (PGE2) — tentativa de compensar</td><td>Aumentado</td></tr><tr><td>Intermediaria</td><td>2-5h</td><td>Vasoconstriccao + espasmo ureteral</td><td>Reducao de ate 50%</td></tr><tr><td>Cronica</td><td>> 24h</td><td>Atrofia tubular, fibrose, perda de nefrons funcionais</td><td>Reducao progressiva</td></tr></tbody></table>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> Obstrucao bilateral vs. unilateral</span><p>Obstrucao bilateral = insuficiência renal aguda mais rapida (sem compensacao pelo rim contralateral). Obstrucao unilateral cronica: rim contralateral hipertrofia para compensar.</p></div>
+<hr>
+<h3>3.2 Causas de Obstrucao — Classificacao</h3>
+<p><strong>Por origem:</strong></p>
+<table><thead><tr><th>Extrinsecas</th><th>Intrinsecas</th><th>Funcionais</th></tr></thead><tbody><tr><td>Fibrose retroperitoneal</td><td>Calculos (causa adquirida mais freq.)</td><td>Bexiga neurologica</td></tr><tr><td>Tumores (Ca prostata, Ca colo, linfomas)</td><td>Coagulos / debris</td><td>Veziga-esfinter dissinergico</td></tr><tr><td>Gravidez (compressao ureteral)</td><td>Estenose ureteral (pos-cx, pos-RVU)</td><td>Meningocele (congenito)</td></tr><tr><td>Aneurisma aortico</td><td>HPB (causa baixa adquirida + freq. em idosos)</td><td>—</td></tr></tbody></table>
+<p><strong>Por nivel anatomico:</strong></p>
+<table><thead><tr><th>Nivel</th><th>Causas congenitas</th><th>Causas adquiridas</th></tr></thead><tbody><tr><td>Rim / JUP</td><td>Estenose UPJ, duplicacao sistema coletor</td><td>Calculo, tumor renal</td></tr><tr><td>Ureter</td><td>Ureter ectopico, megaureter, ureterocele</td><td>Calculo, fibrose, tumor extrinseco</td></tr><tr><td>Bexiga / JUV</td><td>—</td><td>Ca bexiga, bexiga neurologica</td></tr><tr><td>Uretra</td><td><strong>Valva de uretra posterior (VUP)</strong></td><td>HPB, estenose uretral</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Valva de uretra posterior (VUP)</span><p>- Causa mais comum de obstrucao urinaria em recem-nascidos e lactentes do <strong>SEXO MASCULINO</strong> - Dobra mucosa congenita na uretra posterior que obstrui o fluxo - Clinica: ITU alta em RN masculino, jato fraco, globo vesical palpavel - Diagnostico: UCG miccional (cateterismo retrogrado) - Tratamento: fulgurizacao endoscopica da valva</p></div>
+<hr>
+<h3>3.3 Obstrucao Alta vs. Baixa — Clinica</h3>
+<table><thead><tr><th>Criterio</th><th>Obstrucao ALTA (JUP / ureter)</th><th>Obstrucao BAIXA (uretra / collo vesical)</th></tr></thead><tbody><tr><td><strong>Dor</strong></td><td>Dor no flanco / colica renal</td><td>Dor suprapubica / disuria</td></tr><tr><td><strong>Sintomas miccionais</strong></td><td>Ausentes ou minimos</td><td>Presentes (dificuldade de inicio, jato fraco)</td></tr><tr><td><strong>Retencao</strong></td><td>Raramente</td><td>Frequente (globo vesical)</td></tr><tr><td><strong>Bilateral</strong></td><td>Anuria/IRA</td><td>Anuria/IRA</td></tr><tr><td><strong>Exemplo</strong></td><td>Calculo ureteral, estenose UPJ</td><td>HPB, valva uretral, estenose uretral</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Sintoma de obstrucao BAIXA</span><p>"Tardanza en el inicio de la miccion" (hesitacao/demora para comecar a urinar) = obstrucao BAIXA. Causas: HPB, estenose uretral, valva uretral posterior, bexiga neurologica.</p></div>
+<hr>
+<h3>3.4 Hidronefrosis (<em>Hidronefrosis</em>)</h3>
+<ul>
+<li>Distensao do sistema pielocalicial pelo acumulo de urina</li>
+<li>Causas: qualquer obstrucao ao fluxo de urina</li>
+<li>Graus (escala Society for Fetal Urology — SFU): I (pelve levemente dilatada) → IV (parênquima renal afinado)</li>
+<li><strong>Diagnostico:</strong> USG renal (1a linha, inocuo, detecta a distensao); TC confirmatoria</li>
+<li><strong>Complicacoes:</strong> pielonefrite obstrutiva (urgencia cirurgica), atrofia renal</li>
+</ul>
+<hr>
+<h3>3.5 Tratamento da Obstrucao Urinaria</h3>
+<p><strong>Principio basico:</strong> remover a obstrucao antes que o dano seja irreversivel.</p>
+<table><thead><tr><th>Situacao</th><th>Tratamento</th></tr></thead><tbody><tr><td>Obstrucao aguda com infeccao</td><td>Drenagem de emergencia (nefrostomia percutanea ou DJ-stent) + antibióticos EV</td></tr><tr><td>Calculo ureteral</td><td>LEOC, ureteroscopia (ver litiasis)</td></tr><tr><td>HPB</td><td>Alfabloqueadores (tamsulosina), 5-alfa-redutases (finasterida), RTU-P</td></tr><tr><td>VUP em RN</td><td>Cateterismo vesical imediato → fulgurizacao endoscopica</td></tr><tr><td>Estenose uretral</td><td>Uretrotomia interna, uretroplastia</td></tr></tbody></table>
+<hr>
+<h2>4. Litiasis Urinaria — Explicacao Detalhada</h2>
+<h3>4.1 Epidemiologia e Fatores de Risco</h3>
+<ul>
+<li>Prevalencia: 5-12% da populacao; recorrencia em 50% em 5 anos</li>
+<li>Homens > mulheres (3:1); pico na 3a-4a decada</li>
+<li>Fatores de risco: baixa ingesta hidrica (principal!), clima quente, dieta rica em proteinas/sal/oxalato, obesidade, DM, gota, hiperparatireoidismo, infeccoes urinarias de repeticao (estruvita)</li>
+</ul>
+<h3>4.2 Tipos de Calculos e Composicao</h3>
+<p><strong>Calculos de calcio (80% dos casos):</strong></p>
+<ul>
+<li><strong>Oxalato de calcio</strong> (mais frequente — 70% dos calculos de calcio): radio-opaco, espiculado</li>
+<li><strong>Fosfato de calcio</strong> (10%): radio-opaco</li>
+<li>Causas: hipercalciuria (absorticva, renal, resorptiva), hiperoxaluria, hipocitraturia</li>
+<li>Hiperparatireoidismo primario → hipercalcemia → hipercalciuria → calculos de calcio</li>
+</ul>
+<p><strong>Calculos de estruvita (15% — magnesio-amonio-fosfato):</strong></p>
+<ul>
+<li><strong>RADIO-OPACO</strong>, crescem rapidamente, podem preencher todo o sistema pielocalicial = <strong>calculo em chifre de veado</strong> (<em>calculo coraliforme</em>)</li>
+<li>Associacao obrigatoria com <strong>ITU por bacterias urease-positivas</strong> (<em>Proteus mirabilis</em> #1, <em>Klebsiella</em>, <em>Pseudomonas</em>)</li>
+<li>Urease → converte ureia → amonia → urina alcalina → precipitacao de estruvita</li>
+<li>Mulheres com ITU de repeticao sao grupo de risco</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Calculo de estruvita: sempre associado a ITU por urease-positiva</span><p>Mulher com ITU de repeticao + dor lombar cronica = pensar em estruvita (PREGUNTAS: "posibilidad diagnostica etiológica mas probable")</p></div>
+<p><strong>Calculos de acido urico (5-8%):</strong></p>
+<ul>
+<li><strong>RADIOTRANSPARENTE</strong> — NAO aparece no raio-x simples (invisivel!)</li>
+<li>Precipita em urina acida (pH < 5,5)</li>
+<li>Associacao: gota, hiperuricemia, dieta rica em purinas, sindrome metabolica</li>
+<li><strong>NAO e por transmissao cromosomica</strong> (e adquirido — associado a hiperuricemia/gota)</li>
+<li>Diagnostico: TC (identifica todos os calculos); USG</li>
+</ul>
+<p><strong>Calculos de cistina (1-2%):</strong></p>
+<ul>
+<li>Doenca hereditaria (cistinuria — defeito no transporte de aminoacidos dibásicos)</li>
+<li>Familia: cistina + ornitina + lisina + arginina (mnemônico COLA)</li>
+<li>Radiopaco fraco; aspecto hexagonal na urina (cristais hexagonais)</li>
+</ul>
+<h3>4.3 Clinica — Colica Renal (<em>Colico Renal</em>)</h3>
+<p><strong>Apresentacao tipica:</strong> dor unilateral de inicio subito, intensa, em flanco/lombar, que irradia conforme o calculo desce pelo ureter.</p>
+<p><strong>Irradiacao da dor por localizacao do calculo:</strong></p>
+<table><thead><tr><th>Localizacao do calculo</th><th>Irradiacao da dor</th></tr></thead><tbody><tr><td>JUP (juncao ureteropelvica)</td><td>Flanco, angulo costovertebral</td></tr><tr><td>Ureter superior</td><td>Lombar</td></tr><tr><td>Ureter medio</td><td>Lombofossa iliaca, virilha</td></tr><tr><td>Ureter distal / JUV</td><td>Escroto/testiculo (M) ou labio maior (F)</td></tr><tr><td>Calculo vesical</td><td>Dor suprapubica + "corta o jato" subitamente</td></tr></tbody></table>
+<p><strong>Caracteristicas da dor:</strong></p>
+<ul>
+<li>Inicio abrupto, frequentemente noturno</li>
+<li>Muito intensa (dor mais intensa da urologia)</li>
+<li>Paciente <strong>agitado, nao consegue ficar parado</strong> (≠ peritonite, onde o paciente fica imóvel)</li>
+<li>Hematuria (macro ou micro) em 85% dos casos</li>
+<li>Nausea, vomito, sintomas vegetativos</li>
+</ul>
+<p><strong>Exame fisico:</strong></p>
+<ul>
+<li>Paciente em <strong>posicao antalgia</strong> (nao para quieto)</li>
+<li><strong>Taquicardia</strong> e sudorese por dor (NAO bradicardia — PREGUNTAS)</li>
+<li><strong>Ponto pielorenoureteral posterior superior</strong> doloroso (punhopercussao lombar)</li>
+<li>Abdome geralmente sem sinais peritoneais</li>
+</ul>
+<h3>4.4 Diagnostico</h3>
+<table><thead><tr><th>Exame</th><th>Uso</th><th>Limitacao</th></tr></thead><tbody><tr><td><strong>TC sem contraste (helicoidal)</strong></td><td><strong>PADRAO OURO</strong> — identifica todos os calculos + hidronefrosis + causas alternativas</td><td>Radiacao; nao em gestantes</td></tr><tr><td><strong>USG renal</strong></td><td>1a linha em gestantes, criancas; hidronefrosis + calculos > 5mm</td><td>Nao identifica calculos < 5mm; nao visualiza ureter distal bem</td></tr><tr><td><strong>Raio-x simples (KUB)</strong></td><td>Rapido, barato, boa para seguimento de calculos radiopacos</td><td>NAO vê acido urico (radiotransparente)!</td></tr><tr><td><strong>UIV (urograma excretor)</strong></td><td>Historico, menos usado</td><td>Contraste iodado, nefrotoxicidade</td></tr></tbody></table>
+<p><strong>Exames complementares:</strong></p>
+<ul>
+<li>Urina I: hematuria (85%), piuria se infeccao; pH urinario (acido urico < 5,5)</li>
+<li>Hemograma: leucocitose se pielonefrite obstrutiva</li>
+<li>Creatinina: funcao renal</li>
+<li>Analise do calculo: tipar composicao para profilaxia</li>
+</ul>
+<h3>4.5 Tratamento</h3>
+<p><strong>Tratamento conservador (calculos < 5-10mm, sem infeccao, sem rim unico):</strong></p>
+<ul>
+<li>Analgesia: AINEs (diclofenaco IV/IM — 1a escolha) + opioides SN</li>
+<li>Hidratacao oral (2-3L/dia) — nao hiperhidratacao forcada EV</li>
+<li><strong>Terapia expulsora:</strong> alfabloqueadores (tamsulosina 0,4mg/dia) — relaxa musculo liso ureteral → facilita expulsao</li>
+<li>Calculos < 5mm: 90% saem espontaneamente em 4-6 semanas</li>
+</ul>
+<p><strong>Indicacoes de intervencao:</strong></p>
+<ul>
+<li>Calculo > 10mm ou nao expulso em 4-6 semanas</li>
+<li>Obstrucao com infeccao (urgencia cirurgica!)</li>
+<li>Dor incontrolavel</li>
+<li>Rim unico ou funcao renal comprometida</li>
+</ul>
+<p><strong>Tecnicas interventoras:</strong></p>
+<table><thead><tr><th>Tecnica</th><th>Indicacao</th></tr></thead><tbody><tr><td><strong>LEOC</strong> (Litotricia extracorporea por ondas de choque)</td><td>Calculos 5-20mm no rim ou ureter proximal</td></tr><tr><td><strong>Ureteroscopia + litotriptor</strong></td><td>Calculos ureter distal/medio; falha da LEOC</td></tr><tr><td><strong>Nefrolitotomia percutanea (NLPC)</strong></td><td>Calculos > 2cm, coraliformes, falha da LEOC</td></tr><tr><td><strong>Nefrostomia</strong></td><td>Emergencia: pielonefrite obstrutiva</td></tr></tbody></table>
+<p><strong>Profilaxia de recorrencia:</strong></p>
+<ul>
+<li>Hidratacao abundante (2L/dia) — MAIS IMPORTANTE</li>
+<li>Calcio: restricao moderada (nao eliminar — paradoxo do calcio)</li>
+<li>Proteina animal: < 1g/kg/dia</li>
+<li>Sal: < 5g/dia</li>
+<li>Acido urico: alopurinol (se hiperuricemia)</li>
+<li>Citrato de potassio: hipocitraturia</li>
+</ul>
+<hr>
+<h2>5. Comparacao — Tipos de Calculos</h2>
+<table><thead><tr><th>Criterio</th><th>Calcio</th><th>Estruvita</th><th>Acido urico</th><th>Cistina</th></tr></thead><tbody><tr><td><strong>Frequencia</strong></td><td>80%</td><td>15%</td><td>5-8%</td><td>1-2%</td></tr><tr><td><strong>Radiopacidade</strong></td><td>Opaco</td><td>Opaco</td><td><strong>TRANSPARENTE</strong></td><td>Fraco opaco</td></tr><tr><td><strong>Associacao</strong></td><td>Hipercalciuria, HPT</td><td><strong>ITU urease</strong></td><td>Gota/hiperuricemia</td><td>Hereditario</td></tr><tr><td><strong>Aspecto</strong></td><td>Espiculado</td><td>Coraliforme</td><td>Liso</td><td>Hexagonal</td></tr><tr><td><strong>pH urina</strong></td><td>Variavel</td><td>Alcalino</td><td><strong>Acido (< 5,5)</strong></td><td>Variavel</td></tr><tr><td><strong>Profilaxia</strong></td><td>Hidratacao + restricao sal</td><td>Tratar ITU + NLPC</td><td>Alopurinol + alcalinizar</td><td>Penicilamina + alcalinizar</td></tr></tbody></table>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<p><strong>Questoes identificadas no PREGUNTAS:</strong></p>
+<blockquote>Q: Calculo de estruvita — associado a: R: <strong>Infeccoes urinarias por bacterias urease-positivas</strong> (<em>Proteus mirabilis</em>) — CORRETO</blockquote>
+<blockquote>Q: Calculos sem calcio — radiopacos ou transparentes? R: Acido urico = <strong>RADIOTRANSPARENTE</strong> (resposta A do PREGUNTAS = INCORRETA). Estruvita = RADIOPACO.</blockquote>
+<blockquote>Q: Obstrucao baixa — sintoma correto: R: <strong>Tardanza en el inicio de la miccion</strong> (hesitacao para comecar a urinar) — sintoma clássico de HPB ou valva uretral.</blockquote>
+<blockquote>Q: Exame fisico na litiase — INCORRETO: R: <strong>Bradicardia</strong> — o correto e TAQUICARDIA (a dor intensa provoca taquicardia reflexa).</blockquote>
+<blockquote>Q: RN masculino 25 dias com ITU alta — causa etiologica: R: <strong>Valva de uretra posterior</strong> — mais comum em meninos, CONGENITA, obstrucao baixa.</blockquote>
+<p><strong>Pegadinhas desta parte:</strong></p>
+<ol>
+<li>Valva de uretra posterior = CONGENITA (jamais adquirida)</li>
+<li>Calculo de acido urico = <strong>NAO APARECE NO RAIO-X</strong> (radiotransparente) — TC e necessaria</li>
+<li>Estruvita = SEMPRE associado a ITU (Proteus, Klebsiella)</li>
+<li>Paciente com colica renal fica AGITADO (≠ peritonite = imóvel)</li>
+<li>Drenagem de emergencia (nefrostomia) quando obstrucao + infeccao — NAO esperar</li>
+<li>Tamsulosina (alfabloqueador) = terapia expulsora de calculos ureterais</li>
+<li>Calculo < 5mm = 90% saem espontaneamente; > 10mm = intervencao</li>
+</ol>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>OBSTRUCAO + LITIASIS</p>
+<p>|</p>
+<p>|-- OBSTRUCAO</p>
+<p>|   |-- Alta (ureter/rim): calculo, estenose UPJ, tumor extrinseco</p>
+<p>|   |-- Baixa (uretra/bexiga): VUP (congenito), HPB (adquirido)</p>
+<p>|   |-- Fisiopat: pressao → vasoconstr → FSR reduzido → hidronefrosis → atrofia</p>
+<table><thead><tr><th>-- Emergencia: obstrucao + infeccao → NEFROSTOMIA imediata</th></tr></thead><tbody><tr><td>-- LITIASIS</td></tr><tr><td>-- 80%: CALCIO (radiopaco)</td></tr><tr><td>-- 15%: ESTRUVITA (ITU/urease, coraliforme, radiopaco)</td></tr><tr><td>-- 5%: ACIDO URICO (RADIOTRANSPARENTE, gota, pH acido)</td></tr><tr><td>-- 1%: CISTINA (hereditario, hexagonal)</td></tr><tr><td>-- COLICA RENAL: dor intensa, agitado, hematuria, irradiacao distal</td></tr><tr><td>-- Dx: TC s/contraste (padrao ouro); USG (gestantes/criancas)</td></tr><tr><td>-- Tx < 5mm: analgesia + tamsulosina (expulsora)</td></tr><tr><td>-- Tx > 10mm: LEOC / ureteroscopia / NLPC</td></tr><tr><td>-- Emergencia infeccao: NEFROSTOMIA</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>Q1:</strong> Paciente de 35 anos, homem, dor lombar aguda noturna intensa, hematuria macrosecopica. Diagnostico e conduta imediata?</p>
+<blockquote>R: <strong>Colica renal por litiase urinaria</strong>. Conduta: analgesia (AINE EV/IM), USG ou TC sem contraste, peneirar a urina. Se calculo < 5mm e sem infeccao: tratamento conservador + tamsulosina.</blockquote>
+<p><strong>Q2:</strong> Mulher de 40 anos com ITU de repeticao e dor lombar direita cronica. Qual calculo suspeitar?</p>
+<blockquote>R: <strong>Calculo de estruvita</strong> — associado a ITU por bacterias urease-positivas (<em>Proteus</em>). Pode ser coraliforme. Tratamento: controlar infeccao + NLPC para calculos grandes.</blockquote>
+<p><strong>Q3:</strong> RN masculino de 25 dias com febre e ITU superior. Causa mais provavel e diagnostico?</p>
+<blockquote>R: <strong>Valva de uretra posterior (VUP)</strong> — causa congenita de obstrucao baixa em meninos. Diagnostico: UCG miccional. Tratamento: cateterismo vesical imediato + fulgurizacao endoscopica.</blockquote>
+<p><strong>Q4:</strong> Homem com colica renal e raio-x KUB normal (sem calculo visivel). Como diagnosticar?</p>
+<blockquote>R: <strong>TC helicoidal sem contraste</strong> (padrao ouro). O raio-x nao identifica calculos de <strong>acido urico</strong> (radiotransparentes). TC identifica todos os tipos.</blockquote>
+<p><strong>Q5:</strong> Paciente com colica renal, febril, escalafriante, com pielonefrite obstrutiva. Conduta?</p>
+<blockquote>R: <strong>Drenagem imediata de emergencia</strong> (nefrostomia percutanea ou cateter DJ) + antibióticos EV. NAO realizar LEOC em infeccao ativa — risco de sepse.</blockquote>
+<p><strong>Q6:</strong> Quais sao os 4 tipos de calculos urinarios e suas radiopacidades?</p>
+<blockquote>R: Calcio (radiopaco), estruvita (radiopaco), cistina (fraco radiopaco), <strong>acido urico (radiotransparente — nao aparece no raio-x)</strong>.</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<p><strong>Mnemônico dos calculos:</strong></p>
+<ul>
+<li><strong>CEAC</strong> → <strong>C</strong>alcio (80%) + <strong>E</strong>struvita (15%) + <strong>A</strong>cido urico (5%) + <strong>C</strong>istina (1%)</li>
+<li>"<strong>Acido Urico</strong> = <strong>U</strong>rgencia de TC (nao aparece no raio-x)"</li>
+<li>"<strong>E</strong>struvita = <strong>E</strong>nfermedad + ITU (Proteus)"</li>
+</ul>
+<p><strong>Mnemônico da cistina — COLA:</strong></p>
+<ul>
+<li>Cistina, Ornitina, Lisina, Arginina — os aminoacidos que nao sao reabsorvidos na cistinuria</li>
+</ul>
+<p><strong>VUP — memorizar:</strong></p>
+<ul>
+<li>"<strong>V</strong>alva = <strong>V</strong>arão (sexo masculino) + congenito + RN"</li>
+</ul>
+<p><strong>Colica renal vs. peritonite:</strong></p>
+<ul>
+<li>"<strong>C</strong>ólica = o paciente <strong>C</strong>orre (agitado)" / "<strong>P</strong>eritonite = <strong>P</strong>arado (imóvel)"</li>
+</ul>
+<hr>
+<blockquote>Controle: _Indice Resumo P1 Litiasis: Tema-T10-Litiasis-Resumo-Completo Proximo tema: P2-T13-Incontinencia-Urinaria</blockquote>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T10/T11</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">30 cards · <span class="starred-count">⭐ 11 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>O que e a valva de uretra posterior (VUP) e por que e importante?</div><div class="fc-answer">Dobra mucosa CONGENITA na uretra posterior (somente em MENINOS) que obstrui o fluxo urinario. Principal causa de obstrucao urinaria em RN masculinos; apresenta-se como ITU alta no lactente ou jato fraco ao nascer. Tratamento: fulgurizacao endoscopica.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Valva de uretra posterior e causa congenita ou adquirida?</div><div class="fc-answer"><strong>CONGENITA</strong> — jamais adquirida. Esse e o erro classico do PREGUNTAS: a opcao diz "valva de uretra posterior es causa adquirida" = INCORRETO.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a diferenca entre obstrucao urinaria ALTA e BAIXA (niveis e sintomas)?</div><div class="fc-answer"><strong>Alta</strong> (ureter/JUP): dor no flanco/colica renal; sem sintomas miccionais. <strong>Baixa</strong> (bexiga/uretra): hesitacao miccional, jato fraco, retencao urinaria, globo vesical. Alta → calculo/estenose UPJ. Baixa → HPB, VUP, estenose uretral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual sintoma e tipico de obstrucao BAIXA (resposta correta do PREGUNTAS)?</div><div class="fc-answer"><strong>Tardanza en el inicio de la miccion</strong> (hesitacao/demora para comecar a urinar). E classico de HPB, valva uretral posterior e estenose uretral — obstrucoes do collo vesical ou uretra.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais bacterias causam ITU que leva a calculos de estruvita?</div><div class="fc-answer">Bacterias <strong>urease-positivas</strong>: <em>Proteus mirabilis</em> (mais comum), <em>Klebsiella</em>, <em>Pseudomonas</em>, <em>Staphylococcus</em>. A urease converte ureia → amonia → urina alcalina → precipitacao de MgNH4PO4 (estruvita).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Fisiopatologia basica da obstrucao urinaria em 3 passos:</div><div class="fc-answer">(1) Obstrucao → aumento pressao hidrostática → distensao do sistema coletor (hidronefrosis). (2) Vasoconstriccao renal → reducao FSR e TFG. (3) Se cronica → atrofia tubular + fibrose → insuficiência renal.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a urgencia cirurgica absoluta na obstrucao urinaria?</div><div class="fc-answer"><strong>Obstrucao + infeccao</strong> (pielonefrite obstrutiva) = EMERGENCIA. Indicar drenagem imediata (nefrostomia percutanea ou cateter duplo-J) + antibioticos EV. NAO realizar LEOC com infeccao ativa (risco de sepse fatal).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>RN masculino de 25 dias, febre, ITU alta recorrente. Causa etiologica mais provavel?</div><div class="fc-answer"><strong>Valva de uretra posterior (VUP)</strong> — malformacao congenita exclusiva de meninos que causa obstrucao baixa e favorece ITU alto. Diagnostico: UCG miccional. Tratamento: cateterismo vesical de emergencia + fulgurizacao endoscopica.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e hidronefrosis e como diagnosticar?</div><div class="fc-answer">Distensao do sistema pielocalicial pelo acumulo de urina decorrente de obstrucao. Diagnostico de 1a linha: <strong>USG renal</strong> (inocuo, disponivel, identifica distensao e calculos > 5mm). TC confirmatoria e para avaliar causa.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Homem de 30 anos em que o jato urinario "para subitamente" durante a miccao. Diagnostico?</div><div class="fc-answer"><strong>Calculo vesical</strong> — o calculo migra para o orificio uretral interno e bloqueia momentaneamente o fluxo durante a miccao (sinal classico). A dor desaparece quando o paciente muda de posicao e o calculo se move.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o unico tipo de calculo urinario RADIOTRANSPARENTE (nao visivel no raio-x)?</div><div class="fc-answer"><strong>Calculo de acido urico</strong> — precipita em urina acida (pH < 5,5); associado a gota e hiperuricemia. Nao aparece no raio-x KUB. Diagnostico por USG ou TC. NAO e hereditario (diferente da cistinuria).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual tipo de calculo se associa SEMPRE a infeccao urinaria por bacterias urease-positivas?</div><div class="fc-answer"><strong>Calculo de estruvita</strong> (MgNH4PO4) — se forma em urina alcalina produzida pela urease bacteriana (<em>Proteus mirabilis</em>). Pode crescer muito e preencher todo o sistema coletor = <strong>calculo coraliforme</strong> ("chifre de veado"). E RADIOPACO.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Um paciente refere que o calculo nao apareceu no raio-x, mas apareceu na TC. Que tipo de calculo e esse?</div><div class="fc-answer"><strong>Calculo de acido urico</strong> — RADIOTRANSPARENTE. A TC sem contraste identifica TODOS os tipos de calculos, independente da composicao. O raio-x falha nos calculos de acido urico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Tabela resumo dos 4 tipos de calculos (composicao, frequencia, radiopacidade, associacao):</div><div class="fc-answer">Calcio 80% (radiopaco, hipercalciuria/HPT); Estruvita 15% (radiopaco, ITU/urease, coraliforme); Acido urico 5% (RADIOTRANSPARENTE, gota); Cistina 1% (fraco opaco, hereditario/cistinuria).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que nao se deve restringir completamente o calcio na dieta para prevenir calculos de calcio?</div><div class="fc-answer"><strong>Paradoxo do calcio:</strong> calcio dietético liga-se ao oxalato no intestino → impede absorcao intestinal de oxalato → menos oxalato na urina. Restricao de calcio aumenta absorcao de oxalato → mais calculos de oxalato de calcio. Recomendacao: ingestao MODERADA, nao zero.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o diagnostico de escolha para colica renal e quando usar USG em vez de TC?</div><div class="fc-answer"><strong>TC helicoidal sem contraste</strong> = padrao ouro (identifica todos calculos + hidronefrosis + causas alternativas). USG preferido em: <strong>gestantes</strong> (sem radiacao), criancas, triagem inicial. O raio-x simples identifica apenas calculos radiopacos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e calculo coraliforme e qual a tecnica cirurgica de escolha?</div><div class="fc-answer">Calculo que ocupa todo o sistema pielocalicial (pelve + calices) — aspecto "em chifre de veado". Quase sempre de estruvita (associado a ITU cronica). Tecnica: <strong>nefrolitotomia percutanea (NLPC)</strong> — indicada para calculos > 2cm e coraliformes (LEOC ineficaz para este tamanho).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Cistinuria — o que e e como diagnosticar?</div><div class="fc-answer">Doenca hereditaria (autossómica recessiva) com defeito no transporte renal de aminoacidos dibásicos: Cistina + Ornitina + Lisina + Arginina (COLA). Calculos de cistina formam cristais <strong>hexagonais</strong> na urina — achado diagnostico. Calcio fraco radiopaco.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Descricao classica da colica renal — como diferenciar de peritonite?</div><div class="fc-answer"><strong>Colica renal:</strong> dor intensa, AGITADO (nao consegue ficar parado), hematuria, nausea. <strong>Peritonite:</strong> dor intensa, IMÓVEL (qualquer movimento piora), rigidez abdominal, sinais de Blumberg. "Colica = corre; Peritonite = paralisa."</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais os sinais ao exame fisico na colica renal?</div><div class="fc-answer">Paciente em posicao antalgia, <strong>TAQUICARDIA</strong> (NAO bradicardia!), sudorese, agitacao, punhopercussao lombar positiva (ponto pielorenoureteral posterior superior doloroso). Abdome sem defesa involuntaria (≠ peritonite).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Calculo ureteral de 4mm em homem sem infeccao — conduta?</div><div class="fc-answer"><strong>Tratamento conservador + expulsor:</strong> analgesia com AINE (diclofenaco IM) + tamsulosina 0,4mg/dia (alfabloqueador = relaxa musculo liso ureteral) + hidratacao oral + peneirar urina. Calculos < 5mm: 90% saem espontaneamente em 4-6 semanas.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quando esta indicada LEOC (litotricia extracorporea por ondas de choque)?</div><div class="fc-answer">Calculos <strong>5-20mm</strong> em rim ou ureter proximal, SEM obstrucao + SEM infeccao ativa. Contraindicada em: gestantes, obstrucao distal ao calculo, infeccao ativa, disturbios de coagulacao, calculos de cistina (resistentes).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a analgesia de primeira escolha na colica renal aguda?</div><div class="fc-answer"><strong>AINEs (diclofenaco ou cetorolaco EV/IM)</strong> — tratam tanto a dor quanto o espasmo ureteral. Opiaceos (morfina, meperidina) como segunda linha ou em associacao. AINEs reduzem a sintese de PGE2 (que mantem dilatacao do sistema coletor).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais as indicacoes absolutas de intervencao cirurgica na litiase urinaria?</div><div class="fc-answer">(1) Infeccao com obstrucao (EMERGENCIA — nefrostomia imediata); (2) calculo > 10mm (expulsao improvavel); (3) dor incontrolavel; (4) insuficiência renal aguda bilateral ou rim unico; (5) calculo nao expulso apos 4-6 semanas de tratamento conservador.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Como prevenir recorrencia de calculos de acido urico?</div><div class="fc-answer">(1) Hidratacao abundante (> 2L/dia — mais importante); (2) alcalinizar a urina: citrato de potassio ou bicarbonato de sodio (pH urina > 6,5); (3) <strong>alopurinol</strong> (reduz producao de acido urico); (4) dieta: restricao de purinas (carne vermelha, frutos do mar).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a irradiacao da dor quando o calculo esta no ureter distal (JUV)?</div><div class="fc-answer">Dor irradia para <strong>escroto e testiculo</strong> (no homem) ou <strong>labio maior</strong> (na mulher). O paciente frequentemente confunde com torção testicular ou patologia escrotal — a USG testicular e normal.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando preferir nefrolitotomia percutanea (NLPC) sobre LEOC?</div><div class="fc-answer">Calculos > <strong>20mm</strong>, calculos <strong>coraliformes</strong>, calculos <strong>resistentes</strong> a LEOC (cistina, oxalato monohydratado duro), falha previa de LEOC, ou calculos em rim com anomalia anatomica (rim em ferradura).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o exame de escolha para investigar a causa metabólica de calculos de calcio de repeticao?</div><div class="fc-answer"><strong>Dosagens sanguineas:</strong> calcio, fosforo, PTH (hiperparatireoidismo), acido urico, creatinina. <strong>Urina 24h:</strong> calciuria, oxaluria, citraturia, uricosuria. Investigar apos o <strong>2o episodio</strong> de calculo de calcio ou no 1o episodio em < 30 anos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Mulher com ITU repetição + dor lombar cronica moderada. Posibilidad diagnostica etiologica?</div><div class="fc-answer"><strong>Calculo de estruvita</strong> — associado a ITU cronica por bacterias urease-positivas (<em>Proteus</em>). A infeccao persistente alimenta o crescimento do calculo. Tratamento: controle da infeccao + NLPC para calculos grandes/coraliformes.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e o ponto pielorenoureteral posterior superior e onde e pesquisado?</div><div class="fc-answer">Ponto de dor a punhopercussao no <strong>angulo costovertebral</strong> (entre a ultima costela e a coluna vertebral) — reflete sensibilidade do rim e ureter superior. Positivo na colica renal, pielonefrite e hidronefrosis.</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2-T09 — ITS — Infecções Sexualmente Transmissíveis — MedVaultWeb Urologia P2">
+  <title>P2-T09 — ITS — Infecções Sexualmente Transmissíveis — MedVaultWeb</title>
+  <link rel="stylesheet" href="/MedVaultWeb/assets/css/medvault.css">
+  <style>
+    :root { --topic-color: #e65100; }
+    
+/* === P2 Urologia — Visual Enhancements === */
+:root { --topic-color: #4a148c; }
+
+.resumo-content { max-width: 860px; margin: 0 auto; }
+
+.resumo-content h1 {
+  font-size: 1.55rem; color: var(--topic-color);
+  border-bottom: 3px solid var(--topic-color);
+  padding-bottom: .35rem; margin-top: 2rem; }
+
+.resumo-content h2 {
+  font-size: 1.18rem; color: var(--topic-color);
+  border-left: 5px solid var(--topic-color);
+  background: rgba(0,0,0,.03);
+  padding: .4rem .8rem; border-radius: 0 6px 6px 0;
+  margin-top: 1.7rem; }
+
+.resumo-content h3 {
+  font-size: 1.03rem; color: #2c2c2c;
+  margin-top: 1.3rem; padding-left: .3rem; }
+
+.resumo-content h4 {
+  font-size: .95rem; color: #555; margin-top: 1rem; }
+
+.resumo-content p  { line-height: 1.75; margin: .55rem 0; }
+.resumo-content hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.4rem 0; }
+
+.resumo-content ul, .resumo-content ol {
+  margin: .5rem 0 .5rem 1.5rem; line-height: 1.85; }
+.resumo-content li { margin: .25rem 0; }
+
+.resumo-content code {
+  background: #f0f2f5; border-radius: 4px;
+  padding: .1rem .35rem; font-size: .88em; }
+
+.resumo-content blockquote {
+  border-left: 3px solid #bdbdbd; padding: .4rem .9rem;
+  color: #555; margin: .7rem 0; background: #fafafa;
+  border-radius: 0 6px 6px 0; }
+
+/* ── Tabelas Visuais ── */
+.resumo-content table {
+  border-collapse: collapse; width: 100%;
+  margin: 1.1rem 0; font-size: .88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.09);
+  border-radius: 8px; overflow: hidden; }
+.resumo-content th {
+  background: var(--topic-color); color: #fff;
+  padding: .55rem .8rem; text-align: left;
+  font-weight: 700; font-size: .9rem; }
+.resumo-content td {
+  padding: .48rem .75rem;
+  border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+.resumo-content tr:nth-child(even) td { background: #f7f9fb; }
+.resumo-content tr:hover td { background: #eef2ff; transition: background .15s; }
+
+/* ── Callouts ── */
+.callout {
+  margin: 1rem 0; padding: .75rem 1.1rem;
+  border-radius: 8px; border-left: 5px solid; }
+.callout-warning { background: #fff8e1; border-color: #ffa000; }
+.callout-warning .callout-icon { color: #ff6f00; }
+.callout-tip    { background: #e8f5e9; border-color: #43a047; }
+.callout-tip    .callout-icon { color: #2e7d32; }
+.callout-danger { background: #ffebee; border-color: #e53935; }
+.callout-danger .callout-icon { color: #b71c1c; }
+.callout-info   { background: #e3f2fd; border-color: #1e88e5; }
+.callout-info   .callout-icon { color: #1565c0; }
+.callout-note   { background: #f3e5f5; border-color: #8e24aa; }
+.callout-note   .callout-icon { color: #6a1b9a; }
+.callout-example { background: #fff3e0; border-color: #fb8c00; }
+.callout-example .callout-icon { color: #e65100; }
+.callout-title {
+  font-weight: 700; font-size: .88rem;
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .4rem; }
+.callout p { margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Galeria de Infográficos ── */
+.infog-section {
+  background: #fff; border: 2px solid #e0e0e0;
+  border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1.8rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+.infog-section > h3 {
+  color: var(--topic-color); margin: 0 0 1rem;
+  font-size: 1.05rem; display: flex; align-items: center; gap: .5rem; }
+.infog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem; }
+.infog-item { text-align: center; }
+.infog-item img {
+  width: 100%; height: auto;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform .2s, box-shadow .2s; }
+.infog-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.infog-item .infog-caption {
+  font-size: .78rem; color: #666; margin-top: .35rem; }
+
+/* ── Flashcards ── */
+.fc-section { margin: 2.5rem 0; }
+.fc-section > h2 {
+  color: var(--topic-color); margin-bottom: 1rem;
+  font-size: 1.18rem; }
+.fc-controls {
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  margin-bottom: 1rem; align-items: center; }
+.fc-controls button {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px; background: #fff;
+  color: var(--topic-color); padding: .35rem .9rem;
+  font-size: .82rem; cursor: pointer; font-weight: 600; }
+.fc-controls button:hover { background: #f0f2f5; }
+.fc-stats { color: #666; font-size: .82rem; }
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: .8rem; }
+.fc-card {
+  border: 1px solid #e0e0e0; border-radius: 10px;
+  background: #fff; overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.fc-card.starred { border-color: #ffa000; border-left: 5px solid #ffa000; }
+.fc-question {
+  padding: .8rem 1rem; cursor: pointer;
+  font-weight: 600; color: #1a1a2e;
+  font-size: .88rem; line-height: 1.5;
+  display: flex; gap: .5rem; align-items: flex-start; }
+.fc-star { color: #ffa000; flex-shrink: 0; font-size: 1rem; }
+.fc-answer {
+  padding: .7rem 1rem 1rem 1rem;
+  background: #f8f9fc; color: #333;
+  font-size: .86rem; line-height: 1.65;
+  border-top: 1px solid #e0e0e0; display: none; }
+.fc-answer em { font-style: italic; color: #555; }
+.fc-answer strong { color: #1a1a2e; }
+.fc-card.open .fc-answer { display: block; }
+.fc-toggle {
+  text-align: center; padding: .3rem;
+  background: #f0f2f5; color: #888;
+  font-size: .72rem; cursor: pointer; }
+.fc-toggle:hover { background: #e0e0e0; color: #444; }
+
+/* ── Part separator ── */
+.part-header {
+  background: var(--topic-color); color: #fff;
+  padding: .6rem 1.1rem; border-radius: 8px;
+  margin: 2.2rem 0 1.2rem; font-size: 1.05rem; font-weight: 700;
+  display: flex; align-items: center; gap: .6rem; }
+
+/* ── Quick ref box ── */
+.quick-ref {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 2px solid #ffa000; border-radius: 12px;
+  padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+.quick-ref h3 {
+  color: #e65100; margin: 0 0 .8rem;
+  display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+.quick-ref ul { margin: 0 0 0 1.2rem; }
+.quick-ref li { margin: .3rem 0; font-size: .93rem; }
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.88); z-index: 9999;
+  align-items: center; justify-content: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 96vw; max-height: 96vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem;
+  color: #fff; font-size: 2.2rem; cursor: pointer;
+  background: none; border: none; line-height: 1; }
+
+  </style>
+</head>
+<body>
+<button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-logo">
+    <h2>🧠 MedVault</h2>
+    <p>Segundo Cérebro · Medicina</p>
+  </div>
+  <div class="sidebar-section">Navegação</div>
+  <a href="/MedVaultWeb/" class="sidebar-link"><span class="icon">🏠</span> Início</a>
+  <div class="sidebar-section">Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/farmacologia/" class="sidebar-link">
+    <span class="icon">💊</span> Farmacologia <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-medica/" class="sidebar-link">
+    <span class="icon">🩺</span> Semiologia Médica <span class="sidebar-badge">P1+P2</span></a>
+  <a href="/MedVaultWeb/disciplinas/urologia/" class="sidebar-link">
+    <span class="icon">🫘</span> Urologia <span class="sidebar-badge">P1+P2</span></a>
+  <div class="sidebar-section">Urologia P2</div>
+  <a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t06-trauma/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🚨</span> P2-T06<span class="sidebar-badge">28 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t07-tumores/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🔬</span> P2-T07<span class="sidebar-badge">40 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t09-its/" class="sidebar-link active" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🦠</span> P2-T09<span class="sidebar-badge">35 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t10-t11-obstrucao-litiasis/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">🪨</span> P2-T10/T11<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t12-reflujo-vesicoureteral/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">↩️</span> P2-T12<span class="sidebar-badge">30 FC</span></a>
+<a href="/MedVaultWeb/disciplinas/urologia/p2/p2-t13-incontinencia/" class="sidebar-link" style="padding-left:1.8rem;font-size:.84rem;"><span class="icon">💧</span> P2-T13<span class="sidebar-badge">25 FC</span></a>
+
+  <div class="sidebar-section">Outras Disciplinas</div>
+  <a href="/MedVaultWeb/disciplinas/etica-medica/" class="sidebar-link">
+    <span class="icon">⚖️</span> Ética Médica <span class="sidebar-badge">P1</span></a>
+  <a href="/MedVaultWeb/disciplinas/semiologia-cirurgica/" class="sidebar-link">
+    <span class="icon">🔪</span> Semiol. Cirúrgica <span class="sidebar-badge">P2</span></a>
+</nav>
+<div class="main-content">
+
+  <div class="page-header" style="background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);">
+    <h1>🦠 ITS — Infecções Sexualmente Transmissíveis</h1>
+    <p>Gonorreia · Clamídia · Sífilis · Úlceras Genitais · HIV — Urologia P2</p>
+  </div>
+  <div class="breadcrumb"><a href="/MedVaultWeb/">Início</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/">Urologia</a> <span>›</span> <a href="/MedVaultWeb/disciplinas/urologia/p2/">P2</a> <span>›</span> <span>P2-T09</span></div>
+  <div class="content-area">
+    <div class="infog-section"><h3>🗺️ Infográfico — Páginas do Material Original</h3><div class="infog-gallery"><div class="infog-item"><img src="/MedVaultWeb/disciplinas/urologia/p2/imagens/p2-t09-its/infog-p01.png" alt="Infográfico 1" loading="lazy"><div class="infog-caption">Página 1</div></div><div class="infog-item"><img src="/MedVaultWeb/disciplinas/urologia/p2/imagens/p2-t09-its/infog-p02.png" alt="Infográfico 2" loading="lazy"><div class="infog-caption">Página 2</div></div><div class="infog-item"><img src="/MedVaultWeb/disciplinas/urologia/p2/imagens/p2-t09-its/infog-p03.png" alt="Infográfico 3" loading="lazy"><div class="infog-caption">Página 3</div></div></div></div>
+    <div class="resumo-content">
+      <h1>P2-T09 — ITS Parte 1: Uretrites, Vaginites e Sifilis</h1>
+<blockquote>🖥️ <strong>Fonte principal:</strong> Infografico ITS.pdf (3 paginas) — imagem-based 🎓 <strong>PREGUNTAS:</strong> ITS-PREGUNTAS.pptx (10 questoes de prova) 📚 <strong>Bibliografico:</strong> Smith-Tanagho 18a ed. + conhecimento padrao de ITS</blockquote>
+<hr>
+<h2>1. Visao Geral</h2>
+<p>As <strong>infeccoes sexualmente transmissiveis</strong> (<em>infecciones de transmision sexual</em> — ITS) sao um grupo de doencas infecciosas transmitidas principalmente por contato sexual.</p>
+<p><strong>Vias de transmissao:</strong></p>
+<ul>
+<li>Sexual (principal via) — vaginal, anal, oral</li>
+<li>Vertical (mae → filho) — gestacao, parto, amamentacao</li>
+<li>Sanguinea — transfusoes, seringas compartilhadas</li>
+<li>Contato direto — lesoes abertas (herpes, sifilis)</li>
+</ul>
+<div class="callout callout-info"><span class="callout-title"><span class="callout-icon">ℹ️</span> Notificacao compulsoria</span><p>Sifilis adquirida e congenita, AIDS/HIV, Hepatite B e C, Gonorreia (em criancas), LGV — todos de notificacao obrigatoria no sistema de saude.</p></div>
+<p><strong>Prevencao:</strong> preservativo (principal barreira fisica), vacinacao (HPV, Hepatite B), educacao sexual, rastreamento de parceiros.</p>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<table><thead><tr><th>Doenca</th><th>Agente</th><th>Lesao caracteristica</th><th>Tratamento 1a linha</th></tr></thead><tbody><tr><td><strong>Gonorreia</strong></td><td><em>N. gonorrhoeae</em></td><td>Secrecao purulenta, disuria</td><td>Ceftriaxona 500mg IM dose unica</td></tr><tr><td><strong>Clamidiase</strong></td><td><em>C. trachomatis</em> D-K</td><td>Secrecao mucosa clara</td><td>Azitromicina 1g VO dose unica</td></tr><tr><td><strong>Tricomonase</strong></td><td><em>T. vaginalis</em></td><td>Corrimento espumoso, odor fetido</td><td>Metronidazol 2g VO dose unica</td></tr><tr><td><strong>Sifilis</strong></td><td><em>T. pallidum</em></td><td>Cancro duro (indolor)</td><td>Penicilina G benzatina</td></tr></tbody></table>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Coinfeccao frequente</span><p>Gonorreia e clamidiase coexistem em ate 40% dos casos — tratar SEMPRE as duas simultaneamente quando diagnosticar uma.</p></div>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Gonorreia (<em>Gonorrea</em>)</h3>
+<p><strong>Agente:</strong> <em>Neisseria gonorrhoeae</em> — diplococo gram-negativo intracelular</p>
+<p><strong>Periodo de incubacao:</strong> 2–5 dias (masculino); pode ser assintomatica por mais tempo no feminino</p>
+<p><strong>Clinica masculina:</strong></p>
+<ul>
+<li>Disuria intensa + secrecao uretral <strong>purulenta amarelo-esverdeada</strong></li>
+<li>Meato eritematoso, edemaciado</li>
+<li>Uretrite anterior → pode progredir para posterior (prostatite, epididimite)</li>
+</ul>
+<p><strong>Clinica feminina:</strong></p>
+<ul>
+<li>Maioria <strong>assintomatica</strong> ou oligossintomatica</li>
+<li>Cervicite mucopurulenta, corrimento, dor pelvica</li>
+<li>Risco de DIP (doenca inflamatoria pelvica)</li>
+</ul>
+<p><strong>Complicacoes:</strong></p>
+<ul>
+<li>Masculino: estenose uretral, epididimite, orquite, infertilidade</li>
+<li>Feminino: DIP, salpingite, aderencias tubarias, infertilidade, gravidez ectopica</li>
+<li><strong>Gonorreia disseminada:</strong> artrite gonococcica (joelho, tornozelo), petequias, tenossinovite — em 1-3% dos casos</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Oftalmia neonatal</span><p>Recemnascido de mae infectada → conjuntivite gonococcica bilateral grave. Profilaxia: nitrato de prata 1% (metodo de Crede) ou eritromicina oftalmica.</p></div>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Bacterioscopia (gram): <strong>diplococo gram-negativo intracelular</strong> em polimorfonucleares (neutrofilos)</li>
+<li>Cultura: meio Thayer-Martin (seletivo) — padrao ouro</li>
+<li>NAAT/PCR: mais sensivel e especifico, disponivel em laboratorios modernos</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>1a linha:</strong> Ceftriaxona 500mg IM dose unica</li>
+<li>Alternativas: Cefixima 400mg VO (se IM nao disponivel); Espectinomicina 2g IM</li>
+<li>SEMPRE associar tratamento para clamidiase (coinfeccao frequente)</li>
+<li>❌ Fluoroquinolonas — alta resistencia, nao usar</li>
+</ul>
+<hr>
+<h3>3.2 Clamidiase / Uretrite Nao-Gonococica (<em>Clamidia / Uretritis No Gonococica</em>)</h3>
+<p><strong>Agente principal:</strong> <em>Chlamydia trachomatis</em> sorotipos D-K</p>
+<ul>
+<li>Outros agentes de UNG: <em>Ureaplasma urealyticum</em>, <em>Mycoplasma genitalium</em>, <em>Trichomonas vaginalis</em></li>
+</ul>
+<div class="callout callout-note"><span class="callout-title"><span class="callout-icon">📝</span> Biologia da Chlamydia</span><p>Bacteria intracelular obrigatoria — nao cresce em meios convencionais. Existe em 2 formas: corpo elementar (infeccioso, extracelular) e corpo reticular (replicativo, intracelular).</p></div>
+<p><strong>Clinica masculina:</strong></p>
+<ul>
+<li>Secrecao uretral <strong>mucosa clara</strong> ou mucopurulenta leve</li>
+<li>Disuria moderada, prurido uretral</li>
+<li>Frequentemente <strong>assintomatico</strong> (reservatorio silencioso)</li>
+</ul>
+<p><strong>Clinica feminina:</strong></p>
+<ul>
+<li>Cervicite mucopurulenta — colo vermelho, friavel</li>
+<li>Maioria assintomatica (importancia do rastreamento)</li>
+<li>Complicacoes: DIP, salpingite, sindrome de Fitz-Hugh-Curtis (perihepatite)</li>
+</ul>
+<p><strong>Complicacoes oculares:</strong> conjuntivite de inclusao neonatal (sorotipo D-K)</p>
+<p><strong>Artrite reativa:</strong> trias de Reiter — uretrite + conjuntivite + artrite (em individuos geneticamente suscetíveis)</p>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>NAAT (PCR):</strong> metodo de escolha — alta sensibilidade e especificidade, nao necessita de celulas viáveis</li>
+<li>Cultura intracelular: padrao ouro historico, dificil tecnica</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>1a escolha:</strong> Azitromicina 1g VO dose unica</li>
+<li>Alternativa: Doxiciclina 100mg 2x/dia 7 dias</li>
+<li><strong>Gestantes:</strong> Azitromicina 1g VO dose unica (doxiciclina contraindicada)</li>
+<li>Tratar parceiro sempre</li>
+</ul>
+<hr>
+<h3>3.3 Tricomonase (<em>Tricomoniasis</em>)</h3>
+<p><strong>Agente:</strong> <em>Trichomonas vaginalis</em> — protozoario flagelado (4 flagelos anteriores + 1 posterior)</p>
+<p><strong>Clinica feminina:</strong></p>
+<ul>
+<li>Corrimento <strong>amarelo-esverdeado, espumoso, abundante, odor fetido</strong> (peixe podre)</li>
+<li>Prurido vulvovaginal intenso</li>
+<li>Colo uterino: <strong>"em morango"</strong> (colpite difusa com petequias) — sinal classico</li>
+<li>pH vaginal > 4,5 (ambiente alcalino favorece T. vaginalis)</li>
+</ul>
+<p><strong>Clinica masculina:</strong></p>
+<ul>
+<li>Geralmente <strong>assintomatico</strong> — reservatorio silencioso</li>
+<li>Pode causar: uretrite leve, prostatite</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>Microscopia a fresco:</strong> trofozoitos moveis com flagelos — observar movimentacao caracteristica</li>
+<li>pH vaginal: > 4,5</li>
+<li>Cultura (meio Diamond): mais sensivel que microscopio</li>
+<li>NAAT disponivel em alguns centros</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>1a linha:</strong> Metronidazol 2g VO dose unica</li>
+<li>Alternativa: Metronidazol 500mg VO 2x/dia 7 dias OU Tinidazol 2g dose unica</li>
+<li><strong>Tratar parceiro obrigatoriamente</strong></li>
+<li>Gestantes: Metronidazol 250mg 3x/dia 7 dias — preferir 2T-3T; 1T controverso</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Pegadinha classica</span><p>Colo "em morango" = Tricomonas (nao confundir com herpes ou outras ITS) Secrecao espumosa + odor fetido = Tricomonas (diferente da vaginose bacteriana — odor de peixe mas sem espuma)</p></div>
+<hr>
+<h3>3.4 Sifilis (<em>Sifilis</em>)</h3>
+<p><strong>Agente:</strong> <em>Treponema pallidum</em> (espiroqueta) — nao cresce em meio artificial</p>
+<p><strong>Periodo de incubacao:</strong> 10–90 dias (media: 21 dias)</p>
+<h4>Sifilis Primaria (cancro duro)</h4>
+<ul>
+<li>Ulcera unica (as vezes multipla), <strong>indurada</strong> (bordas elevadas e firmes), base limpa, <strong>indolor</strong></li>
+<li>Localizacao: glande, prepucio, vulva, vagina, colo uterino, regiao anal/bucal</li>
+<li>Adenopatia regional: <strong>indolor</strong>, firme, sem flogose, nao fistuliza</li>
+<li>Desaparece espontaneamente em 3-6 semanas mesmo sem tratamento</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Conceito critico</span><p>Cancro duro = INDOLOR. Se doer, pensar em cancroide (ulcera mole) ou infeccao secundaria.</p></div>
+<h4>Sifilis Secundaria (6 semanas a 6 meses apos primaria)</h4>
+<ul>
+<li><strong>Roseola sifilItica:</strong> exantema maculo-papular difuso, eritematoso, acometendo <strong>palmas e plantas</strong> (diagnostico) + tronco, face, mucosas</li>
+<li><strong>Condiloma plano (latum):</strong> lesoes papulosas cinzentas, achatadas, umidas — NAO confundir com condiloma acuminado (HPV)</li>
+<li>Alopecia "em clareiras" — queda de cabelo irregular</li>
+<li>Placas mucosas: oral, faringea</li>
+<li>Linfadenopatia generalizada</li>
+<li>Sintomas sistemicos: febre baixa, astenia, mialgia</li>
+</ul>
+<h4>Sifilis Terciaria (anos apos infeccao)</h4>
+<ul>
+<li><strong>Goma sifilItica:</strong> lesao granulomatosa destrutiva em pele, ossos, orgaos</li>
+<li><strong>Neurossifilis:</strong> tabes dorsalis (disfuncao espinal posterior), paresia geral progressiva, demencia, pupila de Argyll Robertson (acomoda mas nao reage a luz)</li>
+<li><strong>Sifilis cardiovascular:</strong> aortite, aneurisma de aorta ascendente, insuficiencia aortica</li>
+</ul>
+<h4>Sifilis Latente</h4>
+<ul>
+<li>Sem manifestacoes clinicas</li>
+<li>Latente precoce (< 1 ano de evolucao) vs. latente tardia (> 1 ano)</li>
+<li>Diagnostico apenas sorológico</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<table><thead><tr><th>Tipo</th><th>Exame</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Nao-treponemico</strong></td><td>VDRL / RPR</td><td>Triagem, controle de cura (titulacao), sifilis congenita</td></tr><tr><td><strong>Treponemico</strong></td><td>FTA-ABS / TPHA / TPPA / ELISA-treponemico</td><td>Confirmatorio; permanece positivo para sempre</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Interpretacao do VDRL</span><p>VDRL positivo + FTA-ABS positivo = sifilis ativa ou curada. VDRL negativo pode ocorrer na sifilis primaria precoce (janela) — repetir em 2-4 semanas. Fenomeno prozona: VDRL aparentemente negativo por excesso de anticorpos — diluir o soro.</p></div>
+<p><strong>Tratamento:</strong></p>
+<table><thead><tr><th>Fase</th><th>Esquema</th></tr></thead><tbody><tr><td>Primaria / Secundaria / Latente precoce</td><td>Penicilina G benzatina 2.400.000 UI IM — <strong>dose unica</strong> (1.200.000 em cada nadegas)</td></tr><tr><td>Terciaria / Latente tardia / Duracao desconhecida</td><td>Penicilina G benzatina 2.400.000 UI IM — <strong>3 doses</strong> (semanal, 0, 7, 14 dias)</td></tr><tr><td>Neurossifilis</td><td>Penicilina G cristalina 18-24 milhoes UI/dia EV — 10-14 dias</td></tr><tr><td>Alergia a penicilina</td><td>Doxiciclina 100mg 2x/dia 14 ou 28 dias (NAO gestantes)</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Reacao de Jarisch-Herxheimer</span><p>Piora transitoria dos sintomas nas primeiras 24h apos inicio do tratamento da sifilis por liberacao de endotoxinas. Tratar com antipireticos — NAO suspender penicilina.</p></div>
+<hr>
+<h2>4. Classificacao — ITS por Tipo de Lesao</h2>
+<table><thead><tr><th>Categoria</th><th>Doencas</th><th>Caracteristica</th></tr></thead><tbody><tr><td><strong>Uretrites/cervicites</strong></td><td>Gonorreia, Clamidiase</td><td>Secrecao purulenta ou mucosa</td></tr><tr><td><strong>Vaginites</strong></td><td>Tricomonase, Vaginose bacteriana</td><td>Corrimento + odor</td></tr><tr><td><strong>Ulceras genitais</strong></td><td>Sifilis, Cancroide, LGV, Donovanose, Herpes</td><td>Lesao erosiva/ulcerativa</td></tr><tr><td><strong>Verrugas/vegetacoes</strong></td><td>HPV</td><td>Lesoes papilomatosas</td></tr><tr><td><strong>Sistemicas</strong></td><td>HIV/AIDS</td><td>Imunodeficiencia progressiva</td></tr></tbody></table>
+<hr>
+<h2>5. Comparacao — Gonorreia vs. Clamidiase</h2>
+<table><thead><tr><th>Criterio</th><th>Gonorreia</th><th>Clamidiase</th></tr></thead><tbody><tr><td><strong>Agente</strong></td><td><em>N. gonorrhoeae</em> (gram-)</td><td><em>C. trachomatis</em> D-K (intracelular)</td></tr><tr><td><strong>Incubacao</strong></td><td>2-5 dias</td><td>1-3 semanas</td></tr><tr><td><strong>Secrecao</strong></td><td><strong>Purulenta, amarelo-esverdeada</strong></td><td><strong>Mucosa, clara ou discreta</strong></td></tr><tr><td><strong>Disuria</strong></td><td>Intensa</td><td>Moderada</td></tr><tr><td><strong>Diagnostico</strong></td><td>Gram + cultura Thayer-Martin</td><td>NAAT (PCR)</td></tr><tr><td><strong>Tratamento</strong></td><td>Ceftriaxona 500mg IM</td><td>Azitromicina 1g VO</td></tr><tr><td><strong>Gestante</strong></td><td>Ceftriaxona (seguro)</td><td>Azitromicina (doxiciclina proibida)</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Memorizar: GO-PUR-CEF / CLA-CLA-AZI</span><p><strong>GO</strong>norreia → <strong>PUR</strong>ulenta → <strong>CEF</strong>triaxona <strong>CLA</strong>midiase → <strong>CLA</strong>ra → <strong>AZI</strong>tromicina</p></div>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<p><strong>Questoes recorrentes identificadas no PREGUNTAS:</strong></p>
+<blockquote>Q: Via de transmissao de ITS — o que e INCORRETO? R: Pelo beijo (beijo comum nao e via de transmissao das ITS classicas)</blockquote>
+<blockquote>Q: Uretrite gonococcica — secrecao e: R: <strong>Purulenta</strong> (nao clara — clara = clamidiase)</blockquote>
+<blockquote>Q: Clamidiase — todas corretas: R: causa principal de UNG, pode ser viral, causa ardor ao orinar</blockquote>
+<p><strong>Pegadinhas classicas desta parte:</strong></p>
+<ol>
+<li>Sifilis primaria = ulcera <strong>INDOLOR</strong> (≠ cancroide que e DOLOROSA)</li>
+<li>Gonorreia = secrecao <strong>PURULENTA</strong> (≠ clamidiase = CLARA)</li>
+<li>Tricomonas = colo "<strong>em morango</strong>" + corrimento ESPUMOSO + pH > 4,5</li>
+<li>VDRL = nao-treponemico (cai em titulacao e controle de cura); FTA-ABS = treponemico (permanece positivo sempre)</li>
+<li>Penicilina G benzatina = SEMPRE para sifilis (exceto neurossifilis = cristalina EV)</li>
+<li>Condiloma plano (sifilis secundaria) ≠ condiloma acuminado (HPV)</li>
+<li>Tratamento da gonorreia: NUNCA fluoroquinolonas (resistencia alta)</li>
+</ol>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>ITS PARTE 1</p>
+<p>|</p>
+<p>|-- GONORREIA</p>
+<p>|   |-- N. gonorrhoeae (diplococo gram-neg)</p>
+<p>|   |-- Secrecao PURULENTA (M) / cervicite (F)</p>
+<p>|   |-- Gram = diplococo intracelular em PMN</p>
+<p>|   |-- Ceftriaxona 500mg IM + tratar clamidiase</p>
+<table><thead><tr><th>-- Complicacao: DIP (F), estenose uretral (M), artrite gonococcica</th></tr></thead><tbody><tr><td>-- CLAMIDIASE</td></tr><tr><td>-- C. trachomatis D-K (intracelular obrigatorio)</td></tr><tr><td>-- Secrecao CLARA / frequente assintomatico</td></tr><tr><td>-- NAAT/PCR = diagnostico de escolha</td></tr><tr><td>-- Azitromicina 1g VO (ou doxiciclina 7 dias)</td></tr><tr><td>-- TRICOMONAS</td></tr><tr><td>-- T. vaginalis (protozoario flagelado)</td></tr><tr><td>-- Corrimento ESPUMOSO amarelo-esverdeado + odor fetido</td></tr><tr><td>-- Colo "em morango" + pH > 4,5</td></tr><tr><td>-- Microscopia a fresco (trofozoitos moveis)</td></tr><tr><td>-- Metronidazol 2g dose unica (TRATAR PARCEIRO)</td></tr><tr><td>-- SIFILIS</td></tr><tr><td>-- T. pallidum (espiroqueta)</td></tr><tr><td>-- 1a: cancro duro (INDOLOR + adenopatia indolor)</td></tr><tr><td>-- 2a: roseola palmoplantar + condiloma plano</td></tr><tr><td>-- 3a: goma + neurossifilis + cardiovascular</td></tr><tr><td>-- VDRL (controle) + FTA-ABS (confirmacao)</td></tr><tr><td>-- Penicilina G benzatina (1a/2a: 1 dose; 3a/latente tardia: 3 doses)</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>Q1:</strong> Paciente de 25 anos com ardor uretral e secrecao amarelada abundante. Diagnostico e tratamento?</p>
+<blockquote>R: Gonorreia. Ceftriaxona 500mg IM + Azitromicina 1g VO (tratar clamidiase concomitante).</blockquote>
+<p><strong>Q2:</strong> Mulher com corrimento amarelo-esverdeado, espumoso, odor fetido e colo "em morango". Diagnostico e pH esperado?</p>
+<blockquote>R: Tricomonase. pH vaginal > 4,5. Tratamento: Metronidazol 2g VO.</blockquote>
+<p><strong>Q3:</strong> Homem com ulcera genital unica, indurada, de base limpa e indolor. O que esta presente junto?</p>
+<blockquote>R: Sifilis primaria (cancro duro). Adenopatia inguinal indolor, firme, nao fistulizante.</blockquote>
+<p><strong>Q4:</strong> Por que nao usar fluoroquinolonas para gonorreia?</p>
+<blockquote>R: Alta resistencia adquirida. Ceftriaxona e o tratamento de escolha atual.</blockquote>
+<p><strong>Q5:</strong> Qual diferenca fundamental entre VDRL e FTA-ABS no seguimento da sifilis?</p>
+<blockquote>R: VDRL titulavel — serve para controle de cura (deve cair). FTA-ABS permanece positivo para sempre — nao serve para controle de tratamento.</blockquote>
+<p><strong>Q6:</strong> Gestante diagnosticada com clamidiase. Qual tratamento?</p>
+<blockquote>R: Azitromicina 1g VO dose unica. Doxiciclina e contraindicada na gestacao (hepatotoxicidade materna + dentes fetais).</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<p><strong>Mnemônico das uretrites:</strong></p>
+<ul>
+<li><strong>GOCA</strong> → <strong>GO</strong>norreia = <strong>CA</strong>psulas (cefalosporina) / <strong>CA</strong>rga (purulenta)</li>
+<li><strong>CLA-AZI</strong> → <strong>CLA</strong>midiase = <strong>AZI</strong>tromicina</li>
+</ul>
+<p><strong>Mnemônico da sifilis (3 fases):</strong></p>
+<ul>
+<li><strong>COR</strong> → <strong>C</strong>ancro (primaria) + <strong>R</strong>oseola palmoplantar (secundaria) → [pausa] → <strong>G</strong>oma/neuro/cardio (terciaria)</li>
+<li>"<strong>P</strong>enicilina <strong>B</strong>enzatina = <strong>B</strong>asica sempre; exceto <strong>N</strong>eurossifilis = <strong>N</strong>ao e benzatina = <strong>C</strong>ristalina EV"</li>
+</ul>
+<p><strong>Associacao rapida Tricomonas:</strong></p>
+<ul>
+<li>"<strong>TRI</strong> cores: verde + espuma + morango" = Tricomonas</li>
+</ul>
+<hr>
+<blockquote>Continua em: P2-T09-ITS-Parte2-Ulceras-HPV-HIV Controle: _Indice Proximo tema sugerido: P2-T10-Obstrucao-Litiasis</blockquote>
+<h1>P2-T09 — ITS Parte 2: Ulceras Genitais, HPV e HIV</h1>
+<blockquote>🖥️ <strong>Fonte:</strong> Infografico ITS.pdf (paginas 2 e 3) 📚 <strong>Bibliografico:</strong> Smith-Tanagho 18a ed. + diretrizes ITS ← Volta: P2-T09-ITS-Parte1-Uretrites-Vaginites-Sifilis</blockquote>
+<hr>
+<h2>1. Visao Geral — ITS Ulcerativas e Sistemicas</h2>
+<p>Esta parte cobre as ITS que cursam com <strong>ulceras genitais</strong> (sifilis excluida — ver Parte 1) e as doencas sistemicas:</p>
+<table><thead><tr><th>Grupo</th><th>Doencas</th></tr></thead><tbody><tr><td>Ulceras genitais dolorosas</td><td>Cancroide (ulcera mole), Herpes genital</td></tr><tr><td>Ulceras genitais indolores</td><td>Sifilis (Parte 1), LGV, Donovanose</td></tr><tr><td>Verrugas/vegetacoes</td><td>HPV (condiloma acuminado)</td></tr><tr><td>ITS sistemica</td><td>HIV/AIDS</td></tr></tbody></table>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> A tabela comparativa das ulceras genitais esta na Secao 5 — e o ponto mais cobrado na prova.</span></div>
+<hr>
+<h2>2. Nucleo Obrigatorio</h2>
+<table><thead><tr><th>Doenca</th><th>Agente</th><th>Ulcera</th><th>Dor</th><th>Adenopatia</th><th>Tratamento</th></tr></thead><tbody><tr><td><strong>Cancroide</strong></td><td><em>H. ducreyi</em></td><td>Multiplas, fundo sujo</td><td><strong>DOLOROSA</strong></td><td>Bubao doloroso, fistuliza</td><td>Azitromicina 1g IM ou Ceftriaxona 250mg</td></tr><tr><td><strong>LGV</strong></td><td><em>C. trachomatis</em> L1-3</td><td>Transitoria, some</td><td>INDOLOR</td><td><strong>Sinal do sulco</strong> (patognomico)</td><td>Doxiciclina 21 dias</td></tr><tr><td><strong>Donovanose</strong></td><td><em>K. granulomatis</em></td><td>Vegetante, sangra facil</td><td>INDOLOR</td><td>Pseudobubao (sem ganglio)</td><td>Doxiciclina 21 dias</td></tr><tr><td><strong>Herpes genital</strong></td><td>HSV-2</td><td>Vesiculas → ulceras</td><td><strong>DOLOROSA</strong></td><td>Dolorosa, bilateral</td><td>Aciclovir</td></tr><tr><td><strong>HPV</strong></td><td>HPV 6/11/16/18</td><td>Verruga (couve-flor)</td><td>Indolor</td><td>Ausente</td><td>Destruicao local</td></tr><tr><td><strong>HIV/AIDS</strong></td><td>HIV-1/HIV-2</td><td>Nao gera ulcera propria</td><td>—</td><td>Linfadenopatia generalizada</td><td>TARV</td></tr></tbody></table>
+<hr>
+<h2>3. Explicacao Detalhada</h2>
+<h3>3.1 Cancroide — Ulcera Mole (<em>Chancro Blando</em>)</h3>
+<p><strong>Agente:</strong> <em>Haemophilus ducreyi</em> (bacilo gram-negativo)</p>
+<p><strong>Clinica:</strong></p>
+<ul>
+<li>Ulcera(s) genitais <strong>multiplas</strong>, bordas irregulares escavadas, fundo <strong>sujo/necrotico</strong>, odor fetido</li>
+<li><strong>DOLOROSA</strong> — diferencial fundamental com sifilis</li>
+<li>Frequentemente mais de uma lesao (autoinoculacao)</li>
+</ul>
+<p><strong>Adenopatia:</strong> bubao inguinal unilateral ou bilateral, doloroso, flutuante, pode <strong>fistulizar</strong> para a pele</p>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Clinico (clinica caracteristica)</li>
+<li>Cultura em meio especial (80% sensibilidade — dificil)</li>
+<li>PCR: mais sensivel, pouco disponivel</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>Azitromicina 1g VO dose unica</strong> (primeira escolha)</li>
+<li>Ceftriaxona 250mg IM dose unica</li>
+<li>Ciprofloxacino 500mg VO 2x/dia 3 dias</li>
+</ul>
+<hr>
+<h3>3.2 LGV — Linfogranuloma Venereo (<em>Linfogranuloma Venéreo</em>)</h3>
+<p><strong>Agente:</strong> <em>Chlamydia trachomatis</em> <strong>sorotipos L1, L2, L3</strong> (DIFERENTE dos sorotipos D-K que causam uretrite)</p>
+<p><strong>Evolucao em 3 fases:</strong></p>
+<table><thead><tr><th>Fase</th><th>Tempo</th><th>Manifestacao</th></tr></thead><tbody><tr><td>1a fase</td><td>3-30 dias apos contato</td><td>Vesiculopustula ou ulcera TRANSITORIA e INDOLOR — passa desapercebida</td></tr><tr><td>2a fase (inguinal)</td><td>2-6 semanas depois</td><td>Adenopatia inguinal e femoral = <strong>bubao</strong> acima E abaixo do ligamento inguinal = <strong>"sinal do sulco"</strong></td></tr><tr><td>3a fase (genitoanorettal)</td><td>Meses/anos</td><td>Elefantiase genital, fistulas, estenose retal</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Sinal do sulco = LGV</span><p><strong>Sinal do sulco</strong> (sulco inguinal) = adenopatia acima E abaixo do ligamento inguinal de Poupart — PATOGNOMICO de LGV. O bubao e doloroso e pode fistulizar em multiplos orifícios ("regador").</p></div>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Sorologia (imunofluorescencia ou fixacao de complemento) — titulo >= 1:64 sugestivo</li>
+<li>NAAT para <em>Chlamydia</em> + genotipagem (L1-L3)</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>Doxiciclina 100mg VO 2x/dia por 21 dias</strong> (primeira escolha)</li>
+<li>Alternativa: Eritromicina 500mg 4x/dia 21 dias (gestantes)</li>
+</ul>
+<hr>
+<h3>3.3 Granuloma Inguinal — Donovanose (<em>Donovanosis</em>)</h3>
+<p><strong>Agente:</strong> <em>Klebsiella granulomatis</em> (antes chamada <em>Calymmatobacterium granulomatis</em>)</p>
+<p><strong>Clinica:</strong></p>
+<ul>
+<li>Ulcera <strong>vegetante</strong> (granulomatosa), bordas elevadas, base friavel com <strong>sangramento facil</strong></li>
+<li>Indolor (exceto se sobreinfeccao)</li>
+<li><strong>SEM adenopatia verdadeira</strong> — o que pode existir e <strong>pseudobubao</strong> (granuloma subcutaneo, nao ganglio)</li>
+<li>Progressao cronica, sem tratamento pode envolver grandes areas genitais</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>Corpos de Donovan:</strong> inclusoes intracitoplasmáticas em macrófagos (bacilo encapsulado), vistas em coloracao de Giemsa ou Leishman</li>
+<li>Biopsia da lesao</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<ul>
+<li><strong>Doxiciclina 100mg VO 2x/dia — minimo 21 dias</strong> (ate cicatrizacao completa)</li>
+<li>Alternativa: Azitromicina 1g VO semanal 3 semanas</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-title"><span class="callout-icon">💡</span> Donovanose vs. LGV</span><p>Ambas tratadas com doxiciclina 21 dias. Diferenca: Donovanose = verruga sangrante SEM adenopatia; LGV = sinal do sulco + ulcera transitoria.</p></div>
+<hr>
+<h3>3.4 Herpes Genital (<em>Herpes Genital</em>)</h3>
+<p><strong>Agente:</strong> HSV-2 (maioria do herpes genital) e HSV-1 (oral, pode causar genital por pratica sexual)</p>
+<p><strong>Patogenia:</strong></p>
+<ul>
+<li>HSV penetra por mucosas → reploca nas celulas epiteliais → migra retrogrado pelo axônio → <strong>fica latente no ganglio sacral</strong> (S2-S4)</li>
+<li>Reativacao por: estresse, imunossupressao, menstruacao, febre, traumatismo local</li>
+</ul>
+<p><strong>Primoinfeccao:</strong></p>
+<ul>
+<li>Vesiculas multiplas sobre base eritematosa → ulceras dolorosas → crostas</li>
+<li>Sintomas sistemicos: febre, mal-estar, mialgia, adenopatia bilateral dolorosa</li>
+<li>Dura 2-3 semanas (mais intensa que recorrencias)</li>
+</ul>
+<p><strong>Recorrencias:</strong></p>
+<ul>
+<li>Prodromo (queimacao, formigamento) → vesiculas → ulceras em 7-10 dias</li>
+<li>Menos intensa que primoinfeccao</li>
+<li>Transmissao assintomatica: eliminacao viral mesmo sem lesao visivel</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>Clinico:</strong> vesiculas multiplas dolorosas (apresentacao tipica)</li>
+<li><strong>PCR para HSV:</strong> mais sensivel, confirmatório — indicado em casos atipicos ou imunossuprimidos</li>
+<li>Citopatologia de Tzanck: celulas gigantes multinucleadas — pouco sensivel (nao distingue HSV-1 de HSV-2)</li>
+<li>Sorologia: detecta anticorpos, nao util para diagnostico de crise aguda</li>
+</ul>
+<p><strong>Tratamento:</strong></p>
+<table><thead><tr><th>Situacao</th><th>Esquema</th></tr></thead><tbody><tr><td>Primoinfeccao</td><td>Aciclovir 400mg VO 3x/dia 7-10 dias OU 200mg 5x/dia</td></tr><tr><td>Recorrencia</td><td>Aciclovir 400mg VO 3x/dia 5 dias (iniciar ao 1o sinal)</td></tr><tr><td>Supressao (> 6 episodios/ano)</td><td>Aciclovir 400mg VO 2x/dia — uso continuo</td></tr><tr><td>Gestante proximo ao parto</td><td>Aciclovir 400mg 3x/dia a partir da 36a semana; cesarea se lesao ativa no parto</td></tr></tbody></table>
+<hr>
+<h3>3.5 HPV — Virus do Papiloma Humano (<em>Virus del Papiloma Humano — VPH</em>)</h3>
+<p><strong>Agente:</strong> Human Papillomavirus — DNA virus de dupla fita</p>
+<p><strong>Tipos e risco oncogenico:</strong></p>
+<ul>
+<li><strong>Baixo risco (6, 11):</strong> condiloma acuminado (verrugas genitais) — NAO causam cancer</li>
+<li><strong>Alto risco (16, 18, 31, 33...):</strong> lesoes pré-malignas (NIC, NIV) e cancer</li>
+<li>HPV 16 e 18 = responsaveis por <strong>70% dos canceres de colo uterino</strong></li>
+</ul>
+<p><strong>Manifestacoes clinicas:</strong></p>
+<ul>
+<li><strong>Condiloma acuminado:</strong> lesoes papilomatosas vegetantes, "em couve-flor", nas areas genitoanais; HPV 6 e 11</li>
+<li>Lesoes subclínicas (planas): visualizaveis apenas com acido acetico 5% (colposcopia)</li>
+<li>Cancer de colo uterino, vulva, vagina, anus, orofaringe — tipos de alto risco</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li>Clinico: condiloma visivel a olho nu</li>
+<li>Colposcopia: teste com acido acetico (areas acetobrancas)</li>
+<li>Biopsia: confirmacao histologica (coilocitocia = effeito citopatico do HPV)</li>
+<li>PCR para tipagem viral</li>
+</ul>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> HPV e cancer de colo uterino</span><p>HPV de alto risco (16, 18) integra o DNA celular → bloqueia p53 e Rb → proliferacao incontrolavel → NIC I → NIC II → NIC III → carcinoma invasor. Prevencao: <strong>vacinacao + Papanicolaou regular</strong>.</p></div>
+<p><strong>Vacinacao:</strong></p>
+<ul>
+<li>Quadrivalente (6, 11, 16, 18): aprovada para meninas 9-45 anos e meninos 9-26 anos</li>
+<li>Nonavalente (6, 11, 16, 18, 31, 33, 45, 52, 58): maior cobertura de tipos de alto risco</li>
+<li>SUS: meninas 9-14 anos e meninos 11-14 anos (2 doses com 6 meses de intervalo)</li>
+<li>Imunossuprimidos e PVHIV: 3 doses</li>
+</ul>
+<p><strong>Tratamento das lesoes:</strong></p>
+<ul>
+<li>Podofilina 10-25% (uso profissional) ou Podofilotoxina 0,5% (autoaplicacao)</li>
+<li>Imiquimod 5% creme (imunomodulador — autoaplicacao, 16 semanas)</li>
+<li>Acido tricloroacético (ATA) 80-90% — eficaz, indicado em gestantes</li>
+<li>Crioterapia com nitrogênio liquido, eletrocautério, laser CO2, cirurgia</li>
+</ul>
+<hr>
+<h3>3.6 HIV/AIDS</h3>
+<p><strong>Agente:</strong> HIV-1 (predominante globalmente) e HIV-2 (Africa Ocidental, menos virulento)</p>
+<ul>
+<li>Retrovírus com tropismo por <strong>linfocitos TCD4+</strong></li>
+<li>Transcriptase reversa → integrase → protease — alvos terapeuticos</li>
+</ul>
+<p><strong>Transmissao:</strong></p>
+<ul>
+<li>Sexual: anal receptivo (maior risco) > vaginal > oral</li>
+<li>Sanguinea: transfusao, seringas compartilhadas, acidentes perfurocortantes</li>
+<li>Vertical: intraútero, parto (principal), amamentacao</li>
+</ul>
+<p><strong>Historia natural:</strong></p>
+<table><thead><tr><th>Fase</th><th>Caracteristicas</th><th>CD4</th><th>CV</th></tr></thead><tbody><tr><td>Infeccao aguda</td><td>Sindrome retroviral aguda (1-4 semanas): febre, linfadenopatia, exantema, faringite</td><td>Queda transitoria</td><td>Alta</td></tr><tr><td>Latencia</td><td>Assintomatico (media 10 anos sem TARV)</td><td>Declinio progressivo</td><td>Baixa/detectavel</td></tr><tr><td>AIDS</td><td>CD4 < 200 cel/mm³ OU doenca definidora</td><td>< 200</td><td>Alta</td></tr></tbody></table>
+<p><strong>Doencas definidoras de AIDS (exemplos):</strong></p>
+<ul>
+<li>Pneumonia por <em>Pneumocystis jirovecii</em> (PCP)</li>
+<li>Toxoplasmose cerebral</li>
+<li>Criptococose meningea</li>
+<li>Citomegalovirus (retinite, colite)</li>
+<li>Sarcoma de Kaposi</li>
+<li>Linfoma nao-Hodgkin</li>
+<li>Candidíase esofagica</li>
+</ul>
+<p><strong>Diagnostico:</strong></p>
+<ul>
+<li><strong>ELISA de 4a geracao (Ag+Ac):</strong> triagem — detecta antigeno p24 + anticorpos (janela imunologica de 11-15 dias)</li>
+<li><strong>Western Blot / Imunoblot:</strong> confirmatório</li>
+<li><strong>PCR quantitativo (CV):</strong> confirmatório + monitoramento</li>
+</ul>
+<div class="callout callout-warning"><span class="callout-title"><span class="callout-icon">⚠️</span> Janela imunologica</span><p>Periodo em que o individuo esta infectado mas o teste sorológico e negativo. ELISA 4a ger: janela de ~11-15 dias. Anticorpos aparecem em 3-4 semanas. Em exposicao recente de alto risco com teste negativo: repetir em 30-45 dias.</p></div>
+<p><strong>Tratamento (TARV):</strong></p>
+<ul>
+<li>Iniciado para TODOS os pacientes com HIV — independente de CD4 ou CV</li>
+<li>Regime preferencial no Brasil: <strong>TDF + 3TC + DTG</strong> (tenofovir + lamivudina + dolutegravir)</li>
+<li>Reduz transmissao, mortalidade, doencas oportunistas</li>
+</ul>
+<p><strong>Profilaxias:</strong></p>
+<table><thead><tr><th>Tipo</th><th>Indicacao</th><th>Esquema</th></tr></thead><tbody><tr><td><strong>PrEP</strong> (pré-exposicao)</td><td>Alto risco de exposicao sexual</td><td>TDF+FTC 1cp/dia continuo</td></tr><tr><td><strong>PEP</strong> (pos-exposicao)</td><td>Exposicao sexual ou ocupacional de risco</td><td>TDF+3TC+DTG por 28 dias — iniciar em ate 72h</td></tr><tr><td>Cotrimoxazol</td><td>CD4 < 200 ou doencas definidoras</td><td>800/160mg 1x/dia (profilaxia pneumocistose e toxoplasmose)</td></tr></tbody></table>
+<hr>
+<h2>4. Classificacao — ITS Ulcerativas por Dor e Adenopatia</h2>
+<p>```</p>
+<p>ULCERAS GENITAIS</p>
+<p>|</p>
+<p>|-- DOLOROSAS</p>
+<p>|   |-- Cancroide: multiplas, fundo sujo + bubao doloroso fistulizante</p>
+<table><thead><tr><th>-- Herpes: vesiculas → ulceras + adenopatia bilateral dolorosa</th></tr></thead><tbody><tr><td>-- INDOLORES</td></tr><tr><td>-- Sifilis (primaria): unica, indurada, base limpa + adenopatia indolor</td></tr><tr><td>-- LGV: transitoria (desaparece!) + sinal do sulco (1a/2a fase)</td></tr><tr><td>-- Donovanose: vegetante sangrante + SEM adenopatia (pseudobubao)</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>5. Comparacao — Tabela Completa das Ulceras Genitais</h2>
+<table><thead><tr><th>Criterio</th><th>Sifilis</th><th>Cancroide</th><th>LGV</th><th>Donovanose</th><th>Herpes</th></tr></thead><tbody><tr><td><strong>Agente</strong></td><td><em>T. pallidum</em></td><td><em>H. ducreyi</em></td><td><em>C. trachom.</em> L1-3</td><td><em>K. granulomatis</em></td><td>HSV-2</td></tr><tr><td><strong>Numero</strong></td><td>Unica</td><td>Multipla</td><td>Transitoria</td><td>Unica/multipla</td><td>Multiplas</td></tr><tr><td><strong>Bordas</strong></td><td>Regulares, induradas</td><td>Irregulares, escavadas</td><td>—</td><td>Irregulares, vegetantes</td><td>Irregulares</td></tr><tr><td><strong>Fundo</strong></td><td>Limpo, rosado</td><td>Sujo, necrotico</td><td>—</td><td>Granulomatoso, sangra</td><td>Cinza-amarelado</td></tr><tr><td><strong>Dor</strong></td><td><strong>INDOLOR</strong></td><td><strong>DOLOROSA</strong></td><td><strong>INDOLOR</strong></td><td><strong>INDOLOR</strong></td><td><strong>DOLOROSA</strong></td></tr><tr><td><strong>Adenopatia</strong></td><td>Indolor, nao fistuliza</td><td>Dolorosa, fistuliza</td><td><strong>Sinal do sulco</strong></td><td><strong>Pseudobubao</strong></td><td>Dolorosa bilateral</td></tr><tr><td><strong>Diagnostico chave</strong></td><td>VDRL + FTA-ABS</td><td>Cultura/clinico</td><td>Sorologia/NAAT</td><td>Corpos de Donovan</td><td>PCR para HSV</td></tr><tr><td><strong>Tratamento</strong></td><td>Penicilina G benzatina</td><td>Azitromicina 1g</td><td>Doxiciclina 21d</td><td>Doxiciclina 21d</td><td>Aciclovir</td></tr></tbody></table>
+<div class="callout callout-danger"><span class="callout-title"><span class="callout-icon">🚨</span> Esta tabela e a mais cobrada — memorize linha por linha</span></div>
+<hr>
+<h2>6. O Que Mais Cai na Prova</h2>
+<p><strong>Questoes do PREGUNTAS (ITS):</strong></p>
+<blockquote>Q: Paciente 20 anos, ulcera no glande que NAO dói. Diagnostico? R: <strong>Sifilis primaria</strong> (cancro duro) — INDOLOR e a chave.</blockquote>
+<blockquote>Q: Paciente 35 anos, lesoes com liquido no interior em genitais. Diagnostico? R: <strong>Herpes genital</strong> — vesiculas com conteudo liquido, dolorosas.</blockquote>
+<blockquote>Q: Paciente 40 anos, lesoes em couve-flor no pênis. Diagnostico? R: <strong>Condiloma acuminado</strong> (HPV tipos 6 e 11).</blockquote>
+<p><strong>Pegadinhas sobre esta parte:</strong></p>
+<ol>
+<li><strong>LGV:</strong> a ulcera da 1a fase DESAPARECE espontaneamente — o paciente se apresenta ja na 2a fase (bubao)</li>
+<li><strong>Sinal do sulco:</strong> PATOGNOMICO de LGV — adenopatia acima E abaixo do ligamento inguinal</li>
+<li><strong>Donovanose:</strong> corpos de Donovan em macrofagos = diagnostico; <strong>SEM adenopatia</strong> (diferente de LGV)</li>
+<li><strong>HPV:</strong> tipos 6 e 11 = condiloma (baixo risco); tipos 16 e 18 = cancer (alto risco) — nao confundir</li>
+<li><strong>HIV:</strong> TARV indicado para TODOS — nao aguardar CD4 cair para iniciar</li>
+<li><strong>PEP:</strong> iniciar em ate <strong>72 horas</strong> — quanto mais cedo, melhor</li>
+<li><strong>Herpes:</strong> paciente pode transmitir <strong>mesmo sem lesao visivel</strong> (eliminacao viral assincrona)</li>
+<li><strong>Condiloma plano</strong> (sifilis 2a) ≠ <strong>Condiloma acuminado</strong> (HPV) — nome similar, doencas e agentes diferentes</li>
+</ol>
+<hr>
+<h2>7. Mapa Mental em Texto</h2>
+<p>```</p>
+<p>ITS PARTE 2</p>
+<p>|</p>
+<p>|-- ULCERAS GENITAIS</p>
+<p>|   |-- DOLOROSAS</p>
+<p>|   |   |-- CANCROIDE: H. ducreyi → multiplas, fundo sujo → Azitromicina 1g</p>
+<table><thead><tr><th>-- HERPES: HSV-2 → vesiculas → Aciclovir (supressao se recorrente)</th></tr></thead><tbody><tr><td>-- INDOLORES</td></tr><tr><td>-- SIFILIS: T. pallidum → cancro duro → Pen. G Benzatina (ver Parte 1)</td></tr><tr><td>-- LGV: C. trachom L1-3 → sinal do sulco → Doxiciclina 21d</td></tr><tr><td>-- DONOVANOSE: K. granulomatis → verruga sangrante → Doxiciclina 21d</td></tr><tr><td>-- HPV</td></tr><tr><td>-- 6/11: condiloma (couve-flor) — nao oncogenico</td></tr><tr><td>-- 16/18: colo uterino e outros canceres — VACINAR</td></tr><tr><td>-- Tx: podofilina / imiquimod / ATA / criocirurgia</td></tr><tr><td>-- HIV/AIDS</td></tr><tr><td>-- Retrovirus → CD4 → AIDS se CD4 < 200</td></tr><tr><td>-- TARV: TDF+3TC+DTG para TODOS</td></tr><tr><td>-- PrEP (antes) / PEP (< 72h) / cotrimoxazol (CD4 < 200)</td></tr></tbody></table>
+<p>```</p>
+<hr>
+<h2>8. Perguntas de Revisao Ativa</h2>
+<p><strong>Q1:</strong> Homem com bubao inguinal biloculado — adenopatia acima e abaixo do ligamento inguinal, doloroso. Qual ITS e qual sinal?</p>
+<blockquote>R: <strong>LGV</strong> (Chlamydia L1-3). <strong>Sinal do sulco</strong> — patognomico de LGV. Tratamento: doxiciclina 21 dias.</blockquote>
+<p><strong>Q2:</strong> Qual a diferenca entre condiloma acuminado e condiloma plano?</p>
+<blockquote>R: Condiloma acuminado = HPV 6/11 (verrugas "em couve-flor"); condiloma plano = sifilis secundaria (<em>T. pallidum</em>).</blockquote>
+<p><strong>Q3:</strong> Mulher HIV+ com CD4 de 150. Qual profilaxia antimicrobiana deve ser prescrita?</p>
+<blockquote>R: Cotrimoxazol 800/160mg 1x/dia — previne pneumocistose e toxoplasmose (indicado quando CD4 < 200).</blockquote>
+<p><strong>Q4:</strong> Quanto tempo apos exposicao de risco a PEP deve ser iniciada?</p>
+<blockquote>R: Em ate <strong>72 horas</strong> — quanto mais cedo melhor; durar 28 dias.</blockquote>
+<p><strong>Q5:</strong> Qual o achado microscopico patognomico da Donovanose?</p>
+<blockquote>R: <strong>Corpos de Donovan</strong> — inclusoes intracitoplasmáticas em macrofagos com o bacilo encapsulado.</blockquote>
+<p><strong>Q6:</strong> Homem tem herpes genital com 8 episodios por ano. Alem do tratamento da crise, o que indicar?</p>
+<blockquote>R: <strong>Terapia supressora:</strong> Aciclovir 400mg VO 2x/dia continuo (reduz frequencia de recorrencias e transmissao).</blockquote>
+<hr>
+<h2>9. Estrategia de Memorizacao</h2>
+<p><strong>Mnemônico das ulceras — "SUD-LDH":</strong></p>
+<ul>
+<li><strong>S</strong>ifilis = Unica, indurada, <strong>i</strong>ndolor</li>
+<li><strong>U</strong>lcera mole (Cancroide) = dolorosa, <strong>fundo</strong> sujo</li>
+<li><strong>D</strong>onovanose = vegetante, <strong>s</strong>angra, sem adenopatia</li>
+<li><strong>L</strong>GV = <strong>s</strong>inal do <strong>s</strong>ulco, ulcera transitoria</li>
+<li><strong>D</strong>or no Herpes = vesiculas, recorre (latente no ganglio sacral)</li>
+</ul>
+<p><strong>Mnemônico HPV — "6-11 COND; 16-18 CÂNCER":</strong></p>
+<ul>
+<li>6 e 11 = condiloma (verrugas)</li>
+<li>16 e 18 = cancer</li>
+</ul>
+<p><strong>HIV — "TARV SEMPRE, PEP EM 72h":</strong></p>
+<ul>
+<li>Todo diagnosticado com HIV = iniciar TARV (sem esperar CD4 baixar)</li>
+<li>Exposicao de risco = PEP em ate 72 horas</li>
+</ul>
+<hr>
+<blockquote>Volta: P2-T09-ITS-Parte1-Uretrites-Vaginites-Sifilis Controle: _Indice Proximo tema: P2-T10-Obstrucao-Litiasis</blockquote>
+    </div>
+    <hr style="margin:2.5rem 0;">
+    <div class="fc-section">
+      <h2>📇 Flashcards — P2-T09</h2>
+      <div class="fc-controls"><button id="fc-expand-all">Expandir tudo</button><button id="fc-collapse-all">Recolher tudo</button><span class="fc-stats">35 cards · <span class="starred-count">⭐ 15 alta prioridade</span></span></div><div class="fc-grid"><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o agente e o tipo de secrecao caracteristico da gonorreia?</div><div class="fc-answer"><em>Neisseria gonorrhoeae</em> (diplococo gram-negativo intracelular). Secrecao uretral <strong>PURULENTA amarelo-esverdeada</strong>.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o tratamento de 1a linha da gonorreia e por que nao usar fluoroquinolonas?</div><div class="fc-answer">Ceftriaxona 500mg IM dose unica. Fluoroquinolonas estao contraindicadas pela <strong>alta resistencia</strong> adquirida por <em>N. gonorrhoeae</em>.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que se trata clamidiase concomitantemente ao diagnosticar gonorreia?</div><div class="fc-answer">Coinfeccao ocorre em ate 40% dos casos. Protocolo: tratar SEMPRE as duas — Ceftriaxona (gonorreia) + Azitromicina (clamidiase) na mesma consulta.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual a diferenca fundamental na secrecao entre gonorreia e clamidiase?</div><div class="fc-answer">Gonorreia = secrecao <strong>PURULENTA</strong> (amarelo-esverdeada, intensa). Clamidiase = secrecao <strong>CLARA/MUCOSA</strong> (discreta, pode ser assintomatica).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o diagnostico de escolha para clamidiase e por que?</div><div class="fc-answer"><strong>NAAT (PCR)</strong> — maior sensibilidade e especificidade. <em>C. trachomatis</em> e bacteria intracelular obrigatoria e nao cresce em meios convencionais.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento da clamidiase em gestante e por que nao usar a alternativa padrao?</div><div class="fc-answer"><strong>Azitromicina 1g VO dose unica.</strong> Doxiciclina e contraindicada na gestacao (hepatotoxicidade materna + risco de coloracao dos dentes fetais).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o achado laboratorial tipico da gonorreia na bacterioscopia?</div><div class="fc-answer"><strong>Diplococo gram-negativo intracelular</strong> dentro de polimorfonucleares (neutrofilos) — patognomico de gonorreia na bacterioscopia do exsudato uretral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quais as principais complicacoes da gonorreia no sexo feminino?</div><div class="fc-answer">DIP (doenca inflamatoria pelvica), salpingite, aderencias tubarias, <strong>infertilidade</strong>, gravidez ectopica. Gonorreia disseminada: artrite gonococcica + petequias + tenossinovite.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual profilaxia para oftalmia neonatal gonococcica?</div><div class="fc-answer"><strong>Nitrato de prata 1% (metodo de Crede)</strong> ou eritromicina oftalmica — aplicacao nos olhos do recem-nascido apos o parto.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual a triada classica da tricomonase feminina?</div><div class="fc-answer">Corrimento <strong>amarelo-esverdeado espumoso</strong> + <strong>odor fetido</strong> + colo uterino "<strong>em morango</strong>" (colpite difusa com petequias). pH vaginal > 4,5.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Como se faz o diagnostico microscopico de tricomonas?</div><div class="fc-answer"><strong>Microscopia a fresco</strong> do corrimento: visualizacao de <strong>trofozoitos moveis</strong> com flagelos — movimento caracteristico de rotacao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento da tricomonase e por que o parceiro deve ser tratado?</div><div class="fc-answer"><strong>Metronidazol 2g VO dose unica.</strong> <em>T. vaginalis</em> e uma IST — parceiro pode ser reservatorio assintomatico e reinfectar a paciente.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a diferenca entre tricomonase e vaginose bacteriana (corrimento espumoso vs. fishy odor)?</div><div class="fc-answer"><strong>Tricomonas:</strong> corrimento espumoso amarelo-esverdeado + colo em morango + pH > 4,5. <strong>Vaginose bacteriana:</strong> corrimento cinza-esbranquicado + odor de peixe que piora com KOH 10% (teste das aminas) + celulas-chave (clue cells).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais as caracteristicas do cancro duro sifilítico e por que e critico lembrar que e INDOLOR?</div><div class="fc-answer">Ulcera unica, indurada, base limpa, bordas regulares, <strong>INDOLOR</strong>. Diferencial com cancroide (dolorosa). Adenopatia regional indolor, nao fistulizante. Desaparece espontaneamente em 3-6 semanas.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais as manifestacoes da sifilis secundaria e o que e patognomico?</div><div class="fc-answer">Roseola sifilItica (exantema maculo-papular incluindo <strong>palmas e plantas</strong>), condiloma plano/latum, alopecia em clareiras, placas mucosas, linfadenopatia generalizada. Acometimento palmoplantar = patognomico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual a diferenca entre VDRL e FTA-ABS no seguimento da sifilis?</div><div class="fc-answer"><strong>VDRL:</strong> nao-treponemico, titulavel — serve para controle de cura (titulo deve cair apos tratamento). <strong>FTA-ABS:</strong> treponemico, confirmatório — <strong>permanece positivo para sempre</strong> mesmo apos cura (cicatriz sorologica).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o tratamento da sifilis primaria/secundaria versus sifilis latente tardia/terciaria?</div><div class="fc-answer"><strong>Primaria/secundaria/latente precoce:</strong> Penicilina G benzatina 2.400.000 UI IM — <strong>1 dose unica.</strong> <strong>Latente tardia/terciaria/duracao desconhecida:</strong> Penicilina G benzatina 2.400.000 UI IM — <strong>3 doses</strong> (semanal por 3 semanas).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento da neurossifilis e por que difere da sifilis sistemica?</div><div class="fc-answer"><strong>Penicilina G cristalina 18-24 milhoes UI/dia EV por 10-14 dias.</strong> A benzatina nao penetra adequadamente na barreira hematoencefalica — necessita penicilina cristalina em altas doses para tratar SNC.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e a reacao de Jarisch-Herxheimer e o que fazer?</div><div class="fc-answer">Piora transitoria dos sintomas (febre, calafrio, mialgia) nas <strong>primeiras 24h</strong> apos inicio do tratamento da sifilis. Ocorre por liberacao de endotoxinas do <em>T. pallidum</em> morto. <strong>Tratar com antipireticos — NAO suspender a penicilina.</strong></div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual e o UNICO sinal patognomico de LGV e como reconhece-lo?</div><div class="fc-answer"><strong>Sinal do sulco</strong> — adenopatia inguinal acima E abaixo do ligamento inguinal de Poupart, dividida pelo proprio ligamento. E patognomico de LGV (<em>Chlamydia trachomatis</em> L1-L3).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Tabela comparativa rapida das 5 ulceras genitais (dor + adenopatia):</div><div class="fc-answer">Sifilis: INDOLOR + adenopatia INDOLOR. Cancroide: DOLOROSA + bubao DOLOROSO fistulizante. LGV: indolor transitoria + sinal do sulco. Donovanose: INDOLOR + PSEUDOBUBAO (sem ganglio). Herpes: DOLOROSA + adenopatia dolorosa bilateral.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>O que e o pseudobubao da donovanose e como difere do bubao verdadeiro?</div><div class="fc-answer">Pseudobubao = granuloma subcutaneo (tecido granulomatoso, nao ganglio linfonodal). <strong>Nao e adenopatia verdadeira.</strong> O bubao verdadeiro (LGV, cancroide) e um linfonodo aumentado e inflamado.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o achado patognomico da donovanose na microscopia?</div><div class="fc-answer"><strong>Corpos de Donovan</strong> — inclusoes intracitoplasmáticas em macrofagos tissulares contendo <em>K. granulomatis</em> encapsulada. Visiveis em biopsia com coloracao de Giemsa ou Leishman.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Por que a ulcera da 1a fase do LGV passa frequentemente despercebida?</div><div class="fc-answer">E <strong>transitoria e indolor</strong> — a vesiculopustula ou pequena ulcera some espontaneamente em dias. O paciente frequentemente se apresenta ja na 2a fase (bubao inguinal), nao lembrando da lesao inicial.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o tratamento do cancroide e do LGV/Donovanose?</div><div class="fc-answer"><strong>Cancroide:</strong> Azitromicina 1g VO dose unica (ou Ceftriaxona 250mg IM). <strong>LGV:</strong> Doxiciclina 100mg 2x/dia <strong>21 dias.</strong> <strong>Donovanose:</strong> Doxiciclina 100mg 2x/dia <strong>21 dias</strong> (minimo, ate cicatrizacao).</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Qual o diferencial entre herpes genital e cancroide (ambos dolorosos)?</div><div class="fc-answer"><strong>Herpes:</strong> vesiculas multiplas sobre base eritematosa → ulceras; recorre; ganglio sacral; adenopatia bilateral. <strong>Cancroide:</strong> ulceras ja formadas (sem fase de vesiculas), fundo sujo/necrotico, odor fetido, bubao unilateral fistulizante.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual e o agente do cancroide e como se apresenta ao gram?</div><div class="fc-answer"><em>Haemophilus ducreyi</em> — bacilo gram-negativo. Na bacterioscopia pode apresentar arranjo em "cardume de peixes" (em fileiras paralelas) mas o diagnostico e principalmente clinico.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quais os tipos de HPV de baixo risco e alto risco e suas doencas?</div><div class="fc-answer"><strong>Baixo risco (6, 11):</strong> condiloma acuminado ("couve-flor") — nao oncogenico. <strong>Alto risco (16, 18):</strong> responsaveis por 70% dos canceres de colo uterino, vulva, anus, orofaringe.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o tratamento de escolha para condiloma acuminado na gestante?</div><div class="fc-answer"><strong>Acido tricloroacético (ATA) 80-90%</strong> — unico tratamento tópico seguro na gestacao. Podofilina, imiquimod e podofilotoxina sao contraindicados na gestacao.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e a sindrome retroviral aguda e quando ocorre?</div><div class="fc-answer">Conjunto de sintomas 1-4 semanas apos infeccao pelo HIV: febre, linfadenopatia, exantema eritematoso, faringite, mialgias. Frequentemente confundida com "gripe" ou mononucleose. Cursa com alta carga viral e queda transitoria de CD4.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando iniciar PEP e qual o regime recomendado?</div><div class="fc-answer">Iniciar em ate <strong>72 horas</strong> apos a exposicao de risco (ocupacional ou sexual). Quanto mais cedo, mais eficaz. Regime: <strong>TDF+3TC+DTG</strong> por <strong>28 dias</strong> continuos.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card starred"><div class="fc-question"><span class="fc-star">⭐</span>Quando se define AIDS e quais as principais doencas definidoras?</div><div class="fc-answer">CD4 <strong>< 200 cel/mm³</strong> OU presenca de doenca definidora. Principais: pneumonia por <em>P. jirovecii</em>, toxoplasmose cerebral, criptococose meningea, sarcoma de Kaposi, retinite por CMV, linfoma nao-Hodgkin.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Qual o regime de TARV de 1a linha no Brasil e para quem e indicado?</div><div class="fc-answer"><strong>TDF + 3TC + DTG</strong> (tenofovir + lamivudina + dolutegravir). Indicado para <strong>TODOS os pacientes com diagnostico de HIV</strong> — independente de CD4, carga viral ou sintomas.</div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">O que e a janela imunologica do HIV e qual teste tem menor janela?</div><div class="fc-answer">Periodo de infeccao em que os testes sorológicos sao negativos. ELISA de 4a geracao (detecta Ag p24 + anticorpos): janela de <strong>~11-15 dias</strong>. Em exposicao recente com teste negativo: <strong>repetir em 30-45 dias.</strong></div><div class="fc-toggle">▼ revelar resposta</div></div><div class="fc-card"><div class="fc-question">Quando indicar cotrimoxazol como profilaxia em PVHIV?</div><div class="fc-answer">Quando CD4 <strong>< 200 cel/mm³</strong> ou em qualquer doenca definidora de AIDS. <strong>Dose:</strong> 800/160mg (F80) 1x/dia — previne pneumocistose (<em>P. jirovecii</em>) e toxoplasmose cerebral.</div><div class="fc-toggle">▼ revelar resposta</div></div></div>
+    </div>
+  </div>
+
+</div>
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="Infográfico ampliado">
+</div>
+<script src="/MedVaultWeb/assets/js/sidebar.js"></script>
+
+<script>
+// Flashcard click-to-reveal
+document.querySelectorAll('.fc-card').forEach(function(card) {
+  var q = card.querySelector('.fc-question');
+  var t = card.querySelector('.fc-toggle');
+  if (q) q.addEventListener('click', function() { card.classList.toggle('open'); });
+  if (t) t.addEventListener('click', function() { card.classList.toggle('open'); });
+});
+// Expand / Collapse all
+var btnExp = document.getElementById('fc-expand-all');
+var btnCol = document.getElementById('fc-collapse-all');
+if (btnExp) btnExp.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.add('open'); });
+});
+if (btnCol) btnCol.addEventListener('click', function() {
+  document.querySelectorAll('.fc-card').forEach(function(c) { c.classList.remove('open'); });
+});
+// Lightbox
+document.querySelectorAll('.infog-item img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox')?.addEventListener('click', function(e) {
+  if (e.target === this || e.target.classList.contains('lightbox-close'))
+    this.classList.remove('active');
+});
+</script>
+
+</body>
+</html>
