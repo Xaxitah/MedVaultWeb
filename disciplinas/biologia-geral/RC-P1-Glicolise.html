@@ -121,8 +121,77 @@ tr:hover td { background: var(--bg3); }
 <h1>Respiração Celular — Parte 1</h1>
 <p class="subtitle">Glicólise · Citosol · 10 Etapas · 2 ATP líquidos · 2 NADH</p>
 
+<!-- AÇÚCARES -->
+<h2>1. Os Açúcares — O Combustível da Glicólise</h2>
+
+<div class="callout callout-info">
+  <div class="callout-title">Por que estudar açúcares antes da glicólise?</div>
+  A glicólise é literalmente a "quebra da glicose" (glikys = doce + lysis = quebrar).
+  Para entender o processo, precisa saber <strong>que tipo de açúcar é a glicose</strong>,
+  <strong>de onde ela vem</strong>, e por que ela — e não frutose ou galactose — é o substrato direto.
+</div>
+
+<h3>Hexoses — Os 3 Açúcares de 6 Carbonos</h3>
+
+<figure class="fig">
+  <img src="imgs/hexoses-glicose-galactose-frutose.png" alt="Fórmulas de Fischer da glicose, galactose e frutose">
+  <figcaption>Glicose, Galactose e Frutose — fórmulas de Fischer (forma linear). O * marca o carbono assimétrico que diferencia glicose de galactose (C4). Frutose tem C=O no C2 (cetose); glicose e galactose têm CHO no C1 (aldoses).</figcaption>
+</figure>
+
+<div class="grid-2">
+  <div class="card">
+    <strong style="color:var(--teal)">Aldoses</strong> — CHO no C1
+    <p style="font-size:.9rem; margin-top:.4rem">
+      <strong>Glicose</strong>: combustível direto da glicólise.<br>
+      <strong>Galactose</strong>: difere da glicose só no C4. Vem da lactose (leite). É convertida em glicose-1-fosfato pelo metabolismo do galactose antes de entrar na glicólise.
+    </p>
+  </div>
+  <div class="card">
+    <strong style="color:var(--orange)">Cetose</strong> — C=O no C2
+    <p style="font-size:.9rem; margin-top:.4rem">
+      <strong>Frutose</strong>: vem da sacarose (açúcar de mesa) e frutas. Entra na glicólise como frutose-6-fosfato (etapa 2) ou frutose-1-fosfato no fígado — <em>não precisa da etapa 1</em>.
+    </p>
+  </div>
+</div>
+
+<h3>Formas Lineares e Anéis — O Que Muda?</h3>
+
+<figure class="fig">
+  <img src="imgs/glicose-formas-lineares-aneis.png" alt="Glicose forma linear e anéis α/β — ribose e frutose">
+  <figcaption>Esquerda: glicose em forma linear (Fischer) e suas formas em anel α-glucose e β-glucose. O OH no C1 define α (lado oposto ao CH₂OH) vs β (mesmo lado). Abaixo: ribose e frutose como pentoses em anel (para comparação).</figcaption>
+</figure>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Por que isso importa para a glicólise?</div>
+  A glicose entra na célula e circula principalmente como <strong>β-D-glicose</strong> (forma em anel).
+  A hexoquinase (etapa 1) fosforila qualquer anomero. O que importa biologicamente é que
+  a glicose é sempre uma <strong>aldohexose</strong> — 6 carbonos, com aldeído no C1 na forma linear.
+</div>
+
+<h3>De Onde Vem a Glicose — Dissacarídeos da Alimentação</h3>
+
+<figure class="fig">
+  <img src="imgs/acucares-dissacarideos.png" alt="Dissacarídeos: maltose, sacarose e lactose">
+  <figcaption>Os principais dissacarídeos da dieta. A digestão os hidrolisa liberando monossacarídeos que entram na corrente sanguínea e chegam às células para a glicólise.</figcaption>
+</figure>
+
+<table>
+  <thead><tr><th>Dissacarídeo</th><th>Componentes</th><th>Fonte</th><th>Produto para glicólise</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Maltose</strong></td><td>Glicose + Glicose</td><td>Amido digerido, malte</td><td>Glicose direta</td></tr>
+    <tr><td><strong>Sacarose</strong></td><td>Glicose + Frutose</td><td>Açúcar de mesa, frutas</td><td>Glicose + Frutose (→ F6P)</td></tr>
+    <tr><td><strong>Lactose</strong></td><td>Galactose + Glicose</td><td>Leite e derivados</td><td>Glicose + Galactose (→ G1P → G6P)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Intolerância à Lactose</div>
+  Falta de <strong>lactase</strong> intestinal → lactose não é hidrolisada → galactose e glicose não são liberadas.
+  Resultado: bactérias fermentam a lactose no intestino grosso → gases, distensão, diarreia.
+</div>
+
 <!-- VISÃO GERAL -->
-<h2>1. Visão Geral</h2>
+<h2>2. Visão Geral da Glicólise</h2>
 
 <div class="callout callout-info">
   <div class="callout-title">Localização</div>
@@ -156,7 +225,7 @@ tr:hover td { background: var(--bg3); }
 </figure>
 
 <!-- CITOSOL E GLUT -->
-<h2>2. Citosol, GLUT e Insulina</h2>
+<h2>3. Citosol, GLUT e Insulina</h2>
 
 <div class="grid-2">
   <div class="card">
@@ -189,7 +258,7 @@ tr:hover td { background: var(--bg3); }
 </div>
 
 <!-- FASE INVESTIMENTO -->
-<h2>3. Fase de Investimento (Etapas 1–5)</h2>
+<h2>4. Fase de Investimento (Etapas 1–5)</h2>
 
 <ul class="steps">
   <li>
@@ -222,7 +291,17 @@ tr:hover td { background: var(--bg3); }
     <div>
       <span class="enzyme">Aldolase</span><br>
       <div class="rxn">Frutose-1,6-bisfosfato  →  DHAP + Gliceraldeído-3-fosfato (GAP)</div>
-      Quebra retro-aldol: produz dois açúcares de 3 carbonos (isômeros entre si).
+      Quebra retro-aldol: produz dois açúcares de 3 carbonos (isômeros entre si).<br><br>
+      <div class="grid-2" style="margin-top:.5rem">
+        <div class="card" style="padding:.8rem 1rem">
+          <strong style="color:var(--orange)">DHAP</strong> — Dihidroxiacetona Fosfato<br>
+          <span style="font-size:.88rem; color:var(--text-muted)">C=O no C2 (cetose) · não entra direto na glicólise · precisa ser convertido em GAP pela triose-fosfato isomerase (etapa 5)</span>
+        </div>
+        <div class="card" style="padding:.8rem 1rem">
+          <strong style="color:var(--teal)">GAP</strong> — Gliceraldeído-3-Fosfato<br>
+          <span style="font-size:.88rem; color:var(--text-muted)">CHO no C1 (aldeído → por isso "gliceraldeído") · substrato direto das etapas 6–10 · é uma triose aldose de 3 carbonos</span>
+        </div>
+      </div>
     </div>
   </li>
   <li>
@@ -237,7 +316,7 @@ tr:hover td { background: var(--bg3); }
 </ul>
 
 <!-- FASE RENDIMENTO -->
-<h2>4. Fase de Rendimento (Etapas 6–10) · Ocorre 2× por glicose</h2>
+<h2>5. Fase de Rendimento (Etapas 6–10) · Ocorre 2× por glicose</h2>
 
 <figure class="fig">
   <img src="imgs/glicolise-etapas-6-10.png" alt="Etapas 6-10 da glicólise">
@@ -290,7 +369,7 @@ tr:hover td { background: var(--bg3); }
 </ul>
 
 <!-- TABELA DAS 10 ETAPAS -->
-<h2>5. Tabela das 10 Etapas — Resumo</h2>
+<h2>6. Tabela das 10 Etapas — Resumo</h2>
 
 <table>
   <thead><tr><th>Etapa</th><th>Reação</th><th>Enzima</th><th>Saldo</th></tr></thead>
@@ -311,7 +390,7 @@ tr:hover td { background: var(--bg3); }
 </table>
 
 <!-- NAD+/NADH -->
-<h2>6. O que é NADH — Estrutura e Formação</h2>
+<h2>7. O que é NADH — Estrutura e Formação</h2>
 
 <figure class="fig">
   <img src="imgs/nad-nadh-estrutura.png" alt="Estrutura molecular do NAD+ e NADH">
@@ -340,7 +419,7 @@ Ou: NAD⁺ + 2e⁻ + H⁺  →  NADH</div>
 </div>
 
 <!-- PIRUVATO -->
-<h2>7. Estrutura do Piruvato</h2>
+<h2>8. Estrutura do Piruvato</h2>
 
 <div class="card">
   <p><strong>Fórmula molecular:</strong> C₃H₄O₃ (ácido pirúvico) / C₃H₃O₃⁻ (piruvato em pH fisiológico)</p>
@@ -353,7 +432,7 @@ Ou: NAD⁺ + 2e⁻ + H⁺  →  NADH</div>
 </div>
 
 <!-- DESTINO DO PIRUVATO -->
-<h2>8. Destino do Piruvato e do NADH</h2>
+<h2>9. Destino do Piruvato e do NADH</h2>
 
 <div class="grid-2">
   <div class="callout callout-info" style="margin:0">
@@ -375,7 +454,7 @@ Ou: NAD⁺ + 2e⁻ + H⁺  →  NADH</div>
 </div>
 
 <!-- ERROS -->
-<h2>9. Erros Clássicos</h2>
+<h2>10. Erros Clássicos</h2>
 
 <div class="callout callout-danger">
   <div class="callout-title">Erro 1 — Glicólise dentro da mitocôndria</div>
