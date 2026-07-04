@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciclo de Krebs — Respiração Celular P2 | MED-Vault</title>
+<style>
+:root { --bg:#1a1b1e; --bg2:#242528; --bg3:#2e3035; --border:#3d3f44; --text:#dde1e7;
+  --text-muted:#9da3ad; --purple:#9580ff; --teal:#4db6ac; --orange:#ffab40;
+  --green:#69db7c; --red:#ff6b6b; --code-bg:#1e1e2e; --nav-h:56px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:16px; line-height:1.7; }
+nav { position:sticky; top:0; z-index:100; background:#12131599;
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--border);
+  height:var(--nav-h); display:flex; align-items:center; padding:0 1.5rem; gap:1rem; }
+.nav-brand { font-weight:700; color:var(--purple); font-size:1.1rem; margin-right:auto; }
+nav a { color:var(--text-muted); text-decoration:none; padding:.35rem .8rem; border-radius:6px;
+  font-size:.9rem; transition:all .2s; border:1px solid transparent; }
+nav a:hover { color:var(--text); background:var(--bg3); }
+nav a.active { color:var(--teal); border-color:var(--teal); background:#4db6ac15; }
+.page { max-width:860px; margin:0 auto; padding:2.5rem 1.5rem 6rem; }
+h1 { font-size:2rem; font-weight:800; color:var(--teal); margin-bottom:.4rem; }
+.subtitle { color:var(--text-muted); font-size:1rem; margin-bottom:2.5rem; }
+h2 { font-size:1.4rem; font-weight:700; color:var(--purple); margin:2.5rem 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--bg3); }
+h3 { font-size:1.1rem; font-weight:600; color:var(--orange); margin:1.5rem 0 .6rem; }
+p { margin-bottom:.9rem; }
+strong { color:#fff; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem 1.5rem; margin:1rem 0; }
+.callout { border-radius:8px; padding:1rem 1.2rem; margin:1rem 0; border-left:4px solid; }
+.callout-info { background:#4db6ac12; border-color:var(--teal); }
+.callout-warn { background:#ffab4015; border-color:var(--orange); }
+.callout-tip { background:#69db7c12; border-color:var(--green); }
+.callout-danger { background:#ff6b6b12; border-color:var(--red); }
+.callout-title { font-weight:700; font-size:.9rem; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:.4rem; }
+.callout-info .callout-title { color:var(--teal); }
+.callout-warn .callout-title { color:var(--orange); }
+.callout-tip .callout-title { color:var(--green); }
+.callout-danger .callout-title { color:var(--red); }
+.rxn { background:var(--code-bg); border:1px solid var(--border); border-radius:8px;
+  padding:1rem 1.2rem; font-family:'Consolas','Courier New',monospace; font-size:.9rem;
+  color:#cdd6f4; white-space:pre; overflow-x:auto; margin:.8rem 0; line-height:1.6; }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.92rem; }
+th { background:var(--bg3); color:var(--text-muted); text-align:left;
+  padding:.6rem .9rem; font-weight:600; border-bottom:2px solid var(--border); }
+td { padding:.55rem .9rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.badge { display:inline-block; font-size:.78rem; font-weight:700; padding:.2rem .6rem; border-radius:20px; }
+.badge-nadh { background:#4db6ac20; color:var(--teal); }
+.badge-fadh { background:#9580ff20; color:var(--purple); }
+.badge-atp { background:#69db7c20; color:var(--green); }
+.badge-co2 { background:#ff6b6b20; color:var(--red); }
+.fig { margin:1.5rem 0; text-align:center; }
+.fig img { max-width:100%; border-radius:8px; border:1px solid var(--border);
+  box-shadow:0 4px 24px #0005; }
+.fig figcaption { margin-top:.5rem; font-size:.85rem; color:var(--text-muted); font-style:italic; }
+.steps { list-style:none; padding:0; }
+.steps li { display:flex; gap:1rem; padding:.9rem 0; border-bottom:1px solid var(--border); }
+.steps li:last-child { border:none; }
+.step-num { min-width:28px; height:28px; border-radius:50%; background:var(--teal);
+  color:#fff; font-weight:800; font-size:.8rem; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:.1rem; }
+.enzyme { display:inline-block; background:#4db6ac18; color:var(--teal); border:1px solid #4db6ac40;
+  border-radius:4px; padding:.05rem .45rem; font-size:.82rem; font-weight:600; margin-bottom:.3rem; }
+.enzyme-reg { background:#9580ff18; color:var(--purple); border-color:#9580ff40; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.8rem; }
+@media (max-width:600px) { .grid-2,.grid-3 { grid-template-columns:1fr; }
+  nav { padding:0 .8rem; gap:.5rem; }
+  nav a { padding:.3rem .5rem; font-size:.82rem; } }
+.product-pill { display:inline-block; padding:.15rem .5rem; border-radius:4px; font-size:.82rem;
+  font-weight:700; margin:.15rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">MED-Vault · Bio Geral</span>
+  <a href="RC-P1-Glicolise.html">P1 · Glicólise</a>
+  <a href="RC-P2-Ciclo-Acido-Citrico.html" class="active">P2 · Krebs</a>
+  <a href="RC-P3-Fosforilacao-Oxidativa.html">P3 · Fosforilação</a>
+</nav>
+
+<div class="page">
+
+<h1>Respiração Celular — Parte 2</h1>
+<p class="subtitle">Oxidação do Piruvato + Ciclo do Ácido Cítrico (Krebs) · Matriz Mitocondrial</p>
+
+<!-- MITOCÔNDRIA -->
+<h2>1. Estrutura da Mitocôndria</h2>
+
+<table>
+  <thead><tr><th>Compartimento</th><th>O que contém / Função</th></tr></thead>
+  <tbody>
+    <tr><td>Membrana externa</td><td>Relativamente permeável (porinas); separa citosol do espaço intermembrana</td></tr>
+    <tr><td><strong>Espaço intermembrana</strong></td><td>Acumula H⁺ durante a cadeia respiratória (Parte 3)</td></tr>
+    <tr><td><strong>Membrana interna (cristas)</strong></td><td>Cadeia transportadora de elétrons + ATP sintase — muito seletiva</td></tr>
+    <tr><td><strong>Matriz mitocondrial ⭐</strong></td><td>Onde ocorrem oxidação do piruvato e ciclo de Krebs — aqui fica esta Parte 2</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Por que as Cristas Importam?</div>
+  Cristas são dobras da membrana interna. Mais dobras = mais área = mais ATP sintase.
+  Células com alto gasto energético (cardiomiócito, hepatócito) têm muitas cristas.
+</div>
+
+<!-- OXIDAÇÃO DO PIRUVATO -->
+<h2>2. Oxidação do Piruvato — A Ponte entre Glicólise e Krebs</h2>
+
+<figure class="fig">
+  <img src="imgs/piruvato-oxidacao.jpg" alt="Oxidação do piruvato — 3 etapas">
+  <figcaption>Oxidação do piruvato: (1) perda de CO₂, (2) NAD⁺ → NADH, (3) grupo acetil + CoA → Acetil-CoA (OpenStax)</figcaption>
+</figure>
+
+<div class="rxn">Piruvato (3C) + NAD⁺ + CoA-SH
+        ↓  Complexo Piruvato Desidrogenase (3 enzimas + 60+ subunidades)
+Acetil-CoA (2C)  +  CO₂  +  NADH</div>
+
+<div class="grid-3">
+  <div class="card" style="text-align:center">
+    <div style="font-size:1.5rem">🔵</div>
+    <strong>Etapa 1</strong><br>
+    <span style="font-size:.9rem">Carboxila removida → liberada como <strong>CO₂</strong></span>
+  </div>
+  <div class="card" style="text-align:center">
+    <div style="font-size:1.5rem">⚡</div>
+    <strong>Etapa 2</strong><br>
+    <span style="font-size:.9rem">Molécula de 2C oxidada → <strong>NAD⁺ vira NADH</strong></span>
+  </div>
+  <div class="card" style="text-align:center">
+    <div style="font-size:1.5rem">🔗</div>
+    <strong>Etapa 3</strong><br>
+    <span style="font-size:.9rem">Grupo acetil + CoA → <strong>Acetil-CoA</strong> (o combustível do Krebs)</span>
+  </div>
+</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">Resultado por Glicose (2 Piruvatos)</div>
+  <span class="badge badge-nadh">+2 NADH</span>
+  <span class="badge badge-co2">+2 CO₂</span>
+  <span style="color:var(--text-muted); font-size:.9rem; margin-left:.5rem">Nenhum ATP direto nesta etapa</span>
+</div>
+
+<!-- CICLO DE KREBS -->
+<h2>3. Ciclo do Ácido Cítrico (Krebs) — Visão Geral</h2>
+
+<div class="callout callout-warn">
+  <div class="callout-title">3 Nomes, 1 Processo</div>
+  <strong>Ciclo do Ácido Cítrico</strong> — pela 1ª molécula formada (citrato)<br>
+  <strong>Ciclo TCA / Tricarboxílico</strong> — pelos 3 grupos carboxila dos primeiros intermediários<br>
+  <strong>Ciclo de Krebs</strong> — por Hans Krebs (Prêmio Nobel 1953)
+</div>
+
+<div class="rxn">Acetil-CoA (2C) + Oxaloacetato (4C)
+        ↓ 8 etapas
+Oxaloacetato (4C) regenerado  +  3 NADH  +  1 FADH₂  +  1 GTP  +  2 CO₂</div>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Propósito Real do Krebs — Não É o ATP!</div>
+  O Krebs produz apenas <strong>1 GTP</strong> por volta (2 por glicose). Seu valor real está em gerar
+  <strong>NADH e FADH₂</strong> que vão render a grande maioria do ATP na Parte 3.
+</div>
+
+<figure class="fig">
+  <img src="imgs/krebs-ciclo.png" alt="Ciclo do Ácido Cítrico — diagrama completo">
+  <figcaption>Ciclo do Ácido Cítrico completo — estruturas dos intermediários, enzimas e produtos em cada etapa</figcaption>
+</figure>
+
+<!-- 8 ETAPAS DO KREBS -->
+<h2>4. As 8 Etapas do Ciclo de Krebs</h2>
+<p style="color:var(--text-muted); font-size:.9rem">Cada volta = 1 Acetil-CoA. Por glicose = 2 voltas.</p>
+
+<ul class="steps">
+  <li>
+    <div class="step-num">1</div>
+    <div>
+      <span class="enzyme">Citrato sintase</span><br>
+      <div class="rxn">Acetil-CoA (2C) + Oxaloacetato (4C) + H₂O  →  Citrato (6C) + CoA-SH</div>
+      CoA é liberada. Acetil-CoA doa seu grupo acetil ao oxaloacetato → forma citrato (6C).
+    </div>
+  </li>
+  <li>
+    <div class="step-num">2</div>
+    <div>
+      <span class="enzyme">Aconitase</span><br>
+      <div class="rxn">Citrato  →  Isocitrato</div>
+      Isomerização: remoção e re-adição de H₂O. Rearranja o citrato para facilitar oxidação na próxima etapa.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--purple)">3</div>
+    <div>
+      <span class="enzyme enzyme-reg">Isocitrato desidrogenase ⭐ Regulatória</span><br>
+      <div class="rxn">Isocitrato (6C) + NAD⁺  →  α-cetoglutarato (5C) + CO₂ + NADH</div>
+      Oxidação + descarboxilação: perde 1 CO₂. NAD⁺ → <strong>NADH (1º)</strong>.
+      Ativada por Ca²⁺ e ADP; inibida por NADH.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--purple)">4</div>
+    <div>
+      <span class="enzyme enzyme-reg">α-cetoglutarato desidrogenase ⭐ Regulatória</span><br>
+      <div class="rxn">α-cetoglutarato (5C) + NAD⁺ + CoA  →  Succinil-CoA (4C) + CO₂ + NADH</div>
+      Similar à oxidação do piruvato: perde 1 CO₂. NAD⁺ → <strong>NADH (2º)</strong>.
+      Inibida por NADH e succinil-CoA.
+    </div>
+  </li>
+</ul>
+
+<div class="callout callout-info">
+  <div class="callout-title">Contagem de CO₂ após Etapa 4</div>
+  Por volta: <strong>2 CO₂</strong> liberados (etapas 3 e 4).<br>
+  Por glicose (2 voltas): 4 CO₂ do Krebs + 2 CO₂ da oxidação do piruvato = <strong>6 CO₂ total</strong>.<br>
+  Isso corresponde exatamente aos <strong>6 carbonos da glicose original</strong> (C₆H₁₂O₆).
+</div>
+
+<ul class="steps">
+  <li>
+    <div class="step-num" style="background:var(--green)">5</div>
+    <div>
+      <span class="enzyme">Succinil-CoA sintetase</span><br>
+      <div class="rxn">Succinil-CoA (4C) + GDP + Pi  →  Succinato (4C) + GTP + CoA-SH</div>
+      Fosforilação em <strong>nível de substrato</strong> (sem cadeia respiratória).
+      A energia da ligação tioéster da succinil-CoA gera <strong>1 GTP ≈ 1 ATP</strong> por volta.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--orange)">6</div>
+    <div>
+      <span class="enzyme">Succinato desidrogenase = Complexo II da CTE</span><br>
+      <div class="rxn">Succinato (4C) + FAD  →  Fumarato (4C) + FADH₂
+
+–CH₂–CH₂–  →  –CH=CH–  (dupla ligação formada)</div>
+      Succinato perde 2H dos carbonos centrais. FAD os aceita → <strong>FADH₂</strong>.
+      Esta enzima fica na <strong>membrana interna</strong> (única exceção — não na matriz).
+    </div>
+  </li>
+  <li>
+    <div class="step-num">7</div>
+    <div>
+      <span class="enzyme">Fumarase</span><br>
+      <div class="rxn">Fumarato (4C) + H₂O  →  Malato (4C)</div>
+      Hidratação: adição de água. O fumarato ganha um grupo álcool (OH) → malato.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--purple)">8</div>
+    <div>
+      <span class="enzyme">Malato desidrogenase</span><br>
+      <div class="rxn">Malato (4C) + NAD⁺  →  Oxaloacetato (4C) + NADH + H⁺
+
+Álcool (–OH) oxidado a carbonila (C=O)</div>
+      NAD⁺ → <strong>NADH (3º)</strong>. <strong>Oxaloacetato é regenerado</strong> — o ciclo pode recomeçar!
+    </div>
+  </li>
+</ul>
+
+<!-- TABELA RESUMO -->
+<h2>5. Tabela das 8 Etapas</h2>
+
+<table>
+  <thead><tr><th>Etapa</th><th>Reação</th><th>Enzima</th><th>Produto</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Acetil-CoA + OAA → Citrato</td><td>Citrato sintase</td><td>—</td></tr>
+    <tr><td>2</td><td>Citrato → Isocitrato</td><td>Aconitase</td><td>—</td></tr>
+    <tr><td><strong>3</strong></td><td>Isocitrato → α-KG + CO₂</td><td><strong>Isocitrato desidrogenase ⭐</strong></td><td><span class="badge badge-nadh">NADH</span> <span class="badge badge-co2">CO₂</span></td></tr>
+    <tr><td><strong>4</strong></td><td>α-KG → Succinil-CoA + CO₂</td><td><strong>α-KG desidrogenase ⭐</strong></td><td><span class="badge badge-nadh">NADH</span> <span class="badge badge-co2">CO₂</span></td></tr>
+    <tr><td><strong>5</strong></td><td>Succinil-CoA → Succinato</td><td>Succinil-CoA sintetase</td><td><span class="badge badge-atp">GTP</span></td></tr>
+    <tr><td><strong>6</strong></td><td>Succinato → Fumarato</td><td>Succinato desidrogenase</td><td><span class="badge badge-fadh">FADH₂</span></td></tr>
+    <tr><td>7</td><td>Fumarato → Malato</td><td>Fumarase</td><td>—</td></tr>
+    <tr><td><strong>8</strong></td><td>Malato → Oxaloacetato</td><td>Malato desidrogenase</td><td><span class="badge badge-nadh">NADH</span></td></tr>
+  </tbody>
+</table>
+
+<p style="font-size:.85rem; color:var(--text-muted)">OAA = oxaloacetato | α-KG = α-cetoglutarato</p>
+
+<!-- PRODUTOS -->
+<h2>6. Produtos — Por Acetil-CoA e Por Glicose</h2>
+
+<div class="grid-2">
+  <div class="card">
+    <strong>Por 1 acetil-CoA (1 volta)</strong>
+    <table style="margin-top:.6rem; font-size:.9rem">
+      <tr><td>NADH</td><td><span class="badge badge-nadh">3</span></td></tr>
+      <tr><td>FADH₂</td><td><span class="badge badge-fadh">1</span></td></tr>
+      <tr><td>GTP/ATP</td><td><span class="badge badge-atp">1</span></td></tr>
+      <tr><td>CO₂</td><td><span class="badge badge-co2">2</span></td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <strong>Por 1 glicose (2 voltas + oxidação do piruvato)</strong>
+    <table style="margin-top:.6rem; font-size:.9rem">
+      <tr><td>NADH total</td><td><span class="badge badge-nadh">10</span> (2 glic + 2 ox-pir + 6 Krebs)</td></tr>
+      <tr><td>FADH₂</td><td><span class="badge badge-fadh">2</span></td></tr>
+      <tr><td>GTP/ATP direto</td><td><span class="badge badge-atp">2</span></td></tr>
+      <tr><td>CO₂</td><td><span class="badge badge-co2">6</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- KREBS MAPA -->
+<h2>7. Conexões do Ciclo de Krebs com o Metabolismo</h2>
+
+<figure class="fig">
+  <img src="imgs/krebs-mapa.png" alt="Mapa de conexões do Krebs">
+  <figcaption>Intermediários do ciclo de Krebs como ponto de cruzamento com outras vias metabólicas (aminoácidos, lipídios, gliconeogênese)</figcaption>
+</figure>
+
+<!-- NADH E FADH2 -->
+<h2>8. Por que FADH₂ Rende Menos ATP que NADH?</h2>
+
+<div class="grid-2">
+  <div class="card">
+    <strong style="color:var(--teal)">NADH</strong>
+    <p style="font-size:.9rem; margin-top:.4rem">
+    Entra no <strong>Complexo I</strong> da cadeia respiratória.<br>
+    Complexos I + III + IV bombeiam H⁺.<br>
+    Rende <strong>~2,5 ATP</strong> por NADH.
+    </p>
+  </div>
+  <div class="card">
+    <strong style="color:var(--purple)">FADH₂</strong>
+    <p style="font-size:.9rem; margin-top:.4rem">
+    Entra no <strong>Complexo II</strong> (não bombeia H⁺ diretamente).<br>
+    Complexos III + IV bombeiam H⁺.<br>
+    Rende <strong>~1,5 ATP</strong> por FADH₂.
+    </p>
+  </div>
+</div>
+
+<!-- SALDO ACUMULADO -->
+<h2>9. Saldo Acumulado até Aqui (Partes 1 + 2)</h2>
+
+<table>
+  <thead><tr><th>Etapa</th><th>ATP direto</th><th>NADH</th><th>FADH₂</th></tr></thead>
+  <tbody>
+    <tr><td>Glicólise (P1)</td><td><span class="badge badge-atp">2</span></td><td><span class="badge badge-nadh">2</span></td><td>—</td></tr>
+    <tr><td>Oxidação do Piruvato</td><td>—</td><td><span class="badge badge-nadh">2</span></td><td>—</td></tr>
+    <tr><td>Ciclo de Krebs</td><td><span class="badge badge-atp">2 GTP</span></td><td><span class="badge badge-nadh">6</span></td><td><span class="badge badge-fadh">2</span></td></tr>
+    <tr style="font-weight:700; color:#fff"><td>Total até aqui</td>
+      <td><span class="badge badge-atp">4</span></td>
+      <td><span class="badge badge-nadh">10</span></td>
+      <td><span class="badge badge-fadh">2</span></td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Apenas 4 ATP diretos — parece pouco!</div>
+  Mas os <strong>10 NADH</strong> e <strong>2 FADH₂</strong> ainda vão "pagar a conta" na Parte 3 (fosforilação oxidativa),
+  rendendo aproximadamente <strong>26–28 ATP adicionais</strong>.
+</div>
+
+<!-- ERROS -->
+<h2>10. Erros Clássicos</h2>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 1 — "Krebs produz muito ATP"</div>
+  O Krebs produz apenas 2 GTP/ATP por glicose diretamente. Seu valor real está em formar <strong>NADH e FADH₂</strong>.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 2 — "CO₂ sai só do Krebs"</div>
+  CO₂ também sai na <strong>oxidação do piruvato</strong> (2 moléculas). Total: 6 CO₂ por glicose.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 3 — "Todo o Krebs ocorre na matriz"</div>
+  Quase tudo sim — exceto a <strong>succinato desidrogenase</strong> (etapa 6), que fica na membrana interna.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 4 — "FAD e NAD⁺ são iguais"</div>
+  Diferentes. FADH₂ rende ~1,5 ATP vs NADH que rende ~2,5 ATP — porque seus elétrons têm menor energia
+  e entram mais tarde na cadeia respiratória.
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fosforilação Oxidativa — Respiração Celular P3 | MED-Vault</title>
+<style>
+:root { --bg:#1a1b1e; --bg2:#242528; --bg3:#2e3035; --border:#3d3f44; --text:#dde1e7;
+  --text-muted:#9da3ad; --purple:#9580ff; --teal:#4db6ac; --orange:#ffab40;
+  --green:#69db7c; --red:#ff6b6b; --code-bg:#1e1e2e; --nav-h:56px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:16px; line-height:1.7; }
+nav { position:sticky; top:0; z-index:100; background:#12131599;
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--border);
+  height:var(--nav-h); display:flex; align-items:center; padding:0 1.5rem; gap:1rem; }
+.nav-brand { font-weight:700; color:var(--purple); font-size:1.1rem; margin-right:auto; }
+nav a { color:var(--text-muted); text-decoration:none; padding:.35rem .8rem; border-radius:6px;
+  font-size:.9rem; transition:all .2s; border:1px solid transparent; }
+nav a:hover { color:var(--text); background:var(--bg3); }
+nav a.active { color:var(--orange); border-color:var(--orange); background:#ffab4015; }
+.page { max-width:860px; margin:0 auto; padding:2.5rem 1.5rem 6rem; }
+h1 { font-size:2rem; font-weight:800; color:var(--orange); margin-bottom:.4rem; }
+.subtitle { color:var(--text-muted); font-size:1rem; margin-bottom:2.5rem; }
+h2 { font-size:1.4rem; font-weight:700; color:var(--green); margin:2.5rem 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--bg3); }
+h3 { font-size:1.1rem; font-weight:600; color:var(--teal); margin:1.5rem 0 .6rem; }
+p { margin-bottom:.9rem; }
+strong { color:#fff; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem 1.5rem; margin:1rem 0; }
+.callout { border-radius:8px; padding:1rem 1.2rem; margin:1rem 0; border-left:4px solid; }
+.callout-info { background:#4db6ac12; border-color:var(--teal); }
+.callout-warn { background:#ffab4015; border-color:var(--orange); }
+.callout-tip { background:#69db7c12; border-color:var(--green); }
+.callout-danger { background:#ff6b6b12; border-color:var(--red); }
+.callout-title { font-weight:700; font-size:.9rem; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:.4rem; }
+.callout-info .callout-title { color:var(--teal); }
+.callout-warn .callout-title { color:var(--orange); }
+.callout-tip .callout-title { color:var(--green); }
+.callout-danger .callout-title { color:var(--red); }
+.rxn { background:var(--code-bg); border:1px solid var(--border); border-radius:8px;
+  padding:1rem 1.2rem; font-family:'Consolas','Courier New',monospace; font-size:.9rem;
+  color:#cdd6f4; white-space:pre; overflow-x:auto; margin:.8rem 0; line-height:1.6; }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.92rem; }
+th { background:var(--bg3); color:var(--text-muted); text-align:left;
+  padding:.6rem .9rem; font-weight:600; border-bottom:2px solid var(--border); }
+td { padding:.55rem .9rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.badge { display:inline-block; font-size:.78rem; font-weight:700; padding:.2rem .6rem; border-radius:20px; }
+.badge-nadh { background:#4db6ac20; color:var(--teal); }
+.badge-fadh { background:#9580ff20; color:var(--purple); }
+.badge-atp { background:#69db7c20; color:var(--green); }
+.badge-co2 { background:#ff6b6b20; color:var(--red); }
+.fig { margin:1.5rem 0; text-align:center; }
+.fig img { max-width:100%; border-radius:8px; border:1px solid var(--border);
+  box-shadow:0 4px 24px #0005; }
+.fig figcaption { margin-top:.5rem; font-size:.85rem; color:var(--text-muted); font-style:italic; }
+.complex-card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem; margin:.6rem 0; border-top:3px solid; }
+.cx1 { border-top-color:#9580ff; }
+.cx2 { border-top-color:#4db6ac; }
+.cx3 { border-top-color:#ffab40; }
+.cx4 { border-top-color:#ff6b6b; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.flow-arrow { text-align:center; font-size:1.5rem; color:var(--text-muted); margin:.3rem 0; }
+@media (max-width:600px) { .grid-2 { grid-template-columns:1fr; }
+  nav { padding:0 .8rem; gap:.5rem; }
+  nav a { padding:.3rem .5rem; font-size:.82rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">MED-Vault · Bio Geral</span>
+  <a href="RC-P1-Glicolise.html">P1 · Glicólise</a>
+  <a href="RC-P2-Ciclo-Acido-Citrico.html">P2 · Krebs</a>
+  <a href="RC-P3-Fosforilacao-Oxidativa.html" class="active">P3 · Fosforilação</a>
+</nav>
+
+<div class="page">
+
+<h1>Respiração Celular — Parte 3</h1>
+<p class="subtitle">Fosforilação Oxidativa · Cadeia Transportadora de Elétrons + Quimiosmose + ATP Sintase</p>
+
+<!-- POR QUE O₂ -->
+<h2>1. Por que Precisamos de Oxigênio?</h2>
+
+<div class="callout callout-warn">
+  <div class="callout-title">O Papel Real do O₂ — Não é o que parece</div>
+  O O₂ <strong>não entra na glicólise</strong> e <strong>não é usado diretamente no Krebs</strong>.<br>
+  Ele é o <strong>aceptor final de elétrons</strong> na cadeia transportadora de elétrons.<br><br>
+  Sem O₂ → cadeia trava → NADH/FADH₂ não descarregam → falta NAD⁺/FAD →
+  Krebs e glicólise param → produção de ATP colapsa.<br><br>
+  <strong>O O₂ é o "ralo" da cadeia. Sem ele, tudo entope.</strong>
+</div>
+
+<!-- VISÃO GERAL -->
+<h2>2. Visão Geral da Fosforilação Oxidativa</h2>
+
+<figure class="fig">
+  <img src="imgs/etc-atp-sintase.png" alt="Cadeia transportadora + ATP sintase">
+  <figcaption>Cadeia transportadora de elétrons + ATP sintase — NADH/FADH₂ entregam elétrons; H⁺ bombeado para o espaço intermembrana; ATP sintase usa o retorno de H⁺ para produzir ATP (OpenStax)</figcaption>
+</figure>
+
+<div class="rxn">NADH/FADH₂  →  Cadeia Transportadora de Elétrons
+                         ↓
+              H⁺ bombeado para espaço intermembrana
+                         ↓
+              Gradiente eletroquímico de H⁺ (força próton-motriz)
+                         ↓
+              H⁺ retorna pela ATP Sintase
+                         ↓
+              ADP + Pi  →  ATP  (~24-28 ATP por glicose)</div>
+
+<!-- CADEIA TRANSPORTADORA -->
+<h2>3. Cadeia Transportadora de Elétrons (CTE)</h2>
+
+<p>Série de proteínas e moléculas orgânicas <strong>inseridas na membrana interna</strong> da mitocôndria (cristas). Os elétrons passam de componente em componente, de alta energia → baixa energia, liberando energia que bombeia H⁺.</p>
+
+<figure class="fig">
+  <img src="imgs/etc-complexos.png" alt="4 complexos da cadeia transportadora de elétrons">
+  <figcaption>Os 4 complexos da CTE — NADH entra no Complexo I; FADH₂ entra no Complexo II; Ubiquinona e Citocromo c como transportadores móveis; O₂ recebe elétrons no final (OpenStax)</figcaption>
+</figure>
+
+<div class="complex-card cx1">
+  <strong style="color:var(--purple)">Complexo I — NADH:Ubiquinona Oxirredutase</strong>
+  <div class="rxn">NADH  →  NAD⁺ + H⁺ + 2e⁻
+Elétrons → Ubiquinona (Q)
+Bombeia  →  4 H⁺ para o espaço intermembrana</div>
+  NADH doa elétrons e volta a ser NAD⁺ (disponível para glicólise/Krebs de novo).
+</div>
+
+<div class="complex-card cx2">
+  <strong style="color:var(--teal)">Complexo II — Succinato:Ubiquinona Oxirredutase</strong>
+  <div class="rxn">FADH₂  →  FAD + 2e⁻
+Elétrons → Ubiquinona (Q)
+Bombeia  →  NÃO bombeia H⁺ diretamente</div>
+  Por isso FADH₂ rende <strong>menos ATP</strong> (~1,5) do que NADH (~2,5). O atalho pelo Complexo II pula o H⁺ bombeado pelo I.
+</div>
+
+<div class="card" style="border-left: 3px solid var(--text-muted)">
+  <strong>Transportadores Móveis:</strong>
+  <p style="margin-top:.4rem; font-size:.9rem">
+  <strong>Ubiquinona / Coenzima Q</strong> — molécula lipossolúvel que circula dentro da membrana lipídica, carregando elétrons dos Complexos I e II para o III.<br>
+  <strong>Citocromo c</strong> — proteína pequena no espaço intermembrana, leva elétrons do Complexo III para o IV.
+  </p>
+</div>
+
+<div class="complex-card cx3">
+  <strong style="color:var(--orange)">Complexo III — Ubiquinol:Citocromo c Oxirredutase</strong>
+  <div class="rxn">QH₂  →  Q + 2 H⁺ (espaço intermembrana) + 2e⁻
+Elétrons → Citocromo c
+Bombeia  →  H⁺ para o espaço intermembrana</div>
+</div>
+
+<div class="complex-card cx4">
+  <strong style="color:var(--red)">Complexo IV — Citocromo c Oxidase</strong>
+  <div class="rxn">4 Citocromo c (2e⁻ cada) + O₂ + 4 H⁺
+        ↓
+2 H₂O  (O₂ recebe 4 elétrons + 4 H⁺)
+Bombeia  →  H⁺ para o espaço intermembrana</div>
+  <strong>Único ponto onde o O₂ é consumido diretamente.</strong> O O₂ é o aceptor final de elétrons.
+</div>
+
+<!-- ROTA COMPLETA -->
+<h2>4. Rota Completa dos Elétrons</h2>
+
+<div class="rxn">NADH ──────────────────┐
+                    Complexo I
+                         ↓
+                  Ubiquinona (Q)   ←── FADH₂ via Complexo II
+                         ↓
+                  Complexo III
+                         ↓
+                  Citocromo c
+                         ↓
+                  Complexo IV
+                         ↓
+              O₂ + 4 H⁺  →  2 H₂O</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">H⁺ bombeado em cada complexo</div>
+  Complexos I, III e IV bombeiam H⁺. Complexo II <strong>não</strong> bombeia H⁺ diretamente.
+  Por isso NADH (entra no I) rende mais H⁺ bombeados → mais ATP do que FADH₂ (entra no II).
+</div>
+
+<!-- GRADIENTE -->
+<h2>5. Gradiente de H⁺ e Força Próton-Motriz</h2>
+
+<div class="rxn">Bombeamento contínuo de H⁺ pela cadeia cria:
+
+  ESPAÇO INTERMEMBRANA: [muito H⁺, carga +]
+  ────────────── membrana interna ──────────────
+  MATRIZ MITOCONDRIAL: [pouco H⁺, carga −]
+
+→ Diferença de concentração + diferença de carga elétrica
+= FORÇA PRÓTON-MOTRIZ (como uma bateria)</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Analogia da Represa</div>
+  A cadeia transportadora <strong>bombeia H⁺ para cima</strong>, enchendo a represa.<br>
+  Os H⁺ querem voltar para a matriz (a favor do gradiente).<br>
+  Só há um caminho de retorno: a <strong>ATP sintase</strong> (a turbina).<br>
+  A energia do fluxo de H⁺ faz a turbina girar e produzir ATP.
+</div>
+
+<!-- ATP SINTASE -->
+<h2>6. Quimiosmose e ATP Sintase</h2>
+
+<figure class="fig">
+  <img src="imgs/atp-estrutura.png" alt="Estrutura do ATP">
+  <figcaption>Estrutura do ATP — adenosina trifosfato: base adenina + ribose + 3 grupos fosfato; a hidrólise da ligação γ-fosfato libera energia (~30,5 kJ/mol)</figcaption>
+</figure>
+
+<div class="rxn">H⁺ (espaço intermembrana)
+        ↓  flui pela ATP sintase (a favor do gradiente)
+H⁺ (matriz mitocondrial)
+        ↓  energia do fluxo faz rotor girar
+ATP sintase muda conformação
+        ↓
+ADP + Pi  →  ATP
+
+~4 H⁺ por ATP sintetizado</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">Quimiosmose — Definição</div>
+  Processo em que a energia armazenada em um <strong>gradiente de prótons</strong> é usada para realizar trabalho.
+  Na célula: o gradiente de H⁺ move a ATP sintase, que produz ATP.<br>
+  Responsável por <strong>mais de 80% do ATP</strong> total da respiração celular.
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Proteínas de Desacoplamento — "Gerar Calor em vez de ATP"</div>
+  Em mamíferos hibernantes (ursos), células adiposas marrons têm <strong>proteínas de desacoplamento</strong>
+  na membrana interna. Elas abrem um canal alternativo para H⁺ voltarem <em>sem passar pela ATP sintase</em>.
+  Resultado: energia do gradiente vira <strong>calor</strong> (termorregulação no inverno).
+</div>
+
+<!-- RENDIMENTO -->
+<h2>7. Rendimento de ATP — Por que NADH e FADH₂ rendem valores diferentes?</h2>
+
+<div class="grid-2">
+  <div class="card">
+    <strong style="color:var(--teal)">1 NADH → ~2,5 ATP</strong>
+    <p style="font-size:.9rem; margin-top:.4rem">
+    Elétrons entram no Complexo I.<br>
+    Complexos I + III + IV bombeiam ~10 H⁺.<br>
+    10 H⁺ ÷ 4 H⁺/ATP = ~2,5 ATP.
+    </p>
+  </div>
+  <div class="card">
+    <strong style="color:var(--purple)">1 FADH₂ → ~1,5 ATP</strong>
+    <p style="font-size:.9rem; margin-top:.4rem">
+    Elétrons entram no Complexo II.<br>
+    Complexos III + IV bombeiam ~6 H⁺.<br>
+    6 H⁺ ÷ 4 H⁺/ATP = ~1,5 ATP.
+    </p>
+  </div>
+</div>
+
+<!-- SALDO TOTAL -->
+<h2>8. Saldo Total — 30–32 ATP por Glicose</h2>
+
+<figure class="fig">
+  <img src="imgs/atp-saldo-tabela.png" alt="Tabela de rendimento de ATP por etapa">
+  <figcaption>Rendimento de ATP por etapa da respiração celular (Khan Academy PT) — total 30–32 ATP por glicose</figcaption>
+</figure>
+
+<table>
+  <thead><tr><th>Etapa</th><th>ATP direto</th><th>Via NADH (~2,5)</th><th>Via FADH₂ (~1,5)</th><th>Total</th></tr></thead>
+  <tbody>
+    <tr><td>Glicólise</td><td><span class="badge badge-atp">2</span></td>
+      <td>2 NADH → ~3–5*</td><td>—</td><td>~5–7</td></tr>
+    <tr><td>Oxidação do Piruvato</td><td>—</td>
+      <td>2 NADH → ~5</td><td>—</td><td>~5</td></tr>
+    <tr><td>Ciclo de Krebs</td><td><span class="badge badge-atp">2 GTP</span></td>
+      <td>6 NADH → ~15</td><td>2 FADH₂ → ~3</td><td>~20</td></tr>
+    <tr style="font-weight:700; color:#fff"><td>TOTAL</td>
+      <td><span class="badge badge-atp">4</span></td>
+      <td colspan="2" style="text-align:center">~26–28 via fosforilação oxidativa</td>
+      <td><strong>~30–32 ATP</strong></td></tr>
+  </tbody>
+</table>
+
+<p style="font-size:.85rem; color:var(--text-muted)">*NADH da glicólise é formado no citosol. Dependendo do sistema de transporte do tecido, rende 3 ou 5 ATP — por isso a variação 30–32.</p>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Por que 30–32 e não 36–38 como em livros antigos?</div>
+  A versão moderna considera o <strong>custo energético do transporte</strong> de ADP para dentro e ATP para fora da mitocôndria.
+  Esse custo reduz o rendimento de ~36 para ~30–32. Use <strong>30–32</strong> em provas de medicina.
+</div>
+
+<!-- REGULAÇÃO -->
+<h2>9. Regulação — A Célula Não Produz ATP Infinitamente</h2>
+
+<div class="card">
+  <table style="margin:0">
+    <thead><tr><th>Situação</th><th>Sinal</th><th>Efeito sobre a Respiração</th></tr></thead>
+    <tbody>
+      <tr><td>Muito ATP, pouco ADP</td><td>Célula abastecida</td><td>Respiração <strong>desacelera</strong></td></tr>
+      <tr><td>Muito ADP, pouco ATP</td><td>Célula precisa de energia</td><td>Respiração <strong>acelera</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">O ADP é o "Tanque Vazio"</div>
+  ADP sinaliza para a mitocôndria que precisa produzir mais ATP.
+  A taxa de transporte de elétrons é diretamente influenciada pela relação ATP/ADP.
+</div>
+
+<!-- RESUMO FINAL -->
+<h2>10. Sequência Completa da Respiração Celular</h2>
+
+<div class="rxn">GLICOSE
+   ↓ Glicólise (citosol)
+2 Piruvatos + 2 ATP + 2 NADH
+   ↓ entram na mitocôndria
+Oxidação do Piruvato (matriz)
+2 Acetil-CoA + 2 CO₂ + 2 NADH
+   ↓
+Ciclo de Krebs (matriz) — 2 voltas
+6 NADH + 2 FADH₂ + 2 GTP + 4 CO₂
+   ↓ NADH e FADH₂ levam elétrons para:
+Cadeia Transportadora (membrana interna)
+H⁺ bombeado → Espaço intermembrana
+   ↓ H⁺ volta pela
+ATP Sintase
+ADP + Pi  →  ATP  (×24–28)
+   ↓ elétrons chegam ao final em:
+O₂ + 4H⁺  →  2 H₂O
+
+TOTAL: ~30–32 ATP por molécula de glicose</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">A Frase que Resume Tudo</div>
+  "A energia da glicose não vira ATP direto. Ela vira elétrons carregados em NADH e FADH₂.
+  Esses elétrons descem a escada da cadeia transportadora, bombeando H⁺ no caminho.
+  O H⁺ acumulado volta pela turbina ATP sintase, que recarrega ADP em ATP.
+  O O₂ é o ralo que recebe os elétrons no final — sem ele, tudo entope."
+</div>
+
+<!-- ERROS -->
+<h2>11. Erros Clássicos</h2>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 1 — "O₂ é usado no Krebs"</div>
+  Não. O O₂ é aceptor final de elétrons no <strong>Complexo IV</strong>, no final da CTE. Krebs não consome O₂ diretamente.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 2 — "NADH vira ATP diretamente"</div>
+  Não. NADH → Complexo I → elétrons → gradiente de H⁺ → ATP sintase → ATP. São etapas separadas.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 3 — Saldo de 36–38 ATP</div>
+  Saldo moderno é <strong>~30–32 ATP</strong>. O valor 36–38 não considera o custo de transporte mitocondrial.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 4 — Complexo II rende o mesmo que o I</div>
+  Não. Complexo II (FADH₂) não bombeia H⁺ diretamente → menos gradiente → FADH₂ rende ~1,5 ATP vs NADH ~2,5 ATP.
+</div>
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 5 — ATP sintase gasta ATP</div>
+  Não. A ATP sintase é uma <strong>turbina que produz ATP</strong> usando o fluxo de H⁺. Ela transforma energia do gradiente em ligação química.
+</div>
+
+</div>
+</body>
+</html>

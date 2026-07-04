@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glicólise — Respiração Celular P1 | MED-Vault</title>
+<style>
+:root {
+  --bg: #1a1b1e;
+  --bg2: #242528;
+  --bg3: #2e3035;
+  --border: #3d3f44;
+  --text: #dde1e7;
+  --text-muted: #9da3ad;
+  --purple: #9580ff;
+  --teal: #4db6ac;
+  --orange: #ffab40;
+  --green: #69db7c;
+  --red: #ff6b6b;
+  --code-bg: #1e1e2e;
+  --nav-h: 56px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 16px; line-height: 1.7; }
+
+/* NAV */
+nav { position: sticky; top: 0; z-index: 100; background: #12131599;
+  backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+  height: var(--nav-h); display: flex; align-items: center; padding: 0 1.5rem; gap: 1rem; }
+.nav-brand { font-weight: 700; color: var(--purple); font-size: 1.1rem; margin-right: auto; }
+nav a { color: var(--text-muted); text-decoration: none; padding: .35rem .8rem; border-radius: 6px;
+  font-size: .9rem; transition: all .2s; border: 1px solid transparent; }
+nav a:hover { color: var(--text); background: var(--bg3); }
+nav a.active { color: var(--purple); border-color: var(--purple); background: #9580ff15; }
+
+/* LAYOUT */
+.page { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 6rem; }
+h1 { font-size: 2rem; font-weight: 800; color: var(--purple); margin-bottom: .4rem; }
+.subtitle { color: var(--text-muted); font-size: 1rem; margin-bottom: 2.5rem; }
+h2 { font-size: 1.4rem; font-weight: 700; color: var(--teal); margin: 2.5rem 0 1rem;
+  padding-bottom: .5rem; border-bottom: 2px solid var(--bg3); }
+h3 { font-size: 1.1rem; font-weight: 600; color: var(--orange); margin: 1.5rem 0 .6rem; }
+p { margin-bottom: .9rem; }
+strong { color: #fff; }
+
+/* CARDS */
+.card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+  padding: 1.2rem 1.5rem; margin: 1rem 0; }
+
+/* CALLOUTS */
+.callout { border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0;
+  border-left: 4px solid; }
+.callout-info { background: #4db6ac12; border-color: var(--teal); }
+.callout-warn { background: #ffab4015; border-color: var(--orange); }
+.callout-tip { background: #69db7c12; border-color: var(--green); }
+.callout-danger { background: #ff6b6b12; border-color: var(--red); }
+.callout-title { font-weight: 700; font-size: .9rem; text-transform: uppercase;
+  letter-spacing: .05em; margin-bottom: .4rem; }
+.callout-info .callout-title { color: var(--teal); }
+.callout-warn .callout-title { color: var(--orange); }
+.callout-tip .callout-title { color: var(--green); }
+.callout-danger .callout-title { color: var(--red); }
+
+/* CODE BLOCKS */
+.rxn { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px;
+  padding: 1rem 1.2rem; font-family: 'Consolas', 'Courier New', monospace; font-size: .9rem;
+  color: #cdd6f4; white-space: pre; overflow-x: auto; margin: .8rem 0; line-height: 1.6; }
+
+/* TABLES */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .92rem; }
+th { background: var(--bg3); color: var(--text-muted); text-align: left;
+  padding: .6rem .9rem; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: .55rem .9rem; border-bottom: 1px solid var(--border); }
+tr:hover td { background: var(--bg3); }
+.badge { display: inline-block; font-size: .78rem; font-weight: 700; padding: .2rem .6rem;
+  border-radius: 20px; }
+.badge-atp { background: #9580ff25; color: var(--purple); }
+.badge-nadh { background: #4db6ac20; color: var(--teal); }
+.badge-minus { background: #ff6b6b20; color: var(--red); }
+
+/* IMAGES */
+.fig { margin: 1.5rem 0; text-align: center; }
+.fig img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border);
+  box-shadow: 0 4px 24px #0005; }
+.fig figcaption { margin-top: .5rem; font-size: .85rem; color: var(--text-muted);
+  font-style: italic; }
+
+/* STEP LIST */
+.steps { list-style: none; padding: 0; }
+.steps li { display: flex; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border); }
+.steps li:last-child { border: none; }
+.step-num { min-width: 28px; height: 28px; border-radius: 50%; background: var(--purple);
+  color: #fff; font-weight: 800; font-size: .8rem; display: flex; align-items: center;
+  justify-content: center; flex-shrink: 0; margin-top: .1rem; }
+
+/* ENZYME TAG */
+.enzyme { display: inline-block; background: #4db6ac18; color: var(--teal); border: 1px solid #4db6ac40;
+  border-radius: 4px; padding: .05rem .45rem; font-size: .82rem; font-weight: 600; margin-bottom: .3rem; }
+.star-enzyme { background: #9580ff18; color: var(--purple); border-color: #9580ff40; }
+
+/* GRID */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; }
+  nav { padding: 0 .8rem; gap: .5rem; }
+  nav a { padding: .3rem .5rem; font-size: .82rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">MED-Vault · Bio Geral</span>
+  <a href="RC-P1-Glicolise.html" class="active">P1 · Glicólise</a>
+  <a href="RC-P2-Ciclo-Acido-Citrico.html">P2 · Krebs</a>
+  <a href="RC-P3-Fosforilacao-Oxidativa.html">P3 · Fosforilação</a>
+</nav>
+
+<div class="page">
+
+<h1>Respiração Celular — Parte 1</h1>
+<p class="subtitle">Glicólise · Citosol · 10 Etapas · 2 ATP líquidos · 2 NADH</p>
+
+<!-- VISÃO GERAL -->
+<h2>1. Visão Geral</h2>
+
+<div class="callout callout-info">
+  <div class="callout-title">Localização</div>
+  A glicólise ocorre no <strong>citosol</strong> (parte líquida do citoplasma), <strong>fora da mitocôndria</strong>.
+  Não usa oxigênio — é a única etapa anaeróbica da respiração celular.
+  Presente em quase todos os organismos vivos.
+</div>
+
+<div class="rxn">Glicose (6C)  →  2 Piruvatos (3C)  +  2 ATP líquidos  +  2 NADH</div>
+
+<div class="grid-2">
+  <div class="card">
+    <strong style="color:var(--red)">Fase de Investimento</strong> (etapas 1–5)
+    <p style="margin-top:.4rem; font-size:.93rem">Gasta <strong>2 ATP</strong> para ativar e quebrar a glicose em 2 trioses de 3 carbonos.</p>
+  </div>
+  <div class="card">
+    <strong style="color:var(--green)">Fase de Rendimento</strong> (etapas 6–10)
+    <p style="margin-top:.4rem; font-size:.93rem">Produz <strong>4 ATP + 2 NADH</strong> convertendo as trioses em piruvatos.</p>
+  </div>
+</div>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Saldo Real — Nunca Confundir!</div>
+  4 ATP produzidos <strong>−</strong> 2 ATP gastos = <strong>2 ATP líquidos por glicose</strong>.
+  A prova cobra o saldo líquido, não o bruto.
+</div>
+
+<figure class="fig">
+  <img src="imgs/glicolise-overview.png" alt="Diagrama visão geral da glicólise">
+  <figcaption>Visão geral da glicólise — glicose → frutose-1,6-bisfosfato → DHAP + GAP → piruvato (Khan Academy)</figcaption>
+</figure>
+
+<!-- CITOSOL E GLUT -->
+<h2>2. Citosol, GLUT e Insulina</h2>
+
+<div class="grid-2">
+  <div class="card">
+    <strong>Citoplasma</strong>
+    <p style="font-size:.9rem; margin-top:.3rem">Tudo dentro da célula exceto o núcleo: citosol + organelas + citoesqueleto.</p>
+  </div>
+  <div class="card">
+    <strong>Citosol</strong>
+    <p style="font-size:.9rem; margin-top:.3rem">Parte líquida onde as enzimas da glicólise ficam dissolvidas. A glicólise ocorre aqui.</p>
+  </div>
+</div>
+
+<table>
+  <thead><tr><th>Transportador</th><th>Localização</th><th>Função</th></tr></thead>
+  <tbody>
+    <tr><td>GLUT1</td><td>Hemácias, barreiras</td><td>Entrada basal constante</td></tr>
+    <tr><td>GLUT2</td><td>Fígado, pâncreas</td><td>Sensor de glicemia</td></tr>
+    <tr><td>GLUT3</td><td>Neurônios</td><td>Alta afinidade por glicose</td></tr>
+    <tr><td><strong>GLUT4</strong></td><td><strong>Músculo, adipócito</strong></td><td><strong>Responde à insulina ⭐</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Como a Insulina Ativa o GLUT4</div>
+  1. Glicemia sobe → pâncreas libera insulina<br>
+  2. Insulina se liga ao receptor na membrana<br>
+  3. Ativa cascata <strong>IRS → PI3K → Akt</strong><br>
+  4. Vesículas com GLUT4 migram para a membrana da célula<br>
+  5. Mais GLUT4 na superfície → mais glicose entra por difusão facilitada
+</div>
+
+<!-- FASE INVESTIMENTO -->
+<h2>3. Fase de Investimento (Etapas 1–5)</h2>
+
+<ul class="steps">
+  <li>
+    <div class="step-num">1</div>
+    <div>
+      <span class="enzyme">Hexoquinase / Glicoquinase</span><br>
+      <div class="rxn">Glicose + ATP  →  Glicose-6-fosfato + ADP</div>
+      Prende a glicose dentro da célula (fosforilada não passa pelo GLUT). Gasta o <strong>1º ATP</strong>.
+    </div>
+  </li>
+  <li>
+    <div class="step-num">2</div>
+    <div>
+      <span class="enzyme">Fosfoglicose isomerase</span><br>
+      <div class="rxn">Glicose-6-fosfato  →  Frutose-6-fosfato</div>
+      Aldose → cetose. Prepara para quebra simétrica em duas metades de 3C.
+    </div>
+  </li>
+  <li>
+    <div class="step-num">3</div>
+    <div>
+      <span class="enzyme star-enzyme">PFK-1 · Fosfofrutoquinase-1 ⭐ Regulatória</span><br>
+      <div class="rxn">Frutose-6-fosfato + ATP  →  Frutose-1,6-bisfosfato + ADP</div>
+      Gasta o <strong>2º ATP</strong>. Após este ponto a molécula está comprometida com a glicólise.<br>
+      <strong>Ativada por:</strong> AMP, ADP &nbsp;|&nbsp; <strong>Inibida por:</strong> ATP, citrato.
+    </div>
+  </li>
+  <li>
+    <div class="step-num">4</div>
+    <div>
+      <span class="enzyme">Aldolase</span><br>
+      <div class="rxn">Frutose-1,6-bisfosfato  →  DHAP + Gliceraldeído-3-fosfato (GAP)</div>
+      Quebra retro-aldol: produz dois açúcares de 3 carbonos (isômeros entre si).
+    </div>
+  </li>
+  <li>
+    <div class="step-num">5</div>
+    <div>
+      <span class="enzyme">Triose-fosfato isomerase</span><br>
+      <div class="rxn">DHAP  ⇌  GAP</div>
+      Apenas o GAP continua na via. O DHAP é rapidamente convertido conforme o GAP é consumido.<br>
+      <strong>Resultado: 2 moléculas de GAP por glicose. Tudo abaixo ocorre 2×.</strong>
+    </div>
+  </li>
+</ul>
+
+<!-- FASE RENDIMENTO -->
+<h2>4. Fase de Rendimento (Etapas 6–10) · Ocorre 2× por glicose</h2>
+
+<figure class="fig">
+  <img src="imgs/glicolise-etapas-6-10.png" alt="Etapas 6-10 da glicólise">
+  <figcaption>Etapas 6–10 — do GAP ao piruvato, com formação de NADH e ATP (Khan Academy)</figcaption>
+</figure>
+
+<ul class="steps">
+  <li>
+    <div class="step-num" style="background:var(--teal)">6</div>
+    <div>
+      <span class="enzyme star-enzyme">GAPDH · Gliceraldeído-3-fosfato desidrogenase ⭐ NADH</span><br>
+      <div class="rxn">GAP + Pi + NAD⁺  →  1,3-bisfosfoglicerato + NADH + H⁺</div>
+      O aldeído do GAP é <strong>oxidado</strong>. NAD⁺ aceita um <strong>hidreto (H⁻)</strong> = 1 próton + 2 elétrons → vira NADH.
+      Fosfato inorgânico (Pi) entra na molécula. Rende <strong>2 NADH por glicose</strong>.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--green)">7</div>
+    <div>
+      <span class="enzyme">Fosfoglicerato quinase</span><br>
+      <div class="rxn">1,3-bisfosfoglicerato + ADP  →  3-fosfoglicerato + ATP</div>
+      Fosforilação em <strong>nível de substrato</strong> (sem cadeia respiratória). Rende <strong>2 ATP por glicose</strong>.
+    </div>
+  </li>
+  <li>
+    <div class="step-num">8</div>
+    <div>
+      <span class="enzyme">Fosfoglicerato mutase</span><br>
+      <div class="rxn">3-fosfoglicerato  →  2-fosfoglicerato</div>
+      Fosfato muda do carbono 3 para o carbono 2. Prepara para desidratação.
+    </div>
+  </li>
+  <li>
+    <div class="step-num">9</div>
+    <div>
+      <span class="enzyme">Enolase</span><br>
+      <div class="rxn">2-fosfoglicerato  →  Fosfoenolpiruvato (PEP) + H₂O</div>
+      Perde água. PEP é extremamente instável e energético — ligação fosfato enólica.
+    </div>
+  </li>
+  <li>
+    <div class="step-num" style="background:var(--green)">10</div>
+    <div>
+      <span class="enzyme">Piruvato quinase</span><br>
+      <div class="rxn">PEP + ADP  →  Piruvato + ATP</div>
+      PEP transfere fosfato para ADP. Rende <strong>2 ATP por glicose</strong>.<br>
+      PEP → enolpiruvato → <strong>piruvato</strong> (tautomerização espontânea para forma estável).
+    </div>
+  </li>
+</ul>
+
+<!-- TABELA DAS 10 ETAPAS -->
+<h2>5. Tabela das 10 Etapas — Resumo</h2>
+
+<table>
+  <thead><tr><th>Etapa</th><th>Reação</th><th>Enzima</th><th>Saldo</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Glicose → G-6-P</td><td>Hexoquinase</td><td><span class="badge badge-minus">−1 ATP</span></td></tr>
+    <tr><td>2</td><td>G-6-P → F-6-P</td><td>Fosfoglicose isomerase</td><td>—</td></tr>
+    <tr><td><strong>3</strong></td><td><strong>F-6-P → F-1,6-BP</strong></td><td><strong>PFK-1 ⭐</strong></td><td><span class="badge badge-minus">−1 ATP</span></td></tr>
+    <tr><td>4</td><td>F-1,6-BP → DHAP + GAP</td><td>Aldolase</td><td>—</td></tr>
+    <tr><td>5</td><td>DHAP → GAP</td><td>Triose-P isomerase</td><td>—</td></tr>
+    <tr><td><strong>6</strong></td><td><strong>GAP → 1,3-BPG</strong></td><td><strong>GAPDH ⭐</strong></td><td><span class="badge badge-nadh">+2 NADH</span></td></tr>
+    <tr><td>7</td><td>1,3-BPG → 3-PG</td><td>Fosfoglicerato quinase</td><td><span class="badge badge-atp">+2 ATP</span></td></tr>
+    <tr><td>8</td><td>3-PG → 2-PG</td><td>Fosfoglicerato mutase</td><td>—</td></tr>
+    <tr><td>9</td><td>2-PG → PEP</td><td>Enolase</td><td>—</td></tr>
+    <tr><td><strong>10</strong></td><td><strong>PEP → Piruvato</strong></td><td><strong>Piruvato quinase</strong></td><td><span class="badge badge-atp">+2 ATP</span></td></tr>
+    <tr style="font-weight:700; color:#fff"><td colspan="3">SALDO FINAL</td>
+      <td><span class="badge badge-atp">+2 ATP</span> <span class="badge badge-nadh">+2 NADH</span></td></tr>
+  </tbody>
+</table>
+
+<!-- NAD+/NADH -->
+<h2>6. O que é NADH — Estrutura e Formação</h2>
+
+<figure class="fig">
+  <img src="imgs/nad-nadh-estrutura.png" alt="Estrutura molecular do NAD+ e NADH">
+  <figcaption>NAD⁺ vs NADH — note o hidreto (H⁻) adicionado ao anel nicotinamida em NADH</figcaption>
+</figure>
+
+<div class="grid-2">
+  <div class="card">
+    <strong>NAD⁺</strong> = nicotinamida adenina dinucleotídeo (forma oxidada)<br>
+    <span style="color:var(--text-muted); font-size:.9rem">"Caminhão vazio de elétrons"</span>
+  </div>
+  <div class="card">
+    <strong>NADH</strong> = forma reduzida<br>
+    <span style="color:var(--text-muted); font-size:.9rem">"Caminhão carregado de elétrons"</span>
+  </div>
+</div>
+
+<div class="rxn">NAD⁺ + H⁻ (hidreto = 1 próton + 2 elétrons)  →  NADH
+Ou: NAD⁺ + 2e⁻ + H⁺  →  NADH</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Por que o NADH importa tanto?</div>
+  Ele não é ATP. Mas carrega elétrons de alta energia que renderão muito ATP depois,
+  na cadeia transportadora de elétrons (Parte 3).<br>
+  Cada NADH rende aproximadamente <strong>2,5 ATP</strong> na fosforilação oxidativa.
+</div>
+
+<!-- PIRUVATO -->
+<h2>7. Estrutura do Piruvato</h2>
+
+<div class="card">
+  <p><strong>Fórmula molecular:</strong> C₃H₄O₃ (ácido pirúvico) / C₃H₃O₃⁻ (piruvato em pH fisiológico)</p>
+  <p><strong>Nome IUPAC:</strong> ácido 2-oxopropanoico</p>
+  <div class="rxn">CH₃ – C(=O) – COO⁻
+       cetona   carboxilato
+→ 3 oxigênios por piruvato:
+  1 na cetona (C=O) + 2 no carboxilato (COO⁻)</div>
+  <p>Como cada glicose gera <strong>2 piruvatos</strong>: 2 × 3O = 6O — correspondendo aos 6 oxigênios da glicose original (C₆H₁₂O₆).</p>
+</div>
+
+<!-- DESTINO DO PIRUVATO -->
+<h2>8. Destino do Piruvato e do NADH</h2>
+
+<div class="grid-2">
+  <div class="callout callout-info" style="margin:0">
+    <div class="callout-title">Com O₂ (aeróbico)</div>
+    <strong>Piruvato</strong> → entra na mitocôndria → oxidação do piruvato → ciclo de Krebs<br><br>
+    <strong>NADH</strong> → entrega elétrons à cadeia transportadora → regenera NAD⁺ + ~2,5 ATP
+  </div>
+  <div class="callout callout-warn" style="margin:0">
+    <div class="callout-title">Sem O₂ (anaeróbico)</div>
+    <strong>Piruvato</strong> → fermentação (álcool em leveduras / lactato em hemácias e músculo)<br><br>
+    <strong>NADH</strong> → doa elétrons ao piruvato → regenera NAD⁺ <em>sem gerar ATP</em>
+  </div>
+</div>
+
+<div class="callout callout-tip" style="margin-top:1rem">
+  <div class="callout-title">Por que fermentar?</div>
+  Para regenerar NAD⁺. Sem NAD⁺ livre, a etapa 6 (GAPDH) trava e toda a glicólise para.
+  Hemácias não têm mitocôndria — dependem exclusivamente da fermentação lática para produzir ATP.
+</div>
+
+<!-- ERROS -->
+<h2>9. Erros Clássicos</h2>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 1 — Glicólise dentro da mitocôndria</div>
+  A glicólise ocorre no <strong>citosol</strong>, fora da mitocôndria. A mitocôndria só entra a partir do piruvato.
+</div>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 2 — Saldo de 4 ATP</div>
+  4 ATP são produzidos, mas 2 foram gastos. Saldo real = <strong>2 ATP líquidos</strong>.
+</div>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 3 — NADH já é ATP</div>
+  NADH é carreador de elétrons. Ele vai gerar ATP depois, na fosforilação oxidativa, mas não é ATP diretamente.
+</div>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Erro 4 — O₂ é necessário na glicólise</div>
+  A glicólise é anaeróbica. O O₂ só é necessário no final da cadeia transportadora de elétrons (Parte 3).
+</div>
+
+</div><!-- /page -->
+</body>
+</html>
