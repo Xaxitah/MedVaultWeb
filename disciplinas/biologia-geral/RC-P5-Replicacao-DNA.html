@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replicação do DNA — Biologia Geral P1 | MED-Vault</title>
+<style>
+:root { --bg:#1a1b1e; --bg2:#242528; --bg3:#2e3035; --border:#3d3f44; --text:#dde1e7;
+  --text-muted:#9da3ad; --purple:#9580ff; --teal:#4db6ac; --orange:#ffab40;
+  --green:#69db7c; --red:#ff6b6b; --code-bg:#1e1e2e; --nav-h:56px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:16px; line-height:1.7; }
+nav { position:sticky; top:0; z-index:100; background:#12131599;
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--border);
+  height:var(--nav-h); display:flex; align-items:center; padding:0 1.5rem; gap:1rem; }
+.nav-brand { font-weight:700; color:var(--teal); font-size:1.1rem; margin-right:auto; }
+nav a { color:var(--text-muted); text-decoration:none; padding:.35rem .8rem; border-radius:6px;
+  font-size:.9rem; transition:all .2s; border:1px solid transparent; }
+nav a:hover { color:var(--text); background:var(--bg3); }
+nav a.active { color:var(--teal); border-color:var(--teal); background:#4db6ac15; }
+.page { max-width:860px; margin:0 auto; padding:2.5rem 1.5rem 6rem; }
+h1 { font-size:2rem; font-weight:800; color:var(--teal); margin-bottom:.4rem; }
+.subtitle { color:var(--text-muted); font-size:1rem; margin-bottom:2.5rem; }
+h2 { font-size:1.4rem; font-weight:700; color:var(--purple); margin:2.5rem 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--bg3); }
+h3 { font-size:1.1rem; font-weight:600; color:var(--orange); margin:1.5rem 0 .6rem; }
+p { margin-bottom:.9rem; }
+strong { color:#fff; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem 1.5rem; margin:1rem 0; }
+.callout { border-radius:8px; padding:1rem 1.2rem; margin:1rem 0; border-left:4px solid; }
+.callout-info { background:#4db6ac12; border-color:var(--teal); }
+.callout-warn { background:#ffab4015; border-color:var(--orange); }
+.callout-tip { background:#69db7c12; border-color:var(--green); }
+.callout-danger { background:#ff6b6b12; border-color:var(--red); }
+.callout-purple { background:#9580ff12; border-color:var(--purple); }
+.callout-title { font-weight:700; font-size:.9rem; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:.4rem; }
+.callout-info .callout-title { color:var(--teal); }
+.callout-warn .callout-title { color:var(--orange); }
+.callout-tip .callout-title { color:var(--green); }
+.callout-danger .callout-title { color:var(--red); }
+.callout-purple .callout-title { color:var(--purple); }
+.rxn { background:var(--code-bg); border:1px solid var(--border); border-radius:8px;
+  padding:1rem 1.2rem; font-family:'Consolas','Courier New',monospace; font-size:.9rem;
+  color:#cdd6f4; white-space:pre; overflow-x:auto; margin:.8rem 0; line-height:1.6; }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.92rem; }
+th { background:var(--bg3); color:var(--text-muted); text-align:left;
+  padding:.6rem .9rem; font-weight:600; border-bottom:2px solid var(--border); }
+td { padding:.55rem .9rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.fig { margin:1.5rem 0; text-align:center; }
+.fig img { max-width:100%; border-radius:8px; border:1px solid var(--border);
+  box-shadow:0 4px 24px #0005; }
+.fig figcaption { margin-top:.5rem; font-size:.85rem; color:var(--text-muted); font-style:italic; }
+.steps { list-style:none; padding:0; }
+.steps li { display:flex; gap:1rem; padding:.9rem 0; border-bottom:1px solid var(--border); }
+.steps li:last-child { border:none; }
+.step-num { min-width:32px; height:32px; border-radius:50%; background:var(--teal);
+  color:#111; font-weight:800; font-size:.82rem; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:.1rem; }
+.step-num.purple { background:var(--purple); color:#fff; }
+.step-num.orange { background:var(--orange); color:#111; }
+.enzyme { display:inline-block; background:#4db6ac18; color:var(--teal); border:1px solid #4db6ac40;
+  border-radius:4px; padding:.05rem .45rem; font-size:.82rem; font-weight:600; }
+.enzyme-p { background:#9580ff18; color:var(--purple); border-color:#9580ff40; }
+.enzyme-o { background:#ffab4018; color:var(--orange); border-color:#ffab4040; }
+.enzyme-g { background:#69db7c18; color:var(--green); border-color:#69db7c40; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.8rem; }
+@media (max-width:640px) { .grid-2,.grid-3 { grid-template-columns:1fr; }
+  nav { padding:0 .8rem; gap:.4rem; } nav a { font-size:.8rem; padding:.25rem .45rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="color:var(--text-muted);font-size:.85rem;margin-right:.4rem;">← Biologia Geral</a>
+  <span class="nav-brand">Biologia Molecular</span>
+  <a href="RC-P4-Divisao-Celular.html">P4 · Divisão Celular</a>
+  <a href="RC-P5-Replicacao-DNA.html" class="active">P5 · Replicação DNA</a>
+  <a href="RC-P6-Transcricao-Traducao.html">P6 · Transcrição/Tradução</a>
+</nav>
+
+<div class="page">
+
+<h1>Replicação do DNA</h1>
+<p class="subtitle">Semiconservadora · Bidirecional · Antiparalela · Forquilha de Replicação · Fase S do Ciclo Celular · P1 Biologia Geral — UNINTER</p>
+
+<!-- ===== 1. POR QUE REPLICAR ===== -->
+<h2>1. Por que o DNA Precisa ser Replicado?</h2>
+
+<p>Uma das características mais notáveis do DNA é sua <strong>capacidade de se replicar com fidelidade extraordinária</strong>. A replicação ocorre durante a <span class="enzyme">Fase S</span> do ciclo celular e é um pré-requisito obrigatório para a divisão celular:</p>
+
+<div class="callout callout-info">
+  <div class="callout-title">Regra de Ouro</div>
+  Sem replicação completa do DNA → não há mitose. O ponto de controle G2/M garante que a fase M só comece após toda a replicação ter sido concluída e os erros reparados.
+</div>
+
+<!-- ===== 2. 3 CARACTERÍSTICAS ===== -->
+<h2>2. As 3 Características Fundamentais</h2>
+
+<div class="grid-3">
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Semiconservadora</strong><br>
+    <small>Cada molécula-filha conserva <strong>1 fita original</strong> + 1 fita nova sintetizada. Comprovado por Meselson e Stahl (1958) com N¹⁵.</small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--purple);">
+    <strong style="color:var(--purple);">Bidirecional</strong><br>
+    <small>A partir de cada origem de replicação (ORI/ARS), o DNA se replica nos <strong>dois sentidos</strong> simultaneamente, formando 2 forquilhas opostas.</small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--orange);">
+    <strong style="color:var(--orange);">Antiparalela</strong><br>
+    <small>As duas fitas do DNA são antiparalelas (5'→3' e 3'→5'). A síntese sempre ocorre <strong>5'→3'</strong>, o que cria o problema da fita retardada.</small>
+  </div>
+</div>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Por que Múltiplas Origens em Eucariotos?</div>
+  O DNA eucariótico é enorme. Com uma única origem, levaria meses para replicar. Por isso, eucariotos têm <strong>múltiplos sítios ORI</strong> (ricos em A:T — mais fáceis de separar) que permitem replicação multifocal simultânea. Cada unidade gerenciada por um ORI é chamada de <em>replicon</em>.
+</div>
+
+<figure class="fig">
+  <img src="imgs/dna-okazaki-helicase.png" alt="Estrutura molecular do DNA mostrando fragmentos de Okazaki e Helicase">
+  <figcaption>Estrutura molecular da fita de DNA, mostrando os fragmentos de Okazaki (fita retardada) e a ação da Helicase na separação das fitas complementares (Prof. Verónica Ramírez — UNINTER)</figcaption>
+</figure>
+
+<!-- ===== 3. MAQUINARIA ===== -->
+<h2>3. A Maquinaria da Replicação — As Enzimas</h2>
+
+<figure class="fig">
+  <img src="imgs/replicacao-forquilha-3d.png" alt="Forquilha de replicação 3D — helicasa, primosoma, primasa, SSB, ADN polimerasa">
+  <figcaption>Forquilha de replicação em 3D: helicasa abre a dupla hélice, primosoma + primasa sintetizam o cebador ARN, proteínas SSB protegem a fita singleira, ADN polimerase sintetiza as novas fitas (OpenStax / UNINTER)</figcaption>
+</figure>
+
+<table>
+  <thead>
+    <tr><th>Enzima / Proteína</th><th>Função</th><th>Analogia</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="enzyme">Helicase</span></td>
+      <td>Separa as duas fitas do DNA hidrolisando as pontes de hidrogênio entre as bases nitrogenadas. Avança abrindo a forquilha.</td>
+      <td>"Abre o zíper" da dupla hélice</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme">Topoisomerase I e II</span></td>
+      <td>Alivia a tensão à frente da forquilha cortando e religando o DNA (evita superenrolamento que pararia a replicação)</td>
+      <td>Remove o "torção" que se forma à frente do zíper</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme">Proteínas SSB</span> (RPA em eucariotos)</td>
+      <td>Ligam-se à fita simples separada pela helicase, impedindo que as fitas se renaturem e protegendo contra nucleases</td>
+      <td>"Escoras" que mantêm o DNA aberto</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme enzyme-p">Primase</span></td>
+      <td>Sintetiza um pequeno fragmento de RNA (~8–10 nucleotídeos) chamado <em>cebador</em> (primer), ponto de partida para a DNA polimerase</td>
+      <td>"Ignição" — a DNA pol não consegue começar do zero</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme enzyme-p">DNA Polimerase</span> (δ na fita lenta; ε na fita rápida)</td>
+      <td>Lê a fita molde 3'→5' e adiciona desoxinucleotídeos na direção 5'→3'. Principal enzima da elongação</td>
+      <td>A fábrica que constrói a nova fita</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme enzyme-o">PCNA</span></td>
+      <td>Proteína de processividade — mantém a DNA polimerase presa à fita molde para não se desprender durante a elongação (<em>clamp</em> deslizante)</td>
+      <td>"Grampo" que segura a polimerase no trilho</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme enzyme-g">RNase H1 + FEN1</span></td>
+      <td>Removem os cebadores de RNA dos fragmentos de Okazaki; FEN1 (Endonuclease flap 1) remove o ribonucleotídeo 5' terminal</td>
+      <td>Remove o "andaime" após a construção</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme enzyme-g">DNA Ligase I</span></td>
+      <td>Sela o nick (quebra de fita simples) formando o enlace fosfodiéster entre fragmentos de Okazaki adjacentes</td>
+      <td>"Cola" os fragmentos em uma fita contínua</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme" style="background:#ff6b6b18;color:var(--red);border-color:#ff6b6b40;">Telomerase</span></td>
+      <td>Ribonucleoproteína com atividade de transcriptase reversa — sintetiza DNA de telômero (TTAGGG repetições) para compensar o encurtamento dos extremos cromossômicos</td>
+      <td>Regenera as "pontas" dos cromossomos</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ===== 4. FITA LÍDER vs FITA RETARDADA ===== -->
+<h2>4. Fita Líder vs Fita Retardada — O Problema da Antiparalela</h2>
+
+<figure class="fig">
+  <img src="imgs/replicacao-forquilha-esquema.png" alt="Esquema da forquilha de replicação com cadeia líder e cadeia rezagada">
+  <figcaption>Forquilha de replicação: cadeia líder (síntese contínua) vs cadeia rezagada (fragmentos de Okazaki separados por cebadores ARN). ADN polimerase I remove primers; ADN ligase sela as lacunas (Prof. Verónica Ramírez — UNINTER)</figcaption>
+</figure>
+
+<div class="grid-2">
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Fita Líder (Leading Strand)</strong><br>
+    <ul style="padding-left:1rem;margin-top:.5rem;">
+      <li>Molde orientado 3'→5' em relação à forquilha</li>
+      <li>DNA pol lê 3'→5', sintetiza 5'→3' — <strong>mesma direção da forquilha</strong></li>
+      <li>Síntese <strong>contínua</strong> — precisa de apenas 1 primer</li>
+    </ul>
+  </div>
+  <div class="card" style="border-top:3px solid var(--orange);">
+    <strong style="color:var(--orange);">Fita Retardada (Lagging Strand)</strong><br>
+    <ul style="padding-left:1rem;margin-top:.5rem;">
+      <li>Molde orientado 5'→3' em relação à forquilha</li>
+      <li>A síntese 5'→3' vai no sentido contrário à forquilha</li>
+      <li>Síntese <strong>descontínua</strong> — fragmentos de Okazaki, cada um com seu primer</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 5. FRAGMENTOS DE OKAZAKI ===== -->
+<h2>5. Fragmentos de Okazaki</h2>
+
+<p>Descobertos pelos japoneses <strong>Reiji e Tsuneko Okazaki</strong> na década de 1960. São fragmentos curtos de DNA sintetizados na fita retardada. Em eucariotos: ~100–200 pares de bases. Em procariotos: ~1000–2000 pb.</p>
+
+<ul class="steps">
+  <li>
+    <span class="step-num orange">1</span>
+    <div>A forquilha avança e expõe um trecho da fita retardada</div>
+  </li>
+  <li>
+    <span class="step-num orange">2</span>
+    <div><span class="enzyme enzyme-p">Primase</span> sintetiza um cebador de RNA (~10 nt) na fita exposta</div>
+  </li>
+  <li>
+    <span class="step-num orange">3</span>
+    <div><span class="enzyme enzyme-p">DNA Pol δ</span> + <span class="enzyme enzyme-o">PCNA</span> estendem o fragmento até o próximo primer (do fragmento anterior)</div>
+  </li>
+  <li>
+    <span class="step-num orange">4</span>
+    <div><span class="enzyme enzyme-g">RNase H1 + FEN1</span> removem o cebador de RNA</div>
+  </li>
+  <li>
+    <span class="step-num orange">5</span>
+    <div><span class="enzyme enzyme-p">DNA Pol</span> preenche a lacuna com DNA; <span class="enzyme enzyme-g">DNA Ligase I</span> sela o nick</div>
+  </li>
+</ul>
+
+<!-- ===== 6. FASES DA REPLICAÇÃO ===== -->
+<h2>6. Fases da Replicação: Iniciação → Elongação → Terminação</h2>
+
+<div class="card" style="border-left:4px solid var(--green);">
+  <h3 style="color:var(--green);margin-top:0;">Iniciação</h3>
+  <ul style="padding-left:1rem;">
+    <li>Proteínas ORC (<em>Origin Recognition Complex</em>) reconhecem os sítios ORI — sequências de ~300 pb, ricas em A:T (mais fáceis de separar)</li>
+    <li><span class="enzyme">Helicase</span> se liga e hidrolisa as pontes de H entre as bases — abre a "bolha de replicação"</li>
+    <li>Cada bolha tem <strong>2 forquilhas</strong> — uma vai para a direita, outra para a esquerda (bidirecionalidade)</li>
+    <li><span class="enzyme enzyme-p">Primase</span> sintetiza o primeiro cebador — ponto de partida obrigatório para a DNA polimerase</li>
+  </ul>
+</div>
+
+<div class="card" style="border-left:4px solid var(--teal);">
+  <h3 style="color:var(--teal);margin-top:0;">Elongação</h3>
+  <ul style="padding-left:1rem;">
+    <li><span class="enzyme enzyme-p">DNA Pol δ/ε</span> + <span class="enzyme enzyme-o">PCNA</span> adicionam nucleotídeos um a um, lendo a fita molde</li>
+    <li><span class="enzyme">Topoisomerases I e II</span> cortam e religam o DNA à frente da forquilha, aliviando o superenrolamento</li>
+    <li>Fita líder: síntese contínua. Fita retardada: síntese descontínua (fragmentos de Okazaki)</li>
+  </ul>
+</div>
+
+<div class="card" style="border-left:4px solid var(--purple);">
+  <h3 style="color:var(--purple);margin-top:0;">Terminação</h3>
+  <ul style="padding-left:1rem;">
+    <li>As bolhas de replicação vizinhas se fundem quando as forquilhas se encontram</li>
+    <li>Remoção dos últimos primers, preenchimento das lacunas e selagem pela <span class="enzyme enzyme-g">Ligase</span></li>
+    <li>Nas extremidades dos cromossomos, a <span class="enzyme" style="background:#ff6b6b18;color:var(--red);border-color:#ff6b6b40;">Telomerase</span> atua para evitar o encurtamento progressivo</li>
+  </ul>
+</div>
+
+<!-- ===== 7. TELOMERASE ===== -->
+<h2>7. Telomerase — A Enzima dos Telômeros</h2>
+
+<p>Toda vez que o DNA se replica, a fita retardada perde um fragmento na extremidade (o primer do último fragmento é removido e não há mais molde para preenchê-lo). Sem correção, os cromossomos encurtariam a cada divisão — o <strong>problema da replicação dos telômeros</strong>.</p>
+
+<div class="callout callout-purple">
+  <div class="callout-title">Como a Telomerase Resolve</div>
+  A telomerase carrega seu próprio RNA molde (com a sequência AAUCCC) e usa atividade de <strong>transcriptase reversa</strong> para sintetizar sequências repetitivas de DNA (TTAGGG) no extremo 3' do cromossomo. Isso cria molde suficiente para a primase e a DNA pol completarem a fita complementar.
+</div>
+
+<div class="grid-2">
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Telomerase ATIVA</strong><br>
+    Células germinativas, células-tronco e <strong>células cancerígenas</strong> — permitem renovação ilimitada
+  </div>
+  <div class="card" style="border-top:3px solid var(--text-muted);">
+    <strong style="color:var(--text-muted);">Telomerase INATIVA</strong><br>
+    Células somáticas adultas — telômeros encurtam com as divisões → <strong>limite de Hayflick</strong> (~50 divisões) → senescência
+  </div>
+</div>
+
+<!-- ===== 8. COMPARAÇÃO ERROS ===== -->
+<h2>8. Fidelidade e Reparo</h2>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Alta Fidelidade</div>
+  A DNA polimerase tem atividade de <em>proofreading</em> (3'→5' exonuclease): reconhece e remove nucleotídeos mal incorporados imediatamente. Taxa de erro: ~1 em 10⁹ pares de bases — equivalente a copiar 3 bilhões de letras com menos de 3 erros.
+</div>
+
+<!-- ===== 9. RELEVÂNCIA CLÍNICA ===== -->
+<h2>9. Relevância Clínica</h2>
+
+<div class="grid-2">
+  <div class="callout callout-danger" style="margin:0;">
+    <div class="callout-title">Câncer e Telomerase</div>
+    Células cancerígenas reativam a telomerase — isso lhes confere imortalidade replicativa. Inibidores de telomerase estão sendo estudados como alvos terapêuticos.
+  </div>
+  <div class="callout callout-warn" style="margin:0;">
+    <div class="callout-title">Xeroderma Pigmentosum</div>
+    Defeito no sistema de reparo de DNA por excisão de nucleotídeos (NER). Pacientes não conseguem reparar danos causados por UV → altíssimo risco de câncer de pele.
+  </div>
+  <div class="callout callout-info" style="margin:0;">
+    <div class="callout-title">Antivirais e Antibióticos</div>
+    Antivirais como o Aciclovir imitam nucleotídeos e bloqueiam a DNA pol viral. Quinolonas (antibióticos) inibem a topoisomerase bacteriana (DNA girase) — não têm efeito em eucariotos.
+  </div>
+  <div class="callout callout-tip" style="margin:0;">
+    <div class="callout-title">PCR — Replicação in vitro</div>
+    A PCR (Reação em Cadeia da Polimerase) usa primers sintéticos + DNA polimerase termoestável (Taq pol) para replicar um fragmento específico de DNA bilhões de vezes — base do diagnóstico molecular (COVID-19, HIV, genética forense).
+  </div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>

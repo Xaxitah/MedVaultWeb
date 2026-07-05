@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transcrição e Tradução — Biologia Geral P1 | MED-Vault</title>
+<style>
+:root { --bg:#1a1b1e; --bg2:#242528; --bg3:#2e3035; --border:#3d3f44; --text:#dde1e7;
+  --text-muted:#9da3ad; --purple:#9580ff; --teal:#4db6ac; --orange:#ffab40;
+  --green:#69db7c; --red:#ff6b6b; --code-bg:#1e1e2e; --nav-h:56px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:16px; line-height:1.7; }
+nav { position:sticky; top:0; z-index:100; background:#12131599;
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--border);
+  height:var(--nav-h); display:flex; align-items:center; padding:0 1.5rem; gap:1rem; }
+.nav-brand { font-weight:700; color:var(--purple); font-size:1.1rem; margin-right:auto; }
+nav a { color:var(--text-muted); text-decoration:none; padding:.35rem .8rem; border-radius:6px;
+  font-size:.9rem; transition:all .2s; border:1px solid transparent; }
+nav a:hover { color:var(--text); background:var(--bg3); }
+nav a.active { color:var(--purple); border-color:var(--purple); background:#9580ff15; }
+.page { max-width:860px; margin:0 auto; padding:2.5rem 1.5rem 6rem; }
+h1 { font-size:2rem; font-weight:800; color:var(--purple); margin-bottom:.4rem; }
+.subtitle { color:var(--text-muted); font-size:1rem; margin-bottom:2.5rem; }
+h2 { font-size:1.4rem; font-weight:700; color:var(--purple); margin:2.5rem 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--bg3); }
+h3 { font-size:1.1rem; font-weight:600; color:var(--orange); margin:1.5rem 0 .6rem; }
+p { margin-bottom:.9rem; }
+strong { color:#fff; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem 1.5rem; margin:1rem 0; }
+.callout { border-radius:8px; padding:1rem 1.2rem; margin:1rem 0; border-left:4px solid; }
+.callout-info { background:#4db6ac12; border-color:var(--teal); }
+.callout-warn { background:#ffab4015; border-color:var(--orange); }
+.callout-tip { background:#69db7c12; border-color:var(--green); }
+.callout-danger { background:#ff6b6b12; border-color:var(--red); }
+.callout-purple { background:#9580ff12; border-color:var(--purple); }
+.callout-title { font-weight:700; font-size:.9rem; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:.4rem; }
+.callout-info .callout-title { color:var(--teal); }
+.callout-warn .callout-title { color:var(--orange); }
+.callout-tip .callout-title { color:var(--green); }
+.callout-danger .callout-title { color:var(--red); }
+.callout-purple .callout-title { color:var(--purple); }
+.rxn { background:var(--code-bg); border:1px solid var(--border); border-radius:8px;
+  padding:1rem 1.2rem; font-family:'Consolas','Courier New',monospace; font-size:.9rem;
+  color:#cdd6f4; white-space:pre; overflow-x:auto; margin:.8rem 0; line-height:1.6; }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.92rem; }
+th { background:var(--bg3); color:var(--text-muted); text-align:left;
+  padding:.6rem .9rem; font-weight:600; border-bottom:2px solid var(--border); }
+td { padding:.55rem .9rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.fig { margin:1.5rem 0; text-align:center; }
+.fig img { max-width:100%; border-radius:8px; border:1px solid var(--border);
+  box-shadow:0 4px 24px #0005; }
+.fig figcaption { margin-top:.5rem; font-size:.85rem; color:var(--text-muted); font-style:italic; }
+.steps { list-style:none; padding:0; }
+.steps li { display:flex; gap:1rem; padding:.9rem 0; border-bottom:1px solid var(--border); }
+.steps li:last-child { border:none; }
+.step-num { min-width:32px; height:32px; border-radius:50%; background:var(--purple);
+  color:#fff; font-weight:800; font-size:.82rem; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:.1rem; }
+.step-num.teal { background:var(--teal); color:#111; }
+.step-num.orange { background:var(--orange); color:#111; }
+.step-num.green { background:var(--green); color:#111; }
+.enzyme { display:inline-block; background:#9580ff18; color:var(--purple); border:1px solid #9580ff40;
+  border-radius:4px; padding:.05rem .45rem; font-size:.82rem; font-weight:600; }
+.enzyme-t { background:#4db6ac18; color:var(--teal); border-color:#4db6ac40; }
+.enzyme-g { background:#69db7c18; color:var(--green); border-color:#69db7c40; }
+.codon { display:inline-block; font-family:'Consolas',monospace; font-size:.88rem; font-weight:700;
+  padding:.1rem .4rem; border-radius:3px; background:var(--bg3); border:1px solid var(--border); }
+.codon-start { background:#69db7c20; color:var(--green); border-color:#69db7c60; }
+.codon-stop { background:#ff6b6b20; color:var(--red); border-color:#ff6b6b60; }
+.dogma-arrow { font-size:1.8rem; color:var(--purple); text-align:center; margin:1rem 0; }
+.dogma-box { display:inline-block; background:var(--bg2); border:2px solid var(--border);
+  border-radius:10px; padding:.8rem 1.4rem; font-size:1.1rem; font-weight:700; }
+.dogma-box.dna { border-color:var(--teal); color:var(--teal); }
+.dogma-box.rna { border-color:var(--purple); color:var(--purple); }
+.dogma-box.prot { border-color:var(--orange); color:var(--orange); }
+.dogma-row { display:flex; align-items:center; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.dogma-label { font-size:.8rem; color:var(--text-muted); text-align:center; margin-top:.3rem; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.8rem; }
+@media (max-width:640px) { .grid-2,.grid-3 { grid-template-columns:1fr; }
+  nav { padding:0 .8rem; gap:.4rem; } nav a { font-size:.8rem; padding:.25rem .45rem; }
+  .dogma-row { flex-direction:column; gap:.5rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="color:var(--text-muted);font-size:.85rem;margin-right:.4rem;">← Biologia Geral</a>
+  <span class="nav-brand">Biologia Molecular</span>
+  <a href="RC-P4-Divisao-Celular.html">P4 · Divisão Celular</a>
+  <a href="RC-P5-Replicacao-DNA.html">P5 · Replicação DNA</a>
+  <a href="RC-P6-Transcricao-Traducao.html" class="active">P6 · Transcrição/Tradução</a>
+</nav>
+
+<div class="page">
+
+<h1>Transcrição e Tradução</h1>
+<p class="subtitle">Expressão Gênica · RNA Polimerase · Processamento do mRNA · Ribossomo · Síntese de Proteínas · P1 Biologia Geral — UNINTER</p>
+
+<!-- ===== 1. DOGMA CENTRAL ===== -->
+<h2>1. O Dogma Central da Biologia Molecular</h2>
+
+<p>O dogma central descreve o fluxo de informação genética dentro da célula — de onde ela vem, como é copiada e como se transforma em função biológica (proteínas):</p>
+
+<div class="card" style="text-align:center; padding:2rem;">
+  <div class="dogma-row">
+    <div>
+      <div class="dogma-box dna">DNA</div>
+      <div class="dogma-label">Informação<br>Armazenada</div>
+    </div>
+    <div>
+      <div style="font-size:2rem; color:var(--teal);">→</div>
+      <div class="dogma-label" style="font-size:.75rem;">TRANSCRIÇÃO<br>(RNA pol)</div>
+    </div>
+    <div>
+      <div class="dogma-box rna">RNA</div>
+      <div class="dogma-label">Mensageiro<br>(mRNA)</div>
+    </div>
+    <div>
+      <div style="font-size:2rem; color:var(--purple);">→</div>
+      <div class="dogma-label" style="font-size:.75rem;">TRADUÇÃO<br>(Ribossomo)</div>
+    </div>
+    <div>
+      <div class="dogma-box prot">Proteína</div>
+      <div class="dogma-label">Função<br>Biológica</div>
+    </div>
+  </div>
+</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">Por que não usar o DNA diretamente?</div>
+  O DNA fica <strong>confinado no núcleo</strong> e não consegue atravessar os poros nucleares. A célula precisa de uma "cópia portátil" que saia do núcleo para o citoplasma — essa cópia é o <strong>mRNA</strong>.
+</div>
+
+<!-- ===== 2. TRANSCRIÇÃO ===== -->
+<h2>2. Transcrição — DNA → RNA</h2>
+
+<p>A transcrição é a síntese de uma molécula de RNA usando a fita molde de DNA. As bases do RNA se pareiam com as bases complementares do DNA:</p>
+
+<div class="rxn">Regra de complementaridade (DNA → RNA):
+  A  →  U
+  T  →  A
+  G  →  C
+  C  →  G</div>
+
+<div class="callout callout-warn">
+  <div class="callout-title">RNA tem Uracila (U) — não Timina (T)</div>
+  A principal diferença química: o RNA usa <strong>uracila (U)</strong> no lugar da timina. Além disso, o RNA é de fita simples e tem ribose (não desoxirribose) em seu esqueleto.
+</div>
+
+<h3>As 3 RNA Polimerases de Eucariotos</h3>
+<table>
+  <thead><tr><th>RNA Polimerase</th><th>Produto</th><th>Função</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><span class="enzyme">RNA Pol I</span></td>
+      <td>rRNA</td>
+      <td>RNA ribossômico — componente estrutural dos ribossomos</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme" style="background:#ff6b6b18;color:var(--red);border-color:#ff6b6b40;">RNA Pol II ⭐</span></td>
+      <td>mRNA (pre-mRNA)</td>
+      <td>Transcreve genes que codificam proteínas — a mais importante na expressão gênica</td>
+    </tr>
+    <tr>
+      <td><span class="enzyme">RNA Pol III</span></td>
+      <td>tRNA, outros RNAs pequenos</td>
+      <td>RNA transportador — carrega aminoácidos para a tradução</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout callout-purple">
+  <div class="callout-title">Fatores de Transcrição</div>
+  As RNA polimerases de eucariotos <strong>não conseguem sozinhas reconhecer o promotor</strong>. Precisam de proteínas auxiliares chamadas <em>fatores de transcrição</em> que se ligam ao promotor primeiro, depois recrutam a RNA pol, formando o <em>complexo de pré-iniciação</em>.
+</div>
+
+<!-- ===== 3. ETAPAS DA TRANSCRIÇÃO ===== -->
+<h2>3. Etapas da Transcrição</h2>
+
+<ul class="steps">
+  <li>
+    <span class="step-num">1</span>
+    <div>
+      <strong>Iniciação — A Fase Mais Complexa</strong><br>
+      A RNA Pol II (com fatores de transcrição) reconhece o <span class="enzyme-t enzyme">promotor</span> — região do DNA com sequências específicas. Em eucariotos, o promotor mais comum é a <strong>Caixa TATA</strong> (sequência TATAAA, localizada ~30 pb acima do início da transcrição).<br>
+      A RNA pol muda de configuração, <strong>desenrola um trecho da dupla hélice</strong> e forma a "bolha de transcrição" — expondo a fita molde para a síntese.
+    </div>
+  </li>
+  <li>
+    <span class="step-num">2</span>
+    <div>
+      <strong>Elongação — Síntese da Fita de RNA</strong><br>
+      A RNA pol lê a fita molde do DNA no sentido <strong>3'→5'</strong> e sintetiza o RNA no sentido <strong>5'→3'</strong>. A bolha de transcrição se move ao longo do DNA junto com a polimerase.<br>
+      Em eucariotos, são transcritos tanto <span class="enzyme-g enzyme">exons</span> (regiões codificantes) quanto <span class="enzyme enzyme">introns</span> (regiões não-codificantes) — o produto inicial é o <em>pré-mRNA</em>.<br>
+      Após os primeiros 20–30 nucleotídeos, uma <strong>Cap de 7-metilguanosina</strong> é adicionada ao extremo 5' do RNA nascente.
+    </div>
+  </li>
+  <li>
+    <span class="step-num">3</span>
+    <div>
+      <strong>Terminação — Fim da Síntese</strong><br>
+      A RNA pol continua até encontrar a <strong>sequência terminadora</strong>. Em eucariotos: a sequência AAUAAA no RNA sinaliza o corte e o mRNA se libera. Uma enzima adiciona a <strong>cauda Poli-A</strong> (~200 adeninas) no extremo 3'.
+    </div>
+  </li>
+</ul>
+
+<!-- ===== 4. PROCESSAMENTO ===== -->
+<h2>4. Processamento Pós-Transcricional (Maturação do mRNA)</h2>
+
+<p>Em eucariotos, o pré-mRNA precisa ser <strong>extensamente processado</strong> no núcleo antes de sair para o citoplasma. São 3 modificações acopladas à transcrição:</p>
+
+<div class="grid-3">
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">1. Cap 5'</strong><br>
+    <small>7-metilguanosina adicionada ao extremo 5'. <strong>Funções:</strong> protege o mRNA de degradação, serve de sinal de início na tradução, permite export nuclear.</small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--purple);">
+    <strong style="color:var(--purple);">2. Cauda Poli-A</strong><br>
+    <small>~200 adeninas adicionadas ao extremo 3'. <strong>Funções:</strong> protege contra RNases (enzimas que degradam RNA), aumenta a estabilidade e meia-vida do mRNA no citoplasma.</small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--orange);">
+    <strong style="color:var(--orange);">3. Splicing</strong><br>
+    <small>Remoção dos <em>introns</em> e união dos <em>exons</em> realizada pelo <strong>spliceossomo</strong> (complexo de snRNPs). Resultado: mRNA maduro com sequência codificante contínua.</small>
+  </div>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Splicing Alternativo — Uma Proteína, Múltiplas Formas</div>
+  O mesmo gene pode produzir proteínas diferentes se diferentes combinações de exons forem incluídas no mRNA maduro. Isso amplia enormemente o "proteoma" sem aumentar o número de genes. Exemplo: o gene da tropomiosina gera >10 isoformas diferentes em diferentes tecidos.
+</div>
+
+<div class="rxn">Pré-mRNA:  [Cap 5'] — Exon 1 — [Intron 1] — Exon 2 — [Intron 2] — Exon 3 — [Poli-A 3']
+                             ↓ Splicing (spliceossomo)
+mRNA maduro: [Cap 5'] — Exon 1 — Exon 2 — Exon 3 — [Poli-A 3']</div>
+
+<!-- ===== 5. TRADUÇÃO ===== -->
+<h2>5. Tradução — RNA → Proteína</h2>
+
+<p>A tradução converte a linguagem dos nucleotídeos (RNA) na linguagem dos aminoácidos (proteínas). Ocorre no <strong>citoplasma</strong>, nos ribossomos.</p>
+
+<h3>Os 3 Participantes Essenciais</h3>
+
+<ul class="steps">
+  <li>
+    <span class="step-num teal">1</span>
+    <div>
+      <strong>mRNA (RNA mensajero)</strong><br>
+      Leva o código genético do núcleo ao citoplasma. Possui um "passaporte" (Cap 5') que permite cruzar o poro nuclear. O código está em <strong>códons</strong> — trincas de bases que especificam cada aminoácido.
+    </div>
+  </li>
+  <li>
+    <span class="step-num teal">2</span>
+    <div>
+      <strong>tRNA (RNA transportador)</strong><br>
+      Carrega um aminoácido específico em um extremo. No outro extremo tem o <strong>anticódon</strong> — 3 bases complementares ao códon do mRNA. O primeiro tRNA tem sempre anticódon AUG e porta <strong>metionina</strong> (Met) — o aminoácido de início universal.
+    </div>
+  </li>
+  <li>
+    <span class="step-num teal">3</span>
+    <div>
+      <strong>Ribossomo</strong><br>
+      "Máquina de leitura" formada por 2 subunidades (grande + pequena) compostas de rRNA e proteínas. Só se montam ao iniciar a tradução. Possuem <strong>3 sítios de ligação para o tRNA</strong>:
+      <ul style="padding-left:1rem;margin-top:.4rem;">
+        <li><strong>Sítio A</strong> (aminoacil) — onde o novo tRNA chega</li>
+        <li><strong>Sítio P</strong> (peptidil) — onde o tRNA com a cadeia crescente está</li>
+        <li><strong>Sítio E</strong> (exit) — onde o tRNA vazio aguarda para sair</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+<!-- ===== 6. ETAPAS DA TRADUÇÃO ===== -->
+<h2>6. Etapas da Tradução</h2>
+
+<ul class="steps">
+  <li>
+    <span class="step-num orange">1</span>
+    <div>
+      <strong>Iniciação</strong><br>
+      O tRNA iniciador (com Met) se une à subunidade ribosomal pequena. Juntos reconhecem o Cap 5' do mRNA e caminham na direção 3' até encontrar o <strong>códon de início</strong> <span class="codon codon-start">AUG</span>. A subunidade grande se une — ribossomo montado, tRNA iniciador no <strong>sítio P</strong>.
+    </div>
+  </li>
+  <li>
+    <span class="step-num orange">2</span>
+    <div>
+      <strong>Elongação</strong><br>
+      <ol style="padding-left:1rem;line-height:2;">
+        <li>Novo tRNA (anticódon complementar ao próximo códon) entra no <strong>sítio A</strong></li>
+        <li>A peptidil transferase (do rRNA) catalisa a formação do <strong>enlace peptídico</strong> — transfere a cadeia do sítio P para o aminoácido no sítio A</li>
+        <li>O ribossomo transloca 1 códon para frente — tRNA vazio vai ao sítio E e sai; o tRNA com a cadeia crescente vai ao sítio P; novo sítio A fica exposto</li>
+        <li>Ciclo se repete para cada aminoácido</li>
+      </ol>
+    </div>
+  </li>
+  <li>
+    <span class="step-num orange">3</span>
+    <div>
+      <strong>Terminação</strong><br>
+      Quando o ribossomo alcança um <strong>códon de parada</strong> (<span class="codon codon-stop">UAA</span>, <span class="codon codon-stop">UAG</span> ou <span class="codon codon-stop">UGA</span>), não há tRNA complementar. <em>Fatores de liberação</em> entram no sítio A, a polipeptídeo é liberada, o ribossomo se dissocia.
+    </div>
+  </li>
+</ul>
+
+<!-- ===== 7. CÓDIGO GENÉTICO ===== -->
+<h2>7. O Código Genético — Codons Chave</h2>
+
+<div class="callout callout-purple">
+  <div class="callout-title">Propriedades do Código Genético</div>
+  <ul style="padding-left:1rem;">
+    <li><strong>Universal</strong> — praticamente idêntico em todos os organismos (de bactérias a humanos)</li>
+    <li><strong>Degenerado</strong> — múltiplos códons podem especificar o mesmo aminoácido (ex: 6 códons para Leucina)</li>
+    <li><strong>Sem sobreposição</strong> — cada nucleotídeo pertence a apenas um códon</li>
+    <li><strong>Sem vírgulas</strong> — lido continuamente a partir do AUG de início</li>
+  </ul>
+</div>
+
+<table>
+  <thead><tr><th>Códon</th><th>Significado</th><th>Detalhe</th></tr></thead>
+  <tbody>
+    <tr><td><span class="codon codon-start">AUG</span></td><td><strong>Início</strong> + Metionina</td><td>Todo polipeptídeo começa com Met (pode ser removida depois). Também é o único códon para Met no interior da cadeia.</td></tr>
+    <tr><td><span class="codon codon-stop">UAA</span></td><td>Parada ("ochre")</td><td rowspan="3">Não especificam aminoácidos — recrutam fatores de liberação. O ribossomo se dissocia.</td></tr>
+    <tr><td><span class="codon codon-stop">UAG</span></td><td>Parada ("amber")</td></tr>
+    <tr><td><span class="codon codon-stop">UGA</span></td><td>Parada ("opal")</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-tip">
+  <div class="callout-title">Mnemônico — Códons de Parada</div>
+  <strong>UAA, UAG, UGA</strong> — pense: "U Are Away", "U Are Gone", "U Go Away". Os 3 colocam ponto final na síntese proteica.
+</div>
+
+<!-- ===== 8. COMPARAÇÃO PROCARIOTO vs EUCARIOTO ===== -->
+<h2>8. Procarioto vs Eucarioto — Diferenças na Expressão Gênica</h2>
+
+<table>
+  <thead><tr><th>Característica</th><th>Procarioto</th><th>Eucarioto</th></tr></thead>
+  <tbody>
+    <tr><td>Local da transcrição</td><td>Citoplasma (sem núcleo)</td><td>Núcleo</td></tr>
+    <tr><td>Local da tradução</td><td>Citoplasma — pode ocorrer simultaneamente com a transcrição</td><td>Citoplasma — separado no tempo e no espaço</td></tr>
+    <tr><td>Processamento do mRNA</td><td>Não (sem introns em geral)</td><td>Sim: Cap 5', Poli-A, Splicing</td></tr>
+    <tr><td>Promotor</td><td>Consenso -35 (TTGACA) e -10 (TATAAT)</td><td>Caixa TATA (~-30), CAAT box</td></tr>
+    <tr><td>RNA polimerases</td><td>1 (faz todos os RNAs)</td><td>3 (I, II, III com funções distintas)</td></tr>
+    <tr><td>Ribossomo</td><td>70S (30S + 50S)</td><td>80S (40S + 60S)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Por que a Diferença Ribossomal Importa?</div>
+  Antibióticos como <strong>estreptomicina, cloranfenicol e eritromicina</strong> inibem ribossomos <strong>70S</strong> (bacterianos) sem afetar os 80S humanos — daí sua seletividade terapêutica. Esse é um dos alvos mais explorados no desenvolvimento de antibióticos.
+</div>
+
+<!-- ===== 9. RELEVÂNCIA CLÍNICA ===== -->
+<h2>9. Relevância Clínica</h2>
+
+<div class="grid-2">
+  <div class="callout callout-danger" style="margin:0;">
+    <div class="callout-title">Antibióticos que Inibem a Tradução</div>
+    <ul style="padding-left:1rem;">
+      <li><strong>Aminoglicosídeos</strong> (gentamicina) — subunidade 30S, erros de leitura</li>
+      <li><strong>Tetraciclinas</strong> — bloqueiam entrada do tRNA no sítio A (30S)</li>
+      <li><strong>Cloranfenicol</strong> — inibe peptidil transferase (50S)</li>
+      <li><strong>Macrolídeos</strong> (azitromicina) — bloqueiam translocação (50S)</li>
+    </ul>
+  </div>
+  <div class="callout callout-warn" style="margin:0;">
+    <div class="callout-title">Erros de Splicing → Doença</div>
+    Mutações que afetam sítios de splicing levam à inclusão de introns ou à exclusão de exons no mRNA maduro → proteínas truncadas ou não-funcionais. Exemplos: Talassemia beta, algumas formas de Duchenne, fibrose cística.
+  </div>
+  <div class="callout callout-info" style="margin:0;">
+    <div class="callout-title">Vacinas de mRNA (COVID-19)</div>
+    As vacinas Pfizer/Moderna entregam mRNA que codifica a proteína spike. A célula hospedeira usa seus próprios ribossomos para traduzir o mRNA e produzir a proteína → resposta imune. Inovação: modificação de uridina (pseudouridina) para evitar degradação imunológica do mRNA.
+  </div>
+  <div class="callout callout-tip" style="margin:0;">
+    <div class="callout-title">Toxinas que Bloqueiam a Tradução</div>
+    <strong>Toxina diftérica</strong> (Corynebacterium diphtheriae) ADP-ribosila o fator de elongação EF-2, bloqueando a translocação ribossomal → síntese proteica para. <strong>Ricina</strong> (da mamona) cliva o rRNA 28S e inativa irreversivelmente o ribossomo 80S.
+  </div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>

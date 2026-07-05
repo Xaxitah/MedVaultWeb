@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divisão Celular — Biologia Geral P1 | MED-Vault</title>
+<style>
+:root { --bg:#1a1b1e; --bg2:#242528; --bg3:#2e3035; --border:#3d3f44; --text:#dde1e7;
+  --text-muted:#9da3ad; --purple:#9580ff; --teal:#4db6ac; --orange:#ffab40;
+  --green:#69db7c; --red:#ff6b6b; --code-bg:#1e1e2e; --nav-h:56px; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:16px; line-height:1.7; }
+nav { position:sticky; top:0; z-index:100; background:#12131599;
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--border);
+  height:var(--nav-h); display:flex; align-items:center; padding:0 1.5rem; gap:1rem; }
+.nav-brand { font-weight:700; color:var(--green); font-size:1.1rem; margin-right:auto; }
+nav a { color:var(--text-muted); text-decoration:none; padding:.35rem .8rem; border-radius:6px;
+  font-size:.9rem; transition:all .2s; border:1px solid transparent; }
+nav a:hover { color:var(--text); background:var(--bg3); }
+nav a.active { color:var(--green); border-color:var(--green); background:#69db7c15; }
+.page { max-width:860px; margin:0 auto; padding:2.5rem 1.5rem 6rem; }
+h1 { font-size:2rem; font-weight:800; color:var(--green); margin-bottom:.4rem; }
+.subtitle { color:var(--text-muted); font-size:1rem; margin-bottom:2.5rem; }
+h2 { font-size:1.4rem; font-weight:700; color:var(--purple); margin:2.5rem 0 1rem;
+  padding-bottom:.5rem; border-bottom:2px solid var(--bg3); }
+h3 { font-size:1.1rem; font-weight:600; color:var(--orange); margin:1.5rem 0 .6rem; }
+p { margin-bottom:.9rem; }
+strong { color:#fff; }
+.card { background:var(--bg2); border:1px solid var(--border); border-radius:10px;
+  padding:1.2rem 1.5rem; margin:1rem 0; }
+.callout { border-radius:8px; padding:1rem 1.2rem; margin:1rem 0; border-left:4px solid; }
+.callout-info { background:#4db6ac12; border-color:var(--teal); }
+.callout-warn { background:#ffab4015; border-color:var(--orange); }
+.callout-tip { background:#69db7c12; border-color:var(--green); }
+.callout-danger { background:#ff6b6b12; border-color:var(--red); }
+.callout-purple { background:#9580ff12; border-color:var(--purple); }
+.callout-title { font-weight:700; font-size:.9rem; text-transform:uppercase;
+  letter-spacing:.05em; margin-bottom:.4rem; }
+.callout-info .callout-title { color:var(--teal); }
+.callout-warn .callout-title { color:var(--orange); }
+.callout-tip .callout-title { color:var(--green); }
+.callout-danger .callout-title { color:var(--red); }
+.callout-purple .callout-title { color:var(--purple); }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.92rem; }
+th { background:var(--bg3); color:var(--text-muted); text-align:left;
+  padding:.6rem .9rem; font-weight:600; border-bottom:2px solid var(--border); }
+td { padding:.55rem .9rem; border-bottom:1px solid var(--border); }
+tr:hover td { background:var(--bg3); }
+.fig { margin:1.5rem 0; text-align:center; }
+.fig img { max-width:100%; border-radius:8px; border:1px solid var(--border);
+  box-shadow:0 4px 24px #0005; }
+.fig figcaption { margin-top:.5rem; font-size:.85rem; color:var(--text-muted); font-style:italic; }
+.steps { list-style:none; padding:0; }
+.steps li { display:flex; gap:1rem; padding:.9rem 0; border-bottom:1px solid var(--border); }
+.steps li:last-child { border:none; }
+.step-num { min-width:32px; height:32px; border-radius:50%; background:var(--green);
+  color:#111; font-weight:800; font-size:.82rem; display:flex; align-items:center;
+  justify-content:center; flex-shrink:0; margin-top:.1rem; }
+.step-num.purple { background:var(--purple); color:#fff; }
+.step-num.orange { background:var(--orange); color:#111; }
+.step-num.teal { background:var(--teal); color:#111; }
+.enzyme { display:inline-block; background:#4db6ac18; color:var(--teal); border:1px solid #4db6ac40;
+  border-radius:4px; padding:.05rem .45rem; font-size:.82rem; font-weight:600; }
+.tag-fase { display:inline-block; padding:.15rem .6rem; border-radius:20px; font-size:.8rem;
+  font-weight:700; }
+.tag-g1 { background:#ffab4020; color:var(--orange); }
+.tag-s { background:#4db6ac20; color:var(--teal); }
+.tag-g2 { background:#9580ff20; color:var(--purple); }
+.tag-m { background:#69db7c20; color:var(--green); }
+.tag-g0 { background:#9da3ad20; color:var(--text-muted); }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.8rem; }
+@media (max-width:640px) { .grid-2,.grid-3 { grid-template-columns:1fr; }
+  nav { padding:0 .8rem; gap:.4rem; } nav a { font-size:.8rem; padding:.25rem .45rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="color:var(--text-muted);font-size:.85rem;margin-right:.4rem;">← Biologia Geral</a>
+  <span class="nav-brand">Biologia Molecular</span>
+  <a href="RC-P4-Divisao-Celular.html" class="active">P4 · Divisão Celular</a>
+  <a href="RC-P5-Replicacao-DNA.html">P5 · Replicação DNA</a>
+  <a href="RC-P6-Transcricao-Traducao.html">P6 · Transcrição/Tradução</a>
+</nav>
+
+<div class="page">
+
+<h1>Divisão Celular</h1>
+<p class="subtitle">Ciclo Celular · Mitose · Meiose · Controle por Ciclinas e CDKs · P1 Biologia Geral — UNINTER</p>
+
+<!-- ===== 1. POR QUE A CÉLULA SE DIVIDE ===== -->
+<h2>1. Por que a Célula se Divide?</h2>
+
+<p>A capacidade de reprodução é uma propriedade fundamental da vida. Um indivíduo adulto é formado por bilhões de células, <strong>todas derivadas de uma única célula — o zigoto</strong>. Mesmo após o crescimento, a divisão celular continua sendo essencial:</p>
+
+<div class="grid-3">
+  <div class="card" style="border-top:3px solid var(--green);">
+    <strong style="color:var(--green);">Crescimento</strong><br>
+    <small>Aumento do número de células durante o desenvolvimento</small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Renovação</strong><br>
+    <small>Eritrócitos: vida média 120 dias → 2,5 milhões novos <em>por segundo</em></small>
+  </div>
+  <div class="card" style="border-top:3px solid var(--orange);">
+    <strong style="color:var(--orange);">Reparo</strong><br>
+    <small>Substituição de células lesadas em tecidos (pele, mucosa, osso)</small>
+  </div>
+</div>
+
+<!-- ===== 2. CICLO CELULAR ===== -->
+<h2>2. O Ciclo Celular — As Fases</h2>
+
+<p>O ciclo celular é um conjunto ordenado de eventos que culmina com o crescimento da célula e sua divisão em <strong>duas células-filhas geneticamente idênticas</strong>.</p>
+
+<figure class="fig">
+  <img src="imgs/ciclo-celular-fases.png" alt="Diagrama do ciclo celular com as fases G1, S, G2, Mitose e Citocinese">
+  <figcaption>Ciclo celular: Interfase (G1 + S + G2) e Fase Mitótica (Mitose + Citocinese), resultando em 2 células-filhas (Prof. Verónica Ramírez — UNINTER)</figcaption>
+</figure>
+
+<table>
+  <thead>
+    <tr><th>Fase</th><th>Nome</th><th>Duração</th><th>O que acontece</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="tag-fase tag-g1">G1</span></td>
+      <td>Crescimento 1</td>
+      <td>~5 horas</td>
+      <td>Aumento de tamanho; fabricação de organelas, proteínas. Existe o <strong>ponto de restrição R</strong> — célula decide se vai ou não se dividir</td>
+    </tr>
+    <tr>
+      <td><span class="tag-fase tag-s">S</span></td>
+      <td>Síntese de DNA</td>
+      <td>~7 horas</td>
+      <td>Replicação do DNA. Cromossomos com 1 cromátide passam a ter <strong>2 cromátides</strong> unidas pelo centrômero</td>
+    </tr>
+    <tr>
+      <td><span class="tag-fase tag-g2">G2</span></td>
+      <td>Crescimento 2</td>
+      <td>~3 horas</td>
+      <td>Célula cresce mais; <strong>ponto de controle G2-M</strong>: verifica se o DNA foi completamente duplicado e reparado</td>
+    </tr>
+    <tr>
+      <td><span class="tag-fase tag-m">M</span></td>
+      <td>Fase Mitótica</td>
+      <td>~1 hora</td>
+      <td>Mitose (divisão nuclear) + Citocinese (divisão do citoplasma) → 2 células-filhas diplóides idênticas</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout callout-info">
+  <div class="callout-title">Interfase vs Fase Mitótica</div>
+  <strong>Interfase</strong> = G1 + S + G2 (a maior parte do tempo — célula "prepara o terreno").<br>
+  <strong>Fase mitótica</strong> = Mitose + Citocinese (relativamente breve, mas visualmente dramática).
+</div>
+
+<!-- ===== 3. G0 ===== -->
+<h2>3. G0 — Células em Repouso</h2>
+
+<p>G0 é um estado de saída do ciclo, um "anexo" da interfase onde as células estão em repouso. <strong>Não é uma fase do ciclo</strong> — é uma suspensão dele.</p>
+
+<div class="grid-2">
+  <div class="card" style="border-top:3px solid #9da3ad;">
+    <strong style="color:var(--text-muted);">Permanentemente em G0</strong><br>
+    <span class="enzyme">Neurônios</span> — nunca se dividem; exercícios estimulam crescimento axonal mas não divisão
+  </div>
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Temporariamente em G0</strong><br>
+    <span class="enzyme">Hepatócitos</span> — entram em G0 mas voltam a G1 diante de dano hepático (álcool, hepatite C, malária)
+  </div>
+</div>
+
+<!-- ===== 4. CONTROLE DO CICLO ===== -->
+<h2>4. Controle do Ciclo Celular — Ciclinas e CDKs</h2>
+
+<p>O ciclo celular é regulado por um par de moléculas que funcionam juntas como um "interruptor molecular":</p>
+
+<div class="grid-2">
+  <div class="card" style="border-top:3px solid var(--orange);">
+    <h3 style="margin-top:0;">Ciclinas</h3>
+    <p>Proteínas cuja concentração <strong>oscila ao longo do ciclo</strong> — aumentam e depois são degradadas rapidamente. São o "acelerador".</p>
+    <p>Tipos principais: <em>Ciclinas G1</em> (fase S) e <em>Ciclinas Mitóticas</em> (fase M)</p>
+  </div>
+  <div class="card" style="border-top:3px solid var(--purple);">
+    <h3 style="margin-top:0;">CDKs (Quinases dependentes de Ciclina)</h3>
+    <p>Enzimas que <strong>fosforilam proteínas-alvo</strong> para promover a progressão do ciclo. Só se ativam quando se unem a uma ciclina.</p>
+    <p>Principais: <em>Cdk2</em> (fase S) e <em>Cdc2</em> (mitose)</p>
+  </div>
+</div>
+
+<h3>Como Funciona na Prática</h3>
+<ul class="steps">
+  <li>
+    <span class="step-num orange">G1→S</span>
+    <div><strong>Ciclina G1 + Cdk2 = SPF</strong> (Fator Promotor da Fase S)<br>
+    Quando a Ciclina G1 atinge um limiar de concentração, ativa a Cdk2. O complexo SPF abre as origens de replicação e inicia a síntese de DNA.</div>
+  </li>
+  <li>
+    <span class="step-num purple">G2→M</span>
+    <div><strong>Ciclina M + Cdc2 = MPF</strong> (Fator Promotor da Mitose)<br>
+    O complexo MPF fosforila proteínas citosólicas e nucleares para iniciar a condensação dos cromossomos e formação do fuso. A dissociação do MPF ocorre no início da anáfase.</div>
+  </li>
+</ul>
+
+<h3>Pontos de Controle (Checkpoints)</h3>
+<table>
+  <thead><tr><th>Ponto de Controle</th><th>O que Verifica</th><th>Consequência se Falhar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>G1/S (ponto R)</strong></td><td>Massa celular suficiente? Ambiente favorável? DNA intacto?</td><td>Célula não entra em S — fica em G0 ou inicia apoptose</td></tr>
+    <tr><td><strong>G2/M</strong></td><td>DNA completamente replicado? Erros reparados?</td><td>Célula não entra em mitose até o reparo estar completo</td></tr>
+    <tr><td><strong>Fuso mitótico</strong></td><td>Todos os cromossomos estão ligados ao fuso?</td><td>Anáfase não começa — evita aneuploidia (células com número errado de cromossomos)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-danger">
+  <div class="callout-title">Relevância Clínica: Câncer</div>
+  O câncer resulta de falhas nos pontos de controle. Mutações em <strong>proto-oncogenes</strong> (ativadores do ciclo) os convertem em <em>oncogenes</em> que empurram a célula para dividir sem parar. Mutações em <strong>genes supressores de tumor</strong> (como p53, Rb) eliminam os "freios" do ciclo — célula divide com DNA danificado.
+</div>
+
+<!-- ===== 5. MITOSE ===== -->
+<h2>5. As Etapas da Mitose</h2>
+
+<p>A mitose divide o núcleo em dois, preservando o número diplóide de cromossomos (2n). Em organismos superiores tem 5 etapas:</p>
+
+<ul class="steps">
+  <li>
+    <span class="step-num teal">1</span>
+    <div>
+      <strong>Prófase</strong><br>
+      Cromátides se condensam (ficam mais curtas e espessas) e se tornam visíveis. Nucléolo desaparece. Huso mitótico começa a se formar. Centrômeros ficam visíveis — placas proteicas chamadas <span class="enzyme">cinetocoros</span> se associam a eles.
+    </div>
+  </li>
+  <li>
+    <span class="step-num orange">2</span>
+    <div>
+      <strong>Prometáfase</strong><br>
+      Período de transição breve. <strong>Membrana nuclear se dissolve</strong>. Microtúbulos do fuso se ligam aos cinetocoros. Cromossomos começam a se mover em direção ao centro.
+    </div>
+  </li>
+  <li>
+    <span class="step-num purple">3</span>
+    <div>
+      <strong>Metáfase</strong><br>
+      Cromossomos atingem máxima condensação. Ficam alinhados no plano equatorial da célula (placa metafásica), todos presos ao fuso. Carioteca (envelope nuclear) não está mais visível.
+    </div>
+  </li>
+  <li>
+    <span class="step-num" style="background:var(--red);color:#fff;">4</span>
+    <div>
+      <strong>Anáfase</strong><br>
+      Cromátides-irmãs se separam — cada uma vai para um polo oposto puxada pelo fuso mitótico. Formato de "V" (metacêntricos) ou "J" (acrocêntricos). Ao final, cada polo tem um conjunto completo de cromossomos.
+    </div>
+  </li>
+  <li>
+    <span class="step-num">5</span>
+    <div>
+      <strong>Telófase</strong><br>
+      Cromossomos chegam aos polos e começam a <strong>descondensação</strong>. Membrana nuclear se reforma ao redor de cada conjunto. Em células animais, começa uma constrição no plano equatorial — início da citocinese.
+    </div>
+  </li>
+</ul>
+
+<!-- ===== 6. CITOCINESE ===== -->
+<h2>6. Citocinese — Divisão do Citoplasma</h2>
+
+<p>A citocinese ocorre durante e após a telófase, dividindo o citoplasma em duas células-filhas. O mecanismo <strong>é diferente entre células animais e vegetais</strong>:</p>
+
+<figure class="fig">
+  <img src="imgs/citocinese-animal-vegetal.png" alt="Citocinese: sulco de clivagem em animais e lamela média em vegetais">
+  <figcaption>Esquerda: célula animal — sulco de clivagem formado pelo anel contrátil de actina/miosina. Direita: célula vegetal — lamela média formada pelo complexo de Golgi (placa celular) (Prof. Verónica Ramírez — UNINTER)</figcaption>
+</figure>
+
+<div class="grid-2">
+  <div class="card" style="border-top:3px solid var(--teal);">
+    <strong style="color:var(--teal);">Célula Animal</strong><br>
+    Um <strong>anel contrátil</strong> de filamentos de actina e miosina se forma no plano equatorial. Contrai-se progressivamente formando o <em>sulco de clivagem</em> até dividir a célula em duas.
+  </div>
+  <div class="card" style="border-top:3px solid var(--green);">
+    <strong style="color:var(--green);">Célula Vegetal</strong><br>
+    Vesículas do complexo de Golgi migram para o centro e se fundem formando a <em>lamela média</em> (placa celular). Cresce de dentro para fora até completar a separação.
+  </div>
+</div>
+
+<div class="callout callout-warn">
+  <div class="callout-title">Por que a Diferença?</div>
+  Células vegetais têm parede celular rígida — não é possível "apertar" a membrana de fora para dentro. Por isso a divisão ocorre de dentro para fora com a formação de uma nova parede.
+</div>
+
+<!-- ===== 7. MEIOSE ===== -->
+<h2>7. Meiose — Divisão para Reprodução Sexual</h2>
+
+<p>A meiose é um tipo especial de divisão, exclusiva de organismos com reprodução sexual. Seu objetivo é produzir células com <strong>metade do número de cromossomos</strong> (células haplóides, n).</p>
+
+<div class="callout callout-purple">
+  <div class="callout-title">Por que a Meiose é Necessária?</div>
+  O genoma humano tem <strong>46 cromossomos (2n)</strong>. Se a fecundação unisse dois gametas com 46 cromossomos cada, o zigoto teria 92! E na próxima geração, 184... A meiose reduz o número à metade antes da fecundação.
+</div>
+
+<h3>Características da Meiose</h3>
+<ul class="steps">
+  <li>
+    <span class="step-num purple">•</span>
+    <div>Ocorre nas <strong>gônadas</strong> (testículos e ovários)</div>
+  </li>
+  <li>
+    <span class="step-num purple">•</span>
+    <div>Realiza <strong>2 divisões celulares consecutivas</strong> a partir de uma única célula 2n=46</div>
+  </li>
+  <li>
+    <span class="step-num purple">•</span>
+    <div>Gera <strong>4 células haplóides</strong> (n=23): 4 espermatozoides no homem, 1 ovócito + 3 corpos polares na mulher</div>
+  </li>
+</ul>
+
+<table>
+  <thead><tr><th>Divisão</th><th>Tipo</th><th>Resultado</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Meiose I</strong></td>
+      <td>Reduccional</td>
+      <td>2n → n: separa os cromossomos homólogos (de 46 para 23 cromossomos, cada um com 2 cromátides)</td>
+    </tr>
+    <tr>
+      <td><strong>Intercinese</strong></td>
+      <td>(pausa)</td>
+      <td>Breve intervalo — NÃO há replicação de DNA</td>
+    </tr>
+    <tr>
+      <td><strong>Meiose II</strong></td>
+      <td>Ecuacional</td>
+      <td>n → n: separa cromátides-irmãs (similar à mitose); resultado final: 4 células com n=23</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Etapas da Prófase I (a mais longa e complexa)</h3>
+<div class="card">
+  <ol style="padding-left:1.2rem;line-height:2;">
+    <li><strong>Leptóteno (Leptonema)</strong> — cromossomos começam a condensar</li>
+    <li><strong>Zigóteno (Zigonema)</strong> — cromossomos homólogos se aproximam (sinapses)</li>
+    <li><strong>Paquíteno (Paquinema)</strong> — <em>crossing-over</em>: troca de segmentos entre homólogos → variabilidade genética</li>
+    <li><strong>Diplóteno (Diplonema)</strong> — cromossomos começam a se separar, mas ficam unidos nos quiasmas</li>
+    <li><strong>Diacinese</strong> — condensação máxima; fuso começa a se formar</li>
+  </ol>
+</div>
+
+<!-- ===== 8. MITOSE vs MEIOSE ===== -->
+<h2>8. Mitose vs Meiose — Comparação Rápida</h2>
+
+<table>
+  <thead><tr><th>Característica</th><th>Mitose</th><th>Meiose</th></tr></thead>
+  <tbody>
+    <tr><td>Nº de divisões</td><td>1</td><td>2</td></tr>
+    <tr><td>Células-filhas</td><td>2</td><td>4</td></tr>
+    <tr><td>Ploidia das filhas</td><td>Diplóide (2n)</td><td>Haplóide (n)</td></tr>
+    <tr><td>DNA idêntico?</td><td>Sim (cópias idênticas)</td><td>Não (recombinação na prófase I)</td></tr>
+    <tr><td>Onde ocorre</td><td>Células somáticas</td><td>Células germinativas (gônadas)</td></tr>
+    <tr><td>Função</td><td>Crescimento, reparo</td><td>Produção de gametas</td></tr>
+    <tr><td>Crossing-over</td><td>Não (raro)</td><td>Sim (prófase I — essencial para variabilidade)</td></tr>
+  </tbody>
+</table>
+
+<!-- ===== 9. RELEVÂNCIA CLÍNICA ===== -->
+<h2>9. Relevância Clínica</h2>
+
+<div class="grid-2">
+  <div class="callout callout-danger" style="margin:0;">
+    <div class="callout-title">Câncer</div>
+    Acúmulo de mutações em proto-oncogenes e genes supressores de tumor leva à divisão celular descontrolada. Falha nos checkpoints permite que células com DNA danificado se proliferem.
+  </div>
+  <div class="callout callout-warn" style="margin:0;">
+    <div class="callout-title">Síndrome de Down (Trissomia 21)</div>
+    Falha na não-disjunção durante a Meiose I — o par 21 não se separa, gerando gameta com 2 cópias do cromossomo 21. Zigoto resultante tem 47 cromossomos.
+  </div>
+  <div class="callout callout-info" style="margin:0;">
+    <div class="callout-title">Quimioterapia</div>
+    Muitos quimioterápicos atacam células em divisão ativa: taxol estabiliza os microtúbulos do fuso (bloqueia anáfase), colchicina desfaz o fuso mitótico. Efeito colateral: também afeta células normais de rápida divisão (cabelo, mucosa).
+  </div>
+  <div class="callout callout-tip" style="margin:0;">
+    <div class="callout-title">Neurônios e G0</div>
+    Neurônios entram definitivamente em G0 após o nascimento. Isso explica a dificuldade de recuperação após lesão neuronal. Pesquisas com células-tronco buscam contornar esse bloqueio.
+  </div>
+</div>
+
+</div><!-- /page -->
+</body>
+</html>
